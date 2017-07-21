@@ -17,6 +17,8 @@
 #include <QProcess>
 #include <QMenu>
 #include <QStyleFactory>
+#include <QSystemSemaphore>
+#include <QtConcurrent/QtConcurrent>
 
 #include <qpa/qplatformintegrationfactory_p.h>
 
@@ -98,6 +100,42 @@ bool DApplicationPrivate::setSingleInstance(const QString &key)
     QObject::connect(m_localServer, &QLocalServer::newConnection, q, &DApplication::newInstanceStarted);
 
     return m_localServer->listen(key);
+}
+
+static bool tryAcquireSystemSemaphore(QSystemSemaphore *ss, qint64 timeout = 10)
+{
+    if (ss->error() != QSystemSemaphore::NoError)
+        return false;
+
+    QSystemSemaphore _tmp_ss(QString("%1-%2").arg("DTK::tryAcquireSystemSemaphore").arg(ss->key()), 1, QSystemSemaphore::Open);
+
+    _tmp_ss.acquire();
+
+    QElapsedTimer t;
+    QFuture<bool> request = QtConcurrent::run(ss, &QSystemSemaphore::acquire);
+
+    t.start();
+
+    while (Q_LIKELY(t.elapsed() < timeout && !request.isFinished()));
+
+    if (request.isFinished())
+        return true;
+
+    if (Q_LIKELY(request.isRunning())) {
+        if (Q_LIKELY(ss->release(1)))
+            request.waitForFinished();
+    }
+
+    return false;
+}
+
+bool DApplicationPrivate::setSingleInstanceBySemaphore(const QString &key)
+{
+    static QSystemSemaphore ss(key, 1, QSystemSemaphore::Open);
+
+    Q_ASSERT_X(ss.error() == QSystemSemaphore::NoError, "DApplicationPrivate::setSingleInstanceBySemaphore:", ss.errorString().toLocal8Bit().constData());
+
+    return tryAcquireSystemSemaphore(&ss);
 }
 
 bool DApplicationPrivate::loadDtkTranslator(QList<QLocale> localeFallback)
@@ -195,7 +233,7 @@ bool DApplication::setSingleInstance(const QString &key)
 {
     D_D(DApplication);
 
-    return d->setSingleInstance(key);
+    return d->setSingleInstanceBySemaphore(key);
 }
 
 //! load translate file form system or application data path;
