@@ -1,6 +1,6 @@
 deepin-tool-kit (0.3.4-1) unstable; urgency=low
 
-  * Release for libdtkwidget1
+  * Release for libdtk1
 
  -- Iceyer <me@iceyer.net>  Mon, 31 Jul 2017 13:51:32 +0800
 

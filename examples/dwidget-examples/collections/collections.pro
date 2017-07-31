@@ -78,9 +78,9 @@ win32* {
     INCLUDEPATH += $$PWD/../../../dwidget/platforms/windows
 }
 
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../../dbase/release/ -ldtkbase
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../../dbase/debug/ -ldtkbase
-else:unix: LIBS += -L$$OUT_PWD/../../../dbase/ -ldtkbase
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../../dbase/release/ -ldtkbase1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../../dbase/debug/ -ldtkbase1
+else:unix: LIBS += -L$$OUT_PWD/../../../dbase/ -ldtkbase1
 
 INCLUDEPATH += $$PWD/../../../dbase
 DEPENDPATH += $$PWD/../../../dbase
@@ -94,9 +94,9 @@ INCLUDEPATH += $$PWD/../../../dwidget/widgets
 INCLUDEPATH += $$PWD/../../../dwidget/util
 DEPENDPATH += $$PWD/../../../dwidget
 
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../../dutil/release/ -ldtkutil
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../../dutil/debug/ -ldtkutil
-else:unix: LIBS += -L$$OUT_PWD/../../../dutil/ -ldtkutil
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../../dutil/release/ -ldtkutil1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../../dutil/debug/ -ldtkutil1
+else:unix: LIBS += -L$$OUT_PWD/../../../dutil/ -ldtkutil1
 
 INCLUDEPATH += $$PWD/../../../dutil
 INCLUDEPATH += $$PWD/../../../dutil/dlog

@@ -6,7 +6,7 @@ include(private/private.pri)
 QT -= gui
 QT += multimedia
 
-TARGET = dtkutil
+TARGET = dtkutil1
 
 DEFINES += LIBDTKUTIL_LIBRARY
 
@@ -42,14 +42,14 @@ includes.files += \
     $$PWD/DFileWatcher \
     $$PWD/DFileWatcherManager
 
-QMAKE_PKGCONFIG_NAME = DTK_UTIL
+QMAKE_PKGCONFIG_NAME = DTK_UTIL1
 QMAKE_PKGCONFIG_DESCRIPTION = Deepin Tool Kit Util Module
 QMAKE_PKGCONFIG_INCDIR = $$includes.path
-QMAKE_PKGCONFIG_REQUIRES += dtkbase
+QMAKE_PKGCONFIG_REQUIRES += dtkbase1
 
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../dbase/release/ -ldtkbase
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../dbase/debug/ -ldtkbase
-else:unix: LIBS += -L$$OUT_PWD/../dbase/ -ldtkbase
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../dbase/release/ -ldtkbase1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../dbase/debug/ -ldtkbase1
+else:unix: LIBS += -L$$OUT_PWD/../dbase/ -ldtkbase1
 
 INCLUDEPATH += $$PWD/../dbase
 DEPENDPATH += $$PWD/../dbase

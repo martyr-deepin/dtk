@@ -1,0 +1,3 @@
+usr/include/libdtk-*/DUtil/
+usr/lib/*/pkgconfig/dtkutil*.pc
+usr/lib/*/libdtkutil*.so
