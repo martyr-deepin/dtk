@@ -85,9 +85,9 @@ else:unix: LIBS += -L$$OUT_PWD/../../../dbase/ -ldtkbase
 INCLUDEPATH += $$PWD/../../../dbase
 DEPENDPATH += $$PWD/../../../dbase
 
-win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../../dwidget/release/ -ldtkwidget
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../../dwidget/debug/ -ldtkwidget
-else:unix: LIBS += -L$$OUT_PWD/../../../dwidget/ -ldtkwidget
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../../dwidget/release/ -ldtkwidget1
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../../dwidget/debug/ -ldtkwidget1
+else:unix: LIBS += -L$$OUT_PWD/../../../dwidget/ -ldtkwidget1
 
 INCLUDEPATH += $$PWD/../../../dwidget
 INCLUDEPATH += $$PWD/../../../dwidget/widgets

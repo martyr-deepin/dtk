@@ -44,7 +44,7 @@ Description: Deepin Tool Kit Util library
  .
  This package contains the header files and static libraries of DtkUtil
 
-Package: libdtkwidget
+Package: libdtkwidget1
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libdtkutil( =${binary:Version})
 Multi-Arch: same
@@ -53,9 +53,9 @@ Description: Deepin graphical user interface library
  .
  This package contains the shared libraries.
 
-Package: libdtkwidget-dev
+Package: libdtkwidget1-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libdtkwidget( =${binary:Version}),
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdtkwidget1( =${binary:Version}),
  qtmultimedia5-dev, libqt5x11extras5-dev, libdtkutil-dev
 Description: Deepin graphical user interface library
  DtkWidget is Deepin graphical user interface for deepin desktop development.

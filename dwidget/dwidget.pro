@@ -2,7 +2,7 @@ include($$PWD/../common/lib.pri)
 include(widgets/widgets.pri)
 include(util/util.pri)
 
-TARGET = dtkwidget
+TARGET = dtkwidget1
 
 DEFINES += LIBDTKWIDGET_LIBRARY
 
@@ -72,7 +72,7 @@ includes.files += \
     util/DFileIconProvider \
     util/DWindowManagerHelper
 
-QMAKE_PKGCONFIG_NAME = DTK_WIDGET
+QMAKE_PKGCONFIG_NAME = DTK_WIDGET1
 QMAKE_PKGCONFIG_DESCRIPTION = Deepin Tool Kit UI Module
 QMAKE_PKGCONFIG_INCDIR = $$includes.path
 QMAKE_PKGCONFIG_REQUIRES += dtkbase dtkutil
