@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>resources/data/dfm-settings.json</file>
-        <file>resources/data/dt-settings.json</file>
-    </qresource>
-</RCC>

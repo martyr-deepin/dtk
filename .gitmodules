@@ -1,0 +1,6 @@
+[submodule "dtkcore"]
+	path = dtkcore
+	url = ../dtkcore
+[submodule "dtkwidget"]
+	path = dtkwidget
+	url = ../dtkwidget
