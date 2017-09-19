@@ -872,7 +872,8 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                =
+EXCLUDE                =  ./dtkcore/tool \
+                          ./dtkwidget/examples \
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -2099,7 +2100,20 @@ INCLUDE_FILE_PATTERNS  =
 # recursively expanded use the := operator instead of the = operator.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-PREDEFINED             =
+PREDEFINED             = "DTK_NAMESPACE=Dtk" \
+                         "DTK_BEGIN_NAMESPACE=namespace Dtk {" \
+                         "DTK_END_NAMESPACE=}" \
+                         "DTK_USE_NAMESPACE=using namespace Dtk" \
+                         "DCORE_NAMESPACE=Core" \
+                         "DTK_CORE_NAMESPACE=Dtk::Core" \
+                         "DCORE_BEGIN_NAMESPACE=namespace Dtk { namespace Core {" \
+                         "DCORE_END_NAMESPACE=}}" \
+                         "DCORE_USE_NAMESPACE=using namespace Dtk::Core" \
+                         "DWIDGET_NAMESPACE=Widget" \
+                         "DTK_WIDGET_NAMESPACE=Dtk::Widget" \
+                         "DWIDGET_BEGIN_NAMESPACE=namespace Dtk { namespace Widget {" \
+                         "DWIDGET_END_NAMESPACE=}}" \
+                         "DWIDGET_USE_NAMESPACE=using namespace Dtk::Widget" \
 
 # If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then this
 # tag can be used to specify a list of macro names that should be expanded. The
