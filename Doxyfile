@@ -848,7 +848,11 @@ FILE_PATTERNS          = *.c \
                          *.mm \
                          *.dox \
                          *.py \
+                         *.pyw \
                          *.f90 \
+                         *.f95 \
+                         *.f03 \
+                         *.f08 \
                          *.f \
                          *.for \
                          *.tcl \
@@ -995,7 +999,7 @@ USE_MDFILE_AS_MAINPAGE =
 # also VERBATIM_HEADERS is set to NO.
 # The default value is: NO.
 
-SOURCE_BROWSER         = NO
+SOURCE_BROWSER         = YES
 
 # Setting the INLINE_SOURCES tag to YES will include the body of functions,
 # classes and enums directly into the documentation.
@@ -1478,7 +1482,7 @@ DISABLE_INDEX          = NO
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-GENERATE_TREEVIEW      = NO
+GENERATE_TREEVIEW      = YES
 
 # The ENUM_VALUES_PER_LINE tag can be used to set the number of enum values that
 # doxygen will group on one line in the generated HTML documentation.
@@ -1592,7 +1596,7 @@ MATHJAX_CODEFILE       =
 # The default value is: YES.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-SEARCHENGINE           = NO
+SEARCHENGINE           = YES
 
 # When the SERVER_BASED_SEARCH tag is enabled the search engine will be
 # implemented using a web server instead of a web client using Javascript. There
@@ -2081,8 +2085,8 @@ SEARCH_INCLUDES        = YES
 # preprocessor.
 # This tag requires that the tag SEARCH_INCLUDES is set to YES.
 
-INCLUDE_PATH           = ./dtkwidget/ \
-                         ./dtkcore/ \
+INCLUDE_PATH           = dtkcore \
+                         dtkwidget
 
 # You can use the INCLUDE_FILE_PATTERNS tag to specify one or more wildcard
 # patterns (like *.h and *.hpp) to filter out the header-files in the
@@ -2103,17 +2107,17 @@ INCLUDE_FILE_PATTERNS  =
 PREDEFINED             = "DTK_NAMESPACE=Dtk" \
                          "DTK_BEGIN_NAMESPACE=namespace Dtk {" \
                          "DTK_END_NAMESPACE=}" \
-                         "DTK_USE_NAMESPACE=using namespace Dtk" \
+                         "DTK_USE_NAMESPACE=using namespace Dtk;" \
                          "DCORE_NAMESPACE=Core" \
                          "DTK_CORE_NAMESPACE=Dtk::Core" \
                          "DCORE_BEGIN_NAMESPACE=namespace Dtk { namespace Core {" \
                          "DCORE_END_NAMESPACE=}}" \
-                         "DCORE_USE_NAMESPACE=using namespace Dtk::Core" \
+                         "DCORE_USE_NAMESPACE=using namespace Dtk::Core;" \
                          "DWIDGET_NAMESPACE=Widget" \
                          "DTK_WIDGET_NAMESPACE=Dtk::Widget" \
                          "DWIDGET_BEGIN_NAMESPACE=namespace Dtk { namespace Widget {" \
                          "DWIDGET_END_NAMESPACE=}}" \
-                         "DWIDGET_USE_NAMESPACE=using namespace Dtk::Widget" \
+                         "DWIDGET_USE_NAMESPACE=using namespace Dtk::Widget;"
 
 # If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then this
 # tag can be used to specify a list of macro names that should be expanded. The
@@ -2122,7 +2126,7 @@ PREDEFINED             = "DTK_NAMESPACE=Dtk" \
 # definition found in the source code.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-EXPAND_AS_DEFINED      =
+EXPAND_AS_DEFINED      = YES
 
 # If the SKIP_FUNCTION_MACROS tag is set to YES then doxygen's preprocessor will
 # remove all references to function-like macros that are alone on a line, have
@@ -2228,7 +2232,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # set to NO
 # The default value is: YES.
 
-HAVE_DOT               = NO
+HAVE_DOT               = YES
 
 # The DOT_NUM_THREADS specifies the number of dot invocations doxygen is allowed
 # to run in parallel. When set to 0 doxygen will base this on the number of
