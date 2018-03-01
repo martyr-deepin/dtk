@@ -17,7 +17,7 @@ function tag_project() {
     git commit -m "Release ${new_tag}" -a
     git tag -a -m "Release ${new_tag}" ${new_tag}
     # git push --tags
-    push_tag_project
+    # push_tag_project
 }
 
 function push_tag_project() {
