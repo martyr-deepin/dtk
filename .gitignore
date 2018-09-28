@@ -1,2 +1,4 @@
-Docs/
+Docs/html/*
+Docs/xml/*
+Docs/pdf/*
 *.pro.user*
