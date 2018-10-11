@@ -880,7 +880,8 @@ RECURSIVE              = YES
 # run.
 
 EXCLUDE                =  ./dtkcore/tool \
-EXCLUDE                =  ./dtkcore/tests \
+                          ./dtkcore/tools \
+                          ./dtkcore/tests \
                           ./dtkwidget/examples \
                           ./dtkwidget/src/widgets/private \
 
