@@ -1,4 +1,3 @@
-Docs/html/*
-Docs/xml/*
-Docs/pdf/*
+Docs*/
+Doxyfile.qhp
 *.pro.user*
