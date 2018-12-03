@@ -1,0 +1,5 @@
+deepin-tool-kit (1.0) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Packages <zs@deepin.com>  Mon, 03 Dec 2018 15:36:42 +0800

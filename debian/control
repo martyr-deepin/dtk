@@ -1,0 +1,15 @@
+Source: deepin-tool-kit
+Section: doc
+Priority: optional
+Maintainer: Packages <packages@deepin.com>
+Build-Depends: debhelper (>= 11), git, doxygen, ca-certificates, graphviz, qttools5-dev-tools, qt5-default
+Standards-Version: 4.1.3
+Homepage: http://www.deepin.org
+Vcs-Browser: https://github.com/linuxdeepin/deepin-tool-kit
+
+Package: libdtk2-doc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dtk documentaiton for qt5
+ Dtk doc for qt5
+ 

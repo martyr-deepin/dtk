@@ -1,4 +1,10 @@
-all: html qhp
+all: init html qhp
+
+init:
+	rm -rf dtkwidget dtkcore dtkwm
+	git clone  https://cr.deepin.io/dtkwidget dtkwidget
+	git clone  https://cr.deepin.io/dtkcore dtkcore
+	git clone  https://cr.deepin.io/dtkwm dtkwm
 
 html:
 	doxygen Doxyfile
@@ -11,3 +17,9 @@ qhp:
 	sed -i "s/qtcore.tags=https:\/\/doc.qt.io\/qt-5\//qtcore.tags=qthelp:\/\/org.qt-project.qtcore\/qtcore\//g" Doxyfile.qhp
 	sed -i "s/qtwidgets.tags=https:\/\/doc.qt.io\/qt-5\//qtwidgets.tags=qthelp:\/\/org.qt-project.qtwidgets\/qtwidgets\//g" Doxyfile.qhp
 	doxygen Doxyfile.qhp
+install:
+	mkdir -p $(DESTDIR)/usr/share/qt5/doc
+	cp -r  Docs_qhp/dtk.qch $(DESTDIR)/usr/share/qt5/doc/
+clean:
+	rm -rf Docs_*
+	rm -f Doxyfile.qhp 
