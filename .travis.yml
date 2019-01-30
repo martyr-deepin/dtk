@@ -16,6 +16,7 @@ script:
   - rm -fr Docs_html
   - git config user.name "Hualet Wang"
   - git config user.email "mr.asianwang@gmail.com"
+  - git add .
   - git commit -am "update" 
   - echo "$private_key" | base64 -d > ./private_key
   - chmod 600 ./private_key
