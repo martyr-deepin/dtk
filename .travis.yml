@@ -1,0 +1,23 @@
+dist: xenial
+
+language: minimal
+
+before_install:
+  - sudo apt update
+  - sudo apt install doxygen graphviz qt5-default qttools5-dev-tools
+
+script:
+  - make 
+  - git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+  - git fetch origin gh-pages
+  - git checkout -b gh-pages origin/gh-pages
+  - shopt -s extglob && rm -fr -- !(.|..|.git|Docs_html)
+  - mv Docs_html/html/* .
+  - rm -fr Docs_html
+  - git config user.name "Hualet Wang"
+  - git config user.email "mr.asianwang@gmail.com"
+  - git commit -am "update" 
+  - echo "$private_key" | base64 -d > ./private_key
+  - chmod 600 ./private_key
+  - git remote set-url origin git@github.com:linuxdeepin/dtk.git
+  - GIT_SSH_COMMAND="ssh -i ./private_key -o StrictHostKeyChecking=no" git push origin gh-pages
