@@ -4,6 +4,9 @@
 [submodule "dtkwidget"]
 	path = dtkwidget
 	url = ../dtkwidget
-[submodule "dtkwm"]
-	path = dtkwm
-	url = ../dtkwm
+[submodule "dtkgui"]
+	path = dtkgui
+	url = https://github.com/linuxdeepin/dtkgui.git
+[submodule "qt5integration"]
+	path = qt5integration
+	url = https://github.com/linuxdeepin/qt5integration.git
