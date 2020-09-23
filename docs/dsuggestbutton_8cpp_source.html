@@ -92,48 +92,63 @@ $(document).ready(function(){initNavTree('dsuggestbutton_8cpp_source.html',''); 
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QStylePainter&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QStyleOptionButton&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">   19</a></span>&#160;DSuggestButton::DSuggestButton(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>(parent)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a6768837e258e031cbce4fc90f56c2440">   31</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">DSuggestButton::DSuggestButton</a>(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>(text, parent)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;DGuiApplicationHelper&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">   20</a></span>&#160;DSuggestButton::DSuggestButton(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>(parent)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a6768837e258e031cbce4fc90f56c2440">   32</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">DSuggestButton::DSuggestButton</a>(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a>(text, parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> DSuggestButton::paintEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *event)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qstylepainter.html">QStylePainter</a> p(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html">DStyleOptionSuggestButton</a> option;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html#initStyleOption">initStyleOption</a>(&amp;option);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    option.<a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html#a41cdee36fde3574094a09603802b9814">init</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    p.drawControl(QStyle::CE_PushButton, option);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> DSuggestButton::paintEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *event)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q_UNUSED(<a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html#event">event</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qstylepainter.html">QStylePainter</a> p(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> option;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpushbutton.html#initStyleOption">initStyleOption</a>(&amp;option);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    option.<a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html#a631fa1701e12a907ed1a112c4b737c4e">init</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    option.features |= QStyleOptionButton::ButtonFeature(DStyleOptionButton::SuggestButton);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> startColor = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#palette-prop">palette</a>().color(QPalette::Highlight);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> endColor = <a class="code" href="class_d_gui_application_helper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">DGuiApplicationHelper::adjustColor</a>(startColor, 0, 0, +10, 0, 0, 0, 0);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    option.palette.setBrush(QPalette::Light, <a class="codeRef" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a>(endColor));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    option.palette.setBrush(QPalette::Dark, <a class="codeRef" href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a>(startColor));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    option.palette.setBrush(QPalette::ButtonText, option.palette.highlightedText());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    p.drawControl(QStyle::CE_PushButton, option);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;DWIDGET_END_NAMESPACE</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_option_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html">Dtk::Widget::DStyleOptionButton</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8h_source.html#l00068">dstyleoption.h:69</a></div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_option_button_html_a631fa1701e12a907ed1a112c4b737c4e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html#a631fa1701e12a907ed1a112c4b737c4e">Dtk::Widget::DStyleOptionButton::init</a></div><div class="ttdeci">void init(const QWidget *widget) override</div><div class="ttdoc">初始化Dtk::Widget::DSuggestButton样式，设置为 DStyleOptionSuggestButton::SuggestButton 。</div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8cpp_source.html#l00152">dstyleoption.cpp:152</a></div></div>
+<div class="ttc" id="aqwidget_html_palette-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#palette-prop">QWidget::palette</a></div><div class="ttdeci">palette</div></div>
 <div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_option_suggest_button_html_a41cdee36fde3574094a09603802b9814"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html#a41cdee36fde3574094a09603802b9814">Dtk::Widget::DStyleOptionSuggestButton::init</a></div><div class="ttdeci">void init(QWidget *widget) override</div><div class="ttdoc">初始化Dtk::Widget::DSuggestButton样式，设置为 DStyleOptionSuggestButton::SuggestButton 。</div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8cpp_source.html#l00136">dstyleoption.cpp:136</a></div></div>
 <div class="ttc" id="aqpushbutton_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></div></div>
 <div class="ttc" id="aqstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
 <div class="ttc" id="aqstylepainter_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstylepainter.html">QStylePainter</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_suggest_button_html_a47d72f62e0f7547fa265d6ce20b8a4cd"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">Dtk::Widget::DSuggestButton::DSuggestButton</a></div><div class="ttdeci">DSuggestButton(QWidget *parent=nullptr)</div><div class="ttdoc">DSuggestButton的构造函数</div><div class="ttdef"><b>Definition:</b> <a href="dsuggestbutton_8cpp_source.html#l00019">dsuggestbutton.cpp:19</a></div></div>
+<div class="ttc" id="aqbrush_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qbrush.html">QBrush</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_suggest_button_html_a47d72f62e0f7547fa265d6ce20b8a4cd"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_suggest_button.html#a47d72f62e0f7547fa265d6ce20b8a4cd">Dtk::Widget::DSuggestButton::DSuggestButton</a></div><div class="ttdeci">DSuggestButton(QWidget *parent=nullptr)</div><div class="ttdoc">DSuggestButton的构造函数</div><div class="ttdef"><b>Definition:</b> <a href="dsuggestbutton_8cpp_source.html#l00020">dsuggestbutton.cpp:20</a></div></div>
 <div class="ttc" id="aqpushbutton_html_initStyleOption"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpushbutton.html#initStyleOption">QPushButton::initStyleOption</a></div><div class="ttdeci">void initStyleOption(QStyleOptionButton *option) const const</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_option_suggest_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html">Dtk::Widget::DStyleOptionSuggestButton</a></div><div class="ttdoc">Dtk::Widget::DSuggestButton使用的样式配置</div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8h_source.html#l00036">dstyleoption.h:37</a></div></div>
 <div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqpushbutton_html_event"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpushbutton.html#event">QPushButton::event</a></div><div class="ttdeci">virtual bool event(QEvent *e) override</div></div>
+<div class="ttc" id="aclass_d_gui_application_helper_html_a9cde0c1e68ad96a4f51983dcd2e74cea"><div class="ttname"><a href="class_d_gui_application_helper.html#a9cde0c1e68ad96a4f51983dcd2e74cea">DGuiApplicationHelper::adjustColor</a></div><div class="ttdeci">static QColor adjustColor(const QColor &amp;base, qint8 hueFloat, qint8 saturationFloat, qint8 lightnessFloat, qint8 redFloat, qint8 greenFloat, qint8 blueFloat, qint8 alphaFloat)</div><div class="ttdoc">DGuiApplicationHelper::adjustColor 调整颜色</div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l00294">dguiapplicationhelper.cpp:294</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dsuggestbutton.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:52 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

@@ -33,7 +33,6 @@ var NAVTREE =
     [ "dtkgui", "md_dtkgui__r_e_a_d_m_e.html", null ],
     [ "CHANGELOG", "md_qt5integration__c_h_a_n_g_e_l_o_g.html", null ],
     [ "qt5integration", "md_qt5integration__r_e_a_d_m_e.html", null ],
-    [ "弃用列表", "deprecated.html", null ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -41,11 +40,10 @@ var NAVTREE =
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", "functions_dup" ],
         [ "函数", "functions_func.html", "functions_func" ],
-        [ "变量", "functions_vars.html", null ],
         [ "类型定义", "functions_type.html", null ],
         [ "枚举", "functions_enum.html", null ],
         [ "枚举值", "functions_eval.html", null ],
-        [ "属性", "functions_prop.html", "functions_prop" ]
+        [ "属性", "functions_prop.html", null ]
       ] ]
     ] ],
     [ "文件", "files.html", [
@@ -60,23 +58,24 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"class_d_palette.html#ae8622425dd14135d75cf6809e3a47794",
-"class_d_region_monitor.html#a80ed3684af9b37c7c585d79ff912db8d",
-"class_dtk_1_1_core_1_1_d_file_watcher.html#a1f2321d9a477236a4c59c20e44a35288",
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ab1772889d3043efb7329afceedea8cc2",
-"class_dtk_1_1_widget_1_1_d_arrow_rectangle.html",
-"class_dtk_1_1_widget_1_1_d_borderless_widget.html#af9abde7a585a1c5c2e051b35f6bc76fa",
-"class_dtk_1_1_widget_1_1_d_enhanced_widget.html#aea7f38077c81e98c6020c136c4124f9c",
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#aea3f420db9689dc958ae2a5e6906603f",
-"class_dtk_1_1_widget_1_1_d_main_window.html#a8457c2e1b7f0d3ee01d4bb5a4ba3cdac",
-"class_dtk_1_1_widget_1_1_d_segmented_control.html#a495bf6012fcdf08d4309d7470698aeae",
-"class_dtk_1_1_widget_1_1_d_style_option_line_edit.html#a7e57ede60c1d6a1e82105e13665b6de3",
-"class_dtk_1_1_widget_1_1_d_titlebar.html#ade42bb69cff40fde9e80c47766541be7",
-"class_q_svg_i_o_handler_private.html#ad596e0b0a175b1c5f5ebe87b136b66c1",
-"classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaad462c098c3c927801037b1d5f26096c8",
-"dpalette_8cpp_source.html",
-"norwegianwoodstyle_8cpp_source.html"
+"_abstract_appender_8cpp_source.html",
+"class_d_palette.html#ac99db4e2d11d9feb32ea7ed488cb5a93",
+"class_d_region_monitor.html#a4fdc0d063833b8476c94cdd3ba475af1",
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a7a8a1139aebf60f2f80aef58264e9d60",
+"class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface.html#acb5513fe938571f2afe367e3de12087f",
+"class_dtk_1_1_widget_1_1_d_anchors_base.html#a4dae33b4246966ced38531e0e54e7878",
+"class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f",
+"class_dtk_1_1_widget_1_1_d_dialog.html#a2d5cbe6aadd6a06fe4cdf08cbdadd395",
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da8f6b8ac54920d5416fd2fedbf078eb07",
+"class_dtk_1_1_widget_1_1_d_line_edit.html#acec55ca64c64660c23c3a05a8d1a8c42",
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a551c5101f54e0812df4cbd352baa9bbd",
+"class_dtk_1_1_widget_1_1_d_slider.html#af83f9761b17f336fece3a314340b6343",
+"class_dtk_1_1_widget_1_1_d_style_option_button_box_button.html#a99c7c413a16caa31ad510ed82bea14b1",
+"class_dtk_1_1_widget_1_1_d_tick_effect.html#aa795388dd7eae0f6cf965d969e1d4312",
+"class_q_deepin_file_dialog_helper.html#a4683c820aebb6a93791e59041354d44e",
+"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaf0bcc9d5b12a752f0644b36a36d7e47f",
+"dir_182c8bcd1e93a68b86e68b17c9642c63.html",
+"functions_func.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

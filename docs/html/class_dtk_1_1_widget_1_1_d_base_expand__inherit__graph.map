@@ -1,8 +1,0 @@
-<map id="Dtk::Widget::DBaseExpand" name="Dtk::Widget::DBaseExpand">
-<area shape="rect" id="node1" title="一个美观的可展开的控件" alt="" coords="138,155,335,181"/>
-<area shape="rect" id="node5" href="$class_dtk_1_1_widget_1_1_d_arrow_line_expand.html" title="一个美观的可展开的控件DArrowLineExpand 继承自 DBaseExpand 并提供了了 ArrowHeaderLine (一个带有箭头标示的按钮)作为其固定的标题控件，也就是说跟 DBase..." alt="" coords="5,237,236,263"/>
-<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_switch_line_expand.html" title="DSwitchLineExpand 类提供了一种通过开关按钮来展开/合上显示内容的控件。 控件由标题栏和内容两部分组成，标题栏左侧显示控件标题，右侧显示一个开关控件， 用户通过点击右侧的开关控件，来控制..." alt="" coords="261,229,447,271"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="197,80,276,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="141,5,215,32"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="240,5,351,32"/>
-</map>

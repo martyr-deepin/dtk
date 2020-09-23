@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['timeunits_19236',['TimeUnits',['../class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a9e6584592385affd85e9c31ce6b752eb',1,'Dtk::Core::DTimeUnitFormatter']]]
+  ['pixelmetric_19465',['PixelMetric',['../class_dtk_1_1_widget_1_1_d_style.html#a42036bfddd18d067159479232deaf6ff',1,'Dtk::Widget::DStyle']]],
+  ['primitiveelement_19466',['PrimitiveElement',['../class_dtk_1_1_widget_1_1_d_style.html#a70d4440966cd8409042167b3be465c2e',1,'Dtk::Widget::DStyle']]]
 ];

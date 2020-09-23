@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dswitchbutton_8cpp_source.html',''); i
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2015 ~ 2017 Deepin Technology Co., Ltd.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
@@ -100,221 +100,128 @@ $(document).ready(function(){initNavTree('dswitchbutton_8cpp_source.html',''); i
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dswitchbutton.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QPainterPath&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QMouseEvent&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;DStyle&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;DStyleOptionButton&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;private/dswitchbutton_p.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QIcon&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;dthememanager.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;private/dswitchbutton_p.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808">   59</a></span>&#160;DSwitchButton::DSwitchButton(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent) :</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html">QFrame</a>(parent),</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    DObject(*new DSwitchButtonPrivate(this))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a>(<span class="stringliteral">&quot;DSwitchButton&quot;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#maximumSize-prop">setMaximumSize</a>(36, 20);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#sizePolicy-prop">setSizePolicy</a>(QSizePolicy::Fixed, QSizePolicy::Fixed);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">DThemeManager::registerWidget</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    d-&gt;init();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(d-&gt;animation, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qvariantanimation.html#valueChanged">QVariantAnimation::valueChanged</a>, [&amp;]() {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        this-&gt;update();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    });</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a9c3e8008c2b8b7bf6e694bbc7e2faf65">DSwitchButton::checked</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> d-&gt;checked;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> DSwitchButton::sizeHint()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#maximumSize-prop">maximumSize</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808">   32</a></span>&#160;DSwitchButton::DSwitchButton(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a>(parent)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    , <a class="code" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a>(*new DSwitchButtonPrivate(this))</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    d-&gt;init();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#ae93ad7c466bc6cc6791cc6154e356576">   45</a></span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#ae93ad7c466bc6cc6791cc6154e356576">DSwitchButton::sizeHint</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>(0, 0);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_helper.html">DStyleHelper</a> dstyle(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#style">style</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a> = dstyle.sizeFromContents(DStyle::CT_SwitchButton, <span class="keyword">nullptr</span>, <a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>(0, 0), <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#aeeda850f31c37c33105e03dc7bfe80d2">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#aeeda850f31c37c33105e03dc7bfe80d2">DSwitchButton::paintEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *e)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Q_UNUSED(e);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_painter.html">DStylePainter</a> painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> opt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#ad9c9175a588f2357227f5d66825be451">initStyleOption</a>(&amp;opt);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    painter.drawControl(DStyle::CE_SwitchButton, opt);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#ad9c9175a588f2357227f5d66825be451">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#ad9c9175a588f2357227f5d66825be451">DSwitchButton::initStyleOption</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> *option)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (!option)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    option-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_style_option_button.html#a631fa1701e12a907ed1a112c4b737c4e">init</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    option-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qstyleoption.html#initFrom">initFrom</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#checked-prop">isChecked</a>()) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        option-&gt;state |= QStyle::State_On;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        option-&gt;state |= QStyle::State_Off;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// 针对switch button禁用hover状态</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    option-&gt;state &amp;= ~<a class="codeRef" href="https://doc.qt.io/qt-5/qstyle.html">QStyle</a>::State_MouseOver;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#focus-prop">hasFocus</a>()) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        option-&gt;state |= QStyle::State_HasFocus;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//按照设计要求: 这里需要预留绘制focusRect的区域</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    option-&gt;rect.adjust(4, 4, -4, -4);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;DSwitchButtonPrivate::DSwitchButtonPrivate(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a> *qq)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    : DObjectPrivate(qq)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#af22aab5ff82030a4cd46205e32ccb50e">DSwitchButton::disabledBackground</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808">DSwitchButton</a>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> d-&gt;disabledBackground;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;DSwitchButtonPrivate::~DSwitchButtonPrivate()</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> DSwitchButtonPrivate::init()</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    checked = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    animationStartValue = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    animationEndValue = 1;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a18b1870fcad937097d196ef0f96cf3f6">DSwitchButton::enabledBackground</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808">DSwitchButton</a>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> d-&gt;enabledBackground;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a40b9699c3d66e5484ab2e57d7197de32">  130</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a40b9699c3d66e5484ab2e57d7197de32">DSwitchButton::setChecked</a>(<span class="keywordtype">bool</span> arg)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (d-&gt;checked != arg) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        d-&gt;checked = arg;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span> (arg) {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            d-&gt;animation-&gt;setStartValue(d-&gt;animationStartValue);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            d-&gt;animation-&gt;setEndValue(d-&gt;animationEndValue);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            d-&gt;animation-&gt;setStartValue(d-&gt;animationEndValue);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            d-&gt;animation-&gt;setEndValue(d-&gt;animationStartValue);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        d-&gt;animation-&gt;start();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        Q_EMIT checkedChanged(arg);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#abc33268bb7f015b3e05b238f00e6d020">  155</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#abc33268bb7f015b3e05b238f00e6d020">DSwitchButton::setEnabledBackground</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> enabledBackground)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    d-&gt;enabledBackground = <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a18b1870fcad937097d196ef0f96cf3f6">enabledBackground</a>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a49ca711e1075b0a116bee8dc6a6126ed">  166</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a49ca711e1075b0a116bee8dc6a6126ed">DSwitchButton::setDisabledBackground</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> disabledBackground)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    d-&gt;disabledBackground = <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#af22aab5ff82030a4cd46205e32ccb50e">disabledBackground</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keywordtype">void</span> DSwitchButton::paintEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *e)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    Q_UNUSED(e);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html">DSwitchButton</a>);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> frontground = Qt::white;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> background = d-&gt;enabledBackground;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (d-&gt;checked) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        background = d-&gt;checkedBackground;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (!<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#enabled-prop">isEnabled</a>()) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        background.<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html#setAlpha">setAlpha</a>(255 * 55 / 100);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        frontground.<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html#setAlpha">setAlpha</a>(255 * 55 / 100);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> p(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    p.setRenderHints(QPainter::Antialiasing);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> path;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    path.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#addRoundedRect">addRoundedRect</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>(), <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#height-prop">height</a>() / 2.0, <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#height-prop">height</a>() / 2.0);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    path.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#closeSubpath">closeSubpath</a>();</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    p.setClipPath(path);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">double</span> indicatorX = 0;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span> (d-&gt;animation-&gt;state() == QVariantAnimation::Stopped) {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">if</span> (!d-&gt;checked) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            indicatorX = d-&gt;animationStartValue;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            indicatorX = d-&gt;animationEndValue;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        indicatorX = d-&gt;animation-&gt;currentValue().toDouble();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">int</span> moveWidth = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#width-prop">width</a>() - <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#height-prop">height</a>();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">int</span> border = 1 * 1;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">int</span> btSize = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#height-prop">height</a>() - border * 2;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a> btRect(moveWidth * indicatorX + border, border, btSize, btSize);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> btPath;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    btPath.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#addRoundedRect">addRoundedRect</a>(btRect, btSize / 2.0, btSize / 2.0);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    btPath.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#closeSubpath">closeSubpath</a>();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    p.fillPath(path, background);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    p.fillPath(btPath, frontground);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keywordtype">void</span> DSwitchButton::mousePressEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808">DSwitchButton</a>);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">if</span> (e-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmouseevent.html#button">button</a>() == Qt::LeftButton) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="class_dtk_1_1_widget_1_1_d_switch_button.html#a40b9699c3d66e5484ab2e57d7197de32">setChecked</a>(!d-&gt;checked);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        e-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html#accept">accept</a>();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;DSwitchButtonPrivate::DSwitchButtonPrivate(DSwitchButton *qq)</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    : DObjectPrivate(qq)</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    init();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;DSwitchButtonPrivate::~DSwitchButtonPrivate()</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    animation-&gt;deleteLater();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">void</span> DSwitchButtonPrivate::init()</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    checked = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    animation = <span class="keyword">new</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qvariantanimation.html">QVariantAnimation</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    animationStartValue = 0;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    animationEndValue = 1;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="dobject_8h.html#a8b1f6c1673a4186b6629d554a7eff35c">D_Q</a>(DSwitchButton);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    q-&gt;setObjectName(<span class="stringliteral">&quot;DSwitchButton&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    q-&gt;setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    q-&gt;setCheckable(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    q-&gt;connect(q, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#toggled">DSwitchButton::toggled</a>, q, &amp;DSwitchButton::checkedChanged);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;DWIDGET_END_NAMESPACE</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aqpainterpath_html_addRoundedRect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html#addRoundedRect">QPainterPath::addRoundedRect</a></div><div class="ttdeci">void addRoundedRect(const QRectF &amp;rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode)</div></div>
-<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
-<div class="ttc" id="aqframe_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html">QFrame</a></div></div>
-<div class="ttc" id="aqwidget_html_sizePolicy-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#sizePolicy-prop">QWidget::setSizePolicy</a></div><div class="ttdeci">void setSizePolicy(QSizePolicy)</div></div>
-<div class="ttc" id="aqmouseevent_html_button"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmouseevent.html#button">QMouseEvent::button</a></div><div class="ttdeci">Qt::MouseButton button() const const</div></div>
-<div class="ttc" id="aqwidget_html_rect-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">QWidget::rect</a></div><div class="ttdeci">rect</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html">Dtk::Widget::DSwitchButton</a></div><div class="ttdoc">DSwitchButton提供了切换样式的控件 用户可以打开和关闭一些功能</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8h_source.html#l00032">dswitchbutton.h:33</a></div></div>
-<div class="ttc" id="aqpainterpath_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_a49ca711e1075b0a116bee8dc6a6126ed"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#a49ca711e1075b0a116bee8dc6a6126ed">Dtk::Widget::DSwitchButton::setDisabledBackground</a></div><div class="ttdeci">void setDisabledBackground(QColor disabledBackground)</div><div class="ttdoc">设置禁用状态的背景色</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00166">dswitchbutton.cpp:166</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_option_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html">Dtk::Widget::DStyleOptionButton</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8h_source.html#l00068">dstyleoption.h:69</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_option_button_html_a631fa1701e12a907ed1a112c4b737c4e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_option_button.html#a631fa1701e12a907ed1a112c4b737c4e">Dtk::Widget::DStyleOptionButton::init</a></div><div class="ttdeci">void init(const QWidget *widget) override</div><div class="ttdoc">初始化Dtk::Widget::DSuggestButton样式，设置为 DStyleOptionSuggestButton::SuggestButton 。</div><div class="ttdef"><b>Definition:</b> <a href="dstyleoption_8cpp_source.html#l00152">dstyleoption.cpp:152</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html">Dtk::Widget::DSwitchButton</a></div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8h_source.html#l00031">dswitchbutton.h:32</a></div></div>
 <div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
 <div class="ttc" id="aqsize_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_af22aab5ff82030a4cd46205e32ccb50e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#af22aab5ff82030a4cd46205e32ccb50e">Dtk::Widget::DSwitchButton::disabledBackground</a></div><div class="ttdeci">QColor disabledBackground</div><div class="ttdoc">这个属性保持了禁用状态的背景色</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8h_source.html#l00001">dswitchbutton.h:38</a></div></div>
-<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
-<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
-<div class="ttc" id="aqmouseevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a></div></div>
+<div class="ttc" id="aqstyleoption_html_initFrom"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstyleoption.html#initFrom">QStyleOption::initFrom</a></div><div class="ttdeci">void initFrom(const QWidget *widget)</div></div>
+<div class="ttc" id="aqabstractbutton_html_checked-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html#checked-prop">QAbstractButton::isChecked</a></div><div class="ttdeci">bool isChecked() const const</div></div>
 <div class="ttc" id="adobject_8h_html_ad638ba34d44d91bad5dd9f86ed9035c9"><div class="ttname"><a href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a></div><div class="ttdeci">#define D_D(Class)</div><div class="ttdoc">这个宏用于公开类中，它定义了一个名字为 d 的变量存储 d_func() 的返回值。用于在公开 类中需要访问私有类的数据成员的函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00029">dobject.h:29</a></div></div>
-<div class="ttc" id="aqvariantanimation_html_valueChanged"><div class="ttname"><a href="https://doc.qt.io/qt-5/qvariantanimation.html#valueChanged">QVariantAnimation::valueChanged</a></div><div class="ttdeci">void valueChanged(const QVariant &amp;value)</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_a18b1870fcad937097d196ef0f96cf3f6"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#a18b1870fcad937097d196ef0f96cf3f6">Dtk::Widget::DSwitchButton::enabledBackground</a></div><div class="ttdeci">QColor enabledBackground</div><div class="ttdoc">这个属性保持启用状态的背景色</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8h_source.html#l00001">dswitchbutton.h:37</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_abc33268bb7f015b3e05b238f00e6d020"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#abc33268bb7f015b3e05b238f00e6d020">Dtk::Widget::DSwitchButton::setEnabledBackground</a></div><div class="ttdeci">void setEnabledBackground(QColor enabledBackground)</div><div class="ttdoc">设置启用状态的背景色</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00155">dswitchbutton.cpp:155</a></div></div>
-<div class="ttc" id="aqcolor_html_setAlpha"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html#setAlpha">QColor::setAlpha</a></div><div class="ttdeci">void setAlpha(int alpha)</div></div>
-<div class="ttc" id="adobject_8h_html_aba4e2dce37eda69f485ea50d533f0a1c"><div class="ttname"><a href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a></div><div class="ttdeci">#define D_DC(Class)</div><div class="ttdoc">同 D_D，用在公开类加了 const 修饰符的成员函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00031">dobject.h:31</a></div></div>
-<div class="ttc" id="aqwidget_html_maximumSize-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#maximumSize-prop">QWidget::setMaximumSize</a></div><div class="ttdeci">void setMaximumSize(const QSize &amp;)</div></div>
-<div class="ttc" id="aqwidget_html_enabled-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#enabled-prop">QWidget::isEnabled</a></div><div class="ttdeci">bool isEnabled() const const</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_a9c3e8008c2b8b7bf6e694bbc7e2faf65"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#a9c3e8008c2b8b7bf6e694bbc7e2faf65">Dtk::Widget::DSwitchButton::checked</a></div><div class="ttdeci">bool checked</div><div class="ttdoc">这个属性保持开关是否打开或关闭</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8h_source.html#l00001">dswitchbutton.h:36</a></div></div>
-<div class="ttc" id="aqpainterpath_html_closeSubpath"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html#closeSubpath">QPainterPath::closeSubpath</a></div><div class="ttdeci">void closeSubpath()</div></div>
-<div class="ttc" id="aqwidget_html_height-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#height-prop">QWidget::height</a></div><div class="ttdeci">height</div></div>
-<div class="ttc" id="aqvariantanimation_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qvariantanimation.html">QVariantAnimation</a></div></div>
-<div class="ttc" id="aqobject_html_objectName-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">QObject::setObjectName</a></div><div class="ttdeci">void setObjectName(const QString &amp;name)</div></div>
+<div class="ttc" id="aqabstractbutton_html_toggled"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html#toggled">QAbstractButton::toggled</a></div><div class="ttdeci">void toggled(bool checked)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_ad9c9175a588f2357227f5d66825be451"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#ad9c9175a588f2357227f5d66825be451">Dtk::Widget::DSwitchButton::initStyleOption</a></div><div class="ttdeci">void initStyleOption(DStyleOptionButton *option) const</div><div class="ttdoc">DSwitchButton::initStyleOption 初始化(用于继承的)抽象按钮对象,后面用于 DStylePainter 绘画 DStyle::CE_SwitchButton 枚举</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00073">dswitchbutton.cpp:73</a></div></div>
+<div class="ttc" id="aqwidget_html_style"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#style">QWidget::style</a></div><div class="ttdeci">QStyle * style() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_aeeda850f31c37c33105e03dc7bfe80d2"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#aeeda850f31c37c33105e03dc7bfe80d2">Dtk::Widget::DSwitchButton::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *e) Q_DECL_OVERRIDE</div><div class="ttdoc">DSwitchButton::paintEvent 绘画处理</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00059">dswitchbutton.cpp:59</a></div></div>
+<div class="ttc" id="adobject_8h_html_a8b1f6c1673a4186b6629d554a7eff35c"><div class="ttname"><a href="dobject_8h.html#a8b1f6c1673a4186b6629d554a7eff35c">D_Q</a></div><div class="ttdeci">#define D_Q(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了一个名字为 q 的变量存储 q_func() 的返回值。用于在私有 类中需要调用公开类的成员函数时。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00030">dobject.h:30</a></div></div>
+<div class="ttc" id="aqwidget_html_focus-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#focus-prop">QWidget::hasFocus</a></div><div class="ttdeci">bool hasFocus() const const</div></div>
 <div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_a3ca08e2e11f42fd05b85bd7a45e6f808"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808">Dtk::Widget::DSwitchButton::DSwitchButton</a></div><div class="ttdeci">DSwitchButton(QWidget *parent=Q_NULLPTR)</div><div class="ttdoc">DSwitchButton的构造函数</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00059">dswitchbutton.cpp:59</a></div></div>
-<div class="ttc" id="aqrectf_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_theme_manager_html_aa6bf144312e09b8daf7ed302e561d7ab"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">Dtk::Widget::DThemeManager::registerWidget</a></div><div class="ttdeci">static void registerWidget(QWidget *widget, QStringList propertys=QStringList())</div><div class="ttdoc">DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...</div><div class="ttdef"><b>Definition:</b> <a href="dthememanager_8cpp_source.html#l00523">dthememanager.cpp:523</a></div></div>
-<div class="ttc" id="aqwidget_html_width-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#width-prop">QWidget::width</a></div><div class="ttdeci">width</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_a40b9699c3d66e5484ab2e57d7197de32"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#a40b9699c3d66e5484ab2e57d7197de32">Dtk::Widget::DSwitchButton::setChecked</a></div><div class="ttdeci">void setChecked(bool arg)</div><div class="ttdoc">设置开启状态</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00130">dswitchbutton.cpp:130</a></div></div>
-<div class="ttc" id="aqevent_html_accept"><div class="ttname"><a href="https://doc.qt.io/qt-5/qevent.html#accept">QEvent::accept</a></div><div class="ttdeci">void accept()</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_helper_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_helper.html">Dtk::Widget::DStyleHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyle_8h_source.html#l00308">dstyle.h:309</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_switch_button_html_ae93ad7c466bc6cc6791cc6154e356576"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_switch_button.html#ae93ad7c466bc6cc6791cc6154e356576">Dtk::Widget::DSwitchButton::sizeHint</a></div><div class="ttdeci">QSize sizeHint() const Q_DECL_OVERRIDE</div><div class="ttdoc">DSwitchButton::sizeHint 初始化控件矩形大小（在绘画之前）</div><div class="ttdef"><b>Definition:</b> <a href="dswitchbutton_8cpp_source.html#l00045">dswitchbutton.cpp:45</a></div></div>
+<div class="ttc" id="aqabstractbutton_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_core_1_1_d_object_html"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></div><div class="ttdoc">deepin-tool-kit 中所有公开类的祖先类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00037">dobject.h:38</a></div></div>
+<div class="ttc" id="aqstyle_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstyle.html">QStyle</a></div></div>
+<div class="ttc" id="aqwidget_html_size-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#size-prop">QWidget::size</a></div><div class="ttdeci">size</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_painter_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style_painter.html">Dtk::Widget::DStylePainter</a></div><div class="ttdef"><b>Definition:</b> <a href="dstyle_8h_source.html#l00359">dstyle.h:360</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dswitchbutton.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:52 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

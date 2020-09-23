@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$struct_d_window_handle_1_1_w_m_blur_area.html" title="描述窗口背景模糊区域的数据结构，包含位置、大小、圆角半径等信息" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,177,39"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_video_format_proxy.html" title="DVideoWidget使用的封装视频帧的代理类" alt="" coords="225,5,416,47"/>
 </map>

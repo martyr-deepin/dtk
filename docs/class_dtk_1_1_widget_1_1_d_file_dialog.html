@@ -148,6 +148,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a680c09ef0f605f371f703eef15c7019e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_file_dialog.html#a680c09ef0f605f371f703eef15c7019e">addLineEdit</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, const <a class="el" href="struct_dtk_1_1_widget_1_1_d_file_dialog_1_1_d_line_edit_options.html">DLineEditOptions</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qfiledialog.html#options-prop">options</a>)</td></tr>
 <tr class="memdesc:a680c09ef0f605f371f703eef15c7019e"><td class="mdescLeft">&#160;</td><td class="mdescRight">为文件选择框追加一个输入框  <a href="class_dtk_1_1_widget_1_1_d_file_dialog.html#a680c09ef0f605f371f703eef15c7019e">更多...</a><br /></td></tr>
 <tr class="separator:a680c09ef0f605f371f703eef15c7019e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91aa106be8caf503f79bb29b4e63d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_file_dialog.html#af91aa106be8caf503f79bb29b4e63d95">setAllowMixedSelection</a> (bool on)</td></tr>
+<tr class="memdesc:af91aa106be8caf503f79bb29b4e63d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow mixed selection  <a href="class_dtk_1_1_widget_1_1_d_file_dialog.html#af91aa106be8caf503f79bb29b4e63d95">更多...</a><br /></td></tr>
+<tr class="separator:af91aa106be8caf503f79bb29b4e63d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6d99ab9a713d2235683dfbc3153394"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_file_dialog.html#a2e6d99ab9a713d2235683dfbc3153394">getComboBoxValue</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text) const</td></tr>
 <tr class="memdesc:a2e6d99ab9a713d2235683dfbc3153394"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得所追加的额外多选框的值  <a href="class_dtk_1_1_widget_1_1_d_file_dialog.html#a2e6d99ab9a713d2235683dfbc3153394">更多...</a><br /></td></tr>
 <tr class="separator:a2e6d99ab9a713d2235683dfbc3153394"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1952,7 +1955,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_file_dialog.html#ad98d311f59a02325aed3c06fcf7e65dc" title="为文件选择框追加一个下拉单选框">addComboBox()</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dfiledialog_8cpp_source.html">dfiledialog.cpp</a> 第 <a class="el" href="dfiledialog_8cpp_source.html#l00144">144</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dfiledialog_8cpp_source.html">dfiledialog.cpp</a> 第 <a class="el" href="dfiledialog_8cpp_source.html#l00159">159</a> 行定义.</p>
 
 </div>
 </div>
@@ -1981,7 +1984,37 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_file_dialog.html#a67b80cf10d7e2ae28a7f6276e201e5cf" title="为文件选择框追加一个输入框">addLineEdit()</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dfiledialog_8cpp_source.html">dfiledialog.cpp</a> 第 <a class="el" href="dfiledialog_8cpp_source.html#l00158">158</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dfiledialog_8cpp_source.html">dfiledialog.cpp</a> 第 <a class="el" href="dfiledialog_8cpp_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af91aa106be8caf503f79bb29b4e63d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91aa106be8caf503f79bb29b4e63d95">&#9670;&nbsp;</a></span>setAllowMixedSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DFileDialog::setAllowMixedSelection </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow mixed selection </p>
+<p>Allow user choose files and folders at the same time when selecting multiple files. By default user can only select files (folder not included) when selecting multiple files.</p>
+<p>Notice that this option only works when file mode is QFileDialog::ExistingFiles</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on</td><td>enable this feature or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dfiledialog_8cpp_source.html">dfiledialog.cpp</a> 第 <a class="el" href="dfiledialog_8cpp_source.html#l00145">145</a> 行定义.</p>
 
 </div>
 </div>
@@ -1995,7 +2028,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_file_dialog.html">DFileDialog</a></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:54 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

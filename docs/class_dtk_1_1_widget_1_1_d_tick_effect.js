@@ -14,7 +14,6 @@ var class_dtk_1_1_widget_1_1_d_tick_effect =
     [ "play", "class_dtk_1_1_widget_1_1_d_tick_effect.html#aa795388dd7eae0f6cf965d969e1d4312", null ],
     [ "resume", "class_dtk_1_1_widget_1_1_d_tick_effect.html#a2dc1c90c70dcba4b03b18c775d279048", null ],
     [ "setDirection", "class_dtk_1_1_widget_1_1_d_tick_effect.html#a4d185600df54d765f731e795c70e407d", null ],
-    [ "setDuration", "class_dtk_1_1_widget_1_1_d_tick_effect.html#a6d7d607358d91d5434ca4aa2e2fe17e1", null ],
     [ "setFixedPixelMove", "class_dtk_1_1_widget_1_1_d_tick_effect.html#a134b63a69a53847eb43c95ac786abdd2", null ],
     [ "stateChanged", "class_dtk_1_1_widget_1_1_d_tick_effect.html#a5e8520b960e1881477e902df36ab096c", null ],
     [ "stop", "class_dtk_1_1_widget_1_1_d_tick_effect.html#a35bce1b16a87f5f815a7032c6f54d90c", null ]

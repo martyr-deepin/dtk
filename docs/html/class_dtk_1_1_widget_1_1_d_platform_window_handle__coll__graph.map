@@ -1,4 +1,5 @@
 <map id="Dtk::Widget::DPlatformWindowHandle" name="Dtk::Widget::DPlatformWindowHandle">
-<area shape="rect" id="node1" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间..." alt="" coords="5,80,231,121"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="81,5,155,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,231,196"/>
+<area shape="rect" id="node2" href="$class_d_platform_handle.html" title=" " alt="" coords="51,80,185,107"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="81,5,155,32"/>
 </map>

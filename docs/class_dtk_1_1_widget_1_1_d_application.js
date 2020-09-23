@@ -11,6 +11,7 @@ var class_dtk_1_1_widget_1_1_d_application =
     [ "applicationDescription", "class_dtk_1_1_widget_1_1_d_application.html#aa1fa4e5069d15bb9f558777026b7ab85", null ],
     [ "applicationHomePage", "class_dtk_1_1_widget_1_1_d_application.html#af7e054564604ade2c784c826350deddb", null ],
     [ "applicationLicense", "class_dtk_1_1_widget_1_1_d_application.html#a12b24d7804c183d8504153300ed672b3", null ],
+    [ "autoActivateWindows", "class_dtk_1_1_widget_1_1_d_application.html#abd1c5d51f9e5a2cf05d18f2f7b4093f7", null ],
     [ "handleAboutAction", "class_dtk_1_1_widget_1_1_d_application.html#accb090e6df414257e3407f6839602597", null ],
     [ "handleHelpAction", "class_dtk_1_1_widget_1_1_d_application.html#a41cb5f55a6b0f46363078f83db87f699", null ],
     [ "handleQuitAction", "class_dtk_1_1_widget_1_1_d_application.html#ace9648b8e37a9fc8f7966219a5c86ff4", null ],
@@ -27,6 +28,7 @@ var class_dtk_1_1_widget_1_1_d_application =
     [ "setApplicationDescription", "class_dtk_1_1_widget_1_1_d_application.html#a3a0ce60dee6102a01885ce9511696079", null ],
     [ "setApplicationHomePage", "class_dtk_1_1_widget_1_1_d_application.html#a428f462f7ec959ea00a76210c804c973", null ],
     [ "setApplicationLicense", "class_dtk_1_1_widget_1_1_d_application.html#af51c11d1b4b9541e7f919e2ac023964a", null ],
+    [ "setAutoActivateWindows", "class_dtk_1_1_widget_1_1_d_application.html#a281d592fb0f94e73d39f0beed1f2cf1c", null ],
     [ "setProductIcon", "class_dtk_1_1_widget_1_1_d_application.html#a217d16a4eda990f46ba3ce1e7af8935d", null ],
     [ "setProductName", "class_dtk_1_1_widget_1_1_d_application.html#aba4864fec8d771f8921e0e300cd83ac1", null ],
     [ "setSingleInstance", "class_dtk_1_1_widget_1_1_d_application.html#ae788bd3d17b18dc747e2065f82a3337b", null ],
@@ -39,6 +41,7 @@ var class_dtk_1_1_widget_1_1_d_application =
     [ "visibleMenuCheckboxWidget", "class_dtk_1_1_widget_1_1_d_application.html#a0a16216c5f8c1c9649b8dbc61183a9d1", null ],
     [ "visibleMenuIcon", "class_dtk_1_1_widget_1_1_d_application.html#a6bfc6f55467ee9615ce95662a1c0c152", null ],
     [ "visibleMenuShortcutText", "class_dtk_1_1_widget_1_1_d_application.html#a1e3de2281ab2ccf5efd0facb06317635", null ],
+    [ "autoActivateWindows", "class_dtk_1_1_widget_1_1_d_application.html#a0d6c3011b71ed1619d9c62db1cff4448", null ],
     [ "visibleMenuCheckboxWidget", "class_dtk_1_1_widget_1_1_d_application.html#aec987db796b94fc0ac12eecb67648ed0", null ],
     [ "visibleMenuIcon", "class_dtk_1_1_widget_1_1_d_application.html#ac89f98b0407800e4ad009f9c1f7b675b", null ],
     [ "visibleMenuShortcutText", "class_dtk_1_1_widget_1_1_d_application.html#af016d8d5ee0801b3569a2e406b03a16a", null ]

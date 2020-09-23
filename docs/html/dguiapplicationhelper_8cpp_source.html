@@ -257,8 +257,8 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper_8cpp_source.html
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    QWindowSystemInterfacePrivate::ThemeChangeEvent <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#event">event</a>(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    QGuiApplicationPrivate::processThemeChanged(&amp;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#event">event</a>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    QWindowSystemInterfacePrivate::ThemeChangeEvent event(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    QGuiApplicationPrivate::processThemeChanged(&amp;event);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    Q_EMIT q-&gt;themeTypeChanged(q-&gt;toColorType(app-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">palette</a>()));</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
@@ -982,7 +982,6 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper_8cpp_source.html
 <div class="ttc" id="aclass_d_gui_application_helper_html_a299390a91b1c3a5aebdccba40d424c92"><div class="ttname"><a href="class_d_gui_application_helper.html#a299390a91b1c3a5aebdccba40d424c92">DGuiApplicationHelper::setSingleInstanceInterval</a></div><div class="ttdeci">static void setSingleInstanceInterval(int interval=3000)</div><div class="ttdoc">DGuiApplicationHelper::setSingelInstanceInterval设置从QLocalServer获取消息的等待时间</div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l00971">dguiapplicationhelper.cpp:971</a></div></div>
 <div class="ttc" id="aqcolor_html_getRgb"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html#getRgb">QColor::getRgb</a></div><div class="ttdeci">void getRgb(int *r, int *g, int *b, int *a) const const</div></div>
 <div class="ttc" id="aclass_d_gui_application_helper_html_a9a100f0f248307b7cc2df722a8aff68e"><div class="ttname"><a href="class_d_gui_application_helper.html#a9a100f0f248307b7cc2df722a8aff68e">DGuiApplicationHelper::setPaletteType</a></div><div class="ttdeci">void setPaletteType(ColorType paletteType)</div><div class="ttdoc">DGuiApplicationHelper::setPaletteType设置调色板类型</div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l01005">dguiapplicationhelper.cpp:1005</a></div></div>
-<div class="ttc" id="aqobject_html_event"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#event">QObject::event</a></div><div class="ttdeci">virtual bool event(QEvent *e)</div></div>
 <div class="ttc" id="aqobject_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a></div></div>
 <div class="ttc" id="aclass_d_gui_application_helper_html_ad47af29164477016275cafc944c28783"><div class="ttname"><a href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783">DGuiApplicationHelper::windowTheme</a></div><div class="ttdeci">DPlatformTheme * windowTheme(QWindow *window) const</div><div class="ttdoc">DGuiApplicationHelper::windowTheme返回 QWindow 主题对象</div><div class="ttdef"><b>Definition:</b> <a href="dguiapplicationhelper_8cpp_source.html#l00722">dguiapplicationhelper.cpp:722</a></div></div>
 <div class="ttc" id="aqstring_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a></div></div>
@@ -1043,7 +1042,7 @@ $(document).ready(function(){initNavTree('dguiapplicationhelper_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_f1a11d12171d66e86c8e928f2778dd27.html">src</a></li><li class="navelem"><b>dguiapplicationhelper.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 16:02:19 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:33:10 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

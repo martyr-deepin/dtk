@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('md_dtkwidget__c_h_a_n_g_e_l_o_g.html',
 </ul>
 <h4>Bug Fixes</h4>
 <ul>
-<li>doc for <a class="el" href="class_d_text_button.html" title="一个 DDE 风格按钮控件。">DTextButton</a> (<a href="https://github.com/linuxdeepin/dtkwidget/commit/23160de65021718de268cfe715191610357d12e4">23160de6</a>)</li>
+<li>doc for DTextButton (<a href="https://github.com/linuxdeepin/dtkwidget/commit/23160de65021718de268cfe715191610357d12e4">23160de6</a>)</li>
 <li>doc for <a class="el" href="class_d_expand_group.html" title="封装了一组 DBaseExpand 控件(当然也可以是其子类), 并保证同一时间只有一个 DBaseExpand 处于展开状态">DExpandGroup</a> (<a href="https://github.com/linuxdeepin/dtkwidget/commit/597f25c16aaa1d0744b0ad405511845794209411">597f25c1</a>)</li>
 <li><b><a class="el" href="class_d_window_manager_helper.html" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装...">DWindowManagerHelper</a>:</b> return currentWorkspaceWindows is empty (<a href="https://github.com/linuxdeepin/dtkwidget/commit/ec478aa0ae4d9b4cdbba7f503d3f05b24334a3fc">ec478aa0</a>)</li>
 </ul>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('md_dtkwidget__c_h_a_n_g_e_l_o_g.html',
 <li>run tag script error (<a href="https://github.com/linuxdeepin/dtkwidget/commit/5cdfd2f387d4bfb6c3e463f51cdbef643d036f89">5cdfd2f3</a>)</li>
 <li>repair version number error (<a href="https://github.com/linuxdeepin/dtkwidget/commit/3ce05b0ef3076fb3a9187cd02ef6422e37c6067a">3ce05b0e</a>)</li>
 <li><b>DBlurEffectWidget:</b> not refresh when update mask alpha (<a href="https://github.com/linuxdeepin/dtkwidget/commit/492b2b93a2ce0b656c4ff9145c74aebb4ff034d8">492b2b93</a>)</li>
-<li><b>DImageButton:</b> remove wrong sizehent (<a href="https://github.com/linuxdeepin/dtkwidget/commit/e5cf29f793a7fc1469ccec766fe74a39b3ca48d2">e5cf29f7</a>)</li>
+<li><b><a class="el" href="class_d_image_button.html" title="在Deepin的程序设计中，用到了大量基于图片的按钮，而Qt的QPushButton不能方便的只使用图片， 每个项目都存在相同的自绘图片的按钮控件，所以Dtk提供了基于图片来构建的按钮。">DImageButton</a>:</b> remove wrong sizehent (<a href="https://github.com/linuxdeepin/dtkwidget/commit/e5cf29f793a7fc1469ccec766fe74a39b3ca48d2">e5cf29f7</a>)</li>
 <li><b>DPasswordEditAnimated:</b> alert visible control (<a href="https://github.com/linuxdeepin/dtkwidget/commit/eb55642ac2a8b397f5013d4332c3d88cf5bf98fe">eb55642a</a>)</li>
 <li><b>trashMgr:</b> Will remove broken symlink now (<a href="https://github.com/linuxdeepin/dtkwidget/commit/481ba0a0dc875963d90cca3948029a6e577363fb">481ba0a0</a>)</li>
 </ul>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('md_dtkwidget__c_h_a_n_g_e_l_o_g.html',
 <li>auto hide title when fullscreen (<a href="https://github.com/linuxdeepin/dtkwidget/commit/3e2e2921d8c22c9feee7171c11e22551bcb668d5">3e2e2921</a>)</li>
 <li>add propertys maskColor and flashColor of DTabBar (<a href="https://github.com/linuxdeepin/dtkwidget/commit/7dd2e8b4cee7b6fe16e3ccb2bb12d9cff65f2a2b">7dd2e8b4</a>)</li>
 <li>support drag tab to other for DTabBar (<a href="https://github.com/linuxdeepin/dtkwidget/commit/f674947255ad0d0158ec3cd8d5dd9f6927bad787">f6749472</a>)</li>
-<li>add DToast (<a href="https://github.com/linuxdeepin/dtkwidget/commit/c4d3f48fba40df0b8b31932e926b767b44ace6bd">c4d3f48f</a>)</li>
+<li>add <a class="el" href="class_d_toast.html" title="提供应用内通知的 Tooltip，类似安卓的 Toast。">DToast</a> (<a href="https://github.com/linuxdeepin/dtkwidget/commit/c4d3f48fba40df0b8b31932e926b767b44ace6bd">c4d3f48f</a>)</li>
 <li>add window title (<a href="https://github.com/linuxdeepin/dtkwidget/commit/e7cffb03466ab45562db4afad42422b62cad557c">e7cffb03</a>)</li>
 <li>not set AA_DontCreateNativeWidgetSiblings if dxcb version greater then 1.1.5 (<a href="https://github.com/linuxdeepin/dtkwidget/commit/5b3b4b5eab4c96d46b444035e81124f14307b98b">5b3b4b5e</a>)</li>
 <li>set version form changelog (<a href="https://github.com/linuxdeepin/dtkwidget/commit/416f2e64a42249ad8476a9ee2416b9fd07f2ea73">416f2e64</a>)</li>
@@ -470,7 +470,7 @@ $(document).ready(function(){initNavTree('md_dtkwidget__c_h_a_n_g_e_l_o_g.html',
 <ul>
 <li>add shortcut to DMainWindow ([5e9d5b6c](5e9d5b6c))</li>
 <li>add F1 shortcut ([7e311564](7e311564))</li>
-<li>add setState to DImageButton ([fcf9c3ef](fcf9c3ef))</li>
+<li>add setState to <a class="el" href="class_d_image_button.html" title="在Deepin的程序设计中，用到了大量基于图片的按钮，而Qt的QPushButton不能方便的只使用图片， 每个项目都存在相同的自绘图片的按钮控件，所以Dtk提供了基于图片来构建的按钮。">DImageButton</a> ([fcf9c3ef](fcf9c3ef))</li>
 </ul>
 <p><a class="anchor" id="2.0.5"></a> </p><h2>2.0.5 (2017-11-06)</h2>
 <h4>Features</h4>
@@ -534,7 +534,7 @@ $(document).ready(function(){initNavTree('md_dtkwidget__c_h_a_n_g_e_l_o_g.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2020年 九月 23日 星期三 16:02:20 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:33:11 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

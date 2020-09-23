@@ -33,6 +33,7 @@ var class_dtk_1_1_widget_1_1_d_crumb_edit =
     [ "crumbRemoved", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#ae80c795b274e26efa4dec19c37776548", null ],
     [ "crumbTextFormat", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a4cb2f55c583ebea4d0426c0363e7a5f7", null ],
     [ "dualClickMakeCrumb", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a678d27a72845d2231917e62286fb6c7e", null ],
+    [ "event", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#aa8f28a64f46741f55c5a8c1f2a820fdc", null ],
     [ "focusOutEvent", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#ad1f072f18141b3e32da0b64c6417f64c", null ],
     [ "insertCrumb", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a6016d5408f8e951e7b64adeaefcf4259", null ],
     [ "insertCrumb", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a9ab6bbe2734a8a4e167385c0e25418b9", null ],

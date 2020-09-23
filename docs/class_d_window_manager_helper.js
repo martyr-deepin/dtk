@@ -38,7 +38,7 @@ var class_d_window_manager_helper =
     [ "windowManagerChanged", "class_d_window_manager_helper.html#ac720042c080be23fc709f0a29bcfd48b", null ],
     [ "windowManagerName", "class_d_window_manager_helper.html#aa236fdabbf24bec87f6e0f6a7e4506e5", null ],
     [ "windowManagerNameString", "class_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3", null ],
-    [ "windowMotifWMHintsChanged", "class_d_window_manager_helper.html#aee57e14861a350e1a91204037bc5e6e3", null ],
+    [ "windowMotifWMHintsChanged", "class_d_window_manager_helper.html#a7c0926ee2657d9f90c544804b767c8c3", null ],
     [ "hasBlurWindow", "class_d_window_manager_helper.html#a578fb91ce8d8e2e8da4a5fab2289588f", null ],
     [ "hasComposite", "class_d_window_manager_helper.html#a077754f2223ef12dc66d46dc10386ac8", null ],
     [ "hasNoTitlebar", "class_d_window_manager_helper.html#abeae2e698f8eed570c5ad5fc79fb41ae", null ]

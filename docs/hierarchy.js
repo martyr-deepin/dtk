@@ -1,7 +1,10 @@
 var hierarchy =
 [
+    [ "Dtk::Widget::_DApplicationHelper", "class_dtk_1_1_widget_1_1___d_application_helper.html", null ],
     [ "_DGuiApplicationHelper", "class___d_gui_application_helper.html", null ],
     [ "Dtk::Widget::_DtkBuildVersion", "class_dtk_1_1_widget_1_1___dtk_build_version.html", null ],
+    [ "Dtk::Core::DThreadUtil::_TMP< ReturnType >", "class_dtk_1_1_core_1_1_d_thread_util_1_1___t_m_p.html", null ],
+    [ "Dtk::Core::DThreadUtil::_TMP< void >", "class_dtk_1_1_core_1_1_d_thread_util_1_1___t_m_p_3_01void_01_4.html", null ],
     [ "Dtk::Core::AbstractAppender", "class_dtk_1_1_core_1_1_abstract_appender.html", [
       [ "Dtk::Core::AbstractStringAppender", "class_dtk_1_1_core_1_1_abstract_string_appender.html", [
         [ "Dtk::Core::ConsoleAppender", "class_dtk_1_1_core_1_1_console_appender.html", null ],
@@ -11,6 +14,8 @@ var hierarchy =
         [ "Dtk::Core::OutputDebugAppender", "class_dtk_1_1_core_1_1_output_debug_appender.html", null ]
       ] ]
     ] ],
+    [ "Dtk::Core::DVtableHook::CheckCompatibleArguments< List1, List2 >", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_check_compatible_arguments.html", null ],
+    [ "Dtk::Core::DVtableHook::CheckCompatibleArguments< List, List >", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_check_compatible_arguments_3_01_list_00_01_list_01_4.html", null ],
     [ "dstyle::ColorUtils", "classdstyle_1_1_color_utils.html", null ],
     [ "dstyle::CommonHelper", "classdstyle_1_1_common_helper.html", null ],
     [ "Dtk::Core::CuteMessageLogger", "class_dtk_1_1_core_1_1_cute_message_logger.html", null ],
@@ -19,19 +24,44 @@ var hierarchy =
       [ "Dtk::Core::DTimeUnitFormatter", "class_dtk_1_1_core_1_1_d_time_unit_formatter.html", null ]
     ] ],
     [ "Dtk::Widget::DAnchorInfo", "struct_dtk_1_1_widget_1_1_d_anchor_info.html", null ],
+    [ "DArrowLineExpand", "class_d_arrow_line_expand.html", null ],
+    [ "DBaseExpand", "class_d_base_expand.html", [
+      [ "Dtk::Widget::DSwitchLineExpand", "class_dtk_1_1_widget_1_1_d_switch_line_expand.html", null ]
+    ] ],
     [ "DCircleProgress", "class_d_circle_progress.html", null ],
+    [ "DColoredProgressBar", "class_d_colored_progress_bar.html", null ],
+    [ "DColoredProgressBar", "class_d_colored_progress_bar_1_1_d_colored_progress_bar.html", null ],
     [ "Dtk::Widget::DFileDialog::DComboBoxOptions", "struct_dtk_1_1_widget_1_1_d_file_dialog_1_1_d_combo_box_options.html", null ],
     [ "DDBusCaller", "class_d_d_bus_caller.html", null ],
     [ "DDBusData", "class_d_d_bus_data.html", null ],
     [ "DDBusProperty", "class_d_d_bus_property.html", null ],
     [ "DDBusSender", "class_d_d_bus_sender.html", null ],
+    [ "Dtk::Core::DDesktopEntry", "class_dtk_1_1_core_1_1_d_desktop_entry.html", null ],
+    [ "Dtk::Core::DDesktopEntrySection", "class_dtk_1_1_core_1_1_d_desktop_entry_section.html", null ],
     [ "Dtk::Widget::DDesktopServices", "class_dtk_1_1_widget_1_1_d_desktop_services.html", null ],
     [ "DExpandGroup", "class_d_expand_group.html", null ],
+    [ "DExportedInterface", null, [
+      [ "CustomInterface", "class_custom_interface.html", null ]
+    ] ],
+    [ "Dtk::Core::DFileServices", "class_dtk_1_1_core_1_1_d_file_services.html", null ],
+    [ "Dtk::Widget::DFontSizeManager", "class_dtk_1_1_widget_1_1_d_font_size_manager.html", null ],
     [ "Dtk::Widget::DHiDPIHelper", "class_dtk_1_1_widget_1_1_d_hi_d_p_i_helper.html", null ],
+    [ "DImageButton", "class_d_image_button.html", null ],
     [ "Dtk::Widget::DFileDialog::DLineEditOptions", "struct_dtk_1_1_widget_1_1_d_file_dialog_1_1_d_line_edit_options.html", null ],
     [ "Dtk::Core::DLogManager", "class_dtk_1_1_core_1_1_d_log_manager.html", null ],
     [ "Dtk::Core::DUtil::DNotifyData", "struct_dtk_1_1_core_1_1_d_util_1_1_d_notify_data.html", null ],
     [ "Dtk::Core::DUtil::DNotifySender", "class_dtk_1_1_core_1_1_d_util_1_1_d_notify_sender.html", null ],
+    [ "DObject", null, [
+      [ "DFileDrag", "class_d_file_drag.html", null ],
+      [ "DFileDragClient", "class_d_file_drag_client.html", null ],
+      [ "DFileDragServer", "class_d_file_drag_server.html", null ],
+      [ "DGuiApplicationHelper", "class_d_gui_application_helper.html", [
+        [ "Dtk::Widget::DApplicationHelper", "class_dtk_1_1_widget_1_1_d_application_helper.html", null ]
+      ] ],
+      [ "DNativeSettings", "class_d_native_settings.html", [
+        [ "DPlatformTheme", "class_d_platform_theme.html", null ]
+      ] ]
+    ] ],
     [ "Dtk::Core::DObject", "class_dtk_1_1_core_1_1_d_object.html", [
       [ "DForeignWindow", "class_d_foreign_window.html", null ],
       [ "DRegionMonitor", "class_d_region_monitor.html", null ],
@@ -42,112 +72,136 @@ var hierarchy =
       ] ],
       [ "Dtk::Core::DFileSystemWatcher", "class_dtk_1_1_core_1_1_d_file_system_watcher.html", null ],
       [ "Dtk::Core::DFileWatcherManager", "class_dtk_1_1_core_1_1_d_file_watcher_manager.html", null ],
+      [ "Dtk::Core::DTrashManager", "class_dtk_1_1_core_1_1_d_trash_manager.html", [
+        [ "Dtk::Core::DTrashManager_", "class_dtk_1_1_core_1_1_d_trash_manager__.html", null ],
+        [ "Dtk::Widget::DTrashManager_", "class_dtk_1_1_widget_1_1_d_trash_manager__.html", null ]
+      ] ],
+      [ "Dtk::Core::DUtil::DExportedInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface.html", null ],
       [ "Dtk::Widget::DAbstractDialog", "class_dtk_1_1_widget_1_1_d_abstract_dialog.html", [
         [ "Dtk::Widget::DDialog", "class_dtk_1_1_widget_1_1_d_dialog.html", [
+          [ "Dtk::Widget::ChangeDDialog", "class_dtk_1_1_widget_1_1_change_d_dialog.html", null ],
           [ "Dtk::Widget::DAboutDialog", "class_dtk_1_1_widget_1_1_d_about_dialog.html", null ],
-          [ "Dtk::Widget::DInputDialog", "class_dtk_1_1_widget_1_1_d_input_dialog.html", null ]
+          [ "Dtk::Widget::DInputDialog", "class_dtk_1_1_widget_1_1_d_input_dialog.html", null ],
+          [ "Dtk::Widget::DPrintPreviewDialog", "class_dtk_1_1_widget_1_1_d_print_preview_dialog.html", null ]
         ] ],
         [ "Dtk::Widget::DSettingsDialog", "class_dtk_1_1_widget_1_1_d_settings_dialog.html", null ]
       ] ],
       [ "Dtk::Widget::DAbstractStackWidgetTransition", "class_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition.html", [
         [ "Dtk::Widget::DSlideStackWidgetTransition", "class_dtk_1_1_widget_1_1_d_slide_stack_widget_transition.html", null ]
       ] ],
+      [ "Dtk::Widget::DAlertControl", "class_dtk_1_1_widget_1_1_d_alert_control.html", null ],
       [ "Dtk::Widget::DApplication", "class_dtk_1_1_widget_1_1_d_application.html", null ],
+      [ "Dtk::Widget::DApplicationSettings", "class_dtk_1_1_widget_1_1_d_application_settings.html", null ],
       [ "Dtk::Widget::DArrowRectangle", "class_dtk_1_1_widget_1_1_d_arrow_rectangle.html", null ],
+      [ "Dtk::Widget::DBackgroundGroup", "class_dtk_1_1_widget_1_1_d_background_group.html", null ],
+      [ "Dtk::Widget::DBlurEffectGroup", "class_dtk_1_1_widget_1_1_d_blur_effect_group.html", null ],
       [ "Dtk::Widget::DBlurEffectWidget", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html", null ],
-      [ "Dtk::Widget::DBorderlessWidget", "class_dtk_1_1_widget_1_1_d_borderless_widget.html", [
-        [ "Dtk::Widget::DBorderlessWindow", "class_dtk_1_1_widget_1_1_d_borderless_window.html", null ]
-      ] ],
       [ "Dtk::Widget::DBoxWidget", "class_dtk_1_1_widget_1_1_d_box_widget.html", [
         [ "Dtk::Widget::DHBoxWidget", "class_dtk_1_1_widget_1_1_d_h_box_widget.html", null ],
         [ "Dtk::Widget::DVBoxWidget", "class_dtk_1_1_widget_1_1_d_v_box_widget.html", null ]
       ] ],
+      [ "Dtk::Widget::DButtonBox", "class_dtk_1_1_widget_1_1_d_button_box.html", null ],
+      [ "Dtk::Widget::DButtonBoxButton", "class_dtk_1_1_widget_1_1_d_button_box_button.html", null ],
       [ "Dtk::Widget::DCircleProgress", "class_dtk_1_1_widget_1_1_d_circle_progress.html", null ],
       [ "Dtk::Widget::DClipEffectWidget", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html", null ],
+      [ "Dtk::Widget::DColoredProgressBar", "class_dtk_1_1_widget_1_1_d_colored_progress_bar.html", null ],
       [ "Dtk::Widget::DCrumbEdit", "class_dtk_1_1_widget_1_1_d_crumb_edit.html", null ],
       [ "Dtk::Widget::DDoubleSpinBox", "class_dtk_1_1_widget_1_1_d_double_spin_box.html", null ],
+      [ "Dtk::Widget::DDrawerGroup", "class_dtk_1_1_widget_1_1_d_drawer_group.html", null ],
       [ "Dtk::Widget::DFileIconProvider", "class_dtk_1_1_widget_1_1_d_file_icon_provider.html", null ],
+      [ "Dtk::Widget::DFloatingWidget", "class_dtk_1_1_widget_1_1_d_floating_widget.html", [
+        [ "Dtk::Widget::DFloatingMessage", "class_dtk_1_1_widget_1_1_d_floating_message.html", null ]
+      ] ],
       [ "Dtk::Widget::DFlowLayout", "class_dtk_1_1_widget_1_1_d_flow_layout.html", null ],
-      [ "Dtk::Widget::DForeignWindow", "class_dtk_1_1_widget_1_1_d_foreign_window.html", null ],
+      [ "Dtk::Widget::DFrame", "class_dtk_1_1_widget_1_1_d_frame.html", [
+        [ "Dtk::Widget::DDrawer", "class_dtk_1_1_widget_1_1_d_drawer.html", [
+          [ "Dtk::Widget::DArrowLineDrawer", "class_dtk_1_1_widget_1_1_d_arrow_line_drawer.html", null ]
+        ] ],
+        [ "Dtk::Widget::DKeyLabel", "class_dtk_1_1_widget_1_1_d_key_label.html", null ],
+        [ "Dtk::Widget::DPrintPreviewWidget", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html", null ]
+      ] ],
       [ "Dtk::Widget::DGraphicsClipEffect", "class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html", null ],
-      [ "Dtk::Widget::DImageButton", "class_dtk_1_1_widget_1_1_d_image_button.html", [
+      [ "Dtk::Widget::DIconButton", "class_dtk_1_1_widget_1_1_d_icon_button.html", [
+        [ "Dtk::Widget::DDialogCloseButton", "class_dtk_1_1_widget_1_1_d_dialog_close_button.html", null ],
+        [ "Dtk::Widget::DFloatingButton", "class_dtk_1_1_widget_1_1_d_floating_button.html", null ],
         [ "Dtk::Widget::DWindowCloseButton", "class_dtk_1_1_widget_1_1_d_window_close_button.html", null ],
         [ "Dtk::Widget::DWindowMaxButton", "class_dtk_1_1_widget_1_1_d_window_max_button.html", null ],
         [ "Dtk::Widget::DWindowMinButton", "class_dtk_1_1_widget_1_1_d_window_min_button.html", null ],
-        [ "Dtk::Widget::DWindowOptionButton", "class_dtk_1_1_widget_1_1_d_window_option_button.html", null ]
+        [ "Dtk::Widget::DWindowOptionButton", "class_dtk_1_1_widget_1_1_d_window_option_button.html", null ],
+        [ "Dtk::Widget::DWindowQuitFullButton", "class_dtk_1_1_widget_1_1_d_window_quit_full_button.html", null ]
+      ] ],
+      [ "Dtk::Widget::DIpv4LineEdit", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html", null ],
+      [ "Dtk::Widget::DKeySequenceEdit", "class_dtk_1_1_widget_1_1_d_key_sequence_edit.html", [
+        [ "Dtk::Widget::KeySequenceEdit", "class_dtk_1_1_widget_1_1_key_sequence_edit.html", null ]
+      ] ],
+      [ "Dtk::Widget::DLabel", "class_dtk_1_1_widget_1_1_d_label.html", [
+        [ "Dtk::Widget::DTipLabel", "class_dtk_1_1_widget_1_1_d_tip_label.html", [
+          [ "Dtk::Widget::DToolTip", "class_dtk_1_1_widget_1_1_d_tool_tip.html", null ]
+        ] ]
       ] ],
       [ "Dtk::Widget::DLineEdit", "class_dtk_1_1_widget_1_1_d_line_edit.html", [
         [ "Dtk::Widget::DFileChooserEdit", "class_dtk_1_1_widget_1_1_d_file_chooser_edit.html", null ],
-        [ "Dtk::Widget::DIpv4LineEdit", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html", null ],
-        [ "Dtk::Widget::DPasswordEdit", "class_dtk_1_1_widget_1_1_d_password_edit.html", null ]
+        [ "Dtk::Widget::DPasswordEdit", "class_dtk_1_1_widget_1_1_d_password_edit.html", null ],
+        [ "Dtk::Widget::DSearchEdit", "class_dtk_1_1_widget_1_1_d_search_edit.html", null ]
       ] ],
       [ "Dtk::Widget::DListView", "class_dtk_1_1_widget_1_1_d_list_view.html", null ],
       [ "Dtk::Widget::DLoadingIndicator", "class_dtk_1_1_widget_1_1_d_loading_indicator.html", null ],
       [ "Dtk::Widget::DMainWindow", "class_dtk_1_1_widget_1_1_d_main_window.html", null ],
       [ "Dtk::Widget::DMPRISControl", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html", null ],
       [ "Dtk::Widget::DPageIndicator", "class_dtk_1_1_widget_1_1_d_page_indicator.html", null ],
-      [ "Dtk::Widget::DPasswdEditAnimated", "class_dtk_1_1_widget_1_1_d_passwd_edit_animated.html", null ],
       [ "Dtk::Widget::DPictureSequenceView", "class_dtk_1_1_widget_1_1_d_picture_sequence_view.html", null ],
-      [ "Dtk::Widget::DPushButton", "class_dtk_1_1_widget_1_1_d_push_button.html", null ],
-      [ "Dtk::Widget::DRegionMonitor", "class_dtk_1_1_widget_1_1_d_region_monitor.html", null ],
-      [ "Dtk::Widget::DSegmentedControl", "class_dtk_1_1_widget_1_1_d_segmented_control.html", null ],
+      [ "Dtk::Widget::DProgressBar", "class_dtk_1_1_widget_1_1_d_progress_bar.html", null ],
+      [ "Dtk::Widget::DSearchComboBox", "class_dtk_1_1_widget_1_1_d_search_combo_box.html", null ],
+      [ "Dtk::Widget::DShadowLine", "class_dtk_1_1_widget_1_1_d_shadow_line.html", null ],
       [ "Dtk::Widget::DSimpleListView", "class_dtk_1_1_widget_1_1_d_simple_list_view.html", null ],
+      [ "Dtk::Widget::DSlider", "class_dtk_1_1_widget_1_1_d_slider.html", null ],
       [ "Dtk::Widget::DSpinBox", "class_dtk_1_1_widget_1_1_d_spin_box.html", null ],
       [ "Dtk::Widget::DSpinner", "class_dtk_1_1_widget_1_1_d_spinner.html", null ],
       [ "Dtk::Widget::DStackWidget", "class_dtk_1_1_widget_1_1_d_stack_widget.html", null ],
+      [ "Dtk::Widget::DStyledItemDelegate", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html", null ],
       [ "Dtk::Widget::DSuggestButton", "class_dtk_1_1_widget_1_1_d_suggest_button.html", null ],
       [ "Dtk::Widget::DSwitchButton", "class_dtk_1_1_widget_1_1_d_switch_button.html", null ],
       [ "Dtk::Widget::DTabBar", "class_dtk_1_1_widget_1_1_d_tab_bar.html", null ],
       [ "Dtk::Widget::DTextEdit", "class_dtk_1_1_widget_1_1_d_text_edit.html", null ],
       [ "Dtk::Widget::DThemeManager", "class_dtk_1_1_widget_1_1_d_theme_manager.html", null ],
-      [ "Dtk::Widget::DThumbnailProvider", "class_dtk_1_1_widget_1_1_d_thumbnail_provider.html", null ],
       [ "Dtk::Widget::DTickEffect", "class_dtk_1_1_widget_1_1_d_tick_effect.html", null ],
       [ "Dtk::Widget::DTitlebar", "class_dtk_1_1_widget_1_1_d_titlebar.html", null ],
-      [ "Dtk::Widget::DToast", "class_dtk_1_1_widget_1_1_d_toast.html", null ],
-      [ "Dtk::Widget::DTrashManager", "class_dtk_1_1_widget_1_1_d_trash_manager.html", [
-        [ "Dtk::Widget::DTrashManager_", "class_dtk_1_1_widget_1_1_d_trash_manager__.html", null ]
-      ] ],
       [ "Dtk::Widget::DVideoWidget", "class_dtk_1_1_widget_1_1_d_video_widget.html", null ],
+      [ "Dtk::Widget::DViewItemAction", "class_dtk_1_1_widget_1_1_d_view_item_action.html", null ],
       [ "Dtk::Widget::DWaterProgress", "class_dtk_1_1_widget_1_1_d_water_progress.html", null ],
-      [ "Dtk::Widget::DWindowManagerHelper", "class_dtk_1_1_widget_1_1_d_window_manager_helper.html", [
-        [ "Dtk::Widget::DWindowManagerHelper_", "class_dtk_1_1_widget_1_1_d_window_manager_helper__.html", null ]
-      ] ],
       [ "DWindowManagerHelper", "class_d_window_manager_helper.html", [
         [ "DWindowManagerHelper_", "class_d_window_manager_helper__.html", null ]
-      ] ]
-    ] ],
-    [ "DObject", null, [
-      [ "DFileDrag", "class_d_file_drag.html", null ],
-      [ "DFileDragClient", "class_d_file_drag_client.html", null ],
-      [ "DFileDragServer", "class_d_file_drag_server.html", null ],
-      [ "DGuiApplicationHelper", "class_d_gui_application_helper.html", null ],
-      [ "DNativeSettings", "class_d_native_settings.html", [
-        [ "DPlatformTheme", "class_d_platform_theme.html", null ]
       ] ]
     ] ],
     [ "Dtk::Core::DPathBuf", "class_dtk_1_1_core_1_1_d_path_buf.html", null ],
     [ "Dtk::Core::DRecentData", "struct_dtk_1_1_core_1_1_d_recent_data.html", null ],
     [ "Dtk::Core::DRecentManager", "class_dtk_1_1_core_1_1_d_recent_manager.html", null ],
-    [ "DScrollArea", null, [
-      [ "Dtk::Widget::DListWidget", "class_dtk_1_1_widget_1_1_d_list_widget.html", null ]
-    ] ],
+    [ "DSegmentedControl", "class_d_segmented_control.html", null ],
     [ "Dtk::Core::DSingleton< T >", "class_dtk_1_1_core_1_1_d_singleton.html", null ],
     [ "Dtk::Core::DStandardPaths", "class_dtk_1_1_core_1_1_d_standard_paths.html", null ],
-    [ "DStyle", null, [
-      [ "chameleon::ChameleonStyle", "classchameleon_1_1_chameleon_style.html", null ]
-    ] ],
+    [ "Dtk::Widget::DStyleHelper", "class_dtk_1_1_widget_1_1_d_style_helper.html", null ],
     [ "Dtk::Widget::DStyleOption", "class_dtk_1_1_widget_1_1_d_style_option.html", [
+      [ "Dtk::Widget::DStyleOptionBackgroundGroup", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html", null ],
+      [ "Dtk::Widget::DStyleOptionButton", "class_dtk_1_1_widget_1_1_d_style_option_button.html", [
+        [ "Dtk::Widget::DStyleOptionButtonBoxButton", "class_dtk_1_1_widget_1_1_d_style_option_button_box_button.html", null ]
+      ] ],
+      [ "Dtk::Widget::DStyleOptionFloatingWidget", "class_dtk_1_1_widget_1_1_d_style_option_floating_widget.html", null ],
+      [ "Dtk::Widget::DStyleOptionIcon", "class_dtk_1_1_widget_1_1_d_style_option_icon.html", null ],
       [ "Dtk::Widget::DStyleOptionLineEdit", "class_dtk_1_1_widget_1_1_d_style_option_line_edit.html", null ],
-      [ "Dtk::Widget::DStyleOptionSuggestButton", "class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html", null ]
+      [ "Dtk::Widget::DStyleOptionViewItem", "class_dtk_1_1_widget_1_1_d_style_option_view_item.html", null ]
     ] ],
+    [ "DStyleOptionSuggestButton", "class_d_style_option_suggest_button.html", null ],
     [ "DSvgRenderer", "class_d_svg_renderer.html", null ],
     [ "Dtk::Core::DSysInfo", "class_dtk_1_1_core_1_1_d_sys_info.html", null ],
-    [ "DTextButton", "class_d_text_button.html", null ],
     [ "Dtk::Widget::DtkBuildVersion", "class_dtk_1_1_widget_1_1_dtk_build_version.html", null ],
+    [ "DToast", "class_d_toast.html", null ],
     [ "DVoxWidget", "class_d_vox_widget.html", null ],
-    [ "Dtk::Widget::DWindowGroupLeader", "class_dtk_1_1_widget_1_1_d_window_group_leader.html", null ],
+    [ "Dtk::Core::DVtableHook", "class_dtk_1_1_core_1_1_d_vtable_hook.html", null ],
     [ "DWindowGroupLeader", "class_d_window_group_leader.html", null ],
     [ "DWindowHandle", "class_d_window_handle.html", null ],
+    [ "Dtk::Core::DVtableHook::FunctionPointer< Func >", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer.html", null ],
+    [ "Dtk::Core::DVtableHook::FunctionPointer< Ret(Obj::*)(Args...) const >", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_01const_01_4.html", null ],
+    [ "Dtk::Core::DVtableHook::FunctionPointer< Ret(Obj::*)(Args...)>", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4.html", null ],
     [ "dstyle::GeometryUtils", "classdstyle_1_1_geometry_utils.html", null ],
     [ "dstyle::HiDPIHelper", "classdstyle_1_1_hi_d_p_i_helper.html", null ],
     [ "Dtk::Core::Logger", "class_dtk_1_1_core_1_1_logger.html", null ],
@@ -160,6 +214,9 @@ var hierarchy =
     [ "QCommonStylePrivate", null, [
       [ "dstyle::StylePrivate", "classdstyle_1_1_style_private.html", null ]
     ] ],
+    [ "QDBusContext", null, [
+      [ "Dtk::Core::DUtil::DExportedInterfaceDBusInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface_d_bus_interface.html", null ]
+    ] ],
     [ "QFileIconProvider", "https://doc.qt.io/qt-5/qfileiconprovider.html", [
       [ "Dtk::Widget::DFileIconProvider", "class_dtk_1_1_widget_1_1_d_file_icon_provider.html", null ]
     ] ],
@@ -170,6 +227,7 @@ var hierarchy =
       [ "DBuiltinIconEngine", "class_d_builtin_icon_engine.html", null ],
       [ "DIconEngine", "class_d_icon_engine.html", null ],
       [ "DIconProxyEngine", "class_d_icon_proxy_engine.html", null ],
+      [ "Dtk::Widget::DStyledIconEngine", "class_dtk_1_1_widget_1_1_d_styled_icon_engine.html", null ],
       [ "QSvgIconEngine", "class_q_svg_icon_engine.html", null ]
     ] ],
     [ "QIconLoaderEngineEntry", null, [
@@ -192,8 +250,11 @@ var hierarchy =
       [ "DFileDragClient", "class_d_file_drag_client.html", null ],
       [ "DFileDragServer", "class_d_file_drag_server.html", null ],
       [ "DGuiApplicationHelper", "class_d_gui_application_helper.html", null ],
+      [ "DMessageManager", "class_d_message_manager.html", null ],
       [ "DNativeSettings", "class_d_native_settings.html", null ],
-      [ "DPlatformHandle", "class_d_platform_handle.html", null ],
+      [ "DPlatformHandle", "class_d_platform_handle.html", [
+        [ "Dtk::Widget::DPlatformWindowHandle", "class_dtk_1_1_widget_1_1_d_platform_window_handle.html", null ]
+      ] ],
       [ "DRegionMonitor", "class_d_region_monitor.html", null ],
       [ "dstyle::PaletteExtended", "classdstyle_1_1_palette_extended.html", null ],
       [ "DTaskbarControl", "class_d_taskbar_control.html", null ],
@@ -208,21 +269,22 @@ var hierarchy =
       ] ],
       [ "Dtk::Core::DSettingsGroup", "class_dtk_1_1_core_1_1_d_settings_group.html", null ],
       [ "Dtk::Core::DSettingsOption", "class_dtk_1_1_core_1_1_d_settings_option.html", null ],
+      [ "Dtk::Core::DThreadUtil::FunctionCallProxy", "class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html", null ],
+      [ "Dtk::Core::DTrashManager", "class_dtk_1_1_core_1_1_d_trash_manager.html", null ],
+      [ "Dtk::Core::DUtil::DExportedInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface.html", null ],
+      [ "Dtk::Core::DUtil::DExportedInterfaceDBusInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface_d_bus_interface.html", null ],
       [ "Dtk::Widget::CrumbObjectInterface", "class_dtk_1_1_widget_1_1_crumb_object_interface.html", null ],
       [ "Dtk::Widget::DAbstractStackWidgetTransition", "class_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition.html", null ],
+      [ "Dtk::Widget::DAlertControl", "class_dtk_1_1_widget_1_1_d_alert_control.html", null ],
       [ "Dtk::Widget::DAnchorsBase", "class_dtk_1_1_widget_1_1_d_anchors_base.html", [
         [ "Dtk::Widget::DAnchors< T >", "class_dtk_1_1_widget_1_1_d_anchors.html", null ]
       ] ],
+      [ "Dtk::Widget::DApplicationSettings", "class_dtk_1_1_widget_1_1_d_application_settings.html", null ],
+      [ "Dtk::Widget::DDrawerGroup", "class_dtk_1_1_widget_1_1_d_drawer_group.html", null ],
       [ "Dtk::Widget::DEnhancedWidget", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html", null ],
-      [ "Dtk::Widget::DExpandGroup", "class_dtk_1_1_widget_1_1_d_expand_group.html", null ],
-      [ "Dtk::Widget::DPlatformWindowHandle", "class_dtk_1_1_widget_1_1_d_platform_window_handle.html", null ],
-      [ "Dtk::Widget::DRegionMonitor", "class_dtk_1_1_widget_1_1_d_region_monitor.html", null ],
       [ "Dtk::Widget::DSettingsWidgetFactory", "class_dtk_1_1_widget_1_1_d_settings_widget_factory.html", null ],
       [ "Dtk::Widget::DSimpleListItem", "class_dtk_1_1_widget_1_1_d_simple_list_item.html", null ],
       [ "Dtk::Widget::DThemeManager", "class_dtk_1_1_widget_1_1_d_theme_manager.html", null ],
-      [ "Dtk::Widget::DTrashManager", "class_dtk_1_1_widget_1_1_d_trash_manager.html", null ],
-      [ "Dtk::Widget::DWindowManagerHelper", "class_dtk_1_1_widget_1_1_d_window_manager_helper.html", null ],
-      [ "Dtk::Widget::FilterMouseMove", "class_dtk_1_1_widget_1_1_filter_mouse_move.html", null ],
       [ "DWindowManagerHelper", "class_d_window_manager_helper.html", null ],
       [ "QAbstractAnimation", "https://doc.qt.io/qt-5/qabstractanimation.html", [
         [ "dstyle::DStyleAnimation", "classdstyle_1_1_d_style_animation.html", [
@@ -233,10 +295,18 @@ var hierarchy =
           [ "dstyle::DProgressStyleAnimation", "classdstyle_1_1_d_progress_style_animation.html", null ]
         ] ]
       ] ],
+      [ "QAbstractItemDelegate", "https://doc.qt.io/qt-5/qabstractitemdelegate.html", [
+        [ "QStyledItemDelegate", "https://doc.qt.io/qt-5/qstyleditemdelegate.html", [
+          [ "Dtk::Widget::DStyledItemDelegate", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html", null ]
+        ] ]
+      ] ],
       [ "QAbstractItemModel", "https://doc.qt.io/qt-5/qabstractitemmodel.html", [
         [ "QAbstractListModel", "https://doc.qt.io/qt-5/qabstractlistmodel.html", [
           [ "Dtk::Widget::DVariantListModel", "class_dtk_1_1_widget_1_1_d_variant_list_model.html", null ]
         ] ]
+      ] ],
+      [ "QAction", "https://doc.qt.io/qt-5/qaction.html", [
+        [ "Dtk::Widget::DViewItemAction", "class_dtk_1_1_widget_1_1_d_view_item_action.html", null ]
       ] ],
       [ "QCoreApplication", "https://doc.qt.io/qt-5/qcoreapplication.html", [
         [ "QGuiApplication", "https://doc.qt.io/qt-5/qguiapplication.html", [
@@ -267,6 +337,9 @@ var hierarchy =
       [ "QStyle", "https://doc.qt.io/qt-5/qstyle.html", [
         [ "QCommonStyle", "https://doc.qt.io/qt-5/qcommonstyle.html", [
           [ "dstyle::Style", "classdstyle_1_1_style.html", null ],
+          [ "Dtk::Widget::DStyle", "class_dtk_1_1_widget_1_1_d_style.html", [
+            [ "chameleon::ChameleonStyle", "classchameleon_1_1_chameleon_style.html", null ]
+          ] ],
           [ "QProxyStyle", "https://doc.qt.io/qt-5/qproxystyle.html", [
             [ "NorwegianWoodStyle", "class_norwegian_wood_style.html", null ],
             [ "PopupMenuStyle", "class_popup_menu_style.html", null ]
@@ -278,47 +351,47 @@ var hierarchy =
         [ "DStylePlugin", "class_d_style_plugin.html", null ]
       ] ],
       [ "QThread", "https://doc.qt.io/qt-5/qthread.html", [
-        [ "DThumbnailProvider", "class_d_thumbnail_provider.html", null ],
-        [ "Dtk::Widget::DThumbnailProvider", "class_dtk_1_1_widget_1_1_d_thumbnail_provider.html", null ]
+        [ "DThumbnailProvider", "class_d_thumbnail_provider.html", null ]
       ] ],
       [ "QWidget", "https://doc.qt.io/qt-5/qwidget.html", [
+        [ "Dtk::Widget::ContentBox", "class_dtk_1_1_widget_1_1_content_box.html", null ],
         [ "Dtk::Widget::DArrowRectangle", "class_dtk_1_1_widget_1_1_d_arrow_rectangle.html", null ],
-        [ "Dtk::Widget::DBaseExpand", "class_dtk_1_1_widget_1_1_d_base_expand.html", [
-          [ "Dtk::Widget::DArrowLineExpand", "class_dtk_1_1_widget_1_1_d_arrow_line_expand.html", null ],
-          [ "Dtk::Widget::DSwitchLineExpand", "class_dtk_1_1_widget_1_1_d_switch_line_expand.html", null ]
-        ] ],
+        [ "Dtk::Widget::DBackgroundGroup", "class_dtk_1_1_widget_1_1_d_background_group.html", null ],
         [ "Dtk::Widget::DBlurEffectWidget", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html", null ],
-        [ "Dtk::Widget::DBorderlessWidget", "class_dtk_1_1_widget_1_1_d_borderless_widget.html", null ],
+        [ "Dtk::Widget::DButtonBox", "class_dtk_1_1_widget_1_1_d_button_box.html", null ],
         [ "Dtk::Widget::DCircleProgress", "class_dtk_1_1_widget_1_1_d_circle_progress.html", null ],
         [ "Dtk::Widget::DClipEffectWidget", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html", null ],
+        [ "Dtk::Widget::DFloatingWidget", "class_dtk_1_1_widget_1_1_d_floating_widget.html", null ],
+        [ "Dtk::Widget::DKeyWidget", "class_dtk_1_1_widget_1_1_d_key_widget.html", null ],
+        [ "Dtk::Widget::DLineEdit", "class_dtk_1_1_widget_1_1_d_line_edit.html", null ],
         [ "Dtk::Widget::DMovableTabWidget", "class_dtk_1_1_widget_1_1_d_movable_tab_widget.html", null ],
         [ "Dtk::Widget::DPageIndicator", "class_dtk_1_1_widget_1_1_d_page_indicator.html", null ],
-        [ "Dtk::Widget::DSegmentedControl", "class_dtk_1_1_widget_1_1_d_segmented_control.html", null ],
-        [ "Dtk::Widget::DSeparatorHorizontal", "class_dtk_1_1_widget_1_1_d_separator_horizontal.html", null ],
-        [ "Dtk::Widget::DSeparatorVertical", "class_dtk_1_1_widget_1_1_d_separator_vertical.html", null ],
+        [ "Dtk::Widget::DShadowLine", "class_dtk_1_1_widget_1_1_d_shadow_line.html", null ],
         [ "Dtk::Widget::DSimpleListView", "class_dtk_1_1_widget_1_1_d_simple_list_view.html", null ],
+        [ "Dtk::Widget::DSlider", "class_dtk_1_1_widget_1_1_d_slider.html", null ],
         [ "Dtk::Widget::DSpinner", "class_dtk_1_1_widget_1_1_d_spinner.html", null ],
         [ "Dtk::Widget::DStackWidget", "class_dtk_1_1_widget_1_1_d_stack_widget.html", null ],
         [ "Dtk::Widget::DTabBar", "class_dtk_1_1_widget_1_1_d_tab_bar.html", null ],
         [ "Dtk::Widget::DVideoWidget", "class_dtk_1_1_widget_1_1_d_video_widget.html", null ],
         [ "Dtk::Widget::DWaterProgress", "class_dtk_1_1_widget_1_1_d_water_progress.html", null ],
+        [ "Dtk::Widget::SliderStrip", "class_dtk_1_1_widget_1_1_slider_strip.html", null ],
         [ "QAbstractButton", "https://doc.qt.io/qt-5/qabstractbutton.html", [
+          [ "Dtk::Widget::DButtonBoxButton", "class_dtk_1_1_widget_1_1_d_button_box_button.html", null ],
+          [ "Dtk::Widget::DCommandLinkButton", "class_dtk_1_1_widget_1_1_d_command_link_button.html", null ],
+          [ "Dtk::Widget::DIconButton", "class_dtk_1_1_widget_1_1_d_icon_button.html", null ],
+          [ "Dtk::Widget::DSwitchButton", "class_dtk_1_1_widget_1_1_d_switch_button.html", null ],
           [ "QPushButton", "https://doc.qt.io/qt-5/qpushbutton.html", [
-            [ "Dtk::Widget::DBaseButton", "class_dtk_1_1_widget_1_1_d_base_button.html", null ],
-            [ "Dtk::Widget::DIconButton", "class_dtk_1_1_widget_1_1_d_icon_button.html", null ],
-            [ "Dtk::Widget::DLinkButton", "class_dtk_1_1_widget_1_1_d_link_button.html", null ],
-            [ "Dtk::Widget::DPushButton", "class_dtk_1_1_widget_1_1_d_push_button.html", null ],
             [ "Dtk::Widget::DSuggestButton", "class_dtk_1_1_widget_1_1_d_suggest_button.html", null ],
-            [ "Dtk::Widget::DTextButton", "class_dtk_1_1_widget_1_1_d_text_button.html", null ]
+            [ "Dtk::Widget::DWarningButton", "class_dtk_1_1_widget_1_1_d_warning_button.html", null ]
           ] ],
           [ "QToolButton", "https://doc.qt.io/qt-5/qtoolbutton.html", [
             [ "Dtk::Widget::DSegmentedHighlight", "class_dtk_1_1_widget_1_1_d_segmented_highlight.html", null ],
-            [ "Dtk::Widget::DTabBarAddButton", "class_dtk_1_1_widget_1_1_d_tab_bar_add_button.html", null ]
+            [ "Dtk::Widget::DToolButton", "class_dtk_1_1_widget_1_1_d_tool_button.html", null ]
           ] ]
         ] ],
         [ "QAbstractSlider", "https://doc.qt.io/qt-5/qabstractslider.html", [
           [ "QSlider", "https://doc.qt.io/qt-5/qslider.html", [
-            [ "Dtk::Widget::DSlider", "class_dtk_1_1_widget_1_1_d_slider.html", null ]
+            [ "Dtk::Widget::SpecialSlider", "class_dtk_1_1_widget_1_1_special_slider.html", null ]
           ] ]
         ] ],
         [ "QAbstractSpinBox", "https://doc.qt.io/qt-5/qabstractspinbox.html", [
@@ -328,6 +401,9 @@ var hierarchy =
           [ "QSpinBox", "https://doc.qt.io/qt-5/qspinbox.html", [
             [ "Dtk::Widget::DSpinBox", "class_dtk_1_1_widget_1_1_d_spin_box.html", null ]
           ] ]
+        ] ],
+        [ "QComboBox", "https://doc.qt.io/qt-5/qcombobox.html", [
+          [ "Dtk::Widget::DSearchComboBox", "class_dtk_1_1_widget_1_1_d_search_combo_box.html", null ]
         ] ],
         [ "QDialog", "https://doc.qt.io/qt-5/qdialog.html", [
           [ "Dtk::Widget::DAbstractDialog", "class_dtk_1_1_widget_1_1_d_abstract_dialog.html", null ],
@@ -339,19 +415,15 @@ var hierarchy =
           [ "DropArea", "class_drop_area.html", null ],
           [ "Dtk::Widget::ContentLoader", "class_dtk_1_1_widget_1_1_content_loader.html", null ],
           [ "Dtk::Widget::DBoxWidget", "class_dtk_1_1_widget_1_1_d_box_widget.html", null ],
+          [ "Dtk::Widget::DFrame", "class_dtk_1_1_widget_1_1_d_frame.html", null ],
+          [ "Dtk::Widget::DHorizontalLine", "class_dtk_1_1_widget_1_1_d_horizontal_line.html", null ],
           [ "Dtk::Widget::DMPRISControl", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html", null ],
-          [ "Dtk::Widget::DPasswdEditAnimated", "class_dtk_1_1_widget_1_1_d_passwd_edit_animated.html", null ],
-          [ "Dtk::Widget::DSearchEdit", "class_dtk_1_1_widget_1_1_d_search_edit.html", null ],
-          [ "Dtk::Widget::DSwitchButton", "class_dtk_1_1_widget_1_1_d_switch_button.html", null ],
           [ "Dtk::Widget::DTitlebar", "class_dtk_1_1_widget_1_1_d_titlebar.html", null ],
-          [ "Dtk::Widget::DToast", "class_dtk_1_1_widget_1_1_d_toast.html", null ],
+          [ "Dtk::Widget::DVerticalLine", "class_dtk_1_1_widget_1_1_d_vertical_line.html", null ],
           [ "QAbstractScrollArea", "https://doc.qt.io/qt-5/qabstractscrollarea.html", [
             [ "QAbstractItemView", "https://doc.qt.io/qt-5/qabstractitemview.html", [
               [ "QListView", "https://doc.qt.io/qt-5/qlistview.html", [
-                [ "Dtk::Widget::DListView", "class_dtk_1_1_widget_1_1_d_list_view.html", null ],
-                [ "QListWidget", "https://doc.qt.io/qt-5/qlistwidget.html", [
-                  [ "Dtk::Widget::DButtonList", "class_dtk_1_1_widget_1_1_d_button_list.html", null ]
-                ] ]
+                [ "Dtk::Widget::DListView", "class_dtk_1_1_widget_1_1_d_list_view.html", null ]
               ] ]
             ] ],
             [ "QGraphicsView", "https://doc.qt.io/qt-5/qgraphicsview.html", [
@@ -370,20 +442,26 @@ var hierarchy =
             [ "Dtk::Widget::DBaseLine", "class_dtk_1_1_widget_1_1_d_base_line.html", [
               [ "Dtk::Widget::DHeaderLine", "class_dtk_1_1_widget_1_1_d_header_line.html", [
                 [ "Dtk::Widget::ArrowHeaderLine", "class_dtk_1_1_widget_1_1_arrow_header_line.html", null ],
-                [ "Dtk::Widget::DSwitchHeaderLine", "class_dtk_1_1_widget_1_1_d_switch_header_line.html", null ]
+                [ "Dtk::Widget::DSwitchHeaderLine", "class_dtk_1_1_widget_1_1_d_switch_header_line.html", null ],
+                [ "Dtk::Widget::HeaderLine::ArrowHeaderLine", "class_dtk_1_1_widget_1_1_header_line_1_1_arrow_header_line.html", null ]
               ] ]
             ] ],
-            [ "Dtk::Widget::DImageButton", "class_dtk_1_1_widget_1_1_d_image_button.html", null ],
             [ "Dtk::Widget::DLabel", "class_dtk_1_1_widget_1_1_d_label.html", null ],
-            [ "Dtk::Widget::DShortcutEditLabel", "class_dtk_1_1_widget_1_1_d_shortcut_edit_label.html", null ]
+            [ "Dtk::Widget::DShortcutEditLabel", "class_dtk_1_1_widget_1_1_d_shortcut_edit_label.html", null ],
+            [ "MessageLabel", "class_message_label.html", null ]
           ] ]
         ] ],
         [ "QLineEdit", "https://doc.qt.io/qt-5/qlineedit.html", [
-          [ "Dtk::Widget::DLineEdit", "class_dtk_1_1_widget_1_1_d_line_edit.html", null ]
+          [ "Dtk::Widget::DIpv4LineEdit", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html", null ],
+          [ "Dtk::Widget::DKeySequenceEdit", "class_dtk_1_1_widget_1_1_d_key_sequence_edit.html", null ]
         ] ],
         [ "QMainWindow", "https://doc.qt.io/qt-5/qmainwindow.html", [
           [ "Dtk::Widget::DMainWindow", "class_dtk_1_1_widget_1_1_d_main_window.html", null ],
           [ "WidgetGallery", "class_widget_gallery.html", null ]
+        ] ],
+        [ "QProgressBar", "https://doc.qt.io/qt-5/qprogressbar.html", [
+          [ "Dtk::Widget::DColoredProgressBar", "class_dtk_1_1_widget_1_1_d_colored_progress_bar.html", null ],
+          [ "Dtk::Widget::DProgressBar", "class_dtk_1_1_widget_1_1_d_progress_bar.html", null ]
         ] ],
         [ "QTabBar", "https://doc.qt.io/qt-5/qtabbar.html", [
           [ "dstyle::DQTabBar", "classdstyle_1_1_d_q_tab_bar.html", null ]
@@ -391,12 +469,14 @@ var hierarchy =
         [ "TestTaskbarWindow", "class_test_taskbar_window.html", null ]
       ] ],
       [ "QWindow", "https://doc.qt.io/qt-5/qwindow.html", [
-        [ "DForeignWindow", "class_d_foreign_window.html", null ],
-        [ "Dtk::Widget::DForeignWindow", "class_dtk_1_1_widget_1_1_d_foreign_window.html", null ]
+        [ "DForeignWindow", "class_d_foreign_window.html", null ]
       ] ]
     ] ],
     [ "QPaintDevice", "https://doc.qt.io/qt-5/qpaintdevice.html", [
       [ "QWidget", "https://doc.qt.io/qt-5/qwidget.html", null ]
+    ] ],
+    [ "QPainter", "https://doc.qt.io/qt-5/qpainter.html", [
+      [ "Dtk::Widget::DStylePainter", "class_dtk_1_1_widget_1_1_d_style_painter.html", null ]
     ] ],
     [ "QPalette", "https://doc.qt.io/qt-5/qpalette.html", [
       [ "DPalette", "class_d_palette.html", null ]
@@ -407,6 +487,9 @@ var hierarchy =
     [ "QPlatformThemePlugin", null, [
       [ "QDeepinThemePlugin", "class_q_deepin_theme_plugin.html", null ]
     ] ],
+    [ "QPrinter", null, [
+      [ "Dtk::Widget::DPrinter", "class_dtk_1_1_widget_1_1_d_printer.html", null ]
+    ] ],
     [ "QRect", "https://doc.qt.io/qt-5/qrect.html", [
       [ "Dtk::Widget::DAnchorsRect", "class_dtk_1_1_widget_1_1_d_anchors_rect.html", null ]
     ] ],
@@ -414,9 +497,21 @@ var hierarchy =
       [ "DPaletteData", "struct_d_palette_data.html", null ],
       [ "QSvgIconEnginePrivate", "class_q_svg_icon_engine_private.html", null ]
     ] ],
+    [ "QStandardItem", "https://doc.qt.io/qt-5/qstandarditem.html", [
+      [ "Dtk::Widget::DStandardItem", "class_dtk_1_1_widget_1_1_d_standard_item.html", null ]
+    ] ],
+    [ "QString", "https://doc.qt.io/qt-5/qstring.html", [
+      [ "Dtk::Core::DSecureString", "class_dtk_1_1_core_1_1_d_secure_string.html", null ]
+    ] ],
     [ "QStyleOption", "https://doc.qt.io/qt-5/qstyleoption.html", [
+      [ "Dtk::Widget::DStyleOptionBackgroundGroup", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html", null ],
+      [ "Dtk::Widget::DStyleOptionFloatingWidget", "class_dtk_1_1_widget_1_1_d_style_option_floating_widget.html", null ],
+      [ "Dtk::Widget::DStyleOptionIcon", "class_dtk_1_1_widget_1_1_d_style_option_icon.html", null ],
       [ "QStyleOptionButton", "https://doc.qt.io/qt-5/qstyleoptionbutton.html", [
-        [ "Dtk::Widget::DStyleOptionSuggestButton", "class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html", null ]
+        [ "Dtk::Widget::DStyleOptionButton", "class_dtk_1_1_widget_1_1_d_style_option_button.html", null ]
+      ] ],
+      [ "QStyleOptionViewItem", "https://doc.qt.io/qt-5/qstyleoptionviewitem.html", [
+        [ "Dtk::Widget::DStyleOptionViewItem", "class_dtk_1_1_widget_1_1_d_style_option_view_item.html", null ]
       ] ]
     ] ],
     [ "QSurface", "https://doc.qt.io/qt-5/qsurface.html", [
@@ -432,11 +527,14 @@ var hierarchy =
       [ "Dtk::Widget::CrumbObjectInterface", "class_dtk_1_1_widget_1_1_crumb_object_interface.html", null ]
     ] ],
     [ "RSvg", "class_r_svg.html", null ],
+    [ "T", null, [
+      [ "Dtk::Core::DVtableHook::OverrideDestruct< T >", "class_dtk_1_1_core_1_1_d_vtable_hook_1_1_override_destruct.html", null ]
+    ] ],
     [ "Dtk::Widget::DAbstractStackWidgetTransition::TransitionInfo", "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html", null ],
-    [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],
-    [ "Dtk::Widget::DPlatformWindowHandle::WMBlurArea", "struct_dtk_1_1_widget_1_1_d_platform_window_handle_1_1_w_m_blur_area.html", null ],
     [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
+    [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
+    [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ],
     [ "ConanFile", null, [
       [ "conanfile.DtkcoreConan", "classconanfile_1_1_dtkcore_conan.html", null ],
       [ "conanfile.DtkwidgetConan", "classconanfile_1_1_dtkwidget_conan.html", null ]

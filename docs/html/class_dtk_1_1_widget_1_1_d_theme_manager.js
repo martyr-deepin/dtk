@@ -3,7 +3,6 @@ var class_dtk_1_1_widget_1_1_d_theme_manager =
     [ "DThemeManager", "class_dtk_1_1_widget_1_1_d_theme_manager.html#a05b4592af077512cd7768a0c4e0fb225", null ],
     [ "eventFilter", "class_dtk_1_1_widget_1_1_d_theme_manager.html#af8b1e091a18b7040910dccebc0a9def3", null ],
     [ "getQssForWidget", "class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2", null ],
-    [ "getQssForWidget", "class_dtk_1_1_widget_1_1_d_theme_manager.html#abcce6f7212e48e90aa3605a0965ffaf8", null ],
     [ "getQssForWidget", "class_dtk_1_1_widget_1_1_d_theme_manager.html#a6b57e5684c3ba2c797d3a3f975447e15", null ],
     [ "setTheme", "class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f", null ],
     [ "setTheme", "class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40", null ],

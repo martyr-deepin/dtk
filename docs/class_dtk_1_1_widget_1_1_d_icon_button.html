@@ -84,9 +84,10 @@ $(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_icon_button
 
 <div class="header">
   <div class="summary">
-<a href="#signals">信号</a> &#124;
+<a href="#pub-slots">Public 槽</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
 <a href="class_dtk_1_1_widget_1_1_d_icon_button-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">Dtk::Widget::DIconButton类 参考</div>  </div>
@@ -97,12 +98,19 @@ $(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_icon_button
 <div class="dyncontent">
 <div class="center"><img src="class_dtk_1_1_widget_1_1_d_icon_button__inherit__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_icon_button_inherit__map" alt="Inheritance graph"/></div>
 <map name="_dtk_1_1_widget_1_1_d_icon_button_inherit__map" id="a_dtk_1_1_widget_1_1_d_icon_button_inherit__map">
-<area shape="rect" title=" " alt="" coords="8,304,195,331"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpushbutton.html" title=" " alt="" coords="48,229,155,256"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qabstractbutton.html" title=" " alt="" coords="37,155,166,181"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="62,80,141,107"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" title=" " alt="" coords="481,189,668,215"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_dialog_close_button.html" title=" " alt="" coords="739,5,933,47"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_floating_button.html" title=" " alt="" coords="729,71,943,98"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_window_close_button.html" title="DWindowCloseButton 类是 DTK 窗口统一的关闭按钮控件。" alt="" coords="733,123,939,164"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_window_max_button.html" title="DWindowMaxButton 类是 DTK 窗口统一的最大化/恢复按钮控件。 它有两种状态，一种表示窗口已经进入最大化状态，点击按钮窗口恢复为普通状态； 另一种表示窗口处于普通状态，点击按钮窗口进入..." alt="" coords="716,189,956,215"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_window_min_button.html" title="DWindowMinButton 类是 DTK 窗口统一的最小化按钮控件。" alt="" coords="718,239,954,266"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_window_option_button.html" title="DWindowOptionButton 类是 DTK 窗口统一的菜单按钮控件。 点击按钮后，默认会显示程序主菜单，包含“关于”、“帮助”等项。" alt="" coords="730,291,942,332"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_window_quit_full_button.html" title=" " alt="" coords="738,356,934,397"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qabstractbutton.html" title=" " alt="" coords="297,163,427,190"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="164,163,243,190"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="23,138,98,165"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpaintdevice.html" title=" " alt="" coords="5,189,116,215"/>
+<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="291,214,433,241"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <div class="dynheader">
@@ -110,100 +118,70 @@ Dtk::Widget::DIconButton 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dtk_1_1_widget_1_1_d_icon_button__coll__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_icon_button_coll__map" alt="Collaboration graph"/></div>
 <map name="_dtk_1_1_widget_1_1_d_icon_button_coll__map" id="a_dtk_1_1_widget_1_1_d_icon_button_coll__map">
-<area shape="rect" title=" " alt="" coords="8,304,195,331"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpushbutton.html" title=" " alt="" coords="48,229,155,256"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qabstractbutton.html" title=" " alt="" coords="37,155,166,181"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="62,80,141,107"/>
+<area shape="rect" title=" " alt="" coords="105,247,292,273"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qabstractbutton.html" title=" " alt="" coords="55,171,185,197"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="62,81,141,108"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="5,5,80,32"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="217,171,359,197"/>
+<area shape="rect" title=" " alt="" coords="165,81,419,108"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
-信号</h2></td></tr>
-<tr class="memitem:ae596476b8ac9255aa5367c2362ce8cd1"><td class="memItemLeft" align="right" valign="top"><a id="ae596476b8ac9255aa5367c2362ce8cd1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseEntered</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> label)</td></tr>
-<tr class="separator:ae596476b8ac9255aa5367c2362ce8cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cee853aa13e8a25737d6542f2e3e5d0"><td class="memItemLeft" align="right" valign="top"><a id="a6cee853aa13e8a25737d6542f2e3e5d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseLeaved</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> label)</td></tr>
-<tr class="separator:a6cee853aa13e8a25737d6542f2e3e5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Public 槽</h2></td></tr>
+<tr class="memitem:af28b4774cc6b83997f5f1a1c1115a446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446">setFlat</a> (bool flat)</td></tr>
+<tr class="memdesc:af28b4774cc6b83997f5f1a1c1115a446"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446" title="DIconButton::setFlat 设置是否保留边框">DIconButton::setFlat</a> 设置是否保留边框  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446">更多...</a><br /></td></tr>
+<tr class="separator:af28b4774cc6b83997f5f1a1c1115a446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a4927e8201de29f98dac388054323739e"><td class="memItemLeft" align="right" valign="top"><a id="a4927e8201de29f98dac388054323739e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DIconButton</b> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;Icon, const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=Q_NULLPTR)</td></tr>
-<tr class="separator:a4927e8201de29f98dac388054323739e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50efd8b7e2641f9536a1b946c7ed7dd9"><td class="memItemLeft" align="right" valign="top"><a id="a50efd8b7e2641f9536a1b946c7ed7dd9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initIconLabel</b> ()</td></tr>
-<tr class="separator:a50efd8b7e2641f9536a1b946c7ed7dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be3bc4c3f0a618d49aebe9ec23968fd"><td class="memItemLeft" align="right" valign="top"><a id="a6be3bc4c3f0a618d49aebe9ec23968fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initConnect</b> ()</td></tr>
-<tr class="separator:a6be3bc4c3f0a618d49aebe9ec23968fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89dc01d34c5820d424576fd1d2c2ba98"><td class="memItemLeft" align="right" valign="top"><a id="a89dc01d34c5820d424576fd1d2c2ba98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIconLeftMargin</b> (int leftMargin)</td></tr>
-<tr class="separator:a89dc01d34c5820d424576fd1d2c2ba98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8563157d46e2a1fbb9cf4831677dffc8"><td class="memItemLeft" align="right" valign="top"><a id="a8563157d46e2a1fbb9cf4831677dffc8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIconLabel</b> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#icon-prop">icon</a>)</td></tr>
-<tr class="separator:a8563157d46e2a1fbb9cf4831677dffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05952e4fcea6b743f150cbe35d52ca7e"><td class="memItemLeft" align="right" valign="top"><a id="a05952e4fcea6b743f150cbe35d52ca7e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>hideIconLabel</b> ()</td></tr>
-<tr class="separator:a05952e4fcea6b743f150cbe35d52ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bf0efd03d8cd079d94301b77daa706"><td class="memItemLeft" align="right" valign="top"><a id="ac2bf0efd03d8cd079d94301b77daa706"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateStyle</b> ()</td></tr>
-<tr class="separator:ac2bf0efd03d8cd079d94301b77daa706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_qpushbutton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qpushbutton')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></td></tr>
-<tr class="memitem:metaObject inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
-virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#metaObject">metaObject</a> () const const</td></tr>
-<tr class="separator:metaObject inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:qt_metacast inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
-<tr class="separator:qt_metacast inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:qt_metacall inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:qt_metacall inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:QPushButton inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="QPushButton"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#QPushButton">QPushButton</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
-<tr class="separator:QPushButton inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:QPushButton-1 inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="QPushButton-1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#QPushButton-1">QPushButton</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
-<tr class="separator:QPushButton-1 inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:QPushButton-2 inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="QPushButton-2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#QPushButton-2">QPushButton</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#icon-prop">icon</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
-<tr class="separator:QPushButton-2 inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sizeHint inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="sizeHint"></a>
-virtual <a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#sizeHint">sizeHint</a> () const const override</td></tr>
-<tr class="separator:sizeHint inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:minimumSizeHint inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="minimumSizeHint"></a>
-virtual <a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#minimumSizeHint">minimumSizeHint</a> () const const override</td></tr>
-<tr class="separator:minimumSizeHint inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:autoDefault-prop inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="autoDefault-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#autoDefault-prop">autoDefault</a> () const const</td></tr>
-<tr class="separator:autoDefault-prop inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:autoDefault-prop inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="autoDefault-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#autoDefault-prop">setAutoDefault</a> (bool)</td></tr>
-<tr class="separator:autoDefault-prop inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:default-prop inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="default-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#default-prop">isDefault</a> () const const</td></tr>
-<tr class="separator:default-prop inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:default-prop inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="default-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#default-prop">setDefault</a> (bool)</td></tr>
-<tr class="separator:default-prop inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:setMenu inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="setMenu"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#setMenu">setMenu</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmenu.html">QMenu</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#menu">menu</a>)</td></tr>
-<tr class="separator:setMenu inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:menu inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="menu"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmenu.html">QMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#menu">menu</a> () const const</td></tr>
-<tr class="separator:menu inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:flat-prop inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="flat-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#flat-prop">setFlat</a> (bool)</td></tr>
-<tr class="separator:flat-prop inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:flat-prop inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="flat-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#flat-prop">isFlat</a> () const const</td></tr>
-<tr class="separator:flat-prop inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:showMenu inherit pub_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="showMenu"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#showMenu">showMenu</a> ()</td></tr>
-<tr class="separator:showMenu inherit pub_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b7544acb0208fddef3f0a30e44b496"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a31b7544acb0208fddef3f0a30e44b496">DIconButton</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:a31b7544acb0208fddef3f0a30e44b496"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a31b7544acb0208fddef3f0a30e44b496" title="DIconButton::DIconButton 实现一个方便定义图标的button">DIconButton::DIconButton</a> 实现一个方便定义图标的button  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a31b7544acb0208fddef3f0a30e44b496">更多...</a><br /></td></tr>
+<tr class="separator:a31b7544acb0208fddef3f0a30e44b496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b8f02073de1b3801d5ce7442d543d5"><td class="memItemLeft" align="right" valign="top"><a id="a28b8f02073de1b3801d5ce7442d543d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DIconButton</b> (QStyle::StandardPixmap iconType=static_cast&lt; QStyle::StandardPixmap &gt;(-1), <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:a28b8f02073de1b3801d5ce7442d543d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c8501a5cf026561d8b3df55d796f86"><td class="memItemLeft" align="right" valign="top"><a id="a75c8501a5cf026561d8b3df55d796f86"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DIconButton</b> (<a class="el" href="class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57">DStyle::StandardPixmap</a> iconType=static_cast&lt; <a class="el" href="class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57">DStyle::StandardPixmap</a> &gt;(-1), <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:a75c8501a5cf026561d8b3df55d796f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f7ff4bed0f1d456e0067eb4576631d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d">setIcon</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#icon-prop">icon</a>)</td></tr>
+<tr class="memdesc:a16f7ff4bed0f1d456e0067eb4576631d"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIconButton::setIcon　设置button的图标  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d">更多...</a><br /></td></tr>
+<tr class="separator:a16f7ff4bed0f1d456e0067eb4576631d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad676e07db34f010e7a191002572c17cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#ad676e07db34f010e7a191002572c17cd">setIcon</a> (QStyle::StandardPixmap iconType)</td></tr>
+<tr class="memdesc:ad676e07db34f010e7a191002572c17cd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d" title="DIconButton::setIcon　设置button的图标">DIconButton::setIcon</a> 设置button图标的类型,传入QT预定义枚举值  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#ad676e07db34f010e7a191002572c17cd">更多...</a><br /></td></tr>
+<tr class="separator:ad676e07db34f010e7a191002572c17cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1c9e4a082e5e9f9a48f2a5758cd154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a0c1c9e4a082e5e9f9a48f2a5758cd154">setIcon</a> (<a class="el" href="class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57">DStyle::StandardPixmap</a> iconType)</td></tr>
+<tr class="memdesc:a0c1c9e4a082e5e9f9a48f2a5758cd154"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d" title="DIconButton::setIcon　设置button的图标">DIconButton::setIcon</a> 设置button图标的类型,传入DTK预定义枚举值  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a0c1c9e4a082e5e9f9a48f2a5758cd154">更多...</a><br /></td></tr>
+<tr class="separator:a0c1c9e4a082e5e9f9a48f2a5758cd154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ba4765b32ff6cadd3452a33e72e602"><td class="memItemLeft" align="right" valign="top"><a id="a16ba4765b32ff6cadd3452a33e72e602"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
+<tr class="separator:a16ba4765b32ff6cadd3452a33e72e602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e19075aac3d293b5c2d27c1669247a0"><td class="memItemLeft" align="right" valign="top"><a id="a1e19075aac3d293b5c2d27c1669247a0"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSizeHint</b> () const override</td></tr>
+<tr class="separator:a1e19075aac3d293b5c2d27c1669247a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935de6c4ea3b1fdb13fd96618203ea23"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a935de6c4ea3b1fdb13fd96618203ea23">iconSize</a> () const</td></tr>
+<tr class="memdesc:a935de6c4ea3b1fdb13fd96618203ea23"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a935de6c4ea3b1fdb13fd96618203ea23" title="DIconButton::iconSize">DIconButton::iconSize</a>  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a935de6c4ea3b1fdb13fd96618203ea23">更多...</a><br /></td></tr>
+<tr class="separator:a935de6c4ea3b1fdb13fd96618203ea23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510331bee014beba98447ebf0538067b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a510331bee014beba98447ebf0538067b">isFlat</a> () const</td></tr>
+<tr class="memdesc:a510331bee014beba98447ebf0538067b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a510331bee014beba98447ebf0538067b" title="DIconButton::isFlat">DIconButton::isFlat</a>  <a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a510331bee014beba98447ebf0538067b">更多...</a><br /></td></tr>
+<tr class="separator:a510331bee014beba98447ebf0538067b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97969ee895b5fe5eb0ba654de306328c"><td class="memItemLeft" align="right" valign="top"><a id="a97969ee895b5fe5eb0ba654de306328c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnabledCircle</b> (bool status)</td></tr>
+<tr class="separator:a97969ee895b5fe5eb0ba654de306328c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8a920101cec8b76ba4652fb95cfc2c"><td class="memItemLeft" align="right" valign="top"><a id="a4e8a920101cec8b76ba4652fb95cfc2c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabledCircle</b> () const</td></tr>
+<tr class="separator:a4e8a920101cec8b76ba4652fb95cfc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_qabstractbutton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qabstractbutton')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacast inherit pub_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
+<tr class="separator:qt_metacast inherit pub_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacall inherit pub_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
+<tr class="separator:qt_metacall inherit pub_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:QAbstractButton inherit pub_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="QAbstractButton"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#QAbstractButton">QAbstractButton</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
 <tr class="separator:QAbstractButton inherit pub_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1173,34 +1151,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="ht
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected 成员函数</h2></td></tr>
-<tr class="memitem:a7d478741ac7870506e91d47a7bdbd115"><td class="memItemLeft" align="right" valign="top"><a id="a7d478741ac7870506e91d47a7bdbd115"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#event">event</a>)</td></tr>
-<tr class="separator:a7d478741ac7870506e91d47a7bdbd115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af770ed5893c7a043fadbb13cb95c3f6a"><td class="memItemLeft" align="right" valign="top"><a id="af770ed5893c7a043fadbb13cb95c3f6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enterEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#event">event</a>)</td></tr>
-<tr class="separator:af770ed5893c7a043fadbb13cb95c3f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6513a23cdbec5e088988aa7bdbb8184"><td class="memItemLeft" align="right" valign="top"><a id="aa6513a23cdbec5e088988aa7bdbb8184"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#event">event</a>)</td></tr>
-<tr class="separator:aa6513a23cdbec5e088988aa7bdbb8184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_qpushbutton"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qpushbutton')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></td></tr>
-<tr class="memitem:event inherit pro_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#event">event</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e) override</td></tr>
-<tr class="separator:event inherit pro_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:paintEvent inherit pro_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="paintEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#paintEvent">paintEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *) override</td></tr>
-<tr class="separator:paintEvent inherit pro_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:keyPressEvent inherit pro_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="keyPressEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#keyPressEvent">keyPressEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *e) override</td></tr>
-<tr class="separator:keyPressEvent inherit pro_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:focusInEvent inherit pro_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="focusInEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#focusInEvent">focusInEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qfocusevent.html">QFocusEvent</a> *e) override</td></tr>
-<tr class="separator:focusInEvent inherit pro_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:focusOutEvent inherit pro_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="focusOutEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#focusOutEvent">focusOutEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qfocusevent.html">QFocusEvent</a> *e) override</td></tr>
-<tr class="separator:focusOutEvent inherit pro_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:initStyleOption inherit pro_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="initStyleOption"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#initStyleOption">initStyleOption</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qstyleoptionbutton.html">QStyleOptionButton</a> *option) const const</td></tr>
-<tr class="separator:initStyleOption inherit pro_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c86f4ce4e892a6d7e0aa60b27f4abee"><td class="memItemLeft" align="right" valign="top"><a id="a8c86f4ce4e892a6d7e0aa60b27f4abee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DIconButton</b> (DIconButtonPrivate &amp;dd, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="separator:a8c86f4ce4e892a6d7e0aa60b27f4abee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67df87048938cee814978fef6819177"><td class="memItemLeft" align="right" valign="top"><a id="ad67df87048938cee814978fef6819177"></a>
+virtual <a class="el" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a>&#160;</td><td class="memItemRight" valign="bottom"><b>baseStyleOption</b> () const</td></tr>
+<tr class="separator:ad67df87048938cee814978fef6819177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04184d4d437c68d80cbdcd991fe6a8ef"><td class="memItemLeft" align="right" valign="top"><a id="a04184d4d437c68d80cbdcd991fe6a8ef"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initStyleOption</b> (<a class="el" href="class_dtk_1_1_widget_1_1_d_style_option_button.html">DStyleOptionButton</a> *option) const</td></tr>
+<tr class="separator:a04184d4d437c68d80cbdcd991fe6a8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac512df8f4812c0358b46cff1ea221ff"><td class="memItemLeft" align="right" valign="top"><a id="aac512df8f4812c0358b46cff1ea221ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *event) override</td></tr>
+<tr class="separator:aac512df8f4812c0358b46cff1ea221ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62458f7efb4956bd6e5c99b73c8cd37"><td class="memItemLeft" align="right" valign="top"><a id="ad62458f7efb4956bd6e5c99b73c8cd37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setText</b> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text)</td></tr>
+<tr class="separator:ad62458f7efb4956bd6e5c99b73c8cd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ac55887ff34ae2a9cbbc94d512d2af"><td class="memItemLeft" align="right" valign="top"><a id="a98ac55887ff34ae2a9cbbc94d512d2af"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>text</b> () const const</td></tr>
+<tr class="separator:a98ac55887ff34ae2a9cbbc94d512d2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_qabstractbutton"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qabstractbutton')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></td></tr>
 <tr class="memitem:hitButton inherit pro_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="hitButton"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#hitButton">hitButton</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#pos-prop">pos</a>) const const</td></tr>
@@ -1223,6 +1191,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="memitem:mouseMoveEvent inherit pro_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="mouseMoveEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#mouseMoveEvent">mouseMoveEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e) override</td></tr>
 <tr class="separator:mouseMoveEvent inherit pro_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:focusInEvent inherit pro_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="focusInEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#focusInEvent">focusInEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qfocusevent.html">QFocusEvent</a> *e) override</td></tr>
+<tr class="separator:focusInEvent inherit pro_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:focusOutEvent inherit pro_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="focusOutEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#focusOutEvent">focusOutEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qfocusevent.html">QFocusEvent</a> *e) override</td></tr>
+<tr class="separator:focusOutEvent inherit pro_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:changeEvent inherit pro_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="changeEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#changeEvent">changeEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e) override</td></tr>
 <tr class="separator:changeEvent inherit pro_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1236,9 +1210,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="memitem:wheelEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="wheelEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#wheelEvent">wheelEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwheelevent.html">QWheelEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:wheelEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:enterEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="enterEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#enterEvent">enterEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:enterEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:leaveEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="leaveEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#leaveEvent">leaveEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:leaveEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:moveEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="moveEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#moveEvent">moveEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmoveevent.html">QMoveEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:moveEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:resizeEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="resizeEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#resizeEvent">resizeEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:resizeEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:closeEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="closeEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#closeEvent">closeEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qcloseevent.html">QCloseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:closeEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1324,93 +1307,23 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
 <tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#adbed6e66a1393a6045fb24e50300db7f">DObject</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有在不需要数据成员的派生类中才会使用 <br /></td></tr>
+<tr class="separator:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">DObject</a> (DObjectPrivate &amp;dd, <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">在派生类中比较常用的构造函数  <a href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">更多...</a><br /></td></tr>
+<tr class="separator:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-额外继承的成员函数</h2></td></tr>
-<tr class="inherit_header pub_static_methods_qpushbutton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qpushbutton')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qabstractbutton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qabstractbutton')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qwidget')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:setTabOrder inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="setTabOrder"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#setTabOrder">setTabOrder</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *first, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *second)</td></tr>
-<tr class="separator:setTabOrder inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:mouseGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseGrabber"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseGrabber">mouseGrabber</a> ()</td></tr>
-<tr class="separator:mouseGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="keyboardGrabber"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#keyboardGrabber">keyboardGrabber</a> ()</td></tr>
-<tr class="separator:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:find inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="find"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#find">find</a> (WId id)</td></tr>
-<tr class="separator:find inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:createWindowContainer inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="createWindowContainer"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#createWindowContainer">createWindowContainer</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> flags)</td></tr>
-<tr class="separator:createWindowContainer inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
-<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
-<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
-<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
-<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
-<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qwidget')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
-<tr class="memitem:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="RenderFlag-enum"></a>
-typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#RenderFlag-enum">RenderFlags</a></td></tr>
-<tr class="separator:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header properties_qpushbutton"><td colspan="2" onclick="javascript:toggleInherit('properties_qpushbutton')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qpushbutton.html">QPushButton</a></td></tr>
-<tr class="memitem:autoDefault-prop inherit properties_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="autoDefault-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#autoDefault-prop">autoDefault</a></td></tr>
-<tr class="separator:autoDefault-prop inherit properties_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:default-prop inherit properties_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="default-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#default-prop">default</a></td></tr>
-<tr class="separator:default-prop inherit properties_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:flat-prop inherit properties_qpushbutton"><td class="memItemLeft" align="right" valign="top"><a id="flat-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qpushbutton.html#flat-prop">flat</a></td></tr>
-<tr class="separator:flat-prop inherit properties_qpushbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a9ebc09f079b5de8b1557e9b4e7d99648"><td class="memItemLeft" align="right" valign="top"><a id="a9ebc09f079b5de8b1557e9b4e7d99648"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>flat</b></td></tr>
+<tr class="separator:a9ebc09f079b5de8b1557e9b4e7d99648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb458dc6c00935605ce75eb38195d1c0"><td class="memItemLeft" align="right" valign="top"><a id="afb458dc6c00935605ce75eb38195d1c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
+<tr class="separator:afb458dc6c00935605ce75eb38195d1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qabstractbutton"><td colspan="2" onclick="javascript:toggleInherit('properties_qabstractbutton')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></td></tr>
 <tr class="memitem:text-prop inherit properties_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="text-prop"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#text-prop">text</a></td></tr>
@@ -1630,13 +1543,289 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_qabstractbutton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qabstractbutton')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractbutton.html">QAbstractButton</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qabstractbutton"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractbutton.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qabstractbutton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qwidget')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setTabOrder inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="setTabOrder"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#setTabOrder">setTabOrder</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *first, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *second)</td></tr>
+<tr class="separator:setTabOrder inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseGrabber"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseGrabber">mouseGrabber</a> ()</td></tr>
+<tr class="separator:mouseGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="keyboardGrabber"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#keyboardGrabber">keyboardGrabber</a> ()</td></tr>
+<tr class="separator:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:find inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="find"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#find">find</a> (WId id)</td></tr>
+<tr class="separator:find inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:createWindowContainer inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="createWindowContainer"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#createWindowContainer">createWindowContainer</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> flags)</td></tr>
+<tr class="separator:createWindowContainer inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qwidget')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
+<tr class="memitem:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="RenderFlag-enum"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#RenderFlag-enum">RenderFlags</a></td></tr>
+<tr class="separator:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; DObjectPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock">
-<p class="definition">在文件 <a class="el" href="dbuttonlist_8h_source.html">dbuttonlist.h</a> 第 <a class="el" href="dbuttonlist_8h_source.html#l00033">33</a> 行定义.</p>
-</div><hr/>该类的文档由以下文件生成:<ul>
-<li>dtkwidget/src/widgets/<a class="el" href="dbuttonlist_8h_source.html">dbuttonlist.h</a></li>
-<li>dtkwidget/src/widgets/<a class="el" href="dbuttonlist_8cpp_source.html">dbuttonlist.cpp</a></li>
+<p class="definition">在文件 <a class="el" href="diconbutton_8h_source.html">diconbutton.h</a> 第 <a class="el" href="diconbutton_8h_source.html#l00034">34</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a31b7544acb0208fddef3f0a30e44b496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b7544acb0208fddef3f0a30e44b496">&#9670;&nbsp;</a></span>DIconButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dtk::Widget::DIconButton::DIconButton </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a31b7544acb0208fddef3f0a30e44b496" title="DIconButton::DIconButton 实现一个方便定义图标的button">DIconButton::DIconButton</a> 实现一个方便定义图标的button </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a935de6c4ea3b1fdb13fd96618203ea23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935de6c4ea3b1fdb13fd96618203ea23">&#9670;&nbsp;</a></span>iconSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> Dtk::Widget::DIconButton::iconSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a935de6c4ea3b1fdb13fd96618203ea23" title="DIconButton::iconSize">DIconButton::iconSize</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回ICON的尺寸 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a510331bee014beba98447ebf0538067b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510331bee014beba98447ebf0538067b">&#9670;&nbsp;</a></span>isFlat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DIconButton::isFlat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a510331bee014beba98447ebf0538067b" title="DIconButton::isFlat">DIconButton::isFlat</a> </p>
+<dl class="section return"><dt>返回</dt><dd>true无边框　false有边框 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00153">153</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af28b4774cc6b83997f5f1a1c1115a446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28b4774cc6b83997f5f1a1c1115a446">&#9670;&nbsp;</a></span>setFlat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DIconButton::setFlat </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446" title="DIconButton::setFlat 设置是否保留边框">DIconButton::setFlat</a> 设置是否保留边框 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flat</td><td>true无边框　false有边框 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00182">182</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16f7ff4bed0f1d456e0067eb4576631d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f7ff4bed0f1d456e0067eb4576631d">&#9670;&nbsp;</a></span>setIcon() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DIconButton::setIcon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;&#160;</td>
+          <td class="paramname"><em>icon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DIconButton::setIcon　设置button的图标 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icon　button的图标</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00069">69</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c1c9e4a082e5e9f9a48f2a5758cd154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1c9e4a082e5e9f9a48f2a5758cd154">&#9670;&nbsp;</a></span>setIcon() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DIconButton::setIcon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57">DStyle::StandardPixmap</a>&#160;</td>
+          <td class="paramname"><em>iconType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d" title="DIconButton::setIcon　设置button的图标">DIconButton::setIcon</a> 设置button图标的类型,传入DTK预定义枚举值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iconType</td><td>icon类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad676e07db34f010e7a191002572c17cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad676e07db34f010e7a191002572c17cd">&#9670;&nbsp;</a></span>setIcon() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DIconButton::setIcon </td>
+          <td>(</td>
+          <td class="paramtype">QStyle::StandardPixmap&#160;</td>
+          <td class="paramname"><em>iconType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d" title="DIconButton::setIcon　设置button的图标">DIconButton::setIcon</a> 设置button图标的类型,传入QT预定义枚举值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iconType</td><td>icon类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a> 第 <a class="el" href="diconbutton_8cpp_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/widgets/<a class="el" href="diconbutton_8h_source.html">diconbutton.h</a></li>
+<li>dtkwidget/src/widgets/<a class="el" href="diconbutton_8cpp_source.html">diconbutton.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1644,7 +1833,7 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_icon_button.html">DIconButton</a></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:54 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

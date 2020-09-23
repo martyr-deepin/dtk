@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['floatmode_19226',['FloatMode',['../class_dtk_1_1_widget_1_1_d_arrow_rectangle.html#ad2616631951e5a1b9765061881b78f21',1,'Dtk::Widget::DArrowRectangle']]]
+  ['entrytype_19455',['EntryType',['../class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffe',1,'Dtk::Core::DDesktopEntry']]]
 ];

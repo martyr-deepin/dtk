@@ -14,5 +14,8 @@ var dir_0042825c3373077a1bb5c2c193c9a5d9 =
     [ "dpathbuf.cpp", "dpathbuf_8cpp_source.html", null ],
     [ "dpathbuf.h", "dpathbuf_8h_source.html", null ],
     [ "dstandardpaths.cpp", "dstandardpaths_8cpp_source.html", null ],
-    [ "dstandardpaths.h", "dstandardpaths_8h_source.html", null ]
+    [ "dstandardpaths.h", "dstandardpaths_8h_source.html", null ],
+    [ "dtrashmanager.h", "dtkcore_2src_2filesystem_2dtrashmanager_8h_source.html", null ],
+    [ "dtrashmanager_dummy.cpp", "dtrashmanager__dummy_8cpp_source.html", null ],
+    [ "dtrashmanager_linux.cpp", "dtkcore_2src_2filesystem_2dtrashmanager__linux_8cpp_source.html", null ]
 ];

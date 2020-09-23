@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dgraphicsclipeffect_8cpp_source.html',
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('dgraphicsclipeffect_8cpp_source.html',
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -108,131 +108,132 @@ $(document).ready(function(){initNavTree('dgraphicsclipeffect_8cpp_source.html',
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>DGraphicsClipEffectPrivate : <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObjectPrivate</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    DGraphicsClipEffectPrivate(DGraphicsClipEffect *qq);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> clipPath;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a> margins;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_DECLARE_PUBLIC(DGraphicsClipEffect)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;DGraphicsClipEffectPrivate::DGraphicsClipEffectPrivate(DGraphicsClipEffect *qq)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : DObjectPrivate(qq)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">   96</a></span>&#160;DGraphicsClipEffect::DGraphicsClipEffect(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *parent)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    : <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html">QGraphicsEffect</a>(parent)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    , DObject(*new DGraphicsClipEffectPrivate(this))</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">DGraphicsClipEffect::margins</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">DGraphicsClipEffect</a>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> d-&gt;margins;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">DGraphicsClipEffect::clipPath</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">DGraphicsClipEffect</a>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> d-&gt;clipPath;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a5ddbc68eac776eee3bf2222d1d8a1e52">  130</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a5ddbc68eac776eee3bf2222d1d8a1e52">DGraphicsClipEffect::setMargins</a>(<span class="keyword">const</span> <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a> &amp;margins)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">DGraphicsClipEffect</a>);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (d-&gt;margins == <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">margins</a>)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    d-&gt;margins = <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">margins</a>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#aa936cf8eb99d0441418b54b2f9c6d289">marginsChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">margins</a>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a8be8c10a465264da1ad0157f1c8168b3">  144</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a8be8c10a465264da1ad0157f1c8168b3">DGraphicsClipEffect::setClipPath</a>(<span class="keyword">const</span> <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> &amp;clipPath)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">DGraphicsClipEffect</a>);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span> (d-&gt;clipPath == <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">clipPath</a>)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    d-&gt;clipPath = <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">clipPath</a>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a796b90f9c2e8e2b0d8f98e9952b36293">clipPathChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">clipPath</a>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">void</span> DGraphicsClipEffect::draw(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> *painter)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (!painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#isActive">isActive</a>()) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;DGraphicsClipEffect::draw: The painter is not active!&quot;</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#drawSource">drawSource</a>(painter);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">DGraphicsClipEffect</a>);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qpoint.html">QPoint</a> offset;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    Qt::CoordinateSystem system = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#sourceIsPixmap">sourceIsPixmap</a>() ? Qt::LogicalCoordinates : Qt::DeviceCoordinates;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html">QPixmap</a> pixmap = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#sourcePixmap">sourcePixmap</a>(system, &amp;offset, QGraphicsEffect::PadToEffectiveBoundingRect);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (pixmap.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html#isNull">isNull</a>())</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> pixmapPainter(&amp;pixmap);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> newPath;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    newPath.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html#addRect">addRect</a>(pixmap.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html#rect">rect</a>().<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrect.html#marginsRemoved">marginsRemoved</a>(d-&gt;margins));</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    newPath -= d-&gt;clipPath;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    pixmapPainter.setRenderHints(painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#renderHints">renderHints</a>() | QPainter::Antialiasing);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    pixmapPainter.setCompositionMode(QPainter::CompositionMode_Clear);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    pixmapPainter.fillPath(newPath, Qt::transparent);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#save">save</a>();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (system == Qt::DeviceCoordinates)</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#setWorldTransform">setWorldTransform</a>(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qtransform.html">QTransform</a>());</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#drawPixmap">drawPixmap</a>(offset, pixmap);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#restore">restore</a>();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QPainterPath&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>DGraphicsClipEffectPrivate : <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObjectPrivate</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    DGraphicsClipEffectPrivate(DGraphicsClipEffect *qq);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> clipPath;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a> margins;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_DECLARE_PUBLIC(DGraphicsClipEffect)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;DGraphicsClipEffectPrivate::DGraphicsClipEffectPrivate(DGraphicsClipEffect *qq)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : DObjectPrivate(qq)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">   97</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">DGraphicsClipEffect::DGraphicsClipEffect</a>(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *parent)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    : <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html">QGraphicsEffect</a>(parent)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    , <a class="code" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a>(*new DGraphicsClipEffectPrivate(this))</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">DGraphicsClipEffect::margins</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">DGraphicsClipEffect</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> d-&gt;margins;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">DGraphicsClipEffect::clipPath</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">DGraphicsClipEffect</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> d-&gt;clipPath;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a5ddbc68eac776eee3bf2222d1d8a1e52">  131</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a5ddbc68eac776eee3bf2222d1d8a1e52">DGraphicsClipEffect::setMargins</a>(<span class="keyword">const</span> <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a> &amp;margins)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">DGraphicsClipEffect</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (d-&gt;margins == <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">margins</a>)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    d-&gt;margins = <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">margins</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#aa936cf8eb99d0441418b54b2f9c6d289">marginsChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">margins</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a8be8c10a465264da1ad0157f1c8168b3">  145</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a8be8c10a465264da1ad0157f1c8168b3">DGraphicsClipEffect::setClipPath</a>(<span class="keyword">const</span> <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> &amp;clipPath)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">DGraphicsClipEffect</a>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span> (d-&gt;clipPath == <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">clipPath</a>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    d-&gt;clipPath = <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">clipPath</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a796b90f9c2e8e2b0d8f98e9952b36293">clipPathChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">clipPath</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">void</span> DGraphicsClipEffect::draw(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> *painter)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (!painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#isActive">isActive</a>()) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        qWarning() &lt;&lt; <span class="stringliteral">&quot;DGraphicsClipEffect::draw: The painter is not active!&quot;</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#drawSource">drawSource</a>(painter);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">DGraphicsClipEffect</a>);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qpoint.html">QPoint</a> offset;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    Qt::CoordinateSystem system = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#sourceIsPixmap">sourceIsPixmap</a>() ? Qt::LogicalCoordinates : Qt::DeviceCoordinates;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html">QPixmap</a> pixmap = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#sourcePixmap">sourcePixmap</a>(system, &amp;offset, QGraphicsEffect::PadToEffectiveBoundingRect);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (pixmap.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html#isNull">isNull</a>())</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> pixmapPainter(&amp;pixmap);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> newPath;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    newPath.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html#addRect">addRect</a>(pixmap.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html#rect">rect</a>().<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrect.html#marginsRemoved">marginsRemoved</a>(d-&gt;margins));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    newPath -= d-&gt;clipPath;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    pixmapPainter.setRenderHints(painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#renderHints">renderHints</a>() | QPainter::Antialiasing);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    pixmapPainter.setCompositionMode(QPainter::CompositionMode_Clear);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    pixmapPainter.fillPath(newPath, Qt::transparent);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#save">save</a>();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (system == Qt::DeviceCoordinates)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#setWorldTransform">setWorldTransform</a>(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qtransform.html">QTransform</a>());</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#drawPixmap">drawPixmap</a>(offset, pixmap);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    painter-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#restore">restore</a>();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;DWIDGET_END_NAMESPACE</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aqpixmap_html_rect"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html#rect">QPixmap::rect</a></div><div class="ttdeci">QRect rect() const const</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a83ed6a2c8e0e00109892822dfa4c1720"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">Dtk::Widget::DGraphicsClipEffect::clipPath</a></div><div class="ttdeci">QPainterPath clipPath</div><div class="ttdoc">被裁剪的区域，控件真实裁剪区域 = clipPath &amp; (boundingRect() - margins)</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8h_source.html#l00001">dgraphicsclipeffect.h:34</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a83ed6a2c8e0e00109892822dfa4c1720"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a83ed6a2c8e0e00109892822dfa4c1720">Dtk::Widget::DGraphicsClipEffect::clipPath</a></div><div class="ttdeci">QPainterPath clipPath</div><div class="ttdoc">被裁剪的区域，控件真实裁剪区域 = clipPath &amp; (boundingRect() - margins)</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8h_source.html#l00001">dgraphicsclipeffect.h:35</a></div></div>
 <div class="ttc" id="aqpainter_html_drawPixmap"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#drawPixmap">QPainter::drawPixmap</a></div><div class="ttdeci">void drawPixmap(const QRectF &amp;target, const QPixmap &amp;pixmap, const QRectF &amp;source)</div></div>
 <div class="ttc" id="aqgraphicseffect_html_sourceIsPixmap"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#sourceIsPixmap">QGraphicsEffect::sourceIsPixmap</a></div><div class="ttdeci">bool sourceIsPixmap() const const</div></div>
 <div class="ttc" id="aqpainterpath_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a></div></div>
 <div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a796b90f9c2e8e2b0d8f98e9952b36293"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a796b90f9c2e8e2b0d8f98e9952b36293">Dtk::Widget::DGraphicsClipEffect::clipPathChanged</a></div><div class="ttdeci">void clipPathChanged(QPainterPath clipPath)</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_affa08db3b178a31eeee3b3b9ac8d1a6f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">Dtk::Widget::DGraphicsClipEffect::DGraphicsClipEffect</a></div><div class="ttdeci">DGraphicsClipEffect(QObject *parent=Q_NULLPTR)</div><div class="ttdoc">构造 DGraphicsClipEffect 对象，和普通 QObject 一样，可以传入一个 QObject 对象 指针作为其父对象</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8cpp_source.html#l00096">dgraphicsclipeffect.cpp:96</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a5ddbc68eac776eee3bf2222d1d8a1e52"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a5ddbc68eac776eee3bf2222d1d8a1e52">Dtk::Widget::DGraphicsClipEffect::setMargins</a></div><div class="ttdeci">void setMargins(const QMargins &amp;margins)</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8cpp_source.html#l00130">dgraphicsclipeffect.cpp:130</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_affa08db3b178a31eeee3b3b9ac8d1a6f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#affa08db3b178a31eeee3b3b9ac8d1a6f">Dtk::Widget::DGraphicsClipEffect::DGraphicsClipEffect</a></div><div class="ttdeci">DGraphicsClipEffect(QObject *parent=Q_NULLPTR)</div><div class="ttdoc">构造 DGraphicsClipEffect 对象，和普通 QObject 一样，可以传入一个 QObject 对象 指针作为其父对象</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8cpp_source.html#l00097">dgraphicsclipeffect.cpp:97</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a5ddbc68eac776eee3bf2222d1d8a1e52"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a5ddbc68eac776eee3bf2222d1d8a1e52">Dtk::Widget::DGraphicsClipEffect::setMargins</a></div><div class="ttdeci">void setMargins(const QMargins &amp;margins)</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8cpp_source.html#l00131">dgraphicsclipeffect.cpp:131</a></div></div>
 <div class="ttc" id="aqgraphicseffect_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html">QGraphicsEffect</a></div></div>
 <div class="ttc" id="aqpainter_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a8be8c10a465264da1ad0157f1c8168b3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a8be8c10a465264da1ad0157f1c8168b3">Dtk::Widget::DGraphicsClipEffect::setClipPath</a></div><div class="ttdeci">void setClipPath(const QPainterPath &amp;clipPath)</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8cpp_source.html#l00144">dgraphicsclipeffect.cpp:144</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a8be8c10a465264da1ad0157f1c8168b3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a8be8c10a465264da1ad0157f1c8168b3">Dtk::Widget::DGraphicsClipEffect::setClipPath</a></div><div class="ttdeci">void setClipPath(const QPainterPath &amp;clipPath)</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8cpp_source.html#l00145">dgraphicsclipeffect.cpp:145</a></div></div>
 <div class="ttc" id="adobject_8h_html_ad638ba34d44d91bad5dd9f86ed9035c9"><div class="ttname"><a href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a></div><div class="ttdeci">#define D_D(Class)</div><div class="ttdoc">这个宏用于公开类中，它定义了一个名字为 d 的变量存储 d_func() 的返回值。用于在公开 类中需要访问私有类的数据成员的函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00029">dobject.h:29</a></div></div>
 <div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html">QPixmap</a></div></div>
 <div class="ttc" id="aqobject_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">Dtk::Widget::DGraphicsClipEffect</a></div><div class="ttdoc">用于裁剪窗口的绘制内容</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8h_source.html#l00029">dgraphicsclipeffect.h:30</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html">Dtk::Widget::DGraphicsClipEffect</a></div><div class="ttdoc">用于裁剪窗口的绘制内容</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8h_source.html#l00030">dgraphicsclipeffect.h:31</a></div></div>
 <div class="ttc" id="aqgraphicseffect_html_drawSource"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#drawSource">QGraphicsEffect::drawSource</a></div><div class="ttdeci">void drawSource(QPainter *painter)</div></div>
 <div class="ttc" id="aqpainter_html_isActive"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#isActive">QPainter::isActive</a></div><div class="ttdeci">bool isActive() const const</div></div>
 <div class="ttc" id="adobject_8h_html_aba4e2dce37eda69f485ea50d533f0a1c"><div class="ttname"><a href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a></div><div class="ttdeci">#define D_DC(Class)</div><div class="ttdoc">同 D_D，用在公开类加了 const 修饰符的成员函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00031">dobject.h:31</a></div></div>
 <div class="ttc" id="aqpainterpath_html_addRect"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html#addRect">QPainterPath::addRect</a></div><div class="ttdeci">void addRect(const QRectF &amp;rectangle)</div></div>
 <div class="ttc" id="aqgraphicseffect_html_sourcePixmap"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#sourcePixmap">QGraphicsEffect::sourcePixmap</a></div><div class="ttdeci">QPixmap sourcePixmap(Qt::CoordinateSystem system, QPoint *offset, QGraphicsEffect::PixmapPadMode mode) const const</div></div>
 <div class="ttc" id="aqmargins_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qmargins.html">QMargins</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a0d44af45665d700ecfce1dece43cfd75"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">Dtk::Widget::DGraphicsClipEffect::margins</a></div><div class="ttdeci">QMargins margins</div><div class="ttdoc">用于调整目标控件的被裁剪区域，可以和 clipPath 组合更加灵活的裁剪控件</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8h_source.html#l00001">dgraphicsclipeffect.h:33</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_graphics_clip_effect_html_a0d44af45665d700ecfce1dece43cfd75"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_graphics_clip_effect.html#a0d44af45665d700ecfce1dece43cfd75">Dtk::Widget::DGraphicsClipEffect::margins</a></div><div class="ttdeci">QMargins margins</div><div class="ttdoc">用于调整目标控件的被裁剪区域，可以和 clipPath 组合更加灵活的裁剪控件</div><div class="ttdef"><b>Definition:</b> <a href="dgraphicsclipeffect_8h_source.html#l00001">dgraphicsclipeffect.h:34</a></div></div>
 <div class="ttc" id="aqtransform_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qtransform.html">QTransform</a></div></div>
 <div class="ttc" id="aqrect_html_marginsRemoved"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qrect.html#marginsRemoved">QRect::marginsRemoved</a></div><div class="ttdeci">QRect marginsRemoved(const QMargins &amp;margins) const const</div></div>
 <div class="ttc" id="aqpixmap_html_isNull"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpixmap.html#isNull">QPixmap::isNull</a></div><div class="ttdeci">bool isNull() const const</div></div>
@@ -240,13 +241,14 @@ $(document).ready(function(){initNavTree('dgraphicsclipeffect_8cpp_source.html',
 <div class="ttc" id="aqpainter_html_restore"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#restore">QPainter::restore</a></div><div class="ttdeci">void restore()</div></div>
 <div class="ttc" id="aqpainter_html_save"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#save">QPainter::save</a></div><div class="ttdeci">void save()</div></div>
 <div class="ttc" id="aqpainter_html_renderHints"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#renderHints">QPainter::renderHints</a></div><div class="ttdeci">QPainter::RenderHints renderHints() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_core_1_1_d_object_html"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></div><div class="ttdoc">deepin-tool-kit 中所有公开类的祖先类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00037">dobject.h:38</a></div></div>
 <div class="ttc" id="aqpoint_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qpoint.html">QPoint</a></div></div>
 <div class="ttc" id="aqpainter_html_setWorldTransform"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html#setWorldTransform">QPainter::setWorldTransform</a></div><div class="ttdeci">void setWorldTransform(const QTransform &amp;matrix, bool combine)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dgraphicsclipeffect.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 16:02:20 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:33:10 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

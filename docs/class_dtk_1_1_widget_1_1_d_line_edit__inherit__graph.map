@@ -1,11 +1,10 @@
 <map id="Dtk::Widget::DLineEdit" name="Dtk::Widget::DLineEdit">
-<area shape="rect" id="node1" title="DLineEdit提供了一个修改过的QLineEdit样式" alt="" coords="481,56,651,83"/>
-<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_file_chooser_edit.html" title="带有选择文件按钮的文本编辑框" alt="" coords="699,5,916,32"/>
-<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html" title="类DIpv4LineEdit是专门用于输入ipv4格式文本的编辑框。" alt="" coords="709,56,906,83"/>
-<area shape="rect" id="node9" href="$class_dtk_1_1_widget_1_1_d_password_edit.html" title="DPasswordEdit提供了一个让用户输入的密码框" alt="" coords="705,107,909,133"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qlineedit.html" title=" " alt="" coords="320,31,404,57"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="164,31,243,57"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="23,5,98,32"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="5,56,116,83"/>
-<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="291,81,433,108"/>
+<area shape="rect" id="node1" title="DLineEdit一个聚合 QLineEdit 的输入框" alt="" coords="264,155,433,181"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_file_chooser_edit.html" title="带有选择文件按钮的文本编辑框" alt="" coords="5,229,223,256"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_password_edit.html" title="DPasswordEdit提供了一个让用户输入的密码框" alt="" coords="247,229,451,256"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_d_search_edit.html" title="DSearchEdit 类提供了专门用来进行搜索的输入框控件。相比于一般的输入框控件，DSearchEdit 提供了搜索按钮指示，用户使用起来会更加自然。 如图示：" alt="" coords="475,229,662,256"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="243,80,321,107"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="186,5,261,32"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="285,5,396,32"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="345,80,488,107"/>
 </map>

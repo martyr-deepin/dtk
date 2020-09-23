@@ -87,94 +87,345 @@ $(document).ready(function(){initNavTree('dtextedit_8cpp_source.html',''); initR
 <div class="title">dtextedit.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;dtextedit.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QEvent&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QContextMenuEvent&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QMenu&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QDBusInterface&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDBusReply&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QClipboard&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QKeySequence&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;DStyle&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dtextedit.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;dthememanager.h&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;private/dtextedit_p.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;dscrollbar.h&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QResizeEvent&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;DTextEditPrivate::DTextEditPrivate(DTextEdit *qq) :</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    DObjectPrivate(qq)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> DTextEditPrivate::init()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="dobject_8h.html#a8b1f6c1673a4186b6629d554a7eff35c">D_Q</a>(DTextEdit);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    insideFrame = <span class="keyword">new</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html">QFrame</a>(q);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    insideFrame-&gt;setObjectName(<span class="stringliteral">&quot;TextEditInsideFrame&quot;</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    insideFrame-&gt;setFocusProxy(q);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    insideFrame-&gt;setAttribute(Qt::WA_TransparentForMouseEvents);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    q-&gt;setContextMenuPolicy(Qt::NoContextMenu);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    q-&gt;setVerticalScrollBar(<span class="keyword">new</span> DScrollBar);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    q-&gt;setHorizontalScrollBar(<span class="keyword">new</span> DScrollBar);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a76c9b947dd3bfddd1a79dbb91b4be8ed">   52</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a76c9b947dd3bfddd1a79dbb91b4be8ed">DTextEdit::DTextEdit</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent) :</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html">QTextEdit</a>(parent),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    DObject(*new DTextEditPrivate(this))</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">DThemeManager::registerWidget</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>DTextEditPrivate : <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObjectPrivate</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    DTextEditPrivate(DTextEdit* qq);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~DTextEditPrivate();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widgetTop;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widgetButtom;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widgetLeft;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>* widgetRight;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> bSpeechToText = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> bTextToSpeech = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> bTextToTranslate = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a>(DTextEdit)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#aed2f0eba3d88939b54abde73b4f01402">   44</a></span>&#160;DTextEdit::DTextEdit(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html">QTextEdit</a>(parent)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    , <a class="code" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a>(*new DTextEditPrivate(this))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#viewport">viewport</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#autoFillBackground-prop">setAutoFillBackground</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html#frameShape-prop">setFrameShape</a>(QFrame::NoFrame);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    d-&gt;widgetTop-&gt;setFixedWidth(1);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    d-&gt;widgetButtom-&gt;setFixedWidth(1);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    d-&gt;widgetLeft-&gt;setFixedHeight(1);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    d-&gt;widgetRight-&gt;setFixedHeight(1);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    d_func()-&gt;init();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> DTextEdit::resizeEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *event)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#resizeEvent">QTextEdit::resizeEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#event">event</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a> = <span class="keyword">event</span>-&gt;size();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    d-&gt;insideFrame-&gt;setFixedHeight(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>.height() - 1);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    d-&gt;insideFrame-&gt;setFixedWidth(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>.width());</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#addScrollBarWidget">addScrollBarWidget</a>(d-&gt;widgetTop, Qt::AlignTop);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#addScrollBarWidget">addScrollBarWidget</a>(d-&gt;widgetButtom, Qt::AlignBottom);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#addScrollBarWidget">addScrollBarWidget</a>(d-&gt;widgetLeft, Qt::AlignLeft);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#addScrollBarWidget">addScrollBarWidget</a>(d-&gt;widgetRight, Qt::AlignRight);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#aed2f0eba3d88939b54abde73b4f01402">DTextEdit::DTextEdit</a>(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text, <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    : <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>(parent)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#setText">setText</a>(text);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">bool</span> DTextEdit::event(<a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#aed2f0eba3d88939b54abde73b4f01402">DTextEdit</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (e-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html#type">type</a>() == QEvent::Paint) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> p(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        p.setRenderHints(QPainter::Antialiasing);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qstyleoptionframe.html">QStyleOptionFrame</a> panel;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html#initStyleOption">initStyleOption</a>(&amp;panel);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#style">style</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qstyle.html#drawPrimitive">drawPrimitive</a>(QStyle::PE_PanelLineEdit, &amp;panel, &amp;p, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html#type">type</a>() == QEvent::Polish) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        DStyleHelper dstyle(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#style">style</a>());</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">int</span> frame_radius = dstyle.pixelMetric(<a class="code" href="class_dtk_1_1_widget_1_1_d_style.html#a42036bfddd18d067159479232deaf6ffaecc2e1f977448936a38134803f89064e">DStyle::PM_FrameRadius</a>, <span class="keyword">nullptr</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#setViewportMargins">setViewportMargins</a>(frame_radius, 0, frame_radius, 0);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        d-&gt;widgetTop-&gt;setFixedHeight(frame_radius);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        d-&gt;widgetButtom-&gt;setFixedHeight(frame_radius);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        d-&gt;widgetLeft-&gt;setFixedWidth(frame_radius);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        d-&gt;widgetRight-&gt;setFixedWidth(frame_radius);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qabstractscrollarea.html#event">QTextEdit::event</a>(e);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> DTextEdit::keyPressEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *event)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (event == QKeySequence::SelectAll) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qguiapplication.html#clipboard">QApplication::clipboard</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qclipboard.html#setText">setText</a>(this-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#toPlainText">toPlainText</a>(), QClipboard::Mode::Selection);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#keyPressEvent">QTextEdit::keyPressEvent</a>(event);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> DTextEdit::contextMenuEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qcontextmenuevent.html">QContextMenuEvent</a> *e)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    QDBusInterface testSpeech(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                               <span class="stringliteral">&quot;/aiassistant/tts&quot;</span>,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                               <span class="stringliteral">&quot;com.iflytek.aiassistant.tts&quot;</span>,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                               QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//测试朗读接口是否开启</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    QDBusReply&lt;bool&gt; speechReply = testSpeech.call(QDBus::AutoDetect, <span class="stringliteral">&quot;getTTSEnable&quot;</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    QDBusInterface testReading(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                               <span class="stringliteral">&quot;/aiassistant/tts&quot;</span>,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                               <span class="stringliteral">&quot;com.iflytek.aiassistant.tts&quot;</span>,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                               QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//测试朗读是否在进行</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    QDBusReply&lt;bool&gt; readingReply = testReading.call(QDBus::AutoDetect, <span class="stringliteral">&quot;isTTSInWorking&quot;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QDBusInterface testTranslate(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                               <span class="stringliteral">&quot;/aiassistant/trans&quot;</span>,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                               <span class="stringliteral">&quot;com.iflytek.aiassistant.trans&quot;</span>,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                               QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//测试翻译接口是否开启</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    QDBusReply&lt;bool&gt; translateReply = testTranslate.call(QDBus::AutoDetect, <span class="stringliteral">&quot;getTransEnable&quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    QDBusInterface testSpeechToText(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                               <span class="stringliteral">&quot;/aiassistant/iat&quot;</span>,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                               <span class="stringliteral">&quot;com.iflytek.aiassistant.iat&quot;</span>,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                               QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//测试听写接口是否开启</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    QDBusReply&lt;bool&gt; speechToTextReply = testSpeechToText.call(QDBus::AutoDetect, <span class="stringliteral">&quot;getIatEnable&quot;</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//测试服务是否存在</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">if</span> ((!speechReply.value() &amp;&amp; !translateReply.value() &amp;&amp; !speechToTextReply.value())</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            || (!<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a9206d33d927ac1459b19402371a91fee">textToSpeechIsEnabled</a>() &amp;&amp; !<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a60ee52b1d516f5e0ddabb35a459fb2ad">textToTranslateIsEnabled</a>() &amp;&amp; !<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a2050a054fb7103f242ea3609316661eb">speechToTextIsEnabled</a>())) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#contextMenuEvent">QTextEdit::contextMenuEvent</a>(e);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html">QMenu</a> *menu = <a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#createStandardContextMenu">createStandardContextMenu</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#addSeparator">addSeparator</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(menu, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#triggered">QMenu::triggered</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>](<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html">QAction</a> *pAction) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">if</span> (pAction-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html#text-prop">text</a>().startsWith(qApp-&gt;translate(<span class="stringliteral">&quot;QWidgetTextControl&quot;</span>, <span class="stringliteral">&quot;Select All&quot;</span>))) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            QApplication::clipboard()-&gt;setText(this-&gt;toPlainText(), QClipboard::Mode::Selection);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    });</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span> (speechReply.value() &amp;&amp; <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a9206d33d927ac1459b19402371a91fee">textToSpeechIsEnabled</a>()) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html">QAction</a> *pAction = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (readingReply.value()) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            pAction = menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#addAction">addAction</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qcoreapplication.html#translate">QCoreApplication::translate</a>(<span class="stringliteral">&quot;DTextEdit&quot;</span>, <span class="stringliteral">&quot;Stop reading&quot;</span>));</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            pAction = menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#addAction">addAction</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qcoreapplication.html#translate">QCoreApplication::translate</a>(<span class="stringliteral">&quot;DTextEdit&quot;</span>, <span class="stringliteral">&quot;Text to Speech&quot;</span>));</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">//没有选中文本，则菜单置灰色</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#textCursor">textCursor</a>().selectedText().isEmpty()) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            pAction-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html#enabled-prop">setEnabled</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(pAction, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html#triggered">QAction::triggered</a>, <span class="keyword">this</span>, [] {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            QDBusInterface speechInterface(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                 <span class="stringliteral">&quot;/aiassistant/deepinmain&quot;</span>,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                 <span class="stringliteral">&quot;com.iflytek.aiassistant.mainWindow&quot;</span>,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                 QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">if</span> (speechInterface.isValid()) {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                speechInterface.call(QDBus::BlockWithGui, <span class="stringliteral">&quot;TextToSpeech&quot;</span>);<span class="comment">//此函在第一次调用时朗读，在朗读状态下再次调用为停止朗读</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                qWarning() &lt;&lt; <span class="stringliteral">&quot;[DTextEdit] TextToSpeech ERROR&quot;</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        });</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span> (translateReply.value() &amp;&amp; <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a60ee52b1d516f5e0ddabb35a459fb2ad">textToTranslateIsEnabled</a>()) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html">QAction</a> *pAction_2 = menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#addAction">addAction</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qcoreapplication.html#translate">QCoreApplication::translate</a>(<span class="stringliteral">&quot;DTextEdit&quot;</span>, <span class="stringliteral">&quot;Translate&quot;</span>));</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="comment">//没有选中文本，则菜单置灰色</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qtextedit.html#textCursor">textCursor</a>().<a class="codeRef" href="https://doc.qt.io/qt-5/qtextcursor.html#selectedText">selectedText</a>().<a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html#isEmpty">isEmpty</a>()) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            pAction_2-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html#enabled-prop">setEnabled</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(pAction_2, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html#triggered">QAction::triggered</a>, <span class="keyword">this</span>, [] {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            QDBusInterface translationInterface(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                 <span class="stringliteral">&quot;/aiassistant/deepinmain&quot;</span>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                 <span class="stringliteral">&quot;com.iflytek.aiassistant.mainWindow&quot;</span>,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                 QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">if</span> (translationInterface.isValid()) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                translationInterface.call(QDBus::BlockWithGui, <span class="stringliteral">&quot;TextToTranslate&quot;</span>);<span class="comment">//执行翻译</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                qWarning() &lt;&lt; <span class="stringliteral">&quot;[DTextEdit] Translation ERROR&quot;</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        });</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span> (speechToTextReply.value() &amp;&amp; <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a2050a054fb7103f242ea3609316661eb">speechToTextIsEnabled</a>()) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html">QAction</a> *pAction_3 = menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#addAction">addAction</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qcoreapplication.html#translate">QCoreApplication::translate</a>(<span class="stringliteral">&quot;DTextEdit&quot;</span>, <span class="stringliteral">&quot;Speech To Text&quot;</span>));</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(pAction_3, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qaction.html#triggered">QAction::triggered</a>, <span class="keyword">this</span>, [] {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            QDBusInterface speechToTextInterface(<span class="stringliteral">&quot;com.iflytek.aiassistant&quot;</span>,</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                 <span class="stringliteral">&quot;/aiassistant/deepinmain&quot;</span>,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                 <span class="stringliteral">&quot;com.iflytek.aiassistant.mainWindow&quot;</span>,</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                 QDBusConnection::sessionBus());</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">if</span> (speechToTextInterface.isValid()) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                speechToTextInterface.call(QDBus::BlockWithGui, <span class="stringliteral">&quot;SpeechToText&quot;</span>);<span class="comment">//执行听写</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                qWarning() &lt;&lt; <span class="stringliteral">&quot;[DTextEdit] SpeechToText ERROR&quot;</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        });</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">//FIXME: 由于Qt在UOS系统环境下不明原因的bug,使用menu-&gt;setAttribute(Qt::WA_DeleteOnClose) 销毁menu会在特定情况下出现崩溃的问题，这里采用一种变通的做法</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a>(menu, &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#aboutToHide">QMenu::aboutToHide</a>, <span class="keyword">this</span>, [=] {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span> (menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#activeAction">activeAction</a>()) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            menu-&gt;deleteLater();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            QTimer::singleShot(0, this, [=] {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                menu-&gt;deleteLater();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            });</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    });</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    menu-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qmenu.html#popup">popup</a>(e-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qcontextmenuevent.html#globalPos">globalPos</a>());</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a2050a054fb7103f242ea3609316661eb">  236</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a2050a054fb7103f242ea3609316661eb">DTextEdit::speechToTextIsEnabled</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> d-&gt;bSpeechToText;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a4dbfab10b7f0f59a75bda10d8e02eee5">  246</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a4dbfab10b7f0f59a75bda10d8e02eee5">DTextEdit::setSpeechToTextEnabled</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    d-&gt;bSpeechToText = enable;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a9206d33d927ac1459b19402371a91fee">  256</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a9206d33d927ac1459b19402371a91fee">DTextEdit::textToSpeechIsEnabled</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">return</span> d-&gt;bTextToSpeech;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#ace996bf70863465ff8d5aa5f538c0908">  266</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#ace996bf70863465ff8d5aa5f538c0908">DTextEdit::setTextToSpeechEnabled</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    d-&gt;bTextToSpeech = enable;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a60ee52b1d516f5e0ddabb35a459fb2ad">  276</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#a60ee52b1d516f5e0ddabb35a459fb2ad">DTextEdit::textToTranslateIsEnabled</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">return</span> d-&gt;bTextToTranslate;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_text_edit.html#acdd1f6b095c2544d198d8942b3d6f550">  286</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html#acdd1f6b095c2544d198d8942b3d6f550">DTextEdit::setTextToTranslateEnabled</a>(<span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a>);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    d-&gt;bTextToTranslate = enable;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;DTextEditPrivate::DTextEditPrivate(<a class="code" href="class_dtk_1_1_widget_1_1_d_text_edit.html">DTextEdit</a> *qq)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    : DObjectPrivate(qq)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    widgetTop = <span class="keyword">new</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#QWidget">QWidget</a>(qq);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    widgetButtom = <span class="keyword">new</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#QWidget">QWidget</a>(qq);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    widgetLeft = <span class="keyword">new</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#QWidget">QWidget</a>(qq);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    widgetRight = <span class="keyword">new</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#QWidget">QWidget</a>(qq);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;DTextEditPrivate::~DTextEditPrivate()</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;DWIDGET_END_NAMESPACE</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aqframe_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html">QFrame</a></div></div>
+<div class="ttc" id="aqmenu_html_triggered"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html#triggered">QMenu::triggered</a></div><div class="ttdeci">void triggered(QAction *action)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_a2050a054fb7103f242ea3609316661eb"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#a2050a054fb7103f242ea3609316661eb">Dtk::Widget::DTextEdit::speechToTextIsEnabled</a></div><div class="ttdeci">bool speechToTextIsEnabled() const</div><div class="ttdoc">DLineEdit::speechToTextIsEnabled</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00236">dtextedit.cpp:236</a></div></div>
+<div class="ttc" id="aqtextedit_html_toPlainText"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#toPlainText">QTextEdit::toPlainText</a></div><div class="ttdeci">QString toPlainText() const const</div></div>
+<div class="ttc" id="aqabstractscrollarea_html_addScrollBarWidget"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractscrollarea.html#addScrollBarWidget">QAbstractScrollArea::addScrollBarWidget</a></div><div class="ttdeci">void addScrollBarWidget(QWidget *widget, Qt::Alignment alignment)</div></div>
+<div class="ttc" id="aqwidget_html_QWidget"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#QWidget">QWidget::QWidget</a></div><div class="ttdeci">QWidget(QWidget *parent, Qt::WindowFlags f)</div></div>
+<div class="ttc" id="aqcontextmenuevent_html_globalPos"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcontextmenuevent.html#globalPos">QContextMenuEvent::globalPos</a></div><div class="ttdeci">const QPoint &amp; globalPos() const const</div></div>
+<div class="ttc" id="aqtextedit_html_textCursor"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#textCursor">QTextEdit::textCursor</a></div><div class="ttdeci">QTextCursor textCursor() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_a60ee52b1d516f5e0ddabb35a459fb2ad"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#a60ee52b1d516f5e0ddabb35a459fb2ad">Dtk::Widget::DTextEdit::textToTranslateIsEnabled</a></div><div class="ttdeci">bool textToTranslateIsEnabled() const</div><div class="ttdoc">DTextEdit::textToTranslateIsEnabled</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00276">dtextedit.cpp:276</a></div></div>
+<div class="ttc" id="aqmenu_html_aboutToHide"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html#aboutToHide">QMenu::aboutToHide</a></div><div class="ttdeci">void aboutToHide()</div></div>
 <div class="ttc" id="aqabstractscrollarea_html_event"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractscrollarea.html#event">QAbstractScrollArea::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
+<div class="ttc" id="aqcoreapplication_html_translate"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcoreapplication.html#translate">QCoreApplication::translate</a></div><div class="ttdeci">QString translate(const char *context, const char *sourceText, const char *disambiguation, int n)</div></div>
 <div class="ttc" id="aqtextedit_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html">QTextEdit</a></div></div>
+<div class="ttc" id="aqtextcursor_html_selectedText"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextcursor.html#selectedText">QTextCursor::selectedText</a></div><div class="ttdeci">QString selectedText() const const</div></div>
 <div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
-<div class="ttc" id="aqsize_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aqmenu_html_addSeparator"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html#addSeparator">QMenu::addSeparator</a></div><div class="ttdeci">QAction * addSeparator()</div></div>
+<div class="ttc" id="aqmenu_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html">QMenu</a></div></div>
+<div class="ttc" id="aqframe_html_frameShape-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html#frameShape-prop">QFrame::setFrameShape</a></div><div class="ttdeci">void setFrameShape(QFrame::Shape)</div></div>
+<div class="ttc" id="aqmenu_html_activeAction"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html#activeAction">QMenu::activeAction</a></div><div class="ttdeci">QAction * activeAction() const const</div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
 <div class="ttc" id="adobject_8h_html_ad638ba34d44d91bad5dd9f86ed9035c9"><div class="ttname"><a href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a></div><div class="ttdeci">#define D_D(Class)</div><div class="ttdoc">这个宏用于公开类中，它定义了一个名字为 d 的变量存储 d_func() 的返回值。用于在公开 类中需要访问私有类的数据成员的函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00029">dobject.h:29</a></div></div>
-<div class="ttc" id="adobject_8h_html_a8b1f6c1673a4186b6629d554a7eff35c"><div class="ttname"><a href="dobject_8h.html#a8b1f6c1673a4186b6629d554a7eff35c">D_Q</a></div><div class="ttdeci">#define D_Q(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了一个名字为 q 的变量存储 q_func() 的返回值。用于在私有 类中需要调用公开类的成员函数时。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00030">dobject.h:30</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_a76c9b947dd3bfddd1a79dbb91b4be8ed"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#a76c9b947dd3bfddd1a79dbb91b4be8ed">Dtk::Widget::DTextEdit::DTextEdit</a></div><div class="ttdeci">DTextEdit(QWidget *parent=0)</div><div class="ttdoc">DTextEdit DTextEdit 提供 deepin 风格的多行编辑控件，是 QTextEdit 的子类。</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00052">dtextedit.cpp:52</a></div></div>
-<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_theme_manager_html_aa6bf144312e09b8daf7ed302e561d7ab"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">Dtk::Widget::DThemeManager::registerWidget</a></div><div class="ttdeci">static void registerWidget(QWidget *widget, QStringList propertys=QStringList())</div><div class="ttdoc">DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...</div><div class="ttdef"><b>Definition:</b> <a href="dthememanager_8cpp_source.html#l00523">dthememanager.cpp:523</a></div></div>
-<div class="ttc" id="aqwidget_html_size-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#size-prop">QWidget::size</a></div><div class="ttdeci">size</div></div>
-<div class="ttc" id="aqtextedit_html_resizeEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#resizeEvent">QTextEdit::resizeEvent</a></div><div class="ttdeci">virtual void resizeEvent(QResizeEvent *e) override</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html">Dtk::Widget::DTextEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8h_source.html#l00030">dtextedit.h:31</a></div></div>
+<div class="ttc" id="aqmenu_html_addAction"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html#addAction">QMenu::addAction</a></div><div class="ttdeci">QAction * addAction(const QString &amp;text)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_ace996bf70863465ff8d5aa5f538c0908"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#ace996bf70863465ff8d5aa5f538c0908">Dtk::Widget::DTextEdit::setTextToSpeechEnabled</a></div><div class="ttdeci">void setTextToSpeechEnabled(bool enable)</div><div class="ttdoc">DTextEdit::setTextToSpeechEnabled 设置是否显示语音朗读菜单项</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00266">dtextedit.cpp:266</a></div></div>
+<div class="ttc" id="aqguiapplication_html_clipboard"><div class="ttname"><a href="https://doc.qt.io/qt-5/qguiapplication.html#clipboard">QGuiApplication::clipboard</a></div><div class="ttdeci">QClipboard * clipboard()</div></div>
+<div class="ttc" id="aqwidget_html_style"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#style">QWidget::style</a></div><div class="ttdeci">QStyle * style() const const</div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqcontextmenuevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcontextmenuevent.html">QContextMenuEvent</a></div></div>
+<div class="ttc" id="aqstring_html_isEmpty"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html#isEmpty">QString::isEmpty</a></div><div class="ttdeci">bool isEmpty() const const</div></div>
+<div class="ttc" id="aqaction_html_text-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qaction.html#text-prop">QAction::text</a></div><div class="ttdeci">text</div></div>
+<div class="ttc" id="aqtextedit_html_contextMenuEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#contextMenuEvent">QTextEdit::contextMenuEvent</a></div><div class="ttdeci">virtual void contextMenuEvent(QContextMenuEvent *event) override</div></div>
+<div class="ttc" id="aqtextedit_html_setText"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#setText">QTextEdit::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div></div>
+<div class="ttc" id="aqclipboard_html_setText"><div class="ttname"><a href="https://doc.qt.io/qt-5/qclipboard.html#setText">QClipboard::setText</a></div><div class="ttdeci">void setText(const QString &amp;text, QClipboard::Mode mode)</div></div>
+<div class="ttc" id="aqaction_html_triggered"><div class="ttname"><a href="https://doc.qt.io/qt-5/qaction.html#triggered">QAction::triggered</a></div><div class="ttdeci">void triggered(bool checked)</div></div>
+<div class="ttc" id="aqmenu_html_popup"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmenu.html#popup">QMenu::popup</a></div><div class="ttdeci">void popup(const QPoint &amp;p, QAction *atAction)</div></div>
+<div class="ttc" id="aqaction_html_enabled-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qaction.html#enabled-prop">QAction::setEnabled</a></div><div class="ttdeci">void setEnabled(bool)</div></div>
+<div class="ttc" id="aqstyle_html_drawPrimitive"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstyle.html#drawPrimitive">QStyle::drawPrimitive</a></div><div class="ttdeci">virtual void drawPrimitive(QStyle::PrimitiveElement element, const QStyleOption *option, QPainter *painter, const QWidget *widget) const const=0</div></div>
+<div class="ttc" id="aqtextedit_html_keyPressEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#keyPressEvent">QTextEdit::keyPressEvent</a></div><div class="ttdeci">virtual void keyPressEvent(QKeyEvent *e) override</div></div>
+<div class="ttc" id="aqevent_html_type"><div class="ttname"><a href="https://doc.qt.io/qt-5/qevent.html#type">QEvent::type</a></div><div class="ttdeci">QEvent::Type type() const const</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_acdd1f6b095c2544d198d8942b3d6f550"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#acdd1f6b095c2544d198d8942b3d6f550">Dtk::Widget::DTextEdit::setTextToTranslateEnabled</a></div><div class="ttdeci">void setTextToTranslateEnabled(bool enable)</div><div class="ttdoc">DTextEdit::setTextToTranslateEnabled 设置是否显示文本翻译菜单项</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00286">dtextedit.cpp:286</a></div></div>
+<div class="ttc" id="aqabstractscrollarea_html_setViewportMargins"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractscrollarea.html#setViewportMargins">QAbstractScrollArea::setViewportMargins</a></div><div class="ttdeci">void setViewportMargins(int left, int top, int right, int bottom)</div></div>
+<div class="ttc" id="aqstyleoptionframe_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstyleoptionframe.html">QStyleOptionFrame</a></div></div>
+<div class="ttc" id="aqaction_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qaction.html">QAction</a></div></div>
+<div class="ttc" id="adobject_8h_html_a6b3eb59f9f5c2b7511246f15a0eb25c5"><div class="ttname"><a href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a></div><div class="ttdeci">#define D_DECLARE_PUBLIC(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了 q_func() 这个函数用于返回公开类的对象，另外将公开类 声明为私有类的友元类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00028">dobject.h:28</a></div></div>
+<div class="ttc" id="aqwidget_html_autoFillBackground-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#autoFillBackground-prop">QWidget::setAutoFillBackground</a></div><div class="ttdeci">void setAutoFillBackground(bool enabled)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_a9206d33d927ac1459b19402371a91fee"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#a9206d33d927ac1459b19402371a91fee">Dtk::Widget::DTextEdit::textToSpeechIsEnabled</a></div><div class="ttdeci">bool textToSpeechIsEnabled() const</div><div class="ttdoc">DTextEdit::textToSpeechIsEnabled</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00256">dtextedit.cpp:256</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_a4dbfab10b7f0f59a75bda10d8e02eee5"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#a4dbfab10b7f0f59a75bda10d8e02eee5">Dtk::Widget::DTextEdit::setSpeechToTextEnabled</a></div><div class="ttdeci">void setSpeechToTextEnabled(bool enable)</div><div class="ttdoc">DLineEdit::setSpeechToTextEnabled 设置是否显示语音听写菜单项</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00246">dtextedit.cpp:246</a></div></div>
+<div class="ttc" id="aqkeyevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_style_html_a42036bfddd18d067159479232deaf6ffaecc2e1f977448936a38134803f89064e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_style.html#a42036bfddd18d067159479232deaf6ffaecc2e1f977448936a38134803f89064e">Dtk::Widget::DStyle::PM_FrameRadius</a></div><div class="ttdeci">@ PM_FrameRadius</div><div class="ttdef"><b>Definition:</b> <a href="dstyle_8h_source.html#l00136">dstyle.h:136</a></div></div>
+<div class="ttc" id="aqabstractscrollarea_html_viewport"><div class="ttname"><a href="https://doc.qt.io/qt-5/qabstractscrollarea.html#viewport">QAbstractScrollArea::viewport</a></div><div class="ttdeci">QWidget * viewport() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_core_1_1_d_object_html"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></div><div class="ttdoc">deepin-tool-kit 中所有公开类的祖先类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00037">dobject.h:38</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html_aed2f0eba3d88939b54abde73b4f01402"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html#aed2f0eba3d88939b54abde73b4f01402">Dtk::Widget::DTextEdit::DTextEdit</a></div><div class="ttdeci">DTextEdit(QWidget *parent=nullptr)</div><div class="ttdoc">DTextEdit::DTextEdit 实现一个用于编辑和显示纯文本和富文本的控件</div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8cpp_source.html#l00044">dtextedit.cpp:44</a></div></div>
+<div class="ttc" id="aqtextedit_html_createStandardContextMenu"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtextedit.html#createStandardContextMenu">QTextEdit::createStandardContextMenu</a></div><div class="ttdeci">QMenu * createStandardContextMenu()</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_text_edit_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_text_edit.html">Dtk::Widget::DTextEdit</a></div><div class="ttdef"><b>Definition:</b> <a href="dtextedit_8h_source.html#l00015">dtextedit.h:16</a></div></div>
+<div class="ttc" id="aqframe_html_initStyleOption"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html#initStyleOption">QFrame::initStyleOption</a></div><div class="ttdeci">void initStyleOption(QStyleOptionFrame *option) const const</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dtextedit.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:52 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

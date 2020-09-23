@@ -1,7 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_dtk_1_1_widget_1_1_d_style_option.html" title="dcxb插件通过DStyleOption来控制控件的样式" alt="" coords="161,21,355,47"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_style_option_line_edit.html" title="Dtk::Widget::DLineEdit使用的样式配置" alt="" coords="403,5,596,47"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_style_option_suggest_button.html" title="Dtk::Widget::DSuggestButton使用的样式配置" alt="" coords="403,71,596,112"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleoption.html" title=" " alt="" coords="5,78,113,105"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleoptionbutton.html" title=" " alt="" coords="183,78,333,105"/>
+<area shape="rect" id="node1" href="$class_dtk_1_1_widget_1_1_d_hi_d_p_i_helper.html" title="The DHiDPIHelper class provides helper to help applications support hiDPI." alt="" coords="5,5,201,32"/>
 </map>

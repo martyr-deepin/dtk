@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -134,24 +134,23 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> resume();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setDirection(Direction direction);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    D_DECL_DEPRECATED <span class="keywordtype">void</span> setDuration(<span class="keyword">const</span> <span class="keywordtype">int</span> duration);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> setFixedPixelMove(<span class="keyword">const</span> <span class="keywordtype">int</span> pixel);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> finished();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> stateChanged();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#draw">draw</a>(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> *painter) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#eventFilter">eventFilter</a>(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *watched, <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html">QEvent</a> *event) Q_DECL_OVERRIDE;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="dobject_8h.html#a848faf1d3a1cf9bb771f32106484a2d8">D_DECLARE_PRIVATE</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_tick_effect.html">DTickEffect</a>)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;DWIDGET_END_NAMESPACE</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // DTICKEFFECT_H</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setFixedPixelMove(<span class="keyword">const</span> <span class="keywordtype">int</span> pixel);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> finished();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> stateChanged();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qgraphicseffect.html#draw">draw</a>(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> *painter) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#eventFilter">eventFilter</a>(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *watched, <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html">QEvent</a> *event) Q_DECL_OVERRIDE;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="dobject_8h.html#a848faf1d3a1cf9bb771f32106484a2d8">D_DECLARE_PRIVATE</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_tick_effect.html">DTickEffect</a>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // DTICKEFFECT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="adobject_8h_html_a848faf1d3a1cf9bb771f32106484a2d8"><div class="ttname"><a href="dobject_8h.html#a848faf1d3a1cf9bb771f32106484a2d8">D_DECLARE_PRIVATE</a></div><div class="ttdeci">#define D_DECLARE_PRIVATE(Class)</div><div class="ttdoc">这个宏一定要放到类的私有区域，它定义了 d_func() 这个函数用于返回私有类的对象， 这个对象只应该在类的内部使用，另外将私有类声明为公开类的友元类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00027">dobject.h:27</a></div></div>
@@ -172,7 +171,7 @@ $(document).ready(function(){initNavTree('dtickeffect_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dtickeffect.h</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 16:02:20 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:33:10 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

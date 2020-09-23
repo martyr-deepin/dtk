@@ -1,0 +1,6 @@
+<map id="Dtk::Widget::DDrawerGroup" name="Dtk::Widget::DDrawerGroup">
+<area shape="rect" id="node1" title="封装了一组 DDrawer 控件(当然也可以是其子类), 并保证同一时间只有一个 DDrawer 处于展开状态" alt="" coords="5,171,208,197"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="53,95,128,121"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="153,95,295,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="97,5,351,32"/>
+</map>

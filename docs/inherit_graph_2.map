@@ -1,5 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,91,57"/>
-<area shape="rect" id="node2" href="$classconanfile_1_1_dtkcore_conan.html" title=" " alt="" coords="147,5,325,32"/>
-<area shape="rect" id="node3" href="$classconanfile_1_1_dtkwidget_conan.html" title=" " alt="" coords="139,56,333,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$class_custom_interface.html" title=" " alt="" coords="201,5,332,32"/>
 </map>

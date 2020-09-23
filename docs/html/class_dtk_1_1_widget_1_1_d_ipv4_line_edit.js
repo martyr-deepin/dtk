@@ -5,6 +5,7 @@ var class_dtk_1_1_widget_1_1_d_ipv4_line_edit =
     [ "cursorPosition", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#ac506e2c99aee553d7e3d573a5e4e063e", null ],
     [ "displayText", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a5b4e708a45739a3c91bf52d1dbae87bd", null ],
     [ "eventFilter", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a2da480fd5722ae56deab7451189c5b5b", null ],
+    [ "focusChanged", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a5dd9073efdbe5bd6df95e8efd30277f5", null ],
     [ "hasAcceptableInput", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a658e837c6b376f956122c18d4e2a1302", null ],
     [ "isReadOnly", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#ac76ae4e8ef0754ebac29e5570f6fb459", null ],
     [ "selectAll", "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a7828bbbeb182fec390be5936f5432e2d", null ],

@@ -85,29 +85,27 @@ $(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_slider.html
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public 类型</a> &#124;
-<a href="#pub-slots">Public 槽</a> &#124;
+<a href="#signals">信号</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pro-methods">Protected 成员函数</a> &#124;
-<a href="#properties">属性</a> &#124;
 <a href="class_dtk_1_1_widget_1_1_d_slider-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">Dtk::Widget::DSlider类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider 是基于 QSlider 之上扩展的控件。">DSlider</a> 是基于 <a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> 之上扩展的控件。  
+<p>DSlider一个聚合 <a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> 的滑块 \row  
  <a href="class_dtk_1_1_widget_1_1_d_slider.html#details">更多...</a></p>
 <div class="dynheader">
 类 Dtk::Widget::DSlider 继承关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dtk_1_1_widget_1_1_d_slider__inherit__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_slider_inherit__map" alt="Inheritance graph"/></div>
 <map name="_dtk_1_1_widget_1_1_d_slider_inherit__map" id="a_dtk_1_1_widget_1_1_d_slider_inherit__map">
-<area shape="rect" title="DSlider 是基于 QSlider 之上扩展的控件。" alt="" coords="24,304,179,331"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qslider.html" title=" " alt="" coords="67,229,136,256"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qabstractslider.html" title=" " alt="" coords="40,155,163,181"/>
+<area shape="rect" title="DSlider一个聚合 QSlider 的滑块 \row" alt="" coords="91,155,245,181"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="62,80,141,107"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="5,5,80,32"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="165,80,307,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <div class="dynheader">
@@ -115,225 +113,142 @@ Dtk::Widget::DSlider 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dtk_1_1_widget_1_1_d_slider__coll__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_slider_coll__map" alt="Collaboration graph"/></div>
 <map name="_dtk_1_1_widget_1_1_d_slider_coll__map" id="a_dtk_1_1_widget_1_1_d_slider_coll__map">
-<area shape="rect" title="DSlider 是基于 QSlider 之上扩展的控件。" alt="" coords="24,304,179,331"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qslider.html" title=" " alt="" coords="67,229,136,256"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qabstractslider.html" title=" " alt="" coords="40,155,163,181"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="62,80,141,107"/>
+<area shape="rect" title="DSlider一个聚合 QSlider 的滑块 \row" alt="" coords="185,171,340,197"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qwidget.html" title=" " alt="" coords="121,95,199,121"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="5,5,80,32"/>
 <area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="274,95,417,121"/>
+<area shape="rect" title=" " alt="" coords="240,5,493,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public 类型</h2></td></tr>
-<tr class="memitem:a1d141c83edabec25437c707f3f66392a"><td class="memItemLeft" align="right" valign="top"><a id="a1d141c83edabec25437c707f3f66392a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>HandleType</b> { <b>SharpHandler</b>, 
-<b>RoundHandle</b>
+<tr class="memitem:aad24d4be90c9e6b460fd37ff1c4980fb"><td class="memItemLeft" align="right" valign="top"><a id="aad24d4be90c9e6b460fd37ff1c4980fb"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SliderIcons</b> { <b>LeftIcon</b>, 
+<b>RightIcon</b>
  }</td></tr>
-<tr class="separator:a1d141c83edabec25437c707f3f66392a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aad24d4be90c9e6b460fd37ff1c4980fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
-Public 槽</h2></td></tr>
-<tr class="memitem:a9ec5066a744f1c875851dd8e52a19427"><td class="memItemLeft" align="right" valign="top"><a id="a9ec5066a744f1c875851dd8e52a19427"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a9ec5066a744f1c875851dd8e52a19427">setHoverShowValue</a> (bool <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a582f561a307165fdeda84809e39af174">hoverShowValue</a>)</td></tr>
-<tr class="memdesc:a9ec5066a744f1c875851dd8e52a19427"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置显示值的时间间隔。 <br /></td></tr>
-<tr class="separator:a9ec5066a744f1c875851dd8e52a19427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e6632a61b776b59a6acacbceb8512b"><td class="memItemLeft" align="right" valign="top"><a id="a56e6632a61b776b59a6acacbceb8512b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a56e6632a61b776b59a6acacbceb8512b">setHoverValueColor</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a4aff41c7ac3890688844468ac5fb407e">hoverValueColor</a>)</td></tr>
-<tr class="memdesc:a56e6632a61b776b59a6acacbceb8512b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置鼠标悬停在滑块上提示文本的颜色。 <br /></td></tr>
-<tr class="separator:a56e6632a61b776b59a6acacbceb8512b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec57b386bbfdf723cda5b7f70a381ba"><td class="memItemLeft" align="right" valign="top"><a id="aeec57b386bbfdf723cda5b7f70a381ba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aeec57b386bbfdf723cda5b7f70a381ba">setHoverShowValueInterval</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab797e0c74ad7e6cf11d49e92713febed">hoverShowValueInterval</a>)</td></tr>
-<tr class="memdesc:aeec57b386bbfdf723cda5b7f70a381ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置悬停显示值的时间间隔。 <br /></td></tr>
-<tr class="separator:aeec57b386bbfdf723cda5b7f70a381ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:a1937b279279b6e7dcbe4aa9f040b2534"><td class="memItemLeft" align="right" valign="top"><a id="a1937b279279b6e7dcbe4aa9f040b2534"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a1937b279279b6e7dcbe4aa9f040b2534">valueChanged</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af">value</a>)</td></tr>
+<tr class="memdesc:a1937b279279b6e7dcbe4aa9f040b2534"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider value 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a1937b279279b6e7dcbe4aa9f040b2534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80e07fe9ce30f8867f2036d56cf79ce"><td class="memItemLeft" align="right" valign="top"><a id="af80e07fe9ce30f8867f2036d56cf79ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderPressed</b> ()</td></tr>
+<tr class="separator:af80e07fe9ce30f8867f2036d56cf79ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc28a860e7931c5c7120f12b0ed3f80"><td class="memItemLeft" align="right" valign="top"><a id="a4fc28a860e7931c5c7120f12b0ed3f80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a4fc28a860e7931c5c7120f12b0ed3f80">sliderMoved</a> (int position)</td></tr>
+<tr class="memdesc:a4fc28a860e7931c5c7120f12b0ed3f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider 拖动时被发送 <br /></td></tr>
+<tr class="separator:a4fc28a860e7931c5c7120f12b0ed3f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7ff47ca8cd44eb193f82e8cf174c97"><td class="memItemLeft" align="right" valign="top"><a id="add7ff47ca8cd44eb193f82e8cf174c97"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#add7ff47ca8cd44eb193f82e8cf174c97">sliderReleased</a> ()</td></tr>
+<tr class="memdesc:add7ff47ca8cd44eb193f82e8cf174c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider被松开时被发送 <br /></td></tr>
+<tr class="separator:add7ff47ca8cd44eb193f82e8cf174c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaecc74303c97151fa50e29d58962baa"><td class="memItemLeft" align="right" valign="top"><a id="aaaecc74303c97151fa50e29d58962baa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aaaecc74303c97151fa50e29d58962baa">rangeChanged</a> (int min, int max)</td></tr>
+<tr class="memdesc:aaaecc74303c97151fa50e29d58962baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 range 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:aaaecc74303c97151fa50e29d58962baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a945e147a6ac637b557c53a23691b4"><td class="memItemLeft" align="right" valign="top"><a id="a57a945e147a6ac637b557c53a23691b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a57a945e147a6ac637b557c53a23691b4">actionTriggered</a> (int action)</td></tr>
+<tr class="memdesc:a57a945e147a6ac637b557c53a23691b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 slider actoin 触发时被发送 <br /></td></tr>
+<tr class="separator:a57a945e147a6ac637b557c53a23691b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83f9761b17f336fece3a314340b6343"><td class="memItemLeft" align="right" valign="top"><a id="af83f9761b17f336fece3a314340b6343"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#af83f9761b17f336fece3a314340b6343">iconClicked</a> (SliderIcons icon, bool checked)</td></tr>
+<tr class="memdesc:af83f9761b17f336fece3a314340b6343"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在左右 iconbutton 被点击时被发送 <br /></td></tr>
+<tr class="separator:af83f9761b17f336fece3a314340b6343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a8a87396bfc4ece61aba5ffde6041b00a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a8a87396bfc4ece61aba5ffde6041b00a">DSlider</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=0)</td></tr>
-<tr class="memdesc:a8a87396bfc4ece61aba5ffde6041b00a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider 是基于 QSlider 之上扩展的控件。">DSlider</a> 构造函数  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a8a87396bfc4ece61aba5ffde6041b00a">更多...</a><br /></td></tr>
-<tr class="separator:a8a87396bfc4ece61aba5ffde6041b00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af702d7e0c4ad46ed4f3f8ef6eb7b1261"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#af702d7e0c4ad46ed4f3f8ef6eb7b1261">DSlider</a> (Qt::Orientation <a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#orientation-prop">orientation</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=0)</td></tr>
-<tr class="memdesc:af702d7e0c4ad46ed4f3f8ef6eb7b1261"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider 是基于 QSlider 之上扩展的控件。">DSlider</a> 的重载构造函数  <a href="class_dtk_1_1_widget_1_1_d_slider.html#af702d7e0c4ad46ed4f3f8ef6eb7b1261">更多...</a><br /></td></tr>
-<tr class="separator:af702d7e0c4ad46ed4f3f8ef6eb7b1261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7b66a4701d061fbcb16bae9e9e898cc"><td class="memItemLeft" align="right" valign="top"><a id="ad7b66a4701d061fbcb16bae9e9e898cc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>handleType</b> () const</td></tr>
-<tr class="separator:ad7b66a4701d061fbcb16bae9e9e898cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ff6bbdbf50073906b4fc9060be3620c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a0ff6bbdbf50073906b4fc9060be3620c">setHandleType</a> (HandleType <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3bef3a8356672278b209a7fe912ab0cd">handleType</a>)</td></tr>
-<tr class="memdesc:a0ff6bbdbf50073906b4fc9060be3620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块句柄类型  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a0ff6bbdbf50073906b4fc9060be3620c">更多...</a><br /></td></tr>
-<tr class="separator:a0ff6bbdbf50073906b4fc9060be3620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07b66b30ee173a38c17e6d9f530a5a5"><td class="memItemLeft" align="right" valign="top"><a id="aa07b66b30ee173a38c17e6d9f530a5a5"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa07b66b30ee173a38c17e6d9f530a5a5">leftTip</a> () const</td></tr>
-<tr class="memdesc:aa07b66b30ee173a38c17e6d9f530a5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示在滑块左侧的文本 <br /></td></tr>
-<tr class="separator:aa07b66b30ee173a38c17e6d9f530a5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82ff68be6c384920ecdd2d259c54c3f"><td class="memItemLeft" align="right" valign="top"><a id="ab82ff68be6c384920ecdd2d259c54c3f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab82ff68be6c384920ecdd2d259c54c3f">setLeftTip</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa07b66b30ee173a38c17e6d9f530a5a5">leftTip</a>)</td></tr>
-<tr class="memdesc:ab82ff68be6c384920ecdd2d259c54c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块左侧的文本 <br /></td></tr>
-<tr class="separator:ab82ff68be6c384920ecdd2d259c54c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab50b527ad75abfe4d837a6be1bb6521"><td class="memItemLeft" align="right" valign="top"><a id="aab50b527ad75abfe4d837a6be1bb6521"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aab50b527ad75abfe4d837a6be1bb6521">rightTip</a> () const</td></tr>
-<tr class="memdesc:aab50b527ad75abfe4d837a6be1bb6521"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示在滑块右侧的文本 <br /></td></tr>
-<tr class="separator:aab50b527ad75abfe4d837a6be1bb6521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c4769193c49de1bd4b32a4124de490"><td class="memItemLeft" align="right" valign="top"><a id="ac4c4769193c49de1bd4b32a4124de490"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ac4c4769193c49de1bd4b32a4124de490">setRightTip</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aab50b527ad75abfe4d837a6be1bb6521">rightTip</a>)</td></tr>
-<tr class="memdesc:ac4c4769193c49de1bd4b32a4124de490"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置滑块右侧的文本 <br /></td></tr>
-<tr class="separator:ac4c4769193c49de1bd4b32a4124de490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0deba57e0369debff255c5d6bdffee2f"><td class="memItemLeft" align="right" valign="top"><a id="a0deba57e0369debff255c5d6bdffee2f"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tipColor</b> () const</td></tr>
-<tr class="separator:a0deba57e0369debff255c5d6bdffee2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5056c4071f82e382123a4b8ba69cf417"><td class="memItemLeft" align="right" valign="top"><a id="a5056c4071f82e382123a4b8ba69cf417"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a5056c4071f82e382123a4b8ba69cf417">setTipColor</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a85f87bbfee10ab0cac59f9e88188e072">tipColor</a>)</td></tr>
-<tr class="memdesc:a5056c4071f82e382123a4b8ba69cf417"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置绘制刻度提示的颜色。 <br /></td></tr>
-<tr class="separator:a5056c4071f82e382123a4b8ba69cf417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f56578cc3c956efd0282c69f494d1e9"><td class="memItemLeft" align="right" valign="top"><a id="a8f56578cc3c956efd0282c69f494d1e9"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>scaleColor</b> () const</td></tr>
-<tr class="separator:a8f56578cc3c956efd0282c69f494d1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1709ce30adc4b95fed3564154df5b57"><td class="memItemLeft" align="right" valign="top"><a id="ac1709ce30adc4b95fed3564154df5b57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ac1709ce30adc4b95fed3564154df5b57">setScaleColor</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#acb041fb1a86f75d29e12097c42a6fd89">scaleColor</a>)</td></tr>
-<tr class="memdesc:ac1709ce30adc4b95fed3564154df5b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置刻度线颜色 <br /></td></tr>
-<tr class="separator:ac1709ce30adc4b95fed3564154df5b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6759df30013343e08e771eb36aca3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3e6759df30013343e08e771eb36aca3a">addScale</a> (int <a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">value</a>)</td></tr>
-<tr class="memdesc:a3e6759df30013343e08e771eb36aca3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3e6759df30013343e08e771eb36aca3a" title="DSlider::addScale 在滑块上添加刻度标记">DSlider::addScale</a> 在滑块上添加刻度标记  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a3e6759df30013343e08e771eb36aca3a">更多...</a><br /></td></tr>
-<tr class="separator:a3e6759df30013343e08e771eb36aca3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150ec3a44df8eb6aa981d7fcd9a111b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a150ec3a44df8eb6aa981d7fcd9a111b1">removeScale</a> (int <a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">value</a>)</td></tr>
-<tr class="memdesc:a150ec3a44df8eb6aa981d7fcd9a111b1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a150ec3a44df8eb6aa981d7fcd9a111b1" title="DSlider::removeScale 删除滑块上的刻度标记。">DSlider::removeScale</a> 删除滑块上的刻度标记。  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a150ec3a44df8eb6aa981d7fcd9a111b1">更多...</a><br /></td></tr>
-<tr class="separator:a150ec3a44df8eb6aa981d7fcd9a111b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a12154abe6e84702186c8e4905655c"><td class="memItemLeft" align="right" valign="top"><a id="a09a12154abe6e84702186c8e4905655c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hoverShowValue</b> () const</td></tr>
-<tr class="separator:a09a12154abe6e84702186c8e4905655c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79f1586886c981fcb1faef0846e4774"><td class="memItemLeft" align="right" valign="top"><a id="ad79f1586886c981fcb1faef0846e4774"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hoverValueColor</b> () const</td></tr>
-<tr class="separator:ad79f1586886c981fcb1faef0846e4774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c4ae88d600c787b9ba73db7c786ccc"><td class="memItemLeft" align="right" valign="top"><a id="a96c4ae88d600c787b9ba73db7c786ccc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>hoverShowValueInterval</b> () const</td></tr>
-<tr class="separator:a96c4ae88d600c787b9ba73db7c786ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_qslider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qslider')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qslider.html">QSlider</a></td></tr>
-<tr class="memitem:metaObject inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
-virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#metaObject">metaObject</a> () const const</td></tr>
-<tr class="separator:metaObject inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:qt_metacast inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
-<tr class="separator:qt_metacast inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:qt_metacall inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
-<tr class="separator:qt_metacall inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:QSlider inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="QSlider"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#QSlider">QSlider</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
-<tr class="separator:QSlider inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:QSlider-1 inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="QSlider-1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#QSlider-1">QSlider</a> (Qt::Orientation <a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#orientation-prop">orientation</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
-<tr class="separator:QSlider-1 inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:minimumSizeHint inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="minimumSizeHint"></a>
-virtual <a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#minimumSizeHint">minimumSizeHint</a> () const const override</td></tr>
-<tr class="separator:minimumSizeHint inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tickPosition-prop inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tickPosition-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tickPosition-prop">setTickPosition</a> (QSlider::TickPosition position)</td></tr>
-<tr class="separator:tickPosition-prop inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tickPosition-prop inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tickPosition-prop"></a>
-QSlider::TickPosition&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tickPosition-prop">tickPosition</a> () const const</td></tr>
-<tr class="separator:tickPosition-prop inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tickInterval-prop inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tickInterval-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tickInterval-prop">setTickInterval</a> (int ti)</td></tr>
-<tr class="separator:tickInterval-prop inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tickInterval-prop inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tickInterval-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tickInterval-prop">tickInterval</a> () const const</td></tr>
-<tr class="separator:tickInterval-prop inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:event inherit pub_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#event">event</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) override</td></tr>
-<tr class="separator:event inherit pub_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_qabstractslider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qabstractslider')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractslider.html">QAbstractSlider</a></td></tr>
-<tr class="memitem:QAbstractSlider inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="QAbstractSlider"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#QAbstractSlider">QAbstractSlider</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
-<tr class="separator:QAbstractSlider inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:orientation-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="orientation-prop"></a>
-Qt::Orientation&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#orientation-prop">orientation</a> () const const</td></tr>
-<tr class="separator:orientation-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:minimum-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="minimum-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#minimum-prop">setMinimum</a> (int)</td></tr>
-<tr class="separator:minimum-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:minimum-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="minimum-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#minimum-prop">minimum</a> () const const</td></tr>
-<tr class="separator:minimum-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:maximum-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="maximum-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#maximum-prop">setMaximum</a> (int)</td></tr>
-<tr class="separator:maximum-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:maximum-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="maximum-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#maximum-prop">maximum</a> () const const</td></tr>
-<tr class="separator:maximum-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:singleStep-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="singleStep-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#singleStep-prop">setSingleStep</a> (int)</td></tr>
-<tr class="separator:singleStep-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:singleStep-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="singleStep-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#singleStep-prop">singleStep</a> () const const</td></tr>
-<tr class="separator:singleStep-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pageStep-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="pageStep-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#pageStep-prop">setPageStep</a> (int)</td></tr>
-<tr class="separator:pageStep-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pageStep-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="pageStep-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#pageStep-prop">pageStep</a> () const const</td></tr>
-<tr class="separator:pageStep-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tracking-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="tracking-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#tracking-prop">setTracking</a> (bool enable)</td></tr>
-<tr class="separator:tracking-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tracking-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="tracking-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#tracking-prop">hasTracking</a> () const const</td></tr>
-<tr class="separator:tracking-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderDown-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderDown-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderDown-prop">setSliderDown</a> (bool)</td></tr>
-<tr class="separator:sliderDown-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderDown-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderDown-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderDown-prop">isSliderDown</a> () const const</td></tr>
-<tr class="separator:sliderDown-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderPosition-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderPosition-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderPosition-prop">setSliderPosition</a> (int)</td></tr>
-<tr class="separator:sliderPosition-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderPosition-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderPosition-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderPosition-prop">sliderPosition</a> () const const</td></tr>
-<tr class="separator:sliderPosition-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:invertedAppearance-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="invertedAppearance-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#invertedAppearance-prop">setInvertedAppearance</a> (bool)</td></tr>
-<tr class="separator:invertedAppearance-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:invertedAppearance-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="invertedAppearance-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#invertedAppearance-prop">invertedAppearance</a> () const const</td></tr>
-<tr class="separator:invertedAppearance-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:invertedControls-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="invertedControls-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#invertedControls-prop">setInvertedControls</a> (bool)</td></tr>
-<tr class="separator:invertedControls-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:invertedControls-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="invertedControls-prop"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#invertedControls-prop">invertedControls</a> () const const</td></tr>
-<tr class="separator:invertedControls-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:value-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="value-prop"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">value</a> () const const</td></tr>
-<tr class="separator:value-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:triggerAction inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="triggerAction"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#triggerAction">triggerAction</a> (QAbstractSlider::SliderAction action)</td></tr>
-<tr class="separator:triggerAction inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:value-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="value-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">setValue</a> (int)</td></tr>
-<tr class="separator:value-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:orientation-prop inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="orientation-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#orientation-prop">setOrientation</a> (Qt::Orientation)</td></tr>
-<tr class="separator:orientation-prop inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:setRange inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="setRange"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#setRange">setRange</a> (int min, int max)</td></tr>
-<tr class="separator:setRange inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:valueChanged inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="valueChanged"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#valueChanged">valueChanged</a> (int <a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">value</a>)</td></tr>
-<tr class="separator:valueChanged inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderPressed inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderPressed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderPressed">sliderPressed</a> ()</td></tr>
-<tr class="separator:sliderPressed inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderMoved inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderMoved"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderMoved">sliderMoved</a> (int <a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">value</a>)</td></tr>
-<tr class="separator:sliderMoved inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderReleased inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderReleased"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderReleased">sliderReleased</a> ()</td></tr>
-<tr class="separator:sliderReleased inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:rangeChanged inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="rangeChanged"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#rangeChanged">rangeChanged</a> (int min, int max)</td></tr>
-<tr class="separator:rangeChanged inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:actionTriggered inherit pub_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="actionTriggered"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#actionTriggered">actionTriggered</a> (int action)</td></tr>
-<tr class="separator:actionTriggered inherit pub_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95781afe674ccd73294e3fe4d55161e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ad95781afe674ccd73294e3fe4d55161e">DSlider</a> (Qt::Orientation <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#af1802e598d5820ed702e7a967a00037a">orientation</a>=Qt::Horizontal, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:ad95781afe674ccd73294e3fe4d55161e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider的构造函数  <a href="class_dtk_1_1_widget_1_1_d_slider.html#ad95781afe674ccd73294e3fe4d55161e">更多...</a><br /></td></tr>
+<tr class="separator:ad95781afe674ccd73294e3fe4d55161e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1802e598d5820ed702e7a967a00037a"><td class="memItemLeft" align="right" valign="top">Qt::Orientation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#af1802e598d5820ed702e7a967a00037a">orientation</a> () const</td></tr>
+<tr class="memdesc:af1802e598d5820ed702e7a967a00037a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#af1802e598d5820ed702e7a967a00037a" title="DSlider::orientation">DSlider::orientation</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#af1802e598d5820ed702e7a967a00037a">更多...</a><br /></td></tr>
+<tr class="separator:af1802e598d5820ed702e7a967a00037a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c958aa600fdf07361794d36bdcc1d0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a39c958aa600fdf07361794d36bdcc1d0">slider</a> ()</td></tr>
+<tr class="memdesc:a39c958aa600fdf07361794d36bdcc1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::slider返回 <a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> 对象 \row 若 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider一个聚合 QSlider 的滑块 \row">DSlider</a> 不满足输入框的使用需求，请用此函数抛出的对象  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a39c958aa600fdf07361794d36bdcc1d0">更多...</a><br /></td></tr>
+<tr class="separator:a39c958aa600fdf07361794d36bdcc1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39506594f017bcb6e91b186b9a73d740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a39506594f017bcb6e91b186b9a73d740">setLeftIcon</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;left)</td></tr>
+<tr class="memdesc:a39506594f017bcb6e91b186b9a73d740"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setLeftIcon设置滑块左侧图标  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a39506594f017bcb6e91b186b9a73d740">更多...</a><br /></td></tr>
+<tr class="separator:a39506594f017bcb6e91b186b9a73d740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1572e4378be74d7f3ace5fd7de6dc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aae1572e4378be74d7f3ace5fd7de6dc3">setRightIcon</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;right)</td></tr>
+<tr class="memdesc:aae1572e4378be74d7f3ace5fd7de6dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setRightIcon设置滑块右图标  <a href="class_dtk_1_1_widget_1_1_d_slider.html#aae1572e4378be74d7f3ace5fd7de6dc3">更多...</a><br /></td></tr>
+<tr class="separator:aae1572e4378be74d7f3ace5fd7de6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f3e78e3ccbf5efa296885feb838b7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a64f3e78e3ccbf5efa296885feb838b7e">setIconSize</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>)</td></tr>
+<tr class="memdesc:a64f3e78e3ccbf5efa296885feb838b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setIconSize设置滑块图标大小  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a64f3e78e3ccbf5efa296885feb838b7e">更多...</a><br /></td></tr>
+<tr class="separator:a64f3e78e3ccbf5efa296885feb838b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33cf82eef19fd5fc718bf85044737312"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a33cf82eef19fd5fc718bf85044737312">setMinimum</a> (int min)</td></tr>
+<tr class="memdesc:a33cf82eef19fd5fc718bf85044737312"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a33cf82eef19fd5fc718bf85044737312" title="DSlider::setMinimum">DSlider::setMinimum</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a33cf82eef19fd5fc718bf85044737312">更多...</a><br /></td></tr>
+<tr class="separator:a33cf82eef19fd5fc718bf85044737312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c4c7c7ff1d5092a0c03447f2697d85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a33c4c7c7ff1d5092a0c03447f2697d85">minimum</a> () const</td></tr>
+<tr class="memdesc:a33c4c7c7ff1d5092a0c03447f2697d85"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a33c4c7c7ff1d5092a0c03447f2697d85" title="DSlider::minimum">DSlider::minimum</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a33c4c7c7ff1d5092a0c03447f2697d85">更多...</a><br /></td></tr>
+<tr class="separator:a33c4c7c7ff1d5092a0c03447f2697d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4bf96c18c304ae1c69887c8d4377b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3c4bf96c18c304ae1c69887c8d4377b1">setValue</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af">value</a>)</td></tr>
+<tr class="memdesc:a3c4bf96c18c304ae1c69887c8d4377b1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3c4bf96c18c304ae1c69887c8d4377b1" title="DSlider::setValue">DSlider::setValue</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a3c4bf96c18c304ae1c69887c8d4377b1">更多...</a><br /></td></tr>
+<tr class="separator:a3c4bf96c18c304ae1c69887c8d4377b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae675ff5752e389a4c49acb9ec9bea9af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af">value</a> () const</td></tr>
+<tr class="memdesc:ae675ff5752e389a4c49acb9ec9bea9af"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af" title="DSlider::value">DSlider::value</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af">更多...</a><br /></td></tr>
+<tr class="separator:ae675ff5752e389a4c49acb9ec9bea9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58916c99dee4cf6e982c94d6b3e6c68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab58916c99dee4cf6e982c94d6b3e6c68">setPageStep</a> (int <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a2eba523ef70c60ab946dacae5a3c8df7">pageStep</a>)</td></tr>
+<tr class="memdesc:ab58916c99dee4cf6e982c94d6b3e6c68"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab58916c99dee4cf6e982c94d6b3e6c68" title="DSlider::setPageStep">DSlider::setPageStep</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#ab58916c99dee4cf6e982c94d6b3e6c68">更多...</a><br /></td></tr>
+<tr class="separator:ab58916c99dee4cf6e982c94d6b3e6c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eba523ef70c60ab946dacae5a3c8df7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a2eba523ef70c60ab946dacae5a3c8df7">pageStep</a> () const</td></tr>
+<tr class="memdesc:a2eba523ef70c60ab946dacae5a3c8df7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a2eba523ef70c60ab946dacae5a3c8df7" title="DSlider::pageStep">DSlider::pageStep</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a2eba523ef70c60ab946dacae5a3c8df7">更多...</a><br /></td></tr>
+<tr class="separator:a2eba523ef70c60ab946dacae5a3c8df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3fe2850111406bb57e7fe783729842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#acb3fe2850111406bb57e7fe783729842">setMaximum</a> (int max)</td></tr>
+<tr class="memdesc:acb3fe2850111406bb57e7fe783729842"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#acb3fe2850111406bb57e7fe783729842" title="DSlider::setMaximum">DSlider::setMaximum</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#acb3fe2850111406bb57e7fe783729842">更多...</a><br /></td></tr>
+<tr class="separator:acb3fe2850111406bb57e7fe783729842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0691ff570798cd52f80a7c7ba37c5a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa0691ff570798cd52f80a7c7ba37c5a2">maximum</a> () const</td></tr>
+<tr class="memdesc:aa0691ff570798cd52f80a7c7ba37c5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa0691ff570798cd52f80a7c7ba37c5a2" title="DSlider::maximum">DSlider::maximum</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#aa0691ff570798cd52f80a7c7ba37c5a2">更多...</a><br /></td></tr>
+<tr class="separator:aa0691ff570798cd52f80a7c7ba37c5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058880f07b772e7971543dcdee995851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a058880f07b772e7971543dcdee995851">setLeftTicks</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;info)</td></tr>
+<tr class="memdesc:a058880f07b772e7971543dcdee995851"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setLeftTicks设置刻度在滑块左侧 \row 根据 <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> 数量，绘制刻度的个数，绘制刻度标识 \row  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a058880f07b772e7971543dcdee995851">更多...</a><br /></td></tr>
+<tr class="separator:a058880f07b772e7971543dcdee995851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb424455d3b614f0a706bf71f26697c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#afb424455d3b614f0a706bf71f26697c3">setRightTicks</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;info)</td></tr>
+<tr class="memdesc:afb424455d3b614f0a706bf71f26697c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setRightTicks设置刻度在滑块右侧 \row 根据 <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> 数量，绘制刻度的个数，绘制刻度标识 \row  <a href="class_dtk_1_1_widget_1_1_d_slider.html#afb424455d3b614f0a706bf71f26697c3">更多...</a><br /></td></tr>
+<tr class="separator:afb424455d3b614f0a706bf71f26697c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7fc15fdd1a8bfe1e4b35798a321b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aaa7fc15fdd1a8bfe1e4b35798a321b79">setAboveTicks</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;info)</td></tr>
+<tr class="memdesc:aaa7fc15fdd1a8bfe1e4b35798a321b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setAboveTicks设置刻度在滑块上方  <a href="class_dtk_1_1_widget_1_1_d_slider.html#aaa7fc15fdd1a8bfe1e4b35798a321b79">更多...</a><br /></td></tr>
+<tr class="separator:aaa7fc15fdd1a8bfe1e4b35798a321b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a132506b35ea1260aea2fc1abc3d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab8a132506b35ea1260aea2fc1abc3d7b">setBelowTicks</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;info)</td></tr>
+<tr class="memdesc:ab8a132506b35ea1260aea2fc1abc3d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setBelowTicks设置刻度在滑块下方  <a href="class_dtk_1_1_widget_1_1_d_slider.html#ab8a132506b35ea1260aea2fc1abc3d7b">更多...</a><br /></td></tr>
+<tr class="separator:ab8a132506b35ea1260aea2fc1abc3d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95405d83c0db060af5e401a7575c805e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a95405d83c0db060af5e401a7575c805e">setMarkPositions</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; int &gt; list)</td></tr>
+<tr class="memdesc:a95405d83c0db060af5e401a7575c805e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a95405d83c0db060af5e401a7575c805e" title="DSlider::setMarkPositions 设置显示双边的刻度线（不显示刻度值）">DSlider::setMarkPositions</a> 设置显示双边的刻度线（不显示刻度值）  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a95405d83c0db060af5e401a7575c805e">更多...</a><br /></td></tr>
+<tr class="separator:a95405d83c0db060af5e401a7575c805e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c529f98d1992310b3ce9c73ca196c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a6c529f98d1992310b3ce9c73ca196c4c">setMouseWheelEnabled</a> (bool <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#enabled-prop">enabled</a>)</td></tr>
+<tr class="memdesc:a6c529f98d1992310b3ce9c73ca196c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::setMouseWheelEnabled设置鼠标滚轮是否开启  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a6c529f98d1992310b3ce9c73ca196c4c">更多...</a><br /></td></tr>
+<tr class="separator:a6c529f98d1992310b3ce9c73ca196c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81203534eca4a714a01b2822fb0fa4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab81203534eca4a714a01b2822fb0fa4a">setTipValue</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af">value</a>)</td></tr>
+<tr class="memdesc:ab81203534eca4a714a01b2822fb0fa4a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab81203534eca4a714a01b2822fb0fa4a" title="DSlider::setTipValue 此函数会创建气泡，气泡将跟随滑块移动">DSlider::setTipValue</a> 此函数会创建气泡，气泡将跟随滑块移动  <a href="class_dtk_1_1_widget_1_1_d_slider.html#ab81203534eca4a714a01b2822fb0fa4a">更多...</a><br /></td></tr>
+<tr class="separator:ab81203534eca4a714a01b2822fb0fa4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae0f1d40520150a3063aa089c7c2446"><td class="memItemLeft" align="right" valign="top">QSlider::TickPosition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a0ae0f1d40520150a3063aa089c7c2446">tickPosition</a> () const</td></tr>
+<tr class="memdesc:a0ae0f1d40520150a3063aa089c7c2446"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSlider::tickPosition返回滑块的记号位置 \row 获取滑块刻度当前朝向 \row  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a0ae0f1d40520150a3063aa089c7c2446">更多...</a><br /></td></tr>
+<tr class="separator:a0ae0f1d40520150a3063aa089c7c2446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e78176628207a1ac8866de5ea8ba7f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a60e78176628207a1ac8866de5ea8ba7f">sizeHint</a> () const override</td></tr>
+<tr class="memdesc:a60e78176628207a1ac8866de5ea8ba7f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a60e78176628207a1ac8866de5ea8ba7f" title="DSlider::sizeHint">DSlider::sizeHint</a>  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a60e78176628207a1ac8866de5ea8ba7f">更多...</a><br /></td></tr>
+<tr class="separator:a60e78176628207a1ac8866de5ea8ba7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a0abedabe3fb3127ab8ee3514fb916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a46a0abedabe3fb3127ab8ee3514fb916">setHandleVisible</a> (bool b)</td></tr>
+<tr class="memdesc:a46a0abedabe3fb3127ab8ee3514fb916"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a46a0abedabe3fb3127ab8ee3514fb916" title="DSlider::setHandleVisible 设置滑块时候显示">DSlider::setHandleVisible</a> 设置滑块时候显示  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a46a0abedabe3fb3127ab8ee3514fb916">更多...</a><br /></td></tr>
+<tr class="separator:a46a0abedabe3fb3127ab8ee3514fb916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa812f8a3708752348baeed03b8d1b3f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa812f8a3708752348baeed03b8d1b3f4">handleVisible</a> () const</td></tr>
+<tr class="memdesc:aa812f8a3708752348baeed03b8d1b3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa812f8a3708752348baeed03b8d1b3f4" title="DSlider::handleVisible 获取滑块是否显示的状态">DSlider::handleVisible</a> 获取滑块是否显示的状态  <a href="class_dtk_1_1_widget_1_1_d_slider.html#aa812f8a3708752348baeed03b8d1b3f4">更多...</a><br /></td></tr>
+<tr class="separator:aa812f8a3708752348baeed03b8d1b3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e014faa04f0cfa86ed4e9587e2ae14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a48e014faa04f0cfa86ed4e9587e2ae14">setEnabledAcrossStyle</a> (bool <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#enabled-prop">enabled</a>)</td></tr>
+<tr class="memdesc:a48e014faa04f0cfa86ed4e9587e2ae14"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a48e014faa04f0cfa86ed4e9587e2ae14" title="DSlider::setEnabledAcrossStyle 滑槽是否禁用活动色填充已经滑过的滑槽 默认普通 DSlider 滑过的滑槽是活动色填充， 调用过 setXXXTicks 的 DSlider...">DSlider::setEnabledAcrossStyle</a> 滑槽是否禁用活动色填充已经滑过的滑槽 默认普通 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider一个聚合 QSlider 的滑块 \row">DSlider</a> 滑过的滑槽是活动色填充， 调用过 setXXXTicks 的 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider一个聚合 QSlider 的滑块 \row">DSlider</a> 则默认禁用活动色填充  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a48e014faa04f0cfa86ed4e9587e2ae14">更多...</a><br /></td></tr>
+<tr class="separator:a48e014faa04f0cfa86ed4e9587e2ae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qwidget')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacast inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
+<tr class="separator:qt_metacast inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacall inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
+<tr class="separator:qt_metacall inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:QWidget inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="QWidget"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#QWidget">QWidget</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> f)</td></tr>
 <tr class="separator:QWidget inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -892,6 +807,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="h
 <tr class="memitem:setWindowState inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="setWindowState"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#setWindowState">setWindowState</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qt.html#WindowState-enum">Qt::WindowStates</a> <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#windowState">windowState</a>)</td></tr>
 <tr class="separator:setWindowState inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:minimumSizeHint-prop inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="minimumSizeHint-prop"></a>
+virtual <a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#minimumSizeHint-prop">minimumSizeHint</a> () const const</td></tr>
+<tr class="separator:minimumSizeHint-prop inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:sizePolicy-prop inherit pub_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="sizePolicy-prop"></a>
 <a class="elRef" href="https://doc.qt.io/qt-5/qsizepolicy.html">QSizePolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#sizePolicy-prop">sizePolicy</a> () const const</td></tr>
 <tr class="separator:sizePolicy-prop inherit pub_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1061,9 +979,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="h
 <tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
 <tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
-<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
 <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
 <tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1209,54 +1124,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="ht
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected 成员函数</h2></td></tr>
-<tr class="memitem:a7208e509c93306abc3b11fea28c4f834"><td class="memItemLeft" align="right" valign="top"><a id="a7208e509c93306abc3b11fea28c4f834"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DSlider</b> (DSliderPrivate &amp;d)</td></tr>
-<tr class="separator:a7208e509c93306abc3b11fea28c4f834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ca82795304bd873ab32575b79abf31"><td class="memItemLeft" align="right" valign="top"><a id="a89ca82795304bd873ab32575b79abf31"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
-<tr class="separator:a89ca82795304bd873ab32575b79abf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962185a0848f3ffb391ab3e754b3bc9e"><td class="memItemLeft" align="right" valign="top"><a id="a962185a0848f3ffb391ab3e754b3bc9e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
-<tr class="separator:a962185a0848f3ffb391ab3e754b3bc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa213e1bfc5bc56f783817a21b75d6bd"><td class="memItemLeft" align="right" valign="top"><a id="afa213e1bfc5bc56f783817a21b75d6bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
-<tr class="separator:afa213e1bfc5bc56f783817a21b75d6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a188cdb4bd6d30a5a8cd1355e5ec7d0c6"><td class="memItemLeft" align="right" valign="top"><a id="a188cdb4bd6d30a5a8cd1355e5ec7d0c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
-<tr class="separator:a188cdb4bd6d30a5a8cd1355e5ec7d0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cfbdc479c327a9f1268626ea40ef612"><td class="memItemLeft" align="right" valign="top"><a id="a7cfbdc479c327a9f1268626ea40ef612"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const Q_DECL_OVERRIDE</td></tr>
-<tr class="separator:a7cfbdc479c327a9f1268626ea40ef612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_qslider"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qslider')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qslider.html">QSlider</a></td></tr>
-<tr class="memitem:initStyleOption inherit pro_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="initStyleOption"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#initStyleOption">initStyleOption</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qstyleoptionslider.html">QStyleOptionSlider</a> *option) const const</td></tr>
-<tr class="separator:initStyleOption inherit pro_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_qabstractslider"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qabstractslider')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractslider.html">QAbstractSlider</a></td></tr>
-<tr class="memitem:setRepeatAction inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="setRepeatAction"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#setRepeatAction">setRepeatAction</a> (QAbstractSlider::SliderAction action, int thresholdTime, int repeatTime)</td></tr>
-<tr class="separator:setRepeatAction inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:repeatAction inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="repeatAction"></a>
-QAbstractSlider::SliderAction&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#repeatAction">repeatAction</a> () const const</td></tr>
-<tr class="separator:repeatAction inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderChange inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderChange"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderChange">sliderChange</a> (QAbstractSlider::SliderChange change)</td></tr>
-<tr class="separator:sliderChange inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:keyPressEvent inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="keyPressEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#keyPressEvent">keyPressEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *ev) override</td></tr>
-<tr class="separator:keyPressEvent inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:timerEvent inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#timerEvent">timerEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *e) override</td></tr>
-<tr class="separator:timerEvent inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:wheelEvent inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="wheelEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#wheelEvent">wheelEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwheelevent.html">QWheelEvent</a> *e) override</td></tr>
-<tr class="separator:wheelEvent inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:changeEvent inherit pro_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="changeEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#changeEvent">changeEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *ev) override</td></tr>
-<tr class="separator:changeEvent inherit pro_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f83c7d59d5b1a9f9c2a1c205a2693f"><td class="memItemLeft" align="right" valign="top"><a id="a15f83c7d59d5b1a9f9c2a1c205a2693f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DSlider</b> (DSliderPrivate &amp;q, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:a15f83c7d59d5b1a9f9c2a1c205a2693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6c00da8db82715caf3b27d36b63784"><td class="memItemLeft" align="right" valign="top"><a id="a0a6c00da8db82715caf3b27d36b63784"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) override</td></tr>
+<tr class="separator:a0a6c00da8db82715caf3b27d36b63784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ffae10ba8d2dba502294637d1d14e5"><td class="memItemLeft" align="right" valign="top"><a id="a45ffae10ba8d2dba502294637d1d14e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a45ffae10ba8d2dba502294637d1d14e5">eventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *event) override</td></tr>
+<tr class="memdesc:a45ffae10ba8d2dba502294637d1d14e5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a45ffae10ba8d2dba502294637d1d14e5" title="DSlider::eventFilter \row 此函数处理了鼠标滚轮事件">DSlider::eventFilter</a> \row 此函数处理了鼠标滚轮事件 <br /></td></tr>
+<tr class="separator:a45ffae10ba8d2dba502294637d1d14e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qwidget')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
+<tr class="memitem:mousePressEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mousePressEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mousePressEvent">mousePressEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:mousePressEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseReleaseEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseReleaseEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseReleaseEvent">mouseReleaseEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:mouseReleaseEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:mouseDoubleClickEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseDoubleClickEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseDoubleClickEvent">mouseDoubleClickEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:mouseDoubleClickEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseMoveEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseMoveEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseMoveEvent">mouseMoveEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:mouseMoveEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:wheelEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="wheelEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#wheelEvent">wheelEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwheelevent.html">QWheelEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:wheelEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:keyPressEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="keyPressEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#keyPressEvent">keyPressEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:keyPressEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:keyReleaseEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="keyReleaseEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#keyReleaseEvent">keyReleaseEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qkeyevent.html">QKeyEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:keyReleaseEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1272,6 +1168,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="memitem:leaveEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="leaveEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#leaveEvent">leaveEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:leaveEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:paintEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="paintEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#paintEvent">paintEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:paintEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:moveEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="moveEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#moveEvent">moveEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qmoveevent.html">QMoveEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
 <tr class="separator:moveEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1311,6 +1210,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="memitem:nativeEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="nativeEvent"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#nativeEvent">nativeEvent</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;eventType, void *message, long *result)</td></tr>
 <tr class="separator:nativeEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:changeEvent inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="changeEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#changeEvent">changeEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>)</td></tr>
+<tr class="separator:changeEvent inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:metric inherit pro_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="metric"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#metric">metric</a> (QPaintDevice::PaintDeviceMetric m) const const override</td></tr>
 <tr class="separator:metric inherit pro_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1351,6 +1253,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="ht
 <tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
 <tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
 <tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1363,72 +1268,81 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
 <tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#adbed6e66a1393a6045fb24e50300db7f">DObject</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有在不需要数据成员的派生类中才会使用 <br /></td></tr>
+<tr class="separator:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">DObject</a> (DObjectPrivate &amp;dd, <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">在派生类中比较常用的构造函数  <a href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">更多...</a><br /></td></tr>
+<tr class="separator:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-属性</h2></td></tr>
-<tr class="memitem:a3bef3a8356672278b209a7fe912ab0cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3bef3a8356672278b209a7fe912ab0cd">handleType</a></td></tr>
-<tr class="memdesc:a3bef3a8356672278b209a7fe912ab0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">滑块句柄类型  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a3bef3a8356672278b209a7fe912ab0cd">更多...</a><br /></td></tr>
-<tr class="separator:a3bef3a8356672278b209a7fe912ab0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f87bbfee10ab0cac59f9e88188e072"><td class="memItemLeft" align="right" valign="top"><a id="a85f87bbfee10ab0cac59f9e88188e072"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a85f87bbfee10ab0cac59f9e88188e072">tipColor</a></td></tr>
-<tr class="memdesc:a85f87bbfee10ab0cac59f9e88188e072"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于绘制刻度提示的颜色。 <br /></td></tr>
-<tr class="separator:a85f87bbfee10ab0cac59f9e88188e072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb041fb1a86f75d29e12097c42a6fd89"><td class="memItemLeft" align="right" valign="top"><a id="acb041fb1a86f75d29e12097c42a6fd89"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#acb041fb1a86f75d29e12097c42a6fd89">scaleColor</a></td></tr>
-<tr class="memdesc:acb041fb1a86f75d29e12097c42a6fd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">刻度线颜色 <br /></td></tr>
-<tr class="separator:acb041fb1a86f75d29e12097c42a6fd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a582f561a307165fdeda84809e39af174"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a582f561a307165fdeda84809e39af174">hoverShowValue</a></td></tr>
-<tr class="memdesc:a582f561a307165fdeda84809e39af174"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示鼠标悬停在滑块上的值。  <a href="class_dtk_1_1_widget_1_1_d_slider.html#a582f561a307165fdeda84809e39af174">更多...</a><br /></td></tr>
-<tr class="separator:a582f561a307165fdeda84809e39af174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aff41c7ac3890688844468ac5fb407e"><td class="memItemLeft" align="right" valign="top"><a id="a4aff41c7ac3890688844468ac5fb407e"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a4aff41c7ac3890688844468ac5fb407e">hoverValueColor</a></td></tr>
-<tr class="memdesc:a4aff41c7ac3890688844468ac5fb407e"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标悬停在滑块上提示文本的颜色。 <br /></td></tr>
-<tr class="separator:a4aff41c7ac3890688844468ac5fb407e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab797e0c74ad7e6cf11d49e92713febed"><td class="memItemLeft" align="right" valign="top"><a id="ab797e0c74ad7e6cf11d49e92713febed"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab797e0c74ad7e6cf11d49e92713febed">hoverShowValueInterval</a></td></tr>
-<tr class="memdesc:ab797e0c74ad7e6cf11d49e92713febed"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标悬停在滑块显示值的时间间隔。 <br /></td></tr>
-<tr class="separator:ab797e0c74ad7e6cf11d49e92713febed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header properties_qslider"><td colspan="2" onclick="javascript:toggleInherit('properties_qslider')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qslider.html">QSlider</a></td></tr>
-<tr class="memitem:tickPosition-prop inherit properties_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tickPosition-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tickPosition-prop">tickPosition</a></td></tr>
-<tr class="separator:tickPosition-prop inherit properties_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tickInterval-prop inherit properties_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tickInterval-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tickInterval-prop">tickInterval</a></td></tr>
-<tr class="separator:tickInterval-prop inherit properties_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header properties_qabstractslider"><td colspan="2" onclick="javascript:toggleInherit('properties_qabstractslider')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractslider.html">QAbstractSlider</a></td></tr>
-<tr class="memitem:minimum-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="minimum-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#minimum-prop">minimum</a></td></tr>
-<tr class="separator:minimum-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:maximum-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="maximum-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#maximum-prop">maximum</a></td></tr>
-<tr class="separator:maximum-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:singleStep-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="singleStep-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#singleStep-prop">singleStep</a></td></tr>
-<tr class="separator:singleStep-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pageStep-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="pageStep-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#pageStep-prop">pageStep</a></td></tr>
-<tr class="separator:pageStep-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:value-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="value-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">value</a></td></tr>
-<tr class="separator:value-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderPosition-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderPosition-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderPosition-prop">sliderPosition</a></td></tr>
-<tr class="separator:sliderPosition-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tracking-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="tracking-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#tracking-prop">tracking</a></td></tr>
-<tr class="separator:tracking-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:orientation-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="orientation-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#orientation-prop">orientation</a></td></tr>
-<tr class="separator:orientation-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:invertedAppearance-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="invertedAppearance-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#invertedAppearance-prop">invertedAppearance</a></td></tr>
-<tr class="separator:invertedAppearance-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:invertedControls-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="invertedControls-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#invertedControls-prop">invertedControls</a></td></tr>
-<tr class="separator:invertedControls-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sliderDown-prop inherit properties_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="sliderDown-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#sliderDown-prop">sliderDown</a></td></tr>
-<tr class="separator:sliderDown-prop inherit properties_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qwidget')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setTabOrder inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="setTabOrder"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#setTabOrder">setTabOrder</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *first, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *second)</td></tr>
+<tr class="separator:setTabOrder inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:mouseGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseGrabber"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseGrabber">mouseGrabber</a> ()</td></tr>
+<tr class="separator:mouseGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="keyboardGrabber"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#keyboardGrabber">keyboardGrabber</a> ()</td></tr>
+<tr class="separator:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:find inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="find"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#find">find</a> (WId id)</td></tr>
+<tr class="separator:find inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:createWindowContainer inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="createWindowContainer"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#createWindowContainer">createWindowContainer</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> flags)</td></tr>
+<tr class="separator:createWindowContainer inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qwidget')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
+<tr class="memitem:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="RenderFlag-enum"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#RenderFlag-enum">RenderFlags</a></td></tr>
+<tr class="separator:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; DObjectPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qwidget"><td colspan="2" onclick="javascript:toggleInherit('properties_qwidget')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
 <tr class="memitem:modal-prop inherit properties_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="modal-prop"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#modal-prop">modal</a></td></tr>
@@ -1614,123 +1528,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-额外继承的成员函数</h2></td></tr>
-<tr class="inherit_header pub_static_methods_qslider"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qslider')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qslider.html">QSlider</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qslider"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qabstractslider"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qabstractslider')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qabstractslider.html">QAbstractSlider</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qabstractslider"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qabstractslider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qwidget')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#tr">tr</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#trUtf8">trUtf8</a> (const char *s, const char *c, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:setTabOrder inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="setTabOrder"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#setTabOrder">setTabOrder</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *first, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *second)</td></tr>
-<tr class="separator:setTabOrder inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:mouseGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="mouseGrabber"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseGrabber">mouseGrabber</a> ()</td></tr>
-<tr class="separator:mouseGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="keyboardGrabber"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#keyboardGrabber">keyboardGrabber</a> ()</td></tr>
-<tr class="separator:keyboardGrabber inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:find inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="find"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#find">find</a> (WId id)</td></tr>
-<tr class="separator:find inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:createWindowContainer inherit pub_static_methods_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="createWindowContainer"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#createWindowContainer">createWindowContainer</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#WindowType-enum">Qt::WindowFlags</a> flags)</td></tr>
-<tr class="separator:createWindowContainer inherit pub_static_methods_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
-<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
-<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
-<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
-<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
-<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
-<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
-<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
-<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
-<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_qwidget"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_qwidget')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></td></tr>
-<tr class="memitem:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memItemLeft" align="right" valign="top"><a id="RenderFlag-enum"></a>
-typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#RenderFlag-enum">RenderFlags</a></td></tr>
-<tr class="separator:RenderFlag-enum inherit pub_attribs_qwidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider 是基于 QSlider 之上扩展的控件。">DSlider</a> 是基于 <a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> 之上扩展的控件。 </p>
-<p>当用户将鼠标悬停在滑块手柄上时，DSlider 还支持显示文本，滑块的值。</p>
-<dl class="section note"><dt>注解</dt><dd>这个类依赖于 dstyle <a class="elRef" href="https://doc.qt.io/qt-5/qt.html">Qt</a> 样式插件才能正常工作。</dd>
-<dd>
-当方向设置垂直时，不能很好的工作。 </dd></dl>
+<div class="textblock"><p>DSlider一个聚合 <a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> 的滑块 \row </p>
+<ul>
+<li>DSlider提供了在滑块两侧设置图标函数 \row </li>
+<li>DSlider提供了滑块的刻度及刻度标识 </li>
+</ul>
 
-<p class="definition">在文件 <a class="el" href="dslider_8h_source.html">dslider.h</a> 第 <a class="el" href="dslider_8h_source.html#l00028">28</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dslider_8h_source.html">dslider.h</a> 第 <a class="el" href="dslider_8h_source.html#l00036">36</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
-<a id="a8a87396bfc4ece61aba5ffde6041b00a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a87396bfc4ece61aba5ffde6041b00a">&#9670;&nbsp;</a></span>DSlider() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dtk::Widget::DSlider::DSlider </td>
-          <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider 是基于 QSlider 之上扩展的控件。">DSlider</a> 构造函数 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00120">120</a> 行定义.</p>
-
-</div>
-</div>
-<a id="af702d7e0c4ad46ed4f3f8ef6eb7b1261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af702d7e0c4ad46ed4f3f8ef6eb7b1261">&#9670;&nbsp;</a></span>DSlider() <span class="overload">[2/2]</span></h2>
+<a id="ad95781afe674ccd73294e3fe4d55161e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95781afe674ccd73294e3fe4d55161e">&#9670;&nbsp;</a></span>DSlider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1739,13 +1548,13 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
           <td class="memname">Dtk::Widget::DSlider::DSlider </td>
           <td>(</td>
           <td class="paramtype">Qt::Orientation&#160;</td>
-          <td class="paramname"><em>orientation</em>, </td>
+          <td class="paramname"><em>orientation</em> = <code>Qt::Horizontal</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1755,28 +1564,552 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider 是基于 QSlider 之上扩展的控件。">DSlider</a> 的重载构造函数 </p>
+<p>DSlider的构造函数 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">orientation</td><td>初始化方向 </td></tr>
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramname"></td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00138">138</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00091">91</a> 行定义.</p>
 
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a3e6759df30013343e08e771eb36aca3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e6759df30013343e08e771eb36aca3a">&#9670;&nbsp;</a></span>addScale()</h2>
+<a id="aa812f8a3708752348baeed03b8d1b3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa812f8a3708752348baeed03b8d1b3f4">&#9670;&nbsp;</a></span>handleVisible()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Dtk::Widget::DSlider::addScale </td>
+          <td class="memname">bool Dtk::Widget::DSlider::handleVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa812f8a3708752348baeed03b8d1b3f4" title="DSlider::handleVisible 获取滑块是否显示的状态">DSlider::handleVisible</a> 获取滑块是否显示的状态 </p>
+<dl class="section return"><dt>返回</dt><dd>返回滑块是否显示的状态 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00598">598</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa0691ff570798cd52f80a7c7ba37c5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0691ff570798cd52f80a7c7ba37c5a2">&#9670;&nbsp;</a></span>maximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DSlider::maximum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#aa0691ff570798cd52f80a7c7ba37c5a2" title="DSlider::maximum">DSlider::maximum</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#maximum-prop">QSlider::maximum</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00301">301</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a33c4c7c7ff1d5092a0c03447f2697d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c4c7c7ff1d5092a0c03447f2697d85">&#9670;&nbsp;</a></span>minimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DSlider::minimum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a33c4c7c7ff1d5092a0c03447f2697d85" title="DSlider::minimum">DSlider::minimum</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#minimum-prop">QSlider::minimum()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00241">241</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1802e598d5820ed702e7a967a00037a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1802e598d5820ed702e7a967a00037a">&#9670;&nbsp;</a></span>orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::Orientation Dtk::Widget::DSlider::orientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#af1802e598d5820ed702e7a967a00037a" title="DSlider::orientation">DSlider::orientation</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#orientation-prop">QSlider::orientation()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2eba523ef70c60ab946dacae5a3c8df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eba523ef70c60ab946dacae5a3c8df7">&#9670;&nbsp;</a></span>pageStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DSlider::pageStep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a2eba523ef70c60ab946dacae5a3c8df7" title="DSlider::pageStep">DSlider::pageStep</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#pageStep-prop">QSlider::pageStep()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00281">281</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaa7fc15fdd1a8bfe1e4b35798a321b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7fc15fdd1a8bfe1e4b35798a321b79">&#9670;&nbsp;</a></span>setAboveTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setAboveTicks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setAboveTicks设置刻度在滑块上方 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a058880f07b772e7971543dcdee995851" title="DSlider::setLeftTicks设置刻度在滑块左侧 \row 根据 QStringList 数量，绘制刻度的个数，绘制刻度标识 \row">DSlider::setLeftTicks()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00381">381</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab8a132506b35ea1260aea2fc1abc3d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8a132506b35ea1260aea2fc1abc3d7b">&#9670;&nbsp;</a></span>setBelowTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setBelowTicks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setBelowTicks设置刻度在滑块下方 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#afb424455d3b614f0a706bf71f26697c3" title="DSlider::setRightTicks设置刻度在滑块右侧 \row 根据 QStringList 数量，绘制刻度的个数，绘制刻度标识 \row">DSlider::setRightTicks()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00390">390</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48e014faa04f0cfa86ed4e9587e2ae14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e014faa04f0cfa86ed4e9587e2ae14">&#9670;&nbsp;</a></span>setEnabledAcrossStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setEnabledAcrossStyle </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a48e014faa04f0cfa86ed4e9587e2ae14" title="DSlider::setEnabledAcrossStyle 滑槽是否禁用活动色填充已经滑过的滑槽 默认普通 DSlider 滑过的滑槽是活动色填充， 调用过 setXXXTicks 的 DSlider...">DSlider::setEnabledAcrossStyle</a> 滑槽是否禁用活动色填充已经滑过的滑槽 默认普通 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider一个聚合 QSlider 的滑块 \row">DSlider</a> 滑过的滑槽是活动色填充， 调用过 setXXXTicks 的 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider一个聚合 QSlider 的滑块 \row">DSlider</a> 则默认禁用活动色填充 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>true 无活动色，可用于音量平衡等不需要显示滑过的，false 滑过的位置(如左侧)是高亮色显示，如调节亮度等(默认) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00609">609</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a46a0abedabe3fb3127ab8ee3514fb916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a0abedabe3fb3127ab8ee3514fb916">&#9670;&nbsp;</a></span>setHandleVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setHandleVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a46a0abedabe3fb3127ab8ee3514fb916" title="DSlider::setHandleVisible 设置滑块时候显示">DSlider::setHandleVisible</a> 设置滑块时候显示 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>显示滑块的 bool 值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00583">583</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a64f3e78e3ccbf5efa296885feb838b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f3e78e3ccbf5efa296885feb838b7e">&#9670;&nbsp;</a></span>setIconSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setIconSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setIconSize设置滑块图标大小 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size图标大小</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00212">212</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a39506594f017bcb6e91b186b9a73d740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39506594f017bcb6e91b186b9a73d740">&#9670;&nbsp;</a></span>setLeftIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setLeftIcon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;&#160;</td>
+          <td class="paramname"><em>left</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setLeftIcon设置滑块左侧图标 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left图标</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00154">154</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a058880f07b772e7971543dcdee995851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058880f07b772e7971543dcdee995851">&#9670;&nbsp;</a></span>setLeftTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setLeftTicks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setLeftTicks设置刻度在滑块左侧 \row 根据 <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> 数量，绘制刻度的个数，绘制刻度标识 \row </p>
+<ul>
+<li>滑块为水平,刻度在滑块上方 \row </li>
+<li>滑块为垂直,刻度在滑块左侧 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info刻度标识</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00314">314</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95405d83c0db060af5e401a7575c805e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95405d83c0db060af5e401a7575c805e">&#9670;&nbsp;</a></span>setMarkPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setMarkPositions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a95405d83c0db060af5e401a7575c805e" title="DSlider::setMarkPositions 设置显示双边的刻度线（不显示刻度值）">DSlider::setMarkPositions</a> 设置显示双边的刻度线（不显示刻度值） </p>
+<ul>
+<li>举例用途：比如调节音量的 DSlider，需要在 value = 100 的地方标记一个刻度，而不需要显示其他的刻度值（并且实际音量值是可以超过 100 的） </li>
+<li>其他：设置指定数值的刻度线(setMarkPositions)和设置刻度线+刻度值(setBelowTicks)是两个相互独立的，且互不干扰，若是同时使用，也会同时绘画各自的线； 另外两个的先后顺序也并没有关系</li>
+</ul>
+<div class="fragment"><div class="line"> 示例代码</div>
+<div class="line">\~chinese \row <a class="code" href="class_dtk_1_1_widget_1_1_d_slider.html#ad95781afe674ccd73294e3fe4d55161e">DSlider</a>* <a class="code" href="class_dtk_1_1_widget_1_1_d_slider.html#a39c958aa600fdf07361794d36bdcc1d0">slider</a> = <span class="keyword">new</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_slider.html#ad95781afe674ccd73294e3fe4d55161e">DSlider</a>(Qt::Horizontal, wTemp);</div>
+<div class="line">\~chinese \row <a class="codeRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> list1;</div>
+<div class="line">\~chinese \row list1&lt;&lt;<span class="stringliteral">&quot;0&quot;</span>&lt;&lt;<span class="stringliteral">&quot;25&quot;</span>&lt;&lt;<span class="stringliteral">&quot;50&quot;</span>&lt;&lt;<span class="stringliteral">&quot;75&quot;</span>&lt;&lt;<span class="stringliteral">&quot;100&quot;</span>;</div>
+<div class="line">\~chinese \row <a class="code" href="class_dtk_1_1_widget_1_1_d_slider.html#a39c958aa600fdf07361794d36bdcc1d0">slider</a>-&gt;setBelowTicks(list1);</div>
+<div class="line">\~chinese \row <a class="codeRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> list2;</div>
+<div class="line">\~chinese \row list2&lt;&lt;<span class="stringliteral">&quot;0&quot;</span>&lt;&lt;<span class="stringliteral">&quot;25&quot;</span>&lt;&lt;<span class="stringliteral">&quot;50&quot;</span>&lt;&lt;<span class="stringliteral">&quot;75&quot;</span>&lt;&lt;<span class="stringliteral">&quot;100&quot;</span><span class="stringliteral">&quot;;</span></div>
+<div class="line"><span class="stringliteral">\~chinese \row slider-&gt;setAboveTicks(list2);</span></div>
+<div class="line"><span class="stringliteral">\~chinese \row QList&lt;int&gt; list3;</span></div>
+<div class="line"><span class="stringliteral">\~chinese \row list3&lt;&lt;0&lt;&lt;30&lt;&lt;80;</span></div>
+<div class="line"><span class="stringliteral">\~chinese \row slider-&gt;setMarkPositions(list3);</span></div>
+<div class="line"><span class="stringliteral">\~chinese \row slider-&gt;setMinimum(0);</span></div>
+<div class="line"><span class="stringliteral">\~chinese \row slider-&gt;setMaximum(100);</span></div>
+<div class="line"><span class="stringliteral">\~chinese </span></div>
+</div><!-- fragment --> 
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00416">416</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acb3fe2850111406bb57e7fe783729842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3fe2850111406bb57e7fe783729842">&#9670;&nbsp;</a></span>setMaximum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setMaximum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#acb3fe2850111406bb57e7fe783729842" title="DSlider::setMaximum">DSlider::setMaximum</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#maximum-prop">QSlider::setMaximum()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00291">291</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a33cf82eef19fd5fc718bf85044737312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33cf82eef19fd5fc718bf85044737312">&#9670;&nbsp;</a></span>setMinimum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setMinimum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>min</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a33cf82eef19fd5fc718bf85044737312" title="DSlider::setMinimum">DSlider::setMinimum</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#minimum-prop">QSlider::setMinimum()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00231">231</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c529f98d1992310b3ce9c73ca196c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c529f98d1992310b3ce9c73ca196c4c">&#9670;&nbsp;</a></span>setMouseWheelEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setMouseWheelEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setMouseWheelEnabled设置鼠标滚轮是否开启 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled是否开启鼠标滚轮</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00466">466</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab58916c99dee4cf6e982c94d6b3e6c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58916c99dee4cf6e982c94d6b3e6c68">&#9670;&nbsp;</a></span>setPageStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setPageStep </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageStep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab58916c99dee4cf6e982c94d6b3e6c68" title="DSlider::setPageStep">DSlider::setPageStep</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#pageStep-prop">QSlider::setPageStep()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00271">271</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aae1572e4378be74d7f3ace5fd7de6dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1572e4378be74d7f3ace5fd7de6dc3">&#9670;&nbsp;</a></span>setRightIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setRightIcon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qicon.html">QIcon</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setRightIcon设置滑块右图标 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">right图标</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00183">183</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afb424455d3b614f0a706bf71f26697c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb424455d3b614f0a706bf71f26697c3">&#9670;&nbsp;</a></span>setRightTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setRightTicks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::setRightTicks设置刻度在滑块右侧 \row 根据 <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> 数量，绘制刻度的个数，绘制刻度标识 \row </p>
+<ul>
+<li>滑块为水平,刻度在滑块下方 \row </li>
+<li>滑块为垂直,刻度在滑块右侧 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info刻度标识</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00349">349</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab81203534eca4a714a01b2822fb0fa4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81203534eca4a714a01b2822fb0fa4a">&#9670;&nbsp;</a></span>setTipValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setTipValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ab81203534eca4a714a01b2822fb0fa4a" title="DSlider::setTipValue 此函数会创建气泡，气泡将跟随滑块移动">DSlider::setTipValue</a> 此函数会创建气泡，气泡将跟随滑块移动 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">open</td><td>value非空开启气泡 value空关闭气泡(销毁) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00514">514</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3c4bf96c18c304ae1c69887c8d4377b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c4bf96c18c304ae1c69887c8d4377b1">&#9670;&nbsp;</a></span>setValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DSlider::setValue </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -1785,73 +2118,15 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3e6759df30013343e08e771eb36aca3a" title="DSlider::addScale 在滑块上添加刻度标记">DSlider::addScale</a> 在滑块上添加刻度标记 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>要添加刻度标记的位置</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>可以使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a150ec3a44df8eb6aa981d7fcd9a111b1" title="DSlider::removeScale 删除滑块上的刻度标记。">DSlider::removeScale</a> 将标记的位置值传入，删除相关的刻度标记。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a3c4bf96c18c304ae1c69887c8d4377b1" title="DSlider::setValue">DSlider::setValue</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">QSlider::setValue()</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00329">329</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00251">251</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a150ec3a44df8eb6aa981d7fcd9a111b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a150ec3a44df8eb6aa981d7fcd9a111b1">&#9670;&nbsp;</a></span>removeScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Dtk::Widget::DSlider::removeScale </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a150ec3a44df8eb6aa981d7fcd9a111b1" title="DSlider::removeScale 删除滑块上的刻度标记。">DSlider::removeScale</a> 删除滑块上的刻度标记。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>要删除刻度标记的位置值 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00351">351</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a0ff6bbdbf50073906b4fc9060be3620c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ff6bbdbf50073906b4fc9060be3620c">&#9670;&nbsp;</a></span>setHandleType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Dtk::Widget::DSlider::setHandleType </td>
-          <td>(</td>
-          <td class="paramtype">HandleType&#160;</td>
-          <td class="paramname"><em>handleType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设置滑块句柄类型 </p>
-<p>根据类型来显示滑块的样式，目前有箭头、圆形样式滑块 </p>
-
-<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00175">175</a> 行定义.</p>
-
-</div>
-</div>
-<h2 class="groupheader">属性说明</h2>
-<a id="a3bef3a8356672278b209a7fe912ab0cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bef3a8356672278b209a7fe912ab0cd">&#9670;&nbsp;</a></span>handleType</h2>
+<a id="a60e78176628207a1ac8866de5ea8ba7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e78176628207a1ac8866de5ea8ba7f">&#9670;&nbsp;</a></span>sizeHint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1860,47 +2135,92 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Dtk::Widget::DSlider::handleType</td>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> Dtk::Widget::DSlider::sizeHint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>滑块句柄类型 </p>
-<p>默认值是 DSlider::RoundHandle. </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#a60e78176628207a1ac8866de5ea8ba7f" title="DSlider::sizeHint">DSlider::sizeHint</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html#sizeHint">QSlider::sizeHint</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dslider_8h_source.html">dslider.h</a> 第 <a class="el" href="dslider_8h_source.html#l00001">1</a> 行定义.</p>
+<p>重载 <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html#sizeHint-prop">QWidget</a> .</p>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00570">570</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a582f561a307165fdeda84809e39af174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a582f561a307165fdeda84809e39af174">&#9670;&nbsp;</a></span>hoverShowValue</h2>
+<a id="a39c958aa600fdf07361794d36bdcc1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c958aa600fdf07361794d36bdcc1d0">&#9670;&nbsp;</a></span>slider()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Dtk::Widget::DSlider::hoverShowValue</td>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> * Dtk::Widget::DSlider::slider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>是否显示鼠标悬停在滑块上的值。 </p>
-<p>这个属性保存着当用户鼠标悬停在滑块时是否显示该值。 </p>
+<p>DSlider::slider返回 <a class="elRef" href="https://doc.qt.io/qt-5/qslider.html">QSlider</a> 对象 \row 若 <a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html" title="DSlider一个聚合 QSlider 的滑块 \row">DSlider</a> 不满足输入框的使用需求，请用此函数抛出的对象 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dslider_8h_source.html">dslider.h</a> 第 <a class="el" href="dslider_8h_source.html#l00001">1</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0ae0f1d40520150a3063aa089c7c2446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae0f1d40520150a3063aa089c7c2446">&#9670;&nbsp;</a></span>tickPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSlider::TickPosition Dtk::Widget::DSlider::tickPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DSlider::tickPosition返回滑块的记号位置 \row 获取滑块刻度当前朝向 \row </p>
+<dl class="section see"><dt>参见</dt><dd>QSlider::TickPosition </dd></dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00547">547</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae675ff5752e389a4c49acb9ec9bea9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae675ff5752e389a4c49acb9ec9bea9af">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dtk::Widget::DSlider::value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html#ae675ff5752e389a4c49acb9ec9bea9af" title="DSlider::value">DSlider::value</a> </p>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" href="https://doc.qt.io/qt-5/qabstractslider.html#value-prop">QSlider::value()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dslider_8cpp_source.html">dslider.cpp</a> 第 <a class="el" href="dslider_8cpp_source.html#l00261">261</a> 行定义.</p>
 
 </div>
 </div>
@@ -1910,11 +2230,14 @@ typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_slider_html_a39c958aa600fdf07361794d36bdcc1d0"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_slider.html#a39c958aa600fdf07361794d36bdcc1d0">Dtk::Widget::DSlider::slider</a></div><div class="ttdeci">QSlider * slider()</div><div class="ttdoc">DSlider::slider返回 QSlider 对象 \row 若 DSlider 不满足输入框的使用需求，请用此函数抛出的对象</div><div class="ttdef"><b>Definition:</b> <a href="dslider_8cpp_source.html#l00144">dslider.cpp:144</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_slider_html_ad95781afe674ccd73294e3fe4d55161e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_slider.html#ad95781afe674ccd73294e3fe4d55161e">Dtk::Widget::DSlider::DSlider</a></div><div class="ttdeci">DSlider(Qt::Orientation orientation=Qt::Horizontal, QWidget *parent=nullptr)</div><div class="ttdoc">DSlider的构造函数</div><div class="ttdef"><b>Definition:</b> <a href="dslider_8cpp_source.html#l00091">dslider.cpp:91</a></div></div>
+<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_slider.html">DSlider</a></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:55 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

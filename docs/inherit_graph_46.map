@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_d_window_group_leader.html" title="DWindowGroupLeader 用于设置窗口所在的组，可以把多个窗口加到同一个组。在dxcb平台上，所有未指定组的 窗口都会被分配到 DWindowGroupLeader::clientLeade..." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,44,39"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_vtable_hook_1_1_override_destruct.html" title=" " alt="" coords="92,5,271,47"/>
 </map>

@@ -1,7 +1,0 @@
-<map id="Dtk::Widget::DForeignWindow" name="Dtk::Widget::DForeignWindow">
-<area shape="rect" id="node1" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::width QWindow::height ..." alt="" coords="53,155,270,181"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtgui.tags$qwindow.html" title=" " alt="" coords="51,80,135,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qsurface.html" title=" " alt="" coords="105,5,186,32"/>
-<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="159,80,302,107"/>
-</map>

@@ -1,0 +1,48 @@
+var class_dtk_1_1_widget_1_1_d_print_preview_widget =
+[
+    [ "Imposition", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8", [
+      [ "None", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8a138d783ef8b966c4dcdf6208a3fe6502", null ],
+      [ "OneTwo", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8a98cecb2d4f912ec7e214d27c491b0e1a", null ],
+      [ "TwoTwo", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8a904711749a2fbf9ab62fcfed86fbd96b", null ],
+      [ "TwoThree", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8ac47278ddd6e74f7e068e197eb325fe4c", null ],
+      [ "ThreeThree", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8af03d0ebe3525ff1eb5cc1b9bacada413", null ],
+      [ "FourFour", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a62a45d643be9b6882dd0af4a4a8093a8a412db2bcde54a4d1d595f7dae63e77d0", null ]
+    ] ],
+    [ "PageRange", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afadb6dedf5ec57be5c835c7b419be913", [
+      [ "AllPage", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afadb6dedf5ec57be5c835c7b419be913aa300b174be40a336f206a47b1eb9dc3b", null ],
+      [ "CurrentPage", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afadb6dedf5ec57be5c835c7b419be913a4ea18bdb31595fdaff262dda222fa924", null ],
+      [ "SelectPage", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afadb6dedf5ec57be5c835c7b419be913aeb1bef2c9ddac3ce582e51a6aba26f3b", null ]
+    ] ],
+    [ "DPrintPreviewWidget", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#ad57ddd45763532dd6a7cc3b049843797", null ],
+    [ "currentPage", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a8fefdca07614f2d09f0dd5ae124bf551", null ],
+    [ "currentPageChanged", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#abcfd9660135633f6abd584bc81895594", null ],
+    [ "getColorMode", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a7150a954b0fda16903d0294921df7d19", null ],
+    [ "getScale", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a7274ec188f7b15c03ab7bd82c96c79fc", null ],
+    [ "pageRangeMode", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a84681e3ac929619d215a5519e135caf4", null ],
+    [ "pagesCount", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a2de2695e4e1abed9dc9f457cfca2d482", null ],
+    [ "pagesCountChanged", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afe1ceed9ccc370298542bf5c6b6f24aa", null ],
+    [ "paintRequested", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a4a9009ec83f81c1a53bb8fb26d441003", null ],
+    [ "previewChanged", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#aeb8919e69b7825c7f1e9cacde7775055", null ],
+    [ "print", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a45dbb1cb6b912712078846709814a8cf", null ],
+    [ "refreshBegin", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a9245e268d26a2757e8bb712e298f6e10", null ],
+    [ "refreshEnd", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a2eb276e04511f58d4c09511d73417cba", null ],
+    [ "setColorMode", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#ade9195284a96210438af35ff4a50f5a3", null ],
+    [ "setCurrentPage", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a3865b65335cf51a0169312958155465b", null ],
+    [ "setOrientation", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a1a941977fa3659bcee61a7f4217937f1", null ],
+    [ "setPageRange", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a63a00ef8c67d7148f201ab6a5a8c5a63", null ],
+    [ "setPageRange", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afd1b3f82a5cd42042fe3134b13e521f1", null ],
+    [ "setPageRangeALL", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afdaa9d1c3d870e4e126cf2fb9efb0068", null ],
+    [ "setPageRangeMode", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#af811f130b84857bc9b40111c722aab41", null ],
+    [ "setReGenerate", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a551c5101f54e0812df4cbd352baa9bbd", null ],
+    [ "setScale", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#aa91c4bd03f2407171114b5836f65e60a", null ],
+    [ "setVisible", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a08fa8849ce38684be71494e2be070dbc", null ],
+    [ "themeTypeChanged", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#ac5de7676bb91fc70c6b6e03c07999be6", null ],
+    [ "totalPages", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#afd7fe4caa1372d2152d43c703c75bce1", null ],
+    [ "turnBack", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a82836c6fc7d57bffce1c137d8dfef695", null ],
+    [ "turnBegin", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a9c9c81297e3e9efe61ce32a6b38a216a", null ],
+    [ "turnEnd", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#adb4bca7b6ce1e06c4e4b2cb4d4db8866", null ],
+    [ "turnFront", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a38a76670f4b45a31037a20c8ffe923c9", null ],
+    [ "turnPageAble", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a584c552be0c980ba999b01e577885962", null ],
+    [ "updatePreview", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a673b5e80534e0fcae188d464421d75d0", null ],
+    [ "updateView", "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a7835de38a1e8536d5f4bed52e3f1444c", null ]
+];

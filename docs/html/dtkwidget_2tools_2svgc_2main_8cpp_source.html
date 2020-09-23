@@ -87,14 +87,14 @@ $(document).ready(function(){initNavTree('dtkwidget_2tools_2svgc_2main_8cpp_sour
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;QGuiApplication&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QCommandLineParser&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QCommandLineOption&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QSvgRenderer&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;DSvgRenderer&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;DSvgRenderer&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> String2Int(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a> str, <span class="keywordtype">int</span> defaultValue)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('dtkwidget_2tools_2svgc_2main_8cpp_sour
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html">QApplication</a> app(argc, argv);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html">QGuiApplication</a> app(argc, argv);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    app.setOrganizationName(<span class="stringliteral">&quot;deepin&quot;</span>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    app.setApplicationName(<span class="stringliteral">&quot;dtk-scgc&quot;</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('dtkwidget_2tools_2svgc_2main_8cpp_sour
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> outputPainter(&amp;outPutimage);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (<span class="stringliteral">&quot;DSvgRenderer&quot;</span> == renderValue) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        Dtk::Widget::DSvgRenderer renderer(input);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        Dtk::Gui::DSvgRenderer renderer(input);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        renderer.render(&amp;outputPainter);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        QSvgRenderer renderer(input);</div>
@@ -199,9 +199,9 @@ $(document).ready(function(){initNavTree('dtkwidget_2tools_2svgc_2main_8cpp_sour
 <div class="ttc" id="aqcommandlineparser_html_positionalArguments"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qcommandlineparser.html#positionalArguments">QCommandLineParser::positionalArguments</a></div><div class="ttdeci">QStringList positionalArguments() const const</div></div>
 <div class="ttc" id="aqpainter_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a></div></div>
 <div class="ttc" id="aqcommandlineparser_html_showHelp"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qcommandlineparser.html#showHelp">QCommandLineParser::showHelp</a></div><div class="ttdeci">void showHelp(int exitCode)</div></div>
-<div class="ttc" id="aqapplication_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html">QApplication</a></div></div>
 <div class="ttc" id="aqcommandlineparser_html_process"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qcommandlineparser.html#process">QCommandLineParser::process</a></div><div class="ttdeci">void process(const QStringList &amp;arguments)</div></div>
 <div class="ttc" id="aqstring_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqguiapplication_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html">QGuiApplication</a></div></div>
 <div class="ttc" id="aqcommandlineparser_html_value"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qcommandlineparser.html#value">QCommandLineParser::value</a></div><div class="ttdeci">QString value(const QString &amp;optionName) const const</div></div>
 <div class="ttc" id="aqstring_html_toInt"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qstring.html#toInt">QString::toInt</a></div><div class="ttdeci">int toInt(bool *ok, int base) const const</div></div>
 <div class="ttc" id="aqstring_html_toDouble"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qstring.html#toDouble">QString::toDouble</a></div><div class="ttdeci">double toDouble(bool *ok) const const</div></div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('dtkwidget_2tools_2svgc_2main_8cpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_bf597f11280394566ebcdf8105d8100f.html">tools</a></li><li class="navelem"><a class="el" href="dir_bdc4175a707434874882fd858300c898.html">svgc</a></li><li class="navelem"><b>main.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 16:02:20 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:33:10 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

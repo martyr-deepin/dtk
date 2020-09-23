@@ -126,18 +126,30 @@ typedef <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
+<tr class="memitem:a0200c36b0d2c6bac28ca16bac2a7904e"><td class="memItemLeft" align="right" valign="top"><a id="a0200c36b0d2c6bac28ca16bac2a7904e"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><b>QPair</b> (ItemCreateHandler)(<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *)</td></tr>
+<tr class="separator:a0200c36b0d2c6bac28ca16bac2a7904e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ca0e361498d4aa5c4bfb8f38451640"><td class="memItemLeft" align="right" valign="top"><a id="a22ca0e361498d4aa5c4bfb8f38451640"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DSettingsWidgetFactory</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=Q_NULLPTR)</td></tr>
 <tr class="separator:a22ca0e361498d4aa5c4bfb8f38451640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76e78f28905f2c0e307e880d430f47a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a76e78f28905f2c0e307e880d430f47a7">registerWidget</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;viewType, std::function&lt; <a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a517194362ac32439a37a7278c030f572">WidgetCreateHandler</a> &gt; handler)</td></tr>
 <tr class="memdesc:a76e78f28905f2c0e307e880d430f47a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a76e78f28905f2c0e307e880d430f47a7" title="DSettingsWidgetFactory::registerWidget 向Factory注册一种类型viewType。注册该类型后，可以通过在DSettings的DOption中，设置type为对...">DSettingsWidgetFactory::registerWidget</a> 向Factory注册一种类型viewType。注册该类型后，可以通过在DSettings的DOption中，设置type为对应的viewType，这样Factory在构建viewType对应的控件时，会调用handler所指定的方法来构建。  <a href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a76e78f28905f2c0e307e880d430f47a7">更多...</a><br /></td></tr>
 <tr class="separator:a76e78f28905f2c0e307e880d430f47a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37e5a380c460ce808e3ed9d7fa57f4b"><td class="memItemLeft" align="right" valign="top"><a id="ad37e5a380c460ce808e3ed9d7fa57f4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerWidget</b> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;viewType, std::function&lt; ItemCreateHandler &gt; handler)</td></tr>
+<tr class="separator:ad37e5a380c460ce808e3ed9d7fa57f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19d7b31291fdf97dedb1a18708929db8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a19d7b31291fdf97dedb1a18708929db8">createWidget</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qpointer.html">QPointer</a>&lt; <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> &gt; option)</td></tr>
 <tr class="memdesc:a19d7b31291fdf97dedb1a18708929db8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a19d7b31291fdf97dedb1a18708929db8" title="DSettingsWidgetFactory::createWidget 创建一个option对应的配置控件，一般是需要自定义控件时使用，可以通过translateContext设置翻译上下文。">DSettingsWidgetFactory::createWidget</a> 创建一个option对应的配置控件，一般是需要自定义控件时使用，可以通过translateContext设置翻译上下文。  <a href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a19d7b31291fdf97dedb1a18708929db8">更多...</a><br /></td></tr>
 <tr class="separator:a19d7b31291fdf97dedb1a18708929db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15660ddda66b14b1a7329626ea932021"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a15660ddda66b14b1a7329626ea932021">createWidget</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;translateContext, <a class="elRef" href="https://doc.qt.io/qt-5/qpointer.html">QPointer</a>&lt; <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> &gt; option)</td></tr>
 <tr class="memdesc:a15660ddda66b14b1a7329626ea932021"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a19d7b31291fdf97dedb1a18708929db8" title="DSettingsWidgetFactory::createWidget 创建一个option对应的配置控件，一般是需要自定义控件时使用，可以通过translateContext设置翻译上下文。">DSettingsWidgetFactory::createWidget</a> 创建一个option对应的配置控件，一般是需要自定义控件时使用,  <a href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a15660ddda66b14b1a7329626ea932021">更多...</a><br /></td></tr>
 <tr class="separator:a15660ddda66b14b1a7329626ea932021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d735508211177add086e8ca9d1bfa96"><td class="memItemLeft" align="right" valign="top"><a id="a8d735508211177add086e8ca9d1bfa96"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createItem</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qpointer.html">QPointer</a>&lt; <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> &gt; option) const</td></tr>
+<tr class="separator:a8d735508211177add086e8ca9d1bfa96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ec987cead7ed36ce17e6c8aa7a695b"><td class="memItemLeft" align="right" valign="top"><a id="a52ec987cead7ed36ce17e6c8aa7a695b"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createItem</b> (const <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;translateContext, <a class="elRef" href="https://doc.qt.io/qt-5/qpointer.html">QPointer</a>&lt; <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> &gt; option) const</td></tr>
+<tr class="separator:a52ec987cead7ed36ce17e6c8aa7a695b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
 virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
@@ -262,12 +274,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="h
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
-<tr class="memitem:a062f9f9c5b2aa6bd84487e791d30162f"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a062f9f9c5b2aa6bd84487e791d30162f">createTwoColumWidget</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> *option, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *rightWidget)</td></tr>
+<tr class="memitem:a062f9f9c5b2aa6bd84487e791d30162f"><td class="memItemLeft" align="right" valign="top">static D_DECL_DEPRECATED <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a062f9f9c5b2aa6bd84487e791d30162f">createTwoColumWidget</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> *option, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *rightWidget)</td></tr>
 <tr class="memdesc:a062f9f9c5b2aa6bd84487e791d30162f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a062f9f9c5b2aa6bd84487e791d30162f" title="DSettingsWidgetFactory::createTwoColumWidget 返回一个水平布局的控件， 左边为option的名称标签，右边为设置的自定义控件rightWidget">DSettingsWidgetFactory::createTwoColumWidget</a> 返回一个水平布局的控件， 左边为option的名称标签，右边为设置的自定义控件rightWidget  <a href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a062f9f9c5b2aa6bd84487e791d30162f">更多...</a><br /></td></tr>
 <tr class="separator:a062f9f9c5b2aa6bd84487e791d30162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678cbbc41d1c26be13ac81943f8208cb"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a678cbbc41d1c26be13ac81943f8208cb">createTwoColumWidget</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;translateContext, <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> *option, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *rightWidget)</td></tr>
+<tr class="memitem:a678cbbc41d1c26be13ac81943f8208cb"><td class="memItemLeft" align="right" valign="top">static D_DECL_DEPRECATED <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a678cbbc41d1c26be13ac81943f8208cb">createTwoColumWidget</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;translateContext, <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> *option, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *rightWidget)</td></tr>
 <tr class="memdesc:a678cbbc41d1c26be13ac81943f8208cb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a062f9f9c5b2aa6bd84487e791d30162f" title="DSettingsWidgetFactory::createTwoColumWidget 返回一个水平布局的控件， 左边为option的名称标签，右边为设置的自定义控件rightWidget">DSettingsWidgetFactory::createTwoColumWidget</a> 返回一个水平布局的控件， 左边为option的名称标签，右边为设置的自定义控件rightWidget, 可以通过translateContext设置翻译上下文。  <a href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a678cbbc41d1c26be13ac81943f8208cb">更多...</a><br /></td></tr>
 <tr class="separator:a678cbbc41d1c26be13ac81943f8208cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4ac08f55da09a572cc20afe995e3a9"><td class="memItemLeft" align="right" valign="top"><a id="aca4ac08f55da09a572cc20afe995e3a9"></a>
+static <a class="elRef" href="https://doc.qt.io/qt-5/qpair.html">QPair</a>&lt; <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createStandardItem</b> (const <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;translateContext, <a class="el" href="class_dtk_1_1_core_1_1_d_settings_option.html">Dtk::Core::DSettingsOption</a> *option, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *rightWidget)</td></tr>
+<tr class="separator:aca4ac08f55da09a572cc20afe995e3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
 <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
@@ -397,7 +412,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <dl class="section return"><dt>返回</dt><dd>生成的水平布局配置项控件 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a062f9f9c5b2aa6bd84487e791d30162f" title="DSettingsWidgetFactory::createTwoColumWidget 返回一个水平布局的控件， 左边为option的名称标签，右边为设置的自定义控件rightWidget">Dtk::Widget::DSettingsWidgetFactory::createTwoColumWidget(Dtk::Core::DSettingsOption *option, QWidget *rightWidget)</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00088">88</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00162">162</a> 行定义.</p>
 
 </div>
 </div>
@@ -446,7 +461,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <dl class="section return"><dt>返回</dt><dd>生成的水平布局配置项控件 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a678cbbc41d1c26be13ac81943f8208cb" title="DSettingsWidgetFactory::createTwoColumWidget 返回一个水平布局的控件， 左边为option的名称标签，右边为设置的自定义控件rightWidget,...">Dtk::Widget::DSettingsWidgetFactory::createTwoColumWidget(const QByteArray &amp;translateContext, Dtk::Core::DSettingsOption *option, QWidget *rightWidget)</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00074">74</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00148">148</a> 行定义.</p>
 
 </div>
 </div>
@@ -487,7 +502,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <dl class="section return"><dt>返回</dt><dd>根据option的type属性创建的配置控件 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a19d7b31291fdf97dedb1a18708929db8" title="DSettingsWidgetFactory::createWidget 创建一个option对应的配置控件，一般是需要自定义控件时使用，可以通过translateContext设置翻译上下文。">Dtk::Widget::DSettingsWidgetFactory::createWidget(QPointer&lt;Dtk::Core::DSettingsOption&gt; option)</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00549">549</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00680">680</a> 行定义.</p>
 
 </div>
 </div>
@@ -517,7 +532,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <dl class="section return"><dt>返回</dt><dd>根据option的type属性创建的配置控件 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html#a15660ddda66b14b1a7329626ea932021" title="DSettingsWidgetFactory::createWidget 创建一个option对应的配置控件，一般是需要自定义控件时使用,">Dtk::Widget::DSettingsWidgetFactory::createWidget(const QByteArray &amp;translateContext, QPointer&lt;Dtk::Core::DSettingsOption&gt; option)</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00538">538</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00669">669</a> 行定义.</p>
 
 </div>
 </div>
@@ -556,7 +571,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00526">526</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dsettingswidgetfactory_8cpp_source.html">dsettingswidgetfactory.cpp</a> 第 <a class="el" href="dsettingswidgetfactory_8cpp_source.html#l00651">651</a> 行定义.</p>
 
 </div>
 </div>
@@ -570,7 +585,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_settings_widget_factory.html">DSettingsWidgetFactory</a></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:55 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

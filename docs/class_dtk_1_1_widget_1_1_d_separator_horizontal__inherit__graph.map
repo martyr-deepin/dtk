@@ -1,6 +1,0 @@
-<map id="Dtk::Widget::DSeparatorHorizontal" name="Dtk::Widget::DSeparatorHorizontal">
-<area shape="rect" id="node1" title="DSeparatorHorizontal 类提供了通用的横向分割线，可以应用在任何基于 QWidget 的控件上。" alt="" coords="5,155,252,181"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="89,80,168,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="33,5,107,32"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="132,5,243,32"/>
-</map>

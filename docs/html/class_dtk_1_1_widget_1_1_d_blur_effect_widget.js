@@ -2,7 +2,8 @@ var class_dtk_1_1_widget_1_1_d_blur_effect_widget =
 [
     [ "BlendMode", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3", [
       [ "InWindowBlend", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a463584fc6c4ff0596cee513435ffcdb5", null ],
-      [ "BehindWindowBlend", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3", null ]
+      [ "BehindWindowBlend", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3", null ],
+      [ "InWidgetBlend", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a18267830402357d3329dfc68dc257101", null ]
     ] ],
     [ "BlurMode", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a6a272fb3147a7b49c45cac2e77cb0769", [
       [ "GaussianBlur", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a6a272fb3147a7b49c45cac2e77cb0769ae76038c6d9da41c981177f59d05207c5", null ]
@@ -10,6 +11,7 @@ var class_dtk_1_1_widget_1_1_d_blur_effect_widget =
     [ "MaskColorType", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9", [
       [ "DarkColor", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9a9f2c586cb9684c26a612a1ffc9537d28", null ],
       [ "LightColor", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9aedc6cbf9c1819cba3f343ad2640dd7fb", null ],
+      [ "AutoColor", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9a1ede88c8e6a1e81568158b5679f123fc", null ],
       [ "CustomColor", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9ada25f2fbdea72a84b3f7918cf9332945", null ]
     ] ],
     [ "DBlurEffectWidget", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2ac20b4bd2f9ba177437e82be2e1444e", null ],
@@ -23,7 +25,9 @@ var class_dtk_1_1_widget_1_1_d_blur_effect_widget =
     [ "blurRectXRadiusChanged", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad191a0ec600b3a880de47044f1667774", null ],
     [ "blurRectYRadius", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a093f6e3cf42e2efc0bf45029b7575abd", null ],
     [ "blurRectYRadiusChanged", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a262403c50e8d48e2404775aa10bdf58c", null ],
+    [ "blurSourceImageDirtied", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9274f45c2b8202a8d0b69717706da79e", null ],
     [ "changeEvent", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a82979d35d333df791eec4c4b1e9758bf", null ],
+    [ "eventFilter", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a500cceb03e682013ef8d7c2a9e215fb2", null ],
     [ "fullChanged", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a6a5a7279ba79e8e8cc5f9154747a780b", null ],
     [ "hideEvent", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a51ba38bab749a0e6352cac015b32a3bb", null ],
     [ "isFull", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a16542dd1b416433bcb2b3e57b306ffa0", null ],
@@ -49,7 +53,10 @@ var class_dtk_1_1_widget_1_1_d_blur_effect_widget =
     [ "setMaskPath", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a8b724963f8ed1c8f9e326a7c1f7fb933", null ],
     [ "setMode", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a5367dc1d3d00229613f65e9d6f17cc30", null ],
     [ "setRadius", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a85d5fa1cfc16e204bea6a8b5cbd0dc32", null ],
+    [ "setSourceImage", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae9c5bb1430c76c165a55310779762d11", null ],
     [ "showEvent", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a960e4a1c6a0c2f472f7d4ebe9e0b7833", null ],
+    [ "updateBlurSourceImage", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1b085971fdee1bfe1677b738d13373ac", null ],
+    [ "DBlurEffectGroup", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a948a9d412854bc76134cebc6b6f84808", null ],
     [ "blendMode", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b", null ],
     [ "blurEnabled", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076", null ],
     [ "blurRectXRadius", "class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355", null ],

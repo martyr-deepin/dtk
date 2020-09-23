@@ -1,3 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_d_circle_progress.html" title="可以使用 DCircleProgress 类快速创建环形进度条控件。" alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node1" href="$class_d_arrow_line_expand.html" title="一个美观的可展开的控件DArrowLineExpand 继承自 DBaseExpand 并提供了了 ArrowHeaderLine (一个带有箭头标示的按钮)作为其固定的标题控件，也就是说跟 DBase..." alt="" coords="5,5,151,32"/>
 </map>

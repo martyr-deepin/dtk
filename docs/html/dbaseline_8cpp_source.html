@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dbaseline_8cpp_source.html',''); initR
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2015 ~ 2017 Deepin Technology Co., Ltd.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('dbaseline_8cpp_source.html',''); initR
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -111,105 +111,102 @@ $(document).ready(function(){initNavTree('dbaseline_8cpp_source.html',''); initR
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;DBaseLine::DBaseLine(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *parent) : <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html">QLabel</a>(parent)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">DThemeManager::registerWidget</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setFixedHeight">setFixedHeight</a>(CONTENT_HEADER_HEIGHT);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_leftLayout = <span class="keyword">new</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_leftLayout-&gt;setMargin(0);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_leftLayout-&gt;setSpacing(0);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m_rightLayout = <span class="keyword">new</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_rightLayout-&gt;setMargin(0);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_rightLayout-&gt;setSpacing(0);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_mainLayout = <span class="keyword">new</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_mainLayout-&gt;setContentsMargins(m_leftMargin, 0, m_rightMargin, 0);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_mainLayout-&gt;addLayout(m_leftLayout);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_mainLayout-&gt;addStretch();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m_mainLayout-&gt;addLayout(m_rightLayout);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    this-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setLayout">setLayout</a>(m_mainLayout);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f">   69</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f">DBaseLine::setLeftContent</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *content)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayoutitem.html">QLayoutItem</a> *child;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">while</span> ((child = m_leftLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#takeAt">takeAt</a>(0)) != 0) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">delete</span> child;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_leftLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#addWidget">addWidget</a>(content);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8">DBaseLine::setRightContent</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *content)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayoutitem.html">QLayoutItem</a> *child;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">while</span> ((child = m_rightLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#takeAt">takeAt</a>(0)) != 0) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">delete</span> child;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_rightLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#addWidget">addWidget</a>(content);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80">   97</a></span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html">QBoxLayout</a> *<a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80">DBaseLine::leftLayout</a>()</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> m_leftLayout;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4e1efa1b120934dad8431e3371e81569">  106</a></span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html">QBoxLayout</a> *<a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4e1efa1b120934dad8431e3371e81569">DBaseLine::rightLayout</a>()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> m_rightLayout;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b">  115</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b">DBaseLine::setLeftMargin</a>(<span class="keywordtype">int</span> margin)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    m_leftMargin = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html#margin-prop">margin</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    m_mainLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayout.html#setContentsMargins">setContentsMargins</a>(m_leftMargin, 0, m_rightMargin, 0);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4a91ac9636b95c1247f00e693650b454">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4a91ac9636b95c1247f00e693650b454">DBaseLine::setRightMargin</a>(<span class="keywordtype">int</span> margin)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    m_rightMargin = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html#margin-prop">margin</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    m_mainLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayout.html#setContentsMargins">setContentsMargins</a>(m_leftMargin, 0, m_rightMargin, 0);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60">  135</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60">DBaseLine::leftMargin</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> m_leftMargin;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f">  144</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f">DBaseLine::rightMargin</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> m_rightMargin;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setFixedHeight">setFixedHeight</a>(CONTENT_HEADER_HEIGHT);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_leftLayout = <span class="keyword">new</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_leftLayout-&gt;setMargin(0);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_leftLayout-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_rightLayout = <span class="keyword">new</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_rightLayout-&gt;setMargin(0);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m_rightLayout-&gt;setSpacing(0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_mainLayout = <span class="keyword">new</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_mainLayout-&gt;setContentsMargins(m_leftMargin, 0, m_rightMargin, 0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_mainLayout-&gt;addLayout(m_leftLayout);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_mainLayout-&gt;addStretch();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_mainLayout-&gt;addLayout(m_rightLayout);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    this-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setLayout">setLayout</a>(m_mainLayout);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f">DBaseLine::setLeftContent</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *content)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayoutitem.html">QLayoutItem</a> *child;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">while</span> ((child = m_leftLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#takeAt">takeAt</a>(0)) != 0) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">delete</span> child;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_leftLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#addWidget">addWidget</a>(content);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8">DBaseLine::setRightContent</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *content)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayoutitem.html">QLayoutItem</a> *child;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">while</span> ((child = m_rightLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#takeAt">takeAt</a>(0)) != 0) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">delete</span> child;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    m_rightLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#addWidget">addWidget</a>(content);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80">   95</a></span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html">QBoxLayout</a> *<a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80">DBaseLine::leftLayout</a>()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> m_leftLayout;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4e1efa1b120934dad8431e3371e81569">  104</a></span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html">QBoxLayout</a> *<a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4e1efa1b120934dad8431e3371e81569">DBaseLine::rightLayout</a>()</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> m_rightLayout;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b">  113</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b">DBaseLine::setLeftMargin</a>(<span class="keywordtype">int</span> margin)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    m_leftMargin = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html#margin-prop">margin</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    m_mainLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayout.html#setContentsMargins">setContentsMargins</a>(m_leftMargin, 0, m_rightMargin, 0);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4a91ac9636b95c1247f00e693650b454">  123</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a4a91ac9636b95c1247f00e693650b454">DBaseLine::setRightMargin</a>(<span class="keywordtype">int</span> margin)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    m_rightMargin = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html#margin-prop">margin</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    m_mainLayout-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayout.html#setContentsMargins">setContentsMargins</a>(m_leftMargin, 0, m_rightMargin, 0);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60">  133</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60">DBaseLine::leftMargin</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> m_leftMargin;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f">  142</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f">DBaseLine::rightMargin</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> m_rightMargin;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;DWIDGET_END_NAMESPACE</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a4a91ac9636b95c1247f00e693650b454"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a4a91ac9636b95c1247f00e693650b454">Dtk::Widget::DBaseLine::setRightMargin</a></div><div class="ttdeci">void setRightMargin(int margin)</div><div class="ttdoc">设置右侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00125">dbaseline.cpp:125</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a4a91ac9636b95c1247f00e693650b454"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a4a91ac9636b95c1247f00e693650b454">Dtk::Widget::DBaseLine::setRightMargin</a></div><div class="ttdeci">void setRightMargin(int margin)</div><div class="ttdoc">设置右侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00123">dbaseline.cpp:123</a></div></div>
 <div class="ttc" id="aqwidget_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a></div></div>
 <div class="ttc" id="aqboxlayout_html_takeAt"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#takeAt">QBoxLayout::takeAt</a></div><div class="ttdeci">virtual QLayoutItem * takeAt(int index) override</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a5574aff18bea4a573788c67ffb11582f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f">Dtk::Widget::DBaseLine::setLeftContent</a></div><div class="ttdeci">void setLeftContent(QWidget *content)</div><div class="ttdoc">设置左侧内容控件</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00069">dbaseline.cpp:69</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a5574aff18bea4a573788c67ffb11582f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a5574aff18bea4a573788c67ffb11582f">Dtk::Widget::DBaseLine::setLeftContent</a></div><div class="ttdeci">void setLeftContent(QWidget *content)</div><div class="ttdoc">设置左侧内容控件</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00067">dbaseline.cpp:67</a></div></div>
 <div class="ttc" id="aqboxlayout_html_addWidget"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html#addWidget">QBoxLayout::addWidget</a></div><div class="ttdeci">void addWidget(QWidget *widget, int stretch, Qt::Alignment alignment)</div></div>
 <div class="ttc" id="aqlabel_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html">QLabel</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a4e1efa1b120934dad8431e3371e81569"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a4e1efa1b120934dad8431e3371e81569">Dtk::Widget::DBaseLine::rightLayout</a></div><div class="ttdeci">QBoxLayout * rightLayout()</div><div class="ttdoc">获取右侧 QBoxLayout</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00106">dbaseline.cpp:106</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a692253d0ec11434d812a75e7ba78186f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f">Dtk::Widget::DBaseLine::rightMargin</a></div><div class="ttdeci">int rightMargin() const</div><div class="ttdoc">右侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00144">dbaseline.cpp:144</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_adae08dcbc4fb5604a2103edccc1acd5b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b">Dtk::Widget::DBaseLine::setLeftMargin</a></div><div class="ttdeci">void setLeftMargin(int margin)</div><div class="ttdoc">设置左侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00115">dbaseline.cpp:115</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a710f0c878ef7e45d171429bfcefc5be8"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8">Dtk::Widget::DBaseLine::setRightContent</a></div><div class="ttdeci">void setRightContent(QWidget *content)</div><div class="ttdoc">设置右侧内容控件</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00083">dbaseline.cpp:83</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a640310940bdbe4a16e15d8f65a126c80"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80">Dtk::Widget::DBaseLine::leftLayout</a></div><div class="ttdeci">QBoxLayout * leftLayout()</div><div class="ttdoc">获取左侧 QBoxLayout</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00097">dbaseline.cpp:97</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a4e1efa1b120934dad8431e3371e81569"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a4e1efa1b120934dad8431e3371e81569">Dtk::Widget::DBaseLine::rightLayout</a></div><div class="ttdeci">QBoxLayout * rightLayout()</div><div class="ttdoc">获取右侧 QBoxLayout</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00104">dbaseline.cpp:104</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a692253d0ec11434d812a75e7ba78186f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f">Dtk::Widget::DBaseLine::rightMargin</a></div><div class="ttdeci">int rightMargin() const</div><div class="ttdoc">右侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00142">dbaseline.cpp:142</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_adae08dcbc4fb5604a2103edccc1acd5b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b">Dtk::Widget::DBaseLine::setLeftMargin</a></div><div class="ttdeci">void setLeftMargin(int margin)</div><div class="ttdoc">设置左侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00113">dbaseline.cpp:113</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a710f0c878ef7e45d171429bfcefc5be8"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8">Dtk::Widget::DBaseLine::setRightContent</a></div><div class="ttdeci">void setRightContent(QWidget *content)</div><div class="ttdoc">设置右侧内容控件</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00081">dbaseline.cpp:81</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a640310940bdbe4a16e15d8f65a126c80"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80">Dtk::Widget::DBaseLine::leftLayout</a></div><div class="ttdeci">QBoxLayout * leftLayout()</div><div class="ttdoc">获取左侧 QBoxLayout</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00095">dbaseline.cpp:95</a></div></div>
 <div class="ttc" id="aqlayoutitem_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayoutitem.html">QLayoutItem</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a6587b7daf07c30048c5da1ddecb8ad60"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60">Dtk::Widget::DBaseLine::leftMargin</a></div><div class="ttdeci">int leftMargin() const</div><div class="ttdoc">左侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00135">dbaseline.cpp:135</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_base_line_html_a6587b7daf07c30048c5da1ddecb8ad60"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60">Dtk::Widget::DBaseLine::leftMargin</a></div><div class="ttdeci">int leftMargin() const</div><div class="ttdoc">左侧外补(margin)边距</div><div class="ttdef"><b>Definition:</b> <a href="dbaseline_8cpp_source.html#l00133">dbaseline.cpp:133</a></div></div>
 <div class="ttc" id="aqwidget_html_setFixedHeight"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setFixedHeight">QWidget::setFixedHeight</a></div><div class="ttdeci">void setFixedHeight(int h)</div></div>
 <div class="ttc" id="aqlabel_html_margin-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlabel.html#margin-prop">QLabel::margin</a></div><div class="ttdeci">margin</div></div>
 <div class="ttc" id="aqhboxlayout_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qhboxlayout.html">QHBoxLayout</a></div></div>
 <div class="ttc" id="aqboxlayout_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qboxlayout.html">QBoxLayout</a></div></div>
 <div class="ttc" id="aqlayout_html_setContentsMargins"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qlayout.html#setContentsMargins">QLayout::setContentsMargins</a></div><div class="ttdeci">void setContentsMargins(int left, int top, int right, int bottom)</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_theme_manager_html_aa6bf144312e09b8daf7ed302e561d7ab"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">Dtk::Widget::DThemeManager::registerWidget</a></div><div class="ttdeci">static void registerWidget(QWidget *widget, QStringList propertys=QStringList())</div><div class="ttdoc">DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...</div><div class="ttdef"><b>Definition:</b> <a href="dthememanager_8cpp_source.html#l00523">dthememanager.cpp:523</a></div></div>
 <div class="ttc" id="aqwidget_html_setLayout"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setLayout">QWidget::setLayout</a></div><div class="ttdeci">void setLayout(QLayout *layout)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dbaseline.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 16:02:20 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:33:10 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

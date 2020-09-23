@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('dwindowmaxbutton_8cpp_source.html','')
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2015 ~ 2017 Deepin Technology Co., Ltd.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
@@ -100,77 +100,97 @@ $(document).ready(function(){initNavTree('dwindowmaxbutton_8cpp_source.html','')
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;dthememanager.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;dwindowmaxbutton.h&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;private/dimagebutton_p.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QStyle&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>DWindowMaxButtonPrivate : <span class="keyword">public</span> DImageButtonPrivate{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    DWindowMaxButtonPrivate(DWindowMaxButton* qq):DImageButtonPrivate(qq) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        m_isMaximized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> m_isMaximized;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_DECLARE_PUBLIC(DWindowMaxButton)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#af02e1006cf261ac7c0bec6a8df8ee619">   57</a></span>&#160;DWindowMaxButton::DWindowMaxButton(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * parent) :</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_image_button.html">DImageButton</a>(*new DWindowMaxButtonPrivate(this), parent)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">DThemeManager::registerWidget</a>(<span class="keyword">this</span>, <a class="codeRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>({<span class="stringliteral">&quot;isMaximized&quot;</span>}));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#sizePolicy-prop">setSizePolicy</a>(QSizePolicy::Fixed, QSizePolicy::Fixed);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">DWindowMaxButton::isMaximized</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html">DWindowMaxButton</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_isMaximized;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> DWindowMaxButton::setMaximized(<span class="keywordtype">bool</span> isMaximized)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#af02e1006cf261ac7c0bec6a8df8ee619">DWindowMaxButton</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dwindowmaxbutton.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;private/diconbutton_p.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;dstyleoption.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>DWindowMaxButtonPrivate : <span class="keyword">public</span> DIconButtonPrivate {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    DWindowMaxButtonPrivate(DWindowMaxButton* qq)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        : DIconButtonPrivate(qq)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        m_isMaximized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> m_isMaximized;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_DECLARE_PUBLIC(DWindowMaxButton)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#af02e1006cf261ac7c0bec6a8df8ee619">   56</a></span>&#160;DWindowMaxButton::DWindowMaxButton(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> * parent) :</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_icon_button.html">DIconButton</a>(*new DWindowMaxButtonPrivate(this), parent)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#sizePolicy-prop">setSizePolicy</a>(QSizePolicy::Minimum, QSizePolicy::Expanding);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d">setIcon</a>(QStyle::SP_TitleBarMaxButton);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446">setFlat</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">DWindowMaxButton::isMaximized</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html">DWindowMaxButton</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> d-&gt;m_isMaximized;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> DWindowMaxButton::sizeHint()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a935de6c4ea3b1fdb13fd96618203ea23">iconSize</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (d-&gt;m_isMaximized == <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    d-&gt;m_isMaximized = <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a22f7d21a3e55411b52fd245ed00c3b9f">maximizedChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> DWindowMaxButton::setMaximized(<span class="keywordtype">bool</span> isMaximized)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#af02e1006cf261ac7c0bec6a8df8ee619">DWindowMaxButton</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (d-&gt;m_isMaximized == <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    d-&gt;m_isMaximized = <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d">setIcon</a>(QStyle::SP_TitleBarNormalButton);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d">setIcon</a>(QStyle::SP_TitleBarMaxButton);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a22f7d21a3e55411b52fd245ed00c3b9f">maximizedChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">isMaximized</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> DWindowMaxButton::initStyleOption(DStyleOptionButton *option)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    DIconButton::initStyleOption(option);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    option-&gt;features |= QStyleOptionButton::ButtonFeature(DStyleOptionButton::TitleBarButton);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html">Dtk::Widget::DWindowMaxButton</a></div><div class="ttdoc">DWindowMaxButton 类是 DTK 窗口统一的最大化/恢复按钮控件。 它有两种状态，一种表示窗口已经进入最大化状态，点击按钮窗口恢复为普通状态； 另一种表示窗口处于普通状态，点击按钮窗口进入...</div><div class="ttdef"><b>Definition:</b> <a href="dwindowmaxbutton_8h_source.html#l00029">dwindowmaxbutton.h:30</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_image_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_image_button.html">Dtk::Widget::DImageButton</a></div><div class="ttdoc">在Deepin的程序设计中，用到了大量基于图片的按钮，而Qt的QPushButton不能方便的只使用图片， 每个项目都存在相同的自绘图片的按钮控件，所以Dtk提供了基于图片来构建的按钮。</div><div class="ttdef"><b>Definition:</b> <a href="dimagebutton_8h_source.html#l00031">dimagebutton.h:32</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_icon_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_icon_button.html">Dtk::Widget::DIconButton</a></div><div class="ttdef"><b>Definition:</b> <a href="diconbutton_8h_source.html#l00034">diconbutton.h:35</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html">Dtk::Widget::DWindowMaxButton</a></div><div class="ttdoc">DWindowMaxButton 类是 DTK 窗口统一的最大化/恢复按钮控件。 它有两种状态，一种表示窗口已经进入最大化状态，点击按钮窗口恢复为普通状态； 另一种表示窗口处于普通状态，点击按钮窗口进入...</div><div class="ttdef"><b>Definition:</b> <a href="dwindowmaxbutton_8h_source.html#l00027">dwindowmaxbutton.h:28</a></div></div>
 <div class="ttc" id="aqwidget_html_sizePolicy-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#sizePolicy-prop">QWidget::setSizePolicy</a></div><div class="ttdeci">void setSizePolicy(QSizePolicy)</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html_a3d7448325825665d54384c52b9fe666f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">Dtk::Widget::DWindowMaxButton::isMaximized</a></div><div class="ttdeci">bool isMaximized</div><div class="ttdoc">isMaximized 属性标示了这个按钮当前所处于的状态。 值为 true 表示按钮处于最大化状态，false 表示窗口处于正常状态。</div><div class="ttdef"><b>Definition:</b> <a href="dwindowmaxbutton_8h_source.html#l00033">dwindowmaxbutton.h:35</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html_a3d7448325825665d54384c52b9fe666f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a3d7448325825665d54384c52b9fe666f">Dtk::Widget::DWindowMaxButton::isMaximized</a></div><div class="ttdeci">bool isMaximized</div><div class="ttdoc">isMaximized 属性标示了这个按钮当前所处于的状态。 值为 true 表示按钮处于最大化状态，false 表示窗口处于正常状态。</div><div class="ttdef"><b>Definition:</b> <a href="dwindowmaxbutton_8h_source.html#l00031">dwindowmaxbutton.h:33</a></div></div>
 <div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_icon_button_html_a16f7ff4bed0f1d456e0067eb4576631d"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d">Dtk::Widget::DIconButton::setIcon</a></div><div class="ttdeci">void setIcon(const QIcon &amp;icon)</div><div class="ttdoc">DIconButton::setIcon　设置button的图标</div><div class="ttdef"><b>Definition:</b> <a href="diconbutton_8cpp_source.html#l00069">diconbutton.cpp:69</a></div></div>
 <div class="ttc" id="adobject_8h_html_ad638ba34d44d91bad5dd9f86ed9035c9"><div class="ttname"><a href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a></div><div class="ttdeci">#define D_D(Class)</div><div class="ttdoc">这个宏用于公开类中，它定义了一个名字为 d 的变量存储 d_func() 的返回值。用于在公开 类中需要访问私有类的数据成员的函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00029">dobject.h:29</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_icon_button_html_a935de6c4ea3b1fdb13fd96618203ea23"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_icon_button.html#a935de6c4ea3b1fdb13fd96618203ea23">Dtk::Widget::DIconButton::iconSize</a></div><div class="ttdeci">QSize iconSize() const</div><div class="ttdoc">DIconButton::iconSize</div><div class="ttdef"><b>Definition:</b> <a href="diconbutton_8cpp_source.html#l00130">diconbutton.cpp:130</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_icon_button_html_af28b4774cc6b83997f5f1a1c1115a446"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446">Dtk::Widget::DIconButton::setFlat</a></div><div class="ttdeci">void setFlat(bool flat)</div><div class="ttdoc">DIconButton::setFlat 设置是否保留边框</div><div class="ttdef"><b>Definition:</b> <a href="diconbutton_8cpp_source.html#l00182">diconbutton.cpp:182</a></div></div>
 <div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html_a22f7d21a3e55411b52fd245ed00c3b9f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html#a22f7d21a3e55411b52fd245ed00c3b9f">Dtk::Widget::DWindowMaxButton::maximizedChanged</a></div><div class="ttdeci">void maximizedChanged(bool isMaximized)</div><div class="ttdoc">isMaximizedChanged 信号在 isMaximized 属性发生变化时触发。</div></div>
 <div class="ttc" id="adobject_8h_html_aba4e2dce37eda69f485ea50d533f0a1c"><div class="ttname"><a href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a></div><div class="ttdeci">#define D_DC(Class)</div><div class="ttdoc">同 D_D，用在公开类加了 const 修饰符的成员函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00031">dobject.h:31</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html_af02e1006cf261ac7c0bec6a8df8ee619"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html#af02e1006cf261ac7c0bec6a8df8ee619">Dtk::Widget::DWindowMaxButton::DWindowMaxButton</a></div><div class="ttdeci">DWindowMaxButton(QWidget *parent=0)</div><div class="ttdoc">DWindowMaxButton::DWindowMaxButton 是 DWindowMaxButton 的构造 函数，返回 DWindowMaxButton 对象，普通程序一般无需使用。</div><div class="ttdef"><b>Definition:</b> <a href="dwindowmaxbutton_8cpp_source.html#l00057">dwindowmaxbutton.cpp:57</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_theme_manager_html_aa6bf144312e09b8daf7ed302e561d7ab"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aa6bf144312e09b8daf7ed302e561d7ab">Dtk::Widget::DThemeManager::registerWidget</a></div><div class="ttdeci">static void registerWidget(QWidget *widget, QStringList propertys=QStringList())</div><div class="ttdoc">DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...</div><div class="ttdef"><b>Definition:</b> <a href="dthememanager_8cpp_source.html#l00523">dthememanager.cpp:523</a></div></div>
-<div class="ttc" id="aqstringlist_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_max_button_html_af02e1006cf261ac7c0bec6a8df8ee619"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_max_button.html#af02e1006cf261ac7c0bec6a8df8ee619">Dtk::Widget::DWindowMaxButton::DWindowMaxButton</a></div><div class="ttdeci">DWindowMaxButton(QWidget *parent=0)</div><div class="ttdoc">DWindowMaxButton::DWindowMaxButton 是 DWindowMaxButton 的构造 函数，返回 DWindowMaxButton 对象，普通程序一般无需使用。</div><div class="ttdef"><b>Definition:</b> <a href="dwindowmaxbutton_8cpp_source.html#l00056">dwindowmaxbutton.cpp:56</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dwindowmaxbutton.cpp</b></li>
-    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 16:32:52 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

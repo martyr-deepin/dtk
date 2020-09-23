@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['scaledpixmapargument_10296',['ScaledPixmapArgument',['qthelp://org.qt-project.qtgui/qtgui/qiconengine-scaledpixmapargument.html',1,'QIconEngine']]],
-  ['selection_10297',['Selection',['qthelp://org.qt-project.qtgui/qtgui/qabstracttextdocumentlayout-selection.html',1,'QAbstractTextDocumentLayout']]],
-  ['signalevent_10298',['SignalEvent',['qthelp://org.qt-project.qtcore/qtcore/qstatemachine-signalevent.html',1,'QStateMachine']]],
-  ['state_10299',['State',['qthelp://org.qt-project.qtgui/qtgui/qaccessible-state.html',1,'QAccessible']]],
-  ['style_10300',['Style',['../classdstyle_1_1_style.html',1,'dstyle']]],
-  ['styleprivate_10301',['StylePrivate',['../classdstyle_1_1_style_private.html',1,'dstyle']]]
+  ['scaledpixmapargument_10501',['ScaledPixmapArgument',['qthelp://org.qt-project.qtgui/qtgui/qiconengine-scaledpixmapargument.html',1,'QIconEngine']]],
+  ['selection_10502',['Selection',['qthelp://org.qt-project.qtgui/qtgui/qabstracttextdocumentlayout-selection.html',1,'QAbstractTextDocumentLayout']]],
+  ['signalevent_10503',['SignalEvent',['qthelp://org.qt-project.qtcore/qtcore/qstatemachine-signalevent.html',1,'QStateMachine']]],
+  ['sliderstrip_10504',['SliderStrip',['../class_dtk_1_1_widget_1_1_slider_strip.html',1,'Dtk::Widget']]],
+  ['specialslider_10505',['SpecialSlider',['../class_dtk_1_1_widget_1_1_special_slider.html',1,'Dtk::Widget']]],
+  ['state_10506',['State',['qthelp://org.qt-project.qtgui/qtgui/qaccessible-state.html',1,'QAccessible']]],
+  ['style_10507',['Style',['../classdstyle_1_1_style.html',1,'dstyle']]],
+  ['styleprivate_10508',['StylePrivate',['../classdstyle_1_1_style_private.html',1,'dstyle']]]
 ];

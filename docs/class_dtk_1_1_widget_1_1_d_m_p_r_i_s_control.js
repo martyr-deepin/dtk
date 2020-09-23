@@ -6,5 +6,6 @@ var class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control =
     [ "mprisChanged", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html#ad344e1727bcd485888eac25e8d4f16b1", null ],
     [ "mprisLosted", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html#a66fa356cf5f40c376acc7babe7c7b4a2", null ],
     [ "setPictureSize", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html#a73138604ef413cd290ddaac5ad3fe028", null ],
-    [ "setPictureVisible", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html#a5e1d7d270d78e9c58326822ede452841", null ]
+    [ "setPictureVisible", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html#a5e1d7d270d78e9c58326822ede452841", null ],
+    [ "showEvent", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html#acbce7d5b50559a5bffc9e8978a0cda16", null ]
 ];
