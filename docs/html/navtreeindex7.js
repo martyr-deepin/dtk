@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"class_dtk_1_1_widget_1_1_d_enhanced_widget.html#aea7f38077c81e98c6020c136c4124f9c":[9,0,3,1,32,7],
+"class_dtk_1_1_widget_1_1_d_expand_group.html":[9,0,3,1,33],
+"class_dtk_1_1_widget_1_1_d_expand_group.html#a10f6c9981109a9bc2ff1bf6f2b9838fe":[9,0,3,1,33,8],
+"class_dtk_1_1_widget_1_1_d_expand_group.html#a53472988ce7c1dbb20186520c12680e7":[9,0,3,1,33,6],
+"class_dtk_1_1_widget_1_1_d_expand_group.html#a608b033e982560a583c409de8cd00e79":[9,0,3,1,33,0],
+"class_dtk_1_1_widget_1_1_d_expand_group.html#a76194795aebf77d149fee4eb96380713":[9,0,3,1,33,1],
+"class_dtk_1_1_widget_1_1_d_expand_group.html#a9113748f63d694bda0e674257cbc8550":[9,0,3,1,33,3],
+"class_dtk_1_1_widget_1_1_d_expand_group.html#a9b54801b642cd3121f12fa44f607de54":[9,0,3,1,33,2],
 "class_dtk_1_1_widget_1_1_d_expand_group.html#abbfdbc9048597ae16f0fbb318a25aa59":[9,0,3,1,33,7],
 "class_dtk_1_1_widget_1_1_d_expand_group.html#ad10c5383b494689d26e956a132b5f6cb":[9,0,3,1,33,4],
 "class_dtk_1_1_widget_1_1_d_expand_group.html#afc3bc259262788f0d7f0d4dcde49f663":[9,0,3,1,33,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "class_dtk_1_1_widget_1_1_d_input_dialog.html#ad4eae2a1fc1db2d75aba7f115f291839":[9,0,3,1,46,6],
 "class_dtk_1_1_widget_1_1_d_input_dialog.html#ad9bd00f95b3d53614726fca03fcf4b4e":[9,0,3,1,46,59],
 "class_dtk_1_1_widget_1_1_d_input_dialog.html#ade75c4b435def2aabe326f6a03a2186c":[9,0,3,1,46,48],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#ae36f1155addb9846a159cf838306bcc2":[9,0,3,1,46,20],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#aea3f420db9689dc958ae2a5e6906603f":[9,0,3,1,46,38],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#aec3bed6c5fc6c239a373be6776381e7b":[9,0,3,1,46,43],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#aee9cd90c3e59d26b541c5710aea8af4f":[9,0,3,1,46,11],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afb12bcb8b68828cfa6cbf250714062c0":[9,0,3,1,46,16],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afb4628a8afbebe9ba6b68c811f6cdbe6":[9,0,3,1,46,58],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afd16fab97c3e2895b51801c612e7d970":[9,0,3,1,46,50],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afd27494f22261926da66d9d05a9e4cbb":[9,0,3,1,46,34],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#aff892b78d16428974d24024b8841c52e":[9,0,3,1,46,54]
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#ae36f1155addb9846a159cf838306bcc2":[9,0,3,1,46,20]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX2 =
 {
+"class_d_region_monitor.html#a80ed3684af9b37c7c585d79ff912db8d":[9,0,31,16],
+"class_d_region_monitor.html#a818886d794f84c61d3c80b3ff2853d54":[9,0,31,11],
+"class_d_region_monitor.html#aaa9b09a349faea6794f0f3838aae286b":[9,0,31,10],
+"class_d_region_monitor.html#aae98fdae479fd6aad979a84692f83c48":[9,0,31,9],
+"class_d_region_monitor.html#ab5c3d67441fb61130821bec31503129b":[9,0,31,7],
+"class_d_region_monitor.html#ac1df94edd69dfbebc0f805fe45b8d27c":[9,0,31,5],
+"class_d_region_monitor.html#ac515587768653c546ab69f63f18a6430":[9,0,31,1],
+"class_d_region_monitor.html#ac515587768653c546ab69f63f18a6430a1cbd0b030b2cc362f56cb9ee0cacf64b":[9,0,31,1,1],
 "class_d_region_monitor.html#ac515587768653c546ab69f63f18a6430abce68eabb00724864c5d586c8b070ef8":[9,0,31,1,0],
 "class_d_region_monitor.html#ac5fed63d984bc0dbcb268a35a3e89c63":[9,0,31,3],
 "class_d_region_monitor.html#ac80937fb751aa35aed4265d9bff83bbe":[9,0,31,13],
@@ -241,13 +249,5 @@ var NAVTREEINDEX2 =
 "class_dtk_1_1_core_1_1_d_file_system_watcher.html#af0261247601d380db10af96412b9ba55":[9,0,3,0,8,2],
 "class_dtk_1_1_core_1_1_d_file_system_watcher.html#af5b02cad6c6588395e1562750713bfe7":[9,0,3,0,8,5],
 "class_dtk_1_1_core_1_1_d_file_system_watcher.html#afd0a393eb251aa01d927abccde5f2057":[9,0,3,0,8,14],
-"class_dtk_1_1_core_1_1_d_file_watcher.html":[9,0,3,0,9],
-"class_dtk_1_1_core_1_1_d_file_watcher.html#a1f2321d9a477236a4c59c20e44a35288":[9,0,3,0,9,0],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html":[9,0,3,0,10],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a001a2e7d2e2cfd75feda3cf267d48d10":[9,0,3,0,10,5],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a564d3758e2af831b909ddcbbb83c11ad":[9,0,3,0,10,6],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a688f6d112cfb42cf310430b9bb843c38":[9,0,3,0,10,2],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a6ba017a77b16a0c090278f03586c6b34":[9,0,3,0,10,1],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a8f6d5248b150ce27e6facc5c2ff8450c":[9,0,3,0,10,3],
-"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a98a2625ca7465183f09dcd24a4a25b4f":[9,0,3,0,10,7]
+"class_dtk_1_1_core_1_1_d_file_watcher.html":[9,0,3,0,9]
 };

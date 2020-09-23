@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"class_dtk_1_1_widget_1_1_d_borderless_widget.html#af9abde7a585a1c5c2e051b35f6bc76fa":[9,0,3,1,21,44],
+"class_dtk_1_1_widget_1_1_d_borderless_widget.html#af9fc2c32a5f9fb244ee00770ba134c9b":[9,0,3,1,21,6],
+"class_dtk_1_1_widget_1_1_d_borderless_widget.html#afa2246a3330a3133006817af69a84bd5":[9,0,3,1,21,68],
+"class_dtk_1_1_widget_1_1_d_borderless_widget.html#afc6789a2a16741b987d9541b36b1c414":[9,0,3,1,21,70],
+"class_dtk_1_1_widget_1_1_d_borderless_window.html":[9,0,3,1,22],
+"class_dtk_1_1_widget_1_1_d_borderless_window.html#a57b498fff96146e6dfa7aa7b8b96ac5d":[9,0,3,1,22,3],
+"class_dtk_1_1_widget_1_1_d_borderless_window.html#a6a80c45ab39286f5d932e8e72c2de0ff":[9,0,3,1,22,0],
+"class_dtk_1_1_widget_1_1_d_borderless_window.html#a857e7f705dbf442dfd05dfb3e30826ea":[9,0,3,1,22,1],
 "class_dtk_1_1_widget_1_1_d_borderless_window.html#a9920e0cc99bfb6f80eb7fbee6b231cec":[9,0,3,1,22,2],
 "class_dtk_1_1_widget_1_1_d_borderless_window.html#ab77aa8cd1e8de6fc657b7a08882e4238":[9,0,3,1,22,4],
 "class_dtk_1_1_widget_1_1_d_box_widget.html":[9,0,3,1,23],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ac0a12f67d5b9987dd7d08a16c0c76d1c":[9,0,3,1,32,14],
 "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ae03e3dda38da218cb0d91e430a989b3a":[9,0,3,1,32,10],
 "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ae583bd9b4a19a33a75873949ea110ff0":[9,0,3,1,32,6],
-"class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ae971814635bd4ec0aa7c99e99ffe919b":[9,0,3,1,32,4],
-"class_dtk_1_1_widget_1_1_d_enhanced_widget.html#aea7f38077c81e98c6020c136c4124f9c":[9,0,3,1,32,7],
-"class_dtk_1_1_widget_1_1_d_expand_group.html":[9,0,3,1,33],
-"class_dtk_1_1_widget_1_1_d_expand_group.html#a10f6c9981109a9bc2ff1bf6f2b9838fe":[9,0,3,1,33,8],
-"class_dtk_1_1_widget_1_1_d_expand_group.html#a53472988ce7c1dbb20186520c12680e7":[9,0,3,1,33,6],
-"class_dtk_1_1_widget_1_1_d_expand_group.html#a608b033e982560a583c409de8cd00e79":[9,0,3,1,33,0],
-"class_dtk_1_1_widget_1_1_d_expand_group.html#a76194795aebf77d149fee4eb96380713":[9,0,3,1,33,1],
-"class_dtk_1_1_widget_1_1_d_expand_group.html#a9113748f63d694bda0e674257cbc8550":[9,0,3,1,33,3],
-"class_dtk_1_1_widget_1_1_d_expand_group.html#a9b54801b642cd3121f12fa44f607de54":[9,0,3,1,33,2]
+"class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ae971814635bd4ec0aa7c99e99ffe919b":[9,0,3,1,32,4]
 };

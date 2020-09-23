@@ -1,5 +1,13 @@
 var NAVTREEINDEX15 =
 {
+"dpalette_8cpp_source.html":[10,0,1,1,15],
+"dpalette_8h_source.html":[10,0,1,1,16],
+"dpasswdeditanimated_8cpp_source.html":[10,0,2,0,2,87],
+"dpasswdeditanimated_8h_source.html":[10,0,2,0,2,88],
+"dpasswordedit_8cpp_source.html":[10,0,2,0,2,89],
+"dpasswordedit_8h_source.html":[10,0,2,0,2,90],
+"dpathbuf_8cpp_source.html":[10,0,0,0,1,11],
+"dpathbuf_8h_source.html":[10,0,0,0,1,12],
 "dpicturesequenceview_8cpp_source.html":[10,0,2,0,2,91],
 "dpicturesequenceview_8h_source.html":[10,0,2,0,2,92],
 "dpinyin_8h_source.html":[10,0,0,0,4,8],
@@ -191,8 +199,8 @@ var NAVTREEINDEX15 =
 "functions_n.html":[9,3,0,13],
 "functions_o.html":[9,3,0,14],
 "functions_p.html":[9,3,0,15],
-"functions_prop.html":[9,3,6],
 "functions_prop.html":[9,3,6,0],
+"functions_prop.html":[9,3,6],
 "functions_prop_b.html":[9,3,6,1],
 "functions_prop_c.html":[9,3,6,2],
 "functions_prop_d.html":[9,3,6,3],
@@ -232,8 +240,8 @@ var NAVTREEINDEX15 =
 "hidpihelper_8cpp_source.html":[10,0,3,3,1,16],
 "hidpihelper_8h_source.html":[10,0,3,3,1,17],
 "hierarchy.html":[9,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "lineedithelper_8cpp_source.html":[10,0,3,3,1,18],
 "md_dtkcore__c_h_a_n_g_e_l_o_g.html":[2],
 "md_dtkcore_src_log__r_e_a_d_m_e.html":[4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX15 =
 "md_dtkwidget__c_h_a_n_g_e_l_o_g.html":[1],
 "md_qt5integration__c_h_a_n_g_e_l_o_g.html":[6],
 "md_qt5integration__r_e_a_d_m_e.html":[7],
-"menuhelper_8cpp_source.html":[10,0,3,3,1,19],
-"norwegianwoodstyle_8cpp_source.html":[10,0,3,4,1],
-"norwegianwoodstyle_8h_source.html":[10,0,3,4,2],
-"osxwindow_8h_source.html":[10,0,2,0,0,0,0],
-"osxwindow_8mm_source.html":[10,0,2,0,0,0,1],
-"pages.html":[],
-"painterhelper_8cpp_source.html":[10,0,3,3,1,20],
-"painterhelper_8h_source.html":[10,0,3,3,1,21],
-"paletteextended_8cpp_source.html":[10,0,3,3,1,22]
+"menuhelper_8cpp_source.html":[10,0,3,3,1,19]
 };

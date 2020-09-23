@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#aea3f420db9689dc958ae2a5e6906603f":[9,0,3,1,46,38],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#aec3bed6c5fc6c239a373be6776381e7b":[9,0,3,1,46,43],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#aee9cd90c3e59d26b541c5710aea8af4f":[9,0,3,1,46,11],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#afb12bcb8b68828cfa6cbf250714062c0":[9,0,3,1,46,16],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#afb4628a8afbebe9ba6b68c811f6cdbe6":[9,0,3,1,46,58],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#afd16fab97c3e2895b51801c612e7d970":[9,0,3,1,46,50],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#afd27494f22261926da66d9d05a9e4cbb":[9,0,3,1,46,34],
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#aff892b78d16428974d24024b8841c52e":[9,0,3,1,46,54],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html":[9,0,3,1,47],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a032c10503ccee3301930046d4d6886e5":[9,0,3,1,47,12],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a28b3d282dfd98c3ea180243aa2ab45ed":[9,0,3,1,47,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "class_dtk_1_1_widget_1_1_d_main_window.html#a7a1609d3958c1aeaedbeedcc41de86e6":[9,0,3,1,54,24],
 "class_dtk_1_1_widget_1_1_d_main_window.html#a7b7cd17f2505ac2b92cbe59ee44f464c":[9,0,3,1,54,39],
 "class_dtk_1_1_widget_1_1_d_main_window.html#a7d2841c2198d3dabbb817b13e114a909":[9,0,3,1,54,1],
-"class_dtk_1_1_widget_1_1_d_main_window.html#a825e2ed351187f2e5ff7e2834d291a9e":[9,0,3,1,54,5],
-"class_dtk_1_1_widget_1_1_d_main_window.html#a8457c2e1b7f0d3ee01d4bb5a4ba3cdac":[9,0,3,1,54,27],
-"class_dtk_1_1_widget_1_1_d_main_window.html#a8c514f3440e90ac675ac85786c192005":[9,0,3,1,54,58],
-"class_dtk_1_1_widget_1_1_d_main_window.html#a900bb0ac8adc48e9e50500f5427fdf46":[9,0,3,1,54,14],
-"class_dtk_1_1_widget_1_1_d_main_window.html#a9a0c0c439b91631d7ffa634d57a076f9":[9,0,3,1,54,0],
-"class_dtk_1_1_widget_1_1_d_main_window.html#a9d6e798402201ed9d96fadca60cddbf4":[9,0,3,1,54,20],
-"class_dtk_1_1_widget_1_1_d_main_window.html#aaeea59c23b19a1798d2b020146ffc065":[9,0,3,1,54,51],
-"class_dtk_1_1_widget_1_1_d_main_window.html#ab1f1bbfc44e27740aa771244ccc78faa":[9,0,3,1,54,15],
-"class_dtk_1_1_widget_1_1_d_main_window.html#ab407f461244f81a944fb7451fe49c2dd":[9,0,3,1,54,49]
+"class_dtk_1_1_widget_1_1_d_main_window.html#a825e2ed351187f2e5ff7e2834d291a9e":[9,0,3,1,54,5]
 };

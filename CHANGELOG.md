@@ -1,3 +1,12 @@
+<a name="2020.9"></a>
+## 2020.9 
+
+#### Update
+
+*    remove submodule dtkwm and add submodule dtkgui qt5intergration
+*    update docs
+*    change the gh-pages to docs as root web resouces directory
+
 <a name="2.0.8"></a>
 ## 2.0.8 (2018-05-02)
 

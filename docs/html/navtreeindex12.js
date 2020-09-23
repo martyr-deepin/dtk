@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"class_dtk_1_1_widget_1_1_d_titlebar.html#ade42bb69cff40fde9e80c47766541be7":[9,0,3,1,93,36],
+"class_dtk_1_1_widget_1_1_d_titlebar.html#ae10d6e4475b242b097b81a904cc87dcf":[9,0,3,1,93,29],
+"class_dtk_1_1_widget_1_1_d_titlebar.html#ae5f0c6d4c7eda50e05afba1f38c07822":[9,0,3,1,93,26],
+"class_dtk_1_1_widget_1_1_d_titlebar.html#aece776e2c41768ecb3fb862871ee8d8f":[9,0,3,1,93,9],
+"class_dtk_1_1_widget_1_1_d_titlebar.html#aedb0425af2f4c404b2ca695c2eb58e0e":[9,0,3,1,93,4],
+"class_dtk_1_1_widget_1_1_d_titlebar.html#af2a01b3509c390461786229d243f85fa":[9,0,3,1,93,10],
+"class_dtk_1_1_widget_1_1_d_titlebar.html#af546305442c18f7d5aaeea66e66c64e0":[9,0,3,1,93,15],
+"class_dtk_1_1_widget_1_1_d_toast.html":[9,0,3,1,95],
 "class_dtk_1_1_widget_1_1_d_toast.html#a020bfbf4158f7a8f5597560989ca0403":[9,0,3,1,95,2],
 "class_dtk_1_1_widget_1_1_d_toast.html#a1af511ab884235a01346c07e082fcd48":[9,0,3,1,95,6],
 "class_dtk_1_1_widget_1_1_d_toast.html#a1b8425e4040bc4c1017845eff9270327":[9,0,3,1,95,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "class_q_svg_i_o_handler_private.html#a751f1e8de6901dd69f15093c095fb695":[9,0,54,8],
 "class_q_svg_i_o_handler_private.html#a8db63c4e013bc9f179475efac870a55b":[9,0,54,9],
 "class_q_svg_i_o_handler_private.html#ac96e06690a36e464aa5e34c0cac6739f":[9,0,54,0],
-"class_q_svg_i_o_handler_private.html#ad102a4554f12faaabd4cc63b6a881b87":[9,0,54,3],
-"class_q_svg_i_o_handler_private.html#ad596e0b0a175b1c5f5ebe87b136b66c1":[9,0,54,4],
-"class_q_svg_i_o_handler_private.html#afcb6ea1c6019fe6dbe1379821ada16d8":[9,0,54,10],
-"class_q_svg_icon_engine.html":[9,0,50],
-"class_q_svg_icon_engine.html#a0aadc5ac027ce63af192f6e472b8433d":[9,0,50,10],
-"class_q_svg_icon_engine.html#a3c038efdabb7d3e2f80511801e2c1cbb":[9,0,50,3],
-"class_q_svg_icon_engine.html#a3c2b04b4c1aee587fceb5e06f2b7a5cb":[9,0,50,2],
-"class_q_svg_icon_engine.html#a57c1a1e8ff45f9a1e840352e40f57b9e":[9,0,50,1],
-"class_q_svg_icon_engine.html#a5c3bd5333d45503ff272f2e3e464c145":[9,0,50,0]
+"class_q_svg_i_o_handler_private.html#ad102a4554f12faaabd4cc63b6a881b87":[9,0,54,3]
 };

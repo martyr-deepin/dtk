@@ -1,5 +1,13 @@
 var NAVTREEINDEX3 =
 {
+"class_dtk_1_1_core_1_1_d_file_watcher.html#a1f2321d9a477236a4c59c20e44a35288":[9,0,3,0,9,0],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html":[9,0,3,0,10],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a001a2e7d2e2cfd75feda3cf267d48d10":[9,0,3,0,10,5],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a564d3758e2af831b909ddcbbb83c11ad":[9,0,3,0,10,6],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a688f6d112cfb42cf310430b9bb843c38":[9,0,3,0,10,2],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a6ba017a77b16a0c090278f03586c6b34":[9,0,3,0,10,1],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a8f6d5248b150ce27e6facc5c2ff8450c":[9,0,3,0,10,3],
+"class_dtk_1_1_core_1_1_d_file_watcher_manager.html#a98a2625ca7465183f09dcd24a4a25b4f":[9,0,3,0,10,7],
 "class_dtk_1_1_core_1_1_d_file_watcher_manager.html#aafb97ae97286d88c24f211201b4a9cd8":[9,0,3,0,10,4],
 "class_dtk_1_1_core_1_1_d_file_watcher_manager.html#ac003ec86b607b9f73f60e63f9858e83b":[9,0,3,0,10,9],
 "class_dtk_1_1_core_1_1_d_file_watcher_manager.html#ac51efa1a4757adf3f478acda1525f243":[9,0,3,0,10,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX3 =
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#a7ab8a5f2398718aba24c59e09e6e6802":[9,0,3,1,6,3],
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#a7b8487d8422e76f22ec266683ad85acf":[9,0,3,1,6,5],
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#a828ad8a3c4f978e698075b91324c407f":[9,0,3,1,6,11],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#a8b4d76fb947b49e861f6eedd13524a7c":[9,0,3,1,6,21],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ab1772889d3043efb7329afceedea8cc2":[9,0,3,1,6,14],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ab4b954d0a3985e60647373fbd503bf4f":[9,0,3,1,6,15],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#abc878bc08519953925108470e16644c4":[9,0,3,1,6,7],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ac232974f1c06ac6579172d7623709401":[9,0,3,1,6,0],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ac736dcae8b55aef6959d291d02ac5728":[9,0,3,1,6,22],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ac9d53d209eb395fcfba1656f4d7870f0":[9,0,3,1,6,16],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#adf3b95e47b1455c334eb267938b3e6cb":[9,0,3,1,6,28],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#ae290ee3807299f2a1298f23d9cd9c523":[9,0,3,1,6,19]
+"class_dtk_1_1_widget_1_1_d_about_dialog.html#a8b4d76fb947b49e861f6eedd13524a7c":[9,0,3,1,6,21]
 };
