@@ -1,10 +1,13 @@
 all: init html qhp
 
 init:
-	git submodule update --init
+	git submodule update --init --remote
+	rm -r docs/
 
 html:
-	doxygen Doxyfile
+	doxygen Doxyfile-default
+	mv docs/html/*  docs/
+	rm -r docs/html/
 
 qhp:
 	cp -vf Doxyfile Doxyfile.qhp
@@ -14,9 +17,10 @@ qhp:
 	sed -i "s/qtcore.tags=https:\/\/doc.qt.io\/qt-5\//qtcore.tags=qthelp:\/\/org.qt-project.qtcore\/qtcore\//g" Doxyfile.qhp
 	sed -i "s/qtwidgets.tags=https:\/\/doc.qt.io\/qt-5\//qtwidgets.tags=qthelp:\/\/org.qt-project.qtwidgets\/qtwidgets\//g" Doxyfile.qhp
 	doxygen Doxyfile.qhp
+	
 install:
 	mkdir -p $(DESTDIR)/usr/share/qt5/doc
-	cp -r  Docs_qhp/dtk.qch $(DESTDIR)/usr/share/qt5/doc/
+	cp -r  docs/dtk.qch $(DESTDIR)/usr/share/qt5/doc/
 clean:
-	rm -rf Docs_*
+	rm -rf docs/
 	rm -f Doxyfile.qhp 
