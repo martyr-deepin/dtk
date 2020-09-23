@@ -1,0 +1,8 @@
+<map id="Dtk::Widget::DBorderlessWidget" name="Dtk::Widget::DBorderlessWidget">
+<area shape="rect" id="node1" title="DBorderlessWidget 是DTK中用于提供无边框的功能的类，主要用于Windows。 在Windows和Linux图形环境下，窗口管理器都会附加一个标题栏，为了Deepin的设计，DTK的窗..." alt="" coords="169,171,356,212"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="121,95,199,121"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="274,95,417,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="240,5,493,32"/>
+</map>

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dsearchedit.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2020.9</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dsearchedit_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dsearchedit.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2015 ~ 2017 Deepin Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef DSEARCHEDIT_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define DSEARCHEDIT_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QFrame&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QSize&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QPropertyAnimation&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;dtkwidget_global.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;dimagebutton.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html">   31</a></span>&#160;<span class="keyword">class </span>LIBDTKWIDGETSHARED_EXPORT <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html">DSearchEdit</a> : <span class="keyword">public</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html">QFrame</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html">DSearchEdit</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent = 0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ~<a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html">DSearchEdit</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html#sizeHint">sizeHint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_size;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#minimumSizeHint-prop">minimumSizeHint</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_size;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> text() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#mousePressEvent">mousePressEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#mouseReleaseEvent">mouseReleaseEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a> *e);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *o, <a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> setAniDuration(<span class="keyword">const</span> <span class="keywordtype">int</span> duration) {m_animation-&gt;setDuration(duration);}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> setAniShowCurve(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qeasingcurve.html">QEasingCurve</a> curve) {m_showCurve = curve;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> setAniHideCurve(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qeasingcurve.html">QEasingCurve</a> curve) {m_hideCurve = curve;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a> *getLineEdit() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#aa7d713eee9211911cff225813572fa3b">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#aa7d713eee9211911cff225813572fa3b">setText</a>(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp; text) {<span class="keywordflow">if</span> (m_edt) m_edt-&gt;setText(text);}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a07e3f2eec61bc6c75332b8f5980bd89a">   54</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a07e3f2eec61bc6c75332b8f5980bd89a">clear</a>() {m_edt-&gt;clear();}</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a5d6bda2dd2e57285e8d88a05f52adf1d">   55</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a5d6bda2dd2e57285e8d88a05f52adf1d">setPlaceHolder</a>(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;text) {m_placeHolder-&gt;setText(text);}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a02f5f0d7559f40fe316439dd7fb3a252">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a02f5f0d7559f40fe316439dd7fb3a252">textChanged</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#adacf472c13f42993dc367e4239f7fb99">   59</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#adacf472c13f42993dc367e4239f7fb99">returnPressed</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a9689fb66d11e7116c11b553f535a8a1f">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a9689fb66d11e7116c11b553f535a8a1f">editingFinished</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a4facd0dfe33b78c747720dd1f67f0025">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a4facd0dfe33b78c747720dd1f67f0025">focusOut</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a7d977b6109f7cabf11766e6f4fa6755e">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_search_edit.html#a7d977b6109f7cabf11766e6f4fa6755e">focusIn</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> toEditMode();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> initInsideFrame();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#resizeEvent">resizeEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *e);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html#event">event</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qsize.html">QSize</a> m_size;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a> *m_edt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a> *m_searchBtn;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_image_button.html">DImageButton</a> *m_clearBtn;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a> *m_placeHolder;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qframe.html">QFrame</a> *m_insideFrame = NULL;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a> *m_animation;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qeasingcurve.html">QEasingCurve</a> m_showCurve = QEasingCurve::OutCubic;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qeasingcurve.html">QEasingCurve</a> m_hideCurve = QEasingCurve::InCubic;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // DSEARCHEDIT_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_a9689fb66d11e7116c11b553f535a8a1f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#a9689fb66d11e7116c11b553f535a8a1f">Dtk::Widget::DSearchEdit::editingFinished</a></div><div class="ttdeci">void editingFinished()</div><div class="ttdoc">信号在用户敲击Enter或者回车键，以及输入框失去焦点是触发。</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_image_button_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_image_button.html">Dtk::Widget::DImageButton</a></div><div class="ttdoc">在Deepin的程序设计中，用到了大量基于图片的按钮，而Qt的QPushButton不能方便的只使用图片， 每个项目都存在相同的自绘图片的按钮控件，所以Dtk提供了基于图片来构建的按钮。</div><div class="ttdef"><b>Definition:</b> <a href="dimagebutton_8h_source.html#l00031">dimagebutton.h:32</a></div></div>
+<div class="ttc" id="aqframe_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html">QFrame</a></div></div>
+<div class="ttc" id="aqframe_html_event"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html#event">QFrame::event</a></div><div class="ttdeci">virtual bool event(QEvent *e) override</div></div>
+<div class="ttc" id="aqlineedit_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlineedit.html">QLineEdit</a></div></div>
+<div class="ttc" id="aqeasingcurve_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qeasingcurve.html">QEasingCurve</a></div></div>
+<div class="ttc" id="aqwidget_html_resizeEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#resizeEvent">QWidget::resizeEvent</a></div><div class="ttdeci">virtual void resizeEvent(QResizeEvent *event)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html">Dtk::Widget::DSearchEdit</a></div><div class="ttdoc">DSearchEdit 类提供了专门用来进行搜索的输入框控件。相比于一般的输入框控件，DSearchEdit 提供了搜索按钮指示，用户使用起来会更加自然。 如图示：</div><div class="ttdef"><b>Definition:</b> <a href="dsearchedit_8h_source.html#l00031">dsearchedit.h:32</a></div></div>
+<div class="ttc" id="aqpropertyanimation_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpropertyanimation.html">QPropertyAnimation</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqsize_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qsize.html">QSize</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_a07e3f2eec61bc6c75332b8f5980bd89a"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#a07e3f2eec61bc6c75332b8f5980bd89a">Dtk::Widget::DSearchEdit::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">清空输入框内容。</div><div class="ttdef"><b>Definition:</b> <a href="dsearchedit_8h_source.html#l00054">dsearchedit.h:54</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_aa7d713eee9211911cff225813572fa3b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#aa7d713eee9211911cff225813572fa3b">Dtk::Widget::DSearchEdit::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div><div class="ttdoc">设置输入框内容。</div><div class="ttdef"><b>Definition:</b> <a href="dsearchedit_8h_source.html#l00053">dsearchedit.h:53</a></div></div>
+<div class="ttc" id="aqmouseevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmouseevent.html">QMouseEvent</a></div></div>
+<div class="ttc" id="aqlabel_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlabel.html">QLabel</a></div></div>
+<div class="ttc" id="aqobject_html_eventFilter"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#eventFilter">QObject::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *watched, QEvent *event)</div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aqstring_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qstring.html">QString</a></div></div>
+<div class="ttc" id="aqframe_html_sizeHint"><div class="ttname"><a href="https://doc.qt.io/qt-5/qframe.html#sizeHint">QFrame::sizeHint</a></div><div class="ttdeci">virtual QSize sizeHint() const const override</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_a4facd0dfe33b78c747720dd1f67f0025"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#a4facd0dfe33b78c747720dd1f67f0025">Dtk::Widget::DSearchEdit::focusOut</a></div><div class="ttdeci">void focusOut()</div><div class="ttdoc">信号在输入框失去焦点时触发。</div></div>
+<div class="ttc" id="aqwidget_html_minimumSizeHint-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#minimumSizeHint-prop">QWidget::minimumSizeHint</a></div><div class="ttdeci">minimumSizeHint</div></div>
+<div class="ttc" id="aqwidget_html_mouseReleaseEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#mouseReleaseEvent">QWidget::mouseReleaseEvent</a></div><div class="ttdeci">virtual void mouseReleaseEvent(QMouseEvent *event)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_adacf472c13f42993dc367e4239f7fb99"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#adacf472c13f42993dc367e4239f7fb99">Dtk::Widget::DSearchEdit::returnPressed</a></div><div class="ttdeci">void returnPressed()</div><div class="ttdoc">信号在用户输入完成敲击回车时触发。</div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_a5d6bda2dd2e57285e8d88a05f52adf1d"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#a5d6bda2dd2e57285e8d88a05f52adf1d">Dtk::Widget::DSearchEdit::setPlaceHolder</a></div><div class="ttdeci">void setPlaceHolder(const QString &amp;text)</div><div class="ttdoc">为输入框设置占位内容，用来提示用户，如显示“搜索快捷键”。</div><div class="ttdef"><b>Definition:</b> <a href="dsearchedit_8h_source.html#l00055">dsearchedit.h:55</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_a7d977b6109f7cabf11766e6f4fa6755e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#a7d977b6109f7cabf11766e6f4fa6755e">Dtk::Widget::DSearchEdit::focusIn</a></div><div class="ttdeci">void focusIn()</div><div class="ttdoc">信号在输入框获得焦点时触发。</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_search_edit_html_a02f5f0d7559f40fe316439dd7fb3a252"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_search_edit.html#a02f5f0d7559f40fe316439dd7fb3a252">Dtk::Widget::DSearchEdit::textChanged</a></div><div class="ttdeci">void textChanged()</div><div class="ttdoc">信号在用户对输入框内容做了修改后触发。</div></div>
+<div class="ttc" id="aqwidget_html_mousePressEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#mousePressEvent">QWidget::mousePressEvent</a></div><div class="ttdeci">virtual void mousePressEvent(QMouseEvent *event)</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dsearchedit.h</b></li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

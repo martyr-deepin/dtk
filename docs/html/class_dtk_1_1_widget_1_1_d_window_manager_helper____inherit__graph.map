@@ -1,0 +1,6 @@
+<map id="Dtk::Widget::DWindowManagerHelper_" name="Dtk::Widget::DWindowManagerHelper_">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,232,211"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_window_manager_helper.html" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装..." alt="" coords="5,80,232,121"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="15,5,89,32"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="114,5,257,32"/>
+</map>

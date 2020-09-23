@@ -1,0 +1,5 @@
+<map id="Dtk::Core::OutputDebugAppender" name="Dtk::Core::OutputDebugAppender">
+<area shape="rect" id="node1" title="Appender that writes the log records to the Microsoft Debug Log" alt="" coords="5,169,244,196"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for..." alt="" coords="33,80,216,121"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries." alt="" coords="21,5,228,32"/>
+</map>

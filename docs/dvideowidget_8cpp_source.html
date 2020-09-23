@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dvideowidget.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2020.9</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dvideowidget_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dvideowidget.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dvideowidget.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;DObjectPrivate&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QAbstractVideoSurface&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QVideoSurfaceFormat&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QCamera&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QMediaPlayer&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QMediaPlaylist&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;QPointer&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_video_format_proxy.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dtk_1_1_widget_1_1_video_format_proxy.html">VideoFormatProxy</a> : <span class="keyword">public</span> QAbstractVideoSurface</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_video_format_proxy.html">VideoFormatProxy</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *parent);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QVideoFrame&amp; currentFrame() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> present(<span class="keyword">const</span> QVideoFrame &amp;frame);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;QVideoFrame::PixelFormat&gt;</a> supportedPixelFormats(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                QAbstractVideoBuffer::HandleType handleType = QAbstractVideoBuffer::NoHandle) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> isFormatSupported(<span class="keyword">const</span> QVideoSurfaceFormat &amp;format) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QVideoFrame m_currentFrame;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QVideoFrame m_lastFrame;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> currentFrameChanged();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;VideoFormatProxy::VideoFormatProxy(<a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *parent):</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QAbstractVideoSurface(parent)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;QVideoFrame&amp; VideoFormatProxy::currentFrame()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span>QVideoFrame&amp;<span class="keyword">&gt;</span>(m_currentFrame);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> VideoFormatProxy::present(<span class="keyword">const</span> QVideoFrame &amp;frame)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    m_currentFrame = frame;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (frame.isValid())</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        m_lastFrame = frame;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_EMIT currentFrameChanged();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;QVideoFrame::PixelFormat&gt;</a> VideoFormatProxy::supportedPixelFormats(QAbstractVideoBuffer::HandleType)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;QVideoFrame::PixelFormat&gt;</a>()</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                     &lt;&lt; QVideoFrame::Format_RGB32</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                     &lt;&lt; QVideoFrame::Format_ARGB32</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                     &lt;&lt; QVideoFrame::Format_ARGB32_Premultiplied</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                     &lt;&lt; QVideoFrame::Format_RGB565</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                     &lt;&lt; QVideoFrame::Format_RGB555;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">bool</span> VideoFormatProxy::isFormatSupported(<span class="keyword">const</span> QVideoSurfaceFormat &amp;format)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> QVideoFrame::imageFormatFromPixelFormat(format.pixelFormat()) != QImage::Format_Invalid;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">class </span>DVideoWidgetPrivate : <span class="keyword">public</span> DTK_CORE_NAMESPACE::DObjectPrivate</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    DVideoWidgetPrivate(DVideoWidget *qq);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    VideoFormatProxy *formatProxy;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpointer.html">QPointer&lt;QMediaPlayer&gt;</a> player;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> mirroredHorizontal = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> mirroredVertical = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    qreal scale = 1;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    Qt::AspectRatioMode aspectRatioMode = Qt::KeepAspectRatio;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> brightness = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> contrast = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> hue = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> saturation = 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> round = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    qreal ratio = 1;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a>(DVideoWidget)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;DVideoWidgetPrivate::DVideoWidgetPrivate(DVideoWidget *qq)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    : DObjectPrivate(qq)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    , formatProxy(new VideoFormatProxy(qq))</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    qq-&gt;connect(formatProxy, &amp;VideoFormatProxy::currentFrameChanged,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                qq, <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span> (DVideoWidget::*)()<span class="keyword">&gt;</span>(&amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#repaint">DVideoWidget::repaint</a>));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">  184</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget::DVideoWidget</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>(parent)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    , DObject(*new DVideoWidgetPrivate(this))</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad7ec8b348068fa566576907bd1724bea">DVideoWidget::mirroredHorizontal</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">return</span> d-&gt;mirroredHorizontal;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a8c6723b2fbf8938477ff5ddf77c5ec0c">DVideoWidget::mirroredVertical</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> d-&gt;mirroredVertical;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keywordtype">void</span> DVideoWidget::paint(<span class="keyword">const</span> QVideoFrame &amp;frame)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;{</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> image(</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                frame.bits(),</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                frame.width(),</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                frame.height(),</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                frame.bytesPerLine(),</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                QVideoFrame::imageFormatFromPixelFormat(frame.pixelFormat()));</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    painter.drawImage(0, 0, image.mirrored(d-&gt;mirroredHorizontal, d-&gt;mirroredVertical));</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;qreal <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a74fa59f38b02d186fa2a1b7966035a7b">DVideoWidget::scale</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> d-&gt;scale;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;Qt::AspectRatioMode <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad63f037596279821dac1f16dd1b6ec9f">DVideoWidget::aspectRatioMode</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> d-&gt;aspectRatioMode;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a9c7a5d6c207e46fe68fc673658744244">  301</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a9c7a5d6c207e46fe68fc673658744244">DVideoWidget::setSourceVideoPixelRatio</a>(<span class="keyword">const</span> qreal ratio)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    d-&gt;ratio = ratio;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a94507ae4e44bf2c22fc237f9248aca93">  315</a></span>&#160;qreal <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a94507ae4e44bf2c22fc237f9248aca93">DVideoWidget::sourceVideoPixelRatio</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">return</span> d-&gt;ratio;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f">DVideoWidget::brightness</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">return</span> d-&gt;brightness;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae163f8a295c15e8b65aa0774b8efb9c3">DVideoWidget::contrast</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">return</span> d-&gt;contrast;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7667250fd2bc7976ffe03b42756788fc">DVideoWidget::hue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span> d-&gt;hue;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7dcd6e6b0225a204f118320c4f4831a5">DVideoWidget::saturation</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">DVideoWidget</a>);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordflow">return</span> d-&gt;saturation;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;}</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00432"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a2e504cf132937a79cb9423f48ff9d26b">  432</a></span>&#160;<span class="keyword">const</span> QVideoFrame *<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a2e504cf132937a79cb9423f48ff9d26b">DVideoWidget::currentFrame</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">if</span> (d-&gt;formatProxy) {</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">return</span> &amp;d-&gt;formatProxy-&gt;currentFrame();</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aa197fa181de3a9bddffcf872b92e4950">  453</a></span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aa197fa181de3a9bddffcf872b92e4950">DVideoWidget::capture</a>()</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;{</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#grab">grab</a>();</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;}</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a024dba02979eae1744d2b42b1c8e97a8">DVideoWidget::round</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">return</span> d-&gt;round;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;}</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
+<div class="line"><a name="l00489"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a52a761177a4cd14436f57d947f79e78c">  489</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a52a761177a4cd14436f57d947f79e78c">DVideoWidget::setSource</a>(QCamera *source)</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;{</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    Q_ASSERT(source);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    source-&gt;setCaptureMode(QCamera::CaptureStillImage);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    source-&gt;setViewfinder(d-&gt;formatProxy);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;}</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
+<div class="line"><a name="l00508"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a63a96f2643c30611cccfc90128190027">  508</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a52a761177a4cd14436f57d947f79e78c">DVideoWidget::setSource</a>(QMediaPlayer *source)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;{</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    Q_ASSERT(source);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    source-&gt;setVideoOutput(d-&gt;formatProxy);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    d-&gt;player = source;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;}</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>
+<div class="line"><a name="l00525"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aba7a9a6ef47e0b716f4c1cfa043af7ff">  525</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aba7a9a6ef47e0b716f4c1cfa043af7ff">DVideoWidget::setMirroredHorizontal</a>(<span class="keywordtype">bool</span> mirroredHorizontal)</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;{</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160; </div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">if</span> (d-&gt;mirroredHorizontal == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad7ec8b348068fa566576907bd1724bea">mirroredHorizontal</a>)</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    d-&gt;mirroredHorizontal = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad7ec8b348068fa566576907bd1724bea">mirroredHorizontal</a>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a45a7a69ad6d183b0c3ff74884932b464">mirroredHorizontalChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad7ec8b348068fa566576907bd1724bea">mirroredHorizontal</a>);</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;}</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
+<div class="line"><a name="l00544"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0524cd59f9e5b926997d16c21d8024ac">  544</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0524cd59f9e5b926997d16c21d8024ac">DVideoWidget::setMirroredVertical</a>(<span class="keywordtype">bool</span> mirroredVertical)</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;{</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">if</span> (d-&gt;mirroredVertical == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a8c6723b2fbf8938477ff5ddf77c5ec0c">mirroredVertical</a>)</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    d-&gt;mirroredVertical = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a8c6723b2fbf8938477ff5ddf77c5ec0c">mirroredVertical</a>;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aacf1239a0af002007322d3eccc7891ac">mirroredVerticalChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a8c6723b2fbf8938477ff5ddf77c5ec0c">mirroredVertical</a>);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;}</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160; </div>
+<div class="line"><a name="l00563"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aa4c5dc107e1eea423b8b6dfb241e78c8">  563</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#aa4c5dc107e1eea423b8b6dfb241e78c8">DVideoWidget::setScale</a>(qreal scale)</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;{</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160; </div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keywordflow">if</span> (d-&gt;scale == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a74fa59f38b02d186fa2a1b7966035a7b">scale</a>)</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    d-&gt;scale = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a74fa59f38b02d186fa2a1b7966035a7b">scale</a>;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a84e6422e698b8a72c37390bcee7a0e36">scaleChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a74fa59f38b02d186fa2a1b7966035a7b">scale</a>);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;}</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00581"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a3f7b4a67d614c2cbbd00501fb624c07b">  581</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a3f7b4a67d614c2cbbd00501fb624c07b">DVideoWidget::setAspectRatioMode</a>(Qt::AspectRatioMode mode)</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;{</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160; </div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    d-&gt;aspectRatioMode = mode;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;}</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0bfdeb0f5f93033e3849f6c8464c9d34">  596</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0bfdeb0f5f93033e3849f6c8464c9d34">DVideoWidget::setBrightness</a>(<span class="keywordtype">int</span> brightness)</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;{</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    <span class="keywordflow">if</span> (d-&gt;brightness == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f">brightness</a>)</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160; </div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    d-&gt;brightness = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f">brightness</a>;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a16646ac982570723b5b70e2493a13099">brightnessChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f">brightness</a>);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;}</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160; </div>
+<div class="line"><a name="l00615"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae98200813736510b0fe408ba5477fe1e">  615</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae98200813736510b0fe408ba5477fe1e">DVideoWidget::setContrast</a>(<span class="keywordtype">int</span> contrast)</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;{</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keywordflow">if</span> (d-&gt;contrast == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae163f8a295c15e8b65aa0774b8efb9c3">contrast</a>)</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    d-&gt;contrast = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae163f8a295c15e8b65aa0774b8efb9c3">contrast</a>;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a5634683cb12d7f73b3fd22f5ef9a5030">contrastChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae163f8a295c15e8b65aa0774b8efb9c3">contrast</a>);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;}</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
+<div class="line"><a name="l00634"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a220962b5fb59aab14e96cac5a4ea114f">  634</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a220962b5fb59aab14e96cac5a4ea114f">DVideoWidget::setHue</a>(<span class="keywordtype">int</span> hue)</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;{</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160; </div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordflow">if</span> (d-&gt;hue == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7667250fd2bc7976ffe03b42756788fc">hue</a>)</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    d-&gt;hue = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7667250fd2bc7976ffe03b42756788fc">hue</a>;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#abd38afb5f3a51e9663d2c662674f0b08">hueChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7667250fd2bc7976ffe03b42756788fc">hue</a>);</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;}</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
+<div class="line"><a name="l00653"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a22b15f35d40c8f2ce69f77c6a3298d5b">  653</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a22b15f35d40c8f2ce69f77c6a3298d5b">DVideoWidget::setSaturation</a>(<span class="keywordtype">int</span> saturation)</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;{</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160; </div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keywordflow">if</span> (d-&gt;saturation == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7dcd6e6b0225a204f118320c4f4831a5">saturation</a>)</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    d-&gt;saturation = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7dcd6e6b0225a204f118320c4f4831a5">saturation</a>;</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0bc8ca48fabd099fdda5b856176a4783">saturationChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7dcd6e6b0225a204f118320c4f4831a5">saturation</a>);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;}</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
+<div class="line"><a name="l00672"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a731c11a3a77a1a75ed3cf91caff3bb14">  672</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a731c11a3a77a1a75ed3cf91caff3bb14">DVideoWidget::setRound</a>(<span class="keywordtype">bool</span> round)</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;{</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <span class="keywordflow">if</span> (d-&gt;round == <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a024dba02979eae1744d2b42b1c8e97a8">round</a>)</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160; </div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    d-&gt;round = <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a024dba02979eae1744d2b42b1c8e97a8">round</a>;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a388189d6a85c80d0f777a98477d190c4">roundChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html#a024dba02979eae1744d2b42b1c8e97a8">round</a>);</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;}</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="keywordtype">void</span> DVideoWidget::paintEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *)</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;{</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_video_widget.html">DVideoWidget</a>);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160; </div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="keyword">const</span> QMediaPlaylist *pl = d-&gt;player ? d-&gt;player-&gt;playlist() : NULL;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="keywordtype">bool</span> loop = pl &amp;&amp; (pl-&gt;playbackMode() == QMediaPlaylist::Loop || pl-&gt;playbackMode() == QMediaPlaylist::CurrentItemInLoop);</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    QVideoFrame frame = (!loop || d-&gt;formatProxy-&gt;m_currentFrame.isValid()) ? d-&gt;formatProxy-&gt;m_currentFrame : d-&gt;formatProxy-&gt;m_lastFrame;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160; </div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    frame.map(QAbstractVideoBuffer::ReadOnly);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> image(</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                frame.bits(),</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                frame.width(),</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                frame.height(),</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                frame.bytesPerLine(),</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                QVideoFrame::imageFormatFromPixelFormat(frame.pixelFormat()));</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    frame.unmap();</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordflow">if</span> (image.isNull()) {</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    }</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160; </div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    image.setDevicePixelRatio(d-&gt;ratio);</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    image = image.scaled(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#size-prop">size</a>() * d-&gt;scale * d-&gt;ratio, d-&gt;aspectRatioMode, Qt::SmoothTransformation);</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    image = image.mirrored(d-&gt;mirroredHorizontal, d-&gt;mirroredVertical);</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160; </div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keywordflow">if</span> (d-&gt;round) {</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> path;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <span class="keywordtype">int</span> diameter = qMin(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#width-prop">width</a>(), <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#height-prop">height</a>());</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        path.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#addEllipse">addEllipse</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#width-prop">width</a>()/2.0-diameter/2.0, <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#height-prop">height</a>()/2.0-diameter/2.0, diameter, diameter);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        painter.setRenderHint(QPainter::Antialiasing);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        painter.setRenderHint(QPainter::SmoothPixmapTransform);</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        painter.setClipPath(path);</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    }</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    painter.drawImage(<a class="codeRef" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>()).center() - <a class="codeRef" href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a>(image.rect()).<a class="codeRef" href="https://doc.qt.io/qt-5/qrectf.html#center">center</a>() / d-&gt;ratio, image);</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;}</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">#include &quot;dvideowidget.moc&quot;</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aqpointer_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpointer.html">QPointer</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_aa197fa181de3a9bddffcf872b92e4950"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#aa197fa181de3a9bddffcf872b92e4950">Dtk::Widget::DVideoWidget::capture</a></div><div class="ttdeci">QPixmap capture()</div><div class="ttdoc">捕获当前的画面</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00453">dvideowidget.cpp:453</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a0bc8ca48fabd099fdda5b856176a4783"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0bc8ca48fabd099fdda5b856176a4783">Dtk::Widget::DVideoWidget::saturationChanged</a></div><div class="ttdeci">void saturationChanged(int saturation)</div><div class="ttdoc">当前视频或画面的饱和度发生变化时会发出该信号</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a84e6422e698b8a72c37390bcee7a0e36"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a84e6422e698b8a72c37390bcee7a0e36">Dtk::Widget::DVideoWidget::scaleChanged</a></div><div class="ttdeci">void scaleChanged(qreal scale)</div><div class="ttdoc">当相对于视频或画面的原始大小的比例发生变化时会发出该信号</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a94507ae4e44bf2c22fc237f9248aca93"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a94507ae4e44bf2c22fc237f9248aca93">Dtk::Widget::DVideoWidget::sourceVideoPixelRatio</a></div><div class="ttdeci">qreal sourceVideoPixelRatio() const</div><div class="ttdoc">返回视频在HiDPI下的缩放系数</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00315">dvideowidget.cpp:315</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a5634683cb12d7f73b3fd22f5ef9a5030"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a5634683cb12d7f73b3fd22f5ef9a5030">Dtk::Widget::DVideoWidget::contrastChanged</a></div><div class="ttdeci">void contrastChanged(int contrast)</div><div class="ttdoc">当前的视频或画面的对比度发生变化时会发出该信号</div></div>
+<div class="ttc" id="aqwidget_html_grab"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#grab">QWidget::grab</a></div><div class="ttdeci">QPixmap grab(const QRect &amp;rectangle)</div></div>
+<div class="ttc" id="aqwidget_html_rect-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">QWidget::rect</a></div><div class="ttdeci">rect</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_abd38afb5f3a51e9663d2c662674f0b08"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#abd38afb5f3a51e9663d2c662674f0b08">Dtk::Widget::DVideoWidget::hueChanged</a></div><div class="ttdeci">void hueChanged(int hue)</div><div class="ttdoc">当前的视频或画面的色彩度发生变化时会发出该信号</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_ae163f8a295c15e8b65aa0774b8efb9c3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae163f8a295c15e8b65aa0774b8efb9c3">Dtk::Widget::DVideoWidget::contrast</a></div><div class="ttdeci">int contrast</div><div class="ttdoc">返回当前的视频或画面的对比度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:44</a></div></div>
+<div class="ttc" id="aqpainterpath_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_video_format_proxy_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_video_format_proxy.html">Dtk::Widget::VideoFormatProxy</a></div><div class="ttdoc">DVideoWidget使用的封装视频帧的代理类</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00036">dvideowidget.cpp:37</a></div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a45a7a69ad6d183b0c3ff74884932b464"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a45a7a69ad6d183b0c3ff74884932b464">Dtk::Widget::DVideoWidget::mirroredHorizontalChanged</a></div><div class="ttdeci">void mirroredHorizontalChanged(bool mirroredHorizontal)</div><div class="ttdoc">当前的视频或画面发生水平翻转时会发出该信号</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a7dcd6e6b0225a204f118320c4f4831a5"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7dcd6e6b0225a204f118320c4f4831a5">Dtk::Widget::DVideoWidget::saturation</a></div><div class="ttdeci">int saturation</div><div class="ttdoc">返回当前的视频或画面的饱和度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:46</a></div></div>
+<div class="ttc" id="aqwidget_html_repaint"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#repaint">QWidget::repaint</a></div><div class="ttdeci">void repaint()</div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a024dba02979eae1744d2b42b1c8e97a8"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a024dba02979eae1744d2b42b1c8e97a8">Dtk::Widget::DVideoWidget::round</a></div><div class="ttdeci">bool round</div><div class="ttdoc">控制绘制的视频是否为圆形</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:47</a></div></div>
+<div class="ttc" id="adobject_8h_html_ad638ba34d44d91bad5dd9f86ed9035c9"><div class="ttname"><a href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a></div><div class="ttdeci">#define D_D(Class)</div><div class="ttdoc">这个宏用于公开类中，它定义了一个名字为 d 的变量存储 d_func() 的返回值。用于在公开 类中需要访问私有类的数据成员的函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00029">dobject.h:29</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a3f7b4a67d614c2cbbd00501fb624c07b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a3f7b4a67d614c2cbbd00501fb624c07b">Dtk::Widget::DVideoWidget::setAspectRatioMode</a></div><div class="ttdeci">void setAspectRatioMode(Qt::AspectRatioMode mode)</div><div class="ttdoc">设置当前的视频或画面的缩放模式</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00581">dvideowidget.cpp:581</a></div></div>
+<div class="ttc" id="aqpainterpath_html_addEllipse"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html#addEllipse">QPainterPath::addEllipse</a></div><div class="ttdeci">void addEllipse(const QRectF &amp;boundingRectangle)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html">Dtk::Widget::DVideoWidget</a></div><div class="ttdoc">DVideoWidget类提供了呈现视频的小部件 为了给循环播放提供更好的用户体验，视频的最后一帧将会被保留，同时还支持视频垂直或水平翻转， 视频缩放和圆形视频编辑。</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00035">dvideowidget.h:36</a></div></div>
+<div class="ttc" id="aqpixmap_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpixmap.html">QPixmap</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a0bfdeb0f5f93033e3849f6c8464c9d34"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0bfdeb0f5f93033e3849f6c8464c9d34">Dtk::Widget::DVideoWidget::setBrightness</a></div><div class="ttdeci">void setBrightness(int brightness)</div><div class="ttdoc">设置当前的视频或画面的亮度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00596">dvideowidget.cpp:596</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a74fa59f38b02d186fa2a1b7966035a7b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a74fa59f38b02d186fa2a1b7966035a7b">Dtk::Widget::DVideoWidget::scale</a></div><div class="ttdeci">qreal scale</div><div class="ttdoc">返回当前视频或画面相对于原始大小的缩放比例</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:41</a></div></div>
+<div class="ttc" id="aqobject_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html">QObject</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_ad7ec8b348068fa566576907bd1724bea"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad7ec8b348068fa566576907bd1724bea">Dtk::Widget::DVideoWidget::mirroredHorizontal</a></div><div class="ttdeci">bool mirroredHorizontal</div><div class="ttdoc">返回当前视频或画面是否水平翻转画面</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:39</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_abf7b800657a0ce647fd3fce9d3e96b3f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f">Dtk::Widget::DVideoWidget::brightness</a></div><div class="ttdeci">int brightness</div><div class="ttdoc">返回当前视频或画面的画面亮度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:43</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a0524cd59f9e5b926997d16c21d8024ac"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a0524cd59f9e5b926997d16c21d8024ac">Dtk::Widget::DVideoWidget::setMirroredVertical</a></div><div class="ttdeci">void setMirroredVertical(bool mirroredVertical)</div><div class="ttdoc">设置是否开启当前的视频或画面的垂直翻转</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00544">dvideowidget.cpp:544</a></div></div>
+<div class="ttc" id="adobject_8h_html_aba4e2dce37eda69f485ea50d533f0a1c"><div class="ttname"><a href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a></div><div class="ttdeci">#define D_DC(Class)</div><div class="ttdoc">同 D_D，用在公开类加了 const 修饰符的成员函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00031">dobject.h:31</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_ad63f037596279821dac1f16dd1b6ec9f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#ad63f037596279821dac1f16dd1b6ec9f">Dtk::Widget::DVideoWidget::aspectRatioMode</a></div><div class="ttdeci">Qt::AspectRatioMode aspectRatioMode</div><div class="ttdoc">返回当前视频或画面的宽高比模式</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:42</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a16646ac982570723b5b70e2493a13099"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a16646ac982570723b5b70e2493a13099">Dtk::Widget::DVideoWidget::brightnessChanged</a></div><div class="ttdeci">void brightnessChanged(int brightness)</div><div class="ttdoc">当前的视频或画面的亮度发生变化时会发出该信号</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a297a90f1f25fc51de3faae74980410f2"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a297a90f1f25fc51de3faae74980410f2">Dtk::Widget::DVideoWidget::DVideoWidget</a></div><div class="ttdeci">DVideoWidget(QWidget *parent=0)</div><div class="ttdoc">DVideoWidget的构造函数</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00184">dvideowidget.cpp:184</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a220962b5fb59aab14e96cac5a4ea114f"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a220962b5fb59aab14e96cac5a4ea114f">Dtk::Widget::DVideoWidget::setHue</a></div><div class="ttdeci">void setHue(int hue)</div><div class="ttdoc">设置当前视频或画面的色彩度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00634">dvideowidget.cpp:634</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a8c6723b2fbf8938477ff5ddf77c5ec0c"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a8c6723b2fbf8938477ff5ddf77c5ec0c">Dtk::Widget::DVideoWidget::mirroredVertical</a></div><div class="ttdeci">bool mirroredVertical</div><div class="ttdoc">返回当前视频或画面是否垂直翻转画面</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:40</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a22b15f35d40c8f2ce69f77c6a3298d5b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a22b15f35d40c8f2ce69f77c6a3298d5b">Dtk::Widget::DVideoWidget::setSaturation</a></div><div class="ttdeci">void setSaturation(int saturation)</div><div class="ttdoc">设置当前的视频或画面的饱和度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00653">dvideowidget.cpp:653</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a9c7a5d6c207e46fe68fc673658744244"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a9c7a5d6c207e46fe68fc673658744244">Dtk::Widget::DVideoWidget::setSourceVideoPixelRatio</a></div><div class="ttdeci">void setSourceVideoPixelRatio(const qreal ratio)</div><div class="ttdoc">设置当前的视频或画面在HiDPI下的缩放系数</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00301">dvideowidget.cpp:301</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_aacf1239a0af002007322d3eccc7891ac"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#aacf1239a0af002007322d3eccc7891ac">Dtk::Widget::DVideoWidget::mirroredVerticalChanged</a></div><div class="ttdeci">void mirroredVerticalChanged(bool mirroredVertical)</div><div class="ttdoc">当前的视频或画面发生垂直翻转时会发出该信号</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_ae98200813736510b0fe408ba5477fe1e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#ae98200813736510b0fe408ba5477fe1e">Dtk::Widget::DVideoWidget::setContrast</a></div><div class="ttdeci">void setContrast(int contrast)</div><div class="ttdoc">设置当前视频或画面的对比度</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00615">dvideowidget.cpp:615</a></div></div>
+<div class="ttc" id="aqrectf_html_center"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrectf.html#center">QRectF::center</a></div><div class="ttdeci">QPointF center() const const</div></div>
+<div class="ttc" id="aqwidget_html_height-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#height-prop">QWidget::height</a></div><div class="ttdeci">height</div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_aba7a9a6ef47e0b716f4c1cfa043af7ff"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#aba7a9a6ef47e0b716f4c1cfa043af7ff">Dtk::Widget::DVideoWidget::setMirroredHorizontal</a></div><div class="ttdeci">void setMirroredHorizontal(bool mirroredHorizontal)</div><div class="ttdoc">设置是否开启当前视频或画面水平翻转</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00525">dvideowidget.cpp:525</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a2e504cf132937a79cb9423f48ff9d26b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a2e504cf132937a79cb9423f48ff9d26b">Dtk::Widget::DVideoWidget::currentFrame</a></div><div class="ttdeci">const QVideoFrame * currentFrame() const</div><div class="ttdoc">返回当前的画面帧</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00432">dvideowidget.cpp:432</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a52a761177a4cd14436f57d947f79e78c"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a52a761177a4cd14436f57d947f79e78c">Dtk::Widget::DVideoWidget::setSource</a></div><div class="ttdeci">void setSource(QCamera *source)</div><div class="ttdoc">设置要跟踪的QCamera源</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00489">dvideowidget.cpp:489</a></div></div>
+<div class="ttc" id="aqrectf_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrectf.html">QRectF</a></div></div>
+<div class="ttc" id="adobject_8h_html_a6b3eb59f9f5c2b7511246f15a0eb25c5"><div class="ttname"><a href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a></div><div class="ttdeci">#define D_DECLARE_PUBLIC(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了 q_func() 这个函数用于返回公开类的对象，另外将公开类 声明为私有类的友元类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00028">dobject.h:28</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_aa4c5dc107e1eea423b8b6dfb241e78c8"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#aa4c5dc107e1eea423b8b6dfb241e78c8">Dtk::Widget::DVideoWidget::setScale</a></div><div class="ttdeci">void setScale(qreal scale)</div><div class="ttdoc">设置相对于原始视频或画面大小的缩放</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00563">dvideowidget.cpp:563</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a7667250fd2bc7976ffe03b42756788fc"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a7667250fd2bc7976ffe03b42756788fc">Dtk::Widget::DVideoWidget::hue</a></div><div class="ttdeci">int hue</div><div class="ttdoc">返回当前视频或画面的色调</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8h_source.html#l00030">dvideowidget.h:45</a></div></div>
+<div class="ttc" id="aqwidget_html_width-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#width-prop">QWidget::width</a></div><div class="ttdeci">width</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a731c11a3a77a1a75ed3cf91caff3bb14"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a731c11a3a77a1a75ed3cf91caff3bb14">Dtk::Widget::DVideoWidget::setRound</a></div><div class="ttdeci">void setRound(bool round)</div><div class="ttdoc">设置是否开启视频圆形</div><div class="ttdef"><b>Definition:</b> <a href="dvideowidget_8cpp_source.html#l00672">dvideowidget.cpp:672</a></div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aqwidget_html_size-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#size-prop">QWidget::size</a></div><div class="ttdeci">size</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_video_widget_html_a388189d6a85c80d0f777a98477d190c4"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_video_widget.html#a388189d6a85c80d0f777a98477d190c4">Dtk::Widget::DVideoWidget::roundChanged</a></div><div class="ttdeci">void roundChanged(bool round)</div><div class="ttdoc">当前开启和关闭圆形效果时会发出该信号</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dvideowidget.cpp</b></li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

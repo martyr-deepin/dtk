@@ -1,0 +1,4 @@
+<map id="Dtk::Widget::DSettingsWidgetFactory" name="Dtk::Widget::DSettingsWidgetFactory">
+<area shape="rect" id="node1" title="DSettingsWidgetFactory是一个用于构造Deepin风格的设置对话框的控件。 &#160;对于每种控件，均由一个id和对应的构造函数来组成，DSettingsWidgetFactory内置了许多..." alt="" coords="5,80,221,121"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="76,5,151,32"/>
+</map>

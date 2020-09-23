@@ -1,0 +1,7 @@
+<map id="Dtk::Widget::DSwitchLineExpand" name="Dtk::Widget::DSwitchLineExpand">
+<area shape="rect" id="node1" title="DSwitchLineExpand 类提供了一种通过开关按钮来展开/合上显示内容的控件。 控件由标题栏和内容两部分组成，标题栏左侧显示控件标题，右侧显示一个开关控件， 用户通过点击右侧的开关控件，来控制..." alt="" coords="11,229,197,271"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_base_expand.html" title="一个美观的可展开的控件" alt="" coords="5,155,203,181"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="65,80,143,107"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="8,5,83,32"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="107,5,218,32"/>
+</map>

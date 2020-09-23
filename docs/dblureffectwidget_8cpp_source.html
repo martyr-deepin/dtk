@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/src/widgets/dblureffectwidget.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2020.9</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dblureffectwidget_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dblureffectwidget.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2017 ~ 2017 Deepin Technology Co., Ltd.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;dblureffectwidget.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;private/dblureffectwidget_p.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;dplatformwindowhandle.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;util/dwindowmanagerhelper.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QBackingStore&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QPaintEvent&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;qpa/qplatformbackingstore.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define MASK_COLOR_ALPHA_DEFAULT 204</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;QT_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;Q_WIDGETS_EXPORT <span class="keywordtype">void</span> qt_blurImage(<a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> *p, <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;blurImage, qreal radius, <span class="keywordtype">bool</span> quality, <span class="keywordtype">bool</span> alphaOnly, <span class="keywordtype">int</span> transposed = 0);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;QT_END_NAMESPACE</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;DWIDGET_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qmultihash.html">QMultiHash&lt;QWidget *, const DBlurEffectWidget *&gt;</a> DBlurEffectWidgetPrivate::blurEffectWidgetHash;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qhash.html">QHash&lt;const DBlurEffectWidget *, QWidget *&gt;</a> DBlurEffectWidgetPrivate::windowOfBlurEffectHash;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;DBlurEffectWidgetPrivate::DBlurEffectWidgetPrivate(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a> *qq)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    : DObjectPrivate(qq)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">bool</span> DBlurEffectWidgetPrivate::isBehindWindowBlendMode()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="dobject_8h.html#a56dbbbc6dddc25cfebbb5434a91bd774">D_QC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> blendMode == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3">DBlurEffectWidget::BehindWindowBlend</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;           || q-&gt;isTopLevel();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> DBlurEffectWidgetPrivate::isFull()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="dobject_8h.html#a56dbbbc6dddc25cfebbb5434a91bd774">D_QC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> full || (q-&gt;isTopLevel() &amp;&amp; !(blurRectXRadius * blurRectYRadius) &amp;&amp; maskPath.isEmpty());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidgetPrivate::addToBlurEffectWidgetHash()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="dobject_8h.html#a56dbbbc6dddc25cfebbb5434a91bd774">D_QC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *oldTopLevelWidget = windowOfBlurEffectHash.value(q);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (oldTopLevelWidget) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        blurEffectWidgetHash.remove(oldTopLevelWidget, q);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        updateWindowBlurArea(oldTopLevelWidget);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *topLevelWidget = q-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget-obsolete.html#topLevelWidget">topLevelWidget</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    blurEffectWidgetHash.insertMulti(topLevelWidget, q);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    windowOfBlurEffectHash[q] = topLevelWidget;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    updateWindowBlurArea(topLevelWidget);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidgetPrivate::removeFromBlurEffectWidgetHash()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="dobject_8h.html#a56dbbbc6dddc25cfebbb5434a91bd774">D_QC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *topLevelWidget = windowOfBlurEffectHash.value(q);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (!topLevelWidget) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    blurEffectWidgetHash.remove(topLevelWidget, q);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    windowOfBlurEffectHash.remove(q);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    updateWindowBlurArea(topLevelWidget);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> DBlurEffectWidgetPrivate::updateWindowBlurArea()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="dobject_8h.html#a56dbbbc6dddc25cfebbb5434a91bd774">D_QC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *topLevelWidget = windowOfBlurEffectHash.value(q);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> topLevelWidget &amp;&amp; updateWindowBlurArea(topLevelWidget);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidgetPrivate::setMaskAlpha(<span class="keyword">const</span> quint8 alpha) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    maskAlpha = alpha;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// refresh alpha</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    setMaskColor(maskColor);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidgetPrivate::setMaskColor(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    maskColor = color;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        maskColor.<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html#setAlpha">setAlpha</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>()-&gt;hasBlurWindow() ? maskAlpha : MASK_COLOR_ALPHA_DEFAULT);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="dobject_8h.html#a8b1f6c1673a4186b6629d554a7eff35c">D_Q</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    q-&gt;update();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">bool</span> DBlurEffectWidgetPrivate::updateWindowBlurArea(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *topLevelWidget)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (!topLevelWidget-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#visible-prop">isVisible</a>()) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;const DBlurEffectWidget *&gt;</a> blurEffectWidgetList = blurEffectWidgetHash.values(topLevelWidget);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> isExistMaskPath = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    Q_FOREACH (<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a> *w, blurEffectWidgetList) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span> (!w-&gt;d_func()-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">blurEnabled</a>) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">// 当存在一个模糊区域填充整个窗口时，不需要再考虑其它的控件，直接对此窗口开启全模糊即可</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">if</span> (w-&gt;d_func()-&gt;isFull() &amp;&amp; w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#visible-prop">isVisible</a>()) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html">DPlatformWindowHandle</a> handle(topLevelWidget);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">if</span> (!handle.enableBlurWindow()) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                handle.setEnableBlurWindow(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">if</span> (!w-&gt;d_func()-&gt;maskPath.isEmpty() &amp;&amp; w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#visible-prop">isVisible</a>()) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            isExistMaskPath = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// 清理窗口背景模糊是否完全开启的状态</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html">DPlatformWindowHandle</a> handle(topLevelWidget);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span> (handle.enableBlurWindow()) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        handle.setEnableBlurWindow(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">bool</span> ok = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (isExistMaskPath) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html">QList&lt;QPainterPath&gt;</a> pathList;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        Q_FOREACH (<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a> *w, blurEffectWidgetList) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (!w-&gt;d_func()-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">blurEnabled</a>) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">if</span> (!w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#visible-prop">isVisible</a>()) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> p;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> r = w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#moveTopLeft">moveTopLeft</a>(w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#mapTo">mapTo</a>(topLevelWidget, r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#topLeft">topLeft</a>()));</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            p.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#addRoundedRect">addRoundedRect</a>(r, w-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">blurRectXRadius</a>(), w-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">blurRectYRadius</a>());</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">if</span> (!w-&gt;d_func()-&gt;maskPath.isEmpty()) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                p &amp;= w-&gt;d_func()-&gt;maskPath.translated(r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#topLeft">topLeft</a>());</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            pathList &lt;&lt; p;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        ok = handle.setWindowBlurAreaByWM(pathList);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qvector.html">QVector&lt;DPlatformWindowHandle::WMBlurArea&gt;</a> areaList;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        areaList.<a class="codeRef" href="https://doc.qt.io/qt-5/qvector.html#reserve">reserve</a>(blurEffectWidgetList.<a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html#size">size</a>());</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        Q_FOREACH (<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a> *w, blurEffectWidgetList) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">if</span> (!w-&gt;d_func()-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">blurEnabled</a>) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> (!w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#visible-prop">isVisible</a>()) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> r = w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#moveTopLeft">moveTopLeft</a>(w-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#mapTo">mapTo</a>(topLevelWidget, r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#topLeft">topLeft</a>()));</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            areaList &lt;&lt; dMakeWMBlurArea(r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#x">x</a>(), r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#y">y</a>(), r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#width">width</a>(), r.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#height">height</a>(), w-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">blurRectXRadius</a>(), w-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">blurRectYRadius</a>());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        ok = handle.setWindowBlurAreaByWM(areaList);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">if</span> (blurEffectWidgetList.<a class="codeRef" href="https://doc.qt.io/qt-5/qlist.html#isEmpty">isEmpty</a>()) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        blurEffectWidgetHash.remove(topLevelWidget);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> ok;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2ac20b4bd2f9ba177437e82be2e1444e">  400</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2ac20b4bd2f9ba177437e82be2e1444e">DBlurEffectWidget::DBlurEffectWidget</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>(parent)</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    , DObject(*new DBlurEffectWidgetPrivate(this))</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;{</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#setAttribute">setAttribute</a>(Qt::WA_TranslucentBackground);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">if</span> (!<a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>) {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        d-&gt;addToBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>(), &amp;<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac720042c080be23fc709f0a29bcfd48b">DWindowManagerHelper::windowManagerChanged</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>] {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        d-&gt;updateWindowBlurArea();</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    });</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>(), &amp;<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a5ed5fce74b2f26f468b000c7cfc55a73">DWindowManagerHelper::hasBlurWindowChanged</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>] {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        d-&gt;setMaskColor(d-&gt;maskColor);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    });</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>(), &amp;<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a52c60a77d7eca20d60d51adaebd5a3af">DWindowManagerHelper::hasCompositeChanged</a>, <span class="keyword">this</span>, [<span class="keyword">this</span>] {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">if</span> (d-&gt;maskColorType != <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9ada25f2fbdea72a84b3f7918cf9332945">CustomColor</a>)</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    });</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;DBlurEffectWidget::~DBlurEffectWidget()</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;{</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordflow">if</span> (d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        d-&gt;removeFromBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">DBlurEffectWidget::radius</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">return</span> d-&gt;radius;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a6a272fb3147a7b49c45cac2e77cb0769">DBlurEffectWidget::BlurMode</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1ddfa6594e84f36f76dfe4661c810929">DBlurEffectWidget::mode</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">return</span> d-&gt;mode;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3">DBlurEffectWidget::BlendMode</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">DBlurEffectWidget::blendMode</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keywordflow">return</span> d-&gt;blendMode;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;}</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">DBlurEffectWidget::blurRectXRadius</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160; </div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordflow">return</span> d-&gt;blurRectXRadius;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;}</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">DBlurEffectWidget::blurRectYRadius</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">return</span> d-&gt;blurRectYRadius;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">DBlurEffectWidget::maskColor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">switch</span> ((<span class="keywordtype">int</span>)d-&gt;maskColorType) {</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9a9f2c586cb9684c26a612a1ffc9537d28">DarkColor</a>: {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordflow">if</span> (!d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>(0, 0, 0, d-&gt;maskAlpha);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>()-&gt;hasComposite()) {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>(0, 0, 0, <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>()-&gt;hasBlurWindow() ? d-&gt;maskAlpha : MASK_COLOR_ALPHA_DEFAULT);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>(<span class="stringliteral">&quot;#373F47&quot;</span>);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        }</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9aedc6cbf9c1819cba3f343ad2640dd7fb">LightColor</a>: {</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keywordflow">if</span> (!d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>(255, 255, 255, d-&gt;maskAlpha);</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        }</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>()-&gt;hasComposite()) {</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>(255, 255, 255, <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">DWindowManagerHelper::instance</a>()-&gt;hasBlurWindow() ? d-&gt;maskAlpha : MASK_COLOR_ALPHA_DEFAULT);</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a>(<span class="stringliteral">&quot;#FCFCFC&quot;</span>);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        }</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    }</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    }</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">return</span> d-&gt;maskColor;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;}</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;quint8 <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a043495546d943786d72b91001321c215">DBlurEffectWidget::maskAlpha</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordflow">return</span> d-&gt;maskAlpha;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;}</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
+<div class="line"><a name="l00566"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a8b724963f8ed1c8f9e326a7c1f7fb933">  566</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a8b724963f8ed1c8f9e326a7c1f7fb933">DBlurEffectWidget::setMaskPath</a>(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> &amp;path)</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;{</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordflow">if</span> (d-&gt;maskPath == path) {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    }</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    d-&gt;maskPath = path;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;}</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160; </div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="keywordtype">bool</span> DBlurEffectWidget::isFull()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160; </div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="keywordflow">return</span> d-&gt;full;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">DBlurEffectWidget::blurEnabled</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <a class="code" href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordflow">return</span> d-&gt;blurEnabled;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;}</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setRadius(<span class="keywordtype">int</span> radius)</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;{</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordflow">if</span> (d-&gt;radius == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>) {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    }</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    d-&gt;radius = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    d-&gt;sourceImage = <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a>();</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae9c914755c54239c7514d065545248b5">radiusChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>);</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;}</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setMode(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a6a272fb3147a7b49c45cac2e77cb0769">DBlurEffectWidget::BlurMode</a> mode)</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">if</span> (d-&gt;mode == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1ddfa6594e84f36f76dfe4661c810929">mode</a>) {</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    }</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    d-&gt;mode = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1ddfa6594e84f36f76dfe4661c810929">mode</a>;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aa5a566f9326d6af70de806810226d497">modeChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1ddfa6594e84f36f76dfe4661c810929">mode</a>);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;}</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setBlendMode(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3">DBlurEffectWidget::BlendMode</a> blendMode)</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;{</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordflow">if</span> (d-&gt;blendMode == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">blendMode</a>) {</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    }</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">blendMode</a> == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3">BehindWindowBlend</a>) {</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        d-&gt;addToBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">blendMode</a> == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a463584fc6c4ff0596cee513435ffcdb5">InWindowBlend</a>) {</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            d-&gt;maskColor.setAlpha(d-&gt;maskAlpha);</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        }</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <span class="keywordflow">if</span> (d-&gt;blendMode == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3">BehindWindowBlend</a>) {</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;            d-&gt;removeFromBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        }</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    }</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160; </div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    d-&gt;blendMode = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">blendMode</a>;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1f1cb56759cfbe825a268eb12348e8d5">blendModeChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">blendMode</a>);</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;}</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setBlurRectXRadius(<span class="keywordtype">int</span> blurRectXRadius)</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;{</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordflow">if</span> (d-&gt;blurRectXRadius == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">blurRectXRadius</a>) {</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    }</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160; </div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    d-&gt;blurRectXRadius = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">blurRectXRadius</a>;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160; </div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160; </div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad191a0ec600b3a880de47044f1667774">blurRectXRadiusChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">blurRectXRadius</a>);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;}</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setBlurRectYRadius(<span class="keywordtype">int</span> blurRectYRadius)</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;{</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160; </div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordflow">if</span> (d-&gt;blurRectYRadius == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">blurRectYRadius</a>) {</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    }</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    d-&gt;blurRectYRadius = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">blurRectYRadius</a>;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160; </div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a262403c50e8d48e2404775aa10bdf58c">blurRectYRadiusChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">blurRectYRadius</a>);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;}</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160; </div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setMaskAlpha(quint8 alpha) {</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keywordflow">if</span> (alpha == d-&gt;maskAlpha) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160; </div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    d-&gt;setMaskAlpha(alpha);</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a36e910aaaf639baee48bc6b73d7396f0">maskAlphaChanged</a>(alpha);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;}</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160; </div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setMaskColor(<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> maskColor)</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;{</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160; </div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">maskColor</a>.<a class="codeRef" href="https://doc.qt.io/qt-5/qcolor.html#isValid">isValid</a>()) {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">maskColor</a> = Qt::transparent;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    }</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160; </div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keywordflow">if</span> (d-&gt;maskColor == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">maskColor</a>) {</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    }</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160; </div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    d-&gt;maskColorType = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9ada25f2fbdea72a84b3f7918cf9332945">CustomColor</a>;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    d-&gt;setMaskColor(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">maskColor</a>);</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160; </div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    Q_EMIT <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad5171ba3aafef9e6d4fee8b808747786">maskColorChanged</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">maskColor</a>);</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;}</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160; </div>
+<div class="line"><a name="l00711"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#af708e7d0459be47ef609f6b0eb26ca36">  711</a></span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setMaskColor(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9">DBlurEffectWidget::MaskColorType</a> type)</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;{</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keywordflow">if</span> (d-&gt;maskColorType == type) {</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    }</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    d-&gt;maskColorType = type;</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160; </div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;}</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setFull(<span class="keywordtype">bool</span> full)</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;{</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160; </div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keywordflow">if</span> (d-&gt;full == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad1cb29e11f324f3b0b26173c0636d68a">full</a>)</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    d-&gt;full = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad1cb29e11f324f3b0b26173c0636d68a">full</a>;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    d-&gt;updateWindowBlurArea();</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    Q_EMIT fullChanged(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad1cb29e11f324f3b0b26173c0636d68a">full</a>);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;}</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::setBlurEnabled(<span class="keywordtype">bool</span> blurEnabled)</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;{</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="keywordflow">if</span> (d-&gt;blurEnabled == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">blurEnabled</a>)</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160; </div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    d-&gt;blurEnabled = <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">blurEnabled</a>;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    d-&gt;updateWindowBlurArea();</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#update">update</a>();</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160; </div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    Q_EMIT blurEnabledChanged(d-&gt;blurEnabled);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;}</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160; </div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2ac20b4bd2f9ba177437e82be2e1444e">DBlurEffectWidget::DBlurEffectWidget</a>(DBlurEffectWidgetPrivate &amp;dd, <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parent)</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    : <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>(parent)</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    , DObject(dd)</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;{</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160; </div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;}</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="keyword">inline</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> operator *(<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;rect, qreal scale)</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;{</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a>(rect.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#left">left</a>() * scale, rect.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#top">top</a>() * scale, rect.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#width">width</a>() * scale, rect.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#height">height</a>() * scale);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;}</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160; </div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::paintEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a> *event)</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;{</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160; </div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;blurEnabled)</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160; </div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> pa(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    <span class="keywordflow">if</span> (d-&gt;blurRectXRadius &gt; 0 || d-&gt;blurRectYRadius &gt; 0) {</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> path;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        path.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#addRoundedRect">addRoundedRect</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>(), d-&gt;blurRectXRadius, d-&gt;blurRectYRadius);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        pa.setRenderHint(QPainter::Antialiasing);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        pa.setClipPath(path);</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    }</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;maskPath.isEmpty()) {</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> path = pa.clipPath();</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        <span class="keywordflow">if</span> (path.<a class="codeRef" href="https://doc.qt.io/qt-5/qpainterpath.html#isEmpty">isEmpty</a>()) {</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            path = d-&gt;maskPath;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;            path &amp;= d-&gt;maskPath;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        }</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160; </div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        pa.setClipPath(path);</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    }</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">if</span> (d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        pa.setCompositionMode(QPainter::CompositionMode_Source);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a> = d-&gt;radius;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a> point_offset = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#mapTo">mapTo</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>(), <a class="codeRef" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>(0, 0));</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;paintRect = <span class="keyword">event</span>-&gt;rect();</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        qreal device_pixel_ratio = <a class="codeRef" href="https://doc.qt.io/qt-5/qpaintdevice.html#devicePixelRatioF">devicePixelRatioF</a>();</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160; </div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">if</span> (d-&gt;sourceImage.isNull()) {</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;tmp_rect = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>().translated(point_offset).adjusted(-<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, -<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>);</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160; </div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            d-&gt;sourceImage = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#backingStore">backingStore</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qbackingstore.html#handle">handle</a>()-&gt;toImage().copy(tmp_rect * device_pixel_ratio);</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            d-&gt;sourceImage = d-&gt;sourceImage.scaledToWidth(d-&gt;sourceImage.width() / device_pixel_ratio);</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            <a class="codeRef" href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a> pa_image(&amp;d-&gt;sourceImage);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            pa_image.setCompositionMode(QPainter::CompositionMode_Source);</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160; </div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a> : <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>-&gt;region().rects()) {</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                <span class="keywordflow">if</span> (device_pixel_ratio &gt; 1) {</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                    <span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;tmp_rect = this-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>().translated(point_offset);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                    <span class="keyword">const</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> &amp;area = <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#backingStore">backingStore</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qbackingstore.html#handle">handle</a>()-&gt;toImage().copy(tmp_rect * device_pixel_ratio);</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                    pa_image.drawImage(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>.topLeft() + <a class="codeRef" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>), area.<a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html#scaledToWidth">scaledToWidth</a>(area.<a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html#width">width</a>() / device_pixel_ratio).<a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html#copy">copy</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>));</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                    pa_image.drawImage(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>.topLeft() + <a class="codeRef" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>),</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                                       <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#window">window</a>()-&gt;<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#backingStore">backingStore</a>()-&gt;handle()-&gt;toImage().copy(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>.translated(point_offset)));</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                }</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;            }</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160; </div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;            pa_image.end();</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        }</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160; </div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a> image = d-&gt;sourceImage.<a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html#copy">copy</a>(paintRect.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#adjusted">adjusted</a>(0, 0, 2 * <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, 2 * <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>));</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160; </div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <a class="codeRef" href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a> old_transform = pa.transform();</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        pa.<a class="codeRef" href="https://doc.qt.io/qt-5/qtransform.html#translate">translate</a>(paintRect.<a class="codeRef" href="https://doc.qt.io/qt-5/qrect.html#topLeft">topLeft</a>() - <a class="codeRef" href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>));</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        qt_blurImage(&amp;pa, image, <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">radius</a>, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        pa.setTransform(old_transform);</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    }</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160; </div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    pa.fillRect(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">rect</a>(), <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">maskColor</a>());</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;}</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160; </div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::moveEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qmoveevent.html">QMoveEvent</a> *event)</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;{</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160; </div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget-obsolete.html#isTopLevel">isTopLevel</a>()) {</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#moveEvent">QWidget::moveEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160; </div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="keywordflow">if</span> (d-&gt;blendMode == <a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a463584fc6c4ff0596cee513435ffcdb5">DBlurEffectWidget::InWindowBlend</a>) {</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        d-&gt;sourceImage = <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a>();</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160; </div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#moveEvent">QWidget::moveEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    }</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160; </div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    d-&gt;updateWindowBlurArea();</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160; </div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#moveEvent">QWidget::moveEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;}</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160; </div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::resizeEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a> *event)</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;{</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    d-&gt;sourceImage = <a class="codeRef" href="https://doc.qt.io/qt-5/qimage.html">QImage</a>();</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160; </div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#resizeEvent">QWidget::resizeEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    }</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160; </div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    d-&gt;updateWindowBlurArea();</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160; </div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#resizeEvent">QWidget::resizeEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;}</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160; </div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::showEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a> *event)</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;{</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160; </div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#showEvent">QWidget::showEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    }</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160; </div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    d-&gt;addToBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160; </div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#showEvent">QWidget::showEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;}</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160; </div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::hideEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qhideevent.html">QHideEvent</a> *event)</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;{</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160; </div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#hideEvent">QWidget::hideEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    }</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160; </div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    d-&gt;removeFromBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160; </div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#hideEvent">QWidget::hideEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;}</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160; </div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;<span class="keywordtype">void</span> DBlurEffectWidget::changeEvent(<a class="codeRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *event)</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;{</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    <a class="code" href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a>(<a class="code" href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">DBlurEffectWidget</a>);</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160; </div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;isBehindWindowBlendMode()) {</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#changeEvent">QWidget::changeEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    }</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160; </div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>-&gt;type() == QEvent::ParentAboutToChange) {</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        d-&gt;removeFromBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>-&gt;type() == QEvent::ParentChange) {</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        d-&gt;addToBlurEffectWidgetHash();</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    }</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160; </div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#changeEvent">QWidget::changeEvent</a>(<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#event">event</a>);</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;}</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160; </div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;DWIDGET_END_NAMESPACE</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aqimage_html_scaledToWidth"><div class="ttname"><a href="https://doc.qt.io/qt-5/qimage.html#scaledToWidth">QImage::scaledToWidth</a></div><div class="ttdeci">QImage scaledToWidth(int width, Qt::TransformationMode mode) const const</div></div>
+<div class="ttc" id="aqpainterpath_html_addRoundedRect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html#addRoundedRect">QPainterPath::addRoundedRect</a></div><div class="ttdeci">void addRoundedRect(const QRectF &amp;rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode)</div></div>
+<div class="ttc" id="aqcolor_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html">QColor</a></div></div>
+<div class="ttc" id="aqrect_html_moveTopLeft"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#moveTopLeft">QRect::moveTopLeft</a></div><div class="ttdeci">void moveTopLeft(const QPoint &amp;position)</div></div>
+<div class="ttc" id="aqwidget_html_window"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#window">QWidget::window</a></div><div class="ttdeci">QWidget * window() const const</div></div>
+<div class="ttc" id="aqwidget-obsolete_html_topLevelWidget"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget-obsolete.html#topLevelWidget">QWidget::topLevelWidget</a></div><div class="ttdeci">QWidget * topLevelWidget() const const</div></div>
+<div class="ttc" id="aqmultihash_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmultihash.html">QMultiHash</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a2ac20b4bd2f9ba177437e82be2e1444e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2ac20b4bd2f9ba177437e82be2e1444e">Dtk::Widget::DBlurEffectWidget::DBlurEffectWidget</a></div><div class="ttdeci">DBlurEffectWidget(QWidget *parent=0)</div><div class="ttdoc">和普通控件使用方式一样，可以作为任何控件的子控件。默认会开启 Qt::WA_TranslucentBackground， 必须设置控件为背景透明，否则控件所在区域的内容重绘时，在此控件下方的区域不会被下...</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8cpp_source.html#l00400">dblureffectwidget.cpp:400</a></div></div>
+<div class="ttc" id="aqrect_html_topLeft"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#topLeft">QRect::topLeft</a></div><div class="ttdeci">QPoint topLeft() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_aba1d0caa74d9f255127337daa01f5076"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aba1d0caa74d9f255127337daa01f5076">Dtk::Widget::DBlurEffectWidget::blurEnabled</a></div><div class="ttdeci">bool blurEnabled</div><div class="ttdoc">如果值为 true 则此控件的模糊设置生效，否则不生效</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:45</a></div></div>
+<div class="ttc" id="aqrect_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html">QRect</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_ad5171ba3aafef9e6d4fee8b808747786"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad5171ba3aafef9e6d4fee8b808747786">Dtk::Widget::DBlurEffectWidget::maskColorChanged</a></div><div class="ttdeci">void maskColorChanged(QColor maskColor)</div><div class="ttdoc">信号会在 maskColor 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a44aa616aa66b601e8c3f550eec8764e3">Dtk::Widget::DBlurEffectWidget::BehindWindowBlend</a></div><div class="ttdeci">@ BehindWindowBlend</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00058">dblureffectwidget.h:57</a></div></div>
+<div class="ttc" id="aqwidget_html_rect-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#rect-prop">QWidget::rect</a></div><div class="ttdeci">rect</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_ae6fe5b11c5ebcf670b6527c4ee8c0fa9"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae6fe5b11c5ebcf670b6527c4ee8c0fa9">Dtk::Widget::DBlurEffectWidget::blurRectYRadius</a></div><div class="ttdeci">int blurRectYRadius</div><div class="ttdoc">模糊区域在y轴方向上的圆角半径，默认值为0</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:39</a></div></div>
+<div class="ttc" id="aqwidget_html_update"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#update">QWidget::update</a></div><div class="ttdeci">void update()</div></div>
+<div class="ttc" id="aqwidget_html_resizeEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#resizeEvent">QWidget::resizeEvent</a></div><div class="ttdeci">virtual void resizeEvent(QResizeEvent *event)</div></div>
+<div class="ttc" id="aqpainterpath_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a></div></div>
+<div class="ttc" id="aqwidget_html_event"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#event">QWidget::event</a></div><div class="ttdeci">virtual bool event(QEvent *event) override</div></div>
+<div class="ttc" id="aqwidget_html_backingStore"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#backingStore">QWidget::backingStore</a></div><div class="ttdeci">QBackingStore * backingStore() const const</div></div>
+<div class="ttc" id="aqwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="aqrect_html_width"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#width">QRect::width</a></div><div class="ttdeci">int width() const const</div></div>
+<div class="ttc" id="aqrect_html_x"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#x">QRect::x</a></div><div class="ttdeci">int x() const const</div></div>
+<div class="ttc" id="aqrect_html_y"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#y">QRect::y</a></div><div class="ttdeci">int y() const const</div></div>
+<div class="ttc" id="aqbackingstore_html_handle"><div class="ttname"><a href="https://doc.qt.io/qt-5/qbackingstore.html#handle">QBackingStore::handle</a></div><div class="ttdeci">QPlatformBackingStore * handle() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a043495546d943786d72b91001321c215"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a043495546d943786d72b91001321c215">Dtk::Widget::DBlurEffectWidget::maskAlpha</a></div><div class="ttdeci">quint8 maskAlpha</div><div class="ttdoc">maskColor 的alpha通道值。当前窗口管理器支持混成（窗口背景透明）时默认值为102，否则为204</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:43</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a24bb5c1f4606e25dcf34e87050b51fb9aedc6cbf9c1819cba3f343ad2640dd7fb"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9aedc6cbf9c1819cba3f343ad2640dd7fb">Dtk::Widget::DBlurEffectWidget::LightColor</a></div><div class="ttdeci">@ LightColor</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00064">dblureffectwidget.h:64</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_ae9c914755c54239c7514d065545248b5"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ae9c914755c54239c7514d065545248b5">Dtk::Widget::DBlurEffectWidget::radiusChanged</a></div><div class="ttdeci">void radiusChanged(int radius)</div><div class="ttdoc">信号会在 radius 属性的值改变时被发送</div></div>
+<div class="ttc" id="aqwidget_html_setAttribute"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#setAttribute">QWidget::setAttribute</a></div><div class="ttdeci">void setAttribute(Qt::WidgetAttribute attribute, bool on)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a8b724963f8ed1c8f9e326a7c1f7fb933"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a8b724963f8ed1c8f9e326a7c1f7fb933">Dtk::Widget::DBlurEffectWidget::setMaskPath</a></div><div class="ttdeci">void setMaskPath(const QPainterPath &amp;path)</div><div class="ttdoc">设置模糊区域的路径，当未调用过此接口时，模糊区域为整个控件所占据的空间，此路径坐标原点为控件左上角</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8cpp_source.html#l00566">dblureffectwidget.cpp:566</a></div></div>
+<div class="ttc" id="aqlist_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html">QList</a></div></div>
+<div class="ttc" id="aqpainter_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainter.html">QPainter</a></div></div>
+<div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
+<div class="ttc" id="aqwidget_html_changeEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#changeEvent">QWidget::changeEvent</a></div><div class="ttdeci">virtual void changeEvent(QEvent *event)</div></div>
+<div class="ttc" id="aqrect_html_left"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#left">QRect::left</a></div><div class="ttdeci">int left() const const</div></div>
+<div class="ttc" id="adobject_8h_html_ad638ba34d44d91bad5dd9f86ed9035c9"><div class="ttname"><a href="dobject_8h.html#ad638ba34d44d91bad5dd9f86ed9035c9">D_D</a></div><div class="ttdeci">#define D_D(Class)</div><div class="ttdoc">这个宏用于公开类中，它定义了一个名字为 d 的变量存储 d_func() 的返回值。用于在公开 类中需要访问私有类的数据成员的函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00029">dobject.h:29</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a24bb5c1f4606e25dcf34e87050b51fb9"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9">Dtk::Widget::DBlurEffectWidget::MaskColorType</a></div><div class="ttdeci">MaskColorType</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00062">dblureffectwidget.h:62</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a36e910aaaf639baee48bc6b73d7396f0"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a36e910aaaf639baee48bc6b73d7396f0">Dtk::Widget::DBlurEffectWidget::maskAlphaChanged</a></div><div class="ttdeci">void maskAlphaChanged(quint8 alpha)</div><div class="ttdoc">信号会在 maskAlpha 属性的值改变时被发送</div></div>
+<div class="ttc" id="aqwidget_html_visible-prop"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#visible-prop">QWidget::isVisible</a></div><div class="ttdeci">bool isVisible() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a53d40ce328b3c6525b8938b8e05e88f3a463584fc6c4ff0596cee513435ffcdb5"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3a463584fc6c4ff0596cee513435ffcdb5">Dtk::Widget::DBlurEffectWidget::InWindowBlend</a></div><div class="ttdeci">@ InWindowBlend</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00056">dblureffectwidget.h:56</a></div></div>
+<div class="ttc" id="aqlist_html_size"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html#size">QList::size</a></div><div class="ttdeci">int size() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a481e4d6faf1810b13e0bac99b97720ef"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a481e4d6faf1810b13e0bac99b97720ef">Dtk::Widget::DBlurEffectWidget::radius</a></div><div class="ttdeci">int radius</div><div class="ttdoc">模糊效果计算时的取样范围，模糊的原理为：将此像素点和周围像素点合成计算得到得到新的值， 此属性表示像素点周围 radius 距离的所有像素点参与计算</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:35</a></div></div>
+<div class="ttc" id="aqwidget_html_hideEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#hideEvent">QWidget::hideEvent</a></div><div class="ttdeci">virtual void hideEvent(QHideEvent *event)</div></div>
+<div class="ttc" id="aqrect_html_top"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#top">QRect::top</a></div><div class="ttdeci">int top() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a52c60a77d7eca20d60d51adaebd5a3af"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a52c60a77d7eca20d60d51adaebd5a3af">Dtk::Widget::DWindowManagerHelper::hasCompositeChanged</a></div><div class="ttdeci">void hasCompositeChanged()</div><div class="ttdoc">信号会在 hasComposite 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_ac720042c080be23fc709f0a29bcfd48b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac720042c080be23fc709f0a29bcfd48b">Dtk::Widget::DWindowManagerHelper::windowManagerChanged</a></div><div class="ttdeci">void windowManagerChanged()</div><div class="ttdoc">信号会在当前环境窗口管理器变化时被发送</div></div>
+<div class="ttc" id="aqtransform_html_translate"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtransform.html#translate">QTransform::translate</a></div><div class="ttdeci">QTransform &amp; translate(qreal dx, qreal dy)</div></div>
+<div class="ttc" id="aqwidget_html_moveEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#moveEvent">QWidget::moveEvent</a></div><div class="ttdeci">virtual void moveEvent(QMoveEvent *event)</div></div>
+<div class="ttc" id="aqwidget_html_showEvent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#showEvent">QWidget::showEvent</a></div><div class="ttdeci">virtual void showEvent(QShowEvent *event)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_ad1cb29e11f324f3b0b26173c0636d68a"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad1cb29e11f324f3b0b26173c0636d68a">Dtk::Widget::DBlurEffectWidget::full</a></div><div class="ttdeci">bool full</div><div class="ttdoc">如果值为true，将模糊此控件所在顶层窗口的整个背景，而无论控件的大小和位置，否则使用控件的位置和大小 设置顶层窗口的模糊区域。需要注意的时，当控件本身就是顶层窗口且未设置 blurRectXRadiu...</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:44</a></div></div>
+<div class="ttc" id="adobject_8h_html_a8b1f6c1673a4186b6629d554a7eff35c"><div class="ttname"><a href="dobject_8h.html#a8b1f6c1673a4186b6629d554a7eff35c">D_Q</a></div><div class="ttdeci">#define D_Q(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了一个名字为 q 的变量存储 q_func() 的返回值。用于在私有 类中需要调用公开类的成员函数时。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00030">dobject.h:30</a></div></div>
+<div class="ttc" id="aqcolor_html_setAlpha"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html#setAlpha">QColor::setAlpha</a></div><div class="ttdeci">void setAlpha(int alpha)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html">Dtk::Widget::DBlurEffectWidget</a></div><div class="ttdoc">用于实现主窗口或控件背景的实时模糊效果。</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00030">dblureffectwidget.h:31</a></div></div>
+<div class="ttc" id="adobject_8h_html_aba4e2dce37eda69f485ea50d533f0a1c"><div class="ttname"><a href="dobject_8h.html#aba4e2dce37eda69f485ea50d533f0a1c">D_DC</a></div><div class="ttdeci">#define D_DC(Class)</div><div class="ttdoc">同 D_D，用在公开类加了 const 修饰符的成员函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00031">dobject.h:31</a></div></div>
+<div class="ttc" id="adobject_8h_html_a56dbbbc6dddc25cfebbb5434a91bd774"><div class="ttname"><a href="dobject_8h.html#a56dbbbc6dddc25cfebbb5434a91bd774">D_QC</a></div><div class="ttdeci">#define D_QC(Class)</div><div class="ttdoc">同 D_Q，用在私有类加了 const 修饰符的成员函数中。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00032">dobject.h:32</a></div></div>
+<div class="ttc" id="aqwidget-obsolete_html_isTopLevel"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget-obsolete.html#isTopLevel">QWidget::isTopLevel</a></div><div class="ttdeci">bool isTopLevel() const const</div></div>
+<div class="ttc" id="aqlist_html_isEmpty"><div class="ttname"><a href="https://doc.qt.io/qt-5/qlist.html#isEmpty">QList::isEmpty</a></div><div class="ttdeci">bool isEmpty() const const</div></div>
+<div class="ttc" id="aqhideevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qhideevent.html">QHideEvent</a></div></div>
+<div class="ttc" id="aqshowevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qshowevent.html">QShowEvent</a></div></div>
+<div class="ttc" id="aqvector_html_reserve"><div class="ttname"><a href="https://doc.qt.io/qt-5/qvector.html#reserve">QVector::reserve</a></div><div class="ttdeci">void reserve(int size)</div></div>
+<div class="ttc" id="aqtransform_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qtransform.html">QTransform</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_aa5a566f9326d6af70de806810226d497"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#aa5a566f9326d6af70de806810226d497">Dtk::Widget::DBlurEffectWidget::modeChanged</a></div><div class="ttdeci">void modeChanged(BlurMode mode)</div><div class="ttdoc">信号会在 mode 属性的值改变时被发送</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a24bb5c1f4606e25dcf34e87050b51fb9a9f2c586cb9684c26a612a1ffc9537d28"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9a9f2c586cb9684c26a612a1ffc9537d28">Dtk::Widget::DBlurEffectWidget::DarkColor</a></div><div class="ttdeci">@ DarkColor</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00063">dblureffectwidget.h:63</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a5ed5fce74b2f26f468b000c7cfc55a73"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a5ed5fce74b2f26f468b000c7cfc55a73">Dtk::Widget::DWindowManagerHelper::hasBlurWindowChanged</a></div><div class="ttdeci">void hasBlurWindowChanged()</div><div class="ttdoc">信号会在 hasBlurWindow 属性的值改变时被发送</div></div>
+<div class="ttc" id="aqmoveevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qmoveevent.html">QMoveEvent</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a24bb5c1f4606e25dcf34e87050b51fb9ada25f2fbdea72a84b3f7918cf9332945"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a24bb5c1f4606e25dcf34e87050b51fb9ada25f2fbdea72a84b3f7918cf9332945">Dtk::Widget::DBlurEffectWidget::CustomColor</a></div><div class="ttdeci">@ CustomColor</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00066">dblureffectwidget.h:65</a></div></div>
+<div class="ttc" id="aqpaintdevice_html_devicePixelRatioF"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintdevice.html#devicePixelRatioF">QPaintDevice::devicePixelRatioF</a></div><div class="ttdeci">qreal devicePixelRatioF() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a2cfba4ea96d32a1e753e0d41911b7445"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a2cfba4ea96d32a1e753e0d41911b7445">Dtk::Widget::DBlurEffectWidget::maskColor</a></div><div class="ttdeci">QColor maskColor</div><div class="ttdoc">画在控件模糊背景之上的颜色，此颜色的alpha通道值会被 maskAlpha 属性影响 修改此属性会自动将颜色模式设置为 CustomColor，设置后将不能再自动根据窗口管理器是否 支持混成和模糊来自...</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:42</a></div></div>
+<div class="ttc" id="aqrect_html_height"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#height">QRect::height</a></div><div class="ttdeci">int height() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_platform_window_handle_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html">Dtk::Widget::DPlatformWindowHandle</a></div><div class="ttdoc">一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间...</div><div class="ttdef"><b>Definition:</b> <a href="dplatformwindowhandle_8h_source.html#l00037">dplatformwindowhandle.h:38</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a3231b1153ce8c81fa0facd384d05e355"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a3231b1153ce8c81fa0facd384d05e355">Dtk::Widget::DBlurEffectWidget::blurRectXRadius</a></div><div class="ttdeci">int blurRectXRadius</div><div class="ttdoc">模糊区域在x轴方向上的圆角半径，默认值为0</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:38</a></div></div>
+<div class="ttc" id="aqevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qevent.html">QEvent</a></div></div>
+<div class="ttc" id="aqresizeevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qresizeevent.html">QResizeEvent</a></div></div>
+<div class="ttc" id="aqpaintevent_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpaintevent.html">QPaintEvent</a></div></div>
+<div class="ttc" id="aqrect_html_adjusted"><div class="ttname"><a href="https://doc.qt.io/qt-5/qrect.html#adjusted">QRect::adjusted</a></div><div class="ttdeci">QRect adjusted(int dx1, int dy1, int dx2, int dy2) const const</div></div>
+<div class="ttc" id="aqcolor_html_isValid"><div class="ttname"><a href="https://doc.qt.io/qt-5/qcolor.html#isValid">QColor::isValid</a></div><div class="ttdeci">bool isValid() const const</div></div>
+<div class="ttc" id="aqvector_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qvector.html">QVector</a></div></div>
+<div class="ttc" id="aqpainterpath_html_isEmpty"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpainterpath.html#isEmpty">QPainterPath::isEmpty</a></div><div class="ttdeci">bool isEmpty() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a6a272fb3147a7b49c45cac2e77cb0769"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a6a272fb3147a7b49c45cac2e77cb0769">Dtk::Widget::DBlurEffectWidget::BlurMode</a></div><div class="ttdeci">BlurMode</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00049">dblureffectwidget.h:49</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a9dc2b2c697f219f1bc346625929f498b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a9dc2b2c697f219f1bc346625929f498b">Dtk::Widget::DBlurEffectWidget::blendMode</a></div><div class="ttdeci">BlendMode blendMode</div><div class="ttdoc">模糊的应用场景，默认会根据有没有父控件自动判断使用哪种模式</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:37</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_ad191a0ec600b3a880de47044f1667774"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#ad191a0ec600b3a880de47044f1667774">Dtk::Widget::DBlurEffectWidget::blurRectXRadiusChanged</a></div><div class="ttdeci">void blurRectXRadiusChanged(int blurRectXRadius)</div><div class="ttdoc">信号会在 blurRectXRadius 属性的值改变时被发送</div></div>
+<div class="ttc" id="aqhash_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qhash.html">QHash</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a262403c50e8d48e2404775aa10bdf58c"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a262403c50e8d48e2404775aa10bdf58c">Dtk::Widget::DBlurEffectWidget::blurRectYRadiusChanged</a></div><div class="ttdeci">void blurRectYRadiusChanged(int blurRectYRadius)</div><div class="ttdoc">信号会在 blurRectYRadius 属性的值改变时被发送</div></div>
+<div class="ttc" id="aqimage_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qimage.html">QImage</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a1f1cb56759cfbe825a268eb12348e8d5"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1f1cb56759cfbe825a268eb12348e8d5">Dtk::Widget::DBlurEffectWidget::blendModeChanged</a></div><div class="ttdeci">void blendModeChanged(BlendMode blendMode)</div><div class="ttdoc">信号会在 blendMode 属性的值改变时被发送</div></div>
+<div class="ttc" id="aqobject_html_parent"><div class="ttname"><a href="https://doc.qt.io/qt-5/qobject.html#parent">QObject::parent</a></div><div class="ttdeci">QObject * parent() const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a53d40ce328b3c6525b8938b8e05e88f3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a53d40ce328b3c6525b8938b8e05e88f3">Dtk::Widget::DBlurEffectWidget::BlendMode</a></div><div class="ttdeci">BlendMode</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00055">dblureffectwidget.h:55</a></div></div>
+<div class="ttc" id="aqimage_html_copy"><div class="ttname"><a href="https://doc.qt.io/qt-5/qimage.html#copy">QImage::copy</a></div><div class="ttdeci">QImage copy(const QRect &amp;rectangle) const const</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_blur_effect_widget_html_a1ddfa6594e84f36f76dfe4661c810929"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_blur_effect_widget.html#a1ddfa6594e84f36f76dfe4661c810929">Dtk::Widget::DBlurEffectWidget::mode</a></div><div class="ttdeci">BlurMode mode</div><div class="ttdoc">所采用的模糊算法，默认值为 GaussianBlur</div><div class="ttdef"><b>Definition:</b> <a href="dblureffectwidget_8h_source.html#l00001">dblureffectwidget.h:36</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_ac7c478902c61d28b137ff2198164d737"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">Dtk::Widget::DWindowManagerHelper::instance</a></div><div class="ttdeci">static DWindowManagerHelper * instance()</div><div class="ttdoc">DWindowManagerHelper::instance DWindowManagerHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00315">dwindowmanagerhelper.cpp:315</a></div></div>
+<div class="ttc" id="aqpoint_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qpoint.html">QPoint</a></div></div>
+<div class="ttc" id="aqwidget_html_mapTo"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#mapTo">QWidget::mapTo</a></div><div class="ttdeci">QPoint mapTo(const QWidget *parent, const QPoint &amp;pos) const const</div></div>
+<div class="ttc" id="aqimage_html_width"><div class="ttname"><a href="https://doc.qt.io/qt-5/qimage.html#width">QImage::width</a></div><div class="ttdeci">int width() const const</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dblureffectwidget.cpp</b></li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:53 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

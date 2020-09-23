@@ -1,0 +1,8 @@
+<map id="Dtk::Widget::DSegmentedHighlight" name="Dtk::Widget::DSegmentedHighlight">
+<area shape="rect" id="node1" title="DSegmentedHighlight 类代表了 DSegmentedControl 中当前选中（即高亮）的部分。" alt="" coords="5,304,256,331"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qtoolbutton.html" title=" " alt="" coords="80,229,181,256"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractbutton.html" title=" " alt="" coords="66,155,195,181"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="91,80,170,107"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="35,5,109,32"/>
+<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="134,5,245,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Dtk::Widget::DApplication" name="Dtk::Widget::DApplication">
+<area shape="rect" id="node1" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类。 继承自 QApplication ，并在此之上添加了一些特殊的设定，如：在 FORCE_RASTE..." alt="" coords="93,323,284,349"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qapplication.html" title=" " alt="" coords="63,247,168,273"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtgui.tags$qguiapplication.html" title=" " alt="" coords="9,157,136,184"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qcoreapplication.html" title=" " alt="" coords="5,81,140,108"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="35,5,110,32"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="208,247,351,273"/>
+<area shape="rect" id="node7" title=" " alt="" coords="161,157,414,184"/>
+</map>

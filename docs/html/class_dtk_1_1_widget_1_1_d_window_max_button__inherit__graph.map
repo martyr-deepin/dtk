@@ -1,0 +1,10 @@
+<map id="Dtk::Widget::DWindowMaxButton" name="Dtk::Widget::DWindowMaxButton">
+<area shape="rect" id="node1" title="DWindowMaxButton 类是 DTK 窗口统一的最大化/恢复按钮控件。 它有两种状态，一种表示窗口已经进入最大化状态，点击按钮窗口恢复为普通状态； 另一种表示窗口处于普通状态，点击按钮窗口进入..." alt="" coords="45,379,285,405"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_image_button.html" title="在Deepin的程序设计中，用到了大量基于图片的按钮，而Qt的QPushButton不能方便的只使用图片， 每个项目都存在相同的自绘图片的按钮控件，所以Dtk提供了基于图片来构建的按钮。" alt="" coords="65,304,266,331"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qlabel.html" title=" " alt="" coords="68,229,135,256"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,155,138,181"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
+<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node7" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="159,229,302,256"/>
+</map>

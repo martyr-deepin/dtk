@@ -1,0 +1,4 @@
+<map id="Dtk::Core::DDiskSizeFormatter" name="Dtk::Core::DDiskSizeFormatter">
+<area shape="rect" id="node1" title="DDiskSizeFormatter 是用来获取磁盘容量单位的类, 通过枚举值 获取不同类型磁盘容量的单位" alt="" coords="5,95,227,121"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_abstract_unit_formatter.html" title="DAbstractUnitFormatter 类是对拥有相同类型数据管理的接口类 接口定义了最大值、最小值、转换单位和单位对应的字符串。" alt="" coords="25,5,207,47"/>
+</map>

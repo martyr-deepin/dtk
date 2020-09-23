@@ -1,0 +1,10 @@
+<map id="Dtk::Widget::ArrowHeaderLine" name="Dtk::Widget::ArrowHeaderLine">
+<area shape="rect" id="node1" title=" " alt="" coords="5,453,224,480"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_header_line.html" title="可以使用 DHeaderLine 类快速创建标题行控件。" alt="" coords="19,379,210,405"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_base_line.html" title="可以使用 DBaseLine 类快速创建具有位于左右两侧的两个控件的行控件。" alt="" coords="27,304,203,331"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qlabel.html" title=" " alt="" coords="81,229,148,256"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="78,155,151,181"/>
+<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="75,80,154,107"/>
+<area shape="rect" id="node7" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="19,5,93,32"/>
+<area shape="rect" id="node8" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="118,5,229,32"/>
+</map>

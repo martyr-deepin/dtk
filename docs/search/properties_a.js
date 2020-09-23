@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['labelalignment_19683',['labelAlignment',['https://doc.qt.io/qt-5/qformlayout.html#labelAlignment-prop',1,'QFormLayout']]],
+  ['labeltext_19684',['labelText',['https://doc.qt.io/qt-5/qinputdialog.html#labelText-prop',1,'QInputDialog::labelText()'],['https://doc.qt.io/qt-5/qprogressdialog.html#labelText-prop',1,'QProgressDialog::labelText()']]],
+  ['lastcenterpoint_19685',['lastCenterPoint',['https://doc.qt.io/qt-5/qpinchgesture.html#lastCenterPoint-prop',1,'QPinchGesture']]],
+  ['lastoffset_19686',['lastOffset',['https://doc.qt.io/qt-5/qpangesture.html#lastOffset-prop',1,'QPanGesture']]],
+  ['lastrotationangle_19687',['lastRotationAngle',['https://doc.qt.io/qt-5/qpinchgesture.html#lastRotationAngle-prop',1,'QPinchGesture']]],
+  ['lastscalefactor_19688',['lastScaleFactor',['https://doc.qt.io/qt-5/qpinchgesture.html#lastScaleFactor-prop',1,'QPinchGesture']]],
+  ['layout_19689',['layout',['https://doc.qt.io/qt-5/qgraphicswidget.html#layout-prop',1,'QGraphicsWidget']]],
+  ['layoutdirection_19690',['layoutDirection',['https://doc.qt.io/qt-5/qguiapplication.html#layoutDirection-prop',1,'QGuiApplication::layoutDirection()'],['https://doc.qt.io/qt-5/qwidget.html#layoutDirection-prop',1,'QWidget::layoutDirection()'],['https://doc.qt.io/qt-5/qgraphicswidget.html#layoutDirection-prop',1,'QGraphicsWidget::layoutDirection()']]],
+  ['layoutmode_19691',['layoutMode',['https://doc.qt.io/qt-5/qlistview.html#layoutMode-prop',1,'QListView']]],
+  ['lazychildcount_19692',['lazyChildCount',['https://doc.qt.io/qt-5/qdirmodel.html#lazyChildCount-prop',1,'QDirModel']]],
+  ['left_19693',['left',['../class_dtk_1_1_widget_1_1_d_anchors_base.html#ab42919c89cd36eedebb0cc87cd308308',1,'Dtk::Widget::DAnchorsBase']]],
+  ['leftmargin_19694',['leftMargin',['../class_dtk_1_1_widget_1_1_d_anchors_base.html#ae12ec271052e6a08af71b4d5009598cd',1,'Dtk::Widget::DAnchorsBase']]],
+  ['license_19695',['license',['../class_dtk_1_1_widget_1_1_d_about_dialog.html#af67a85b4ae234ff3348bad3266388453',1,'Dtk::Widget::DAboutDialog']]],
+  ['linewidth_19696',['lineWidth',['https://doc.qt.io/qt-5/qframe.html#lineWidth-prop',1,'QFrame']]],
+  ['linewrapcolumnorwidth_19697',['lineWrapColumnOrWidth',['https://doc.qt.io/qt-5/qtextedit.html#lineWrapColumnOrWidth-prop',1,'QTextEdit']]],
+  ['linewrapmode_19698',['lineWrapMode',['https://doc.qt.io/qt-5/qtextedit.html#lineWrapMode-prop',1,'QTextEdit::lineWrapMode()'],['https://doc.qt.io/qt-5/qplaintextedit.html#lineWrapMode-prop',1,'QPlainTextEdit::lineWrapMode()']]],
+  ['loadhints_19699',['loadHints',['https://doc.qt.io/qt-5/qlibrary.html#loadHints-prop',1,'QLibrary::loadHints()'],['https://doc.qt.io/qt-5/qpluginloader.html#loadHints-prop',1,'QPluginLoader::loadHints()']]],
+  ['loading_19700',['loading',['../class_dtk_1_1_widget_1_1_d_loading_indicator.html#a156610465b295fc837ed77ce2b169385',1,'Dtk::Widget::DLoadingIndicator']]],
+  ['loadingeffectcolor_19701',['loadingEffectColor',['../class_dtk_1_1_widget_1_1_d_passwd_edit_animated.html#affdfa6a56834eb4f2ee9e2ff18d49f50',1,'Dtk::Widget::DPasswdEditAnimated']]],
+  ['locale_19702',['locale',['https://doc.qt.io/qt-5/qinputmethod.html#locale-prop',1,'QInputMethod::locale()'],['https://doc.qt.io/qt-5/qwidget.html#locale-prop',1,'QWidget::locale()']]],
+  ['loggingmode_19703',['loggingMode',['https://doc.qt.io/qt-5/qopengldebuglogger.html#loggingMode-prop',1,'QOpenGLDebugLogger']]],
+  ['logicaldotsperinch_19704',['logicalDotsPerInch',['https://doc.qt.io/qt-5/qscreen.html#logicalDotsPerInch-prop',1,'QScreen']]],
+  ['logicaldotsperinchx_19705',['logicalDotsPerInchX',['https://doc.qt.io/qt-5/qscreen.html#logicalDotsPerInchX-prop',1,'QScreen']]],
+  ['logicaldotsperinchy_19706',['logicalDotsPerInchY',['https://doc.qt.io/qt-5/qscreen.html#logicalDotsPerInchY-prop',1,'QScreen']]],
+  ['loopcount_19707',['loopCount',['https://doc.qt.io/qt-5/qabstractanimation.html#loopCount-prop',1,'QAbstractAnimation::loopCount()'],['https://doc.qt.io/qt-5/qtimeline.html#loopCount-prop',1,'QTimeLine::loopCount()']]]
+];

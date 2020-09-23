@@ -1,0 +1,7 @@
+<map id="Dtk::Widget::DSearchEdit" name="Dtk::Widget::DSearchEdit">
+<area shape="rect" id="node1" title="DSearchEdit 类提供了专门用来进行搜索的输入框控件。相比于一般的输入框控件，DSearchEdit 提供了搜索按钮指示，用户使用起来会更加自然。 如图示：" alt="" coords="8,229,195,256"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,155,138,181"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+</map>

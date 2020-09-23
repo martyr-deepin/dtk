@@ -1,0 +1,7 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="/home/juteman/dtk/tags/qtgui.tags$qiconengine.html" title=" " alt="" coords="5,81,108,108"/>
+<area shape="rect" id="node2" href="$class_d_builtin_icon_engine.html" title=" " alt="" coords="156,5,301,32"/>
+<area shape="rect" id="node3" href="$class_d_icon_engine.html" title=" " alt="" coords="177,56,280,83"/>
+<area shape="rect" id="node4" href="$class_d_icon_proxy_engine.html" title=" " alt="" coords="159,107,299,133"/>
+<area shape="rect" id="node5" href="$class_q_svg_icon_engine.html" title=" " alt="" coords="165,157,292,184"/>
+</map>

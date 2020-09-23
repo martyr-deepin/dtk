@@ -1,0 +1,1271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Widget::DWindowManagerHelper类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2020.9</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_window_manager_helper.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_dtk_1_1_widget_1_1_d_window_manager_helper-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Widget::DWindowManagerHelper类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>提供与窗口管理器交互的接口，同 <em><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间...">DPlatformWindowHandle</a></em> 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装提供给应用程序使用，从设计角度讲，DTK库中不应该直接使用任何跟平台相关的接口 （如：X11、Wayland、Windows），在这样的结构支撑下，在一个新的平台上，只需要提供和 dxcb 同样的接口，DTK应用即可无缝迁移。  
+ <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#details">更多...</a></p>
+<div class="dynheader">
+类 Dtk::Widget::DWindowManagerHelper 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_window_manager_helper__inherit__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_window_manager_helper_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_window_manager_helper_inherit__map" id="a_dtk_1_1_widget_1_1_d_window_manager_helper_inherit__map">
+<area shape="rect" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装..." alt="" coords="5,80,232,121"/>
+<area shape="rect" href="class_dtk_1_1_widget_1_1_d_window_manager_helper__.html" title=" " alt="" coords="5,169,232,211"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="15,5,89,32"/>
+<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="114,5,257,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Dtk::Widget::DWindowManagerHelper 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_window_manager_helper__coll__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_window_manager_helper_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_window_manager_helper_coll__map" id="a_dtk_1_1_widget_1_1_d_window_manager_helper_coll__map">
+<area shape="rect" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装..." alt="" coords="5,171,232,212"/>
+<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="65,95,140,121"/>
+<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="165,95,307,121"/>
+<area shape="rect" title=" " alt="" coords="109,5,363,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a42d89cb2e586634bf4118d2c4a160b9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9e">MotifFunction</a> { <br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea97847b95fd04441458b85b607555bba3">FUNC_RESIZE</a> = (1L &lt;&lt; 1), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9eaf50cf617c9fca8eff17a7a1d48ad4c2b">FUNC_MOVE</a> = (1L &lt;&lt; 2), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea21ad8d71cade043a680e22c5688f0a34">FUNC_MINIMIZE</a> = (1L &lt;&lt; 3), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea119db7954c932b357a348c1bebbde3b6">FUNC_MAXIMIZE</a> = (1L &lt;&lt; 4), 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea69eddfed57de2b0c44ce17a84f7f3a59">FUNC_CLOSE</a> = (1L &lt;&lt; 5), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea58d3ec781f613f751584d6bc1dc2fde9">FUNC_ALL</a> = FUNC_RESIZE | FUNC_MOVE | FUNC_MINIMIZE | FUNC_MAXIMIZE | FUNC_CLOSE
+<br />
+ }</td></tr>
+<tr class="separator:a42d89cb2e586634bf4118d2c4a160b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90da8bb6deeafe9c91094a490769be5a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5a">MotifDecoration</a> { <br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aaae5bf0475a1f4804651ec16b0b459afe">DECOR_BORDER</a> = (1L &lt;&lt; 1), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aadf2bb7bd6c09c247f13aab22c57375b5">DECOR_RESIZEH</a> = (1L &lt;&lt; 2), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aaa8cfaefefe52e1b2c769b27be6a3bf1a">DECOR_TITLE</a> = (1L &lt;&lt; 3), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aa05edbecc0b1588aae680eb880cd16fa7">DECOR_MENU</a> = (1L &lt;&lt; 4), 
+<br />
+&#160;&#160;<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aa9e3155615d23d057fca53814aa44b58d">DECOR_MINIMIZE</a> = (1L &lt;&lt; 5), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aa509d8e1bb44c6c578e3d6853885a980a">DECOR_MAXIMIZE</a> = (1L &lt;&lt; 6), 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5aab4aa0add4bfef65817a552455bd2a699">DECOR_ALL</a> = DECOR_BORDER | DECOR_RESIZEH | DECOR_TITLE | DECOR_MENU | DECOR_MINIMIZE | DECOR_MAXIMIZE
+<br />
+ }</td></tr>
+<tr class="separator:a90da8bb6deeafe9c91094a490769be5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9673e5ba49e9b374d36b0436163ff442"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442">WMName</a> { <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442ae4b2ccfbe1cad271bd07058fac148f34">OtherWM</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442a4498c93985ac57d30b2f09cd08128d54">DeepinWM</a>, 
+<a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442af4979608b8eacd7c01c3d18167c5e3b3">KWinWM</a>
+ }</td></tr>
+<tr class="separator:a9673e5ba49e9b374d36b0436163ff442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ac720042c080be23fc709f0a29bcfd48b"><td class="memItemLeft" align="right" valign="top"><a id="ac720042c080be23fc709f0a29bcfd48b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac720042c080be23fc709f0a29bcfd48b">windowManagerChanged</a> ()</td></tr>
+<tr class="memdesc:ac720042c080be23fc709f0a29bcfd48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在当前环境窗口管理器变化时被发送 <br /></td></tr>
+<tr class="separator:ac720042c080be23fc709f0a29bcfd48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed5fce74b2f26f468b000c7cfc55a73"><td class="memItemLeft" align="right" valign="top"><a id="a5ed5fce74b2f26f468b000c7cfc55a73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a5ed5fce74b2f26f468b000c7cfc55a73">hasBlurWindowChanged</a> ()</td></tr>
+<tr class="memdesc:a5ed5fce74b2f26f468b000c7cfc55a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 hasBlurWindow 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a5ed5fce74b2f26f468b000c7cfc55a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c60a77d7eca20d60d51adaebd5a3af"><td class="memItemLeft" align="right" valign="top"><a id="a52c60a77d7eca20d60d51adaebd5a3af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a52c60a77d7eca20d60d51adaebd5a3af">hasCompositeChanged</a> ()</td></tr>
+<tr class="memdesc:a52c60a77d7eca20d60d51adaebd5a3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 hasComposite 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a52c60a77d7eca20d60d51adaebd5a3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2d36212096023984762cea961ddc70"><td class="memItemLeft" align="right" valign="top"><a id="a7d2d36212096023984762cea961ddc70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a7d2d36212096023984762cea961ddc70">hasNoTitlebarChanged</a> ()</td></tr>
+<tr class="memdesc:a7d2d36212096023984762cea961ddc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在 hasNoTitlebar 属性的值改变时被发送 <br /></td></tr>
+<tr class="separator:a7d2d36212096023984762cea961ddc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3f9a3b7a51d724462e6bd6427356a4"><td class="memItemLeft" align="right" valign="top"><a id="a7c3f9a3b7a51d724462e6bd6427356a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a7c3f9a3b7a51d724462e6bd6427356a4">windowListChanged</a> ()</td></tr>
+<tr class="memdesc:a7c3f9a3b7a51d724462e6bd6427356a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号会在当前环境本地窗口列表变化时被发送。包含打开新窗口、关闭窗口、改变窗口的 层叠顺序 <br /></td></tr>
+<tr class="separator:a7c3f9a3b7a51d724462e6bd6427356a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1048e96d602a8e986aa2b0cc108228"><td class="memItemLeft" align="right" valign="top"><a id="a4b1048e96d602a8e986aa2b0cc108228"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>windowMotifWMHintsChanged</b> (quint32 winId)</td></tr>
+<tr class="separator:a4b1048e96d602a8e986aa2b0cc108228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9d8049eb443e6e74f7956ee53d05493c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9d8049eb443e6e74f7956ee53d05493c">hasBlurWindow</a> () const</td></tr>
+<tr class="memdesc:a9d8049eb443e6e74f7956ee53d05493c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a578fb91ce8d8e2e8da4a5fab2289588f" title="窗口管理器是否支持窗口背景模糊特效">DWindowManagerHelper::hasBlurWindow</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9d8049eb443e6e74f7956ee53d05493c">更多...</a><br /></td></tr>
+<tr class="separator:a9d8049eb443e6e74f7956ee53d05493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c73557e57ec826c796588235da9067"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a15c73557e57ec826c796588235da9067">hasComposite</a> () const</td></tr>
+<tr class="memdesc:a15c73557e57ec826c796588235da9067"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a077754f2223ef12dc66d46dc10386ac8" title="窗口管理器是否支持混成效果。如果不支持混成，则表示所有窗口的背景都不能透明， 随之而来也不会有窗口阴影等效果，不规则窗口的边缘也会存在锯齿。">DWindowManagerHelper::hasComposite</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a15c73557e57ec826c796588235da9067">更多...</a><br /></td></tr>
+<tr class="separator:a15c73557e57ec826c796588235da9067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871757a459c300857630f62bd2d02e98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a871757a459c300857630f62bd2d02e98">hasNoTitlebar</a> () const</td></tr>
+<tr class="memdesc:a871757a459c300857630f62bd2d02e98"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#abeae2e698f8eed570c5ad5fc79fb41ae" title="窗口管理器是否支持隐藏窗口标题栏。如果支持，则 DPlatformWindowHandle::enableDXcbForWindow 会优先使用此方法支持自定义窗口标题栏。">DWindowManagerHelper::hasNoTitlebar</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a871757a459c300857630f62bd2d02e98">更多...</a><br /></td></tr>
+<tr class="separator:a871757a459c300857630f62bd2d02e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede0872cc89b70173fa383d7822a04b3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3">windowManagerNameString</a> () const</td></tr>
+<tr class="memdesc:aede0872cc89b70173fa383d7822a04b3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3" title="DWindowManagerHelper::windowManagerNameString">DWindowManagerHelper::windowManagerNameString</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3">更多...</a><br /></td></tr>
+<tr class="separator:aede0872cc89b70173fa383d7822a04b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa236fdabbf24bec87f6e0f6a7e4506e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442">WMName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aa236fdabbf24bec87f6e0f6a7e4506e5">windowManagerName</a> () const</td></tr>
+<tr class="memdesc:aa236fdabbf24bec87f6e0f6a7e4506e5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aa236fdabbf24bec87f6e0f6a7e4506e5" title="DWindowManagerHelper::windowManagerName">DWindowManagerHelper::windowManagerName</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aa236fdabbf24bec87f6e0f6a7e4506e5">更多...</a><br /></td></tr>
+<tr class="separator:aa236fdabbf24bec87f6e0f6a7e4506e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478b322303b7dc67973dbdfea4020565"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a478b322303b7dc67973dbdfea4020565">allWindowIdList</a> () const</td></tr>
+<tr class="memdesc:a478b322303b7dc67973dbdfea4020565"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a478b322303b7dc67973dbdfea4020565" title="DWindowManagerHelper::allWindowIdList">DWindowManagerHelper::allWindowIdList</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a478b322303b7dc67973dbdfea4020565">更多...</a><br /></td></tr>
+<tr class="separator:a478b322303b7dc67973dbdfea4020565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb9757b8e420dab428560c24b09b25a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a">currentWorkspaceWindowIdList</a> () const</td></tr>
+<tr class="memdesc:aceb9757b8e420dab428560c24b09b25a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a" title="DWindowManagerHelper::currentWorkspaceWindowIdList">DWindowManagerHelper::currentWorkspaceWindowIdList</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a">更多...</a><br /></td></tr>
+<tr class="separator:aceb9757b8e420dab428560c24b09b25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6225c7cc9df459f5af43fe770682a7cc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="el" href="class_dtk_1_1_widget_1_1_d_foreign_window.html">DForeignWindow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a6225c7cc9df459f5af43fe770682a7cc">currentWorkspaceWindows</a> () const</td></tr>
+<tr class="memdesc:a6225c7cc9df459f5af43fe770682a7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a" title="DWindowManagerHelper::currentWorkspaceWindowIdList">DWindowManagerHelper::currentWorkspaceWindowIdList</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a6225c7cc9df459f5af43fe770682a7cc">更多...</a><br /></td></tr>
+<tr class="separator:a6225c7cc9df459f5af43fe770682a7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
+virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+<tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
+<tr class="separator:qt_metacast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:qt_metacall inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
+<tr class="separator:qt_metacall inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+<tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="eventFilter"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#eventFilter">eventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:eventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+<tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+<tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+<tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+<tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+<tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+<tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, Qt::TimerType timerType)</td></tr>
+<tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, Qt::TimerType timerType)</td></tr>
+<tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+<tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChildren-1">findChildren</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
+const QObjectList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+<tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+<tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+<tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, Qt::ConnectionType type) const const</td></tr>
+<tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+<tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+<tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+<tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+<tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+<tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+<tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+<tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+<tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+<tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+<tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ac7c478902c61d28b137ff2198164d737"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html">DWindowManagerHelper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">instance</a> ()</td></tr>
+<tr class="memdesc:ac7c478902c61d28b137ff2198164d737"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737" title="DWindowManagerHelper::instance DWindowManagerHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。">DWindowManagerHelper::instance</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装...">DWindowManagerHelper</a> 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737">更多...</a><br /></td></tr>
+<tr class="separator:ac7c478902c61d28b137ff2198164d737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad561e93d87fa1855e838b27b514f15bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">setMotifFunctions</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window, MotifFunctions hints)</td></tr>
+<tr class="memdesc:ad561e93d87fa1855e838b27b514f15bc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc" title="DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifFunctions</a> 设置窗口的功能性标志，会覆盖之前的设置  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">更多...</a><br /></td></tr>
+<tr class="separator:ad561e93d87fa1855e838b27b514f15bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186b9916c340db55abaa9cb989c051be"><td class="memItemLeft" align="right" valign="top">static MotifFunctions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a186b9916c340db55abaa9cb989c051be">setMotifFunctions</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window, MotifFunctions hints, bool on)</td></tr>
+<tr class="memdesc:a186b9916c340db55abaa9cb989c051be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc" title="DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifFunctions</a> 设置窗口某些标志位的开启状态，不影响其它标志位  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a186b9916c340db55abaa9cb989c051be">更多...</a><br /></td></tr>
+<tr class="separator:a186b9916c340db55abaa9cb989c051be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95d3a6f1d24b1f382266784bc910d53"><td class="memItemLeft" align="right" valign="top">static MotifFunctions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53">getMotifFunctions</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window)</td></tr>
+<tr class="memdesc:ad95d3a6f1d24b1f382266784bc910d53"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53" title="DWindowManagerHelper::getMotifFunctions">DWindowManagerHelper::getMotifFunctions</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53">更多...</a><br /></td></tr>
+<tr class="separator:ad95d3a6f1d24b1f382266784bc910d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62bc88f923ee6e2077f380797635f21"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad62bc88f923ee6e2077f380797635f21">setMotifDecorations</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window, MotifDecorations hints)</td></tr>
+<tr class="memdesc:ad62bc88f923ee6e2077f380797635f21"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad62bc88f923ee6e2077f380797635f21" title="DWindowManagerHelper::setMotifDecorations 设置窗口的修饰性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifDecorations</a> 设置窗口的修饰性标志，会覆盖之前的设置  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad62bc88f923ee6e2077f380797635f21">更多...</a><br /></td></tr>
+<tr class="separator:ad62bc88f923ee6e2077f380797635f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115016382badfb72b46d8a2d17357517"><td class="memItemLeft" align="right" valign="top">static MotifDecorations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a115016382badfb72b46d8a2d17357517">setMotifDecorations</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window, MotifDecorations hints, bool on)</td></tr>
+<tr class="memdesc:a115016382badfb72b46d8a2d17357517"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc" title="DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifFunctions</a> 设置窗口某些标志位的开启状态，不影响其它标志位  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a115016382badfb72b46d8a2d17357517">更多...</a><br /></td></tr>
+<tr class="separator:a115016382badfb72b46d8a2d17357517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492dddd1de6837f03dea79a40d448841"><td class="memItemLeft" align="right" valign="top">static MotifDecorations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a492dddd1de6837f03dea79a40d448841">getMotifDecorations</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window)</td></tr>
+<tr class="memdesc:a492dddd1de6837f03dea79a40d448841"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53" title="DWindowManagerHelper::getMotifFunctions">DWindowManagerHelper::getMotifFunctions</a>  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a492dddd1de6837f03dea79a40d448841">更多...</a><br /></td></tr>
+<tr class="separator:a492dddd1de6837f03dea79a40d448841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea9fc4f72173724caebdf38bbfaa5f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a2ea9fc4f72173724caebdf38bbfaa5f3">popupSystemWindowMenu</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window)</td></tr>
+<tr class="memdesc:a2ea9fc4f72173724caebdf38bbfaa5f3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a2ea9fc4f72173724caebdf38bbfaa5f3" title="DWindowManagerHelper::popupSystemWindowMenu 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击鼠标右键弹出的菜单内容一致。 在 DMainWindow ...">DWindowManagerHelper::popupSystemWindowMenu</a> 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击鼠标右键弹出的菜单内容一致。 在 <a class="el" href="class_dtk_1_1_widget_1_1_d_main_window.html" title="The DMainWindow class provides a main application window.">DMainWindow</a> 的标题栏上点击鼠标右键会调用此函数打开系统菜单：  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a2ea9fc4f72173724caebdf38bbfaa5f3">更多...</a><br /></td></tr>
+<tr class="separator:a2ea9fc4f72173724caebdf38bbfaa5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
+<tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+<tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+<tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+<tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+<tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a138e23ca39a0896ede34f81b2407fe56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a138e23ca39a0896ede34f81b2407fe56">DWindowManagerHelper</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>=0)</td></tr>
+<tr class="memdesc:a138e23ca39a0896ede34f81b2407fe56"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a138e23ca39a0896ede34f81b2407fe56" title="DWindowManagerHelper::DWindowManagerHelper 不允许直接实例化此对象">DWindowManagerHelper::DWindowManagerHelper</a> 不允许直接实例化此对象  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a138e23ca39a0896ede34f81b2407fe56">更多...</a><br /></td></tr>
+<tr class="separator:a138e23ca39a0896ede34f81b2407fe56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+<tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+<tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+<tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+<tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+<tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#adbed6e66a1393a6045fb24e50300db7f">DObject</a> (<a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有在不需要数据成员的派生类中才会使用 <br /></td></tr>
+<tr class="separator:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">DObject</a> (DObjectPrivate &amp;dd, <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">在派生类中比较常用的构造函数  <a href="class_dtk_1_1_core_1_1_d_object.html#a64d70b82c64f7d7e71d4775854b25206">更多...</a><br /></td></tr>
+<tr class="separator:a64d70b82c64f7d7e71d4775854b25206 inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a578fb91ce8d8e2e8da4a5fab2289588f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a578fb91ce8d8e2e8da4a5fab2289588f">hasBlurWindow</a></td></tr>
+<tr class="memdesc:a578fb91ce8d8e2e8da4a5fab2289588f"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口管理器是否支持窗口背景模糊特效  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a578fb91ce8d8e2e8da4a5fab2289588f">更多...</a><br /></td></tr>
+<tr class="separator:a578fb91ce8d8e2e8da4a5fab2289588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077754f2223ef12dc66d46dc10386ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a077754f2223ef12dc66d46dc10386ac8">hasComposite</a></td></tr>
+<tr class="memdesc:a077754f2223ef12dc66d46dc10386ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口管理器是否支持混成效果。如果不支持混成，则表示所有窗口的背景都不能透明， 随之而来也不会有窗口阴影等效果，不规则窗口的边缘也会存在锯齿。  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a077754f2223ef12dc66d46dc10386ac8">更多...</a><br /></td></tr>
+<tr class="separator:a077754f2223ef12dc66d46dc10386ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeae2e698f8eed570c5ad5fc79fb41ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#abeae2e698f8eed570c5ad5fc79fb41ae">hasNoTitlebar</a></td></tr>
+<tr class="memdesc:abeae2e698f8eed570c5ad5fc79fb41ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口管理器是否支持隐藏窗口标题栏。如果支持，则 <a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#ae496a3a20633877e1eafce8ebf3cfaaf" title="DPlatformWindowHandle::enableDXcbForWindow 这是一个针对 QWidget 类型主窗口的重载函数，此函数将设置 QWidget 对象的 Qt::WA_Native...">DPlatformWindowHandle::enableDXcbForWindow</a> 会优先使用此方法支持自定义窗口标题栏。  <a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#abeae2e698f8eed570c5ad5fc79fb41ae">更多...</a><br /></td></tr>
+<tr class="separator:abeae2e698f8eed570c5ad5fc79fb41ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+<tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
+<tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
+<a class="elRef" href="https://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; DObjectPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>提供与窗口管理器交互的接口，同 <em><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间...">DPlatformWindowHandle</a></em> 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装提供给应用程序使用，从设计角度讲，DTK库中不应该直接使用任何跟平台相关的接口 （如：X11、Wayland、Windows），在这样的结构支撑下，在一个新的平台上，只需要提供和 dxcb 同样的接口，DTK应用即可无缝迁移。 </p>
+<dl class="section see"><dt>参见</dt><dd><a href="https://github.com/linuxdeepin/qt5dxcb-plugin/">dxcb插件</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a2a98eb30c818274cba7188cf773e0b13" title="warning: Must call before QGuiApplication defined object">DApplication::loadDXcbPlugin</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a5b8ffafceecc9e24823a4cd2bf129de1" title="DApplication::isDXcbPlatform 检查当前程序是否使用了dxcb平台插件。">DApplication::isDXcbPlatform</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间...">DPlatformWindowHandle</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00031">31</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a90da8bb6deeafe9c91094a490769be5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90da8bb6deeafe9c91094a490769be5a">&#9670;&nbsp;</a></span>MotifDecoration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a90da8bb6deeafe9c91094a490769be5a">Dtk::Widget::DWindowManagerHelper::MotifDecoration</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MotifFunction::MotifDecoration 窗口管理器对窗口添加的修饰。只影响窗口上对应功能 的入口，不影响实际的功能，比如：禁用掉 FUNC_MAXIMIZE 后，还可以使用快捷键最大化窗口 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aaae5bf0475a1f4804651ec16b0b459afe"></a>DECOR_BORDER&#160;</td><td class="fielddoc"><p>窗口描边。如果存在此标志，则窗口管理器会为窗口绘制描边，否则窗口没有描边。 否则无法通过外部行为调整窗口大小。 </p><dl class="section note"><dt>注解</dt><dd>只支持使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aadf2bb7bd6c09c247f13aab22c57375b5"></a>DECOR_RESIZEH&#160;</td><td class="fielddoc"><p>改变窗口大小。如果存在此标志，则窗口管理器会在窗口的修饰上显示一个更改窗口大小的控件， 否则无此控件。 </p><dl class="section note"><dt>注解</dt><dd>只支持使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aaa8cfaefefe52e1b2c769b27be6a3bf1a"></a>DECOR_TITLE&#160;</td><td class="fielddoc"><p>窗口标题。如果存在此标志，则窗口管理器会在窗口的修饰上显示窗口标题，否则不显示。 </p><dl class="section note"><dt>注解</dt><dd>只支持使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aa05edbecc0b1588aae680eb880cd16fa7"></a>DECOR_MENU&#160;</td><td class="fielddoc"><p>窗口菜单。如果存在此标志，则窗口管理器会在窗口的修饰上显示一个窗口菜单控件，否则不显示。 </p><dl class="section note"><dt>注解</dt><dd>只支持使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aa9e3155615d23d057fca53814aa44b58d"></a>DECOR_MINIMIZE&#160;</td><td class="fielddoc"><p>窗口最小化。如果存在此标志，则窗口管理器会在窗口的修饰上显示一个最小化窗口控件，否则不显示。 </p><dl class="section note"><dt>注解</dt><dd>只支持使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>Qt::WindowMinimizeButtonHint </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aa509d8e1bb44c6c578e3d6853885a980a"></a>DECOR_MAXIMIZE&#160;</td><td class="fielddoc"><p>窗口最大化。如果存在此标志，则窗口管理器会在窗口的修饰上显示一个最大化窗口控件，否则不显示。 </p><dl class="section note"><dt>注解</dt><dd>只支持使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>Qt::WindowMaximizeButtonHint </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a90da8bb6deeafe9c91094a490769be5aab4aa0add4bfef65817a552455bd2a699"></a>DECOR_ALL&#160;</td><td class="fielddoc"><p>所有窗口修饰。 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a42d89cb2e586634bf4118d2c4a160b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d89cb2e586634bf4118d2c4a160b9e">&#9670;&nbsp;</a></span>MotifFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9e">Dtk::Widget::DWindowManagerHelper::MotifFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MotifFunction::MotifFunction 窗口管理器对窗口所能控制的行为 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a42d89cb2e586634bf4118d2c4a160b9ea97847b95fd04441458b85b607555bba3"></a>FUNC_RESIZE&#160;</td><td class="fielddoc"><p>控制窗口大小。如果存在此标志，则窗口管理器可以改变窗口大小（如使用鼠标拖拽窗口边缘）， 否则无法通过外部行为调整窗口大小。 </p><div class="fragment"><div class="line">DMainWindow w;</div>
+<div class="line"> </div>
+<div class="line">w.<a class="codeRef" href="https://doc.qt.io/qt-5/qwidget.html#resize-1">resize</a>(400, 200);</div>
+<div class="line">w.show();</div>
+<div class="line"><a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">DWindowManagerHelper::setMotifFunctions</a>(w.windowHandle(), <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea97847b95fd04441458b85b607555bba3">DWindowManagerHelper::FUNC_RESIZE</a>, <span class="keyword">false</span>);</div>
+</div><!-- fragment --> <div class="image">
+<img src="disable_resize_function.gif" alt=""/>
+</div>
+ <dl class="section note"><dt>注解</dt><dd>普通窗口默认存在此标志，对于 Qt::Popup 和 Qt::BypassWindowManagerHint 类型的窗口，不受此标志位影响 </dd>
+<dd>
+设置此标志后也会影响窗口标题栏对应功能入口的状态 </dd>
+<dd>
+对于使用系统标题栏的窗口，此功能和具体窗口管理器实现相关，deepin-wm 中设置 此标志无效。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#ae496a3a20633877e1eafce8ebf3cfaaf" title="DPlatformWindowHandle::enableDXcbForWindow 这是一个针对 QWidget 类型主窗口的重载函数，此函数将设置 QWidget 对象的 Qt::WA_Native...">DPlatformWindowHandle::enableDXcbForWindow</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#a698a537a1c6f7206686563a73898933e" title="DPlatformWindowHandle::isEnabledDXcb 这只是一个重载函数，如果 widget 的 QWidget::windowHandle 为 nullptr 则返回 false，...">DPlatformWindowHandle::isEnabledDXcb</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a42d89cb2e586634bf4118d2c4a160b9eaf50cf617c9fca8eff17a7a1d48ad4c2b"></a>FUNC_MOVE&#160;</td><td class="fielddoc"><p>控制窗口位置。如果存在此标志，则窗口管理器可以移动窗口（如使用鼠标拖动标题栏），否则 无法通过外部行为移动窗口位置。 </p><div class="fragment"><div class="line"><a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">DWindowManagerHelper::setMotifFunctions</a>(w.windowHandle(), <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9eaf50cf617c9fca8eff17a7a1d48ad4c2b">DWindowManagerHelper::FUNC_MOVE</a>, <span class="keyword">false</span>);</div>
+</div><!-- fragment --> <div class="image">
+<img src="disable_move_function.gif" alt=""/>
+</div>
+ </td></tr>
+<tr><td class="fieldname"><a id="a42d89cb2e586634bf4118d2c4a160b9ea21ad8d71cade043a680e22c5688f0a34"></a>FUNC_MINIMIZE&#160;</td><td class="fielddoc"><p>最小化窗口。如果存在此标志，则窗口可以被最小化（如点击标题栏的最小化按钮），否则无法 通过外部行为最小化窗口。 </p><div class="fragment"><div class="line"><a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">DWindowManagerHelper::setMotifFunctions</a>(w.windowHandle(), <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea21ad8d71cade043a680e22c5688f0a34">DWindowManagerHelper::FUNC_MINIMIZE</a>, <span class="keyword">false</span>);</div>
+</div><!-- fragment --> <div class="image">
+<img src="disable_minimize_function.gif" alt=""/>
+</div>
+ <dl class="section note"><dt>注解</dt><dd>设置此标志后也会影响窗口标题栏对应功能入口的状态 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a42d89cb2e586634bf4118d2c4a160b9ea119db7954c932b357a348c1bebbde3b6"></a>FUNC_MAXIMIZE&#160;</td><td class="fielddoc"><p>最大化窗口。如果存在此标志，则窗口可以被最大化（如点击标题栏的最大化按钮），否则无法 通过外部行为最大化窗口。 </p><div class="fragment"><div class="line"><a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">DWindowManagerHelper::setMotifFunctions</a>(w.windowHandle(), <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea119db7954c932b357a348c1bebbde3b6">DWindowManagerHelper::FUNC_MAXIMIZE</a>, <span class="keyword">false</span>);</div>
+</div><!-- fragment --> <div class="image">
+<img src="disable_maximize_function.gif" alt=""/>
+</div>
+ <dl class="section note"><dt>注解</dt><dd>设置此标志后也会影响窗口标题栏对应功能入口的状态 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a42d89cb2e586634bf4118d2c4a160b9ea69eddfed57de2b0c44ce17a84f7f3a59"></a>FUNC_CLOSE&#160;</td><td class="fielddoc"><p>关闭窗口。如果存在此标志，则窗口可以被关闭（如点击标题栏的关闭按钮或使用Alt+F4快捷键）， 否则无法通过外部行为关闭窗口。 </p><div class="fragment"><div class="line"><a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">DWindowManagerHelper::setMotifFunctions</a>(w.windowHandle(), <a class="code" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea69eddfed57de2b0c44ce17a84f7f3a59">DWindowManagerHelper::FUNC_CLOSE</a>, <span class="keyword">false</span>);</div>
+</div><!-- fragment --> <div class="image">
+<img src="disable_close_function.gif" alt=""/>
+</div>
+ <dl class="section note"><dt>注解</dt><dd>设置此标志后也会影响窗口标题栏对应功能入口的状态 </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a42d89cb2e586634bf4118d2c4a160b9ea58d3ec781f613f751584d6bc1dc2fde9"></a>FUNC_ALL&#160;</td><td class="fielddoc"><p>所有功能性行为 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9673e5ba49e9b374d36b0436163ff442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9673e5ba49e9b374d36b0436163ff442">&#9670;&nbsp;</a></span>WMName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442">Dtk::Widget::DWindowManagerHelper::WMName</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442">DWindowManagerHelper::WMName</a> 窗口管理器类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a9673e5ba49e9b374d36b0436163ff442ae4b2ccfbe1cad271bd07058fac148f34"></a>OtherWM&#160;</td><td class="fielddoc"><p>其它窗口管理器 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9673e5ba49e9b374d36b0436163ff442a4498c93985ac57d30b2f09cd08128d54"></a>DeepinWM&#160;</td><td class="fielddoc"><p>深度系统桌面环境窗口管理器 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9673e5ba49e9b374d36b0436163ff442af4979608b8eacd7c01c3d18167c5e3b3"></a>KWinWM&#160;</td><td class="fielddoc"><p>KDE系统桌面环境窗口管理器 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a138e23ca39a0896ede34f81b2407fe56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138e23ca39a0896ede34f81b2407fe56">&#9670;&nbsp;</a></span>DWindowManagerHelper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::DWindowManagerHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a138e23ca39a0896ede34f81b2407fe56" title="DWindowManagerHelper::DWindowManagerHelper 不允许直接实例化此对象">DWindowManagerHelper::DWindowManagerHelper</a> 不允许直接实例化此对象 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737" title="DWindowManagerHelper::instance DWindowManagerHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。">DWindowManagerHelper::instance</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00646">646</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a478b322303b7dc67973dbdfea4020565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478b322303b7dc67973dbdfea4020565">&#9670;&nbsp;</a></span>allWindowIdList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; quint32 &gt; DWindowManagerHelper::allWindowIdList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a478b322303b7dc67973dbdfea4020565" title="DWindowManagerHelper::allWindowIdList">DWindowManagerHelper::allWindowIdList</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前环境所有本地窗口的窗口id列表 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>顺序和窗口层叠顺序相关，显示越靠下层的窗口在列表中顺序越靠前 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a" title="DWindowManagerHelper::currentWorkspaceWindowIdList">DWindowManagerHelper::currentWorkspaceWindowIdList</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00563">563</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aceb9757b8e420dab428560c24b09b25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb9757b8e420dab428560c24b09b25a">&#9670;&nbsp;</a></span>currentWorkspaceWindowIdList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qvector.html">QVector</a>&lt; quint32 &gt; DWindowManagerHelper::currentWorkspaceWindowIdList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a" title="DWindowManagerHelper::currentWorkspaceWindowIdList">DWindowManagerHelper::currentWorkspaceWindowIdList</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前工作区所有本地窗口的窗口id列表 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>顺序和窗口层叠顺序相关，显示越靠下层的窗口在列表中顺序越靠前 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a478b322303b7dc67973dbdfea4020565" title="DWindowManagerHelper::allWindowIdList">DWindowManagerHelper::allWindowIdList</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00582">582</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6225c7cc9df459f5af43fe770682a7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6225c7cc9df459f5af43fe770682a7cc">&#9670;&nbsp;</a></span>currentWorkspaceWindows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="el" href="class_dtk_1_1_widget_1_1_d_foreign_window.html">DForeignWindow</a> * &gt; DWindowManagerHelper::currentWorkspaceWindows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a" title="DWindowManagerHelper::currentWorkspaceWindowIdList">DWindowManagerHelper::currentWorkspaceWindowIdList</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前工作区所有本地窗口对象列表。和 <em>currentWorkspaceWindowIdList</em> 类似，只不过自动通过窗口id创建了 <a class="el" href="class_dtk_1_1_widget_1_1_d_foreign_window.html" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::width QWindow::height ...">DForeignWindow</a> 对象 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>顺序和窗口层叠顺序相关，显示越靠下层的窗口在列表中顺序越靠前 </dd>
+<dd>
+列表中对象的生命周期由 <a class="el" href="class_dtk_1_1_widget_1_1_d_foreign_window.html" title="一个用于获取本地窗口信息的类，继承于 QWindow，支持 QWindow::geometry QWindow::x QWindow::y QWindow::width QWindow::height ...">DForeignWindow</a> 负责 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>此列表中不包含由当前应用创建的窗口 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a" title="DWindowManagerHelper::currentWorkspaceWindowIdList">DWindowManagerHelper::currentWorkspaceWindowIdList</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_widget_1_1_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0" title="DForeignWindow::fromWinId 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplication::allWindows 中。一般应用在...">DForeignWindow::fromWinId</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00605">605</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a492dddd1de6837f03dea79a40d448841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492dddd1de6837f03dea79a40d448841">&#9670;&nbsp;</a></span>getMotifDecorations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::MotifDecorations DWindowManagerHelper::getMotifDecorations </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53" title="DWindowManagerHelper::getMotifFunctions">DWindowManagerHelper::getMotifFunctions</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回窗口当前的修饰标志 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00436">436</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad95d3a6f1d24b1f382266784bc910d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95d3a6f1d24b1f382266784bc910d53">&#9670;&nbsp;</a></span>getMotifFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::MotifFunctions DWindowManagerHelper::getMotifFunctions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53" title="DWindowManagerHelper::getMotifFunctions">DWindowManagerHelper::getMotifFunctions</a> </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回窗口当前的功能标志 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00369">369</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9d8049eb443e6e74f7956ee53d05493c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8049eb443e6e74f7956ee53d05493c">&#9670;&nbsp;</a></span>hasBlurWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DWindowManagerHelper::hasBlurWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a578fb91ce8d8e2e8da4a5fab2289588f" title="窗口管理器是否支持窗口背景模糊特效">DWindowManagerHelper::hasBlurWindow</a> </p>
+<dl class="section return"><dt>返回</dt><dd>如果当前窗口管理器支持窗口背景模糊特效则返回 true，否则返回 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00478">478</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15c73557e57ec826c796588235da9067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c73557e57ec826c796588235da9067">&#9670;&nbsp;</a></span>hasComposite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DWindowManagerHelper::hasComposite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a077754f2223ef12dc66d46dc10386ac8" title="窗口管理器是否支持混成效果。如果不支持混成，则表示所有窗口的背景都不能透明， 随之而来也不会有窗口阴影等效果，不规则窗口的边缘也会存在锯齿。">DWindowManagerHelper::hasComposite</a> </p>
+<dl class="section return"><dt>返回</dt><dd>如果当前窗口管理器支持混成则返回 true，否则返回 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00493">493</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a871757a459c300857630f62bd2d02e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871757a459c300857630f62bd2d02e98">&#9670;&nbsp;</a></span>hasNoTitlebar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DWindowManagerHelper::hasNoTitlebar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#abeae2e698f8eed570c5ad5fc79fb41ae" title="窗口管理器是否支持隐藏窗口标题栏。如果支持，则 DPlatformWindowHandle::enableDXcbForWindow 会优先使用此方法支持自定义窗口标题栏。">DWindowManagerHelper::hasNoTitlebar</a> </p>
+<dl class="section return"><dt>返回</dt><dd>如果窗口管理器当前支持设置隐藏窗口标题栏则返回 true，否则返回 false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00508">508</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac7c478902c61d28b137ff2198164d737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c478902c61d28b137ff2198164d737">&#9670;&nbsp;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html">DWindowManagerHelper</a> * DWindowManagerHelper::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ac7c478902c61d28b137ff2198164d737" title="DWindowManagerHelper::instance DWindowManagerHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。">DWindowManagerHelper::instance</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平台交互的接口以供上层调用，DTK 使用插件中提供的接口再 次封装...">DWindowManagerHelper</a> 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00315">315</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ea9fc4f72173724caebdf38bbfaa5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea9fc4f72173724caebdf38bbfaa5f3">&#9670;&nbsp;</a></span>popupSystemWindowMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DWindowManagerHelper::popupSystemWindowMenu </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a2ea9fc4f72173724caebdf38bbfaa5f3" title="DWindowManagerHelper::popupSystemWindowMenu 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击鼠标右键弹出的菜单内容一致。 在 DMainWindow ...">DWindowManagerHelper::popupSystemWindowMenu</a> 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击鼠标右键弹出的菜单内容一致。 在 <a class="el" href="class_dtk_1_1_widget_1_1_d_main_window.html" title="The DMainWindow class provides a main application window.">DMainWindow</a> 的标题栏上点击鼠标右键会调用此函数打开系统菜单： </p>
+<div class="image">
+<img src="window_system_menu.gif" alt=""/>
+</div>
+ <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00461">461</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad62bc88f923ee6e2077f380797635f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62bc88f923ee6e2077f380797635f21">&#9670;&nbsp;</a></span>setMotifDecorations() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DWindowManagerHelper::setMotifDecorations </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MotifDecorations&#160;</td>
+          <td class="paramname"><em>hints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad62bc88f923ee6e2077f380797635f21" title="DWindowManagerHelper::setMotifDecorations 设置窗口的修饰性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifDecorations</a> 设置窗口的修饰性标志，会覆盖之前的设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+    <tr><td class="paramname">hints</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00393">393</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a115016382badfb72b46d8a2d17357517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115016382badfb72b46d8a2d17357517">&#9670;&nbsp;</a></span>setMotifDecorations() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::MotifDecorations DWindowManagerHelper::setMotifDecorations </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MotifDecorations&#160;</td>
+          <td class="paramname"><em>hints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc" title="DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifFunctions</a> 设置窗口某些标志位的开启状态，不影响其它标志位 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+    <tr><td class="paramname">hints</td><td>要设置的标志位 </td></tr>
+    <tr><td class="paramname">on</td><td>如果值为 true 则开启标志，否则关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回设置后的窗口标志 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00417">417</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad561e93d87fa1855e838b27b514f15bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad561e93d87fa1855e838b27b514f15bc">&#9670;&nbsp;</a></span>setMotifFunctions() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DWindowManagerHelper::setMotifFunctions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MotifFunctions&#160;</td>
+          <td class="paramname"><em>hints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc" title="DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifFunctions</a> 设置窗口的功能性标志，会覆盖之前的设置 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+    <tr><td class="paramname">hints</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00326">326</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a186b9916c340db55abaa9cb989c051be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a186b9916c340db55abaa9cb989c051be">&#9670;&nbsp;</a></span>setMotifFunctions() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::MotifFunctions DWindowManagerHelper::setMotifFunctions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MotifFunctions&#160;</td>
+          <td class="paramname"><em>hints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc" title="DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置">DWindowManagerHelper::setMotifFunctions</a> 设置窗口某些标志位的开启状态，不影响其它标志位 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+    <tr><td class="paramname">hints</td><td>要设置的标志位 </td></tr>
+    <tr><td class="paramname">on</td><td>如果值为 true 则开启标志，否则关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回设置后的窗口标志 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00350">350</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa236fdabbf24bec87f6e0f6a7e4506e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa236fdabbf24bec87f6e0f6a7e4506e5">&#9670;&nbsp;</a></span>windowManagerName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a9673e5ba49e9b374d36b0436163ff442">DWindowManagerHelper::WMName</a> DWindowManagerHelper::windowManagerName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aa236fdabbf24bec87f6e0f6a7e4506e5" title="DWindowManagerHelper::windowManagerName">DWindowManagerHelper::windowManagerName</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回当前窗口管理器类型 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3" title="DWindowManagerHelper::windowManagerNameString">DWindowManagerHelper::windowManagerNameString</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00542">542</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aede0872cc89b70173fa383d7822a04b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede0872cc89b70173fa383d7822a04b3">&#9670;&nbsp;</a></span>windowManagerNameString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> DWindowManagerHelper::windowManagerNameString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3" title="DWindowManagerHelper::windowManagerNameString">DWindowManagerHelper::windowManagerNameString</a> </p>
+<dl class="section return"><dt>返回</dt><dd>返回窗口管理器名称。在X11平台上，此值为窗口管理器对应窗口的 _NET_WM_NAME 的值 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a href="https://specifications.freedesktop.org/wm-spec/1.3/ar01s03.html">_NET_SUPPORTING_WM_CHECK</a> </dd>
+<dd>
+<a href="https://specifications.freedesktop.org/wm-spec/1.3/ar01s05.html">_NET_WM_NAME</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00526">526</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a578fb91ce8d8e2e8da4a5fab2289588f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578fb91ce8d8e2e8da4a5fab2289588f">&#9670;&nbsp;</a></span>hasBlurWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::hasBlurWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口管理器是否支持窗口背景模糊特效 </p>
+<dl class="section note"><dt>注解</dt><dd>在 dxcb 插件中目前只支持 deepin-wm 和 kwin 这两种窗管的模糊特效 </dd>
+<dd>
+只读 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00001">1</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a077754f2223ef12dc66d46dc10386ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077754f2223ef12dc66d46dc10386ac8">&#9670;&nbsp;</a></span>hasComposite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::hasComposite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口管理器是否支持混成效果。如果不支持混成，则表示所有窗口的背景都不能透明， 随之而来也不会有窗口阴影等效果，不规则窗口的边缘也会存在锯齿。 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00001">1</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abeae2e698f8eed570c5ad5fc79fb41ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeae2e698f8eed570c5ad5fc79fb41ae">&#9670;&nbsp;</a></span>hasNoTitlebar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWindowManagerHelper::hasNoTitlebar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>窗口管理器是否支持隐藏窗口标题栏。如果支持，则 <a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#ae496a3a20633877e1eafce8ebf3cfaaf" title="DPlatformWindowHandle::enableDXcbForWindow 这是一个针对 QWidget 类型主窗口的重载函数，此函数将设置 QWidget 对象的 Qt::WA_Native...">DPlatformWindowHandle::enableDXcbForWindow</a> 会优先使用此方法支持自定义窗口标题栏。 </p>
+<dl class="section note"><dt>注解</dt><dd>只读 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>DPlatformWindowHandle::enableNoTitlebarForWindow </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a> 第 <a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00001">1</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkwidget/src/util/<a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html">dwindowmanagerhelper.h</a></li>
+<li>dtkwidget/src/util/<a class="el" href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a42d89cb2e586634bf4118d2c4a160b9eaf50cf617c9fca8eff17a7a1d48ad4c2b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9eaf50cf617c9fca8eff17a7a1d48ad4c2b">Dtk::Widget::DWindowManagerHelper::FUNC_MOVE</a></div><div class="ttdeci">@ FUNC_MOVE</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00042">dwindowmanagerhelper.h:42</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_ad561e93d87fa1855e838b27b514f15bc"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#ad561e93d87fa1855e838b27b514f15bc">Dtk::Widget::DWindowManagerHelper::setMotifFunctions</a></div><div class="ttdeci">static void setMotifFunctions(const QWindow *window, MotifFunctions hints)</div><div class="ttdoc">DWindowManagerHelper::setMotifFunctions 设置窗口的功能性标志，会覆盖之前的设置</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8cpp_source.html#l00326">dwindowmanagerhelper.cpp:326</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a42d89cb2e586634bf4118d2c4a160b9ea97847b95fd04441458b85b607555bba3"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea97847b95fd04441458b85b607555bba3">Dtk::Widget::DWindowManagerHelper::FUNC_RESIZE</a></div><div class="ttdeci">@ FUNC_RESIZE</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00041">dwindowmanagerhelper.h:41</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a42d89cb2e586634bf4118d2c4a160b9ea119db7954c932b357a348c1bebbde3b6"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea119db7954c932b357a348c1bebbde3b6">Dtk::Widget::DWindowManagerHelper::FUNC_MAXIMIZE</a></div><div class="ttdeci">@ FUNC_MAXIMIZE</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00044">dwindowmanagerhelper.h:44</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a42d89cb2e586634bf4118d2c4a160b9ea69eddfed57de2b0c44ce17a84f7f3a59"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea69eddfed57de2b0c44ce17a84f7f3a59">Dtk::Widget::DWindowManagerHelper::FUNC_CLOSE</a></div><div class="ttdeci">@ FUNC_CLOSE</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00045">dwindowmanagerhelper.h:45</a></div></div>
+<div class="ttc" id="aqwidget_html_resize-1"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html#resize-1">QWidget::resize</a></div><div class="ttdeci">void resize(int w, int h)</div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_window_manager_helper_html_a42d89cb2e586634bf4118d2c4a160b9ea21ad8d71cade043a680e22c5688f0a34"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html#a42d89cb2e586634bf4118d2c4a160b9ea21ad8d71cade043a680e22c5688f0a34">Dtk::Widget::DWindowManagerHelper::FUNC_MINIMIZE</a></div><div class="ttdeci">@ FUNC_MINIMIZE</div><div class="ttdef"><b>Definition:</b> <a href="dtkwidget_2src_2util_2dwindowmanagerhelper_8h_source.html#l00043">dwindowmanagerhelper.h:43</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_window_manager_helper.html">DWindowManagerHelper</a></li>
+    <li class="footer">生成于 2020年 九月 23日 星期三 15:16:55 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

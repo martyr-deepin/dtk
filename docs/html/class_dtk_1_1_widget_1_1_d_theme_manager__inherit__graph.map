@@ -1,0 +1,6 @@
+<map id="Dtk::Widget::DThemeManager" name="Dtk::Widget::DThemeManager">
+<area shape="rect" id="node1" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ...." alt="" coords="5,80,224,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,155,224,196"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="11,5,85,32"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="110,5,253,32"/>
+</map>

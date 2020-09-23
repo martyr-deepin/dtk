@@ -1,0 +1,11 @@
+<map id="Dtk::Widget::DBaseLine" name="Dtk::Widget::DBaseLine">
+<area shape="rect" id="node1" title="可以使用 DBaseLine 类快速创建具有位于左右两侧的两个控件的行控件。" alt="" coords="152,304,328,331"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_header_line.html" title="可以使用 DHeaderLine 类快速创建标题行控件。" alt="" coords="145,379,335,405"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qlabel.html" title=" " alt="" coords="207,229,273,256"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="203,155,277,181"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="201,80,279,107"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="144,5,219,32"/>
+<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="243,5,354,32"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_arrow_header_line.html" title=" " alt="" coords="5,453,224,480"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_widget_1_1_d_switch_header_line.html" title="DSwitchHeaderLine 类用于提供 DSwitchLineExpand 的标题栏。" alt="" coords="248,453,483,480"/>
+</map>
