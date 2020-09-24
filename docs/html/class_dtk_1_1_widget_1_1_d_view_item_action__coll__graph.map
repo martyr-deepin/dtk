@@ -1,7 +1,7 @@
 <map id="Dtk::Widget::DViewItemAction" name="Dtk::Widget::DViewItemAction">
 <area shape="rect" id="node1" title="是一个 action 活动, 其默认是不能被点击的." alt="" coords="13,171,233,197"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qaction.html" title=" " alt="" coords="21,95,94,121"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qaction.html" title=" " alt="" coords="21,95,94,121"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
 <area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="146,95,289,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="104,5,357,32"/>
 </map>

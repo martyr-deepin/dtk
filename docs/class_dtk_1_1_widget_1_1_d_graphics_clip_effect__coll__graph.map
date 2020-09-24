@@ -1,7 +1,7 @@
 <map id="Dtk::Widget::DGraphicsClipEffect" name="Dtk::Widget::DGraphicsClipEffect">
 <area shape="rect" id="node1" title="用于裁剪窗口的绘制内容" alt="" coords="48,171,247,212"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qgraphicseffect.html" title=" " alt="" coords="5,95,132,121"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="23,5,98,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qgraphicseffect.html" title=" " alt="" coords="5,95,132,121"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="23,5,98,32"/>
 <area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="171,95,313,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="122,5,375,32"/>
 </map>

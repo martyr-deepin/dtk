@@ -1,15 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"class_d_platform_theme.html#af8b64b35fb16b2264485020434938134":[8,0,36,106],
-"class_d_platform_theme.html#af9374d8153b0d1583011a0ce237ea21f":[8,0,36,89],
-"class_d_platform_theme.html#af93eef289a7af8c8831ae7b705fa32ba":[8,0,36,44],
-"class_d_platform_theme.html#afc3702898e3693647ad2936adafdecc3":[8,0,36,123],
-"class_d_platform_theme.html#afd3846cc36f20783c23504a3df197e67":[8,0,36,90],
-"class_d_platform_theme.html#afdd6d00cce07064ddf0901fa090f3bb7":[8,0,36,35],
-"class_d_platform_theme.html#afeaba5a1af5c26dc6d8e364d5d23d05b":[8,0,36,135],
-"class_d_region_monitor.html":[8,0,38],
-"class_d_region_monitor.html#a1d51e1983d450e513fc4e8ed28383e68":[8,0,38,15],
-"class_d_region_monitor.html#a1d874b2ff9ca97a148dfa88809917fa7":[8,0,38,6],
 "class_d_region_monitor.html#a4fdc0d063833b8476c94cdd3ba475af1":[8,0,38,12],
 "class_d_region_monitor.html#a60552d360eb54cac2cab87ec350d6a74":[8,0,38,14],
 "class_d_region_monitor.html#a72ab2fc6d0c6acd417f3c37370054708":[8,0,38,2],
@@ -249,5 +239,15 @@ var NAVTREEINDEX2 =
 "class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffe":[8,0,3,0,8,0],
 "class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea22240ab6db22d24f43d6568a99806714":[8,0,3,0,8,0,5],
 "class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea48abe993eb70dcb8c04b1d81a115edbf":[8,0,3,0,8,0,1],
-"class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea4cd73b453ea8379b232a062984041870":[8,0,3,0,8,0,4]
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea4cd73b453ea8379b232a062984041870":[8,0,3,0,8,0,4],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea8b7b432aaa370dc8c67d3b5aeb6edb21":[8,0,3,0,8,0,3],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffea929c551d8091d0c4b73fc9f444d179b5":[8,0,3,0,8,0,6],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffeae7ec3f2d3c0628bb7dcab7032d75b774":[8,0,3,0,8,0,0],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a31cd3020dcd76d7b9e02524bc7930ffeaedccd56c8cfd77a5867776dc89b91c78":[8,0,3,0,8,0,2],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a37c81d91c490dca6bcfe91441752fba9":[8,0,3,0,8,8],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a3bcd126c3789ffa6f63d024b1c427f12":[8,0,3,0,8,11],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a3ca962839a986bd492f72ed68ce11695":[8,0,3,0,8,16],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a4d8d1f5103f04f24c977f8c5894c5045":[8,0,3,0,8,9],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a4fb687dadc5c29494a91aef173d23b9b":[8,0,3,0,8,14],
+"class_dtk_1_1_core_1_1_d_desktop_entry.html#a776775fa62ab98e47ec782dbaef992c6":[8,0,3,0,8,4]
 };

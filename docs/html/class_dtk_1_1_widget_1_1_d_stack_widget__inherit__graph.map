@@ -1,7 +1,7 @@
 <map id="Dtk::Widget::DStackWidget" name="Dtk::Widget::DStackWidget">
 <area shape="rect" id="node1" title="一个可定制切换动画的容器控件" alt="" coords="69,155,267,181"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
 <area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="165,80,307,107"/>
 </map>

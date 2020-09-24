@@ -1,9 +1,9 @@
 <map id="QSvgIOHandlerPrivate" name="QSvgIOHandlerPrivate">
 <area shape="rect" id="node1" title=" " alt="" coords="217,185,383,212"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtgui.tags$qcolor.html" title=" " alt="" coords="5,81,72,108"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qcolor.html" title=" " alt="" coords="5,81,72,108"/>
 <area shape="rect" id="node3" href="$class_q_svg_i_o_handler.html" title=" " alt="" coords="97,81,218,108"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qimageiohandler.html" title=" " alt="" coords="88,5,227,32"/>
+<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qimageiohandler.html" title=" " alt="" coords="88,5,227,32"/>
 <area shape="rect" id="node5" href="$class_d_svg_renderer.html" title="提供了将SVG文件的内容绘制到绘制设备上的方法。 SVG图形可以在构造 DSvgRenderer 时加载，也可以稍后使用load（）函数加载。 因为渲染是使用 QPainter 执行的，所以可以在 QP..." alt="" coords="243,81,357,108"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtcore.tags$qsize.html" title=" " alt="" coords="381,81,440,108"/>
-<area shape="rect" id="node7" href="/home/juteman/dtk/tags/qtcore.tags$qrect.html" title=" " alt="" coords="476,81,537,108"/>
+<area shape="rect" id="node6" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qsize.html" title=" " alt="" coords="381,81,440,108"/>
+<area shape="rect" id="node7" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qrect.html" title=" " alt="" coords="476,81,537,108"/>
 </map>

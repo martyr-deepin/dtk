@@ -1,5 +1,5 @@
 <map id="Dtk::Widget::DGraphicsGlowEffect" name="Dtk::Widget::DGraphicsGlowEffect">
 <area shape="rect" id="node1" title="控件发散效果，同时也是Dtk默认的窗口特效。" alt="" coords="5,155,212,196"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qgraphicseffect.html" title=" " alt="" coords="45,80,172,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="71,5,146,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qgraphicseffect.html" title=" " alt="" coords="45,80,172,107"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="71,5,146,32"/>
 </map>

@@ -1,15 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"class_dtk_1_1_widget_1_1_d_dialog.html#a06f3aab0bf4eb7c00ba88c0e8fef789c":[8,0,3,1,38,57],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a06fa89c96c6ead7199c64c87f86e4afa":[8,0,3,1,38,59],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a0d016e10421d646d5784c4698d4b80f2":[8,0,3,1,38,2],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a0f2b224ddfa036e5a735c9ca3f3716cb":[8,0,3,1,38,50],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a108b7467a0b0bd9f328a7d8933bf5126":[8,0,3,1,38,12],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a130f97d000db9dbed56cc9abafedc855":[8,0,3,1,38,46],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a15d3198af7d8728e4185c43aa166e78e":[8,0,3,1,38,33],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a1c55adf7d57c979bd8a5084cf7233dba":[8,0,3,1,38,63],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a21cd6659a537e24cc641487b40abc926":[8,0,3,1,38,39],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a29202f44c8716a8c85d40a3eb40f877e":[8,0,3,1,38,35],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a2d5cbe6aadd6a06fe4cdf08cbdadd395":[8,0,3,1,38,49],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a2ed34d22b4147fb8c220ad2497ccd868":[8,0,3,1,38,72],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a2f27dd1e409cd8b34cfe375c99fe6b01":[8,0,3,1,38,26],
@@ -249,5 +239,15 @@ var NAVTREEINDEX7 =
 "class_dtk_1_1_widget_1_1_d_flow_layout.html#ae3c0fb73d2070e7ee0457bbc48c9884c":[8,0,3,1,50,34],
 "class_dtk_1_1_widget_1_1_d_flow_layout.html#ae86051770000412bf298a9c0d241f5d0":[8,0,3,1,50,12],
 "class_dtk_1_1_widget_1_1_d_flow_layout.html#aefdc32ab26d63885913372f89f2380d8":[8,0,3,1,50,5],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html":[8,0,3,1,51]
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html":[8,0,3,1,51],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a0a0e8f9603769f9896744026b6269acc":[8,0,3,1,51,13],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a18fb3ebbef26e92db9d099f6b0a1970c":[8,0,3,1,51,18],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a2456c72bd21960f2598fd5c3bbd80c47":[8,0,3,1,51,4],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a267d44ac14ef7d3ee0119af76a260920":[8,0,3,1,51,2],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a2ef20107c82229a985a271dcef643391":[8,0,3,1,51,15],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a562cef8bf07da01fca2645e0897ccc07":[8,0,3,1,51,10],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a583392e0e783042a95603ce325481768":[8,0,3,1,51,16],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997d":[8,0,3,1,51,0],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da4f3eef4cc7a4f8ef7dcb23c8df88bc67":[8,0,3,1,51,0,9],
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997da4f8e55ee6cce3e4106d030c237aebf00":[8,0,3,1,51,0,7]
 };

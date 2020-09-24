@@ -1,6 +1,6 @@
 <map id="DFileDrag" name="DFileDrag">
 <area shape="rect" id="node1" title="继承自QDrag，一般在文件拖拽发送方 mouseMoveEvent 中发起拖拽，设置发送数据" alt="" coords="47,155,132,181"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtgui.tags$qdrag.html" title=" " alt="" coords="11,80,74,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qdrag.html" title=" " alt="" coords="11,80,74,107"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
 <area shape="rect" id="node4" title=" " alt="" coords="99,80,173,107"/>
 </map>

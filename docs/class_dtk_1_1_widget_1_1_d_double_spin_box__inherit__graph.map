@@ -1,9 +1,9 @@
 <map id="Dtk::Widget::DDoubleSpinBox" name="Dtk::Widget::DDoubleSpinBox">
 <area shape="rect" id="node1" title="类似 DDoubleSpinBox 。" alt="" coords="73,304,289,331"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qdoublespinbox.html" title=" " alt="" coords="36,229,167,256"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractspinbox.html" title=" " alt="" coords="32,155,171,181"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qdoublespinbox.html" title=" " alt="" coords="36,229,167,256"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qabstractspinbox.html" title=" " alt="" coords="32,155,171,181"/>
+<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
+<area shape="rect" id="node5" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node6" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
 <area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="191,229,334,256"/>
 </map>

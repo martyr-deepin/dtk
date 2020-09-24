@@ -1,7 +1,7 @@
 <map id="Dtk::Widget::DVerticalLine" name="Dtk::Widget::DVerticalLine">
 <area shape="rect" id="node1" title=" " alt="" coords="5,229,199,256"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,155,139,181"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="63,80,141,107"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="6,5,81,32"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,216,32"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,155,139,181"/>
+<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="63,80,141,107"/>
+<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="6,5,81,32"/>
+<area shape="rect" id="node5" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,216,32"/>
 </map>

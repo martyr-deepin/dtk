@@ -1,6 +1,6 @@
 <map id="DRegionMonitor" name="DRegionMonitor">
 <area shape="rect" id="node1" title="一个在指定区域内监视鼠标键盘动作的类" alt="" coords="5,171,132,197"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="15,95,90,121"/>
+<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="15,95,90,121"/>
 <area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="115,95,257,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="59,5,313,32"/>
 </map>
