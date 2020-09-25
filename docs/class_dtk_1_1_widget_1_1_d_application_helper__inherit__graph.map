@@ -1,6 +1,6 @@
 <map id="Dtk::Widget::DApplicationHelper" name="Dtk::Widget::DApplicationHelper">
 <area shape="rect" id="node1" title="DApplicationHelper提供了一个修改的 DGuiApplicationHelper 类" alt="" coords="5,155,196,196"/>
 <area shape="rect" id="node2" href="$class_d_gui_application_helper.html" title="DGuiApplicationHelper 应用程序的 GUI ，如主题、调色板等" alt="" coords="15,80,186,107"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="14,5,89,32"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="14,5,89,32"/>
 <area shape="rect" id="node4" title=" " alt="" coords="113,5,187,32"/>
 </map>

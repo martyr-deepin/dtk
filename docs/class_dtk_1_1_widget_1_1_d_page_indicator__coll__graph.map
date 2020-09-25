@@ -1,8 +1,8 @@
 <map id="Dtk::Widget::DPageIndicator" name="Dtk::Widget::DPageIndicator">
 <area shape="rect" id="node1" title="DPageIndicator 类提供了一种用来指示一组元素中当前可见元素索引的控件。控件会显示了一系列的点，代表一组元素。其中每一个点固定对应于元素组中 的一个元素，元素组中的元素在一个时间点只能显示其..." alt="" coords="159,171,366,197"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="121,95,199,121"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="121,95,199,121"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
 <area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="274,95,417,121"/>
 <area shape="rect" id="node6" title=" " alt="" coords="240,5,493,32"/>
 </map>

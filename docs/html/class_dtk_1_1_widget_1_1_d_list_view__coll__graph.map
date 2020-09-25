@@ -1,12 +1,12 @@
 <map id="Dtk::Widget::DListView" name="Dtk::Widget::DListView">
 <area shape="rect" id="node1" title="一个用于展示一列数据的控件" alt="" coords="138,475,310,501"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qlistview.html" title=" " alt="" coords="113,399,199,425"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qabstractitemview.html" title=" " alt="" coords="27,309,175,336"/>
-<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qabstractscrollarea.html" title=" " alt="" coords="25,233,177,260"/>
-<area shape="rect" id="node5" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,157,138,184"/>
-<area shape="rect" id="node6" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,81,141,108"/>
-<area shape="rect" id="node7" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node8" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qlistview.html" title=" " alt="" coords="113,399,199,425"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractitemview.html" title=" " alt="" coords="27,309,175,336"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractscrollarea.html" title=" " alt="" coords="25,233,177,260"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,157,138,184"/>
+<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,81,141,108"/>
+<area shape="rect" id="node7" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node8" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
 <area shape="rect" id="node9" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="245,399,387,425"/>
 <area shape="rect" id="node10" title=" " alt="" coords="200,309,453,336"/>
 </map>

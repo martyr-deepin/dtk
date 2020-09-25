@@ -1,7 +1,7 @@
 <map id="Dtk::Widget::DStyledItemDelegate" name="Dtk::Widget::DStyledItemDelegate">
 <area shape="rect" id="node1" title=" " alt="" coords="87,229,275,271"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qstyleditemdelegate.html" title=" " alt="" coords="11,155,174,181"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qabstractitemdelegate.html" title=" " alt="" coords="5,80,180,107"/>
-<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="55,5,130,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleditemdelegate.html" title=" " alt="" coords="11,155,174,181"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractitemdelegate.html" title=" " alt="" coords="5,80,180,107"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="55,5,130,32"/>
 <area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="199,155,341,181"/>
 </map>

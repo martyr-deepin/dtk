@@ -1,5 +1,5 @@
 <map id="Dtk::Widget::CrumbObjectInterface" name="Dtk::Widget::CrumbObjectInterface">
 <area shape="rect" id="node1" title=" " alt="" coords="17,80,209,121"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qtextobjectinterface.html" title=" " alt="" coords="105,5,263,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtgui.tags$qtextobjectinterface.html" title=" " alt="" coords="105,5,263,32"/>
 </map>

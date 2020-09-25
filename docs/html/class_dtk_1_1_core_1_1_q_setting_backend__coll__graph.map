@@ -1,5 +1,5 @@
 <map id="Dtk::Core::QSettingBackend" name="Dtk::Core::QSettingBackend">
 <area shape="rect" id="node1" title="Storage DSetttings to an QSettings" alt="" coords="9,155,211,181"/>
 <area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_settings_backend.html" title="DSettingsBackend是一个纯虚类, 用来描述DSettings的存储接口。" alt="" coords="5,80,215,107"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="73,5,147,32"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="73,5,147,32"/>
 </map>

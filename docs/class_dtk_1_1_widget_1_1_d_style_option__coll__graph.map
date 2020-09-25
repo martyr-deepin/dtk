@@ -1,6 +1,6 @@
 <map id="Dtk::Widget::DStyleOption" name="Dtk::Widget::DStyleOption">
 <area shape="rect" id="node1" title="dcxb插件通过DStyleOption来控制控件的样式" alt="" coords="28,199,221,225"/>
 <area shape="rect" id="node2" href="$class_d_palette.html" title="DPalette提供了修改的 QPalette 类" alt="" coords="85,109,164,136"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qpalette.html" title=" " alt="" coords="5,13,84,39"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtgui.tags$qpalette.html" title=" " alt="" coords="5,13,84,39"/>
 <area shape="rect" id="node4" title=" " alt="" coords="108,5,304,47"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="NorwegianWoodStyle" name="NorwegianWoodStyle">
 <area shape="rect" id="node1" title="[0]" alt="" coords="5,304,168,331"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qproxystyle.html" title=" " alt="" coords="35,229,138,256"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="25,155,149,181"/>
-<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="54,80,119,107"/>
-<area shape="rect" id="node5" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="49,5,124,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qproxystyle.html" title=" " alt="" coords="35,229,138,256"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="25,155,149,181"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="54,80,119,107"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="49,5,124,32"/>
 </map>

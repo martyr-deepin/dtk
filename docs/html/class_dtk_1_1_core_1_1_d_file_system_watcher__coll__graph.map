@@ -1,6 +1,6 @@
 <map id="Dtk::Core::DFileSystemWatcher" name="Dtk::Core::DFileSystemWatcher">
 <area shape="rect" id="node1" title="The DFileSystemWatcher class provides an interface for monitoring files and directories for modificat..." alt="" coords="5,171,232,197"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="65,95,140,121"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="65,95,140,121"/>
 <area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="165,95,307,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="109,5,363,32"/>
 </map>

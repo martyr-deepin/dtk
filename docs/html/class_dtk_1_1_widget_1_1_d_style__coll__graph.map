@@ -1,6 +1,6 @@
 <map id="Dtk::Widget::DStyle" name="Dtk::Widget::DStyle">
 <area shape="rect" id="node1" title="DStyle提供了一个修改风格的类" alt="" coords="5,229,156,256"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="19,155,143,181"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="48,80,113,107"/>
-<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="43,5,118,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="19,155,143,181"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="48,80,113,107"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="43,5,118,32"/>
 </map>

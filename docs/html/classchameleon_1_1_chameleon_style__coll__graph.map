@@ -1,7 +1,7 @@
 <map id="chameleon::ChameleonStyle" name="chameleon::ChameleonStyle">
 <area shape="rect" id="node1" title=" " alt="" coords="5,304,215,331"/>
 <area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_style.html" title="DStyle提供了一个修改风格的类" alt="" coords="35,229,185,256"/>
-<area shape="rect" id="node3" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="48,155,172,181"/>
-<area shape="rect" id="node4" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="77,80,143,107"/>
-<area shape="rect" id="node5" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="73,5,147,32"/>
+<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="48,155,172,181"/>
+<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="77,80,143,107"/>
+<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="73,5,147,32"/>
 </map>

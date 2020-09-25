@@ -1,4 +1,4 @@
 <map id="Dtk::Widget::DStandardItem" name="Dtk::Widget::DStandardItem">
 <area shape="rect" id="node1" title="提供标准项 item, 通常用于模型/视图,或模型&#45;代理&#45;视图里面,用以提供标准的 item 控件" alt="" coords="5,80,211,107"/>
-<area shape="rect" id="node2" href="/home/juteman/PycharmProjects/PRTools/dtk/tags/qtgui.tags$qstandarditem.html" title=" " alt="" coords="48,5,168,32"/>
+<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtgui.tags$qstandarditem.html" title=" " alt="" coords="48,5,168,32"/>
 </map>
