@@ -113,135 +113,142 @@ $(document).ready(function(){initNavTree('dspinner_8cpp_source.html',''); initRe
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">double</span> currentDegree = 0.0;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;QList&lt;QColor&gt;</a>&gt; indicatorColors;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a>(DSpinner)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;DSpinnerPrivate::DSpinnerPrivate(DSpinner *qq)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    : DObjectPrivate(qq)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">   62</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">DSpinner::DSpinner</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *parent) :</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a>(parent), <a class="code" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a>(*new DSpinnerPrivate(this))</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    d-&gt;refreshTimer.setInterval(30);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#connect">connect</a>(&amp;d-&gt;refreshTimer, &amp;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qtimer.html#timeout">QTimer::timeout</a>,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">this</span>, [ = ]() {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        d-&gt;currentDegree += 14;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        update();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    });</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;DSpinner::~DSpinner()</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QPalette::ColorGroup colorGroup;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a>(DSpinner)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;DSpinnerPrivate::DSpinnerPrivate(DSpinner *qq)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    : DObjectPrivate(qq)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">   63</a></span>&#160;<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">DSpinner::DSpinner</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *parent) :</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a>(parent), <a class="code" href="class_dtk_1_1_core_1_1_d_object.html">DObject</a>(*new DSpinnerPrivate(this))</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    d-&gt;refreshTimer.setInterval(30);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    d-&gt;colorGroup = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>().currentColorGroup();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#connect">connect</a>(&amp;d-&gt;refreshTimer, &amp;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qtimer.html#timeout">QTimer::timeout</a>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">this</span>, [ = ]() {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        d-&gt;currentDegree += 14;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        update();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    });</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;DSpinner::~DSpinner()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#af568d3353a2a59a65b5ffe5d7104c63c">   85</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#af568d3353a2a59a65b5ffe5d7104c63c">DSpinner::isPlaying</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> d-&gt;refreshTimer.isActive();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842">DSpinner::start</a>()</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    d-&gt;refreshTimer.start();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#afeb86fa66c775c1f2089311f987d4b2b">  105</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#afeb86fa66c775c1f2089311f987d4b2b">DSpinner::stop</a>()</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    d-&gt;refreshTimer.stop();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137">  115</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137">DSpinner::setBackgroundColor</a>(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html">QColor</a> color)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#autoFillBackground-prop">setAutoFillBackground</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a> pal = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    pal.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html#setColor">setColor</a>(QPalette::Background, color);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">setPalette</a>(pal);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> DSpinner::paintEvent(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpaintevent.html">QPaintEvent</a> *)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (d-&gt;indicatorColors.isEmpty()) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            d-&gt;indicatorColors &lt;&lt; d-&gt;createDefaultIndicatorColorList(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>().highlight().color());</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> painter(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    painter.setRenderHints(QPainter::Antialiasing);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">auto</span> degreeCurrent = d-&gt;currentDegree * 1.0;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">auto</span> center = <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html">QRectF</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">rect</a>()).<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html#center">center</a>();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">auto</span> radius = qMin(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">rect</a>().<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#width-prop">width</a>(), <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">rect</a>().<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#height-prop">height</a>()) / 2.0;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">auto</span> indicatorRadius = radius / 2 / 2 * 1.1;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">auto</span> indicatorDegreeDelta = 360 / d-&gt;indicatorColors.count();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#af568d3353a2a59a65b5ffe5d7104c63c">   87</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#af568d3353a2a59a65b5ffe5d7104c63c">DSpinner::isPlaying</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> d-&gt;refreshTimer.isActive();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842">DSpinner::start</a>()</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    d-&gt;refreshTimer.start();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#afeb86fa66c775c1f2089311f987d4b2b">  107</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#afeb86fa66c775c1f2089311f987d4b2b">DSpinner::stop</a>()</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    d-&gt;refreshTimer.stop();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137">  117</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137">DSpinner::setBackgroundColor</a>(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html">QColor</a> color)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#autoFillBackground-prop">setAutoFillBackground</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a> pal = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    pal.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html#setColor">setColor</a>(QPalette::Background, color);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">setPalette</a>(pal);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> DSpinner::paintEvent(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpaintevent.html">QPaintEvent</a> *)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html">DSpinner</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> (d-&gt;colorGroup != <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>().currentColorGroup()) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        d-&gt;colorGroup = <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>().currentColorGroup();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        d-&gt;indicatorColors.clear();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (d-&gt;indicatorColors.isEmpty()) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            d-&gt;indicatorColors &lt;&lt; d-&gt;createDefaultIndicatorColorList(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">palette</a>().highlight().color());</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a> painter(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    painter.setRenderHints(QPainter::Antialiasing);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;  d-&gt;indicatorColors.count(); ++i) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">auto</span> colors = d-&gt;indicatorColors.value(i);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; colors.count(); ++j) {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            degreeCurrent = d-&gt;currentDegree - j * d-&gt;indicatorShadowOffset + indicatorDegreeDelta * i;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">auto</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a> = (radius - indicatorRadius) * qCos(qDegreesToRadians(degreeCurrent));</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keyword">auto</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a> = (radius - indicatorRadius) * qSin(qDegreesToRadians(degreeCurrent));</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">auto</span> degreeCurrent = d-&gt;currentDegree * 1.0;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">auto</span> center = <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html">QRectF</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">rect</a>()).<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html#center">center</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">auto</span> radius = qMin(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">rect</a>().<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#width-prop">width</a>(), <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">rect</a>().<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#height-prop">height</a>()) / 2.0;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">auto</span> indicatorRadius = radius / 2 / 2 * 1.1;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">auto</span> indicatorDegreeDelta = 360 / d-&gt;indicatorColors.count();</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a> = center.x() + <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a> = center.y() + <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keyword">auto</span> tl = <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qpointf.html">QPointF</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a> - 1 * indicatorRadius, <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a> - 1 * indicatorRadius);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html">QRectF</a> rf(tl.x(), tl.y(), indicatorRadius * 2, indicatorRadius * 2);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> path;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            path.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html#addEllipse">addEllipse</a>(rf);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            painter.fillPath(path, colors.value(j));</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">void</span> DSpinner::changeEvent(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html">QEvent</a> *e)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">DSpinner</a>);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> (e-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html#type">type</a>() == QEvent::PaletteChange)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        d-&gt;indicatorColors.clear();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;  d-&gt;indicatorColors.count(); ++i) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">auto</span> colors = d-&gt;indicatorColors.value(i);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; colors.count(); ++j) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            degreeCurrent = d-&gt;currentDegree - j * d-&gt;indicatorShadowOffset + indicatorDegreeDelta * i;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keyword">auto</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a> = (radius - indicatorRadius) * qCos(qDegreesToRadians(degreeCurrent));</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keyword">auto</span> <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a> = (radius - indicatorRadius) * qSin(qDegreesToRadians(degreeCurrent));</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a> = center.x() + <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a> = center.y() + <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keyword">auto</span> tl = <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qpointf.html">QPointF</a>(<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">x</a> - 1 * indicatorRadius, <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">y</a> - 1 * indicatorRadius);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html">QRectF</a> rf(tl.x(), tl.y(), indicatorRadius * 2, indicatorRadius * 2);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> path;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            path.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html#addEllipse">addEllipse</a>(rf);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            painter.fillPath(path, colors.value(j));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#changeEvent">QWidget::changeEvent</a>(e);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;QColor&gt;</a> DSpinnerPrivate::createDefaultIndicatorColorList(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html">QColor</a> color)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;QColor&gt;</a> colors;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;int&gt;</a> opacitys;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    opacitys &lt;&lt; 100 &lt;&lt; 30 &lt;&lt; 15 &lt;&lt; 10 &lt;&lt; 5 &lt;&lt; 4 &lt;&lt; 3 &lt;&lt; 2 &lt;&lt; 1;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; opacitys.<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html#count">count</a>(); ++i) {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        color.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html#setAlpha">setAlpha</a>(255 * opacitys.<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html#value">value</a>(i) / 100);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        colors &lt;&lt; color;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">return</span> colors;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;DWIDGET_END_NAMESPACE</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">void</span> DSpinner::changeEvent(<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html">QEvent</a> *e)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    Q_D(<a class="code" href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">DSpinner</a>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span> (e-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html#type">type</a>() == QEvent::PaletteChange)</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        d-&gt;indicatorColors.clear();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#changeEvent">QWidget::changeEvent</a>(e);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;QColor&gt;</a> DSpinnerPrivate::createDefaultIndicatorColorList(<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html">QColor</a> color)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;QColor&gt;</a> colors;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList&lt;int&gt;</a> opacitys;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    opacitys &lt;&lt; 100 &lt;&lt; 30 &lt;&lt; 15 &lt;&lt; 10 &lt;&lt; 5 &lt;&lt; 4 &lt;&lt; 3 &lt;&lt; 2 &lt;&lt; 1;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; opacitys.<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html#count">count</a>(); ++i) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        color.<a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html#setAlpha">setAlpha</a>(255 * opacitys.<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html#value">value</a>(i) / 100);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        colors &lt;&lt; color;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> colors;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;DWIDGET_END_NAMESPACE</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aqcolor_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html">QColor</a></div></div>
 <div class="ttc" id="aqwidget_html_y-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#y-prop">QWidget::y</a></div><div class="ttdeci">y</div></div>
 <div class="ttc" id="aqtimer_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qtimer.html">QTimer</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_a6e3cfaabcfbeac02bcdede8856229137"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137">Dtk::Widget::DSpinner::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(QColor color)</div><div class="ttdoc">设置背景颜色</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00115">dspinner.cpp:115</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_a6e3cfaabcfbeac02bcdede8856229137"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137">Dtk::Widget::DSpinner::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(QColor color)</div><div class="ttdoc">设置背景颜色</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00117">dspinner.cpp:117</a></div></div>
 <div class="ttc" id="aqwidget_html_palette-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#palette-prop">QWidget::palette</a></div><div class="ttdeci">palette</div></div>
 <div class="ttc" id="aqwidget_html_rect-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#rect-prop">QWidget::rect</a></div><div class="ttdeci">rect</div></div>
 <div class="ttc" id="aqlist_html_count"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qlist.html#count">QList::count</a></div><div class="ttdeci">int count(const T &amp;value) const const</div></div>
 <div class="ttc" id="aqpainterpath_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a></div></div>
 <div class="ttc" id="aqwidget_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_a31964def4bc3554be77b5937c52e34e2"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">Dtk::Widget::DSpinner::DSpinner</a></div><div class="ttdeci">DSpinner(QWidget *parent=0)</div><div class="ttdoc">创建一个 DSpinner 控件</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00062">dspinner.cpp:62</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_a31964def4bc3554be77b5937c52e34e2"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2">Dtk::Widget::DSpinner::DSpinner</a></div><div class="ttdeci">DSpinner(QWidget *parent=0)</div><div class="ttdoc">创建一个 DSpinner 控件</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00063">dspinner.cpp:63</a></div></div>
 <div class="ttc" id="aqwidget_html_x-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#x-prop">QWidget::x</a></div><div class="ttdeci">x</div></div>
 <div class="ttc" id="aqlist_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList</a></div></div>
 <div class="ttc" id="aqpainter_html"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainter.html">QPainter</a></div></div>
@@ -249,7 +256,7 @@ $(document).ready(function(){initNavTree('dspinner_8cpp_source.html',''); initRe
 <div class="ttc" id="aqobject_html_connect"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#connect">QObject::connect</a></div><div class="ttdeci">QMetaObject::Connection connect(const QObject *sender, const char *signal, const QObject *receiver, const char *method, Qt::ConnectionType type)</div></div>
 <div class="ttc" id="aqwidget_html_changeEvent"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#changeEvent">QWidget::changeEvent</a></div><div class="ttdeci">virtual void changeEvent(QEvent *event)</div></div>
 <div class="ttc" id="aqpainterpath_html_addEllipse"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html#addEllipse">QPainterPath::addEllipse</a></div><div class="ttdeci">void addEllipse(const QRectF &amp;boundingRectangle)</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_afeb86fa66c775c1f2089311f987d4b2b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#afeb86fa66c775c1f2089311f987d4b2b">Dtk::Widget::DSpinner::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">停止旋转动画</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00105">dspinner.cpp:105</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_afeb86fa66c775c1f2089311f987d4b2b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#afeb86fa66c775c1f2089311f987d4b2b">Dtk::Widget::DSpinner::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">停止旋转动画</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00107">dspinner.cpp:107</a></div></div>
 <div class="ttc" id="aqtimer_html_timeout"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qtimer.html#timeout">QTimer::timeout</a></div><div class="ttdeci">void timeout()</div></div>
 <div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html">Dtk::Widget::DSpinner</a></div><div class="ttdoc">可以使用 DSpinner 类快速创建用于指示加载中状态的旋转等待图标动画控件。</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8h_source.html#l00014">dspinner.h:15</a></div></div>
 <div class="ttc" id="aqcolor_html_setAlpha"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qcolor.html#setAlpha">QColor::setAlpha</a></div><div class="ttdeci">void setAlpha(int alpha)</div></div>
@@ -263,17 +270,17 @@ $(document).ready(function(){initNavTree('dspinner_8cpp_source.html',''); initRe
 <div class="ttc" id="aqrectf_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qrectf.html">QRectF</a></div></div>
 <div class="ttc" id="adobject_8h_html_a6b3eb59f9f5c2b7511246f15a0eb25c5"><div class="ttname"><a href="dobject_8h.html#a6b3eb59f9f5c2b7511246f15a0eb25c5">D_DECLARE_PUBLIC</a></div><div class="ttdeci">#define D_DECLARE_PUBLIC(Class)</div><div class="ttdoc">这个宏用于私有类中，它定义了 q_func() 这个函数用于返回公开类的对象，另外将公开类 声明为私有类的友元类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00028">dobject.h:28</a></div></div>
 <div class="ttc" id="aqwidget_html_autoFillBackground-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#autoFillBackground-prop">QWidget::setAutoFillBackground</a></div><div class="ttdeci">void setAutoFillBackground(bool enabled)</div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_a4f68d87645efcc8188409308f074b842"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842">Dtk::Widget::DSpinner::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">开始旋转动画</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00095">dspinner.cpp:95</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_a4f68d87645efcc8188409308f074b842"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842">Dtk::Widget::DSpinner::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">开始旋转动画</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00097">dspinner.cpp:97</a></div></div>
 <div class="ttc" id="aqwidget_html_width-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#width-prop">QWidget::width</a></div><div class="ttdeci">width</div></div>
 <div class="ttc" id="aclass_dtk_1_1_core_1_1_d_object_html"><div class="ttname"><a href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></div><div class="ttdoc">deepin-tool-kit 中所有公开类的祖先类。</div><div class="ttdef"><b>Definition:</b> <a href="dobject_8h_source.html#l00037">dobject.h:38</a></div></div>
-<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_af568d3353a2a59a65b5ffe5d7104c63c"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#af568d3353a2a59a65b5ffe5d7104c63c">Dtk::Widget::DSpinner::isPlaying</a></div><div class="ttdeci">bool isPlaying() const</div><div class="ttdoc">DSpinner 是否正在播放旋转动画</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00085">dspinner.cpp:85</a></div></div>
+<div class="ttc" id="aclass_dtk_1_1_widget_1_1_d_spinner_html_af568d3353a2a59a65b5ffe5d7104c63c"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_spinner.html#af568d3353a2a59a65b5ffe5d7104c63c">Dtk::Widget::DSpinner::isPlaying</a></div><div class="ttdeci">bool isPlaying() const</div><div class="ttdoc">DSpinner 是否正在播放旋转动画</div><div class="ttdef"><b>Definition:</b> <a href="dspinner_8cpp_source.html#l00087">dspinner.cpp:87</a></div></div>
 <div class="ttc" id="aqlist_html_value"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qlist.html#value">QList::value</a></div><div class="ttdeci">T value(int i) const const</div></div>
 <!-- start footer part -->
 		<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 			<ul>
 				<li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dspinner.cpp</b></li>
 				<li class="footer">
-					Generated on 2020年 九月 27日 星期日 14:31:27 for Deepin Tool Kit by <a href="http://www.doxygen.org/index.html">
+					Generated on 2020年 九月 28日 星期一 09:47:14 for Deepin Tool Kit by <a href="http://www.doxygen.org/index.html">
 					<img class="footer" src="doxygen.svg" alt="doxygen"/></a> 1.8.20.
 					Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
 				</li>

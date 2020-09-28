@@ -1,15 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"class_d_palette.html#a8cdc9a624eedd442805eb37d4b17a906":[8,0,33,30],
-"class_d_palette.html#a9302cbcb5c498468f74fa72b3e748f9c":[8,0,33,26],
-"class_d_palette.html#a95b23584cd7bb96267143092a588e3cf":[8,0,33,29],
-"class_d_palette.html#aa00475f6596a5edd35cdced6f27a20e9":[8,0,33,20],
-"class_d_palette.html#aa721ffb58b7e81b4b492ba2fc1416a4e":[8,0,33,28],
-"class_d_palette.html#aa7e51ebcbc10dd0276c8fb25f96b6373":[8,0,33,15],
-"class_d_palette.html#aaf09fcdbb77242a8438a447cfc79897a":[8,0,33,3],
-"class_d_palette.html#ab303d4e8dc54dc9ea01bdb183daa0b79":[8,0,33,25],
-"class_d_palette.html#ab72793caff7dbc66a4ab2d98ce673a24":[8,0,33,32],
-"class_d_palette.html#aba3c56adaa86d09a5f6f0a6a2c437b45":[8,0,33,1],
 "class_d_palette.html#ac99db4e2d11d9feb32ea7ed488cb5a93":[8,0,33,22],
 "class_d_palette.html#ad41ae1e18822fb425c74562e6c466294":[8,0,33,31],
 "class_d_palette.html#ad86059042d954a91fc269192e5463d3d":[8,0,33,7],
@@ -249,5 +239,15 @@ var NAVTREEINDEX1 =
 "class_d_platform_theme.html#af4e5d2f20de51d45ff43b95c5fe62561":[8,0,36,71],
 "class_d_platform_theme.html#af53c8ce18f2b9cfb643ff9f5a287e06a":[8,0,36,92],
 "class_d_platform_theme.html#af6d7b7f714a9dd2008e044156fc6667f":[8,0,36,166],
-"class_d_platform_theme.html#af7ff54f9dbf7d0de36a3caf935fe230f":[8,0,36,113]
+"class_d_platform_theme.html#af7ff54f9dbf7d0de36a3caf935fe230f":[8,0,36,113],
+"class_d_platform_theme.html#af8b64b35fb16b2264485020434938134":[8,0,36,106],
+"class_d_platform_theme.html#af9374d8153b0d1583011a0ce237ea21f":[8,0,36,89],
+"class_d_platform_theme.html#af93eef289a7af8c8831ae7b705fa32ba":[8,0,36,44],
+"class_d_platform_theme.html#afc3702898e3693647ad2936adafdecc3":[8,0,36,123],
+"class_d_platform_theme.html#afd3846cc36f20783c23504a3df197e67":[8,0,36,90],
+"class_d_platform_theme.html#afdd6d00cce07064ddf0901fa090f3bb7":[8,0,36,35],
+"class_d_platform_theme.html#afeaba5a1af5c26dc6d8e364d5d23d05b":[8,0,36,135],
+"class_d_region_monitor.html":[8,0,38],
+"class_d_region_monitor.html#a1d51e1983d450e513fc4e8ed28383e68":[8,0,38,15],
+"class_d_region_monitor.html#a1d874b2ff9ca97a148dfa88809917fa7":[8,0,38,6]
 };
