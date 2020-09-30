@@ -152,7 +152,7 @@ var searchData=
   ['host_3451',['host',['https://doc.qt.io/qt-5/qurl.html#host',1,'QUrl']]],
   ['hostvisiblememoryindex_3452',['hostVisibleMemoryIndex',['https://doc.qt.io/qt-5/qvulkanwindow.html#hostVisibleMemoryIndex',1,'QVulkanWindow']]],
   ['hotspot_3453',['hotSpot',['https://doc.qt.io/qt-5/qgesture.html#hotSpot-prop',1,'QGesture::hotSpot()'],['https://doc.qt.io/qt-5/qcursor.html#hotSpot',1,'QCursor::hotSpot()'],['https://doc.qt.io/qt-5/qdrag.html#hotSpot',1,'QDrag::hotSpot()'],['https://doc.qt.io/qt-5/qgesture.html#hotSpot-prop',1,'QGesture::hotSpot()']]],
-  ['hour_3454',['Hour',['../class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a9e6584592385affd85e9c31ce6b752eba0650634ed29075b9327e7fc60c990040',1,'Dtk::Core::DTimeUnitFormatter::Hour()'],['https://doc.qt.io/qt-5/qtime.html#hour',1,'QTime::hour()']]],
+  ['hour_3454',['hour',['https://doc.qt.io/qt-5/qtime.html#hour',1,'QTime::hour()'],['../class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a9e6584592385affd85e9c31ce6b752eba0650634ed29075b9327e7fc60c990040',1,'Dtk::Core::DTimeUnitFormatter::Hour()']]],
   ['hourlyrollover_3455',['HourlyRollover',['../class_dtk_1_1_core_1_1_rolling_file_appender.html#a993d4921afa93843ed79e7ea89722c84a666e96c5888a170c1e627c579b835f15',1,'Dtk::Core::RollingFileAppender']]],
   ['hover_3456',['hover',['https://doc.qt.io/qt-5/qaction.html#hover',1,'QAction']]],
   ['hovered_3457',['hovered',['https://doc.qt.io/qt-5/qaction.html#hovered',1,'QAction::hovered()'],['https://doc.qt.io/qt-5/qactiongroup.html#hovered',1,'QActionGroup::hovered()'],['https://doc.qt.io/qt-5/qmenu.html#hovered',1,'QMenu::hovered()'],['https://doc.qt.io/qt-5/qmenubar.html#hovered',1,'QMenuBar::hovered()']]],
