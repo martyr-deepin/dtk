@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaef2675221d21e9974482470af1fcc75f":[8,0,2,10,0,5],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaf0bcc9d5b12a752f0644b36a36d7e47f":[8,0,2,10,0,15],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaf30d4aa02e9ba6d359f85162939e7a8f":[8,0,2,10,0,14],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaf636af3e486c6b8713500e3c4db9ac8f":[8,0,2,10,0,49],
@@ -38,7 +39,6 @@ var NAVTREEINDEX15 =
 "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaaa30c73e46ad0ac74921ef8f9ef0d22df":[8,0,2,10,1,2],
 "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaaa85961f2acd03af14e8a8eb2a155a337":[8,0,2,10,1,12],
 "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaaa8b5e50d22cd6d08acb069bb5b78d5ba":[8,0,2,10,1,7],
-"classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaaae7b118ab9d7017dcc039e6fc548c808":[8,0,2,10,1,4],
 "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaab1826cfd667bdd04c929bb6cc5ea9705":[8,0,2,10,1,44],
 "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaab3c68425252de5f6e6a9b12e66582fdb":[8,0,2,10,1,15],
 "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaab50050750b1505e2f087960c17e07906":[8,0,2,10,1,25],
@@ -191,10 +191,8 @@ var NAVTREEINDEX15 =
 "dfiledragserver__p_8h_source.html":[9,0,1,1,1,1],
 "dfileiconprovider_8cpp_source.html":[9,0,2,0,1,6],
 "dfileiconprovider_8h_source.html":[9,0,2,0,1,7],
-"dfileservices_8h_source.html":[9,0,0,1,4,8],
 "dfileservices__dummy_8cpp_source.html":[9,0,0,1,4,9],
 "dfileservices__linux_8cpp_source.html":[9,0,0,1,4,10],
-"dfilesystemwatcher_8h_source.html":[9,0,0,1,1,3],
 "dfilesystemwatcher__dummy_8cpp_source.html":[9,0,0,1,1,4],
 "dfilesystemwatcher__dummy__p_8h_source.html":[9,0,0,1,1,0,1],
 "dfilesystemwatcher__linux_8cpp_source.html":[9,0,0,1,1,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX15 =
 "dir_1036c08d7422694d2065edb4ffe1ee98.html":[9,0,3,1],
 "dir_10c6bab37580ef783b51c082132dffea.html":[9,0,3,3,1,0,0],
 "dir_119aa013467e95cb00c6469cad12208b.html":[9,0,0,1],
-"dir_1695026d0b1107aa9928036efcac88cb.html":[9,0,2,0,1,0]
+"dir_1695026d0b1107aa9928036efcac88cb.html":[9,0,2,0,1,0],
+"dir_182c8bcd1e93a68b86e68b17c9642c63.html":[9,0,3,2,0,0],
+"dir_2a00c4d5b03017d49448c775b59ba35f.html":[9,0,0,1,0]
 };

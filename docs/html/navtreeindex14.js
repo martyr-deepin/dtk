@@ -1,9 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"class_q_deepin_file_dialog_helper.html#a4683c820aebb6a93791e59041354d44e":[8,0,57,4],
-"class_q_deepin_file_dialog_helper.html#a53bededc58f1e0923ebfd69a82c29f62":[8,0,57,9],
-"class_q_deepin_file_dialog_helper.html#a71648dc0d228b5ac147d6a7de7182515":[8,0,57,2],
-"class_q_deepin_file_dialog_helper.html#a8d69c8b5c6b477acf5136fce6e961938":[8,0,57,12],
 "class_q_deepin_file_dialog_helper.html#a9ca9da87235dc7890fb405ff0f7ebb29":[8,0,57,7],
 "class_q_deepin_file_dialog_helper.html#aac5d5e352c6d49c890a42274f7ab5d57":[8,0,57,8],
 "class_q_deepin_file_dialog_helper.html#ab962791bbf196be0400c4b8a0a7553a0":[8,0,57,3],
@@ -183,6 +179,8 @@ var NAVTREEINDEX14 =
 "classdstyle_1_1_d_style_animation.html#a608d672abc768e7ae609d5e102c6331f":[8,0,2,7,11],
 "classdstyle_1_1_d_style_animation.html#a669d85c66dba365df73d55862e2d46fd":[8,0,2,7,9],
 "classdstyle_1_1_d_style_animation.html#a7ceb0042f24abdbba81b44cdc69d7a55":[8,0,2,7,13],
+"class_dtk_1_1_widget_1_1_d_about_dialog.html#ac9d53d209eb395fcfba1656f4d7870f0":[8,0,3,1,10,16],
+"class_dtk_1_1_widget_1_1_d_about_dialog.html#ab4b954d0a3985e60647373fbd503bf4f":[8,0,3,1,10,15],
 "classdstyle_1_1_d_style_animation.html#a906c26f0687f5ca1abd2e3f55d043eab":[8,0,2,7,3],
 "classdstyle_1_1_d_style_animation.html#a95fd9038733aabd8e93c6b7232cea2a3":[8,0,2,7,10],
 "classdstyle_1_1_d_style_animation.html#a9fe7eb703c1f2aa76d1c01343d122f21":[8,0,2,7,15],
@@ -211,6 +209,10 @@ var NAVTREEINDEX14 =
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa36466700e96334f3a6588d219eb2d3c6":[8,0,2,10,0,8],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa3c03d392d9fdef3273a501096c456dee":[8,0,2,10,0,1],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa3d1cf0cf2178e73dbdb9af9dd3969733":[8,0,2,10,0,43],
+"class_dtk_1_1_widget_1_1_d_drawer.html#aa83c7f76a4fa352b8fb8b84313c3b5ec":[8,0,3,1,41,6],
+"class_dtk_1_1_widget_1_1_d_drawer.html#ad13a146a7125f572713b30e9dd7aa36a":[8,0,3,1,41,4],
+"class_dtk_1_1_widget_1_1_change_d_dialog.html#a6e8561a4c474e49d5748eeb52a19fa25":[8,0,3,1,6,0],
+"class_dtk_1_1_widget_1_1_change_d_dialog.html":[8,0,3,1,6],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa3ee8b35fac39dd739bf5ee0197f3d066":[8,0,2,10,0,7],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa445e917e114c14b68696d1d616ec898f":[8,0,2,10,0,54],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa491b54b409ccf022d9e1c5772cb9c14c":[8,0,2,10,0,37],
@@ -218,7 +220,6 @@ var NAVTREEINDEX14 =
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa561d99179e34a0b3591b060a64078136":[8,0,2,10,0,9],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa65d39e682ba5efb65377dab66ba8cb2c":[8,0,2,10,0,36],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa67259aafcafe7e832c903e7a43d2739e":[8,0,2,10,0,4],
-"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa6787f3fa3ad1aa1c115e8c88441571c8":[8,0,2,10,0,6],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa68b9c13f7d5d86c429a7c9b684b5c664":[8,0,2,10,0,25],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa6d6d33c5fa2c0035f02201c60bfef9bb":[8,0,2,10,0,24],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffa74219cde4ff38bf6ba5e3ea391bc4c34":[8,0,2,10,0,50],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffade6920c159bb064e948c9d011246ea45":[8,0,2,10,0,27],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffae1015076842f5ed816bf51675227e0ca":[8,0,2,10,0,2],
 "classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffae37b8ee5aa91d9548cbd87b0ce6b1aa5":[8,0,2,10,0,17],
-"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaea899dc4b816f42fbb82ba418fced9d9":[8,0,2,10,0,28],
-"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaef2675221d21e9974482470af1fcc75f":[8,0,2,10,0,5]
+"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffaea899dc4b816f42fbb82ba418fced9d9":[8,0,2,10,0,28]
 };

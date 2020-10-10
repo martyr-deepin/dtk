@@ -1,8 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"class_dtk_1_1_widget_1_1_d_tick_effect.html#aa795388dd7eae0f6cf965d969e1d4312":[8,0,3,1,115,6],
-"class_dtk_1_1_widget_1_1_d_tick_effect.html#aba005e79a326f10d6a031270f3f8d917":[8,0,3,1,115,4],
-"class_dtk_1_1_widget_1_1_d_tick_effect.html#ad7e1e1e770c3e4d313ac8a7335315e94":[8,0,3,1,115,5],
 "class_dtk_1_1_widget_1_1_d_tip_label.html":[8,0,3,1,116],
 "class_dtk_1_1_widget_1_1_d_tip_label.html#a75d5d655ccd77af3e67a24cff05bc757":[8,0,3,1,116,5],
 "class_dtk_1_1_widget_1_1_d_tip_label.html#aa9d239990ef5fd7a0184939f27e18f89":[8,0,3,1,116,4],
@@ -117,7 +114,6 @@ var NAVTREEINDEX13 =
 "class_dtk_1_1_widget_1_1_d_video_widget.html#aa4c5dc107e1eea423b8b6dfb241e78c8":[8,0,3,1,125,30],
 "class_dtk_1_1_widget_1_1_d_video_widget.html#aacf1239a0af002007322d3eccc7891ac":[8,0,3,1,125,13],
 "class_dtk_1_1_widget_1_1_d_video_widget.html#aba7a9a6ef47e0b716f4c1cfa043af7ff":[8,0,3,1,125,26],
-"class_dtk_1_1_widget_1_1_d_video_widget.html#abd38afb5f3a51e9663d2c662674f0b08":[8,0,3,1,125,9],
 "class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f":[8,0,3,1,125,36],
 "class_dtk_1_1_widget_1_1_d_video_widget.html#ace22d4de14f6488429e13c2b919630a8":[8,0,3,1,125,16],
 "class_dtk_1_1_widget_1_1_d_video_widget.html#ad63f037596279821dac1f16dd1b6ec9f":[8,0,3,1,125,35],
@@ -154,6 +150,7 @@ var NAVTREEINDEX13 =
 "class_dtk_1_1_widget_1_1_d_water_progress.html#a8cff4ed1921878190422a67386011471":[8,0,3,1,128,8],
 "class_dtk_1_1_widget_1_1_d_water_progress.html#a98f2890f1db6c6bb11abb68a8dbff3f1":[8,0,3,1,128,7],
 "class_dtk_1_1_widget_1_1_d_water_progress.html#a9b0c1abd9aff1f4cb08e164b9605d352":[8,0,3,1,128,1],
+"":[8,0,1],
 "class_dtk_1_1_widget_1_1_d_water_progress.html#abc224edeb99ac9573198a709a41ff502":[8,0,3,1,128,10],
 "class_dtk_1_1_widget_1_1_d_water_progress.html#ac7a2f114fc635b7ab8bb99d2b05bdfc7":[8,0,3,1,128,2],
 "class_dtk_1_1_widget_1_1_d_water_progress.html#adfb818e4b17ef792a5a9bc33acab0d58":[8,0,3,1,128,4],
@@ -249,5 +246,8 @@ var NAVTREEINDEX13 =
 "class_q_deepin_file_dialog_helper.html#a113d48032a208afd480f5d8c94500780a876418e953ec8e0b7fde2abf6140f34a":[8,0,57,0,1],
 "class_q_deepin_file_dialog_helper.html#a113d48032a208afd480f5d8c94500780ac8f4783520f150ba6caff3cd1f33461f":[8,0,57,0,0],
 "class_q_deepin_file_dialog_helper.html#a1167eb2b28e54541fa8c8f2e324b74d2":[8,0,57,13],
-"class_q_deepin_file_dialog_helper.html#a3fcc51dade64762de05030fad2ad76f2":[8,0,57,11]
+"class_q_deepin_file_dialog_helper.html#a3fcc51dade64762de05030fad2ad76f2":[8,0,57,11],
+"class_q_deepin_file_dialog_helper.html#a4683c820aebb6a93791e59041354d44e":[8,0,57,4],
+"class_q_deepin_file_dialog_helper.html#a53bededc58f1e0923ebfd69a82c29f62":[8,0,57,9],
+"class_q_deepin_file_dialog_helper.html#a71648dc0d228b5ac147d6a7de7182515":[8,0,57,2]
 };

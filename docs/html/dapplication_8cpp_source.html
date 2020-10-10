@@ -411,8 +411,8 @@ $(document).ready(function(){initNavTree('dapplication_8cpp_source.html',''); in
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">for</span> (<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *window : qApp-&gt;topLevelWidgets()) {</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (qobject_cast&lt;DMainWindow*&gt;(window)) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="comment">// 如果窗口最小化，應當先將其show出來</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">if</span> (window-&gt;isMinimized())</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="comment">// 如果窗口最小化或者隐藏了，應當先將其show出來</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">if</span> (window-&gt;isMinimized() || window-&gt;isHidden())</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                window-&gt;showNormal();</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            window-&gt;activateWindow();</div>
@@ -1043,7 +1043,7 @@ $(document).ready(function(){initNavTree('dapplication_8cpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_7e9cf0e2371012f8aca5a790419dfe62.html">src</a></li><li class="navelem"><a class="el" href="dir_0f0f1158b2ab9c2e2656097b145c93da.html">widgets</a></li><li class="navelem"><b>dapplication.cpp</b></li>
-    <li class="footer">生成于 2020年 十月 9日 星期五 13:41:36 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 十月 10日 星期六 09:17:30 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

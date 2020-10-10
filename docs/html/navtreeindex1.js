@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"class_d_palette.html#aba3c56adaa86d09a5f6f0a6a2c437b45":[8,0,33,1],
 "class_d_palette.html#ac99db4e2d11d9feb32ea7ed488cb5a93":[8,0,33,22],
 "class_d_palette.html#ad41ae1e18822fb425c74562e6c466294":[8,0,33,31],
 "class_d_palette.html#ad86059042d954a91fc269192e5463d3d":[8,0,33,7],
@@ -21,6 +22,7 @@ var NAVTREEINDEX1 =
 "class_d_platform_handle.html#a20a524cd0570b3b5974bf24226070f34":[8,0,35,30],
 "class_d_platform_handle.html#a2403d915a8a8b6e09a2544b1bfb0d474":[8,0,35,25],
 "class_d_platform_handle.html#a263b04b494f237d58e5c80565eccb6cc":[8,0,35,60],
+"":[8,0,3,0,0],
 "class_d_platform_handle.html#a2865e19535533fc41a09290e1da0fb2a":[8,0,35,15],
 "class_d_platform_handle.html#a2d9570a611971e35aa41965f37fb5518":[8,0,35,17],
 "class_d_platform_handle.html#a363a1c10ff4cf65a99ab2ad2190d7aa1":[8,0,35,35],
@@ -36,6 +38,7 @@ var NAVTREEINDEX1 =
 "class_d_platform_handle.html#a7b59ad18cd1edf476120c09035d2974c":[8,0,35,31],
 "class_d_platform_handle.html#a825bb81c64c1460194826b2a183671bd":[8,0,35,7],
 "class_d_platform_handle.html#a829daebc38ff2b31cc67da101caaf4ab":[8,0,35,27],
+"":[8,0,3,0],
 "class_d_platform_handle.html#a845dbc8d40ab70865b6a7731f1a6d6c5":[8,0,35,18],
 "class_d_platform_handle.html#a852c3481aaaf38e2efde18e78a7d05e5":[8,0,35,57],
 "class_d_platform_handle.html#a867185aced745da4b6d2b2b7e0213060":[8,0,35,13],
@@ -51,6 +54,7 @@ var NAVTREEINDEX1 =
 "class_d_platform_handle.html#ab1e032a9f8338658f182430c202f92ea":[8,0,35,46],
 "class_d_platform_handle.html#ab218478b2e1a97b97d9892abfb0fdf30":[8,0,35,41],
 "class_d_platform_handle.html#abd8f5264f9c2923b303348e432bc3710":[8,0,35,45],
+"":[8,0,3],
 "class_d_platform_handle.html#ac034bc4e0ace673d70e57d58dd138490":[8,0,35,6],
 "class_d_platform_handle.html#ac63fcf5f4809b3b8e8d29968f2f6d5d0":[8,0,35,52],
 "class_d_platform_handle.html#ac6a04abd7690ba208c5ba9f4fd2fffb6":[8,0,35,59],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "class_d_platform_theme.html#af93eef289a7af8c8831ae7b705fa32ba":[8,0,36,44],
 "class_d_platform_theme.html#afc3702898e3693647ad2936adafdecc3":[8,0,36,123],
 "class_d_platform_theme.html#afd3846cc36f20783c23504a3df197e67":[8,0,36,90],
-"class_d_platform_theme.html#afdd6d00cce07064ddf0901fa090f3bb7":[8,0,36,35],
-"class_d_platform_theme.html#afeaba5a1af5c26dc6d8e364d5d23d05b":[8,0,36,135],
-"class_d_region_monitor.html":[8,0,38],
-"class_d_region_monitor.html#a1d51e1983d450e513fc4e8ed28383e68":[8,0,38,15],
-"class_d_region_monitor.html#a1d874b2ff9ca97a148dfa88809917fa7":[8,0,38,6]
+"class_d_platform_theme.html#afdd6d00cce07064ddf0901fa090f3bb7":[8,0,36,35]
 };
