@@ -1,13 +1,13 @@
 var class_dtk_1_1_widget_1_1_d_circle_progress =
 [
     [ "DCircleProgress", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a010c3867a3ffddd0a2a7805f21e224fc", null ],
-    [ "backgroundColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a232dfe720cdda8310b1500322a36ea93", null ],
+    [ "backgroundColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a8cbf6f16a0d5802b811edffb06282c8c", null ],
     [ "bottomLabel", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a34ce5b6649a007f121a009f8287a0a9d", null ],
-    [ "chunkColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#afdf7c97b22507f939d3152025a8d6190", null ],
+    [ "chunkColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#ab74f91dd8e825fc37fedb6dede1127c7", null ],
     [ "clicked", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a07de5e144e8c61deb5129182166de6df", null ],
     [ "enterEvent", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a7584f3b9dd4168fa9790211b0316acad", null ],
     [ "leaveEvent", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a165e0708e30f96769085614752cfdca5", null ],
-    [ "lineWidth", "class_dtk_1_1_widget_1_1_d_circle_progress.html#adb2fb3b055e95a0ccfa5e84d2c32dfe2", null ],
+    [ "lineWidth", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a3fda74d77af7cd1027ce9dde7ec5c2ea", null ],
     [ "mouseEntered", "class_dtk_1_1_widget_1_1_d_circle_progress.html#ab97032072554cde6809425ac589b7679", null ],
     [ "mouseLeaved", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a50179782c7345f86f227c34283512897", null ],
     [ "mouseReleaseEvent", "class_dtk_1_1_widget_1_1_d_circle_progress.html#acd889ae621fedff8e71bac4aa7dca7cd", null ],
@@ -21,7 +21,7 @@ var class_dtk_1_1_widget_1_1_d_circle_progress =
     [ "topLabel", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a3d55da6541226fbfcbfa1c10fe234634", null ],
     [ "value", "class_dtk_1_1_widget_1_1_d_circle_progress.html#ace2b2bfcca94a12c95e8b836a6594222", null ],
     [ "valueChanged", "class_dtk_1_1_widget_1_1_d_circle_progress.html#aa588fd00d12b7ec7375740f198efdc27", null ],
-    [ "backgroundColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#ad14d1c7970aa66dd496d722613705276", null ],
-    [ "chunkColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#aa60f63c25dfebc53af06917f9362f33d", null ],
-    [ "lineWidth", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a8096c644d40b51d8247e43d11aa0b8dc", null ]
+    [ "backgroundColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a4a92119a200b1c87759cd66064d2e419", null ],
+    [ "chunkColor", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a5bfd81296dc2f6429daaf0f3519854f0", null ],
+    [ "lineWidth", "class_dtk_1_1_widget_1_1_d_circle_progress.html#a5490306738b931953198891297b3e53a", null ]
 ];

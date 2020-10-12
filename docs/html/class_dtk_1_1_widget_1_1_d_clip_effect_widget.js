@@ -12,6 +12,6 @@ var class_dtk_1_1_widget_1_1_d_clip_effect_widget =
     [ "setClipPath", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#a4144411fe5678fb74aa902185ad4394e", null ],
     [ "setMargins", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#a9bd51b5018fcaa07240113b00fe1efaf", null ],
     [ "showEvent", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#ad9f7b95dd3cecbd2cb835d3f98a486f7", null ],
-    [ "clipPath", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#a8730dfeee0eaf86547bbf459f636cfbb", null ],
-    [ "margins", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#ab69a3c8075c0f4bf23f9fac45fc4cc40", null ]
+    [ "clipPath", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#a4329da05f871ec9e7de8111c8a2d87f1", null ],
+    [ "margins", "class_dtk_1_1_widget_1_1_d_clip_effect_widget.html#af0b93bc86df3e53b65455e09011cb9f9", null ]
 ];

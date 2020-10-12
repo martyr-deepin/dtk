@@ -11,7 +11,7 @@ var class_d_region_monitor =
     [ "DRegionMonitor", "class_d_region_monitor.html#a72ab2fc6d0c6acd417f3c37370054708", null ],
     [ "buttonPress", "class_d_region_monitor.html#ac5fed63d984bc0dbcb268a35a3e89c63", null ],
     [ "buttonRelease", "class_d_region_monitor.html#ae4845440891b7a758c6d08f747eb645e", null ],
-    [ "coordinateType", "class_d_region_monitor.html#ac1df94edd69dfbebc0f805fe45b8d27c", null ],
+    [ "coordinateType", "class_d_region_monitor.html#ac1de9bfd4972d54fad8be4b4cb588961", null ],
     [ "coordinateTypeChanged", "class_d_region_monitor.html#a1d874b2ff9ca97a148dfa88809917fa7", null ],
     [ "cursorMove", "class_d_region_monitor.html#ab5c3d67441fb61130821bec31503129b", null ],
     [ "keyPress", "class_d_region_monitor.html#ac97e3f3abe131169c472fe7c2fb3a2ed", null ],
@@ -23,5 +23,5 @@ var class_d_region_monitor =
     [ "setWatchedRegion", "class_d_region_monitor.html#a60552d360eb54cac2cab87ec350d6a74", null ],
     [ "unregisterRegion", "class_d_region_monitor.html#a1d51e1983d450e513fc4e8ed28383e68", null ],
     [ "watchedRegion", "class_d_region_monitor.html#a80ed3684af9b37c7c585d79ff912db8d", null ],
-    [ "coordinateType", "class_d_region_monitor.html#af0dd19fc0db586e4912e9a0e7af02769", null ]
+    [ "coordinateType", "class_d_region_monitor.html#aa6992bd6c2f2a916a4eb3de442d08bcd", null ]
 ];

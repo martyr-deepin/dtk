@@ -1,10 +1,9 @@
 <map id="Dtk::Widget::DStyleOption" name="Dtk::Widget::DStyleOption">
-<area shape="rect" id="node1" title="dcxb插件通过DStyleOption来控制控件的样式" alt="" coords="5,173,199,199"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_style_option_background_group.html" title=" " alt="" coords="260,5,453,47"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_style_option_button.html" title=" " alt="" coords="260,71,453,112"/>
-<area shape="rect" id="node5" href="$class_dtk_1_1_widget_1_1_d_style_option_floating_widget.html" title=" " alt="" coords="260,136,453,177"/>
-<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_style_option_icon.html" title=" " alt="" coords="247,202,467,229"/>
-<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_style_option_line_edit.html" title="Dtk::Widget::DLineEdit使用的样式配置" alt="" coords="260,253,453,295"/>
-<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_d_style_option_view_item.html" title=" " alt="" coords="260,319,453,360"/>
-<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_style_option_button_box_button.html" title=" " alt="" coords="515,71,708,112"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_style_option_background_group.html" title="Dtk::Widget::DStyleOption\lBackgroundGroup" alt="" coords="260,5,453,47"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_style_option_button.html" title="Dtk::Widget::DStyleOption\lButton" alt="" coords="260,71,453,112"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_widget_1_1_d_style_option_floating_widget.html" title="Dtk::Widget::DStyleOption\lFloatingWidget" alt="" coords="260,136,453,177"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_style_option_icon.html" title="Dtk::Widget::DStyleOptionIcon" alt="" coords="247,202,467,229"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_style_option_line_edit.html" title="Dtk::Widget::DLineEdit使用的样式配置 " alt="" coords="260,253,453,295"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_d_style_option_view_item.html" title="Dtk::Widget::DStyleOption\lViewItem" alt="" coords="260,319,453,360"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_style_option_button_box_button.html" title="Dtk::Widget::DStyleOption\lButtonBoxButton" alt="" coords="515,71,708,112"/>
 </map>

@@ -7,7 +7,7 @@ var class_dtk_1_1_widget_1_1_d_settings_dialog =
     [ "setGroupVisible", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#a2fcb25d63515c488ab51802ccb5b0afb", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#ae9079161d0f00604929ad641c8e9abdb", null ],
     [ "setResetVisible", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#a39c8904428da5b20338d4fe344c4b218", null ],
-    [ "updateSettings", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#a38feaaa9700338a526d14e438763bc7b", null ],
     [ "updateSettings", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#ac644e7e4aacde637dc113928d04a6738", null ],
+    [ "updateSettings", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#a38feaaa9700338a526d14e438763bc7b", null ],
     [ "widgetFactory", "class_dtk_1_1_widget_1_1_d_settings_dialog.html#a6e9900af3d6911dbe161a40da75bd268", null ]
 ];

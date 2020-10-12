@@ -23,12 +23,12 @@ var class_dtk_1_1_widget_1_1_d_about_dialog =
     [ "websiteLink", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a4881e63c0313262fcd93ee463de151c9", null ],
     [ "websiteName", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a8b4d76fb947b49e861f6eedd13524a7c", null ],
     [ "windowTitle", "class_dtk_1_1_widget_1_1_d_about_dialog.html#ac736dcae8b55aef6959d291d02ac5728", null ],
-    [ "acknowledgementLink", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a41f6ad1fa4f1365c0b1b9424ab4f067e", null ],
-    [ "description", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a3311a13f23131543a166f9907e41b2f8", null ],
-    [ "license", "class_dtk_1_1_widget_1_1_d_about_dialog.html#af67a85b4ae234ff3348bad3266388453", null ],
-    [ "productName", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a252bd8fbff1e35375f01d7c1af700d83", null ],
-    [ "version", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a19d2e55a2910fcb4d9a0ccdad058f900", null ],
-    [ "websiteLink", "class_dtk_1_1_widget_1_1_d_about_dialog.html#adf3b95e47b1455c334eb267938b3e6cb", null ],
-    [ "websiteName", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a5270fd2563edaea67bc7f3ff01e638df", null ],
-    [ "windowTitle", "class_dtk_1_1_widget_1_1_d_about_dialog.html#ae2e095e3ebcd61430ba3b4c023b95d49", null ]
+    [ "acknowledgementLink", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a166b18ad3ee53f80cb19fa958f0de211", null ],
+    [ "description", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a353fff67bf36bb19045d16d175f20ee1", null ],
+    [ "license", "class_dtk_1_1_widget_1_1_d_about_dialog.html#ac53fe4b369ff9126cb5342e52fc6302b", null ],
+    [ "productName", "class_dtk_1_1_widget_1_1_d_about_dialog.html#ae97483f9a73132ecdbbe63f948ccdaec", null ],
+    [ "version", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a769ac8b9dea73503b8a8890892de9210", null ],
+    [ "websiteLink", "class_dtk_1_1_widget_1_1_d_about_dialog.html#afada5731af21e45e68248d1559e78618", null ],
+    [ "websiteName", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a1088e3ed8938e9c9c64aba7bf9ce51b3", null ],
+    [ "windowTitle", "class_dtk_1_1_widget_1_1_d_about_dialog.html#a905c76a59014cc95caa6411040cf5b94", null ]
 ];

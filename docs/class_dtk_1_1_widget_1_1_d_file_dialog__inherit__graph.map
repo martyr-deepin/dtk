@@ -1,8 +1,7 @@
 <map id="Dtk::Widget::DFileDialog" name="Dtk::Widget::DFileDialog">
-<area shape="rect" id="node1" title="DFileDialog 类提供了一个可供用户选择文件或目录的对话框." alt="" coords="11,304,192,331"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qfiledialog.html" title=" " alt="" coords="53,229,149,256"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qdialog.html" title=" " alt="" coords="64,155,139,181"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qfiledialog.html" title="QFileDialog" alt="" coords="53,229,150,256"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qdialog.html" title="QDialog" alt="" coords="64,155,139,181"/>
+<area shape="rect" id="node4" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="62,80,141,107"/>
+<area shape="rect" id="node5" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node6" href="/home/union/PR/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="105,5,215,32"/>
 </map>

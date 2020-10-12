@@ -15,11 +15,8 @@ var class_dtk_1_1_widget_1_1_d_icon_button =
     [ "setEnabledCircle", "class_dtk_1_1_widget_1_1_d_icon_button.html#a97969ee895b5fe5eb0ba654de306328c", null ],
     [ "setFlat", "class_dtk_1_1_widget_1_1_d_icon_button.html#af28b4774cc6b83997f5f1a1c1115a446", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d", null ],
-    [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#a0c1c9e4a082e5e9f9a48f2a5758cd154", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#ad676e07db34f010e7a191002572c17cd", null ],
-    [ "setText", "class_dtk_1_1_widget_1_1_d_icon_button.html#ad62458f7efb4956bd6e5c99b73c8cd37", null ],
+    [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#a0c1c9e4a082e5e9f9a48f2a5758cd154", null ],
     [ "sizeHint", "class_dtk_1_1_widget_1_1_d_icon_button.html#a16ba4765b32ff6cadd3452a33e72e602", null ],
-    [ "text", "class_dtk_1_1_widget_1_1_d_icon_button.html#a98ac55887ff34ae2a9cbbc94d512d2af", null ],
-    [ "flat", "class_dtk_1_1_widget_1_1_d_icon_button.html#a9ebc09f079b5de8b1557e9b4e7d99648", null ],
-    [ "text", "class_dtk_1_1_widget_1_1_d_icon_button.html#afb458dc6c00935605ce75eb38195d1c0", null ]
+    [ "flat", "class_dtk_1_1_widget_1_1_d_icon_button.html#a9ebc09f079b5de8b1557e9b4e7d99648", null ]
 ];

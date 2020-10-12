@@ -11,11 +11,11 @@ var class_dtk_1_1_widget_1_1_d_enhanced_widget =
     [ "setTarget", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a5fa8807fdfc63cfe34c6f942e23d631c", null ],
     [ "showed", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a9cb8c1806667af59afe963fbbb238b8e", null ],
     [ "sizeChanged", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ae03e3dda38da218cb0d91e430a989b3a", null ],
-    [ "target", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#aae2ca905d60ca4e28ebbe8c5d62d02db", null ],
+    [ "target", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#aade7e2b6739db699db929329901b7b7a", null ],
     [ "targetChanged", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ab97986ed63393200160fab08f85bb7a3", null ],
     [ "widthChanged", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a2dc70367bb5bdd4d5fe65165568e2944", null ],
     [ "xChanged", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ac0a12f67d5b9987dd7d08a16c0c76d1c", null ],
     [ "yChanged", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a9d55588efe46c066a3c13ba92bdf5f17", null ],
-    [ "enabled", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a15349ee46df993327a8dc99e8bdd6da7", null ],
-    [ "target", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a337d32e792a82c72702fc253a70ab125", null ]
+    [ "enabled", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#ad4adea86c11057794fcb624b0a92db53", null ],
+    [ "target", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html#a1d504d227220c0d23c8c3024fea0f39b", null ]
 ];

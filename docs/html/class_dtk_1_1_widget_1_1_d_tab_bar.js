@@ -1,8 +1,8 @@
 var class_dtk_1_1_widget_1_1_d_tab_bar =
 [
     [ "DTabBar", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a571678cf0f8f192afed2f65e049e1efb", null ],
-    [ "addTab", "class_dtk_1_1_widget_1_1_d_tab_bar.html#ad286151fc198dfdcf9a77634c28bad11", null ],
     [ "addTab", "class_dtk_1_1_widget_1_1_d_tab_bar.html#ad15c47dd4f6ef0be7abd66b43cf49e63", null ],
+    [ "addTab", "class_dtk_1_1_widget_1_1_d_tab_bar.html#ad286151fc198dfdcf9a77634c28bad11", null ],
     [ "autoHide", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a89f012c51db1baf3b66e975acb97c16d", null ],
     [ "canInsertFromMimeData", "class_dtk_1_1_widget_1_1_d_tab_bar.html#aa35efbfdf2047255ce1e5e1ac961953b", null ],
     [ "changeCurrentOnDrag", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a7290329b8c50eae77106986b5a612551", null ],
@@ -27,8 +27,8 @@ var class_dtk_1_1_widget_1_1_d_tab_bar =
     [ "iconSize", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a12b644f50dbfb491224829d3941b1aff", null ],
     [ "insertFromMimeData", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a45f3e4670a0a5db3109e5aa1e469939e", null ],
     [ "insertFromMimeDataOnDragEnter", "class_dtk_1_1_widget_1_1_d_tab_bar.html#acfd795c356d83020e65d04b55218a540", null ],
-    [ "insertTab", "class_dtk_1_1_widget_1_1_d_tab_bar.html#afc31bfb69a70ae360cdc7398cf750a1a", null ],
     [ "insertTab", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a42f2b472ff0594af63c2f79ad98bf895", null ],
+    [ "insertTab", "class_dtk_1_1_widget_1_1_d_tab_bar.html#afc31bfb69a70ae360cdc7398cf750a1a", null ],
     [ "isDragable", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a3f0a83aa1797fdc1541c33034b1796d9", null ],
     [ "isMovable", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a2414f2f49c809d3132a48e404d7d4f43", null ],
     [ "isTabEnabled", "class_dtk_1_1_widget_1_1_d_tab_bar.html#a078c57e81773d3cee8026a3291f8ec18", null ],

@@ -1,4 +1,3 @@
 <map id="Dtk::Core::DSettingsOption" name="Dtk::Core::DSettingsOption">
-<area shape="rect" id="node1" title="DSettingsOption是DSettings的基本单元，用于存放一对键&#45;值数据。" alt="" coords="5,80,203,107"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="67,5,141,32"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="67,5,141,32"/>
 </map>

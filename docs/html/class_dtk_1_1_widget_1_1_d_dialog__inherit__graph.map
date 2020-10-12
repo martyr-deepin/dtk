@@ -1,13 +1,12 @@
 <map id="Dtk::Widget::DDialog" name="Dtk::Widget::DDialog">
-<area shape="rect" id="node1" title="可以使用 DDialog 类快速创建符合 DDE 风格的简要对话框窗口。" alt="" coords="743,81,901,108"/>
-<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_change_d_dialog.html" title=" " alt="" coords="949,5,1157,32"/>
-<area shape="rect" id="node9" href="$class_dtk_1_1_widget_1_1_d_about_dialog.html" title="DAboutDialog 类提供了应用程序的关于对话框，规范所有 deepin 应用关于窗口设计规范，符合 Deepin 风格。" alt="" coords="955,56,1152,83"/>
-<area shape="rect" id="node10" href="$class_dtk_1_1_widget_1_1_d_input_dialog.html" title="快速创建一个获取可输入数据的对话框" alt="" coords="957,107,1149,133"/>
-<area shape="rect" id="node11" href="$class_dtk_1_1_widget_1_1_d_print_preview_dialog.html" title=" " alt="" coords="954,158,1153,199"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_abstract_dialog.html" title="可以使用 DAbstractDialog 类创建符合 DDE 风格的对话框窗口。" alt="" coords="481,81,695,108"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qdialog.html" title=" " alt="" coords="325,56,399,83"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="164,56,243,83"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="23,31,98,57"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="5,81,116,108"/>
-<area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="291,107,433,133"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_change_d_dialog.html" title="Dtk::Widget::ChangeDDialog" alt="" coords="949,5,1157,32"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_widget_1_1_d_about_dialog.html" title="DAboutDialog 类提供了应用程序的关于对话框，规范所有 deepin 应用关于窗口设计规范，符合 Deepin 风格。 ..." alt="" coords="955,56,1152,83"/>
+<area shape="rect" id="node10" href="$class_dtk_1_1_widget_1_1_d_input_dialog.html" title="快速创建一个获取可输入数据的对话框 " alt="" coords="957,107,1149,133"/>
+<area shape="rect" id="node11" href="$class_dtk_1_1_widget_1_1_d_print_preview_dialog.html" title="Dtk::Widget::DPrintPreview\lDialog" alt="" coords="954,158,1153,199"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_abstract_dialog.html" title="可以使用 DAbstractDialog 类创建符合 DDE 风格的对话框窗口。 " alt="" coords="481,81,695,108"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qdialog.html" title="QDialog" alt="" coords="325,56,399,83"/>
+<area shape="rect" id="node4" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="164,56,243,83"/>
+<area shape="rect" id="node5" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="23,31,98,57"/>
+<area shape="rect" id="node6" href="/home/union/PR/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="291,107,433,133"/>
 </map>

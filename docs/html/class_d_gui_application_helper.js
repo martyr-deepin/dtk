@@ -17,17 +17,17 @@ var class_d_gui_application_helper =
     [ "applicationTheme", "class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372", null ],
     [ "initialize", "class_d_gui_application_helper.html#a64f515bd7a38e92b0dddd5459ae2990f", null ],
     [ "newProcessInstance", "class_d_gui_application_helper.html#ab94fab6c42b86328baffcbb7bb3de0ad", null ],
-    [ "paletteType", "class_d_gui_application_helper.html#ad3c12b8c91f93ef04a9f212842113aa7", null ],
+    [ "paletteType", "class_d_gui_application_helper.html#a5430a4b1c138cb5866ad47c57672e12d", null ],
     [ "paletteTypeChanged", "class_d_gui_application_helper.html#a61a5461116062dda13aeab58a38c06f6", null ],
     [ "setApplicationPalette", "class_d_gui_application_helper.html#a88d71049a24d357f21a3fcf01575c48c", null ],
     [ "setPaletteType", "class_d_gui_application_helper.html#a9a100f0f248307b7cc2df722a8aff68e", null ],
     [ "setThemeType", "class_d_gui_application_helper.html#af998df4cc793bd7fe433712aff9eb130", null ],
     [ "systemTheme", "class_d_gui_application_helper.html#a54696b5f532a5deaad028efdf4069fa1", null ],
-    [ "themeType", "class_d_gui_application_helper.html#ae52eaafd5dac53d984f343818dc14621", null ],
+    [ "themeType", "class_d_gui_application_helper.html#a1f1bb7346c3576ea4b8a1612b99e3fde", null ],
     [ "themeTypeChanged", "class_d_gui_application_helper.html#ad558f870501608f774bcf1f52e5ced04", null ],
     [ "windowPalette", "class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf", null ],
     [ "windowTheme", "class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783", null ],
     [ "_DGuiApplicationHelper", "class_d_gui_application_helper.html#ae9c067f93061fcdf3ee263045223e538", null ],
-    [ "paletteType", "class_d_gui_application_helper.html#ab9c72995428134e5c1bf5c27f584b2e4", null ],
-    [ "themeType", "class_d_gui_application_helper.html#a9fe3f3fb39fceee9ad100aebd7402401", null ]
+    [ "paletteType", "class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd", null ],
+    [ "themeType", "class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e", null ]
 ];

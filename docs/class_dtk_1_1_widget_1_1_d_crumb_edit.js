@@ -50,7 +50,6 @@ var class_dtk_1_1_widget_1_1_d_crumb_edit =
     [ "splitter", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#abe7c0261c2ca91c8c1c2fbe20fc6cddc", null ],
     [ "crumbRadius", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#ab52c174d64f3510c96f79584eba81b3f", null ],
     [ "crumbReadOnly", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a8e42128447d950c78c652ecc535fef45", null ],
-    [ "document", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#af45b15cabac406a6bd6809af8b721756", null ],
     [ "dualClickMakeCrumb", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a6ad55344ba1062d4a1ff33fd048c6540", null ],
     [ "splitter", "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a1e60c56d694c6600555112d8639bcecd", null ]
 ];

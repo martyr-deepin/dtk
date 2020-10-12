@@ -1,5 +1,4 @@
 <map id="ChameleonStylePlugin" name="ChameleonStylePlugin">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,175,181"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleplugin.html" title=" " alt="" coords="37,80,143,107"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="53,5,127,32"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qstyleplugin.html" title="QStylePlugin" alt="" coords="37,80,143,107"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="53,5,127,32"/>
 </map>

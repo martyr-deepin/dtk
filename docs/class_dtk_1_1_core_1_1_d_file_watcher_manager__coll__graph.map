@@ -1,6 +1,4 @@
 <map id="Dtk::Core::DFileWatcherManager" name="Dtk::Core::DFileWatcherManager">
-<area shape="rect" id="node1" title="DFileWatcherManager 类可以帮助管理一系列 DFileWatcher 文件监视器，并在文件变动时发送信号通知。" alt="" coords="5,171,240,197"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="69,95,144,121"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="169,95,311,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="113,5,367,32"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="69,95,144,121"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="169,95,311,121"/>
 </map>

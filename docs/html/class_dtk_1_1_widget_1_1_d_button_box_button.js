@@ -7,7 +7,7 @@ var class_dtk_1_1_widget_1_1_d_button_box_button =
     [ "iconSize", "class_dtk_1_1_widget_1_1_d_button_box_button.html#a3580f5fcf2949067c3b3298402dcae60", null ],
     [ "minimumSizeHint", "class_dtk_1_1_widget_1_1_d_button_box_button.html#adebf74bfaba17eff6165619a78df3111", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_button_box_button.html#a843d0daf910fc5fad13ec9c0bbf86389", null ],
-    [ "setIcon", "class_dtk_1_1_widget_1_1_d_button_box_button.html#ab1d85ff74bdcb881fd2af5ee3bbb52c8", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_button_box_button.html#a11924d1dce8d794a425a6d4f0b8e9b26", null ],
+    [ "setIcon", "class_dtk_1_1_widget_1_1_d_button_box_button.html#ab1d85ff74bdcb881fd2af5ee3bbb52c8", null ],
     [ "sizeHint", "class_dtk_1_1_widget_1_1_d_button_box_button.html#a213a0ff789ac81c42d5f9d190ad70420", null ]
 ];

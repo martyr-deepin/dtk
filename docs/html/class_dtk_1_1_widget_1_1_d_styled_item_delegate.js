@@ -8,7 +8,7 @@ var class_dtk_1_1_widget_1_1_d_styled_item_delegate =
       [ "NoNormalState", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#ae8c072c8c518206fb9093a18e7daefaeae283c554b1dc277fa649e1a3444a76cc", null ]
     ] ],
     [ "DStyledItemDelegate", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a2fed8c5f0c23a7574b254385c8bd3e4c", null ],
-    [ "backgroundType", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a143d65e00502faa92102bec5625dba7a", null ],
+    [ "backgroundType", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a35d4eab3833ef975d851c2787e75470e", null ],
     [ "eventFilter", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#abb28d35e79e3a2e675b5060d510c41a8", null ],
     [ "initStyleOption", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a4a62ea06736d05c4d825657820d210ea", null ],
     [ "itemSize", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#afda66c61873579fa11ef77fe115069ad", null ],
@@ -21,7 +21,7 @@ var class_dtk_1_1_widget_1_1_d_styled_item_delegate =
     [ "sizeHint", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a9b34d7a634164d58e12a56a7b30529eb", null ],
     [ "spacing", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a81275d078cdca6bd725850c03a2135a2", null ],
     [ "updateEditorGeometry", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a7cd5d0d8f2534196286838d11cb42ce1", null ],
-    [ "backgroundType", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#ab46c4aa76daf2cf8be1fe4672297a950", null ],
+    [ "backgroundType", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a36dcb54604c982174cefd9453b1e28b3", null ],
     [ "itemSize", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a025156c43d3e425d32dbd48bd17da07d", null ],
     [ "margins", "class_dtk_1_1_widget_1_1_d_styled_item_delegate.html#a68645f41dcb018c1c4eb510c22fb555d", null ]
 ];

@@ -6,6 +6,6 @@ var class_d_foreign_window =
     [ "pidChanged", "class_d_foreign_window.html#a412d7b90948c7d01a2d57e83d6f77ece", null ],
     [ "wmClass", "class_d_foreign_window.html#a3f51b1cde9585369abf17a35225de5e6", null ],
     [ "wmClassChanged", "class_d_foreign_window.html#a728635fd59d5ec1e007b6d6064dd56d4", null ],
-    [ "pid", "class_d_foreign_window.html#adf06aa24cb3c3875185c46c33ed7b01d", null ],
-    [ "wmClass", "class_d_foreign_window.html#a4a44fdbbd12323932f2f52af9b4487bb", null ]
+    [ "pid", "class_d_foreign_window.html#a1bcd8e4ebe247f2b5fa87d9bb4b45b2a", null ],
+    [ "wmClass", "class_d_foreign_window.html#a30245bb9603e4ee6550fe30c7fc8020b", null ]
 ];

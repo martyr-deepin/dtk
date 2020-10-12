@@ -107,9 +107,9 @@ var classdstyle_1_1_palette_extended =
       [ "PseudoClass_Any", "classdstyle_1_1_palette_extended.html#a9d7b2589b424fff6f515916a7e6755eaaefb264fe0c1a9ec5637386504ae8c7a1", null ]
     ] ],
     [ "~PaletteExtended", "classdstyle_1_1_palette_extended.html#a48523bac9f093d9b9c8a619e7c12af85", null ],
-    [ "brush", "classdstyle_1_1_palette_extended.html#adbef769054bfe05fbe77c6f93458bff6", null ],
-    [ "brush", "classdstyle_1_1_palette_extended.html#adc073bd3ab0c43c94889b7b934f02b7f", null ],
-    [ "brush", "classdstyle_1_1_palette_extended.html#a28ca94f2b731b76e8a3829f1e346d3c7", null ],
     [ "brush", "classdstyle_1_1_palette_extended.html#a19ec8325ebca010c9a9f51c38cc512a3", null ],
+    [ "brush", "classdstyle_1_1_palette_extended.html#a28ca94f2b731b76e8a3829f1e346d3c7", null ],
+    [ "brush", "classdstyle_1_1_palette_extended.html#adc073bd3ab0c43c94889b7b934f02b7f", null ],
+    [ "brush", "classdstyle_1_1_palette_extended.html#adbef769054bfe05fbe77c6f93458bff6", null ],
     [ "polish", "classdstyle_1_1_palette_extended.html#a466d5cd1258d3c14b785e0eac3893599", null ]
 ];

@@ -1,17 +1,16 @@
 <map id="dtkcore/src/log/Logger.h" name="dtkcore/src/log/Logger.h">
-<area shape="rect" id="node1" title="A file containing the description of Logger class and and additional useful macros for logging" alt="" coords="8,5,187,32"/>
-<area shape="rect" id="node2" href="$_abstract_appender_8h_source.html" title=" " alt="" coords="197,80,373,121"/>
-<area shape="rect" id="node8" href="$_log_manager_8cpp_source.html" title=" " alt="" coords="271,445,500,471"/>
-<area shape="rect" id="node13" href="$_logger_8cpp_source.html" title=" " alt="" coords="43,266,237,293"/>
-<area shape="rect" id="node3" href="$_abstract_appender_8cpp_source.html" title=" " alt="" coords="135,169,311,211"/>
-<area shape="rect" id="node4" href="$_abstract_string_appender_8h_source.html" title=" " alt="" coords="469,169,645,211"/>
-<area shape="rect" id="node5" href="$_abstract_string_appender_8cpp_source.html" title=" " alt="" coords="776,259,952,300"/>
-<area shape="rect" id="node6" href="$_console_appender_8h_source.html" title=" " alt="" coords="261,266,509,293"/>
-<area shape="rect" id="node9" href="$_file_appender_8h_source.html" title=" " alt="" coords="533,266,752,293"/>
-<area shape="rect" id="node14" href="$_output_debug_appender_8h_source.html" title=" " alt="" coords="976,259,1184,300"/>
-<area shape="rect" id="node7" href="$_console_appender_8cpp_source.html" title=" " alt="" coords="85,355,347,382"/>
-<area shape="rect" id="node10" href="$_file_appender_8cpp_source.html" title=" " alt="" coords="423,355,657,382"/>
-<area shape="rect" id="node11" href="$_rolling_file_appender_8h_source.html" title=" " alt="" coords="681,348,871,389"/>
-<area shape="rect" id="node12" href="$_rolling_file_appender_8cpp_source.html" title=" " alt="" coords="681,437,871,479"/>
-<area shape="rect" id="node15" href="$_output_debug_appender_8cpp_source.html" title=" " alt="" coords="976,348,1184,389"/>
+<area shape="rect" id="node2" href="$_abstract_appender_8h_source.html" title="dtkcore/src/log/Abstract\lAppender.h" alt="" coords="197,80,373,121"/>
+<area shape="rect" id="node8" href="$_log_manager_8cpp_source.html" title="dtkcore/src/log/LogManager.cpp" alt="" coords="268,445,495,471"/>
+<area shape="rect" id="node13" href="$_logger_8cpp_source.html" title="dtkcore/src/log/Logger.cpp" alt="" coords="43,266,234,293"/>
+<area shape="rect" id="node3" href="$_abstract_appender_8cpp_source.html" title="dtkcore/src/log/Abstract\lAppender.cpp" alt="" coords="135,169,311,211"/>
+<area shape="rect" id="node4" href="$_abstract_string_appender_8h_source.html" title="dtkcore/src/log/Abstract\lStringAppender.h" alt="" coords="467,169,643,211"/>
+<area shape="rect" id="node5" href="$_abstract_string_appender_8cpp_source.html" title="dtkcore/src/log/Abstract\lStringAppender.cpp" alt="" coords="771,259,947,300"/>
+<area shape="rect" id="node6" href="$_console_appender_8h_source.html" title="dtkcore/src/log/ConsoleAppender.h" alt="" coords="258,266,505,293"/>
+<area shape="rect" id="node9" href="$_file_appender_8h_source.html" title="dtkcore/src/log/FileAppender.h" alt="" coords="529,266,746,293"/>
+<area shape="rect" id="node14" href="$_output_debug_appender_8h_source.html" title="dtkcore/src/log/OutputDebug\lAppender.h" alt="" coords="971,259,1179,300"/>
+<area shape="rect" id="node7" href="$_console_appender_8cpp_source.html" title="dtkcore/src/log/ConsoleAppender.cpp" alt="" coords="83,355,344,382"/>
+<area shape="rect" id="node10" href="$_file_appender_8cpp_source.html" title="dtkcore/src/log/FileAppender.cpp" alt="" coords="419,355,651,382"/>
+<area shape="rect" id="node11" href="$_rolling_file_appender_8h_source.html" title="dtkcore/src/log/RollingFile\lAppender.h" alt="" coords="675,348,866,389"/>
+<area shape="rect" id="node12" href="$_rolling_file_appender_8cpp_source.html" title="dtkcore/src/log/RollingFile\lAppender.cpp" alt="" coords="675,437,866,479"/>
+<area shape="rect" id="node15" href="$_output_debug_appender_8cpp_source.html" title="dtkcore/src/log/OutputDebug\lAppender.cpp" alt="" coords="971,348,1179,389"/>
 </map>

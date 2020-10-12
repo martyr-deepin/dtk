@@ -1,8 +1,8 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries." alt="" coords="5,56,212,83"/>
+<area shape="rect" id="node1" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="5,56,212,83"/>
 <area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for..." alt="" coords="260,49,443,90"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_console_appender.html" title="ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream." alt="" coords="507,5,713,32"/>
-<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file." alt="" coords="523,56,697,83"/>
-<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_output_debug_appender.html" title="Appender that writes the log records to the Microsoft Debug Log" alt="" coords="491,107,729,133"/>
-<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_rolling_file_appender.html" title="The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a us..." alt="" coords="777,56,997,83"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_console_appender.html" title="ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream..." alt="" coords="507,5,713,32"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file. " alt="" coords="522,56,698,83"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_output_debug_appender.html" title="Appender that writes the log records to the Microsoft Debug Log " alt="" coords="491,107,729,133"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_rolling_file_appender.html" title="The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a us..." alt="" coords="777,56,999,83"/>
 </map>

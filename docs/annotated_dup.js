@@ -74,6 +74,11 @@ var annotated_dup =
         [ "QSettingBackend", "class_dtk_1_1_core_1_1_q_setting_backend.html", "class_dtk_1_1_core_1_1_q_setting_backend" ],
         [ "RollingFileAppender", "class_dtk_1_1_core_1_1_rolling_file_appender.html", "class_dtk_1_1_core_1_1_rolling_file_appender" ]
       ] ],
+      [ "Gui", null, [
+        [ "DWindowGroupLeader", "class_dtk_1_1_gui_1_1_d_window_group_leader.html", "class_dtk_1_1_gui_1_1_d_window_group_leader" ],
+        [ "DWindowManagerHelper", "class_dtk_1_1_gui_1_1_d_window_manager_helper.html", "class_dtk_1_1_gui_1_1_d_window_manager_helper" ],
+        [ "DWindowManagerHelper_", "class_dtk_1_1_gui_1_1_d_window_manager_helper__.html", null ]
+      ] ],
       [ "Widget", null, [
         [ "HeaderLine", null, [
           [ "ArrowHeaderLine", "class_dtk_1_1_widget_1_1_header_line_1_1_arrow_header_line.html", "class_dtk_1_1_widget_1_1_header_line_1_1_arrow_header_line" ]
@@ -229,8 +234,9 @@ var annotated_dup =
     [ "DBuiltinIconEngine", "class_d_builtin_icon_engine.html", "class_d_builtin_icon_engine" ],
     [ "DBuiltinIconEnginePlugin", "class_d_builtin_icon_engine_plugin.html", "class_d_builtin_icon_engine_plugin" ],
     [ "DCircleProgress", "class_d_circle_progress.html", null ],
-    [ "DColoredProgressBar", "class_d_colored_progress_bar.html", null ],
-    [ "DColoredProgressBar", "class_d_colored_progress_bar_1_1_d_colored_progress_bar.html", null ],
+    [ "DColoredProgressBar", "class_d_colored_progress_bar.html", [
+      [ "DColoredProgressBar", "class_d_colored_progress_bar_1_1_d_colored_progress_bar.html", null ]
+    ] ],
     [ "DDBusCaller", "class_d_d_bus_caller.html", "class_d_d_bus_caller" ],
     [ "DDBusData", "class_d_d_bus_data.html", "class_d_d_bus_data" ],
     [ "DDBusProperty", "class_d_d_bus_property.html", "class_d_d_bus_property" ],
@@ -265,10 +271,9 @@ var annotated_dup =
     [ "DThumbnailProvider", "class_d_thumbnail_provider.html", "class_d_thumbnail_provider" ],
     [ "DToast", "class_d_toast.html", null ],
     [ "DVoxWidget", "class_d_vox_widget.html", null ],
-    [ "DWindowGroupLeader", "class_d_window_group_leader.html", "class_d_window_group_leader" ],
-    [ "DWindowHandle", "class_d_window_handle.html", null ],
-    [ "DWindowManagerHelper", "class_d_window_manager_helper.html", "class_d_window_manager_helper" ],
-    [ "DWindowManagerHelper_", "class_d_window_manager_helper__.html", null ],
+    [ "DWindowHandle", "class_d_window_handle.html", [
+      [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ]
+    ] ],
     [ "ImageEntry", "class_image_entry.html", "class_image_entry" ],
     [ "MessageLabel", "class_message_label.html", "class_message_label" ],
     [ "NorwegianWoodStyle", "class_norwegian_wood_style.html", "class_norwegian_wood_style" ],
@@ -285,7 +290,6 @@ var annotated_dup =
     [ "RSvg", "class_r_svg.html", "class_r_svg" ],
     [ "TestTaskbarWindow", "class_test_taskbar_window.html", "class_test_taskbar_window" ],
     [ "WidgetGallery", "class_widget_gallery.html", "class_widget_gallery" ],
-    [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
     [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ]
 ];

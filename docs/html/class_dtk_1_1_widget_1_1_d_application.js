@@ -42,7 +42,7 @@ var class_dtk_1_1_widget_1_1_d_application =
     [ "visibleMenuIcon", "class_dtk_1_1_widget_1_1_d_application.html#a6bfc6f55467ee9615ce95662a1c0c152", null ],
     [ "visibleMenuShortcutText", "class_dtk_1_1_widget_1_1_d_application.html#a1e3de2281ab2ccf5efd0facb06317635", null ],
     [ "autoActivateWindows", "class_dtk_1_1_widget_1_1_d_application.html#a0d6c3011b71ed1619d9c62db1cff4448", null ],
-    [ "visibleMenuCheckboxWidget", "class_dtk_1_1_widget_1_1_d_application.html#aec987db796b94fc0ac12eecb67648ed0", null ],
-    [ "visibleMenuIcon", "class_dtk_1_1_widget_1_1_d_application.html#ac89f98b0407800e4ad009f9c1f7b675b", null ],
-    [ "visibleMenuShortcutText", "class_dtk_1_1_widget_1_1_d_application.html#af016d8d5ee0801b3569a2e406b03a16a", null ]
+    [ "visibleMenuCheckboxWidget", "class_dtk_1_1_widget_1_1_d_application.html#a18af5a9a2570236794c8e7c22cac5260", null ],
+    [ "visibleMenuIcon", "class_dtk_1_1_widget_1_1_d_application.html#a24528030b8948d7e067e48a51ddf1551", null ],
+    [ "visibleMenuShortcutText", "class_dtk_1_1_widget_1_1_d_application.html#a64ee032dace7aee3334eb3a0e87303ee", null ]
 ];

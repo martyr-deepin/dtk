@@ -14,8 +14,8 @@ var class_dtk_1_1_core_1_1_rolling_file_appender =
     [ "datePatternString", "class_dtk_1_1_core_1_1_rolling_file_appender.html#acb2ff71acbb48d3281f2ad75892f736c", null ],
     [ "logFilesLimit", "class_dtk_1_1_core_1_1_rolling_file_appender.html#a99d3343d001eb337e95441803f2117a9", null ],
     [ "logSizeLimit", "class_dtk_1_1_core_1_1_rolling_file_appender.html#a7500ec2fcaeee4c629ba344cc8f790e1", null ],
-    [ "setDatePattern", "class_dtk_1_1_core_1_1_rolling_file_appender.html#a13ad1aa32a3d460291a1a355e96a4cae", null ],
     [ "setDatePattern", "class_dtk_1_1_core_1_1_rolling_file_appender.html#a94e06d3cb5f6d1f4ce1a771572fde646", null ],
+    [ "setDatePattern", "class_dtk_1_1_core_1_1_rolling_file_appender.html#a13ad1aa32a3d460291a1a355e96a4cae", null ],
     [ "setLogFilesLimit", "class_dtk_1_1_core_1_1_rolling_file_appender.html#a2f91ea75f3b4ba0cacbdd6e013718428", null ],
     [ "setLogSizeLimit", "class_dtk_1_1_core_1_1_rolling_file_appender.html#ae6373ed30c8c1ce3da8053a34dfd4d34", null ]
 ];

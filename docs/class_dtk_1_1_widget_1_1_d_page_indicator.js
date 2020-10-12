@@ -19,10 +19,10 @@ var class_dtk_1_1_widget_1_1_d_page_indicator =
     [ "setSecondaryPointColor", "class_dtk_1_1_widget_1_1_d_page_indicator.html#abd0c304d2609fdcda9a07f9b08ea5bd7", null ],
     [ "setSecondaryPointRadius", "class_dtk_1_1_widget_1_1_d_page_indicator.html#abfba35393ac04d743c82461b6c861fbb", null ],
     [ "currentPage", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a8cdd2ef8f3194a2e3347b4847a22605a", null ],
-    [ "pageCount", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a8b7e713394737157b1cfe634f2bafc64", null ],
-    [ "pointColor", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a0b545137b53a6bcab6c73b33c930414b", null ],
-    [ "pointDistance", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a7995b078491ddce4c1a1c05a6927e457", null ],
-    [ "pointRadius", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a41b1ca3f4f7b6e34b8dfa7859a597ab6", null ],
-    [ "secondaryPointColor", "class_dtk_1_1_widget_1_1_d_page_indicator.html#ad9c4184a3702ad3b7c7d39a921b37de9", null ],
-    [ "secondaryPointRadius", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a15717b9d96c0c71f000cd0c45edf2e3a", null ]
+    [ "pageCount", "class_dtk_1_1_widget_1_1_d_page_indicator.html#aa9ce23cd8e37254d1827277c923b56b6", null ],
+    [ "pointColor", "class_dtk_1_1_widget_1_1_d_page_indicator.html#af265f819ad5515daf75a36634072244f", null ],
+    [ "pointDistance", "class_dtk_1_1_widget_1_1_d_page_indicator.html#a2959d537213fc9557cf963e34a676561", null ],
+    [ "pointRadius", "class_dtk_1_1_widget_1_1_d_page_indicator.html#af914dd67bd070ed45780ac2831cd4a4e", null ],
+    [ "secondaryPointColor", "class_dtk_1_1_widget_1_1_d_page_indicator.html#ac7daf962b4456bf590575fd63d8ed134", null ],
+    [ "secondaryPointRadius", "class_dtk_1_1_widget_1_1_d_page_indicator.html#af809c1dd450b24754d5d70e64dcf60f0", null ]
 ];

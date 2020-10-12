@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deepin Tool Kit: qt5integration</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,6 +13,9 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -35,21 +38,18 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.8.20 -->
+<!-- 制作者 Doxygen 1.8.13 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'搜索');
-/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','搜索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -63,9 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('md_qt5integration__r_e_a_d_m_e.html',''); initResizable(); });
-/* @license-end */
+$(document).ready(function(){initNavTree('md_qt5integration__r_e_a_d_m_e.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -82,16 +80,16 @@ $(document).ready(function(){initNavTree('md_qt5integration__r_e_a_d_m_e.html','
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
   <div class="headertitle">
 <div class="title">qt5integration </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>qt5integration is the <a class="elRef" href="https://doc.qt.io/qt-5/qt.html">Qt</a> platform theme integration plugins for Deepin Desktop Environment. It includes multiple Qt5 plugins to make make DDE more Qt5 Apps friendly.</p>
-<h1>Dependencies</h1>
-<h2>Build dependencies</h2>
+<div class="textblock"><p>qt5integration is the <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> platform theme integration plugins for Deepin Desktop Environment. It includes multiple Qt5 plugins to make make DDE more Qt5 Apps friendly.</p>
+<h2>Dependencies</h2>
+<h3>Build dependencies</h3>
 <ul>
-<li><a class="elRef" href="https://doc.qt.io/qt-5/qt.html">Qt</a> (&gt;= 5.6)</li>
+<li><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html">Qt</a> (&gt;= 5.6)</li>
 <li>gtk+-2.0</li>
 <li>mtdev</li>
 <li><a href="https://github.com/linuxdeepin/deepin-tool-kit">dtk</a></li>
@@ -111,26 +109,20 @@ $(document).ready(function(){initNavTree('md_qt5integration__r_e_a_d_m_e.html','
 </ul>
 </li>
 </ul>
-<h2>Runtime dependencies</h2>
+<h3>Runtime dependencies</h3>
 <ul>
 <li>DDE File Manager (suggestion, to make Qt5 file dialogs more elegant)</li>
 </ul>
-<h1>Installation</h1>
-<h2>Build from source code</h2>
+<h2>Installation</h2>
+<h3>Build from source code</h3>
 <ol type="1">
 <li>Make sure you have installed all dependencies.</li>
-<li>Build: <div class="fragment"><div class="line">$ cd qt5integration</div>
-<div class="line">$ mkdir build</div>
-<div class="line">$ cd build</div>
-<div class="line">$ qmake ..</div>
-<div class="line">$ make</div>
-</div><!-- fragment --></li>
-<li>Install: <div class="fragment"><div class="line">$ sudo make install</div>
-</div><!-- fragment --></li>
+<li>Build: <div class="fragment"><div class="line">$ cd qt5integration</div><div class="line">$ mkdir build</div><div class="line">$ cd build</div><div class="line">$ qmake ..</div><div class="line">$ make</div></div><!-- fragment --></li>
+<li>Install: <div class="fragment"><div class="line">$ sudo make install</div></div><!-- fragment --></li>
 </ol>
-<h1>Usage</h1>
+<h2>Usage</h2>
 <p>To be done.</p>
-<h1>Getting help</h1>
+<h2>Getting help</h2>
 <p>You may also find these channels useful if you encounter any other issues:</p>
 <ul>
 <li><a href="https://gitter.im/orgs/linuxdeepin/rooms">Gitter</a></li>
@@ -138,15 +130,16 @@ $(document).ready(function(){initNavTree('md_qt5integration__r_e_a_d_m_e.html','
 <li><a href="https://bbs.deepin.org/">Official Forum</a></li>
 <li><a href="http://wiki.deepin.org/">Wiki</a></li>
 </ul>
-<h1>License</h1>
+<h2>License</h2>
 <p>qt5integration is licensed under [GPLv3](LICENSE). </p>
 </div></div><!-- contents -->
-</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2020年 十月 10日 星期六 09:17:11 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 十月 12日 星期一 16:10:44 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>

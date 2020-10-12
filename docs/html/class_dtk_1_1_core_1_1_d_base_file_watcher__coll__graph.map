@@ -1,6 +1,4 @@
 <map id="Dtk::Core::DBaseFileWatcher" name="Dtk::Core::DBaseFileWatcher">
-<area shape="rect" id="node1" title="DBaseFileWatcher 类提供了一系列接口可供监视文件和目录的变动。" alt="" coords="5,171,215,197"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="57,95,131,121"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="156,95,299,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="101,5,354,32"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="57,95,132,121"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="157,95,299,121"/>
 </map>

@@ -10,5 +10,5 @@ var class_dtk_1_1_widget_1_1_d_box_widget =
     [ "sizeChanged", "class_dtk_1_1_widget_1_1_d_box_widget.html#aa5f3a35e94105fd579198e87b8e78c3f", null ],
     [ "sizeHint", "class_dtk_1_1_widget_1_1_d_box_widget.html#a75f5f3352d1193a14bb61c524397d6fb", null ],
     [ "updateSize", "class_dtk_1_1_widget_1_1_d_box_widget.html#a9a8a8b88238a93e7c466261d026e06e5", null ],
-    [ "direction", "class_dtk_1_1_widget_1_1_d_box_widget.html#aebbce1935b0d6097ca4dde519ef7a961", null ]
+    [ "direction", "class_dtk_1_1_widget_1_1_d_box_widget.html#a7e7ea855c49101462b08da05ee37e9c2", null ]
 ];

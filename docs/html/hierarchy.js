@@ -30,7 +30,7 @@ var hierarchy =
     ] ],
     [ "DCircleProgress", "class_d_circle_progress.html", null ],
     [ "DColoredProgressBar", "class_d_colored_progress_bar.html", null ],
-    [ "DColoredProgressBar", "class_d_colored_progress_bar_1_1_d_colored_progress_bar.html", null ],
+    [ "DColoredProgressBar::DColoredProgressBar", "class_d_colored_progress_bar_1_1_d_colored_progress_bar.html", null ],
     [ "Dtk::Widget::DFileDialog::DComboBoxOptions", "struct_dtk_1_1_widget_1_1_d_file_dialog_1_1_d_combo_box_options.html", null ],
     [ "DDBusCaller", "class_d_d_bus_caller.html", null ],
     [ "DDBusData", "class_d_d_bus_data.html", null ],
@@ -74,9 +74,14 @@ var hierarchy =
       [ "Dtk::Core::DFileWatcherManager", "class_dtk_1_1_core_1_1_d_file_watcher_manager.html", null ],
       [ "Dtk::Core::DTrashManager", "class_dtk_1_1_core_1_1_d_trash_manager.html", [
         [ "Dtk::Core::DTrashManager_", "class_dtk_1_1_core_1_1_d_trash_manager__.html", null ],
+        [ "Dtk::Core::DTrashManager_", "class_dtk_1_1_core_1_1_d_trash_manager__.html", null ],
+        [ "Dtk::Widget::DTrashManager_", "class_dtk_1_1_widget_1_1_d_trash_manager__.html", null ],
         [ "Dtk::Widget::DTrashManager_", "class_dtk_1_1_widget_1_1_d_trash_manager__.html", null ]
       ] ],
       [ "Dtk::Core::DUtil::DExportedInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface.html", null ],
+      [ "Dtk::Gui::DWindowManagerHelper", "class_dtk_1_1_gui_1_1_d_window_manager_helper.html", [
+        [ "Dtk::Gui::DWindowManagerHelper_", "class_dtk_1_1_gui_1_1_d_window_manager_helper__.html", null ]
+      ] ],
       [ "Dtk::Widget::DAbstractDialog", "class_dtk_1_1_widget_1_1_d_abstract_dialog.html", [
         [ "Dtk::Widget::DDialog", "class_dtk_1_1_widget_1_1_d_dialog.html", [
           [ "Dtk::Widget::ChangeDDialog", "class_dtk_1_1_widget_1_1_change_d_dialog.html", null ],
@@ -168,10 +173,7 @@ var hierarchy =
       [ "Dtk::Widget::DTitlebar", "class_dtk_1_1_widget_1_1_d_titlebar.html", null ],
       [ "Dtk::Widget::DVideoWidget", "class_dtk_1_1_widget_1_1_d_video_widget.html", null ],
       [ "Dtk::Widget::DViewItemAction", "class_dtk_1_1_widget_1_1_d_view_item_action.html", null ],
-      [ "Dtk::Widget::DWaterProgress", "class_dtk_1_1_widget_1_1_d_water_progress.html", null ],
-      [ "DWindowManagerHelper", "class_d_window_manager_helper.html", [
-        [ "DWindowManagerHelper_", "class_d_window_manager_helper__.html", null ]
-      ] ]
+      [ "Dtk::Widget::DWaterProgress", "class_dtk_1_1_widget_1_1_d_water_progress.html", null ]
     ] ],
     [ "Dtk::Core::DPathBuf", "class_dtk_1_1_core_1_1_d_path_buf.html", null ],
     [ "Dtk::Core::DRecentData", "struct_dtk_1_1_core_1_1_d_recent_data.html", null ],
@@ -197,7 +199,7 @@ var hierarchy =
     [ "DToast", "class_d_toast.html", null ],
     [ "DVoxWidget", "class_d_vox_widget.html", null ],
     [ "Dtk::Core::DVtableHook", "class_dtk_1_1_core_1_1_d_vtable_hook.html", null ],
-    [ "DWindowGroupLeader", "class_d_window_group_leader.html", null ],
+    [ "Dtk::Gui::DWindowGroupLeader", "class_dtk_1_1_gui_1_1_d_window_group_leader.html", null ],
     [ "DWindowHandle", "class_d_window_handle.html", null ],
     [ "Dtk::Core::DVtableHook::FunctionPointer< Func >", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer.html", null ],
     [ "Dtk::Core::DVtableHook::FunctionPointer< Ret(Obj::*)(Args...) const >", "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_01const_01_4.html", null ],
@@ -273,6 +275,7 @@ var hierarchy =
       [ "Dtk::Core::DTrashManager", "class_dtk_1_1_core_1_1_d_trash_manager.html", null ],
       [ "Dtk::Core::DUtil::DExportedInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface.html", null ],
       [ "Dtk::Core::DUtil::DExportedInterfaceDBusInterface", "class_dtk_1_1_core_1_1_d_util_1_1_d_exported_interface_d_bus_interface.html", null ],
+      [ "Dtk::Gui::DWindowManagerHelper", "class_dtk_1_1_gui_1_1_d_window_manager_helper.html", null ],
       [ "Dtk::Widget::CrumbObjectInterface", "class_dtk_1_1_widget_1_1_crumb_object_interface.html", null ],
       [ "Dtk::Widget::DAbstractStackWidgetTransition", "class_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition.html", null ],
       [ "Dtk::Widget::DAlertControl", "class_dtk_1_1_widget_1_1_d_alert_control.html", null ],
@@ -285,7 +288,6 @@ var hierarchy =
       [ "Dtk::Widget::DSettingsWidgetFactory", "class_dtk_1_1_widget_1_1_d_settings_widget_factory.html", null ],
       [ "Dtk::Widget::DSimpleListItem", "class_dtk_1_1_widget_1_1_d_simple_list_item.html", null ],
       [ "Dtk::Widget::DThemeManager", "class_dtk_1_1_widget_1_1_d_theme_manager.html", null ],
-      [ "DWindowManagerHelper", "class_d_window_manager_helper.html", null ],
       [ "QAbstractAnimation", "qthelp://org.qt-project.qtcore/qtcore/qabstractanimation.html", [
         [ "dstyle::DStyleAnimation", "classdstyle_1_1_d_style_animation.html", [
           [ "dstyle::DBlendStyleAnimation", "classdstyle_1_1_d_blend_style_animation.html", null ],
@@ -531,7 +533,7 @@ var hierarchy =
       [ "Dtk::Core::DVtableHook::OverrideDestruct< T >", "class_dtk_1_1_core_1_1_d_vtable_hook_1_1_override_destruct.html", null ]
     ] ],
     [ "Dtk::Widget::DAbstractStackWidgetTransition::TransitionInfo", "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html", null ],
-    [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
+    [ "DWindowHandle::WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
     [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ],

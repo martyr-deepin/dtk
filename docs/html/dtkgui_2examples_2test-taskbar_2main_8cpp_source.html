@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deepin Tool Kit: dtkgui/examples/test-taskbar/main.cpp 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,6 +13,9 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -35,21 +38,18 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.8.20 -->
+<!-- 制作者 Doxygen 1.8.13 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'搜索');
-/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','搜索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -63,9 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('dtkgui_2examples_2test-taskbar_2main_8cpp_source.html',''); initResizable(); });
-/* @license-end */
+$(document).ready(function(){initNavTree('dtkgui_2examples_2test-taskbar_2main_8cpp_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -87,52 +85,27 @@ $(document).ready(function(){initNavTree('dtkgui_2examples_2test-taskbar_2main_8
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QDesktopWidget&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;testtaskbarwindow.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html">QApplication</a> a(argc, argv);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">auto</span> name = <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#createUuid">QUuid::createUuid</a>().<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#toString">toString</a>() + QStringLiteral(<span class="stringliteral">&quot;.desktop&quot;</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    a.setDesktopFileName(name);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qdir.html">QDir</a> appDir = <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qstandardpaths.html#writableLocation">QStandardPaths::writableLocation</a>(QStandardPaths::ApplicationsLocation);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qfile.html">QFile</a> desktopFile(appDir.<a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qdir.html#absoluteFilePath">absoluteFilePath</a>(name));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span>(!desktopFile.exists()) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        desktopFile.open(QIODevice::WriteOnly);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;[Desktop Entry]\n&quot;</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Type=Application\n&quot;</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Version=1.1\n&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Name=&quot;</span> + <a class="codeRef" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#applicationDisplayName-prop">QApplication::applicationDisplayName</a>().toUtf8() + <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Exec=&quot;</span> + <a class="codeRef" href="qthelp://org.qt-project.qtcore/qtcore/qcoreapplication.html#applicationFilePath">QApplication::applicationFilePath</a>().toUtf8() + <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        desktopFile.close();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_test_taskbar_window.html">TestTaskbarWindow</a> *pTaskbarWindow = <span class="keyword">new</span> <a class="code" href="class_test_taskbar_window.html">TestTaskbarWindow</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    pTaskbarWindow-&gt;<a class="codeRef" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#showMaximized">showMaximized</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QDesktopWidget&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;testtaskbarwindow.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html">QApplication</a> a(argc, argv);</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">auto</span> name = <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#createUuid">QUuid::createUuid</a>().<a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#toString">toString</a>() + QStringLiteral(<span class="stringliteral">&quot;.desktop&quot;</span>);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    a.setDesktopFileName(name);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qdir.html">QDir</a> appDir = <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qstandardpaths.html#writableLocation">QStandardPaths::writableLocation</a>(QStandardPaths::ApplicationsLocation);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qfile.html">QFile</a> desktopFile(appDir.<a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qdir.html#absoluteFilePath">absoluteFilePath</a>(name));</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span>(!desktopFile.exists()) {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        desktopFile.<a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qfile.html#open">open</a>(QIODevice::WriteOnly);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;[Desktop Entry]\n&quot;</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Type=Application\n&quot;</span>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Version=1.1\n&quot;</span>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Name=&quot;</span> + <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#applicationDisplayName-prop">QApplication::applicationDisplayName</a>().toUtf8() + <span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        desktopFile.write(<span class="stringliteral">&quot;Exec=&quot;</span> + <a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qcoreapplication.html#applicationFilePath">QApplication::applicationFilePath</a>().toUtf8() + <span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        desktopFile.close();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_test_taskbar_window.html">TestTaskbarWindow</a> *pTaskbarWindow = <span class="keyword">new</span> <a class="code" href="class_test_taskbar_window.html">TestTaskbarWindow</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    pTaskbarWindow-&gt;<a class="codeRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#showMaximized">showMaximized</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> a.exec();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="ttc" id="qstandardpaths_html_writableLocation"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qstandardpaths.html#writableLocation">QStandardPaths::writableLocation</a></div><div class="ttdeci">QString writableLocation(QStandardPaths::StandardLocation type)</div></div>
+<div class="ttc" id="qapplication_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html">QApplication</a></div></div>
+<div class="ttc" id="qfile_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qfile.html">QFile</a></div></div>
+<div class="ttc" id="qwidget_html_showMaximized"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#showMaximized">QWidget::showMaximized</a></div><div class="ttdeci">void showMaximized()</div></div>
+<div class="ttc" id="qfile_html_open"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qfile.html#open">QFile::open</a></div><div class="ttdeci">virtual bool open(QIODevice::OpenMode mode) override</div></div>
+<div class="ttc" id="class_test_taskbar_window_html"><div class="ttname"><a href="class_test_taskbar_window.html">TestTaskbarWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="testtaskbarwindow_8h_source.html#l00043">testtaskbarwindow.h:43</a></div></div>
+<div class="ttc" id="qdir_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qdir.html">QDir</a></div></div>
+<div class="ttc" id="qdir_html_absoluteFilePath"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qdir.html#absoluteFilePath">QDir::absoluteFilePath</a></div><div class="ttdeci">QString absoluteFilePath(const QString &amp;fileName) const const</div></div>
+<div class="ttc" id="quuid_html_toString"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#toString">QUuid::toString</a></div><div class="ttdeci">QString toString() const const</div></div>
+<div class="ttc" id="qguiapplication_html_applicationDisplayName-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#applicationDisplayName-prop">QGuiApplication::applicationDisplayName</a></div><div class="ttdeci">QString applicationDisplayName()</div></div>
+<div class="ttc" id="quuid_html_createUuid"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#createUuid">QUuid::createUuid</a></div><div class="ttdeci">QUuid createUuid()</div></div>
+<div class="ttc" id="qcoreapplication_html_applicationFilePath"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qcoreapplication.html#applicationFilePath">QCoreApplication::applicationFilePath</a></div><div class="ttdeci">QString applicationFilePath()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aqcoreapplication_html_applicationFilePath"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qcoreapplication.html#applicationFilePath">QCoreApplication::applicationFilePath</a></div><div class="ttdeci">QString applicationFilePath()</div></div>
-<div class="ttc" id="aqdir_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qdir.html">QDir</a></div></div>
-<div class="ttc" id="aqstandardpaths_html_writableLocation"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qstandardpaths.html#writableLocation">QStandardPaths::writableLocation</a></div><div class="ttdeci">QString writableLocation(QStandardPaths::StandardLocation type)</div></div>
-<div class="ttc" id="aclass_test_taskbar_window_html"><div class="ttname"><a href="class_test_taskbar_window.html">TestTaskbarWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="testtaskbarwindow_8h_source.html#l00043">testtaskbarwindow.h:44</a></div></div>
-<div class="ttc" id="aqguiapplication_html_applicationDisplayName-prop"><div class="ttname"><a href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#applicationDisplayName-prop">QGuiApplication::applicationDisplayName</a></div><div class="ttdeci">applicationDisplayName</div></div>
-<div class="ttc" id="aqapplication_html"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html">QApplication</a></div></div>
-<div class="ttc" id="aquuid_html_createUuid"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#createUuid">QUuid::createUuid</a></div><div class="ttdeci">QUuid createUuid()</div></div>
-<div class="ttc" id="aqwidget_html_showMaximized"><div class="ttname"><a href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#showMaximized">QWidget::showMaximized</a></div><div class="ttdeci">void showMaximized()</div></div>
-<div class="ttc" id="aquuid_html_toString"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/quuid.html#toString">QUuid::toString</a></div><div class="ttdeci">QString toString() const const</div></div>
-<div class="ttc" id="aqdir_html_absoluteFilePath"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qdir.html#absoluteFilePath">QDir::absoluteFilePath</a></div><div class="ttdeci">QString absoluteFilePath(const QString &amp;fileName) const const</div></div>
-<div class="ttc" id="aqfile_html"><div class="ttname"><a href="qthelp://org.qt-project.qtcore/qtcore/qfile.html">QFile</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01e26ae7551668ca493319620c16a3ae.html">dtkgui</a></li><li class="navelem"><a class="el" href="dir_6b567d37ea4de413f6895c8f6fd4ed74.html">examples</a></li><li class="navelem"><a class="el" href="dir_716b81ea0bbb2f2b5ce006df280c2578.html">test-taskbar</a></li><li class="navelem"><b>main.cpp</b></li>
-    <li class="footer">生成于 2020年 十月 10日 星期六 09:17:31 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 十月 12日 星期一 16:10:59 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>

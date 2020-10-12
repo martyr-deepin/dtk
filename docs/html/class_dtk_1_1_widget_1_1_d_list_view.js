@@ -7,8 +7,8 @@ var class_dtk_1_1_widget_1_1_d_list_view =
     [ "addItems", "class_dtk_1_1_widget_1_1_d_list_view.html#ab366e61e50b04be9f8b8e417428732b3", null ],
     [ "backgroundType", "class_dtk_1_1_widget_1_1_d_list_view.html#ae06632f5f4157369f606789fbfddcb2a", null ],
     [ "count", "class_dtk_1_1_widget_1_1_d_list_view.html#a422dbc4d539548a732e9a75b71bf85e7", null ],
-    [ "currentChanged", "class_dtk_1_1_widget_1_1_d_list_view.html#a2ebb146587794e8c8458ace17392c903", null ],
     [ "currentChanged", "class_dtk_1_1_widget_1_1_d_list_view.html#a3c9129bfe890dc36927e62e67471f1ca", null ],
+    [ "currentChanged", "class_dtk_1_1_widget_1_1_d_list_view.html#a2ebb146587794e8c8458ace17392c903", null ],
     [ "edit", "class_dtk_1_1_widget_1_1_d_list_view.html#a9a505da5d01eda99fd2775c4b00c7e12", null ],
     [ "edit", "class_dtk_1_1_widget_1_1_d_list_view.html#a55554345bd74f9805895b9a380c55034", null ],
     [ "getFooterWidget", "class_dtk_1_1_widget_1_1_d_list_view.html#a6d434bea1dcb21e8b1ccc34296c28edd", null ],
@@ -37,8 +37,8 @@ var class_dtk_1_1_widget_1_1_d_list_view =
     [ "setItemSpacing", "class_dtk_1_1_widget_1_1_d_list_view.html#a31027d53aecc82448fce145df2100a37", null ],
     [ "setModel", "class_dtk_1_1_widget_1_1_d_list_view.html#ab52473719cc2fac099f05dd9d5411cdf", null ],
     [ "setOrientation", "class_dtk_1_1_widget_1_1_d_list_view.html#ad99909c052440e658d79f98c92070a5d", null ],
-    [ "setViewportMargins", "class_dtk_1_1_widget_1_1_d_list_view.html#aaa30b59cbd478c6e99dcdad27f2236a3", null ],
     [ "setViewportMargins", "class_dtk_1_1_widget_1_1_d_list_view.html#aa087f178b4103f650a562372607ffd67", null ],
+    [ "setViewportMargins", "class_dtk_1_1_widget_1_1_d_list_view.html#aaa30b59cbd478c6e99dcdad27f2236a3", null ],
     [ "state", "class_dtk_1_1_widget_1_1_d_list_view.html#aaaf53dbc2ffdbb5a68e7d1ba79da046c", null ],
     [ "takeFooterWidget", "class_dtk_1_1_widget_1_1_d_list_view.html#a50a75bacea19b36ac17ddc745dfdc07c", null ],
     [ "takeHeaderWidget", "class_dtk_1_1_widget_1_1_d_list_view.html#a8279015afda434e1712fee26e46b88b5", null ],
@@ -47,8 +47,8 @@ var class_dtk_1_1_widget_1_1_d_list_view =
     [ "viewportMargins", "class_dtk_1_1_widget_1_1_d_list_view.html#addaf158abd988ef26e55a8a5b8a9fca2", null ],
     [ "viewportSizeHint", "class_dtk_1_1_widget_1_1_d_list_view.html#adb4074e0a4b0904f7af119bd4dab7e05", null ],
     [ "backgroundType", "class_dtk_1_1_widget_1_1_d_list_view.html#addaffa6851ca58af5f51be1ac283f4e7", null ],
-    [ "count", "class_dtk_1_1_widget_1_1_d_list_view.html#a39fc48bc2f2fd840989d862a3c84389d", null ],
+    [ "count", "class_dtk_1_1_widget_1_1_d_list_view.html#a728bdce084018d03f947ac45e6d660f5", null ],
     [ "itemMargins", "class_dtk_1_1_widget_1_1_d_list_view.html#a057583cb9b26f863ed78dd4645708ef1", null ],
     [ "itemSize", "class_dtk_1_1_widget_1_1_d_list_view.html#a6ce7f043d034c18dd5568f47c1faf414", null ],
-    [ "orientation", "class_dtk_1_1_widget_1_1_d_list_view.html#ab5a5c639cdaa86e823ea6c65bf925f57", null ]
+    [ "orientation", "class_dtk_1_1_widget_1_1_d_list_view.html#a91fc6e1d664eecbde01771f7ef48af5b", null ]
 ];

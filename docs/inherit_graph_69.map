@@ -1,4 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,200,32"/>
-<area shape="rect" id="node2" href="$class_q_deepin_file_dialog_helper.html" title=" " alt="" coords="248,5,433,32"/>
+<area shape="rect" id="node2" href="$class_image_entry.html" title="ImageEntry" alt="" coords="235,5,332,32"/>
+<area shape="rect" id="node3" href="$class_dir_image_entry.html" title="DirImageEntry" alt="" coords="380,5,496,32"/>
 </map>

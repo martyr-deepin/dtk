@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Deepin Tool Kit: Dtk::Widget::DThemeManager类 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -13,6 +13,9 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -35,21 +38,18 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.8.20 -->
+<!-- 制作者 Doxygen 1.8.13 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'搜索');
-/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','搜索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -63,9 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_theme_manager.html',''); initResizable(); });
-/* @license-end */
+$(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_theme_manager.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -96,28 +94,24 @@ $(document).ready(function(){initNavTree('class_dtk_1_1_widget_1_1_d_theme_manag
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 .theme 结尾，每个控件都应该有对应的 light 和 dark 两套主题文件。主题在应用范围上分为程序级别的主题和控件级别的主题，程序中的控件默认使用程序级别的 主题 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。">theme()</a>， 控件也可以使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40" title="DThemeManager::setTheme 用于给特定的控件设置主题。">setTheme(QWidget *widget, const QString theme)</a>单独设置不同的主题风格， 这种情况下控件的子控件都会继承其父控件设置的主题，而不再使用程序级别的主题。  
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 .theme 结尾，每个控件都应该有对应的 light 和 dark 两套主题文件。主题在应用范围上分为程序级别的主题和控件级别的主题，程序中的控件默认使用程序级别的 主题 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。 ">theme()</a>， 控件也可以使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40" title="DThemeManager::setTheme 用于给特定的控件设置主题。 ">setTheme(QWidget *widget, const QString theme)</a>单独设置不同的主题风格， 这种情况下控件的子控件都会继承其父控件设置的主题，而不再使用程序级别的主题。  
  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#details">更多...</a></p>
 <div class="dynheader">
 类 Dtk::Widget::DThemeManager 继承关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_dtk_1_1_widget_1_1_d_theme_manager__inherit__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_theme_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="_dtk_1_1_widget_1_1_d_theme_manager_inherit__map" id="a_dtk_1_1_widget_1_1_d_theme_manager_inherit__map">
-<area shape="rect" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ...." alt="" coords="5,80,224,107"/>
-<area shape="rect" title=" " alt="" coords="5,155,224,196"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="11,5,85,32"/>
-<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="110,5,253,32"/>
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_theme_manager__inherit__graph.png" border="0" usemap="#_dtk_1_1_widget_1_1_d_theme_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_theme_manager_inherit__map" id="_dtk_1_1_widget_1_1_d_theme_manager_inherit__map">
+<area shape="rect" id="node2" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html" title="QObject" alt="" coords="11,5,85,32"/>
+<area shape="rect" id="node3" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="110,5,253,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <div class="dynheader">
 Dtk::Widget::DThemeManager 的协作图:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_dtk_1_1_widget_1_1_d_theme_manager__coll__graph.png" border="0" usemap="#a_dtk_1_1_widget_1_1_d_theme_manager_coll__map" alt="Collaboration graph"/></div>
-<map name="_dtk_1_1_widget_1_1_d_theme_manager_coll__map" id="a_dtk_1_1_widget_1_1_d_theme_manager_coll__map">
-<area shape="rect" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ...." alt="" coords="5,171,224,197"/>
-<area shape="rect" target="_parent" href="https://doc.qt.io/qt-5/qobject.html" title=" " alt="" coords="61,95,136,121"/>
-<area shape="rect" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="161,95,303,121"/>
-<area shape="rect" title=" " alt="" coords="105,5,359,32"/>
+<div class="center"><img src="class_dtk_1_1_widget_1_1_d_theme_manager__coll__graph.png" border="0" usemap="#_dtk_1_1_widget_1_1_d_theme_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_widget_1_1_d_theme_manager_coll__map" id="_dtk_1_1_widget_1_1_d_theme_manager_coll__map">
+<area shape="rect" id="node2" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html" title="QObject" alt="" coords="61,95,136,121"/>
+<area shape="rect" id="node3" href="class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="161,95,303,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
 <table class="memberdecls">
@@ -125,240 +119,240 @@ Dtk::Widget::DThemeManager 的协作图:</div>
 Public 槽</h2></td></tr>
 <tr class="memitem:a748b35e50945e7a37d3dc0f70c925cd5"><td class="memItemLeft" align="right" valign="top"><a id="a748b35e50945e7a37d3dc0f70c925cd5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a748b35e50945e7a37d3dc0f70c925cd5">updateQss</a> ()</td></tr>
-<tr class="memdesc:a748b35e50945e7a37d3dc0f70c925cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a748b35e50945e7a37d3dc0f70c925cd5" title="DThemeManager::updateQss 槽函数会刷新信号发送者的样式。">DThemeManager::updateQss</a> 槽函数会刷新信号发送者的样式。 <br /></td></tr>
+<tr class="memdesc:a748b35e50945e7a37d3dc0f70c925cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a748b35e50945e7a37d3dc0f70c925cd5" title="DThemeManager::updateQss 槽函数会刷新信号发送者的样式。 ">DThemeManager::updateQss</a> 槽函数会刷新信号发送者的样式。 <br /></td></tr>
 <tr class="separator:a748b35e50945e7a37d3dc0f70c925cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb1e9d15f645be9f448e37bda9c4d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a">updateThemeOnParentChanged</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget)</td></tr>
-<tr class="memdesc:a3fb1e9d15f645be9f448e37bda9c4d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a" title="DThemeManager::updateThemeOnParentChanged 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。">DThemeManager::updateThemeOnParentChanged</a> 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a">更多...</a><br /></td></tr>
+<tr class="memitem:a3fb1e9d15f645be9f448e37bda9c4d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a">updateThemeOnParentChanged</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget)</td></tr>
+<tr class="memdesc:a3fb1e9d15f645be9f448e37bda9c4d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a" title="DThemeManager::updateThemeOnParentChanged 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。 ...">DThemeManager::updateThemeOnParentChanged</a> 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。  <a href="#a3fb1e9d15f645be9f448e37bda9c4d3a">更多...</a><br /></td></tr>
 <tr class="separator:a3fb1e9d15f645be9f448e37bda9c4d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 信号</h2></td></tr>
 <tr class="memitem:aca6e389e9ae6b23e918e1f1bb8f92651"><td class="memItemLeft" align="right" valign="top"><a id="aca6e389e9ae6b23e918e1f1bb8f92651"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aca6e389e9ae6b23e918e1f1bb8f92651">themeChanged</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#aca6e389e9ae6b23e918e1f1bb8f92651">themeChanged</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
 <tr class="memdesc:aca6e389e9ae6b23e918e1f1bb8f92651"><td class="mdescLeft">&#160;</td><td class="mdescRight">themeChanged 信号在程序主题发生改变时触发。 <br /></td></tr>
 <tr class="separator:aca6e389e9ae6b23e918e1f1bb8f92651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a5fa3805b3ce00202598801708c1d7"><td class="memItemLeft" align="right" valign="top"><a id="a05a5fa3805b3ce00202598801708c1d7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a05a5fa3805b3ce00202598801708c1d7">widgetThemeChanged</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a05a5fa3805b3ce00202598801708c1d7">widgetThemeChanged</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
 <tr class="memdesc:a05a5fa3805b3ce00202598801708c1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">widgetThemeChanged 信号在特定控件主题发生改变时触发。 <br /></td></tr>
 <tr class="separator:a05a5fa3805b3ce00202598801708c1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a5cd1978ec14842598333c3e21691380d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a> () const</td></tr>
-<tr class="memdesc:a5cd1978ec14842598333c3e21691380d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。">DThemeManager::theme</a> 用于获取当前程序使用的主题名称。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">更多...</a><br /></td></tr>
+<tr class="memitem:a5cd1978ec14842598333c3e21691380d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a> () const</td></tr>
+<tr class="memdesc:a5cd1978ec14842598333c3e21691380d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。 ">DThemeManager::theme</a> 用于获取当前程序使用的主题名称。  <a href="#a5cd1978ec14842598333c3e21691380d">更多...</a><br /></td></tr>
 <tr class="separator:a5cd1978ec14842598333c3e21691380d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac025f50621d691f400b954b5b7317ea5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#ac025f50621d691f400b954b5b7317ea5">theme</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> **baseWidget=nullptr) const</td></tr>
-<tr class="memdesc:ac025f50621d691f400b954b5b7317ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。">DThemeManager::theme</a> 用于找到 widget 距离最近、并且设置了主题的上级控件， 并返回这个主题的名称。如果上级控件都没有设置主题，则返回程序级别的主题名称。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#ac025f50621d691f400b954b5b7317ea5">更多...</a><br /></td></tr>
+<tr class="memitem:ac025f50621d691f400b954b5b7317ea5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#ac025f50621d691f400b954b5b7317ea5">theme</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> **baseWidget=nullptr) const</td></tr>
+<tr class="memdesc:ac025f50621d691f400b954b5b7317ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。 ">DThemeManager::theme</a> 用于找到 widget 距离最近、并且设置了主题的上级控件， 并返回这个主题的名称。如果上级控件都没有设置主题，则返回程序级别的主题名称。  <a href="#ac025f50621d691f400b954b5b7317ea5">更多...</a><br /></td></tr>
 <tr class="separator:ac025f50621d691f400b954b5b7317ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4afb404ff7864270c862f111a150232f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f">setTheme</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
-<tr class="memdesc:a4afb404ff7864270c862f111a150232f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。">DThemeManager::setTheme</a> 用于设置当前程序的主题。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f">更多...</a><br /></td></tr>
+<tr class="memitem:a4afb404ff7864270c862f111a150232f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f">setTheme</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
+<tr class="memdesc:a4afb404ff7864270c862f111a150232f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。 ">DThemeManager::setTheme</a> 用于设置当前程序的主题。  <a href="#a4afb404ff7864270c862f111a150232f">更多...</a><br /></td></tr>
 <tr class="separator:a4afb404ff7864270c862f111a150232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adde54b65167517e0c891a7dae79e8b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40">setTheme</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
-<tr class="memdesc:adde54b65167517e0c891a7dae79e8b40"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。">DThemeManager::setTheme</a> 用于给特定的控件设置主题。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40">更多...</a><br /></td></tr>
+<tr class="memitem:adde54b65167517e0c891a7dae79e8b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40">setTheme</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>)</td></tr>
+<tr class="memdesc:adde54b65167517e0c891a7dae79e8b40"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。 ">DThemeManager::setTheme</a> 用于给特定的控件设置主题。  <a href="#adde54b65167517e0c891a7dae79e8b40">更多...</a><br /></td></tr>
 <tr class="separator:adde54b65167517e0c891a7dae79e8b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae601c0bb2760409d505eb1960061e2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2">getQssForWidget</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> className, const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>=<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
-<tr class="memdesc:a0ae601c0bb2760409d505eb1960061e2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。">DThemeManager::getQssForWidget</a> 用于获取特定类在特定主题下的样式内容。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2">更多...</a><br /></td></tr>
+<tr class="memitem:a0ae601c0bb2760409d505eb1960061e2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2">getQssForWidget</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> className, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d">theme</a>=<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) const</td></tr>
+<tr class="memdesc:a0ae601c0bb2760409d505eb1960061e2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。 ">DThemeManager::getQssForWidget</a> 用于获取特定类在特定主题下的样式内容。  <a href="#a0ae601c0bb2760409d505eb1960061e2">更多...</a><br /></td></tr>
 <tr class="separator:a0ae601c0bb2760409d505eb1960061e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b57e5684c3ba2c797d3a3f975447e15"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a6b57e5684c3ba2c797d3a3f975447e15">getQssForWidget</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget) const</td></tr>
-<tr class="memdesc:a6b57e5684c3ba2c797d3a3f975447e15"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。">DThemeManager::getQssForWidget</a> 控件的主题样式内容。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a6b57e5684c3ba2c797d3a3f975447e15">更多...</a><br /></td></tr>
+<tr class="memitem:a6b57e5684c3ba2c797d3a3f975447e15"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a6b57e5684c3ba2c797d3a3f975447e15">getQssForWidget</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget) const</td></tr>
+<tr class="memdesc:a6b57e5684c3ba2c797d3a3f975447e15"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。 ">DThemeManager::getQssForWidget</a> 控件的主题样式内容。  <a href="#a6b57e5684c3ba2c797d3a3f975447e15">更多...</a><br /></td></tr>
 <tr class="separator:a6b57e5684c3ba2c797d3a3f975447e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
-virtual const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
+virtual const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#metaObject">metaObject</a> () const const</td></tr>
 <tr class="separator:metaObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:qt_metacast inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacast"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#qt_metacast">qt_metacast</a> (const char *)</td></tr>
 <tr class="separator:qt_metacast inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:qt_metacall inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="qt_metacall"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#qt_metacall">qt_metacall</a> (QMetaObject::Call, int, void **)</td></tr>
 <tr class="separator:qt_metacall inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:QObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="QObject"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#QObject">QObject</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
 <tr class="separator:QObject inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:event inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="event"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *e)</td></tr>
 <tr class="separator:event inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a> () const const</td></tr>
 <tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:objectName-prop inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">setObjectName</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name)</td></tr>
 <tr class="separator:objectName-prop inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:isWidgetType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWidgetType"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isWidgetType">isWidgetType</a> () const const</td></tr>
 <tr class="separator:isWidgetType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:isWindowType inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isWindowType"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isWindowType">isWindowType</a> () const const</td></tr>
 <tr class="separator:isWindowType inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:signalsBlocked inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="signalsBlocked"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#signalsBlocked">signalsBlocked</a> () const const</td></tr>
 <tr class="separator:signalsBlocked inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:blockSignals inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="blockSignals"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#blockSignals">blockSignals</a> (bool block)</td></tr>
 <tr class="separator:blockSignals inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:thread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="thread"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#thread">thread</a> () const const</td></tr>
 <tr class="separator:thread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:moveToThread inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="moveToThread"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#moveToThread">moveToThread</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qthread.html">QThread</a> *targetThread)</td></tr>
 <tr class="separator:moveToThread inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:startTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, Qt::TimerType timerType)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#startTimer">startTimer</a> (int interval, Qt::TimerType timerType)</td></tr>
 <tr class="separator:startTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:startTimer-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="startTimer-1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, Qt::TimerType timerType)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#startTimer-1">startTimer</a> (std::chrono::milliseconds time, Qt::TimerType timerType)</td></tr>
 <tr class="separator:startTimer-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:killTimer inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="killTimer"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#killTimer">killTimer</a> (int id)</td></tr>
 <tr class="separator:killTimer inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:findChild inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChild"></a>
-T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+T&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChild">findChild</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
 <tr class="separator:findChild inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:findChildren inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren">findChildren</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;name, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
 <tr class="separator:findChildren inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:findChildren-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-1"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChildren-1">findChildren</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren-1">findChildren</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregexp.html">QRegExp</a> &amp;regExp, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
 <tr class="separator:findChildren-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:findChildren-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="findChildren-2"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#findChildren-2">findChildren</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qregularexpression.html">QRegularExpression</a> &amp;re, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qt.html#FindChildOption-enum">Qt::FindChildOptions</a> options) const const</td></tr>
 <tr class="separator:findChildren-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:children inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="children"></a>
-const QObjectList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
+const QObjectList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#children">children</a> () const const</td></tr>
 <tr class="separator:children inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:setParent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setParent"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#setParent">setParent</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a>)</td></tr>
 <tr class="separator:setParent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:installEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="installEventFilter"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#installEventFilter">installEventFilter</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *filterObj)</td></tr>
 <tr class="separator:installEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:removeEventFilter inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="removeEventFilter"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#removeEventFilter">removeEventFilter</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
 <tr class="separator:removeEventFilter inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-2"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, Qt::ConnectionType type) const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-2">connect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const char *method, Qt::ConnectionType type) const const</td></tr>
 <tr class="separator:connect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-2 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-2">disconnect</a> (const char *signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
 <tr class="separator:disconnect-2 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-3 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-3">disconnect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method) const const</td></tr>
 <tr class="separator:disconnect-3 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree-1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectTree-1">dumpObjectTree</a> ()</td></tr>
 <tr class="separator:dumpObjectTree-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo-1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#dumpObjectInfo-1">dumpObjectInfo</a> ()</td></tr>
 <tr class="separator:dumpObjectInfo-1 inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dumpObjectTree inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectTree"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectTree">dumpObjectTree</a> () const const</td></tr>
 <tr class="separator:dumpObjectTree inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dumpObjectInfo inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dumpObjectInfo"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dumpObjectInfo">dumpObjectInfo</a> () const const</td></tr>
 <tr class="separator:dumpObjectInfo inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:setProperty inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="setProperty"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#setProperty">setProperty</a> (const char *name, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value)</td></tr>
 <tr class="separator:setProperty inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:property inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="property"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#property">property</a> (const char *name) const const</td></tr>
 <tr class="separator:property inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dynamicPropertyNames inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="dynamicPropertyNames"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#dynamicPropertyNames">dynamicPropertyNames</a> () const const</td></tr>
 <tr class="separator:dynamicPropertyNames inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:destroyed inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="destroyed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#destroyed">destroyed</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *obj)</td></tr>
 <tr class="separator:destroyed inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:objectNameChanged inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectNameChanged"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectNameChanged">objectNameChanged</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a>)</td></tr>
 <tr class="separator:objectNameChanged inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:parent inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="parent"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#parent">parent</a> () const const</td></tr>
 <tr class="separator:parent inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:inherits inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="inherits"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#inherits">inherits</a> (const char *className) const const</td></tr>
 <tr class="separator:inherits inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:deleteLater inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="deleteLater"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#deleteLater">deleteLater</a> ()</td></tr>
 <tr class="separator:deleteLater inherit pub_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
 <tr class="memitem:a7fa735d68c2f08e183964a3ddf4f4b0e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html">DThemeManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e">instance</a> ()</td></tr>
-<tr class="memdesc:a7fa735d68c2f08e183964a3ddf4f4b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e" title="DThemeManager::instance 用于获取 DThemeManager 的全局实例。">DThemeManager::instance</a> 用于获取 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的全局实例。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e">更多...</a><br /></td></tr>
+<tr class="memdesc:a7fa735d68c2f08e183964a3ddf4f4b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e" title="DThemeManager::instance 用于获取 DThemeManager 的全局实例。 ">DThemeManager::instance</a> 用于获取 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的全局实例。  <a href="#a7fa735d68c2f08e183964a3ddf4f4b0e">更多...</a><br /></td></tr>
 <tr class="separator:a7fa735d68c2f08e183964a3ddf4f4b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff03eb3721adddc6ed8726533826348"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348">registerWidget</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> properties=<a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>())</td></tr>
-<tr class="memdesc:a2ff03eb3721adddc6ed8726533826348"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的管理范围内。 只有通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">registerWidget()</a> 注册的控件才会受到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的自动管理， 通常注册的动作都会在实例的构造过程中完成。properties 参数用来注册属性， 注册的属性发生变化时 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 会自动刷新控件的样式。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348">更多...</a><br /></td></tr>
+<tr class="memitem:a2ff03eb3721adddc6ed8726533826348"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348">registerWidget</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> properties=<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>())</td></tr>
+<tr class="memdesc:a2ff03eb3721adddc6ed8726533826348"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的管理范围内。 只有通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">registerWidget()</a> 注册的控件才会受到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的自动管理， 通常注册的动作都会在实例的构造过程中完成。properties 参数用来注册属性， 注册的属性发生变化时 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 会自动刷新控件的样式。  <a href="#a2ff03eb3721adddc6ed8726533826348">更多...</a><br /></td></tr>
 <tr class="separator:a2ff03eb3721adddc6ed8726533826348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2407e1b61d9745dda80bed935f3d310d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2407e1b61d9745dda80bed935f3d310d">registerWidget</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filename, const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;properties=<a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>())</td></tr>
-<tr class="memdesc:a2407e1b61d9745dda80bed935f3d310d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的管理范围内。  <a href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2407e1b61d9745dda80bed935f3d310d">更多...</a><br /></td></tr>
+<tr class="memitem:a2407e1b61d9745dda80bed935f3d310d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2407e1b61d9745dda80bed935f3d310d">registerWidget</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;filename, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;properties=<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>())</td></tr>
+<tr class="memdesc:a2407e1b61d9745dda80bed935f3d310d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的管理范围内。  <a href="#a2407e1b61d9745dda80bed935f3d310d">更多...</a><br /></td></tr>
 <tr class="separator:a2407e1b61d9745dda80bed935f3d310d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="inherit_header pub_static_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_qobject')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:tr inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="tr"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#tr">tr</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
 <tr class="separator:tr inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:trUtf8 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="trUtf8"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject-obsolete.html#trUtf8">trUtf8</a> (const char *sourceText, const char *disambiguation, int n)</td></tr>
 <tr class="separator:trUtf8 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect">connect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method, Qt::ConnectionType type)</td></tr>
 <tr class="separator:connect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-1"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-1">connect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method, Qt::ConnectionType type)</td></tr>
 <tr class="separator:connect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connect-3 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-3"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-3">connect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method, Qt::ConnectionType type)</td></tr>
 <tr class="separator:connect-3 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-4"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-4">connect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, Functor functor)</td></tr>
 <tr class="separator:connect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connect-5"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connect-5">connect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *context, Functor functor, Qt::ConnectionType type)</td></tr>
 <tr class="separator:connect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect">disconnect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const char *signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const char *method)</td></tr>
 <tr class="separator:disconnect inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-1 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-1">disconnect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;method)</td></tr>
 <tr class="separator:disconnect-1 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-4 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-4">disconnect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetaobject-connection.html">QMetaObject::Connection</a> &amp;connection)</td></tr>
 <tr class="separator:disconnect-4 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnect-5 inherit pub_static_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnect-5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnect-5">disconnect</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a>, PointerToMemberFunction signal, const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *receiver, PointerToMemberFunction method)</td></tr>
 <tr class="separator:disconnect-5 inherit pub_static_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected 成员函数</h2></td></tr>
 <tr class="memitem:af8b1e091a18b7040910dccebc0a9def3"><td class="memItemLeft" align="right" valign="top"><a id="af8b1e091a18b7040910dccebc0a9def3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *watched, <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
 <tr class="separator:af8b1e091a18b7040910dccebc0a9def3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="inherit_header pro_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:sender inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="sender"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#sender">sender</a> () const const</td></tr>
 <tr class="separator:sender inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:senderSignalIndex inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="senderSignalIndex"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#senderSignalIndex">senderSignalIndex</a> () const const</td></tr>
 <tr class="separator:senderSignalIndex inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:receivers inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="receivers"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#receivers">receivers</a> (const char *signal) const const</td></tr>
 <tr class="separator:receivers inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:isSignalConnected inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="isSignalConnected"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#isSignalConnected">isSignalConnected</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal) const const</td></tr>
 <tr class="separator:isSignalConnected inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:timerEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="timerEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#timerEvent">timerEvent</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qtimerevent.html">QTimerEvent</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
 <tr class="separator:timerEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:childEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="childEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#childEvent">childEvent</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qchildevent.html">QChildEvent</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
 <tr class="separator:childEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:customEvent inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="customEvent"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#customEvent">customEvent</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#event">event</a>)</td></tr>
 <tr class="separator:customEvent inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:connectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="connectNotify"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#connectNotify">connectNotify</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
 <tr class="separator:connectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disconnectNotify inherit pro_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="disconnectNotify"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#disconnectNotify">disconnectNotify</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qmetamethod.html">QMetaMethod</a> &amp;signal)</td></tr>
 <tr class="separator:disconnectNotify inherit pro_methods_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
 <tr class="memitem:adbed6e66a1393a6045fb24e50300db7f inherit pro_methods_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="adbed6e66a1393a6045fb24e50300db7f"></a>
@@ -379,19 +373,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 额外继承的成员函数</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_dtk_1_1_core_1_1_d_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_dtk_1_1_core_1_1_d_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_dtk_1_1_core_1_1_d_object.html">Dtk::Core::DObject</a></td></tr>
 <tr class="memitem:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memItemLeft" align="right" valign="top"><a id="a1a49828e8ece06afef896e26135f23c0"></a>
-<a class="elRef" href="https://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; DObjectPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
+<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qscopedpointer.html">QScopedPointer</a>&lt; DObjectPrivate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>d_d_ptr</b></td></tr>
 <tr class="separator:a1a49828e8ece06afef896e26135f23c0 inherit pro_attribs_class_dtk_1_1_core_1_1_d_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el"  href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
+<tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="https://doc.qt.io/qt-5/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qobject.html#objectName-prop">objectName</a></td></tr>
 <tr class="separator:objectName-prop inherit properties_qobject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 类提供了管理控件主题文件的工具函数。</p>
+<div class="textblock"><p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 类提供了管理控件主题文件的工具函数。</p>
 <p>在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 .theme 结尾，每个控件都应该有对应的 light 和 dark 两套主题文件。</p>
-<p>主题在应用范围上分为程序级别的主题和控件级别的主题，程序中的控件默认使用程序级别的 主题 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。">theme()</a>， 控件也可以使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40" title="DThemeManager::setTheme 用于给特定的控件设置主题。">setTheme(QWidget *widget, const QString theme)</a>单独设置不同的主题风格， 这种情况下控件的子控件都会继承其父控件设置的主题，而不再使用程序级别的主题。 </p>
-<dl class="section note"><dt>注解</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 是单实例的，也就是说通常情况下使用者无法创建 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 对象， 而是通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e" title="DThemeManager::instance 用于获取 DThemeManager 的全局实例。">DThemeManager::instance</a> 方法来获取到全局的 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 实例。</dd></dl>
-<dl class="section warning"><dt>警告</dt><dd>只有使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">DThemeManager::registerWidget</a> 进行注册的控件才会纳入 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的正常管理流程。 </dd></dl>
+<p>主题在应用范围上分为程序级别的主题和控件级别的主题，程序中的控件默认使用程序级别的 主题 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。 ">theme()</a>， 控件也可以使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#adde54b65167517e0c891a7dae79e8b40" title="DThemeManager::setTheme 用于给特定的控件设置主题。 ">setTheme(QWidget *widget, const QString theme)</a>单独设置不同的主题风格， 这种情况下控件的子控件都会继承其父控件设置的主题，而不再使用程序级别的主题。 </p>
+<dl class="section note"><dt>注解</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 是单实例的，也就是说通常情况下使用者无法创建 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 对象， 而是通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e" title="DThemeManager::instance 用于获取 DThemeManager 的全局实例。 ">DThemeManager::instance</a> 方法来获取到全局的 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 实例。</dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>只有使用 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">DThemeManager::registerWidget</a> 进行注册的控件才会纳入 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的正常管理流程。 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="dthememanager_8h_source.html">dthememanager.h</a> 第 <a class="el" href="dthememanager_8h_source.html#l00031">31</a> 行定义.</p>
 </div><h2 class="groupheader">成员函数说明</h2>
@@ -402,16 +396,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::getQssForWidget </td>
+          <td class="memname"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::getQssForWidget </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td>
           <td class="paramname"><em>className</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
-          <td class="paramname"><em>theme</em> = <code><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>theme</em> = <code><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -421,7 +415,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。">DThemeManager::getQssForWidget</a> 用于获取特定类在特定主题下的样式内容。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。 ">DThemeManager::getQssForWidget</a> 用于获取特定类在特定主题下的样式内容。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">className</td><td>为指定的类名称，className 需要跟控件对应的主题文件名对应。 </td></tr>
@@ -442,16 +436,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::getQssForWidget </td>
+          <td class="memname"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::getQssForWidget </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。">DThemeManager::getQssForWidget</a> 控件的主题样式内容。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a0ae601c0bb2760409d505eb1960061e2" title="DThemeManager::getQssForWidget 用于获取特定类在特定主题下的样式内容。 ">DThemeManager::getQssForWidget</a> 控件的主题样式内容。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">widget</td><td>为指定的控件。 </td></tr>
@@ -487,70 +481,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e" title="DThemeManager::instance 用于获取 DThemeManager 的全局实例。">DThemeManager::instance</a> 用于获取 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的全局实例。 </p>
-<dl class="section return"><dt>返回</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 全局实例。 </dd></dl>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a7fa735d68c2f08e183964a3ddf4f4b0e" title="DThemeManager::instance 用于获取 DThemeManager 的全局实例。 ">DThemeManager::instance</a> 用于获取 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的全局实例。 </p>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 全局实例。 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="dthememanager_8cpp_source.html">dthememanager.cpp</a> 第 <a class="el" href="dthememanager_8cpp_source.html#l00128">128</a> 行定义.</p>
 
 </div>
 </div>
-<a id="a2407e1b61d9745dda80bed935f3d310d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2407e1b61d9745dda80bed935f3d310d">&#9670;&nbsp;</a></span>registerWidget() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Dtk::Widget::DThemeManager::registerWidget </td>
-          <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
-          <td class="paramname"><em>widget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
-          <td class="paramname"><em>properties</em> = <code><a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的管理范围内。 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">widget</td><td>需要注册的控件。 </td></tr>
-    <tr><td class="paramname">filename</td><td>需要注册的控件所对应的主题文件名。 </td></tr>
-    <tr><td class="paramname">properties</td><td>需要注册的控件属性。</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">registerWidget(QWidget *widget, QStringList properties)</a> </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="dthememanager_8cpp_source.html">dthememanager.cpp</a> 第 <a class="el" href="dthememanager_8cpp_source.html#l00585">585</a> 行定义.</p>
-
-</div>
-</div>
 <a id="a2ff03eb3721adddc6ed8726533826348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ff03eb3721adddc6ed8726533826348">&#9670;&nbsp;</a></span>registerWidget() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff03eb3721adddc6ed8726533826348">&#9670;&nbsp;</a></span>registerWidget() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,14 +500,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
         <tr>
           <td class="memname">void Dtk::Widget::DThemeManager::registerWidget </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td>
-          <td class="paramname"><em>properties</em> = <code><a class="elRef" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td>
+          <td class="paramname"><em>properties</em> = <code><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -583,7 +522,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的管理范围内。 只有通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget() 注册的控件才会受到 DThemeMa...">registerWidget()</a> 注册的控件才会受到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 的自动管理， 通常注册的动作都会在实例的构造过程中完成。properties 参数用来注册属性， 注册的属性发生变化时 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，主题文件是为单个控件所创建 的 QSS 文件，并且以 ....">DThemeManager</a> 会自动刷新控件的样式。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的管理范围内。 只有通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">registerWidget()</a> 注册的控件才会受到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的自动管理， 通常注册的动作都会在实例的构造过程中完成。properties 参数用来注册属性， 注册的属性发生变化时 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 会自动刷新控件的样式。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">widget</td><td>需要注册的控件。 </td></tr>
@@ -596,6 +535,61 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 
 </div>
 </div>
+<a id="a2407e1b61d9745dda80bed935f3d310d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2407e1b61d9745dda80bed935f3d310d">&#9670;&nbsp;</a></span>registerWidget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DThemeManager::registerWidget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> &amp;&#160;</td>
+          <td class="paramname"><em>properties</em> = <code><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">DThemeManager::registerWidget</a> 用于将控件注册到 <a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html" title="DThemeManager 类提供了管理控件主题文件的工具函数。在 DTK 中，目前只有 light 和 dark 两种风格的主题，�...">DThemeManager</a> 的管理范围内。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td>需要注册的控件。 </td></tr>
+    <tr><td class="paramname">filename</td><td>需要注册的控件所对应的主题文件名。 </td></tr>
+    <tr><td class="paramname">properties</td><td>需要注册的控件属性。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a2ff03eb3721adddc6ed8726533826348" title="DThemeManager::registerWidget 用于将控件注册到 DThemeManager 的管理范围内。 只有通过 registerWidget()...">registerWidget(QWidget *widget, QStringList properties)</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dthememanager_8cpp_source.html">dthememanager.cpp</a> 第 <a class="el" href="dthememanager_8cpp_source.html#l00585">585</a> 行定义.</p>
+
+</div>
+</div>
 <a id="a4afb404ff7864270c862f111a150232f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4afb404ff7864270c862f111a150232f">&#9670;&nbsp;</a></span>setTheme() <span class="overload">[1/2]</span></h2>
 
@@ -605,14 +599,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
         <tr>
           <td class="memname">void Dtk::Widget::DThemeManager::setTheme </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td>
           <td class="paramname"><em>theme</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。">DThemeManager::setTheme</a> 用于设置当前程序的主题。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。 ">DThemeManager::setTheme</a> 用于设置当前程序的主题。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">theme</td><td>为指定的主题名称。 </td></tr>
@@ -633,13 +627,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
         <tr>
           <td class="memname">void Dtk::Widget::DThemeManager::setTheme </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td>
           <td class="paramname"><em>theme</em>&#160;</td>
         </tr>
         <tr>
@@ -650,7 +644,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。">DThemeManager::setTheme</a> 用于给特定的控件设置主题。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a4afb404ff7864270c862f111a150232f" title="DThemeManager::setTheme 用于设置当前程序的主题。 ">DThemeManager::setTheme</a> 用于给特定的控件设置主题。 </p>
 <dl class="section note"><dt>注解</dt><dd>控件的子控件也会继承设置的主题风格。 </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
@@ -671,7 +665,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::theme </td>
+          <td class="memname"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::theme </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -679,7 +673,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。">DThemeManager::theme</a> 用于获取当前程序使用的主题名称。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。 ">DThemeManager::theme</a> 用于获取当前程序使用的主题名称。 </p>
 <dl class="section return"><dt>返回</dt><dd>程序使用的主题名称。 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="dthememanager_8cpp_source.html">dthememanager.cpp</a> 第 <a class="el" href="dthememanager_8cpp_source.html#l00472">472</a> 行定义.</p>
@@ -693,15 +687,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::theme </td>
+          <td class="memname"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Widget::DThemeManager::theme </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> **&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> **&#160;</td>
           <td class="paramname"><em>baseWidget</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -712,7 +706,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。">DThemeManager::theme</a> 用于找到 widget 距离最近、并且设置了主题的上级控件， 并返回这个主题的名称。如果上级控件都没有设置主题，则返回程序级别的主题名称。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a5cd1978ec14842598333c3e21691380d" title="DThemeManager::theme 用于获取当前程序使用的主题名称。 ">DThemeManager::theme</a> 用于找到 widget 距离最近、并且设置了主题的上级控件， 并返回这个主题的名称。如果上级控件都没有设置主题，则返回程序级别的主题名称。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">widget</td><td>目标控件。 </td></tr>
@@ -738,7 +732,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
         <tr>
           <td class="memname">void Dtk::Widget::DThemeManager::updateThemeOnParentChanged </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
           <td class="paramname"><em>widget</em></td><td>)</td>
           <td></td>
         </tr>
@@ -750,7 +744,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a" title="DThemeManager::updateThemeOnParentChanged 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。">DThemeManager::updateThemeOnParentChanged</a> 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。 </p>
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html#a3fb1e9d15f645be9f448e37bda9c4d3a" title="DThemeManager::updateThemeOnParentChanged 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。 ...">DThemeManager::updateThemeOnParentChanged</a> 槽函数用于在控件的 父控件发生改变时更新控件的主题样式。 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">widget</td><td>为待刷新样式的控件。 </td></tr>
@@ -772,7 +766,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DApplication</b></td
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_theme_manager.html">DThemeManager</a></li>
-    <li class="footer">生成于 2020年 十月 10日 星期六 09:17:13 , 为 Deepin Tool Kit使用  <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">生成于 2020年 十月 12日 星期一 16:10:46 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>

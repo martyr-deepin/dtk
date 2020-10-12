@@ -1,5 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="/home/juteman/dtk/tags/qtcore.tags$qshareddata.html" title=" " alt="" coords="5,31,113,57"/>
-<area shape="rect" id="node2" href="$struct_d_palette_data.html" title=" " alt="" coords="193,5,303,32"/>
-<area shape="rect" id="node3" href="$class_q_svg_icon_engine_private.html" title=" " alt="" coords="161,56,335,83"/>
+<area shape="rect" id="node1" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qrect.html" title="QRect" alt="" coords="5,5,67,32"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_anchors_rect.html" title="Dtk::Widget::DAnchorsRect" alt="" coords="115,5,313,32"/>
 </map>

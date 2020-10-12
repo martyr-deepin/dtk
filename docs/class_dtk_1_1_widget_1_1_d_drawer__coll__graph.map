@@ -1,10 +1,8 @@
 <map id="Dtk::Widget::DDrawer" name="Dtk::Widget::DDrawer">
-<area shape="rect" id="node1" title="一个美观的可展开的控件" alt="" coords="122,323,286,349"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_frame.html" title=" " alt="" coords="125,247,283,273"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="102,171,175,197"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,81,141,108"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
-<area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="214,171,357,197"/>
-<area shape="rect" id="node8" title=" " alt="" coords="165,81,419,108"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_frame.html" title="Dtk::Widget::DFrame" alt="" coords="125,247,283,273"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="102,171,175,197"/>
+<area shape="rect" id="node4" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="62,81,141,108"/>
+<area shape="rect" id="node5" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node6" href="/home/union/PR/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="214,171,357,197"/>
 </map>

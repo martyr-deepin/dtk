@@ -1,7 +1,6 @@
 <map id="PopupMenuStyle" name="PopupMenuStyle">
-<area shape="rect" id="node1" title=" " alt="" coords="5,304,136,331"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qproxystyle.html" title=" " alt="" coords="19,229,122,256"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qcommonstyle.html" title=" " alt="" coords="9,155,133,181"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyle.html" title=" " alt="" coords="38,80,103,107"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="33,5,108,32"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qproxystyle.html" title="QProxyStyle" alt="" coords="19,229,122,256"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qcommonstyle.html" title="QCommonStyle" alt="" coords="9,155,133,181"/>
+<area shape="rect" id="node4" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qstyle.html" title="QStyle" alt="" coords="38,80,103,107"/>
+<area shape="rect" id="node5" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="33,5,108,32"/>
 </map>

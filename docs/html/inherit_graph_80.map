@@ -1,13 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_dtk_1_1_widget_1_1_d_style_option.html" title="dcxb插件通过DStyleOption来控制控件的样式" alt="" coords="5,261,199,288"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_style_option_background_group.html" title=" " alt="" coords="260,225,453,266"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_style_option_button.html" title=" " alt="" coords="515,66,708,107"/>
-<area shape="rect" id="node5" href="$class_dtk_1_1_widget_1_1_d_style_option_floating_widget.html" title=" " alt="" coords="260,107,453,149"/>
-<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_style_option_icon.html" title=" " alt="" coords="247,173,467,200"/>
-<area shape="rect" id="node7" href="$class_dtk_1_1_widget_1_1_d_style_option_line_edit.html" title="Dtk::Widget::DLineEdit使用的样式配置" alt="" coords="260,393,453,434"/>
-<area shape="rect" id="node8" href="$class_dtk_1_1_widget_1_1_d_style_option_view_item.html" title=" " alt="" coords="515,199,708,241"/>
-<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_style_option_button_box_button.html" title=" " alt="" coords="756,66,949,107"/>
-<area shape="rect" id="node9" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleoption.html" title=" " alt="" coords="48,115,156,141"/>
-<area shape="rect" id="node10" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleoptionbutton.html" title=" " alt="" coords="281,5,432,32"/>
-<area shape="rect" id="node11" href="/home/juteman/dtk/tags/qtwidgets.tags$qstyleoptionviewitem.html" title=" " alt="" coords="271,56,442,83"/>
+<area shape="rect" id="node1" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qstring.html" title="QString" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_secure_string.html" title="Dtk::Core::DSecureString" alt="" coords="124,5,307,32"/>
 </map>

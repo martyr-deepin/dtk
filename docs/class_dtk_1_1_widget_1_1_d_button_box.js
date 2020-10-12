@@ -11,7 +11,7 @@ var class_dtk_1_1_widget_1_1_d_button_box =
     [ "checkedId", "class_dtk_1_1_widget_1_1_d_button_box.html#aabbba5ea95b6643d05f5bf32175ad85b", null ],
     [ "id", "class_dtk_1_1_widget_1_1_d_button_box.html#a9b62ac9ddb09c8914f1a874a7b48c910", null ],
     [ "orientation", "class_dtk_1_1_widget_1_1_d_button_box.html#a541124e8edb8c02832e90f107c79163f", null ],
-    [ "setButtonList", "class_dtk_1_1_widget_1_1_d_button_box.html#acf8b96ed1a74c5adcb236866d6eae066", null ],
+    [ "setButtonList", "class_dtk_1_1_widget_1_1_d_button_box.html#a820f3d405f6a4b1e1be8b2a57eac7e82", null ],
     [ "setId", "class_dtk_1_1_widget_1_1_d_button_box.html#a8e98eb0df1bb6b57fc849e9b77d81b84", null ],
     [ "setOrientation", "class_dtk_1_1_widget_1_1_d_button_box.html#a5c910c26fa3e3f0e98d8dda2623059a2", null ],
     [ "DButtonBoxButton", "class_dtk_1_1_widget_1_1_d_button_box.html#a15f51509f714ceb5640093f8326d1f52", null ]

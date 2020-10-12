@@ -1,10 +1,9 @@
 <map id="Dtk::Widget::DTextEdit" name="Dtk::Widget::DTextEdit">
-<area shape="rect" id="node1" title=" " alt="" coords="85,379,254,405"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qtextedit.html" title=" " alt="" coords="59,304,143,331"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractscrollarea.html" title=" " alt="" coords="25,229,177,256"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qframe.html" title=" " alt="" coords="65,155,138,181"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,80,141,107"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node7" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
-<area shape="rect" id="node8" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="167,304,310,331"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qtextedit.html" title="QTextEdit" alt="" coords="59,304,143,331"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qabstractscrollarea.html" title="QAbstractScrollArea" alt="" coords="25,229,177,256"/>
+<area shape="rect" id="node4" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="65,155,138,181"/>
+<area shape="rect" id="node5" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="62,80,141,107"/>
+<area shape="rect" id="node6" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node7" href="/home/union/PR/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="167,304,310,331"/>
 </map>

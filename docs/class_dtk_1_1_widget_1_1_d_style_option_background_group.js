@@ -8,8 +8,6 @@ var class_dtk_1_1_widget_1_1_d_style_option_background_group =
       [ "OnlyOne", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html#a8f6e65aeabf159641392c9b3e94d5767a25aff19c07a08e28b2673c1047240ffe", null ]
     ] ],
     [ "init", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html#a92b05854d81df7f5071dbed5206cce60", null ],
-    [ "QStyleOption", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html#abe3499fea2680bf5ca4ab84b348312d8", null ],
-    [ "QStyleOption", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html#a45101d05c9cca67282a11116dd45ff36", null ],
     [ "directions", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html#a6a5affcf777e5151c96f079cb2bcb622", null ],
     [ "position", "class_dtk_1_1_widget_1_1_d_style_option_background_group.html#ae4acf870e691501092e42b04fb5b5509", null ]
 ];

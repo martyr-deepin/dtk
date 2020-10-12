@@ -11,6 +11,5 @@ var class_dtk_1_1_widget_1_1_d_floating_message =
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_floating_message.html#aa4b85cf5155e07c0006c4356257c5514", null ],
     [ "setMessage", "class_dtk_1_1_widget_1_1_d_floating_message.html#a894c659b467e003dc6c77f23a6b2f968", null ],
     [ "setWidget", "class_dtk_1_1_widget_1_1_d_floating_message.html#a4af6a58a84fd2697aea95b3253a2dcb6", null ],
-    [ "setWidget", "class_dtk_1_1_widget_1_1_d_floating_message.html#a609f7213bd99db8a2189a36d1dfbdc89", null ],
     [ "sizeHint", "class_dtk_1_1_widget_1_1_d_floating_message.html#a28ae665e82a88de6a506fafe2d6a0d28", null ]
 ];

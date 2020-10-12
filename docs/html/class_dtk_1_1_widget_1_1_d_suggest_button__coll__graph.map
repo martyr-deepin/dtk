@@ -1,10 +1,8 @@
 <map id="Dtk::Widget::DSuggestButton" name="Dtk::Widget::DSuggestButton">
-<area shape="rect" id="node1" title="这个控件提供了DTK中默认的按钮样式." alt="" coords="111,323,323,349"/>
-<area shape="rect" id="node2" href="/home/juteman/dtk/tags/qtwidgets.tags$qpushbutton.html" title=" " alt="" coords="91,247,197,273"/>
-<area shape="rect" id="node3" href="/home/juteman/dtk/tags/qtwidgets.tags$qabstractbutton.html" title=" " alt="" coords="37,157,166,184"/>
-<area shape="rect" id="node4" href="/home/juteman/dtk/tags/qtwidgets.tags$qwidget.html" title=" " alt="" coords="62,81,141,108"/>
-<area shape="rect" id="node5" href="/home/juteman/dtk/tags/qtcore.tags$qobject.html" title=" " alt="" coords="5,5,80,32"/>
-<area shape="rect" id="node6" href="/home/juteman/dtk/tags/qtgui.tags$qpaintdevice.html" title=" " alt="" coords="105,5,215,32"/>
-<area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。" alt="" coords="238,247,381,273"/>
-<area shape="rect" id="node8" title=" " alt="" coords="191,157,444,184"/>
+<area shape="rect" id="node2" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qpushbutton.html" title="QPushButton" alt="" coords="91,247,197,273"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qabstractbutton.html" title="QAbstractButton" alt="" coords="37,157,166,184"/>
+<area shape="rect" id="node4" href="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="62,81,141,108"/>
+<area shape="rect" id="node5" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node6" href="/home/union/PR/PRTools/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="105,5,215,32"/>
+<area shape="rect" id="node7" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="238,247,381,273"/>
 </map>

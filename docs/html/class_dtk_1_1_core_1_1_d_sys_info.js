@@ -59,7 +59,7 @@ var class_dtk_1_1_core_1_1_d_sys_info =
       [ "UosTypeCount", "class_dtk_1_1_core_1_1_d_sys_info.html#a9f811bf21c840fafa7809ee01865cb93a0e7c1d25ccac0f4f134d2d5338434221", null ]
     ] ],
     [ "deepinDistributorWebsite", "class_dtk_1_1_core_1_1_d_sys_info.html#a3804afb4e39d7102d139ff9d49ecc755", null ],
+    [ "Q_DECL_DEPRECATED_X", "class_dtk_1_1_core_1_1_d_sys_info.html#a253caba0a7b5f86ea3a5de7299554b38", null ],
     [ "Q_DECL_DEPRECATED_X", "class_dtk_1_1_core_1_1_d_sys_info.html#ad7c6ecbcb42d071139426a58d8574926", null ],
-    [ "Q_DECL_DEPRECATED_X", "class_dtk_1_1_core_1_1_d_sys_info.html#a03d2be8d06cf4f854f971492ff8af549", null ],
-    [ "Q_DECL_DEPRECATED_X", "class_dtk_1_1_core_1_1_d_sys_info.html#a253caba0a7b5f86ea3a5de7299554b38", null ]
+    [ "Q_DECL_DEPRECATED_X", "class_dtk_1_1_core_1_1_d_sys_info.html#a03d2be8d06cf4f854f971492ff8af549", null ]
 ];

@@ -35,13 +35,13 @@ var class_dtk_1_1_widget_1_1_d_video_widget =
     [ "setSource", "class_dtk_1_1_widget_1_1_d_video_widget.html#a63a96f2643c30611cccfc90128190027", null ],
     [ "setSourceVideoPixelRatio", "class_dtk_1_1_widget_1_1_d_video_widget.html#a9c7a5d6c207e46fe68fc673658744244", null ],
     [ "sourceVideoPixelRatio", "class_dtk_1_1_widget_1_1_d_video_widget.html#a94507ae4e44bf2c22fc237f9248aca93", null ],
-    [ "aspectRatioMode", "class_dtk_1_1_widget_1_1_d_video_widget.html#ad63f037596279821dac1f16dd1b6ec9f", null ],
-    [ "brightness", "class_dtk_1_1_widget_1_1_d_video_widget.html#abf7b800657a0ce647fd3fce9d3e96b3f", null ],
-    [ "contrast", "class_dtk_1_1_widget_1_1_d_video_widget.html#ae163f8a295c15e8b65aa0774b8efb9c3", null ],
-    [ "hue", "class_dtk_1_1_widget_1_1_d_video_widget.html#a7667250fd2bc7976ffe03b42756788fc", null ],
-    [ "mirroredHorizontal", "class_dtk_1_1_widget_1_1_d_video_widget.html#ad7ec8b348068fa566576907bd1724bea", null ],
-    [ "mirroredVertical", "class_dtk_1_1_widget_1_1_d_video_widget.html#a8c6723b2fbf8938477ff5ddf77c5ec0c", null ],
-    [ "round", "class_dtk_1_1_widget_1_1_d_video_widget.html#a024dba02979eae1744d2b42b1c8e97a8", null ],
-    [ "saturation", "class_dtk_1_1_widget_1_1_d_video_widget.html#a7dcd6e6b0225a204f118320c4f4831a5", null ],
-    [ "scale", "class_dtk_1_1_widget_1_1_d_video_widget.html#a74fa59f38b02d186fa2a1b7966035a7b", null ]
+    [ "aspectRatioMode", "class_dtk_1_1_widget_1_1_d_video_widget.html#a60410190f2af5069931b2ce09d011753", null ],
+    [ "brightness", "class_dtk_1_1_widget_1_1_d_video_widget.html#a8166e982a4ed788a9bf92a404142bdc0", null ],
+    [ "contrast", "class_dtk_1_1_widget_1_1_d_video_widget.html#a6ec71c2c4fafd11ff8d6d3c4c1610d1f", null ],
+    [ "hue", "class_dtk_1_1_widget_1_1_d_video_widget.html#a47c2ff0fd7c16d68d5b943651fd48597", null ],
+    [ "mirroredHorizontal", "class_dtk_1_1_widget_1_1_d_video_widget.html#aa09bff146116df5f7d229350683ba093", null ],
+    [ "mirroredVertical", "class_dtk_1_1_widget_1_1_d_video_widget.html#a36a32b34ebbbd344a23224ff390f5ed4", null ],
+    [ "round", "class_dtk_1_1_widget_1_1_d_video_widget.html#abf0e7e9d9620c9bfa66b9b25cbc50625", null ],
+    [ "saturation", "class_dtk_1_1_widget_1_1_d_video_widget.html#aaa6e82bd035a7dea6550b2760c044bc9", null ],
+    [ "scale", "class_dtk_1_1_widget_1_1_d_video_widget.html#ad9539b964fa111140f55f4cc5ba963e2", null ]
 ];

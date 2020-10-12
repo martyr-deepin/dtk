@@ -17,7 +17,7 @@ var class_dtk_1_1_core_1_1_logger =
     [ "registerCategoryAppender", "class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c", null ],
     [ "setDefaultCategory", "class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4", null ],
     [ "write", "class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195", null ],
-    [ "write", "class_dtk_1_1_core_1_1_logger.html#a70f982af41757cd10039eca2311005d2", null ],
     [ "write", "class_dtk_1_1_core_1_1_logger.html#a7fc482ceac2a443c864cdb0d11b35888", null ],
+    [ "write", "class_dtk_1_1_core_1_1_logger.html#a70f982af41757cd10039eca2311005d2", null ],
     [ "writeAssert", "class_dtk_1_1_core_1_1_logger.html#adf0508d25e1506127e583689e22ec95f", null ]
 ];

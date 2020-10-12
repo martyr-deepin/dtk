@@ -8,6 +8,6 @@ var class_dtk_1_1_widget_1_1_d_label =
     [ "initPainter", "class_dtk_1_1_widget_1_1_d_label.html#a9d8a2035834c36ed34f491462ef46909", null ],
     [ "paintEvent", "class_dtk_1_1_widget_1_1_d_label.html#aba22cd9cfe9ceb8a0fba1e7b4c8fba6d", null ],
     [ "setElideMode", "class_dtk_1_1_widget_1_1_d_label.html#a6cbb9250b2d29c2cc2da5adf53563a17", null ],
-    [ "setForegroundRole", "class_dtk_1_1_widget_1_1_d_label.html#a33c409751b429888e5d9d25c70b7b3bd", null ],
-    [ "setForegroundRole", "class_dtk_1_1_widget_1_1_d_label.html#a1fb342a33eb1c8c0e4dc7a6255d8283c", null ]
+    [ "setForegroundRole", "class_dtk_1_1_widget_1_1_d_label.html#a1fb342a33eb1c8c0e4dc7a6255d8283c", null ],
+    [ "setForegroundRole", "class_dtk_1_1_widget_1_1_d_label.html#a33c409751b429888e5d9d25c70b7b3bd", null ]
 ];

@@ -6,8 +6,8 @@ var classchameleon_1_1_chameleon_style =
     [ "drawComplexControl", "classchameleon_1_1_chameleon_style.html#afc7a6648f99ed507cc6d5569008fb9d3", null ],
     [ "drawControl", "classchameleon_1_1_chameleon_style.html#a64e6a9bfa28a2b1a84e5dfac866e0a38", null ],
     [ "drawPrimitive", "classchameleon_1_1_chameleon_style.html#a80a741c86187a8be45c08c789b3edc54", null ],
-    [ "generatedBrush", "classchameleon_1_1_chameleon_style.html#a93393771090f76ca9a5315413a648de3", null ],
     [ "generatedBrush", "classchameleon_1_1_chameleon_style.html#a850475280751a8526921f1f1faad3eba", null ],
+    [ "generatedBrush", "classchameleon_1_1_chameleon_style.html#a93393771090f76ca9a5315413a648de3", null ],
     [ "hitTestComplexControl", "classchameleon_1_1_chameleon_style.html#a048e7bc01154781732d65d4e8c893502", null ],
     [ "pixelMetric", "classchameleon_1_1_chameleon_style.html#a4f6738b0014c734c8eca5b370eb73088", null ],
     [ "polish", "classchameleon_1_1_chameleon_style.html#a85a106013fb68d9ed9da611b565fe8fe", null ],
@@ -16,6 +16,6 @@ var classchameleon_1_1_chameleon_style =
     [ "styleHint", "classchameleon_1_1_chameleon_style.html#ac5fd2febc56ea85116e86e41b6fb9510", null ],
     [ "subControlRect", "classchameleon_1_1_chameleon_style.html#a15afe1a94320ec01e9ef0ed0e35f3c9f", null ],
     [ "subElementRect", "classchameleon_1_1_chameleon_style.html#a882ef10065b28ecdc3d0d4a3e478c8c6", null ],
-    [ "unpolish", "classchameleon_1_1_chameleon_style.html#ac5a7f81f8c769ba70d0fe80ffdd38786", null ],
-    [ "unpolish", "classchameleon_1_1_chameleon_style.html#ae4ba24953bc9e2d8ef7b4495d1c1fc33", null ]
+    [ "unpolish", "classchameleon_1_1_chameleon_style.html#ae4ba24953bc9e2d8ef7b4495d1c1fc33", null ],
+    [ "unpolish", "classchameleon_1_1_chameleon_style.html#ac5a7f81f8c769ba70d0fe80ffdd38786", null ]
 ];

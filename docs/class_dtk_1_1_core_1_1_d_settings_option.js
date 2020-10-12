@@ -16,5 +16,5 @@ var class_dtk_1_1_core_1_1_d_settings_option =
     [ "value", "class_dtk_1_1_core_1_1_d_settings_option.html#a92417b5c5cc11d3bbf86ff26d457641a", null ],
     [ "valueChanged", "class_dtk_1_1_core_1_1_d_settings_option.html#aa33a8ae87df405b8fd06c873bd026712", null ],
     [ "viewType", "class_dtk_1_1_core_1_1_d_settings_option.html#a8c78f69648c9f610914a73e28e76bffb", null ],
-    [ "value", "class_dtk_1_1_core_1_1_d_settings_option.html#aef1a1f6bda10b5387485a768a7f42987", null ]
+    [ "value", "class_dtk_1_1_core_1_1_d_settings_option.html#ac68f04b7308b5cd7a597fb0411865c19", null ]
 ];

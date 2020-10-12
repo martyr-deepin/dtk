@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wmname_19474',['WMName',['../class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4',1,'DWindowManagerHelper']]]
+  ['wmname',['WMName',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a5e4ff57b986788b412a6fe703560d84c',1,'Dtk::Gui::DWindowManagerHelper']]]
 ];
