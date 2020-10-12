@@ -1,0 +1,5 @@
+<map id="Dtk::Gui::DWindowManagerHelper_" name="Dtk::Gui::DWindowManagerHelper_">
+<area shape="rect" id="node2" href="$class_dtk_1_1_gui_1_1_d_window_manager_helper.html" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平�..." alt="" coords="5,171,207,212"/>
+<area shape="rect" id="node3" href="/home/union/PR/PRTools/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="53,95,127,121"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_d_object.html" title="deepin&#45;tool&#45;kit 中所有公开类的祖先类。 " alt="" coords="152,95,295,121"/>
+</map>
