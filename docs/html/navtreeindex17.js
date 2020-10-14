@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"functions_k.html":[8,3,0,10],
+"functions_l.html":[8,3,0,11],
 "functions_m.html":[8,3,0,12],
 "functions_n.html":[8,3,0,13],
 "functions_o.html":[8,3,0,14],
@@ -25,8 +27,8 @@ var NAVTREEINDEX17 =
 "hidpihelper_8cpp_source.html":[9,0,3,3,1,16],
 "hidpihelper_8h_source.html":[9,0,3,3,1,17],
 "hierarchy.html":[8,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "lineedithelper_8cpp_source.html":[9,0,3,3,1,18],
 "md_dtkcore__c_h_a_n_g_e_l_o_g.html":[2],
 "md_dtkcore_src_log__r_e_a_d_m_e.html":[4],
