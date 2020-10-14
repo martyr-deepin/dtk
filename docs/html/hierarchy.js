@@ -247,6 +247,7 @@ var hierarchy =
     ] ],
     [ "QObject", "qthelp://org.qt-project.qtcore/qtcore/qobject.html", [
       [ "AutoScaleWindowObject", "class_auto_scale_window_object.html", null ],
+      [ "CreatorWindowEventFile", "class_creator_window_event_file.html", null ],
       [ "DDndClientSignalRelay", "class_d_dnd_client_signal_relay.html", null ],
       [ "DDndSourceInterface", "class_d_dnd_source_interface.html", null ],
       [ "DFileDragClient", "class_d_file_drag_client.html", null ],
@@ -533,8 +534,8 @@ var hierarchy =
       [ "Dtk::Core::DVtableHook::OverrideDestruct< T >", "class_dtk_1_1_core_1_1_d_vtable_hook_1_1_override_destruct.html", null ]
     ] ],
     [ "Dtk::Widget::DAbstractStackWidgetTransition::TransitionInfo", "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html", null ],
-    [ "DWindowHandle::WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],
+    [ "DWindowHandle::WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
     [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ],
     [ "ConanFile", null, [

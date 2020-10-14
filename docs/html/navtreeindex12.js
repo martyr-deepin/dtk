@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a4cf3ec55cfcbaaae29339e7a9afbbd5b":[8,0,3,2,107,3],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a56c8b2164eaeb9b43cf01f743afe36a4":[8,0,3,2,107,1],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a57af1db3c8faebb4390574e0984d9e30":[8,0,3,2,107,2],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a5831e70fc5608fe41961ac72644e315e":[8,0,3,2,107,12],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a6287926e6c0fcee766b76a2753177742":[8,0,3,2,107,8],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a6d2fd04c7e2504943b9ef6fe076f01b1":[8,0,3,2,107,7],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#aae1264f79d10c7b845725c8d4347385d":[8,0,3,2,107,4],
+"class_dtk_1_1_widget_1_1_d_style_painter.html#ab83560e7cc6d2f273dd9d67fd878e07a":[8,0,3,2,107,6],
 "class_dtk_1_1_widget_1_1_d_style_painter.html#ac558f98a88d297891bdfc402fbf0e3b5":[8,0,3,2,107,11],
 "class_dtk_1_1_widget_1_1_d_style_painter.html#ac656c2b3ac3dd867a331d35c3d6e680f":[8,0,3,2,107,10],
 "class_dtk_1_1_widget_1_1_d_styled_icon_engine.html":[8,0,3,2,96],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "class_dtk_1_1_widget_1_1_d_titlebar.html#a334de51811e9e41099bd90b430fa1f8e":[8,0,3,2,117,8],
 "class_dtk_1_1_widget_1_1_d_titlebar.html#a33bcc5890250c54b84b60c144fa97e91":[8,0,3,2,117,10],
 "class_dtk_1_1_widget_1_1_d_titlebar.html#a382587b4669ca77d84413195a78d1024":[8,0,3,2,117,39],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a3d93a984b8d69ceec0c710aadf6bb731":[8,0,3,2,117,43],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a4147c774ec3bedcb9690aadb4a8dc415":[8,0,3,2,117,23],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a47657fdb46d1f0852a0b0e83e109e271":[8,0,3,2,117,36],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a4f01db9e747c9529dc4f43610b5e10fb":[8,0,3,2,117,24],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a51971647d34b17bd8f01e0ef42a0fa3a":[8,0,3,2,117,27],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a597855aec82e8f8a5f3cdd1588a67515":[8,0,3,2,117,42],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a5ca7c1fde871f7c9df0421274e325c9c":[8,0,3,2,117,11],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a6cb485b8cff38096f1c817f54c04b87e":[8,0,3,2,117,20],
-"class_dtk_1_1_widget_1_1_d_titlebar.html#a6d92a66bb03b6c0ee10488d9c2dc550d":[8,0,3,2,117,16]
+"class_dtk_1_1_widget_1_1_d_titlebar.html#a3d93a984b8d69ceec0c710aadf6bb731":[8,0,3,2,117,43]
 };

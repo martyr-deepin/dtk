@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"class_dtk_1_1_widget_1_1_d_base_line.html#a640310940bdbe4a16e15d8f65a126c80":[8,0,3,2,25,1],
+"class_dtk_1_1_widget_1_1_d_base_line.html#a6587b7daf07c30048c5da1ddecb8ad60":[8,0,3,2,25,2],
+"class_dtk_1_1_widget_1_1_d_base_line.html#a692253d0ec11434d812a75e7ba78186f":[8,0,3,2,25,4],
+"class_dtk_1_1_widget_1_1_d_base_line.html#a710f0c878ef7e45d171429bfcefc5be8":[8,0,3,2,25,7],
+"class_dtk_1_1_widget_1_1_d_base_line.html#ad6dd85981a736104aaac54b5b75783cf":[8,0,3,2,25,0],
+"class_dtk_1_1_widget_1_1_d_base_line.html#adae08dcbc4fb5604a2103edccc1acd5b":[8,0,3,2,25,6],
+"class_dtk_1_1_widget_1_1_d_blur_effect_group.html":[8,0,3,2,26],
+"class_dtk_1_1_widget_1_1_d_blur_effect_group.html#a2f8e47f22cd264f3129039aedddae234":[8,0,3,2,26,0],
 "class_dtk_1_1_widget_1_1_d_blur_effect_group.html#a5f045faecf19b1983fbbaaef7fd597c7":[8,0,3,2,26,5],
 "class_dtk_1_1_widget_1_1_d_blur_effect_group.html#a8e1c2a02102995ba33b5055ec58adce9":[8,0,3,2,26,1],
 "class_dtk_1_1_widget_1_1_d_blur_effect_group.html#aa0aae89196e6ceb4ce7444141db491b5":[8,0,3,2,26,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "class_dtk_1_1_widget_1_1_d_dialog.html#a21cd6659a537e24cc641487b40abc926":[8,0,3,2,38,39],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a29202f44c8716a8c85d40a3eb40f877e":[8,0,3,2,38,35],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a2d5cbe6aadd6a06fe4cdf08cbdadd395":[8,0,3,2,38,48],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a2ed34d22b4147fb8c220ad2497ccd868":[8,0,3,2,38,72],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a2f27dd1e409cd8b34cfe375c99fe6b01":[8,0,3,2,38,26],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a2fb231e2b276617909ef856540b9873c":[8,0,3,2,38,36],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a32ede4bee59269602e41eb68036fb3ab":[8,0,3,2,38,54],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a344df3e41e79bad610f94292d643c7f9":[8,0,3,2,38,43],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a34f8b4fa39769772cf77abae2728967f":[8,0,3,2,38,73],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a3ad29f8814bceba68010e757fadce6ac":[8,0,3,2,38,1],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a3d2058bfa4007e6b832056c557a6bda2":[8,0,3,2,38,17],
-"class_dtk_1_1_widget_1_1_d_dialog.html#a41487aad5ea9e0f54e2b42f98899b8d7":[8,0,3,2,38,13]
+"class_dtk_1_1_widget_1_1_d_dialog.html#a2ed34d22b4147fb8c220ad2497ccd868":[8,0,3,2,38,72]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX3 =
 {
+"class_dtk_1_1_core_1_1_d_disk_size_formatter.html#aa2f7f223ae4afe3419c31c385f06dbc2":[8,0,3,0,10,2],
+"class_dtk_1_1_core_1_1_d_disk_size_formatter.html#ab5f8be46f4d9d76bac2ccaa7f4db2e2d":[8,0,3,0,10,4],
+"class_dtk_1_1_core_1_1_d_disk_size_formatter.html#ae3b3ddd6a8132b2c964b93c3d0844233":[8,0,3,0,10,6],
+"class_dtk_1_1_core_1_1_d_file_services.html":[8,0,3,0,11],
+"class_dtk_1_1_core_1_1_d_file_system_watcher.html":[8,0,3,0,12],
+"class_dtk_1_1_core_1_1_d_file_system_watcher.html#a2cb634cb4a19e5d9ad1baecc6ae2936e":[8,0,3,0,12,1],
+"class_dtk_1_1_core_1_1_d_file_system_watcher.html#a3aabd837ad02f5403ac619dd00ac83b6":[8,0,3,0,12,12],
+"class_dtk_1_1_core_1_1_d_file_system_watcher.html#a4c258d467e8f3880ea20833dda7f34f1":[8,0,3,0,12,6],
 "class_dtk_1_1_core_1_1_d_file_system_watcher.html#a596b42f0264af6c2ca6186e1fa234a7c":[8,0,3,0,12,3],
 "class_dtk_1_1_core_1_1_d_file_system_watcher.html#a723bb916c339ffe791e521c3bf300ea0":[8,0,3,0,12,13],
 "class_dtk_1_1_core_1_1_d_file_system_watcher.html#a883f3950c4303ccdea977754db5bd3fa":[8,0,3,0,12,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX3 =
 "class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a23b5a587d24d0aee392c2d49210256c6":[8,0,3,0,35,0,3],
 "class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a6bbb6c6e777f55c94427418fcd8854e0":[8,0,3,0,35,0,4],
 "class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4a8106a5cf6d4c5742382b66db92364980":[8,0,3,0,35,0,0],
-"class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4aa9c9b0ed330e7603907c688212ab388d":[8,0,3,0,35,0,5],
-"class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4ad54dde4ec2109b8a19802e3881ff3e6c":[8,0,3,0,35,0,2],
-"class_dtk_1_1_core_1_1_logger.html#a4a88302ec9c667bc47529d234da516d4":[8,0,3,0,35,8],
-"class_dtk_1_1_core_1_1_logger.html#a6a9206bc76164355a8c2c04a63340195":[8,0,3,0,35,9],
-"class_dtk_1_1_core_1_1_logger.html#a70f982af41757cd10039eca2311005d2":[8,0,3,0,35,11],
-"class_dtk_1_1_core_1_1_logger.html#a7fc482ceac2a443c864cdb0d11b35888":[8,0,3,0,35,10],
-"class_dtk_1_1_core_1_1_logger.html#a87f67b2b6ed4ffec4096ffd5e118beca":[8,0,3,0,35,5],
-"class_dtk_1_1_core_1_1_logger.html#a8bf632cb87800101031e5c19773cca38":[8,0,3,0,35,1],
-"class_dtk_1_1_core_1_1_logger.html#a95ef2b960342e8153edd908b2f05029c":[8,0,3,0,35,7]
+"class_dtk_1_1_core_1_1_logger.html#a4a76b1db357f61044ed67411d1c378b4aa9c9b0ed330e7603907c688212ab388d":[8,0,3,0,35,0,5]
 };

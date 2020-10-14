@@ -112,6 +112,7 @@ var class_d_platform_theme =
     [ "setToolTipBase", "class_d_platform_theme.html#a750543bebe51f593c74c219733f38845", null ],
     [ "setToolTipText", "class_d_platform_theme.html#a759fcb24fef78678e8b284e0dc09b0ec", null ],
     [ "setWindow", "class_d_platform_theme.html#ab7f5150adbc9cfd4ddc3fa56f70ce1ac", null ],
+    [ "setWindowRadius", "class_d_platform_theme.html#aa9697699e8ecec9e9641530dbdf18f82", null ],
     [ "setWindowText", "class_d_platform_theme.html#ae0b5c16b5a4a7df8a719c955e8e7d43d", null ],
     [ "shadow", "class_d_platform_theme.html#af7ff54f9dbf7d0de36a3caf935fe230f", null ],
     [ "shadowChanged", "class_d_platform_theme.html#a9ae88dcb8aadf993451e387f40eb743f", null ],
@@ -135,6 +136,9 @@ var class_d_platform_theme =
     [ "toolTipTextChanged", "class_d_platform_theme.html#a2a311b150d072c32d6317252221049d0", null ],
     [ "window", "class_d_platform_theme.html#aeff6fb4d6b9d37253c48da9709e2957a", null ],
     [ "windowChanged", "class_d_platform_theme.html#af19b2254b70244455ef26da31c7b9088", null ],
+    [ "windowRadius", "class_d_platform_theme.html#a79442d07992b4bca41a7f441e9ff236a", null ],
+    [ "windowRadius", "class_d_platform_theme.html#af377dde8f510fc53f9b3e5357e013a7a", null ],
+    [ "windowRadiusChanged", "class_d_platform_theme.html#a3cc3c4670b1617285c11434d631574f3", null ],
     [ "windowText", "class_d_platform_theme.html#afeaba5a1af5c26dc6d8e364d5d23d05b", null ],
     [ "windowTextChanged", "class_d_platform_theme.html#ac5db1f1aa01012f48c10da0e3de5c351", null ],
     [ "activeColor", "class_d_platform_theme.html#a8b67c279f577da17c8b4cac2f9b48d5a", null ],
@@ -177,5 +181,6 @@ var class_d_platform_theme =
     [ "toolTipBase", "class_d_platform_theme.html#a04b9c630fe6ec478d6e9948849a381fa", null ],
     [ "toolTipText", "class_d_platform_theme.html#aab0c367af9d96c076405d5196bf827bd", null ],
     [ "window", "class_d_platform_theme.html#abd8754ce08aa2f2f90002781c887f8d1", null ],
+    [ "windowRadius", "class_d_platform_theme.html#a6572e348d43f97ae0b99953e0a8b81ff", null ],
     [ "windowText", "class_d_platform_theme.html#a5e6d39363c0cf784bc88eed86d292d03", null ]
 ];

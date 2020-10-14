@@ -1,5 +1,13 @@
 var NAVTREEINDEX10 =
 {
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a63a00ef8c67d7148f201ab6a5a8c5a63":[8,0,3,2,78,18],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a673b5e80534e0fcae188d464421d75d0":[8,0,3,2,78,32],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a7150a954b0fda16903d0294921df7d19":[8,0,3,2,78,5],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a7274ec188f7b15c03ab7bd82c96c79fc":[8,0,3,2,78,6],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a7835de38a1e8536d5f4bed52e3f1444c":[8,0,3,2,78,33],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a82836c6fc7d57bffce1c137d8dfef695":[8,0,3,2,78,27],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a84681e3ac929619d215a5519e135caf4":[8,0,3,2,78,7],
+"class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a8fefdca07614f2d09f0dd5ae124bf551":[8,0,3,2,78,3],
 "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a9245e268d26a2757e8bb712e298f6e10":[8,0,3,2,78,13],
 "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#a9c9c81297e3e9efe61ce32a6b38a216a":[8,0,3,2,78,28],
 "class_dtk_1_1_widget_1_1_d_print_preview_widget.html#aa91c4bd03f2407171114b5836f65e60a":[8,0,3,2,78,23],
@@ -241,13 +249,5 @@ var NAVTREEINDEX10 =
 "class_dtk_1_1_widget_1_1_d_spin_box.html#a4900f7f0090834f8add6e21d8204cea6":[8,0,3,2,91,1],
 "class_dtk_1_1_widget_1_1_d_spin_box.html#a5ea5d45b232b74fbacb61b49df2f708e":[8,0,3,2,91,4],
 "class_dtk_1_1_widget_1_1_d_spin_box.html#a79d689912d62066a4a8484a441625d47":[8,0,3,2,91,10],
-"class_dtk_1_1_widget_1_1_d_spin_box.html#a9167a5c97276cfa58e7622a020752889":[8,0,3,2,91,7],
-"class_dtk_1_1_widget_1_1_d_spin_box.html#a9253cedad0295a997375a509adaf9fa6":[8,0,3,2,91,9],
-"class_dtk_1_1_widget_1_1_d_spin_box.html#ab46016b1901e64b9ba50e92e4db394e3":[8,0,3,2,91,0],
-"class_dtk_1_1_widget_1_1_d_spin_box.html#ad4bd8c5cde0dd915c6eec26b51b6ed41":[8,0,3,2,91,2],
-"class_dtk_1_1_widget_1_1_d_spin_box.html#ad54c46cf8fefcd8e5e118fa41c73f6c2":[8,0,3,2,91,5],
-"class_dtk_1_1_widget_1_1_d_spin_box.html#afd356ccdf4aee2635ac1f2a8ea9e3d9f":[8,0,3,2,91,3],
-"class_dtk_1_1_widget_1_1_d_spinner.html":[8,0,3,2,92],
-"class_dtk_1_1_widget_1_1_d_spinner.html#a2191aaaa246bfe8f6548f2e0d3469faa":[8,0,3,2,92,4],
-"class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2":[8,0,3,2,92,0]
+"class_dtk_1_1_widget_1_1_d_spin_box.html#a9167a5c97276cfa58e7622a020752889":[8,0,3,2,91,7]
 };

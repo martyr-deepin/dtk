@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"class_dtk_1_1_widget_1_1_d_dialog.html#a2f27dd1e409cd8b34cfe375c99fe6b01":[8,0,3,2,38,26],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a2fb231e2b276617909ef856540b9873c":[8,0,3,2,38,36],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a32ede4bee59269602e41eb68036fb3ab":[8,0,3,2,38,54],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a344df3e41e79bad610f94292d643c7f9":[8,0,3,2,38,43],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a34f8b4fa39769772cf77abae2728967f":[8,0,3,2,38,73],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a3ad29f8814bceba68010e757fadce6ac":[8,0,3,2,38,1],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a3d2058bfa4007e6b832056c557a6bda2":[8,0,3,2,38,17],
+"class_dtk_1_1_widget_1_1_d_dialog.html#a41487aad5ea9e0f54e2b42f98899b8d7":[8,0,3,2,38,13],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a45623d972c436fcb0820e5ef2147753a":[8,0,3,2,38,27],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a458f30760ba2b5b0be65e6b94c4f8f44":[8,0,3,2,38,0],
 "class_dtk_1_1_widget_1_1_d_dialog.html#a458f30760ba2b5b0be65e6b94c4f8f44a2365f6503fa930b5c9bac72a73076a5b":[8,0,3,2,38,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997daaef82ae2226427a6d8ea7c96eadb20e4":[8,0,3,2,51,0,0],
 "class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dac079c9e32740f1d1a9fd7dfecf1f9a1f":[8,0,3,2,51,0,5],
 "class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dacf042b2acacf282c65804386beb5f0f2":[8,0,3,2,51,0,10],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dae29adbdbc89114f03bc1dbc7a28c774b":[8,0,3,2,51,0,6],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dae4546684002e7033e29fa131e9682750":[8,0,3,2,51,0,2],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997daf6694e1f8fddd7ab383625e1e9ba6a1a":[8,0,3,2,51,0,1],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dafbce9e699d6381165ede64b12c047c3c":[8,0,3,2,51,0,4],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a675d16991482c9042037b7da6a048858":[8,0,3,2,51,7],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a69ef66fb894d618397547bfd60706788":[8,0,3,2,51,9],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a775f41b669f978a6f06a7274329e655b":[8,0,3,2,51,17],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a7bb5334d70096923c039599d1f099def":[8,0,3,2,51,3],
-"class_dtk_1_1_widget_1_1_d_font_size_manager.html#aa0dd86904be5d50fcf53564852251612":[8,0,3,2,51,6]
+"class_dtk_1_1_widget_1_1_d_font_size_manager.html#a5e94c334b7a00226df96b06a0c4c997dae29adbdbc89114f03bc1dbc7a28c774b":[8,0,3,2,51,0,6]
 };

@@ -228,6 +228,7 @@ var annotated_dup =
     [ "_DGuiApplicationHelper", "class___d_gui_application_helper.html", "class___d_gui_application_helper" ],
     [ "AutoScaleWindowObject", "class_auto_scale_window_object.html", "class_auto_scale_window_object" ],
     [ "ChameleonStylePlugin", "class_chameleon_style_plugin.html", "class_chameleon_style_plugin" ],
+    [ "CreatorWindowEventFile", "class_creator_window_event_file.html", "class_creator_window_event_file" ],
     [ "CustomInterface", "class_custom_interface.html", null ],
     [ "DArrowLineExpand", "class_d_arrow_line_expand.html", null ],
     [ "DBaseExpand", "class_d_base_expand.html", null ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"class_dtk_1_1_widget_1_1_d_spin_box.html#a9253cedad0295a997375a509adaf9fa6":[8,0,3,2,91,9],
+"class_dtk_1_1_widget_1_1_d_spin_box.html#ab46016b1901e64b9ba50e92e4db394e3":[8,0,3,2,91,0],
+"class_dtk_1_1_widget_1_1_d_spin_box.html#ad4bd8c5cde0dd915c6eec26b51b6ed41":[8,0,3,2,91,2],
+"class_dtk_1_1_widget_1_1_d_spin_box.html#ad54c46cf8fefcd8e5e118fa41c73f6c2":[8,0,3,2,91,5],
+"class_dtk_1_1_widget_1_1_d_spin_box.html#afd356ccdf4aee2635ac1f2a8ea9e3d9f":[8,0,3,2,91,3],
+"class_dtk_1_1_widget_1_1_d_spinner.html":[8,0,3,2,92],
+"class_dtk_1_1_widget_1_1_d_spinner.html#a2191aaaa246bfe8f6548f2e0d3469faa":[8,0,3,2,92,4],
+"class_dtk_1_1_widget_1_1_d_spinner.html#a31964def4bc3554be77b5937c52e34e2":[8,0,3,2,92,0],
 "class_dtk_1_1_widget_1_1_d_spinner.html#a4f68d87645efcc8188409308f074b842":[8,0,3,2,92,6],
 "class_dtk_1_1_widget_1_1_d_spinner.html#a6c62461dbeae499b4d5ca80d7cbee48b":[8,0,3,2,92,2],
 "class_dtk_1_1_widget_1_1_d_spinner.html#a6e3cfaabcfbeac02bcdede8856229137":[8,0,3,2,92,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "class_dtk_1_1_widget_1_1_d_style_painter.html":[8,0,3,2,107],
 "class_dtk_1_1_widget_1_1_d_style_painter.html#a0e12e1e429155187b8d3d88b30eaf2a9":[8,0,3,2,107,9],
 "class_dtk_1_1_widget_1_1_d_style_painter.html#a0e1fd5d5cfd4a04b78ceeb89489f678d":[8,0,3,2,107,0],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a4592c3e67f17376e4c74a789a3196550":[8,0,3,2,107,5],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a4cf3ec55cfcbaaae29339e7a9afbbd5b":[8,0,3,2,107,3],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a56c8b2164eaeb9b43cf01f743afe36a4":[8,0,3,2,107,1],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a57af1db3c8faebb4390574e0984d9e30":[8,0,3,2,107,2],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a5831e70fc5608fe41961ac72644e315e":[8,0,3,2,107,12],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a6287926e6c0fcee766b76a2753177742":[8,0,3,2,107,8],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#a6d2fd04c7e2504943b9ef6fe076f01b1":[8,0,3,2,107,7],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#aae1264f79d10c7b845725c8d4347385d":[8,0,3,2,107,4],
-"class_dtk_1_1_widget_1_1_d_style_painter.html#ab83560e7cc6d2f273dd9d67fd878e07a":[8,0,3,2,107,6]
+"class_dtk_1_1_widget_1_1_d_style_painter.html#a4592c3e67f17376e4c74a789a3196550":[8,0,3,2,107,5]
 };
