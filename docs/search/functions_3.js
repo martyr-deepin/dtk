@@ -4,7 +4,6 @@ var searchData=
   ['dabstractdialog',['DAbstractDialog',['../class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a6f7d7bf68c2c5d68b6b120ec82e29fbb',1,'Dtk::Widget::DAbstractDialog']]],
   ['dabstractunitformatter',['DAbstractUnitFormatter',['../class_dtk_1_1_core_1_1_d_abstract_unit_formatter.html#abb21caeeb1e6e410f945a47f5f6315dc',1,'Dtk::Core::DAbstractUnitFormatter']]],
   ['danchorsbase',['DAnchorsBase',['../class_dtk_1_1_widget_1_1_d_anchors_base.html#aa36c167c8f8821e1fe0561c50694a267',1,'Dtk::Widget::DAnchorsBase']]],
-  ['dapplication',['DApplication',['../class_dtk_1_1_widget_1_1_d_application.html#aeebb64fd7a932ee1941913934a60ce8f',1,'Dtk::Widget::DApplication']]],
   ['dapplicationsettings',['DApplicationSettings',['../class_dtk_1_1_widget_1_1_d_application_settings.html#ab0414eb432d08140d9fe587ce4f31ba8',1,'Dtk::Widget::DApplicationSettings']]],
   ['dark',['dark',['https://doc.qt.io/qt-5/qcolor-obsolete.html#dark',1,'QColor::dark()'],['https://doc.qt.io/qt-5/qpalette.html#dark',1,'QPalette::dark()']]],
   ['darker',['darker',['https://doc.qt.io/qt-5/qcolor.html#darker',1,'QColor']]],

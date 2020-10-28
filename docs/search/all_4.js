@@ -18,7 +18,7 @@ var searchData=
   ['danchors',['DAnchors',['../class_dtk_1_1_widget_1_1_d_anchors.html',1,'Dtk::Widget']]],
   ['danchorsbase',['DAnchorsBase',['../class_dtk_1_1_widget_1_1_d_anchors_base.html',1,'Dtk::Widget::DAnchorsBase'],['../class_dtk_1_1_widget_1_1_d_anchors_base.html#aa36c167c8f8821e1fe0561c50694a267',1,'Dtk::Widget::DAnchorsBase::DAnchorsBase()']]],
   ['danchorsrect',['DAnchorsRect',['../class_dtk_1_1_widget_1_1_d_anchors_rect.html',1,'Dtk::Widget']]],
-  ['dapplication',['DApplication',['../class_dtk_1_1_widget_1_1_d_application.html',1,'Dtk::Widget::DApplication'],['../class_dtk_1_1_widget_1_1_d_application.html#aeebb64fd7a932ee1941913934a60ce8f',1,'Dtk::Widget::DApplication::DApplication()']]],
+  ['dapplication',['DApplication',['../class_dtk_1_1_widget_1_1_d_application.html',1,'Dtk::Widget']]],
   ['dapplicationhelper',['DApplicationHelper',['../class_dtk_1_1_widget_1_1_d_application_helper.html',1,'Dtk::Widget']]],
   ['dapplicationsettings',['DApplicationSettings',['../class_dtk_1_1_widget_1_1_d_application_settings.html',1,'Dtk::Widget::DApplicationSettings'],['../class_dtk_1_1_widget_1_1_d_application_settings.html#ab0414eb432d08140d9fe587ce4f31ba8',1,'Dtk::Widget::DApplicationSettings::DApplicationSettings()']]],
   ['dark',['dark',['https://doc.qt.io/qt-5/qcolor-obsolete.html#dark',1,'QColor::dark()'],['https://doc.qt.io/qt-5/qpalette.html#dark',1,'QPalette::dark()']]],
