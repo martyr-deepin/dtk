@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('class_d_window_handle.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间，通过覆写xcb插件中某些对象的虚函数来改变它的一些行为，本质上来讲是Qt xcb插件的 扩展，在X11平台上为DTK应用提供了一些改变窗口效果的功能（比如自定义窗口的边框）、其它和平 台密切相关的实现（比如修复Qt应用在X11平台的一些bug），不能脱离Qt xcb插件独立运行。dxcb 通过重载 QPlatformNativeInterface 提供接口，DWindowHandle 中使用 <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformFunction">QGuiApplication::platformFunction</a> 调用这些接口。Application、dxcb、qt xcb 之间 的关系：  
+<p>一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间，通过覆写xcb插件中某些对象的虚函数来改变它的一些行为，本质上来讲是Qt xcb插件的 扩展，在X11平台上为DTK应用提供了一些改变窗口效果的功能（比如自定义窗口的边框）、其它和平 台密切相关的实现（比如修复Qt应用在X11平台的一些bug），不能脱离Qt xcb插件独立运行。dxcb 通过重载 QPlatformNativeInterface 提供接口，DWindowHandle 中使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformFunction">QGuiApplication::platformFunction</a> 调用这些接口。Application、dxcb、qt xcb 之间 的关系：  
 <pre style="font-family: FreeMono, Consolas, Menlo, 'Noto Mono', 'Courier New', Courier, monospace;line-height: 100%;">
       ┏━━━━━━━━━━━━━━━━┓
       ┃   Application  ┃
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('class_d_window_handle.html','');});
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p>一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间，通过覆写xcb插件中某些对象的虚函数来改变它的一些行为，本质上来讲是Qt xcb插件的 扩展，在X11平台上为DTK应用提供了一些改变窗口效果的功能（比如自定义窗口的边框）、其它和平 台密切相关的实现（比如修复Qt应用在X11平台的一些bug），不能脱离Qt xcb插件独立运行。dxcb 通过重载 QPlatformNativeInterface 提供接口，DWindowHandle 中使用 <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformFunction">QGuiApplication::platformFunction</a> 调用这些接口。Application、dxcb、qt xcb 之间 的关系：  
+<div class="textblock"><p>一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平台上使用这个类不会有任何效果。关于dxcb：它介于Qt应用和Qt xcb平台 插件之间，通过覆写xcb插件中某些对象的虚函数来改变它的一些行为，本质上来讲是Qt xcb插件的 扩展，在X11平台上为DTK应用提供了一些改变窗口效果的功能（比如自定义窗口的边框）、其它和平 台密切相关的实现（比如修复Qt应用在X11平台的一些bug），不能脱离Qt xcb插件独立运行。dxcb 通过重载 QPlatformNativeInterface 提供接口，DWindowHandle 中使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformFunction">QGuiApplication::platformFunction</a> 调用这些接口。Application、dxcb、qt xcb 之间 的关系：  
 <pre style="font-family: FreeMono, Consolas, Menlo, 'Noto Mono', 'Courier New', Courier, monospace;line-height: 100%;">
       ┏━━━━━━━━━━━━━━━━┓
       ┃   Application  ┃
@@ -133,14 +133,14 @@ $(document).ready(function(){initNavTree('class_d_window_handle.html','');});
 <dd>
 <a class="el" href="class_d_platform_handle.html#a35f657dbe43e39173d3273c606a90e1a" title="DPlatformHandle::isDXcbPlatform 检查当前程序是否使用了dxcb平台插件。 ">DPlatformHandle::isDXcbPlatform</a> </dd>
 <dd>
-<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformNativeInterface">QGuiApplication::platformNativeInterface</a> </dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformNativeInterface">QGuiApplication::platformNativeInterface</a> </dd>
 <dd>
 DMainWindow </dd>
 <dd>
 DWindowManagerHelper </dd></dl>
 <dl class="section warning"><dt>警告</dt><dd>使用此工具前要确保应用加载了dxcb插件 </dd>
 <dd>
-因为 <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformFunction">QGuiApplication::platformFunction</a> 是在 <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qt.html">Qt</a> 5.4.0 版本引入的新接口， 所以 <a class="el" href="class_d_window_handle.html" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平...">DWindowHandle</a> 不支持 <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qt.html">Qt</a> 5.4.0 以下版本。 </dd></dl>
+因为 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#platformFunction">QGuiApplication::platformFunction</a> 是在 <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qt.html">Qt</a> 5.4.0 版本引入的新接口， 所以 <a class="el" href="class_d_window_handle.html" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平...">DWindowHandle</a> 不支持 <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qt.html">Qt</a> 5.4.0 以下版本。 </dd></dl>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkgui/src/<a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a></li>
 </ul>
@@ -150,7 +150,7 @@ DWindowManagerHelper </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_window_handle.html">DWindowHandle</a></li>
-    <li class="footer">生成于 2020年 十二月 22日 星期二 14:55:56 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 22日 星期二 15:19:41 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

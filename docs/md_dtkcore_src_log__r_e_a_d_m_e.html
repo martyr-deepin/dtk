@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('md_dtkcore_src_log__r_e_a_d_m_e.html',
 <p>It supports using it in a multithreaded applications, so all of its functions are thread safe.</p>
 <p>Logger internally uses the lazy-initialized singleton object and needs no definite initialization, but you may consider registering a log appender before calling any log recording functions or macros.</p>
 <p>The library design of Logger allows you to simply mass-replace all occurrences of qDebug and similar calls with similar Logger macros (e.g. <a class="el" href="_logger_8h.html#a35bf78e74128341795a2c9ae2e2979bf" title="Writes the debug log record ">dDebug()</a>)</p>
-<p>Note Logger uses a singleton global instance which lives through all the application life cycle and self-destroys destruction of the <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> (or <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qapplication.html">QApplication</a>) instance. It needs a <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> instance to be created before any of the Logger's functions are called.</p>
+<p>Note Logger uses a singleton global instance which lives through all the application life cycle and self-destroys destruction of the <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> (or <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qapplication.html">QApplication</a>) instance. It needs a <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html">QCoreApplication</a> instance to be created before any of the Logger's functions are called.</p>
 <h2>Usage</h2>
 <p>Just add pkgconfig in .pro file</p>
 <div class="fragment"><div class="line">unix {</div><div class="line">    CONFIG+=link_pkgconfig</div><div class="line">    PKGCONFIG+=dtkcore</div><div class="line">}</div></div><!-- fragment --><h3>Example</h3>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('md_dtkcore_src_log__r_e_a_d_m_e.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2020年 十二月 22日 星期二 14:55:41 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 22日 星期二 15:19:26 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
