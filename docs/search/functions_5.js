@@ -144,7 +144,7 @@ var searchData=
   ['fontletterspacingtype',['fontLetterSpacingType',['https://doc.qt.io/qt-5/qtextcharformat.html#fontLetterSpacingType',1,'QTextCharFormat']]],
   ['fontmetrics',['fontMetrics',['https://doc.qt.io/qt-5/qpainter.html#fontMetrics',1,'QPainter::fontMetrics()'],['https://doc.qt.io/qt-5/qwidget.html#fontMetrics',1,'QWidget::fontMetrics()'],['https://doc.qt.io/qt-5/qapplication.html#fontMetrics',1,'QApplication::fontMetrics()']]],
   ['fontoverline',['fontOverline',['https://doc.qt.io/qt-5/qtextcharformat.html#fontOverline',1,'QTextCharFormat']]],
-  ['fontpixelsize',['fontPixelSize',['../class_dtk_1_1_widget_1_1_d_font_size_manager.html#a7bb5334d70096923c039599d1f099def',1,'Dtk::Widget::DFontSizeManager']]],
+  ['fontpixelsize',['fontPixelSize',['../class_dtk_1_1_widget_1_1_d_font_size_manager.html#a7bb5334d70096923c039599d1f099def',1,'Dtk::Widget::DFontSizeManager::fontPixelSize()'],['../class_d_font_manager.html#a20307ae8845c1811a3773c944f526354',1,'DFontManager::fontPixelSize()']]],
   ['fontpointsize',['fontPointSize',['https://doc.qt.io/qt-5/qtextcharformat.html#fontPointSize',1,'QTextCharFormat::fontPointSize()'],['https://doc.qt.io/qt-5/qtextedit.html#fontPointSize',1,'QTextEdit::fontPointSize()']]],
   ['fontselected',['fontSelected',['https://doc.qt.io/qt-5/qfontdialog.html#fontSelected',1,'QFontDialog']]],
   ['fontsmoothinggamma',['fontSmoothingGamma',['https://doc.qt.io/qt-5/qstylehints.html#fontSmoothingGamma-prop',1,'QStyleHints']]],

@@ -69,6 +69,7 @@ var searchData=
   ['dfloatingmessage',['DFloatingMessage',['../class_dtk_1_1_widget_1_1_d_floating_message.html',1,'Dtk::Widget']]],
   ['dfloatingwidget',['DFloatingWidget',['../class_dtk_1_1_widget_1_1_d_floating_widget.html',1,'Dtk::Widget']]],
   ['dflowlayout',['DFlowLayout',['../class_dtk_1_1_widget_1_1_d_flow_layout.html',1,'Dtk::Widget']]],
+  ['dfontmanager',['DFontManager',['../class_d_font_manager.html',1,'']]],
   ['dfontsizemanager',['DFontSizeManager',['../class_dtk_1_1_widget_1_1_d_font_size_manager.html',1,'Dtk::Widget']]],
   ['dforeignwindow',['DForeignWindow',['../class_d_foreign_window.html',1,'']]],
   ['dframe',['DFrame',['../class_dtk_1_1_widget_1_1_d_frame.html',1,'Dtk::Widget']]],

@@ -9,6 +9,8 @@ var dir_f1a11d12171d66e86c8e928f2778dd27 =
     [ "dfiledragcommon.h", "dfiledragcommon_8h_source.html", null ],
     [ "dfiledragserver.cpp", "dfiledragserver_8cpp_source.html", null ],
     [ "dfiledragserver.h", "dfiledragserver_8h_source.html", null ],
+    [ "dfontmanager.cpp", "dfontmanager_8cpp_source.html", null ],
+    [ "dfontmanager.h", "dfontmanager_8h_source.html", null ],
     [ "dforeignwindow.cpp", "dforeignwindow_8cpp_source.html", null ],
     [ "dforeignwindow.h", "dforeignwindow_8h_source.html", null ],
     [ "dguiapplicationhelper.cpp", "dguiapplicationhelper_8cpp_source.html", null ],

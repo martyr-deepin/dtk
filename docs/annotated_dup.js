@@ -249,6 +249,7 @@ var annotated_dup =
     [ "DFileDrag", "class_d_file_drag.html", "class_d_file_drag" ],
     [ "DFileDragClient", "class_d_file_drag_client.html", "class_d_file_drag_client" ],
     [ "DFileDragServer", "class_d_file_drag_server.html", "class_d_file_drag_server" ],
+    [ "DFontManager", "class_d_font_manager.html", "class_d_font_manager" ],
     [ "DForeignWindow", "class_d_foreign_window.html", "class_d_foreign_window" ],
     [ "DGuiApplicationHelper", "class_d_gui_application_helper.html", "class_d_gui_application_helper" ],
     [ "DIconEngine", "class_d_icon_engine.html", "class_d_icon_engine" ],

@@ -219,6 +219,7 @@ var searchData=
   ['dfloatingmessage',['DFloatingMessage',['../class_dtk_1_1_widget_1_1_d_floating_message.html',1,'Dtk::Widget']]],
   ['dfloatingwidget',['DFloatingWidget',['../class_dtk_1_1_widget_1_1_d_floating_widget.html',1,'Dtk::Widget::DFloatingWidget'],['../class_dtk_1_1_widget_1_1_d_floating_widget.html#a7719bc57484f04c53f822ea866ee23e5',1,'Dtk::Widget::DFloatingWidget::DFloatingWidget(QWidget *parent=nullptr)'],['../class_dtk_1_1_widget_1_1_d_floating_widget.html#a0a27e839d17a888b9849ebccab984e6b',1,'Dtk::Widget::DFloatingWidget::DFloatingWidget(DFloatingWidgetPrivate &amp;dd, QWidget *parent)']]],
   ['dflowlayout',['DFlowLayout',['../class_dtk_1_1_widget_1_1_d_flow_layout.html',1,'Dtk::Widget']]],
+  ['dfontmanager',['DFontManager',['../class_d_font_manager.html',1,'']]],
   ['dfontsizemanager',['DFontSizeManager',['../class_dtk_1_1_widget_1_1_d_font_size_manager.html',1,'Dtk::Widget']]],
   ['dforeignwindow',['DForeignWindow',['../class_d_foreign_window.html',1,'DForeignWindow'],['../class_d_foreign_window.html#abe67965134550275b0cfc445872c4024',1,'DForeignWindow::DForeignWindow()']]],
   ['dframe',['DFrame',['../class_dtk_1_1_widget_1_1_d_frame.html',1,'Dtk::Widget::DFrame'],['../class_dtk_1_1_widget_1_1_d_frame.html#aa3009701e666159b405149a3bc72abd2',1,'Dtk::Widget::DFrame::DFrame()']]],

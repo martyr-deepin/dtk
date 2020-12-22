@@ -35,23 +35,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_d_palette.html#a709c302d4b05bf8c11d4d7ec92fb5fd4",
-"class_d_platform_theme.html#af6d7b7f714a9dd2008e044156fc6667f",
-"class_dtk_1_1_core_1_1_d_desktop_entry_section.html#a8d6e6a7435424450195f7c54e30e5fa8",
-"class_dtk_1_1_core_1_1_log_device.html",
-"class_dtk_1_1_widget_1_1_d_anchors.html#ada754a50988028a710d3955007bc335d",
-"class_dtk_1_1_widget_1_1_d_arrow_rectangle.html#ae03633d81700df35d0d678ec3125d4b6",
-"class_dtk_1_1_widget_1_1_d_crumb_text_format.html#a65b284637a1edb953b6f3b7f85e51eb0",
-"class_dtk_1_1_widget_1_1_d_flow_layout.html#ac118ad67a1c143b5cd9087b0e070dc5b",
-"class_dtk_1_1_widget_1_1_d_line_edit.html#a7d4771a0fe605978e4ab1a88951b60af",
-"class_dtk_1_1_widget_1_1_d_picture_sequence_view.html#aecaf2b3a396ea307015d347a1bd1bc59",
-"class_dtk_1_1_widget_1_1_d_slider.html#a60e78176628207a1ac8866de5ea8ba7f",
-"class_dtk_1_1_widget_1_1_d_style_option_button.html#af61a085b90960799d5ebb08116e426fead2d156ae90bdf851969c023bce5f0743",
-"class_dtk_1_1_widget_1_1_d_tick_effect.html#a4d185600df54d765f731e795c70e407d",
-"class_q_deepin_file_dialog_helper.html#a0c05c5f9e40e58ee027267c5253294d3",
-"classdstyle_1_1_palette_extended.html#a8018997b18e699f386f8dd9b52bb1fffadb206aa16700bc1cad3809cfb501bf68",
-"dir_01e26ae7551668ca493319620c16a3ae.html",
-"functions.html"
+"class_d_icon_engine.html#afd8882ce1cdd789eb0da6de759757ca2",
+"class_d_platform_theme.html#aacd54644870ff3eabc2d2b44a1ef6de7",
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#aaaafca02100e83a24d1c10ef3c771d71",
+"class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a20b6b3eb04f8d9aa6b2f8172503ad0d7",
+"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a6f7d7bf68c2c5d68b6b120ec82e29fbb",
+"class_dtk_1_1_widget_1_1_d_arrow_rectangle.html#a0f889749bc54fb7ae2c1e37a4a57ee96",
+"class_dtk_1_1_widget_1_1_d_crumb_edit.html#a15e09ac3d1a87f99eba81120faea2eaa",
+"class_dtk_1_1_widget_1_1_d_floating_message.html#a4af6a58a84fd2697aea95b3253a2dcb6",
+"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#afb49054728d753b3a53577460128a67d",
+"class_dtk_1_1_widget_1_1_d_movable_tab_widget.html#a05873425856e779aaead74eefbcc256f",
+"class_dtk_1_1_widget_1_1_d_simple_list_view.html#aa6058e05a75bb12e513daea0c7a25c30",
+"class_dtk_1_1_widget_1_1_d_style.html#ab36c3dbccfe568b6f98c97eeb33bfe5fa98773670e959b72127f487b19f7fd0be",
+"class_dtk_1_1_widget_1_1_d_tab_bar.html#aca6830c863266966249d2a8e18c5bb59",
+"class_dtk_1_1_widget_1_1_key_sequence_edit.html",
+"classdstyle_1_1_d_style_animation.html#ae11a755bc2affc1f2ce791de16053ed8",
+"dfileiconprovider_8cpp_source.html",
+"dtkcore__global_8h_source.html",
+"xdgiconenginecreator_8h_source.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

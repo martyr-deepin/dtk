@@ -15,6 +15,7 @@ var class_d_gui_application_helper =
     [ "DGuiApplicationHelper", "class_d_gui_application_helper.html#a0159a167f7286874f577b1481e8b285a", null ],
     [ "applicationPalette", "class_d_gui_application_helper.html#affc1f7774ce419a1ca73eab31f13cac4", null ],
     [ "applicationTheme", "class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372", null ],
+    [ "fontChanged", "class_d_gui_application_helper.html#ae92557847cc314f12a60f52f569229b2", null ],
     [ "initialize", "class_d_gui_application_helper.html#a64f515bd7a38e92b0dddd5459ae2990f", null ],
     [ "newProcessInstance", "class_d_gui_application_helper.html#ab94fab6c42b86328baffcbb7bb3de0ad", null ],
     [ "paletteType", "class_d_gui_application_helper.html#a5430a4b1c138cb5866ad47c57672e12d", null ],
