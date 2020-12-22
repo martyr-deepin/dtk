@@ -103,6 +103,8 @@ var dir_0f0f1158b2ab9c2e2656097b145c93da =
     [ "dmpriscontrol.h", "dmpriscontrol_8h_source.html", null ],
     [ "dpageindicator.cpp", "dpageindicator_8cpp_source.html", null ],
     [ "dpageindicator.h", "dpageindicator_8h_source.html", null ],
+    [ "dpalettehelper.cpp", "dpalettehelper_8cpp_source.html", null ],
+    [ "dpalettehelper.h", "dpalettehelper_8h_source.html", null ],
     [ "dpasswordedit.cpp", "dpasswordedit_8cpp_source.html", null ],
     [ "dpasswordedit.h", "dpasswordedit_8h_source.html", null ],
     [ "dpicturesequenceview.cpp", "dpicturesequenceview_8cpp_source.html", null ],

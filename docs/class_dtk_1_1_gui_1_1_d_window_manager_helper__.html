@@ -139,6 +139,29 @@ Dtk::Gui::DWindowManagerHelper_ 的协作图:</div>
 <a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a5e4ff57b986788b412a6fe703560d84ca685f9e678564da09f97b8b6bd6cedd60">KWinWM</a>
  }</td></tr>
 <tr class="separator:a5e4ff57b986788b412a6fe703560d84c inherit pub_types_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f568ab7e3dd4c3461085c3abab85fa inherit pub_types_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memItemLeft" align="right" valign="top"><a id="aa9f568ab7e3dd4c3461085c3abab85fa"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WmWindowType</b> { <br />
+&#160;&#160;<b>UnknowWindowType</b> = 0x000000, 
+<b>NormalType</b> = 0x000001, 
+<b>DesktopType</b> = 0x000002, 
+<b>DockType</b> = 0x000004, 
+<br />
+&#160;&#160;<b>ToolbarType</b> = 0x000008, 
+<b>MenuType</b> = 0x000010, 
+<b>UtilityType</b> = 0x000020, 
+<b>SplashType</b> = 0x000040, 
+<br />
+&#160;&#160;<b>DialogType</b> = 0x000080, 
+<b>DropDownMenuType</b> = 0x000100, 
+<b>PopupMenuType</b> = 0x000200, 
+<b>TooltipType</b> = 0x000400, 
+<br />
+&#160;&#160;<b>NotificationType</b> = 0x000800, 
+<b>ComboType</b> = 0x001000, 
+<b>DndType</b> = 0x002000, 
+<b>KdeOverrideType</b> = 0x004000
+<br />
+ }</td></tr>
+<tr class="separator:aa9f568ab7e3dd4c3461085c3abab85fa inherit pub_types_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header signals_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td colspan="2" onclick="javascript:toggleInherit('signals_class_dtk_1_1_gui_1_1_d_window_manager_helper')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html">Dtk::Gui::DWindowManagerHelper</a></td></tr>
 <tr class="memitem:a1ead94d963fc7efe1770bd9668b79927 inherit signals_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memItemLeft" align="right" valign="top"><a id="a1ead94d963fc7efe1770bd9668b79927"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a1ead94d963fc7efe1770bd9668b79927">windowManagerChanged</a> ()</td></tr>
@@ -334,6 +357,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:a805ae1c004d26cf3297d9ed7d4d84cbb inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memItemLeft" align="right" valign="top">static MotifDecorations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a805ae1c004d26cf3297d9ed7d4d84cbb">getMotifDecorations</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window)</td></tr>
 <tr class="memdesc:a805ae1c004d26cf3297d9ed7d4d84cbb inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a78ec85c02fb15cea67e4b4c8b2b6b8c7" title="DWindowManagerHelper::getMotifFunctions ">DWindowManagerHelper::getMotifFunctions</a>  <a href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a805ae1c004d26cf3297d9ed7d4d84cbb">更多...</a><br /></td></tr>
 <tr class="separator:a805ae1c004d26cf3297d9ed7d4d84cbb inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d9b88346dde4b906eac23a7ec11590 inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a56d9b88346dde4b906eac23a7ec11590">setWmWindowTypes</a> (<a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window, WmWindowTypes types)</td></tr>
+<tr class="memdesc:a56d9b88346dde4b906eac23a7ec11590 inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a56d9b88346dde4b906eac23a7ec11590" title="DWindowManagerHelper::setWmWindowTypes 直接设置窗口管理器层级提供的窗口类型，如DesktopType和DockType�...">DWindowManagerHelper::setWmWindowTypes</a> 直接设置窗口管理器层级提供的窗口类型，如DesktopType和DockType类型也被 桌面环境需要，但是Qt自身并没有提供对应的设置接口  <a href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a56d9b88346dde4b906eac23a7ec11590">更多...</a><br /></td></tr>
+<tr class="separator:a56d9b88346dde4b906eac23a7ec11590 inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd63a0bd40cfcf8a4db469120fc2cb0b inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#acd63a0bd40cfcf8a4db469120fc2cb0b">popupSystemWindowMenu</a> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window)</td></tr>
 <tr class="memdesc:acd63a0bd40cfcf8a4db469120fc2cb0b inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#acd63a0bd40cfcf8a4db469120fc2cb0b" title="DWindowManagerHelper::popupSystemWindowMenu 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击�...">DWindowManagerHelper::popupSystemWindowMenu</a> 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击鼠标右键弹出的菜单内容一致。 在 DMainWindow 的标题栏上点击鼠标右键会调用此函数打开系统菜单：  <a href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#acd63a0bd40cfcf8a4db469120fc2cb0b">更多...</a><br /></td></tr>
 <tr class="separator:acd63a0bd40cfcf8a4db469120fc2cb0b inherit pub_static_methods_class_dtk_1_1_gui_1_1_d_window_manager_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -432,7 +458,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock">
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00135">135</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00136">136</a> 行定义.</p>
 </div><hr/>该类的文档由以下文件生成:<ul>
 <li>dtkgui/src/<a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a></li>
 </ul>
@@ -442,7 +468,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Gui</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper__.html">DWindowManagerHelper_</a></li>
-    <li class="footer">生成于 2020年 十一月 25日 星期三 09:51:53 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 22日 星期二 14:45:16 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

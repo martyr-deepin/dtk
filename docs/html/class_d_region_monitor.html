@@ -116,8 +116,19 @@ DRegionMonitor 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public 类型</h2></td></tr>
-<tr class="memitem:ac515587768653c546ab69f63f18a6430"><td class="memItemLeft" align="right" valign="top"><a id="ac515587768653c546ab69f63f18a6430"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WatchedFlags</b> { <b>Button_Left</b> = 1, 
-<b>Button_Right</b> = 3
+<tr class="memitem:a2e35e5e9f947f316134b18935db633d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4">RegisterdFlag</a> { <a class="el" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a14ab3258ebaf02a3072af5c83f66106f">Motion</a> = 1 &lt;&lt; 0, 
+<a class="el" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a25c8070e2a4b4a29aaff73fe625ba596">Button</a> = 1 &lt;&lt; 1, 
+<a class="el" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4a798ec992d25ccdbbeec2f8a953815dd8">Key</a> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="separator:a2e35e5e9f947f316134b18935db633d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac515587768653c546ab69f63f18a6430"><td class="memItemLeft" align="right" valign="top"><a id="ac515587768653c546ab69f63f18a6430"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WatchedFlags</b> { <br />
+&#160;&#160;<b>Button_Left</b> = 1, 
+<b>Button_Middle</b>, 
+<b>Button_Right</b>, 
+<b>Wheel_Up</b>, 
+<br />
+&#160;&#160;<b>Wheel_Down</b>
+<br />
  }</td></tr>
 <tr class="separator:ac515587768653c546ab69f63f18a6430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4411e974f9617c1928df1f14f4da80"><td class="memItemLeft" align="right" valign="top"><a id="afd4411e974f9617c1928df1f14f4da80"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CoordinateType</b> { <b>ScaleRatio</b>, 
@@ -139,6 +150,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterRegion</b> 
 <tr class="memitem:a60552d360eb54cac2cab87ec350d6a74"><td class="memItemLeft" align="right" valign="top"><a id="a60552d360eb54cac2cab87ec350d6a74"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setWatchedRegion</b> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qregion.html">QRegion</a> &amp;region)</td></tr>
 <tr class="separator:a60552d360eb54cac2cab87ec350d6a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd52b4db45b3edd2b5d207a612cdcf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_region_monitor.html#a6dd52b4db45b3edd2b5d207a612cdcf5">setRegisterFlags</a> (RegisterdFlags flags)</td></tr>
+<tr class="memdesc:a6dd52b4db45b3edd2b5d207a612cdcf5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_region_monitor.html#a6dd52b4db45b3edd2b5d207a612cdcf5" title="DRegionMonitor::setRegisterFlags ">DRegionMonitor::setRegisterFlags</a>  <a href="#a6dd52b4db45b3edd2b5d207a612cdcf5">更多...</a><br /></td></tr>
+<tr class="separator:a6dd52b4db45b3edd2b5d207a612cdcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80937fb751aa35aed4265d9bff83bbe"><td class="memItemLeft" align="right" valign="top"><a id="ac80937fb751aa35aed4265d9bff83bbe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCoordinateType</b> (CoordinateType type)</td></tr>
 <tr class="separator:ac80937fb751aa35aed4265d9bff83bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +168,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>buttonRelease</b> (co
 <tr class="memitem:ab5c3d67441fb61130821bec31503129b"><td class="memItemLeft" align="right" valign="top"><a id="ab5c3d67441fb61130821bec31503129b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cursorMove</b> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qpoint.html">QPoint</a> &amp;p) const</td></tr>
 <tr class="separator:ab5c3d67441fb61130821bec31503129b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b53441e2baef430276fefefdc43c0a0"><td class="memItemLeft" align="right" valign="top"><a id="a9b53441e2baef430276fefefdc43c0a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cursorEnter</b> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qpoint.html">QPoint</a> &amp;p) const</td></tr>
+<tr class="separator:a9b53441e2baef430276fefefdc43c0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08314ed553122e5a8899b744c7ac615"><td class="memItemLeft" align="right" valign="top"><a id="af08314ed553122e5a8899b744c7ac615"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cursorLeave</b> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qpoint.html">QPoint</a> &amp;p) const</td></tr>
+<tr class="separator:af08314ed553122e5a8899b744c7ac615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac97e3f3abe131169c472fe7c2fb3a2ed"><td class="memItemLeft" align="right" valign="top"><a id="ac97e3f3abe131169c472fe7c2fb3a2ed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPress</b> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a> &amp;keyname) const</td></tr>
 <tr class="separator:ac97e3f3abe131169c472fe7c2fb3a2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae98fdae479fd6aad979a84692f83c48"><td class="memItemLeft" align="right" valign="top"><a id="aae98fdae479fd6aad979a84692f83c48"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>keyRelease</b> (const <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a> &amp;keyname) const</td></tr>
 <tr class="separator:aae98fdae479fd6aad979a84692f83c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1bba9c17d237763cdd4dc90eadaf33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_region_monitor.html#a9d1bba9c17d237763cdd4dc90eadaf33">registerdFlagsChanged</a> (RegisterdFlags flags) const</td></tr>
+<tr class="memdesc:a9d1bba9c17d237763cdd4dc90eadaf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">registerdFlagChanged 信号会在监听标志 registerdFlags 被改变的时候被触发。  <a href="#a9d1bba9c17d237763cdd4dc90eadaf33">更多...</a><br /></td></tr>
+<tr class="separator:a9d1bba9c17d237763cdd4dc90eadaf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d874b2ff9ca97a148dfa88809917fa7"><td class="memItemLeft" align="right" valign="top"><a id="a1d874b2ff9ca97a148dfa88809917fa7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>coordinateTypeChanged</b> (CoordinateType type) const</td></tr>
 <tr class="separator:a1d874b2ff9ca97a148dfa88809917fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +198,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>registered</b> () con
 <tr class="memitem:a80ed3684af9b37c7c585d79ff912db8d"><td class="memItemLeft" align="right" valign="top"><a id="a80ed3684af9b37c7c585d79ff912db8d"></a>
 <a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qregion.html">QRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>watchedRegion</b> () const</td></tr>
 <tr class="separator:a80ed3684af9b37c7c585d79ff912db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1136031aa8998a496cdaea7cb4d8bf"><td class="memItemLeft" align="right" valign="top">RegisterdFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_region_monitor.html#a7e1136031aa8998a496cdaea7cb4d8bf">registerFlags</a> () const</td></tr>
+<tr class="memdesc:a7e1136031aa8998a496cdaea7cb4d8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_region_monitor.html#a7e1136031aa8998a496cdaea7cb4d8bf" title="DRegionMonitor::registerFlags ">DRegionMonitor::registerFlags</a>  <a href="#a7e1136031aa8998a496cdaea7cb4d8bf">更多...</a><br /></td></tr>
+<tr class="separator:a7e1136031aa8998a496cdaea7cb4d8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1de9bfd4972d54fad8be4b4cb588961"><td class="memItemLeft" align="right" valign="top"><a id="ac1de9bfd4972d54fad8be4b4cb588961"></a>
 CoordinateType&#160;</td><td class="memItemRight" valign="bottom"><b>coordinateType</b> () const</td></tr>
 <tr class="separator:ac1de9bfd4972d54fad8be4b4cb588961"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,6 +331,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:aa6992bd6c2f2a916a4eb3de442d08bcd"><td class="memItemLeft" align="right" valign="top"><a id="aa6992bd6c2f2a916a4eb3de442d08bcd"></a>
 CoordinateType&#160;</td><td class="memItemRight" valign="bottom"><b>coordinateType</b></td></tr>
 <tr class="separator:aa6992bd6c2f2a916a4eb3de442d08bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a6e46ad58c7fe72fb49f4758766983"><td class="memItemLeft" align="right" valign="top"><a id="ad6a6e46ad58c7fe72fb49f4758766983"></a>
+RegisterdFlags&#160;</td><td class="memItemRight" valign="bottom"><b>registerdFlags</b></td></tr>
+<tr class="separator:ad6a6e46ad58c7fe72fb49f4758766983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/PR/PRTools/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#objectName-prop">objectName</a></td></tr>
@@ -391,7 +420,33 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <div class="textblock"><p>一个在指定区域内监视鼠标键盘动作的类 </p>
 
 <p class="definition">在文件 <a class="el" href="dtkgui_2src_2dregionmonitor_8h_source.html">dregionmonitor.h</a> 第 <a class="el" href="dtkgui_2src_2dregionmonitor_8h_source.html#l00012">12</a> 行定义.</p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a2e35e5e9f947f316134b18935db633d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e35e5e9f947f316134b18935db633d4">&#9670;&nbsp;</a></span>RegisterdFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4">DRegionMonitor::RegisterdFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_d_region_monitor.html#a2e35e5e9f947f316134b18935db633d4">DRegionMonitor::RegisterdFlag</a> 定义了 <a class="el" href="class_d_region_monitor.html" title="一个在指定区域内监视鼠标键盘动作的类 ">DRegionMonitor</a> 监听标志。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a2e35e5e9f947f316134b18935db633d4a14ab3258ebaf02a3072af5c83f66106f"></a>Motion&#160;</td><td class="fielddoc"><p>代表监听鼠标移动。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2e35e5e9f947f316134b18935db633d4a25c8070e2a4b4a29aaff73fe625ba596"></a>Button&#160;</td><td class="fielddoc"><p>代表监听鼠标按键。 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2e35e5e9f947f316134b18935db633d4a798ec992d25ccdbbeec2f8a953815dd8"></a>Key&#160;</td><td class="fielddoc"><p>代表监听键盘按键。 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="dtkgui_2src_2dregionmonitor_8h_source.html">dregionmonitor.h</a> 第 <a class="el" href="dtkgui_2src_2dregionmonitor_8h_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a72ab2fc6d0c6acd417f3c37370054708"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72ab2fc6d0c6acd417f3c37370054708">&#9670;&nbsp;</a></span>DRegionMonitor()</h2>
 
@@ -428,6 +483,95 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 
 </div>
 </div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a9d1bba9c17d237763cdd4dc90eadaf33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1bba9c17d237763cdd4dc90eadaf33">&#9670;&nbsp;</a></span>registerdFlagsChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DRegionMonitor::registerdFlagsChanged </td>
+          <td>(</td>
+          <td class="paramtype">RegisterdFlags&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>registerdFlagChanged 信号会在监听标志 registerdFlags 被改变的时候被触发。 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_region_monitor.html#a6dd52b4db45b3edd2b5d207a612cdcf5" title="DRegionMonitor::setRegisterFlags ">DRegionMonitor::setRegisterFlags(RegisterdFlags flags)</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7e1136031aa8998a496cdaea7cb4d8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1136031aa8998a496cdaea7cb4d8bf">&#9670;&nbsp;</a></span>registerFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DRegionMonitor::RegisterdFlags DRegionMonitor::registerFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_d_region_monitor.html#a7e1136031aa8998a496cdaea7cb4d8bf" title="DRegionMonitor::registerFlags ">DRegionMonitor::registerFlags</a> </p>
+<p>获取监听模式 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_region_monitor.html#a6dd52b4db45b3edd2b5d207a612cdcf5" title="DRegionMonitor::setRegisterFlags ">DRegionMonitor::setRegisterFlags(RegisterdFlags flags)</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkgui_2src_2dregionmonitor_8cpp_source.html">dregionmonitor.cpp</a> 第 <a class="el" href="dtkgui_2src_2dregionmonitor_8cpp_source.html#l00065">65</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6dd52b4db45b3edd2b5d207a612cdcf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd52b4db45b3edd2b5d207a612cdcf5">&#9670;&nbsp;</a></span>setRegisterFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DRegionMonitor::setRegisterFlags </td>
+          <td>(</td>
+          <td class="paramtype">RegisterdFlags&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_d_region_monitor.html#a6dd52b4db45b3edd2b5d207a612cdcf5" title="DRegionMonitor::setRegisterFlags ">DRegionMonitor::setRegisterFlags</a> </p>
+<p>设置监听模式 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flags</td><td>监听模式，需要注意DRegionMonitor::Motion监听鼠标移动会影响性能，默认包含，如果 需要可通过此函数去掉DRegionMonitor::Motion </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_region_monitor.html#a7e1136031aa8998a496cdaea7cb4d8bf" title="DRegionMonitor::registerFlags ">DRegionMonitor::registerFlags()</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dtkgui_2src_2dregionmonitor_8cpp_source.html">dregionmonitor.cpp</a> 第 <a class="el" href="dtkgui_2src_2dregionmonitor_8cpp_source.html#l00116">116</a> 行定义.</p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>dtkgui/src/<a class="el" href="dtkgui_2src_2dregionmonitor_8h_source.html">dregionmonitor.h</a></li>
 <li>dtkwidget/src/util/<a class="el" href="dtkwidget_2src_2util_2dregionmonitor_8cpp_source.html">dregionmonitor.cpp</a></li>
@@ -438,7 +582,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_region_monitor.html">DRegionMonitor</a></li>
-    <li class="footer">生成于 2020年 十一月 25日 星期三 09:52:07 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 22日 星期二 14:45:30 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -24,6 +24,7 @@ var hierarchy =
       [ "Dtk::Core::DTimeUnitFormatter", "class_dtk_1_1_core_1_1_d_time_unit_formatter.html", null ]
     ] ],
     [ "Dtk::Widget::DAnchorInfo", "struct_dtk_1_1_widget_1_1_d_anchor_info.html", null ],
+    [ "DApplicationHelper", "class_d_application_helper.html", null ],
     [ "DArrowLineExpand", "class_d_arrow_line_expand.html", null ],
     [ "DBaseExpand", "class_d_base_expand.html", [
       [ "Dtk::Widget::DSwitchLineExpand", "class_dtk_1_1_widget_1_1_d_switch_line_expand.html", null ]
@@ -55,9 +56,7 @@ var hierarchy =
       [ "DFileDrag", "class_d_file_drag.html", null ],
       [ "DFileDragClient", "class_d_file_drag_client.html", null ],
       [ "DFileDragServer", "class_d_file_drag_server.html", null ],
-      [ "DGuiApplicationHelper", "class_d_gui_application_helper.html", [
-        [ "Dtk::Widget::DApplicationHelper", "class_dtk_1_1_widget_1_1_d_application_helper.html", null ]
-      ] ],
+      [ "DGuiApplicationHelper", "class_d_gui_application_helper.html", null ],
       [ "DNativeSettings", "class_d_native_settings.html", [
         [ "DPlatformTheme", "class_d_platform_theme.html", null ]
       ] ]
@@ -154,6 +153,7 @@ var hierarchy =
       [ "Dtk::Widget::DMainWindow", "class_dtk_1_1_widget_1_1_d_main_window.html", null ],
       [ "Dtk::Widget::DMPRISControl", "class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html", null ],
       [ "Dtk::Widget::DPageIndicator", "class_dtk_1_1_widget_1_1_d_page_indicator.html", null ],
+      [ "Dtk::Widget::DPaletteHelper", "class_dtk_1_1_widget_1_1_d_palette_helper.html", null ],
       [ "Dtk::Widget::DPictureSequenceView", "class_dtk_1_1_widget_1_1_d_picture_sequence_view.html", null ],
       [ "Dtk::Widget::DProgressBar", "class_dtk_1_1_widget_1_1_d_progress_bar.html", null ],
       [ "Dtk::Widget::DSearchComboBox", "class_dtk_1_1_widget_1_1_d_search_combo_box.html", null ],
@@ -286,6 +286,7 @@ var hierarchy =
       [ "Dtk::Widget::DApplicationSettings", "class_dtk_1_1_widget_1_1_d_application_settings.html", null ],
       [ "Dtk::Widget::DDrawerGroup", "class_dtk_1_1_widget_1_1_d_drawer_group.html", null ],
       [ "Dtk::Widget::DEnhancedWidget", "class_dtk_1_1_widget_1_1_d_enhanced_widget.html", null ],
+      [ "Dtk::Widget::DPaletteHelper", "class_dtk_1_1_widget_1_1_d_palette_helper.html", null ],
       [ "Dtk::Widget::DSettingsWidgetFactory", "class_dtk_1_1_widget_1_1_d_settings_widget_factory.html", null ],
       [ "Dtk::Widget::DSimpleListItem", "class_dtk_1_1_widget_1_1_d_simple_list_item.html", null ],
       [ "Dtk::Widget::DThemeManager", "class_dtk_1_1_widget_1_1_d_theme_manager.html", null ],
