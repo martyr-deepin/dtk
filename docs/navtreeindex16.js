@@ -1,5 +1,14 @@
 var NAVTREEINDEX16 =
 {
+"dfiledrag_8cpp_source.html":[9,0,1,1,2],
+"dfiledrag_8h_source.html":[9,0,1,1,3],
+"dfiledragclient_8cpp_source.html":[9,0,1,1,4],
+"dfiledragclient_8h_source.html":[9,0,1,1,5],
+"dfiledragcommon_8h_source.html":[9,0,1,1,6],
+"dfiledragcommon__p_8h_source.html":[9,0,1,1,1,0],
+"dfiledragserver_8cpp_source.html":[9,0,1,1,7],
+"dfiledragserver_8h_source.html":[9,0,1,1,8],
+"dfiledragserver__p_8h_source.html":[9,0,1,1,1,1],
 "dfileiconprovider_8cpp_source.html":[9,0,2,0,1,6],
 "dfileiconprovider_8h_source.html":[9,0,2,0,1,7],
 "dfileservices_8h_source.html":[9,0,0,1,4,8],
@@ -240,14 +249,5 @@ var NAVTREEINDEX16 =
 "dthreadutils_8h_source.html":[9,0,0,1,4,18],
 "dtickeffect_8cpp_source.html":[9,0,2,0,2,161],
 "dtickeffect_8h_source.html":[9,0,2,0,2,162],
-"dtimeunitformatter_8cpp_source.html":[9,0,0,1,4,19],
-"dtimeunitformatter_8h_source.html":[9,0,0,1,4,20],
-"dtiplabel_8cpp_source.html":[9,0,2,0,2,163],
-"dtiplabel_8h_source.html":[9,0,2,0,2,164],
-"dtitlebar_8cpp_source.html":[9,0,2,0,2,165],
-"dtitlebar_8h_source.html":[9,0,2,0,2,166],
-"dtkcore_2conanfile_8py_source.html":[9,0,0,2],
-"dtkcore_2examples_2expintf-example_2main_8cpp_source.html":[9,0,0,0,0,0],
-"dtkcore_2src_2filesystem_2dtrashmanager_8h_source.html":[9,0,0,1,1,15],
-"dtkcore_2src_2filesystem_2dtrashmanager__linux_8cpp_source.html":[9,0,0,1,1,17]
+"dtimeunitformatter_8cpp_source.html":[9,0,0,1,4,19]
 };

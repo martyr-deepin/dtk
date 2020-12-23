@@ -1,6 +1,14 @@
 var class_d_platform_handle =
 [
     [ "WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", "struct_d_platform_handle_1_1_w_m_blur_area" ],
+    [ "WallpaperFillMode", "class_d_platform_handle.html#a62ed365ebd925e62a1b66ecb2d60cc28", [
+      [ "PreserveAspectCrop", "class_d_platform_handle.html#a62ed365ebd925e62a1b66ecb2d60cc28a62d33f708fceddfd2a9393ee7af0cc1a", null ],
+      [ "PreserveAspectFit", "class_d_platform_handle.html#a62ed365ebd925e62a1b66ecb2d60cc28a327f05087ae4c54316e50a19bb575e16", null ]
+    ] ],
+    [ "WallpaperScaleMode", "class_d_platform_handle.html#a82ba0cde83154890922a172f45728b9c", [
+      [ "FollowScreen", "class_d_platform_handle.html#a82ba0cde83154890922a172f45728b9ca9fc9c68971a2f8e49164f90b611d0789", null ],
+      [ "FollowWindow", "class_d_platform_handle.html#a82ba0cde83154890922a172f45728b9cabffa6f7fad5306ab53dc0056aa9c7e9a", null ]
+    ] ],
     [ "DPlatformHandle", "class_d_platform_handle.html#a14b80834f809255088d7ec212352bf7f", null ],
     [ "autoInputMaskByClipPath", "class_d_platform_handle.html#a0dfa034f0ab2d0b5d64878b9c9faf7df", null ],
     [ "autoInputMaskByClipPathChanged", "class_d_platform_handle.html#a52a54995c7d015714916fa95e8bce9f7", null ],

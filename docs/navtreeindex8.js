@@ -1,5 +1,14 @@
 var NAVTREEINDEX8 =
 {
+"class_dtk_1_1_widget_1_1_d_floating_button.html#a35e090681ab07f6b7c2b66a923601d2b":[8,0,3,2,46,3],
+"class_dtk_1_1_widget_1_1_d_floating_button.html#a465644a0f5cfa95472aaec9793c77b7b":[8,0,3,2,46,1],
+"class_dtk_1_1_widget_1_1_d_floating_button.html#a6d81de7fcba77f2d976d1ca36c126727":[8,0,3,2,46,2],
+"class_dtk_1_1_widget_1_1_d_floating_button.html#a964e8f1500a000a5d7986ec492d3af80":[8,0,3,2,46,5],
+"class_dtk_1_1_widget_1_1_d_floating_button.html#aae19017902f6286414df584d4721b25e":[8,0,3,2,46,4],
+"class_dtk_1_1_widget_1_1_d_floating_button.html#acf72cb6dd2d282e125516464577c1d45":[8,0,3,2,46,6],
+"class_dtk_1_1_widget_1_1_d_floating_message.html":[8,0,3,2,47],
+"class_dtk_1_1_widget_1_1_d_floating_message.html#a27337e75a27b4091aefb88fbe0fb3500":[8,0,3,2,47,2],
+"class_dtk_1_1_widget_1_1_d_floating_message.html#a28ae665e82a88de6a506fafe2d6a0d28":[8,0,3,2,47,8],
 "class_dtk_1_1_widget_1_1_d_floating_message.html#a4af6a58a84fd2697aea95b3253a2dcb6":[8,0,3,2,47,7],
 "class_dtk_1_1_widget_1_1_d_floating_message.html#a54eeaa8bd21cee061b49999370c1e904":[8,0,3,2,47,3],
 "class_dtk_1_1_widget_1_1_d_floating_message.html#a632577e31a245b3803492eae20710792":[8,0,3,2,47,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX8 =
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a573b797324b14083929dbbb8a629adb8":[8,0,3,2,60,15],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a5b4e708a45739a3c91bf52d1dbae87bd":[8,0,3,2,60,3],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a5dd9073efdbe5bd6df95e8efd30277f5":[8,0,3,2,60,5],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a64f3cdc0d892210dc92222a2ca0bbabb":[8,0,3,2,60,16],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a658e837c6b376f956122c18d4e2a1302":[8,0,3,2,60,6],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a6a4628daf3c3fda7fcc4dd9103dc841a":[8,0,3,2,60,9],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a7828bbbeb182fec390be5936f5432e2d":[8,0,3,2,60,8],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a85de0440bfabc14f864973926e3a4a6d":[8,0,3,2,60,1],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a87d3b466a8943154aadc6f31152531a7":[8,0,3,2,60,18],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#ab5a0ed1d7b77c29ff95b9e3d09d0273b":[8,0,3,2,60,17],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#ac506e2c99aee553d7e3d573a5e4e063e":[8,0,3,2,60,2],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#ac76ae4e8ef0754ebac29e5570f6fb459":[8,0,3,2,60,7],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#ae4887fb7a9966ec7e5ba45b2bee6bc21":[8,0,3,2,60,0]
+"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a64f3cdc0d892210dc92222a2ca0bbabb":[8,0,3,2,60,16]
 };

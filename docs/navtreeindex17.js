@@ -1,5 +1,14 @@
 var NAVTREEINDEX17 =
 {
+"dtimeunitformatter_8h_source.html":[9,0,0,1,4,20],
+"dtiplabel_8cpp_source.html":[9,0,2,0,2,163],
+"dtiplabel_8h_source.html":[9,0,2,0,2,164],
+"dtitlebar_8cpp_source.html":[9,0,2,0,2,165],
+"dtitlebar_8h_source.html":[9,0,2,0,2,166],
+"dtkcore_2conanfile_8py_source.html":[9,0,0,2],
+"dtkcore_2examples_2expintf-example_2main_8cpp_source.html":[9,0,0,0,0,0],
+"dtkcore_2src_2filesystem_2dtrashmanager_8h_source.html":[9,0,0,1,1,15],
+"dtkcore_2src_2filesystem_2dtrashmanager__linux_8cpp_source.html":[9,0,0,1,1,17],
 "dtkcore__global_8h_source.html":[9,0,0,1,11],
 "dtkgui_2examples_2test-taskbar_2main_8cpp_source.html":[9,0,1,0,1,0],
 "dtkgui_2src_2dregionmonitor_8cpp_source.html":[9,0,1,1,23],
@@ -56,8 +65,8 @@ var NAVTREEINDEX17 =
 "dx11window_8h_source.html":[9,0,2,0,2,190],
 "files.html":[9,0],
 "framehelper_8cpp_source.html":[9,0,3,3,1,12],
-"functions.html":[8,3,0,0],
 "functions.html":[8,3,0],
+"functions.html":[8,3,0,0],
 "functions_0x7e.html":[8,3,0,25],
 "functions_b.html":[8,3,0,1],
 "functions_c.html":[8,3,0,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX17 =
 "struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a7fc98442458ccc5d5c9df59414143fb4":[8,0,3,2,1,0,1],
 "struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a8408cb94276a4b5bf2322f95253c43b3":[8,0,3,2,1,0,0],
 "style_8cpp_source.html":[9,0,3,3,1,30],
-"style_8h_source.html":[9,0,3,3,1,31],
-"tabbarhelper_8cpp_source.html":[9,0,3,3,1,32],
-"tabwidgethelper_8cpp_source.html":[9,0,3,3,1,33],
-"testtaskbarwindow_8cpp_source.html":[9,0,1,0,1,1],
-"testtaskbarwindow_8h_source.html":[9,0,1,0,1,2],
-"toolbuttonhelper_8cpp_source.html":[9,0,3,3,1,34],
-"translate__generation_8py_source.html":[9,0,2,1,1],
-"widgetgallery_8cpp_source.html":[9,0,3,4,3],
-"widgetgallery_8h_source.html":[9,0,3,4,4],
-"xdgiconenginecreator_8cpp_source.html":[9,0,3,2,12]
+"style_8h_source.html":[9,0,3,3,1,31]
 };

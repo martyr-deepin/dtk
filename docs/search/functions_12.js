@@ -1587,6 +1587,7 @@ var searchData=
   ['setwindowstate',['setWindowState',['https://doc.qt.io/qt-5/qwindow.html#setWindowState',1,'QWindow::setWindowState()'],['https://doc.qt.io/qt-5/qwidget.html#setWindowState',1,'QWidget::setWindowState()']]],
   ['setwindowstates',['setWindowStates',['https://doc.qt.io/qt-5/qwindow.html#setWindowStates',1,'QWindow']]],
   ['setwindowtitle',['setWindowTitle',['https://doc.qt.io/qt-5/qwidget.html#windowTitle-prop',1,'QWidget::setWindowTitle()'],['https://doc.qt.io/qt-5/qgraphicswidget.html#windowTitle-prop',1,'QGraphicsWidget::setWindowTitle()'],['https://doc.qt.io/qt-5/qmessagebox.html#setWindowTitle',1,'QMessageBox::setWindowTitle()'],['../class_dtk_1_1_widget_1_1_d_about_dialog.html#a5c47df796f14fb748eaad99079f217c3',1,'Dtk::Widget::DAboutDialog::setWindowTitle()']]],
+  ['setwindowwallpaperparabywm',['setWindowWallpaperParaByWM',['../class_d_platform_handle.html#a75bdab76f6827c87997e1adce95eaafc',1,'DPlatformHandle']]],
   ['setwizardstyle',['setWizardStyle',['https://doc.qt.io/qt-5/qwizard.html#wizardStyle-prop',1,'QWizard']]],
   ['setwmwindowtypes',['setWmWindowTypes',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a56d9b88346dde4b906eac23a7ec11590',1,'Dtk::Gui::DWindowManagerHelper']]],
   ['setwordspacing',['setWordSpacing',['https://doc.qt.io/qt-5/qfont.html#setWordSpacing',1,'QFont']]],

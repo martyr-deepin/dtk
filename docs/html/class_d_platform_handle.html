@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_d_platform_handle.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-slots">Public 槽</a> &#124;
 <a href="#signals">信号</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
@@ -116,6 +117,17 @@ DPlatformHandle 的协作图:</div>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_platform_handle_1_1_w_m_blur_area.html">WMBlurArea</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a82ba0cde83154890922a172f45728b9c"><td class="memItemLeft" align="right" valign="top"><a id="a82ba0cde83154890922a172f45728b9c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WallpaperScaleMode</b> { <b>FollowScreen</b> = 0x00000000, 
+<b>FollowWindow</b> = 0x00010000
+ }</td></tr>
+<tr class="separator:a82ba0cde83154890922a172f45728b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ed365ebd925e62a1b66ecb2d60cc28"><td class="memItemLeft" align="right" valign="top"><a id="a62ed365ebd925e62a1b66ecb2d60cc28"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WallpaperFillMode</b> { <b>PreserveAspectCrop</b> = 0x00000000, 
+<b>PreserveAspectFit</b> = 0x00000001
+ }</td></tr>
+<tr class="separator:a62ed365ebd925e62a1b66ecb2d60cc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public 槽</h2></td></tr>
@@ -430,6 +442,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:a583f28cc2ab7f9054c158b66ea4dec0c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_platform_handle.html#a583f28cc2ab7f9054c158b66ea4dec0c">setWindowBlurAreaByWM</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *window, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> &gt; &amp;paths)</td></tr>
 <tr class="memdesc:a583f28cc2ab7f9054c158b66ea4dec0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DWindowHandle::setWindowBlurAreaByWM 设置窗口背景的模糊区域，使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpainterpath.html">QPainterPath</a> 描述模糊区域，使用起来更加的灵活，可以 实现任何形状，但是性能要低于使用 QVector&lt;DWindowHandle::WMBlurArea&gt; 描述模糊区域。示例：  <a href="#a583f28cc2ab7f9054c158b66ea4dec0c">更多...</a><br /></td></tr>
 <tr class="separator:a583f28cc2ab7f9054c158b66ea4dec0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bdab76f6827c87997e1adce95eaafc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_platform_handle.html#a75bdab76f6827c87997e1adce95eaafc">setWindowWallpaperParaByWM</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *window, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qrect.html">QRect</a> &amp;area, WallpaperScaleMode sMode, WallpaperFillMode fMode)</td></tr>
+<tr class="memdesc:a75bdab76f6827c87997e1adce95eaafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">DWindowHandle::setWindowWallpaperParaByWM 设置窗口背景壁纸，示例：  <a href="#a75bdab76f6827c87997e1adce95eaafc">更多...</a><br /></td></tr>
+<tr class="separator:a75bdab76f6827c87997e1adce95eaafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1109073d6261e00664235db0beda245"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_platform_handle.html#aa1109073d6261e00664235db0beda245">connectWindowManagerChangedSignal</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *object, std::function&lt; void()&gt; slot)</td></tr>
 <tr class="memdesc:aa1109073d6261e00664235db0beda245"><td class="mdescLeft">&#160;</td><td class="mdescRight">DWindowHandle::connectWindowManagerChangedSignal 将窗口管理器变化的信号链接到 object 对象的 slot 槽，建议使用　DWindowManager::windowManagerChanged  <a href="#aa1109073d6261e00664235db0beda245">更多...</a><br /></td></tr>
 <tr class="separator:aa1109073d6261e00664235db0beda245"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -611,7 +626,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 </dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::enableDXcbForWindow(QWindow *) </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00342">342</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00344">344</a> 行定义.</p>
 
 </div>
 </div>
@@ -661,7 +676,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dl class="section return"><dt>返回</dt><dd>如果链接成功则返回 true，否则返回 false </dd></dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowManager::hasBlurWindowChanged </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00872">872</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00958">958</a> 行定义.</p>
 
 </div>
 </div>
@@ -710,7 +725,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dl class="section return"><dt>返回</dt><dd>如果链接成功则返回 true，否则返回 false </dd></dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowManager::windowManagerChanged </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00854">854</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00940">940</a> 行定义.</p>
 
 </div>
 </div>
@@ -784,7 +799,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 </dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::setEnableNoTitlebarForWindow </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00475">475</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00477">477</a> 行定义.</p>
 
 </div>
 </div>
@@ -833,7 +848,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dl class="section note"><dt>注解</dt><dd>如果窗口内嵌入了其它的本地窗口（如X11平台的X Window），默认情况下，这个窗口 绘制的内容不受dxcb插件的控制，它的绘制内容可能会超过 Sub Window 的有效区域，这种 情况下，应该使用此接口，并将 redirectContent 指定为 true。 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd>X11 Damage: <a href="https://www.x.org/releases/X11R7.5/doc/damageproto/damageproto.txt">https://www.x.org/releases/X11R7.5/doc/damageproto/damageproto.txt</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00515">515</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00517">517</a> 行定义.</p>
 
 </div>
 </div>
@@ -863,7 +878,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <p><a class="el" href="class_d_platform_handle.html#a35f657dbe43e39173d3273c606a90e1a" title="DPlatformHandle::isDXcbPlatform 检查当前程序是否使用了dxcb平台插件。 ">DPlatformHandle::isDXcbPlatform</a> 检查当前程序是否使用了dxcb平台插件。 </p>
 <dl class="section return"><dt>返回</dt><dd>正在使用返回 true，否则返回 false。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00374">374</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00376">376</a> 行定义.</p>
 
 </div>
 </div>
@@ -901,7 +916,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dl class="section return"><dt>返回</dt><dd>如果窗口开启了DTK风格的窗口修饰则返回 true，否则返回 false </dd></dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::isEnableNoTitlebar </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00528">528</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00530">530</a> 行定义.</p>
 
 </div>
 </div>
@@ -939,7 +954,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dl class="section return"><dt>返回</dt><dd>如果窗口使用窗管提供的方式隐藏了标题栏则返回 true，否则返回 false </dd></dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::isEnabledDXcb </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00620">620</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00622">622</a> 行定义.</p>
 
 </div>
 </div>
@@ -970,7 +985,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dl class="section return"><dt>返回</dt><dd>返回dxcb插件的版本 </dd></dl>
 <dl class="section note"><dt>注解</dt><dd>在旧版dxcb插件中未实现获取版本的接口，将会返回一个空的 <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a> 对象 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00356">356</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00358">358</a> 行定义.</p>
 
 </div>
 </div>
@@ -1017,7 +1032,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00914">914</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l01000">1000</a> 行定义.</p>
 
 </div>
 </div>
@@ -1067,7 +1082,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <dd>
 DWindowManagerHelper::hasNoTitlebar </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00587">587</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00589">589</a> 行定义.</p>
 
 </div>
 </div>
@@ -1132,7 +1147,7 @@ DWindowManagerHelper::hasBlurWindow </dd>
 <dd>
 DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; &amp;) </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00694">694</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00696">696</a> 行定义.</p>
 
 </div>
 </div>
@@ -1198,7 +1213,7 @@ DWindowManagerHelper::hasBlurWindow </dd>
 <dd>
 DWindowHandle::setWindowBlurAreaByWM(QWindow *, QVector&lt;DWindowHandle::WMBlurArea&gt; &amp;) </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00800">800</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00802">802</a> 行定义.</p>
 
 </div>
 </div>
@@ -1228,7 +1243,7 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, QVector&lt;DWindowHandle::WMBlur
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QVector&lt;DWindowHandle::WMBlurArea&gt; &amp;) </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00889">889</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00975">975</a> 行定义.</p>
 
 </div>
 </div>
@@ -1258,7 +1273,85 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, QVector&lt;DWindowHandle::WMBlur
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; &amp;) </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00902">902</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00988">988</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a75bdab76f6827c87997e1adce95eaafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bdab76f6827c87997e1adce95eaafc">&#9670;&nbsp;</a></span>setWindowWallpaperParaByWM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPlatformHandle::setWindowWallpaperParaByWM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qrect.html">QRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WallpaperScaleMode&#160;</td>
+          <td class="paramname"><em>sMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WallpaperFillMode&#160;</td>
+          <td class="paramname"><em>fMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DWindowHandle::setWindowWallpaperParaByWM 设置窗口背景壁纸，示例： </p>
+<div class="fragment"><div class="line"><a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> w;</div><div class="line"><a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qrect.html">QRect</a> area;</div><div class="line">WallpaperScaleMode sMode</div><div class="line">WallpaperFillMode fMode</div><div class="line"></div><div class="line">area.<a class="codeRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qrect.html#setRect">setRect</a>(50, 50, 200, 200);</div><div class="line">bMode = WallpaperScaleFlag::FollowWindow | WallpaperFillFlag::PreserveAspectCrop;</div><div class="line"></div><div class="line">DWindowHandle::setWindowWallpaperParaByWM(&amp;w, area, bMode);</div><div class="line"></div><div class="line"><a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qsurfaceformat.html">QSurfaceFormat</a> format = w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#format">format</a>();</div><div class="line">format.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qsurfaceformat.html#setAlphaBufferSize">setAlphaBufferSize</a>(8);</div><div class="line"></div><div class="line">w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#setFormat">setFormat</a>(format);</div><div class="line">w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#resize">resize</a>(300, 300);</div><div class="line">w.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#show">show</a>();</div></div><!-- fragment --> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>目标窗口对象 </td></tr>
+    <tr><td class="paramname">area</td><td>壁纸区域，此区域范围内的窗口背景将填充为用户设置的当前工作区窗口壁纸 </td></tr>
+    <tr><td class="paramname">sMode</td><td>控制壁纸缩放是随屏幕还是随窗口 </td></tr>
+    <tr><td class="paramname">fMode</td><td>控制壁纸是缩放还是裁剪 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果设置成功则返回 true，否则返回 false </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>对于需要显示opengl壁纸特效的窗口，需要将其 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qsurfaceformat.html">QSurfaceFormat</a> 的 alpha 通道设置为8 </dd>
+<dd>
+需要在window handle有效之后调用否则3d下失效 </dd>
+<dd>
+调用此接口设置窗口背景壁纸区域后将覆盖之前所设置的区域 </dd>
+<dd>
+此功能依赖于窗口管理器的实现，目前仅支持 kwin 窗口管理器 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd>DBlurEffectWidget </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qsurfaceformat.html#setAlphaBufferSize">QSurfaceFormat::setAlphaBufferSize</a> </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#setFormat">QWindow::setFormat</a> </dd>
+<dd>
+DWindowManagerHelper::hasBlurWindow </dd>
+<dd>
+DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; &amp;) </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00885">885</a> 行定义.</p>
 
 </div>
 </div>
@@ -1272,7 +1365,7 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, QVector&lt;DWindowHandle::WMBlur
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_platform_handle.html">DPlatformHandle</a></li>
-    <li class="footer">生成于 2020年 十二月 23日 星期三 07:59:38 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 24日 星期四 07:59:36 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

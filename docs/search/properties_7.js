@@ -6,6 +6,7 @@ var searchData=
   ['hashotspot',['hasHotSpot',['https://doc.qt.io/qt-5/qgesture.html#hasHotSpot-prop',1,'QGesture']]],
   ['hasnotitlebar',['hasNoTitlebar',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a096e0059a9eed5672b48e794c4890c38',1,'Dtk::Gui::DWindowManagerHelper']]],
   ['hasselectedtext',['hasSelectedText',['https://doc.qt.io/qt-5/qlineedit.html#hasSelectedText-prop',1,'QLineEdit::hasSelectedText()'],['https://doc.qt.io/qt-5/qlabel.html#hasSelectedText-prop',1,'QLabel::hasSelectedText()']]],
+  ['haswallpapereffect',['hasWallpaperEffect',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#ac8b9c17ab7cdb976129eb3a8ade7e15b',1,'Dtk::Gui::DWindowManagerHelper']]],
   ['headerhidden',['headerHidden',['https://doc.qt.io/qt-5/qtreeview.html#headerHidden-prop',1,'QTreeView']]],
   ['height',['height',['https://doc.qt.io/qt-5/qwindow.html#height-prop',1,'QWindow::height()'],['https://doc.qt.io/qt-5/qwidget.html#height-prop',1,'QWidget::height()']]],
   ['highlightsections',['highlightSections',['https://doc.qt.io/qt-5/qheaderview.html#highlightSections-prop',1,'QHeaderView']]],

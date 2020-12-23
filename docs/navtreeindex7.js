@@ -1,5 +1,14 @@
 var NAVTREEINDEX7 =
 {
+"class_dtk_1_1_widget_1_1_d_colored_progress_bar.html#aa408b094498ebf85257ba666a29fec1f":[8,0,3,2,32,2],
+"class_dtk_1_1_widget_1_1_d_command_link_button.html":[8,0,3,2,33],
+"class_dtk_1_1_widget_1_1_d_command_link_button.html#a55a00a2f5dda1c746da4c16d7c581ee3":[8,0,3,2,33,3],
+"class_dtk_1_1_widget_1_1_d_command_link_button.html#a8ef3b04b702bdb908143505447387055":[8,0,3,2,33,2],
+"class_dtk_1_1_widget_1_1_d_command_link_button.html#a9b9cf5b4bb053d6ea984b8d1b3e748bf":[8,0,3,2,33,1],
+"class_dtk_1_1_widget_1_1_d_command_link_button.html#ac08efb6c122938bfa61bffa75d76802b":[8,0,3,2,33,0],
+"class_dtk_1_1_widget_1_1_d_crumb_edit.html":[8,0,3,2,34],
+"class_dtk_1_1_widget_1_1_d_crumb_edit.html#a04bfc058331757280d4f437c235a3490":[8,0,3,2,34,20],
+"class_dtk_1_1_widget_1_1_d_crumb_edit.html#a08278b313c9bbc5e0b637741b20cdcac":[8,0,3,2,34,23],
 "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a15e09ac3d1a87f99eba81120faea2eaa":[8,0,3,2,34,9],
 "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a1874cdba60580b72905ab20fddd0b0a7":[8,0,3,2,34,27],
 "class_dtk_1_1_widget_1_1_d_crumb_edit.html#a18fbcca13c41aa7fe5bdd4a5bdbdfe6e":[8,0,3,2,34,21],
@@ -240,14 +249,5 @@ var NAVTREEINDEX7 =
 "class_dtk_1_1_widget_1_1_d_file_icon_provider.html#ab0e4969f7089e19edd904fb7483cf33f":[8,0,3,2,45,2],
 "class_dtk_1_1_widget_1_1_d_file_icon_provider.html#adfbaa6e482372c6c9d8bf9a9fa7b533d":[8,0,3,2,45,3],
 "class_dtk_1_1_widget_1_1_d_floating_button.html":[8,0,3,2,46],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#a297068b449dea2fe813afa1927a8b6b9":[8,0,3,2,46,0],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#a35e090681ab07f6b7c2b66a923601d2b":[8,0,3,2,46,3],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#a465644a0f5cfa95472aaec9793c77b7b":[8,0,3,2,46,1],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#a6d81de7fcba77f2d976d1ca36c126727":[8,0,3,2,46,2],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#a964e8f1500a000a5d7986ec492d3af80":[8,0,3,2,46,5],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#aae19017902f6286414df584d4721b25e":[8,0,3,2,46,4],
-"class_dtk_1_1_widget_1_1_d_floating_button.html#acf72cb6dd2d282e125516464577c1d45":[8,0,3,2,46,6],
-"class_dtk_1_1_widget_1_1_d_floating_message.html":[8,0,3,2,47],
-"class_dtk_1_1_widget_1_1_d_floating_message.html#a27337e75a27b4091aefb88fbe0fb3500":[8,0,3,2,47,2],
-"class_dtk_1_1_widget_1_1_d_floating_message.html#a28ae665e82a88de6a506fafe2d6a0d28":[8,0,3,2,47,8]
+"class_dtk_1_1_widget_1_1_d_floating_button.html#a297068b449dea2fe813afa1927a8b6b9":[8,0,3,2,46,0]
 };

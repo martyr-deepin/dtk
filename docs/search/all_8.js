@@ -79,6 +79,8 @@ var searchData=
   ['hasurls',['hasUrls',['https://doc.qt.io/qt-5/qmimedata.html#hasUrls',1,'QMimeData']]],
   ['hasvisitedpage',['hasVisitedPage',['https://doc.qt.io/qt-5/qwizard.html#hasVisitedPage',1,'QWizard']]],
   ['hasvtable',['hasVtable',['../class_dtk_1_1_core_1_1_d_vtable_hook.html#ad9bf13138d3bb82733f8ac2e15ade8dc',1,'Dtk::Core::DVtableHook']]],
+  ['haswallpapereffect',['hasWallpaperEffect',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#ac8b9c17ab7cdb976129eb3a8ade7e15b',1,'Dtk::Gui::DWindowManagerHelper']]],
+  ['haswallpapereffectchanged',['hasWallpaperEffectChanged',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a1090b7b84e108e6e988d50f2210903ec',1,'Dtk::Gui::DWindowManagerHelper']]],
   ['haswidthforheight',['hasWidthForHeight',['https://doc.qt.io/qt-5/qsizepolicy.html#hasWidthForHeight',1,'QSizePolicy']]],
   ['head',['head',['https://doc.qt.io/qt-5/qqueue.html#head',1,'QQueue::head()'],['https://doc.qt.io/qt-5/qqueue.html#head-1',1,'QQueue::head() const const']]],
   ['header',['header',['https://doc.qt.io/qt-5/qtreeview.html#header',1,'QTreeView::header()'],['../class_dtk_1_1_widget_1_1_d_switch_line_expand.html#a4d35e04247760337937d13fe1a5bbeb3',1,'Dtk::Widget::DSwitchLineExpand::header()']]],

@@ -74,6 +74,7 @@ var searchData=
   ['hasurls',['hasUrls',['qthelp://org.qt-project.qtcore/qtcore/qmimedata.html#hasUrls',1,'QMimeData']]],
   ['hasvisitedpage',['hasVisitedPage',['qthelp://org.qt-project.qtwidgets/qtwidgets/qwizard.html#hasVisitedPage',1,'QWizard']]],
   ['hasvtable',['hasVtable',['../class_dtk_1_1_core_1_1_d_vtable_hook.html#ad9bf13138d3bb82733f8ac2e15ade8dc',1,'Dtk::Core::DVtableHook']]],
+  ['haswallpapereffectchanged',['hasWallpaperEffectChanged',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a1090b7b84e108e6e988d50f2210903ec',1,'Dtk::Gui::DWindowManagerHelper']]],
   ['haswidthforheight',['hasWidthForHeight',['qthelp://org.qt-project.qtwidgets/qtwidgets/qsizepolicy.html#hasWidthForHeight',1,'QSizePolicy']]],
   ['head',['head',['qthelp://org.qt-project.qtcore/qtcore/qqueue.html#head',1,'QQueue::head()'],['qthelp://org.qt-project.qtcore/qtcore/qqueue.html#head-1',1,'QQueue::head() const const']]],
   ['header',['header',['qthelp://org.qt-project.qtwidgets/qtwidgets/qtreeview.html#header',1,'QTreeView::header()'],['../class_dtk_1_1_widget_1_1_d_switch_line_expand.html#a4d35e04247760337937d13fe1a5bbeb3',1,'Dtk::Widget::DSwitchLineExpand::header()']]],
