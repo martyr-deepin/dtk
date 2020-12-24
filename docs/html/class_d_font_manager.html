@@ -175,18 +175,18 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a43b8fb2d41a7d1f1dc2daf792c68e9cc"><td class="memItemLeft" align="right" valign="top"><a id="a43b8fb2d41a7d1f1dc2daf792c68e9cc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DFontManager</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#parent">parent</a>=nullptr)</td></tr>
 <tr class="separator:a43b8fb2d41a7d1f1dc2daf792c68e9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20307ae8845c1811a3773c944f526354"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_font_manager.html#a20307ae8845c1811a3773c944f526354">fontPixelSize</a> (<a class="el" href="class_d_font_manager.html#ae367968d59c2f7b47a42d3d2b3dac600">SizeType</a> type) const</td></tr>
-<tr class="memdesc:a20307ae8845c1811a3773c944f526354"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准  <a href="#a20307ae8845c1811a3773c944f526354">更多...</a><br /></td></tr>
-<tr class="separator:a20307ae8845c1811a3773c944f526354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac62ab7840f4656557849f17f2a260e2e"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_font_manager.html#ac62ab7840f4656557849f17f2a260e2e">setFontPixelSize</a> (<a class="el" href="class_d_font_manager.html#ae367968d59c2f7b47a42d3d2b3dac600">SizeType</a> type, quint16 size)</td></tr>
-<tr class="memdesc:ac62ab7840f4656557849f17f2a260e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体像素大小  <a href="#ac62ab7840f4656557849f17f2a260e2e">更多...</a><br /></td></tr>
-<tr class="separator:ac62ab7840f4656557849f17f2a260e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a200ece1eaea9226c8d632b76ed0b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_font_manager.html#ae4a200ece1eaea9226c8d632b76ed0b4">setFontGenericPixelSize</a> (quint16 size)</td></tr>
-<tr class="memdesc:ae4a200ece1eaea9226c8d632b76ed0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体的通用像素大小  <a href="#ae4a200ece1eaea9226c8d632b76ed0b4">更多...</a><br /></td></tr>
-<tr class="separator:ae4a200ece1eaea9226c8d632b76ed0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13666c27818bcabfa1ed69df51fb45ef"><td class="memItemLeft" align="right" valign="top"><a id="a13666c27818bcabfa1ed69df51fb45ef"></a>
-quint16&#160;</td><td class="memItemRight" valign="bottom"><b>fontGenericPixelSize</b> () const</td></tr>
-<tr class="separator:a13666c27818bcabfa1ed69df51fb45ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288368436a44e45ce511ed2ccb68801b"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_font_manager.html#a288368436a44e45ce511ed2ccb68801b">fontPixelSize</a> (<a class="el" href="class_d_font_manager.html#ae367968d59c2f7b47a42d3d2b3dac600">SizeType</a> type) const</td></tr>
+<tr class="memdesc:a288368436a44e45ce511ed2ccb68801b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将字体的大小枚举 SizeType 和控件 widget 进行绑定, 其控件的字体大小(随绑定的枚举的)对应值的改变而改变; 系统自定义的绑定枚举值 T6, 若 T6 = 14px, 则其他枚举 T1 - T10 的数值,依次为:40, 30, 24, 20, 17, 14(T6), 13, 12, 11, 10; 系统自定义的绑定枚举值 T6 改为 T6 = 20px, 则其他枚举 T1 - T10 的数值,依次为:46, 36, 30, 26, 23, 20(T6), 19, 18, 17, 16; 即: 其对应的无论 T6 为何值, 其两个相邻的 T 值的差是定值: T(n) - T(n-1) == 定值 而系统是只设置 T6 这以枚举, 作为基准  <a href="#a288368436a44e45ce511ed2ccb68801b">更多...</a><br /></td></tr>
+<tr class="separator:a288368436a44e45ce511ed2ccb68801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219a729130d0d97c0b9e6c3ee13696ce"><td class="memItemLeft" align="right" valign="top">Q_INVOKABLE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_font_manager.html#a219a729130d0d97c0b9e6c3ee13696ce">setFontPixelSize</a> (<a class="el" href="class_d_font_manager.html#ae367968d59c2f7b47a42d3d2b3dac600">SizeType</a> type, int size)</td></tr>
+<tr class="memdesc:a219a729130d0d97c0b9e6c3ee13696ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体像素大小  <a href="#a219a729130d0d97c0b9e6c3ee13696ce">更多...</a><br /></td></tr>
+<tr class="separator:a219a729130d0d97c0b9e6c3ee13696ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3292b1657c728e989722dc78c547b761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_font_manager.html#a3292b1657c728e989722dc78c547b761">setFontGenericPixelSize</a> (int size)</td></tr>
+<tr class="memdesc:a3292b1657c728e989722dc78c547b761"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置字体的通用像素大小  <a href="#a3292b1657c728e989722dc78c547b761">更多...</a><br /></td></tr>
+<tr class="separator:a3292b1657c728e989722dc78c547b761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a5b3a41ab503e4b030a8d2f250bccd"><td class="memItemLeft" align="right" valign="top"><a id="af2a5b3a41ab503e4b030a8d2f250bccd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fontGenericPixelSize</b> () const</td></tr>
+<tr class="separator:af2a5b3a41ab503e4b030a8d2f250bccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d530897f2dd6d4f2614008fa7d64e7f"><td class="memItemLeft" align="right" valign="top"><a id="a4d530897f2dd6d4f2614008fa7d64e7f"></a>
 Q_INVOKABLE const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (<a class="el" href="class_d_font_manager.html#ae367968d59c2f7b47a42d3d2b3dac600">SizeType</a> type, const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qfont.html">QFont</a> &amp;base=<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qfont.html">QFont</a>()) const</td></tr>
 <tr class="separator:a4d530897f2dd6d4f2614008fa7d64e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,9 +420,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:af73f02b33f6fb70cef9034208e24a13a"><td class="memItemLeft" align="right" valign="top"><a id="af73f02b33f6fb70cef9034208e24a13a"></a>
 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qfont.html">QFont</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t10</b></td></tr>
 <tr class="separator:af73f02b33f6fb70cef9034208e24a13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8825f7fd613e04b443c8cb68c7ea94a5"><td class="memItemLeft" align="right" valign="top"><a id="a8825f7fd613e04b443c8cb68c7ea94a5"></a>
-quint16&#160;</td><td class="memItemRight" valign="bottom"><b>fontGenericPixelSize</b></td></tr>
-<tr class="separator:a8825f7fd613e04b443c8cb68c7ea94a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63fe488df5748a4d85e6629793dac29"><td class="memItemLeft" align="right" valign="top"><a id="ad63fe488df5748a4d85e6629793dac29"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>fontGenericPixelSize</b></td></tr>
+<tr class="separator:ad63fe488df5748a4d85e6629793dac29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#objectName-prop">objectName</a></td></tr>
@@ -516,14 +516,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 </div>
 </div>
 <h2 class="groupheader">成员函数说明</h2>
-<a id="a20307ae8845c1811a3773c944f526354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20307ae8845c1811a3773c944f526354">&#9670;&nbsp;</a></span>fontPixelSize()</h2>
+<a id="a288368436a44e45ce511ed2ccb68801b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288368436a44e45ce511ed2ccb68801b">&#9670;&nbsp;</a></span>fontPixelSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">quint16 DFontManager::fontPixelSize </td>
+          <td class="memname">int DFontManager::fontPixelSize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_d_font_manager.html#ae367968d59c2f7b47a42d3d2b3dac600">DFontManager::SizeType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
@@ -587,12 +587,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 </dl>
 <dl class="section return"><dt>返回</dt><dd>返回设置字体大小后的字体 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dfontmanager_8cpp_source.html">dfontmanager.cpp</a> 第 <a class="el" href="dfontmanager_8cpp_source.html#l00179">179</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dfontmanager_8cpp_source.html">dfontmanager.cpp</a> 第 <a class="el" href="dfontmanager_8cpp_source.html#l00191">191</a> 行定义.</p>
 
 </div>
 </div>
-<a id="ae4a200ece1eaea9226c8d632b76ed0b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4a200ece1eaea9226c8d632b76ed0b4">&#9670;&nbsp;</a></span>setFontGenericPixelSize()</h2>
+<a id="a3292b1657c728e989722dc78c547b761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3292b1657c728e989722dc78c547b761">&#9670;&nbsp;</a></span>setFontGenericPixelSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,7 +600,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
         <tr>
           <td class="memname">void DFontManager::setFontGenericPixelSize </td>
           <td>(</td>
-          <td class="paramtype">quint16&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
@@ -619,8 +619,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 
 </div>
 </div>
-<a id="ac62ab7840f4656557849f17f2a260e2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac62ab7840f4656557849f17f2a260e2e">&#9670;&nbsp;</a></span>setFontPixelSize()</h2>
+<a id="a219a729130d0d97c0b9e6c3ee13696ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a219a729130d0d97c0b9e6c3ee13696ce">&#9670;&nbsp;</a></span>setFontPixelSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,7 +634,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">quint16&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -668,7 +668,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_font_manager.html">DFontManager</a></li>
-    <li class="footer">生成于 2020年 十二月 24日 星期四 07:59:36 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 25日 星期五 07:59:37 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
