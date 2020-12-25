@@ -304,6 +304,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:a5b0541402a425a91305d1157c25e82d0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#a5b0541402a425a91305d1157c25e82d0">setWindowBlurAreaByWM</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qpainterpath.html">QPainterPath</a> &gt; &amp;paths)</td></tr>
 <tr class="memdesc:a5b0541402a425a91305d1157c25e82d0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#a5a435dd60ff2cbb6178797cdf8104440" title="DPlatformWindowHandle::setWindowBlurAreaByWM 这只是一个重载函数，如果 widget 的 QWidget::windowHandle...">DPlatformWindowHandle::setWindowBlurAreaByWM</a> 这只是一个重载函数，如果 widget 的 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#windowHandle">QWidget::windowHandle</a> 为 nullptr 则返回 false， 否则返回 setWindowBlurAreaByWM(wiget-&gt;windowHandle(), paths) 的值。示例：  <a href="#a5b0541402a425a91305d1157c25e82d0">更多...</a><br /></td></tr>
 <tr class="separator:a5b0541402a425a91305d1157c25e82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b38e33d18c7c48b1a24e6a5be33d39"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#af3b38e33d18c7c48b1a24e6a5be33d39">setWindowWallpaperParaByWM</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *widget, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;area, WallpaperScaleMode sMode, WallpaperFillMode fMode)</td></tr>
+<tr class="memdesc:af3b38e33d18c7c48b1a24e6a5be33d39"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#af3b38e33d18c7c48b1a24e6a5be33d39" title="DPlatformWindowHandle::setWindowWallpaperParaByWM 这只是一个重载函数，如果 widget 的 QWidget::windowH...">DPlatformWindowHandle::setWindowWallpaperParaByWM</a> 这只是一个重载函数，如果 widget 的 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#windowHandle">QWidget::windowHandle</a> 为 nullptr 则返回 false， 否则返回 setWindowWallpaperParaByWM(wiget-&gt;windowHandle(), area) 的值。示例：  <a href="#af3b38e33d18c7c48b1a24e6a5be33d39">更多...</a><br /></td></tr>
+<tr class="separator:af3b38e33d18c7c48b1a24e6a5be33d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_d_platform_handle"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_d_platform_handle')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_d_platform_handle.html">DPlatformHandle</a></td></tr>
 <tr class="memitem:a554ca579eadef8661ba9137841d43145 inherit pub_static_methods_class_d_platform_handle"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_platform_handle.html#a554ca579eadef8661ba9137841d43145">pluginVersion</a> ()</td></tr>
 <tr class="memdesc:a554ca579eadef8661ba9137841d43145 inherit pub_static_methods_class_d_platform_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">DWindowHandle::pluginVersion  <a href="class_d_platform_handle.html#a554ca579eadef8661ba9137841d43145">更多...</a><br /></td></tr>
@@ -583,7 +586,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock">
-<p class="definition">在文件 <a class="el" href="dplatformwindowhandle_8h_source.html">dplatformwindowhandle.h</a> 第 <a class="el" href="dplatformwindowhandle_8h_source.html#l00030">30</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dplatformwindowhandle_8h_source.html">dplatformwindowhandle.h</a> 第 <a class="el" href="dplatformwindowhandle_8h_source.html#l00031">31</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="af025559a81fc86a56c58b346b52614f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af025559a81fc86a56c58b346b52614f9">&#9670;&nbsp;</a></span>DPlatformWindowHandle()</h2>
@@ -864,6 +867,70 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 
 </div>
 </div>
+<a id="af3b38e33d18c7c48b1a24e6a5be33d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b38e33d18c7c48b1a24e6a5be33d39">&#9670;&nbsp;</a></span>setWindowWallpaperParaByWM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DPlatformWindowHandle::setWindowWallpaperParaByWM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qrect.html">QRect</a> &amp;&#160;</td>
+          <td class="paramname"><em>area</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WallpaperScaleMode&#160;</td>
+          <td class="paramname"><em>sMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WallpaperFillMode&#160;</td>
+          <td class="paramname"><em>fMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#af3b38e33d18c7c48b1a24e6a5be33d39" title="DPlatformWindowHandle::setWindowWallpaperParaByWM 这只是一个重载函数，如果 widget 的 QWidget::windowH...">DPlatformWindowHandle::setWindowWallpaperParaByWM</a> 这只是一个重载函数，如果 widget 的 <a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#windowHandle">QWidget::windowHandle</a> 为 nullptr 则返回 false， 否则返回 setWindowWallpaperParaByWM(wiget-&gt;windowHandle(), area) 的值。示例： </p>
+<div class="fragment"><div class="line">DMainWindow w;.000000</div><div class="line">QRect area;</div><div class="line">DPlatformWindowHandle::WallpaperScaleMode sMode</div><div class="line">DPlatformWindowHandle::WallpaperFillMode fMode</div><div class="line"></div><div class="line">area.x = 50;</div><div class="line">area.y = 50;</div><div class="line">area.width = 200;</div><div class="line">area.height = 200;</div><div class="line">area.xRadius = 10;</div><div class="line">area.yRaduis = 10;</div><div class="line"></div><div class="line">sMode = WallpaperScaleFlag::FollowWindow;</div><div class="line">fMode = WallpaperFillFlag::PreserveAspectCrop;</div><div class="line"></div><div class="line"><a class="code" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html#af3b38e33d18c7c48b1a24e6a5be33d39">DPlatformWindowHandle::setWindowWallpaperParaByWM</a>(&amp;w, area, sMode, fMode);</div><div class="line"></div><div class="line">w.resize(300, 300);</div><div class="line">w.setAttribute(Qt::WA_TranslucentBackground);</div><div class="line">w.show();</div></div><!-- fragment --> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">widget</td><td></td></tr>
+    <tr><td class="paramname">area</td><td></td></tr>
+    <tr><td class="paramname">sMode</td><td></td></tr>
+    <tr><td class="paramname">fMode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>需要对 <em>widget</em> 添加 Qt::WA_TranslucentBackground 使其背景透明 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html#setAttribute">QWidget::setAttribute</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dplatformwindowhandle_8cpp_source.html">dplatformwindowhandle.cpp</a> 第 <a class="el" href="dplatformwindowhandle_8cpp_source.html#l00226">226</a> 行定义.</p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>dtkwidget/src/widgets/<a class="el" href="dplatformwindowhandle_8h_source.html">dplatformwindowhandle.h</a></li>
 <li>dtkwidget/src/widgets/<a class="el" href="dplatformwindowhandle_8cpp_source.html">dplatformwindowhandle.cpp</a></li>
@@ -874,7 +941,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_platform_window_handle.html">DPlatformWindowHandle</a></li>
-    <li class="footer">生成于 2020年 十二月 25日 星期五 07:59:23 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 26日 星期六 07:59:24 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

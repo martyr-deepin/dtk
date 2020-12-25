@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"dfilechooseredit_8h_source.html":[9,0,2,0,2,56],
+"dfiledialog_8cpp_source.html":[9,0,2,0,2,57],
+"dfiledialog_8h_source.html":[9,0,2,0,2,58],
 "dfiledrag_8cpp_source.html":[9,0,1,1,2],
 "dfiledrag_8h_source.html":[9,0,1,1,3],
 "dfiledragclient_8cpp_source.html":[9,0,1,1,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "dthemesettings_8cpp_source.html":[9,0,3,2,5],
 "dthemesettings_8h_source.html":[9,0,3,2,6],
 "dthreadutils_8cpp_source.html":[9,0,0,1,4,17],
-"dthreadutils_8h_source.html":[9,0,0,1,4,18],
-"dtickeffect_8cpp_source.html":[9,0,2,0,2,161],
-"dtickeffect_8h_source.html":[9,0,2,0,2,162],
-"dtimeunitformatter_8cpp_source.html":[9,0,0,1,4,19]
+"dthreadutils_8h_source.html":[9,0,0,1,4,18]
 };

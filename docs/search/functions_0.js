@@ -36,6 +36,7 @@ var searchData=
   ['accessiblename',['accessibleName',['https://doc.qt.io/qt-5/qwidget.html#accessibleName-prop',1,'QWidget']]],
   ['accessibletabname',['accessibleTabName',['https://doc.qt.io/qt-5/qtabbar.html#accessibleTabName',1,'QTabBar']]],
   ['accessibletext',['accessibleText',['https://doc.qt.io/qt-5/qstandarditem.html#accessibleText',1,'QStandardItem']]],
+  ['acclimatizevirtualkeyboard',['acclimatizeVirtualKeyboard',['../class_dtk_1_1_widget_1_1_d_application.html#a1de1356f310929263060c28cf80b03ba',1,'Dtk::Widget::DApplication']]],
   ['acquire',['acquire',['https://doc.qt.io/qt-5/qsemaphore.html#acquire',1,'QSemaphore::acquire()'],['https://doc.qt.io/qt-5/qsystemsemaphore.html#acquire',1,'QSystemSemaphore::acquire()']]],
   ['action',['action',['https://doc.qt.io/qt-5/qactionevent.html#action',1,'QActionEvent']]],
   ['actionat',['actionAt',['https://doc.qt.io/qt-5/qmenu.html#actionAt',1,'QMenu::actionAt()'],['https://doc.qt.io/qt-5/qmenubar.html#actionAt',1,'QMenuBar::actionAt()'],['https://doc.qt.io/qt-5/qtoolbar.html#actionAt',1,'QToolBar::actionAt(const QPoint &amp;p) const const'],['https://doc.qt.io/qt-5/qtoolbar.html#actionAt-1',1,'QToolBar::actionAt(int x, int y) const const']]],

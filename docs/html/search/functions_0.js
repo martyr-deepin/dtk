@@ -36,6 +36,7 @@ var searchData=
   ['accessiblename',['accessibleName',['qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#accessibleName-prop',1,'QWidget']]],
   ['accessibletabname',['accessibleTabName',['qthelp://org.qt-project.qtwidgets/qtwidgets/qtabbar.html#accessibleTabName',1,'QTabBar']]],
   ['accessibletext',['accessibleText',['qthelp://org.qt-project.qtgui/qtgui/qstandarditem.html#accessibleText',1,'QStandardItem']]],
+  ['acclimatizevirtualkeyboard',['acclimatizeVirtualKeyboard',['../class_dtk_1_1_widget_1_1_d_application.html#a1de1356f310929263060c28cf80b03ba',1,'Dtk::Widget::DApplication']]],
   ['acquire',['acquire',['qthelp://org.qt-project.qtcore/qtcore/qsemaphore.html#acquire',1,'QSemaphore::acquire()'],['qthelp://org.qt-project.qtcore/qtcore/qsystemsemaphore.html#acquire',1,'QSystemSemaphore::acquire()']]],
   ['action',['action',['qthelp://org.qt-project.qtgui/qtgui/qactionevent.html#action',1,'QActionEvent']]],
   ['actionat',['actionAt',['qthelp://org.qt-project.qtwidgets/qtwidgets/qmenu.html#actionAt',1,'QMenu::actionAt()'],['qthelp://org.qt-project.qtwidgets/qtwidgets/qmenubar.html#actionAt',1,'QMenuBar::actionAt()'],['qthelp://org.qt-project.qtwidgets/qtwidgets/qtoolbar.html#actionAt',1,'QToolBar::actionAt(const QPoint &amp;p) const const'],['qthelp://org.qt-project.qtwidgets/qtwidgets/qtoolbar.html#actionAt-1',1,'QToolBar::actionAt(int x, int y) const const']]],

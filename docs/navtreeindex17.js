@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"dtickeffect_8cpp_source.html":[9,0,2,0,2,161],
+"dtickeffect_8h_source.html":[9,0,2,0,2,162],
+"dtimeunitformatter_8cpp_source.html":[9,0,0,1,4,19],
 "dtimeunitformatter_8h_source.html":[9,0,0,1,4,20],
 "dtiplabel_8cpp_source.html":[9,0,2,0,2,163],
 "dtiplabel_8h_source.html":[9,0,2,0,2,164],
@@ -65,8 +68,8 @@ var NAVTREEINDEX17 =
 "dx11window_8h_source.html":[9,0,2,0,2,190],
 "files.html":[9,0],
 "framehelper_8cpp_source.html":[9,0,3,3,1,12],
-"functions.html":[8,3,0],
 "functions.html":[8,3,0,0],
+"functions.html":[8,3,0],
 "functions_0x7e.html":[8,3,0,25],
 "functions_b.html":[8,3,0,1],
 "functions_c.html":[8,3,0,2],
@@ -75,8 +78,8 @@ var NAVTREEINDEX17 =
 "functions_enum.html":[8,3,3],
 "functions_eval.html":[8,3,4],
 "functions_f.html":[8,3,0,5],
-"functions_func.html":[8,3,1],
 "functions_func.html":[8,3,1,0],
+"functions_func.html":[8,3,1],
 "functions_func_0x7e.html":[8,3,1,25],
 "functions_func_b.html":[8,3,1,1],
 "functions_func_c.html":[8,3,1,2],
@@ -133,8 +136,8 @@ var NAVTREEINDEX17 =
 "hidpihelper_8cpp_source.html":[9,0,3,3,1,16],
 "hidpihelper_8h_source.html":[9,0,3,3,1,17],
 "hierarchy.html":[8,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "lineedithelper_8cpp_source.html":[9,0,3,3,1,18],
 "md_dtkcore__c_h_a_n_g_e_l_o_g.html":[2],
 "md_dtkcore_src_log__r_e_a_d_m_e.html":[4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a1888a4642ba1035f2223d6a7e160f8be":[8,0,3,2,1,0,3],
 "struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a44304643d0f2c978d20da97e7e7c190d":[8,0,3,2,1,0,2],
 "struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a5e7173c7ae47b8622eca91687dd724fe":[8,0,3,2,1,0,4],
-"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a7fc98442458ccc5d5c9df59414143fb4":[8,0,3,2,1,0,1],
-"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a8408cb94276a4b5bf2322f95253c43b3":[8,0,3,2,1,0,0],
-"style_8cpp_source.html":[9,0,3,3,1,30],
-"style_8h_source.html":[9,0,3,3,1,31]
+"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a7fc98442458ccc5d5c9df59414143fb4":[8,0,3,2,1,0,1]
 };

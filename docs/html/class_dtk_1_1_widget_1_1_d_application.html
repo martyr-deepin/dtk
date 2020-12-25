@@ -171,7 +171,7 @@ D_DECL_DEPRECATED <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qth
 <tr class="memdesc:ae26f0b914ee917e02bcf2d8b40896584"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#ae26f0b914ee917e02bcf2d8b40896584" title="DApplication::loadTranslator 加载程序的翻译文件。 使用这个函数需要保证翻译文件必须正确命名: 例如程序�...">DApplication::loadTranslator</a> 加载程序的翻译文件。 使用这个函数需要保证翻译文件必须正确命名: 例如程序名叫 dde-dock， 那么翻译文件在中文locale下的名称必须是 dde-dock_zh_CN.qm；翻译文件还需要放置 在特定的位置，此函数会按照优先级顺序在以下目录中查找翻译文件：</p><ol type="1">
 <li>~/.local/share/APPNAME/translations;</li>
 <li>/usr/local/share/APPNAME/translations;</li>
-<li>/usr/share/APPNAME/translations; </li>
+<li>/usr/share/APPNAME/translations; APPNAME即可执行文件的名称。 </li>
 </ol>
  <a href="#ae26f0b914ee917e02bcf2d8b40896584">更多...</a><br /></td></tr>
 <tr class="separator:ae26f0b914ee917e02bcf2d8b40896584"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +252,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <tr class="memitem:a281d592fb0f94e73d39f0beed1f2cf1c"><td class="memItemLeft" align="right" valign="top"><a id="a281d592fb0f94e73d39f0beed1f2cf1c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAutoActivateWindows</b> (bool autoActivateWindows)</td></tr>
 <tr class="separator:a281d592fb0f94e73d39f0beed1f2cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de1356f310929263060c28cf80b03ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a1de1356f310929263060c28cf80b03ba">acclimatizeVirtualKeyboard</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *window)</td></tr>
+<tr class="memdesc:a1de1356f310929263060c28cf80b03ba"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a1de1356f310929263060c28cf80b03ba" title="DApplication::acclimatizeVirtualKeyboard ">DApplication::acclimatizeVirtualKeyboard</a>  <a href="#a1de1356f310929263060c28cf80b03ba">更多...</a><br /></td></tr>
+<tr class="separator:a1de1356f310929263060c28cf80b03ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51e6038567ff597493a624e7c12f35d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#ab51e6038567ff597493a624e7c12f35d">ignoreVirtualKeyboard</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *window)</td></tr>
+<tr class="memdesc:ab51e6038567ff597493a624e7c12f35d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#ab51e6038567ff597493a624e7c12f35d" title="DApplication::ignoreVirtualKeyboard 恢复到默认状态，将不会为虚拟键盘的环境做任何自适应操作 ...">DApplication::ignoreVirtualKeyboard</a> 恢复到默认状态，将不会为虚拟键盘的环境做任何自适应操作  <a href="#ab51e6038567ff597493a624e7c12f35d">更多...</a><br /></td></tr>
+<tr class="separator:ab51e6038567ff597493a624e7c12f35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ccb1453df72aaae01d6fe9225276c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a35ccb1453df72aaae01d6fe9225276c3">isAcclimatizedVirtualKeyboard</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *window) const</td></tr>
+<tr class="memdesc:a35ccb1453df72aaae01d6fe9225276c3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a35ccb1453df72aaae01d6fe9225276c3" title="DApplication::isAcclimatizedVirtualKeyboard 如果 window 会自适应虚拟键盘返回 true,否则返回 false ">DApplication::isAcclimatizedVirtualKeyboard</a> 如果 <em>window</em> 会自适应虚拟键盘返回 true,否则返回 false  <a href="#a35ccb1453df72aaae01d6fe9225276c3">更多...</a><br /></td></tr>
+<tr class="separator:a35ccb1453df72aaae01d6fe9225276c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44f69cfd41d5a1cbe099230c076a851"><td class="memItemLeft" align="right" valign="top"><a id="ab44f69cfd41d5a1cbe099230c076a851"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a> *obj, <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qevent.html">QEvent</a> *<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html#event">event</a>) Q_DECL_OVERRIDE</td></tr>
 <tr class="separator:ab44f69cfd41d5a1cbe099230c076a851"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1197,7 +1206,47 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a7e348b19463bc6043529d8cf2ec5379a" title="DApplication::aboutDialog 返回一个基于当前程序信息的关于对话框。 此对话框可以通过 DApplication::setAb...">DApplication::aboutDialog</a> 返回一个基于当前程序信息的关于对话框。 此对话框可以通过 <a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#aea6eb22e0a3fb3ac155663044514fa3c" title="DApplication::setAboutDialog 为当前程序设置一个关于对话框。 ">DApplication::setAboutDialog</a> 进行设置，如果没有设置就使用此函数进行获取， 系统会创建一个新的关于对话框。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#aea6eb22e0a3fb3ac155663044514fa3c" title="DApplication::setAboutDialog 为当前程序设置一个关于对话框。 ">setAboutDialog</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01004">1004</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01126">1126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1de1356f310929263060c28cf80b03ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de1356f310929263060c28cf80b03ba">&#9670;&nbsp;</a></span>acclimatizeVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DApplication::acclimatizeVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a1de1356f310929263060c28cf80b03ba" title="DApplication::acclimatizeVirtualKeyboard ">DApplication::acclimatizeVirtualKeyboard</a> </p>
+<p>为窗口的可输入控件添加自动适应虚拟键盘输入法的功能。开启此功能后，当 监听到 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qinputmethod.html#keyboardRectangle-prop">QInputMethod::keyboardRectangleChanged</a></em> 后，会判断当 前的可输入（不仅仅是处于焦点状态）控件是否为此 <em>window</em> 的子控件， 如果是，则将通过 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setContentsMargins">QWidget::setContentsMargins</a></em> 更新 <em>window</em> 的布局区域，以此确保可输入控件处于可见区域。如果可输入控件处于一个 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qabstractscrollarea.html">QAbstractScrollArea</a></em> 中，将会压缩 <em>window</em> 的布局空间，促使 可滚动区域缩小，再使用 <em>QAbstraceScrollArea::scrollContentsBy</em> 将可输入控件滚动到合适的区域，否则将直接把 <em>的内容向上移动为虚拟键盘</em> 腾出空间。 </p><dl class="section note"><dt>注解</dt><dd>在使用之前要确保窗口的 <em>Qt::WA_LayoutOnEntireRect</em> <em>和</em> Qt::WA_ContentsMarginsRespectsSafeArea 都为 false </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>需是一个顶层窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget-obsolete.html#isTopLevel">QWidget::isTopLevel</a> </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#setContentsMargins">QWidget::setContentsMargins</a> </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qinputmethod.html#cursorRectangle-prop">QInputMethod::cursorRectangle</a> </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qinputmethod.html#inputItemClipRectangle-prop">QInputMethod::inputItemClipRectangle</a> </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qinputmethod.html#keyboardRectangle-prop">QInputMethod::keyboardRectangle</a> </dd>
+<dd>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qabstractscrollarea.html">QAbstractScrollArea</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01255">1255</a> 行定义.</p>
 
 </div>
 </div>
@@ -1228,7 +1277,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <dl class="section return"><dt>返回</dt><dd>返回自定义的 <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qt.html">Qt</a> 主题配置文件路径，未设置过此路径时返回为空。 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#aa6cb707323fa20592d657965d26c51e5" title="DApplication::customQtThemeConfigPath 自定义Qt主题配置文件的路径。 ">DApplication::customQtThemeConfigPath</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00797">797</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00919">919</a> 行定义.</p>
 
 </div>
 </div>
@@ -1265,7 +1314,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 </dl>
 <dl class="section warning"><dt>警告</dt><dd>必须在构造 <a class="el" href="class_dtk_1_1_widget_1_1_d_application.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类。 继承自 QApplication ，并在此之上添...">DApplication</a> 对象之前调用 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00786">786</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00908">908</a> 行定义.</p>
 
 </div>
 </div>
@@ -1303,7 +1352,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <dl class="section warning"><dt>警告</dt><dd>必须在构造 <a class="el" href="class_dtk_1_1_widget_1_1_d_application.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类。 继承自 QApplication ，并在此之上添...">DApplication</a> 对象之前调用 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#ae43a90cc3c164f4c0bf4df8ab08f8641" title="DApplication::customQtThemeConfigPathByUserHome 根据用户家目录设置Qt主题配置文件的目录。 ...">DApplication::customQtThemeConfigPathByUserHome</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00769">769</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00891">891</a> 行定义.</p>
 
 </div>
 </div>
@@ -1359,7 +1408,64 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <dl class="section return"><dt>返回</dt><dd>返回一个DApplication对象 </dd></dl>
 <dl class="section warning"><dt>警告</dt><dd>不保证获取的DApplication对象一定有效，如果实例已存在，则直接使 用static_case将其转换为DApplication对象 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00437">437</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00550">550</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab51e6038567ff597493a624e7c12f35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51e6038567ff597493a624e7c12f35d">&#9670;&nbsp;</a></span>ignoreVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Widget::DApplication::ignoreVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#ab51e6038567ff597493a624e7c12f35d" title="DApplication::ignoreVirtualKeyboard 恢复到默认状态，将不会为虚拟键盘的环境做任何自适应操作 ...">DApplication::ignoreVirtualKeyboard</a> 恢复到默认状态，将不会为虚拟键盘的环境做任何自适应操作 </p>
+<dl class="section note"><dt>注解</dt><dd>此操作不会恢复对 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#contentsMargins">QWidget::contentsMargins</a></em> 的修改 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>需是一个调用过 <em>acclimatizeVirtualKeyboard</em> 的窗口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01300">1300</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a35ccb1453df72aaae01d6fe9225276c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ccb1453df72aaae01d6fe9225276c3">&#9670;&nbsp;</a></span>isAcclimatizedVirtualKeyboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Widget::DApplication::isAcclimatizedVirtualKeyboard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:qthelp://org.qt-project.qtwidgets/qtwidgets/" href="qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html">QWidget</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a35ccb1453df72aaae01d6fe9225276c3" title="DApplication::isAcclimatizedVirtualKeyboard 如果 window 会自适应虚拟键盘返回 true,否则返回 false ">DApplication::isAcclimatizedVirtualKeyboard</a> 如果 <em>window</em> 会自适应虚拟键盘返回 true,否则返回 false </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01326">1326</a> 行定义.</p>
 
 </div>
 </div>
@@ -1389,7 +1495,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a5b8ffafceecc9e24823a4cd2bf129de1" title="DApplication::isDXcbPlatform 检查当前程序是否使用了dxcb平台插件。 ">DApplication::isDXcbPlatform</a> 检查当前程序是否使用了dxcb平台插件。 </p>
 <dl class="section return"><dt>返回</dt><dd>正在使用返回 true，否则返回 false。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00716">716</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00838">838</a> 行定义.</p>
 
 </div>
 </div>
@@ -1420,7 +1526,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a2a98eb30c818274cba7188cf773e0b13" title="warning: Must call before QGuiApplication defined object ">DApplication::loadDXcbPlugin</a> 强制程序使用的平台插件到dxcb。 这个函数的工作原理是通过设置 QT_QPA_PLATFORM 来影响平台插件的加载，所以此函数 必须在 <a class="el" href="class_dtk_1_1_widget_1_1_d_application.html" title="DApplication 是 DTK 中用于替换 QCoreApplication 相关功能实现的类。 继承自 QApplication ，并在此之上添...">DApplication</a> 实例创建前进行调用。</p>
 <dl class="section return"><dt>返回</dt><dd>设置成功返回 true，否则返回 false。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00698">698</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00820">820</a> 行定义.</p>
 
 </div>
 </div>
@@ -1443,7 +1549,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#ae26f0b914ee917e02bcf2d8b40896584" title="DApplication::loadTranslator 加载程序的翻译文件。 使用这个函数需要保证翻译文件必须正确命名: 例如程序�...">DApplication::loadTranslator</a> 加载程序的翻译文件。 使用这个函数需要保证翻译文件必须正确命名: 例如程序名叫 dde-dock， 那么翻译文件在中文locale下的名称必须是 dde-dock_zh_CN.qm；翻译文件还需要放置 在特定的位置，此函数会按照优先级顺序在以下目录中查找翻译文件：</p><ol type="1">
 <li>~/.local/share/APPNAME/translations;</li>
 <li>/usr/local/share/APPNAME/translations;</li>
-<li>/usr/share/APPNAME/translations; </li>
+<li>/usr/share/APPNAME/translations; APPNAME即可执行文件的名称。 </li>
 </ol>
 </p>
 <dl class="params"><dt>参数</dt><dd>
@@ -1454,7 +1560,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 </dl>
 <dl class="section return"><dt>返回</dt><dd>加载成功返回 true，否则返回 false。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00666">666</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00788">788</a> 行定义.</p>
 
 </div>
 </div>
@@ -1476,7 +1582,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p>productIcon 属性是程序的产品图标， 主要用于在关于对话框中进行展示。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#adb3748db497994a07aa90455612f0fc4" title="productName属性是程序的产品名称， 产品名称不同与 applicationName ，应该是类似如“深度终端”，而不是 d...">productName</a>, <a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a7e348b19463bc6043529d8cf2ec5379a" title="DApplication::aboutDialog 返回一个基于当前程序信息的关于对话框。 此对话框可以通过 DApplication::setAb...">aboutDialog</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00850">850</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00972">972</a> 行定义.</p>
 
 </div>
 </div>
@@ -1498,7 +1604,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p>productName属性是程序的产品名称， 产品名称不同与 applicationName ，应该是类似如“深度终端”，而不是 deepin-terminal， 这个名称主要用于在程序的关于对话框中进行展示。 如果没有手动通过 setProductName 来设置，会尝试使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#applicationDisplayName-prop">QApplication::applicationDisplayName</a> 来充当产品名称。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#afd69d72b6e0d559508930618b654a2b8" title="productIcon 属性是程序的产品图标， 主要用于在关于对话框中进行展示。 ">productIcon</a>, <a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a7e348b19463bc6043529d8cf2ec5379a" title="DApplication::aboutDialog 返回一个基于当前程序信息的关于对话框。 此对话框可以通过 DApplication::setAb...">aboutDialog</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00818">818</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00940">940</a> 行定义.</p>
 
 </div>
 </div>
@@ -1528,7 +1634,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a7b70e79e02f0e8e442b2740a2d1a02bb" title="DApplication::registerDDESession 用于跟 startdde 进行通信，告知 startdde 进程已经启动成功。 ...">DApplication::registerDDESession</a> 用于跟 startdde 进行通信，告知 startdde 进程已经启动成功。 </p>
 <dl class="section note"><dt>注解</dt><dd>只有DDE系统组件需要使用此函数，普通应用无需使用。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00742">742</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00864">864</a> 行定义.</p>
 
 </div>
 </div>
@@ -1585,7 +1691,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <p><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#aea6eb22e0a3fb3ac155663044514fa3c" title="DApplication::setAboutDialog 为当前程序设置一个关于对话框。 ">DApplication::setAboutDialog</a> 为当前程序设置一个关于对话框。 </p>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a7e348b19463bc6043529d8cf2ec5379a" title="DApplication::aboutDialog 返回一个基于当前程序信息的关于对话框。 此对话框可以通过 DApplication::setAb...">aboutDialog</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01024">1024</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l01146">1146</a> 行定义.</p>
 
 </div>
 </div>
@@ -1615,7 +1721,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <dl class="section note"><dt>注解</dt><dd>一般情况下单实例的实现使用 QSystemSemaphore，如果你的程序需要在沙箱 环境如 flatpak 中运行，可选的一套方案是通过 DTK_DBUS_SINGLEINSTANCE 这个 编译宏来控制单实例使用 DBus 方案。</dd></dl>
 <dl class="section return"><dt>返回</dt><dd>设置成功返回 true，否则返回 false。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00625">625</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00738">738</a> 行定义.</p>
 
 </div>
 </div>
@@ -1655,7 +1761,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 </dl>
 <dl class="section return"><dt>返回</dt><dd>设置成功返回 true，否则返回 false。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00638">638</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00751">751</a> 行定义.</p>
 
 </div>
 </div>
@@ -1683,7 +1789,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00581">581</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dapplication_8cpp_source.html">dapplication.cpp</a> 第 <a class="el" href="dapplication_8cpp_source.html#l00694">694</a> 行定义.</p>
 
 </div>
 </div>
@@ -1698,7 +1804,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoActivateWindows</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Widget</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_widget_1_1_d_application.html">DApplication</a></li>
-    <li class="footer">生成于 2020年 十二月 25日 星期五 07:59:38 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 26日 星期六 07:59:38 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

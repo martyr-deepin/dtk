@@ -380,6 +380,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:a56d9b88346dde4b906eac23a7ec11590"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a56d9b88346dde4b906eac23a7ec11590">setWmWindowTypes</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window, WmWindowTypes types)</td></tr>
 <tr class="memdesc:a56d9b88346dde4b906eac23a7ec11590"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a56d9b88346dde4b906eac23a7ec11590" title="DWindowManagerHelper::setWmWindowTypes 直接设置窗口管理器层级提供的窗口类型，如DesktopType和DockType�...">DWindowManagerHelper::setWmWindowTypes</a> 直接设置窗口管理器层级提供的窗口类型，如DesktopType和DockType类型也被 桌面环境需要，但是Qt自身并没有提供对应的设置接口  <a href="#a56d9b88346dde4b906eac23a7ec11590">更多...</a><br /></td></tr>
 <tr class="separator:a56d9b88346dde4b906eac23a7ec11590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e226adb4c77777c11e8c004cada641"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#aa5e226adb4c77777c11e8c004cada641">setWmClassName</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;name)</td></tr>
+<tr class="memdesc:aa5e226adb4c77777c11e8c004cada641"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#aa5e226adb4c77777c11e8c004cada641" title="DWindowManagerHelper::setWmClassName 设置x11环境上默认使用的wm class name，主要是在窗口创建时用于设置...">DWindowManagerHelper::setWmClassName</a> 设置x11环境上默认使用的wm class name，主要是在窗口创建时用于设置WM_CLASS窗口属性  <a href="#aa5e226adb4c77777c11e8c004cada641">更多...</a><br /></td></tr>
+<tr class="separator:aa5e226adb4c77777c11e8c004cada641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd63a0bd40cfcf8a4db469120fc2cb0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#acd63a0bd40cfcf8a4db469120fc2cb0b">popupSystemWindowMenu</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> *window)</td></tr>
 <tr class="memdesc:acd63a0bd40cfcf8a4db469120fc2cb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#acd63a0bd40cfcf8a4db469120fc2cb0b" title="DWindowManagerHelper::popupSystemWindowMenu 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击�...">DWindowManagerHelper::popupSystemWindowMenu</a> 显示窗口管理器对窗口的菜单，和有边框的窗口在标题栏上点击鼠标右键弹出的菜单内容一致。 在 DMainWindow 的标题栏上点击鼠标右键会调用此函数打开系统菜单：  <a href="#acd63a0bd40cfcf8a4db469120fc2cb0b">更多...</a><br /></td></tr>
 <tr class="separator:acd63a0bd40cfcf8a4db469120fc2cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -644,7 +647,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 </dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#aab812bdb732a22719b434c4b0fde2020" title="DWindowManagerHelper::instance DWindowManagerHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调...">DWindowManagerHelper::instance</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00743">743</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00757">757</a> 行定义.</p>
 
 </div>
 </div>
@@ -669,7 +672,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <dl class="section note"><dt>注解</dt><dd>顺序和窗口层叠顺序相关，显示越靠下层的窗口在列表中顺序越靠前 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a3e11c8763679af22cd3407618a3c001e" title="DWindowManagerHelper::currentWorkspaceWindowIdList ">DWindowManagerHelper::currentWorkspaceWindowIdList</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00641">641</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00655">655</a> 行定义.</p>
 
 </div>
 </div>
@@ -693,7 +696,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <dl class="section note"><dt>注解</dt><dd>顺序和窗口层叠顺序相关，显示越靠下层的窗口在列表中顺序越靠前 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a698fa6b5fea24c8041f9925942a01154" title="DWindowManagerHelper::allWindowIdList ">DWindowManagerHelper::allWindowIdList</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00660">660</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00674">674</a> 行定义.</p>
 
 </div>
 </div>
@@ -722,7 +725,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <dd>
 <a class="el" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0" title="DForeignWindow::fromWinId 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplicatio...">DForeignWindow::fromWinId</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00683">683</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00697">697</a> 行定义.</p>
 
 </div>
 </div>
@@ -759,7 +762,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>返回窗口当前的修饰标志 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00472">472</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00473">473</a> 行定义.</p>
 
 </div>
 </div>
@@ -796,7 +799,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>返回窗口当前的功能标志 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00405">405</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00406">406</a> 行定义.</p>
 
 </div>
 </div>
@@ -826,7 +829,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <p><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#aab812bdb732a22719b434c4b0fde2020" title="DWindowManagerHelper::instance DWindowManagerHelper 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调...">DWindowManagerHelper::instance</a> <a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html" title="提供与窗口管理器交互的接口，同 DPlatformWindowHandle 依赖 dxcb 插件。 dxcb 插件抽象出所有需要和X11平�...">DWindowManagerHelper</a> 的单例对象，使用 Q_GLOBAL_STATIC 定义，在第一次调用时实例化。 </p>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00346">346</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00347">347</a> 行定义.</p>
 
 </div>
 </div>
@@ -865,7 +868,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00510">510</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00524">524</a> 行定义.</p>
 
 </div>
 </div>
@@ -912,7 +915,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00429">429</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00430">430</a> 行定义.</p>
 
 </div>
 </div>
@@ -967,7 +970,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>返回设置后的窗口标志 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00453">453</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00454">454</a> 行定义.</p>
 
 </div>
 </div>
@@ -1014,7 +1017,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00357">357</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00358">358</a> 行定义.</p>
 
 </div>
 </div>
@@ -1069,7 +1072,45 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>返回设置后的窗口标志 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00386">386</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00387">387</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa5e226adb4c77777c11e8c004cada641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e226adb4c77777c11e8c004cada641">&#9670;&nbsp;</a></span>setWmClassName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dtk::Gui::DWindowManagerHelper::setWmClassName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qbytearray.html">QByteArray</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#aa5e226adb4c77777c11e8c004cada641" title="DWindowManagerHelper::setWmClassName 设置x11环境上默认使用的wm class name，主要是在窗口创建时用于设置...">DWindowManagerHelper::setWmClassName</a> 设置x11环境上默认使用的wm class name，主要是在窗口创建时用于设置WM_CLASS窗口属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>如果值为空，Qt将在下次使用此值时根据程序名称再次初始化此值 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcoreapplication.html#applicationName-prop">QCoreApplication::applicationName</a> </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00511">511</a> 行定义.</p>
 
 </div>
 </div>
@@ -1116,7 +1157,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00497">497</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00498">498</a> 行定义.</p>
 
 </div>
 </div>
@@ -1140,7 +1181,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <dl class="section return"><dt>返回</dt><dd>返回 point 位置的窗口 Id，如果出错返回 0 </dd></dl>
 <dl class="section note"><dt>注解</dt><dd>可以通过 <a class="el" href="class_d_foreign_window.html#ab5416d7037a8dc71654db6c4386958d0" title="DForeignWindow::fromWinId 使用这个窗口id创建一个 DForeignWindow 对象，此对象不会被加到 QGuiApplicatio...">DForeignWindow::fromWinId</a> 创建窗口对象 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00723">723</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00737">737</a> 行定义.</p>
 
 </div>
 </div>
@@ -1163,7 +1204,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <dl class="section return"><dt>返回</dt><dd>返回当前窗口管理器类型 </dd></dl>
 <dl class="section see"><dt>参见</dt><dd><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a65c6f84e011350f2fe563c423580a898" title="DWindowManagerHelper::windowManagerNameString ">DWindowManagerHelper::windowManagerNameString</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00620">620</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00634">634</a> 行定义.</p>
 
 </div>
 </div>
@@ -1188,7 +1229,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <dd>
 <a href="https://specifications.freedesktop.org/wm-spec/1.3/ar01s05.html">_NET_WM_NAME</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00604">604</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dwindowmanagerhelper_8cpp_source.html">dwindowmanagerhelper.cpp</a> 第 <a class="el" href="dwindowmanagerhelper_8cpp_source.html#l00618">618</a> 行定义.</p>
 
 </div>
 </div>
@@ -1358,7 +1399,7 @@ DPlatformWindowHandle::isEnabledDXcb </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Gui</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_manager_helper.html">DWindowManagerHelper</a></li>
-    <li class="footer">生成于 2020年 十二月 25日 星期五 07:59:23 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 26日 星期六 07:59:23 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

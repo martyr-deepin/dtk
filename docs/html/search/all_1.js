@@ -39,6 +39,7 @@ var searchData=
   ['accessiblename',['accessibleName',['qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#accessibleName-prop',1,'QWidget::accessibleName()'],['qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#accessibleName-prop',1,'QWidget::accessibleName() const const']]],
   ['accessibletabname',['accessibleTabName',['qthelp://org.qt-project.qtwidgets/qtwidgets/qtabbar.html#accessibleTabName',1,'QTabBar']]],
   ['accessibletext',['accessibleText',['qthelp://org.qt-project.qtgui/qtgui/qstandarditem.html#accessibleText',1,'QStandardItem']]],
+  ['acclimatizevirtualkeyboard',['acclimatizeVirtualKeyboard',['../class_dtk_1_1_widget_1_1_d_application.html#a1de1356f310929263060c28cf80b03ba',1,'Dtk::Widget::DApplication']]],
   ['acknowledgementlink',['acknowledgementLink',['../class_dtk_1_1_widget_1_1_d_about_dialog.html#a166b18ad3ee53f80cb19fa958f0de211',1,'Dtk::Widget::DAboutDialog']]],
   ['acquire',['acquire',['qthelp://org.qt-project.qtcore/qtcore/qsemaphore.html#acquire',1,'QSemaphore::acquire()'],['qthelp://org.qt-project.qtcore/qtcore/qsystemsemaphore.html#acquire',1,'QSystemSemaphore::acquire()']]],
   ['action',['action',['qthelp://org.qt-project.qtgui/qtgui/qactionevent.html#action',1,'QActionEvent']]],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX18 =
 {
+"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a8408cb94276a4b5bf2322f95253c43b3":[8,0,3,2,1,0,0],
+"style_8cpp_source.html":[9,0,3,3,1,30],
+"style_8h_source.html":[9,0,3,3,1,31],
 "tabbarhelper_8cpp_source.html":[9,0,3,3,1,32],
 "tabwidgethelper_8cpp_source.html":[9,0,3,3,1,33],
 "testtaskbarwindow_8cpp_source.html":[9,0,1,0,1,1],
