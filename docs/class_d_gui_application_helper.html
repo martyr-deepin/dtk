@@ -341,6 +341,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memitem:a6bf37fe38aa7392fed988dff6bf44618"><td class="memItemLeft" align="right" valign="top"><a id="a6bf37fe38aa7392fed988dff6bf44618"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isXWindowPlatform</b> ()</td></tr>
 <tr class="separator:a6bf37fe38aa7392fed988dff6bf44618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c3706fe396568897da92d9db1e882c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a80c3706fe396568897da92d9db1e882c">isTabletEnvironment</a> ()</td></tr>
+<tr class="memdesc:a80c3706fe396568897da92d9db1e882c"><td class="mdescLeft">&#160;</td><td class="mdescRight">isTabletEnvironment 用于判断当前桌面环境是否是平板电脑环境  <a href="#a80c3706fe396568897da92d9db1e882c">更多...</a><br /></td></tr>
+<tr class="separator:a80c3706fe396568897da92d9db1e882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3667e460316b989a6f54463b7afcaa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#ac3667e460316b989a6f54463b7afcaa0">toColorType</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qcolor.html">QColor</a> &amp;color)</td></tr>
 <tr class="memdesc:ac3667e460316b989a6f54463b7afcaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#ac3667e460316b989a6f54463b7afcaa0" title="DGuiApplicationHelper::toColorType 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将�...">DGuiApplicationHelper::toColorType</a> 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将颜色转换为rgb格式，再根据 Y = 0.299R + 0.587G + 0.114B 的公式 计算出颜色的亮度，亮度大于 191 时认为其为浅色，否则认为其为深色。  <a href="#ac3667e460316b989a6f54463b7afcaa0">更多...</a><br /></td></tr>
 <tr class="separator:ac3667e460316b989a6f54463b7afcaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,7 +565,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>经过调整的颜色 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00277">277</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00279">279</a> 行定义.</p>
 
 </div>
 </div>
@@ -584,7 +587,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <p>DGuiApplicationHelper::applicationPalette返回应用程序调色板 </p>
 <dl class="section return"><dt>返回</dt><dd>应用程序调色板 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00729">729</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00740">740</a> 行定义.</p>
 
 </div>
 </div>
@@ -606,7 +609,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <p>DGuiApplicationHelper::applicationTheme返回应用主题对象 </p>
 <dl class="section return"><dt>返回</dt><dd>应用主题 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00699">699</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00710">710</a> 行定义.</p>
 
 </div>
 </div>
@@ -654,7 +657,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>混合颜色 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00311">311</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00313">313</a> 行定义.</p>
 
 </div>
 </div>
@@ -691,7 +694,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>调色板信息 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00627">627</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00629">629</a> 行定义.</p>
 
 </div>
 </div>
@@ -738,7 +741,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00604">604</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00606">606</a> 行定义.</p>
 
 </div>
 </div>
@@ -791,7 +794,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00569">569</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00571">571</a> 行定义.</p>
 
 </div>
 </div>
@@ -845,7 +848,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00594">594</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00596">596</a> 行定义.</p>
 
 </div>
 </div>
@@ -875,7 +878,37 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <p>DGuiApplicationHelper::instance返回 <a class="el" href="class_d_gui_application_helper.html" title="DGuiApplicationHelper 应用程序的 GUI ，如主题、调色板等 ">DGuiApplicationHelper</a> 对象 </p>
 <dl class="section return"><dt>返回</dt><dd>DGuiApplicationHelper对象 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00249">249</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00251">251</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a80c3706fe396568897da92d9db1e882c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c3706fe396568897da92d9db1e882c">&#9670;&nbsp;</a></span>isTabletEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DGuiApplicationHelper::isTabletEnvironment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isTabletEnvironment 用于判断当前桌面环境是否是平板电脑环境 </p>
+<dl class="section return"><dt>返回</dt><dd>true 是平板电脑环境 false不是平板电脑环境 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00690">690</a> 行定义.</p>
 
 </div>
 </div>
@@ -912,7 +945,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section note"><dt>注解</dt><dd>一定要先调用此函数,再使用 <a class="el" href="class_d_gui_application_helper.html#a4a9d84ced740d42bf39666aaa4d3c089" title="DGuiApplicationHelper::instance返回 DGuiApplicationHelper 对象 ">DGuiApplicationHelper::instance()</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00225">225</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00227">227</a> 行定义.</p>
 
 </div>
 </div>
@@ -940,7 +973,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00767">767</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00778">778</a> 行定义.</p>
 
 </div>
 </div>
@@ -976,7 +1009,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00672">672</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00674">674</a> 行定义.</p>
 
 </div>
 </div>
@@ -1012,7 +1045,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00994">994</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l01005">1005</a> 行定义.</p>
 
 </div>
 </div>
@@ -1048,7 +1081,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00970">970</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00981">981</a> 行定义.</p>
 
 </div>
 </div>
@@ -1085,7 +1118,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section note"><dt>注解</dt><dd>需要在 DGuiApplicationHelper::setSingleInstance 之前调用否则无效。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00960">960</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00971">971</a> 行定义.</p>
 
 </div>
 </div>
@@ -1121,7 +1154,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00979">979</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00990">990</a> 行定义.</p>
 
 </div>
 </div>
@@ -1157,7 +1190,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00663">663</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00665">665</a> 行定义.</p>
 
 </div>
 </div>
@@ -1194,7 +1227,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00409">409</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00411">411</a> 行定义.</p>
 
 </div>
 </div>
@@ -1216,7 +1249,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <p>DGuiApplicationHelper::systemTheme返回系统主题 </p>
 <dl class="section return"><dt>返回</dt><dd>系统主题 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00688">688</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00699">699</a> 行定义.</p>
 
 </div>
 </div>
@@ -1253,7 +1286,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>主题类型的枚举值 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00811">811</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00822">822</a> 行定义.</p>
 
 </div>
 </div>
@@ -1290,7 +1323,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>主题类型的枚举值 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00833">833</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00844">844</a> 行定义.</p>
 
 </div>
 </div>
@@ -1319,7 +1352,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00791">791</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00802">802</a> 行定义.</p>
 
 </div>
 </div>
@@ -1348,7 +1381,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>QWindow主题 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00711">711</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00722">722</a> 行定义.</p>
 
 </div>
 </div>
@@ -1417,7 +1450,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_gui_application_helper.html">DGuiApplicationHelper</a></li>
-    <li class="footer">生成于 2020年 十二月 30日 星期三 07:59:23 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2020年 十二月 31日 星期四 07:59:22 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -433,6 +433,7 @@ var searchData=
   ['istabenabled',['isTabEnabled',['https://doc.qt.io/qt-5/qtabbar.html#isTabEnabled',1,'QTabBar::isTabEnabled()'],['https://doc.qt.io/qt-5/qtabwidget.html#isTabEnabled',1,'QTabWidget::isTabEnabled()'],['../class_dtk_1_1_widget_1_1_d_tab_bar.html#a078c57e81773d3cee8026a3291f8ec18',1,'Dtk::Widget::DTabBar::isTabEnabled()']]],
   ['istablecellformat',['isTableCellFormat',['https://doc.qt.io/qt-5/qtextformat.html#isTableCellFormat',1,'QTextFormat']]],
   ['istableformat',['isTableFormat',['https://doc.qt.io/qt-5/qtextformat.html#isTableFormat',1,'QTextFormat']]],
+  ['istabletenvironment',['isTabletEnvironment',['../class_d_gui_application_helper.html#a80c3706fe396568897da92d9db1e882c',1,'DGuiApplicationHelper']]],
   ['istearoffenabled',['isTearOffEnabled',['https://doc.qt.io/qt-5/qmenu.html#tearOffEnabled-prop',1,'QMenu']]],
   ['istearoffmenuvisible',['isTearOffMenuVisible',['https://doc.qt.io/qt-5/qmenu.html#isTearOffMenuVisible',1,'QMenu']]],
   ['istestandsetnative',['isTestAndSetNative',['https://doc.qt.io/qt-5/qatomicinteger.html#isTestAndSetNative',1,'QAtomicInteger::isTestAndSetNative()'],['https://doc.qt.io/qt-5/qatomicpointer.html#isTestAndSetNative',1,'QAtomicPointer::isTestAndSetNative()']]],

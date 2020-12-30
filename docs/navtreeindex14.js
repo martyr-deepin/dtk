@@ -168,8 +168,10 @@ var NAVTREEINDEX14 =
 "class_r_svg.html#af630a52615308132efabd8503c173885":[8,0,65,14],
 "class_r_svg.html#afbf940b33429db019abc3ae3884481b7":[8,0,65,15],
 "class_test_taskbar_window.html":[8,0,66],
+"class_test_taskbar_window.html#a03bf452cff3af1d0ad1a467430bba121":[8,0,66,2],
 "class_test_taskbar_window.html#a0aac24069629c0f68cd00d73644188bd":[8,0,66,1],
 "class_test_taskbar_window.html#a2420f40ba14073effd35bfc08d2d5a13":[8,0,66,0],
+"class_test_taskbar_window.html#ac64c78e04482f6f0aea01c8f2308d2bc":[8,0,66,3],
 "class_widget_gallery.html":[8,0,67],
 "class_widget_gallery.html#a90cfbc10f8d32a27cbdcb0e2dc5cccbe":[8,0,67,0],
 "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html":[8,0,69],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "classdstyle_1_1_d_style_animation.html":[8,0,2,7],
 "classdstyle_1_1_d_style_animation.html#a1ae9a6d68f194164811d4f9f5c8f54ba":[8,0,2,7,12],
 "classdstyle_1_1_d_style_animation.html#a207c230391dd14fda9e88ca1641da122":[8,0,2,7,6],
-"classdstyle_1_1_d_style_animation.html#a4c1f3599b607748807d5c529e64d27fc":[8,0,2,7,14],
-"classdstyle_1_1_d_style_animation.html#a59eac452abcd68b45d844f0c158f0c48":[8,0,2,7,0],
-"classdstyle_1_1_d_style_animation.html#a59eac452abcd68b45d844f0c158f0c48a2f41827dff76107a843e292c9e4d61b3":[8,0,2,7,0,2]
+"classdstyle_1_1_d_style_animation.html#a4c1f3599b607748807d5c529e64d27fc":[8,0,2,7,14]
 };
