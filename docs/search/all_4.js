@@ -474,6 +474,7 @@ var searchData=
   ['dswitchlineexpand',['DSwitchLineExpand',['../class_dtk_1_1_widget_1_1_d_switch_line_expand.html',1,'Dtk::Widget::DSwitchLineExpand'],['../class_dtk_1_1_widget_1_1_d_switch_line_expand.html#a56650634001479424df9f5ded07a55ba',1,'Dtk::Widget::DSwitchLineExpand::DSwitchLineExpand()']]],
   ['dsysinfo',['DSysInfo',['../class_dtk_1_1_core_1_1_d_sys_info.html',1,'Dtk::Core']]],
   ['dtabbar',['DTabBar',['../class_dtk_1_1_widget_1_1_d_tab_bar.html',1,'Dtk::Widget']]],
+  ['dtabletwindowoptionbutton',['DTabletWindowOptionButton',['../class_dtk_1_1_widget_1_1_d_tablet_window_option_button.html',1,'Dtk::Widget::DTabletWindowOptionButton'],['../class_dtk_1_1_widget_1_1_d_tablet_window_option_button.html#ad9ad7c411cc2de23f1e6c81dbbd867fb',1,'Dtk::Widget::DTabletWindowOptionButton::DTabletWindowOptionButton()']]],
   ['dtaskbarcontrol',['DTaskbarControl',['../class_d_taskbar_control.html',1,'DTaskbarControl'],['../class_d_taskbar_control.html#a0b798b78477f832c6e6bdefb1f97302d',1,'DTaskbarControl::DTaskbarControl()']]],
   ['dtdname',['dtdName',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdName',1,'QXmlStreamReader']]],
   ['dtdpublicid',['dtdPublicId',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdPublicId',1,'QXmlStreamReader']]],

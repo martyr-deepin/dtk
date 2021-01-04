@@ -173,6 +173,7 @@ var searchData=
   ['dswitchlineexpand',['DSwitchLineExpand',['../class_dtk_1_1_widget_1_1_d_switch_line_expand.html',1,'Dtk::Widget']]],
   ['dsysinfo',['DSysInfo',['../class_dtk_1_1_core_1_1_d_sys_info.html',1,'Dtk::Core']]],
   ['dtabbar',['DTabBar',['../class_dtk_1_1_widget_1_1_d_tab_bar.html',1,'Dtk::Widget']]],
+  ['dtabletwindowoptionbutton',['DTabletWindowOptionButton',['../class_dtk_1_1_widget_1_1_d_tablet_window_option_button.html',1,'Dtk::Widget']]],
   ['dtaskbarcontrol',['DTaskbarControl',['../class_d_taskbar_control.html',1,'']]],
   ['dtextedit',['DTextEdit',['../class_dtk_1_1_widget_1_1_d_text_edit.html',1,'Dtk::Widget']]],
   ['dthememanager',['DThemeManager',['../class_dtk_1_1_widget_1_1_d_theme_manager.html',1,'Dtk::Widget']]],

@@ -134,53 +134,66 @@ typedef <a class="el" href="class_d_gui_application_helper.html">DGuiApplication
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public 槽</h2></td></tr>
 <tr class="memitem:af998df4cc793bd7fe433712aff9eb130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#af998df4cc793bd7fe433712aff9eb130">setThemeType</a> (<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="el" href="class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e">themeType</a>)</td></tr>
-<tr class="memdesc:af998df4cc793bd7fe433712aff9eb130"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::setThemeType设置主题类型  <a href="#af998df4cc793bd7fe433712aff9eb130">更多...</a><br /></td></tr>
+<tr class="memdesc:af998df4cc793bd7fe433712aff9eb130"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::setThemeType设置主题类型 固定程序的主题类型, 此行为可能导致 applicationPalette 变化, 前提是未使用 <em>setApplicationPalette</em> 固定过程序的调色板, 此方法不影响程序的调色板跟随 活动色改变, 可用于控制程序使用亮色还是暗色调色板.  <a href="#af998df4cc793bd7fe433712aff9eb130">更多...</a><br /></td></tr>
 <tr class="separator:af998df4cc793bd7fe433712aff9eb130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a100f0f248307b7cc2df722a8aff68e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a9a100f0f248307b7cc2df722a8aff68e">setPaletteType</a> (<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd">paletteType</a>)</td></tr>
-<tr class="memdesc:a9a100f0f248307b7cc2df722a8aff68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::setPaletteType设置调色板类型  <a href="#a9a100f0f248307b7cc2df722a8aff68e">更多...</a><br /></td></tr>
-<tr class="separator:a9a100f0f248307b7cc2df722a8aff68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db53bec3fe3383cd4f79b2c0e7cab2b"><td class="memItemLeft" align="right" valign="top"><a id="a7db53bec3fe3383cd4f79b2c0e7cab2b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>D_DECL_DEPRECATED_X</b> (&quot;Use <a class="el" href="class_d_gui_application_helper.html#af998df4cc793bd7fe433712aff9eb130">setThemeType</a>&quot;) void setPaletteType(<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd">paletteType</a>)</td></tr>
+<tr class="separator:a7db53bec3fe3383cd4f79b2c0e7cab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 信号</h2></td></tr>
 <tr class="memitem:ad558f870501608f774bcf1f52e5ced04"><td class="memItemLeft" align="right" valign="top"><a id="ad558f870501608f774bcf1f52e5ced04"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>themeTypeChanged</b> (<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="el" href="class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e">themeType</a>)</td></tr>
 <tr class="separator:ad558f870501608f774bcf1f52e5ced04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a5461116062dda13aeab58a38c06f6"><td class="memItemLeft" align="right" valign="top"><a id="a61a5461116062dda13aeab58a38c06f6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paletteTypeChanged</b> (<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd">paletteType</a>)</td></tr>
-<tr class="separator:a61a5461116062dda13aeab58a38c06f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab320f10c8b94caaae68d877fd4be208"><td class="memItemLeft" align="right" valign="top"><a id="aab320f10c8b94caaae68d877fd4be208"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>D_DECL_DEPRECATED_X</b> (&quot;Use themeTypeChanged&quot;) void paletteTypeChanged(<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> <a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd">paletteType</a>)</td></tr>
+<tr class="separator:aab320f10c8b94caaae68d877fd4be208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94fab6c42b86328baffcbb7bb3de0ad"><td class="memItemLeft" align="right" valign="top"><a id="ab94fab6c42b86328baffcbb7bb3de0ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>newProcessInstance</b> (qint64 pid, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qstringlist.html">QStringList</a> &amp;arguments)</td></tr>
 <tr class="separator:ab94fab6c42b86328baffcbb7bb3de0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92557847cc314f12a60f52f569229b2"><td class="memItemLeft" align="right" valign="top"><a id="ae92557847cc314f12a60f52f569229b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fontChanged</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qfont.html">QFont</a> &amp;font)</td></tr>
 <tr class="separator:ae92557847cc314f12a60f52f569229b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5001b4c491748c4b04bf45b97e2bb003"><td class="memItemLeft" align="right" valign="top"><a id="a5001b4c491748c4b04bf45b97e2bb003"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>applicationPaletteChanged</b> ()</td></tr>
+<tr class="separator:a5001b4c491748c4b04bf45b97e2bb003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a54696b5f532a5deaad028efdf4069fa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_platform_theme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a54696b5f532a5deaad028efdf4069fa1">systemTheme</a> () const</td></tr>
-<tr class="memdesc:a54696b5f532a5deaad028efdf4069fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::systemTheme返回系统主题  <a href="#a54696b5f532a5deaad028efdf4069fa1">更多...</a><br /></td></tr>
+<tr class="memdesc:a54696b5f532a5deaad028efdf4069fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a54696b5f532a5deaad028efdf4069fa1" title="DGuiApplicationHelper::systemTheme 返回系统级别的主题, 优先级低于 applicationTheme ...">DGuiApplicationHelper::systemTheme</a> 返回系统级别的主题, 优先级低于 <em>applicationTheme</em>  <a href="#a54696b5f532a5deaad028efdf4069fa1">更多...</a><br /></td></tr>
 <tr class="separator:a54696b5f532a5deaad028efdf4069fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b559d15c50f259ff5a88bee40eb372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_platform_theme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372">applicationTheme</a> () const</td></tr>
-<tr class="memdesc:a68b559d15c50f259ff5a88bee40eb372"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::applicationTheme返回应用主题对象  <a href="#a68b559d15c50f259ff5a88bee40eb372">更多...</a><br /></td></tr>
+<tr class="memdesc:a68b559d15c50f259ff5a88bee40eb372"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme 同 systemTheme ">DGuiApplicationHelper::applicationTheme</a> 同 systemTheme  <a href="#a68b559d15c50f259ff5a88bee40eb372">更多...</a><br /></td></tr>
 <tr class="separator:a68b559d15c50f259ff5a88bee40eb372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47af29164477016275cafc944c28783"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_platform_theme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783">windowTheme</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *window) const</td></tr>
-<tr class="memdesc:ad47af29164477016275cafc944c28783"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::windowTheme返回 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> 主题对象  <a href="#ad47af29164477016275cafc944c28783">更多...</a><br /></td></tr>
+<tr class="memitem:ad47af29164477016275cafc944c28783"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED <a class="el" href="class_d_platform_theme.html">DPlatformTheme</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783">windowTheme</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *window) const</td></tr>
+<tr class="memdesc:ad47af29164477016275cafc944c28783"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783" title="DGuiApplicationHelper::windowTheme 返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme ...">DGuiApplicationHelper::windowTheme</a> 返回窗口级别的主题, 优先级高于 <em>windowTheme</em> 和 <em>systemTheme</em>  <a href="#ad47af29164477016275cafc944c28783">更多...</a><br /></td></tr>
 <tr class="separator:ad47af29164477016275cafc944c28783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc1f7774ce419a1ca73eab31f13cac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_palette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#affc1f7774ce419a1ca73eab31f13cac4">applicationPalette</a> () const</td></tr>
-<tr class="memdesc:affc1f7774ce419a1ca73eab31f13cac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::applicationPalette返回应用程序调色板  <a href="#affc1f7774ce419a1ca73eab31f13cac4">更多...</a><br /></td></tr>
+<tr class="memdesc:affc1f7774ce419a1ca73eab31f13cac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::applicationPalette返回应用程序调色板 如果使用 <em>setApplicationPalette</em> 设置过一个有效的调色板, 将直接返回保存的调色板. 否则 先计算调色板的ColorType, 再使用这个颜色类型通过 <em>standardPalette</em> 获取标准调色板. 计算 ColorType的数据来源按优先级从高到低排列有以下几种方式:</p><ol type="1">
+<li>如果使用 <em>setThemeType</em> 设置过一个有效的颜色类型, 将直接使用 <em>themeType</em> 的值.</li>
+<li>如果为QGuiApplication设置过调色板(表现为 QGuiApplication::testAttribute(Qt::AA_SetPalette) 为true), 则将使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">QGuiApplication::palette</a> 通过 <em>toColorType</em> 获取颜色类型.</li>
+<li>将根据 <em>applicationTheme</em> 的 DPlatformTheme::themeName 计算颜色类型. 如果ColorType来源自第2种方式, 则会直接使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">QGuiApplication::palette</a> 覆盖标准调色板中的 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a> 部分, 且程序不会再跟随系统的活动色自动更新调色板. </li>
+</ol>
+ <a href="#affc1f7774ce419a1ca73eab31f13cac4">更多...</a><br /></td></tr>
 <tr class="separator:affc1f7774ce419a1ca73eab31f13cac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d71049a24d357f21a3fcf01575c48c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a88d71049a24d357f21a3fcf01575c48c">setApplicationPalette</a> (const <a class="el" href="class_d_palette.html">DPalette</a> &amp;palette)</td></tr>
-<tr class="memdesc:a88d71049a24d357f21a3fcf01575c48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::setApplicationPalette设置应用程序调色板  <a href="#a88d71049a24d357f21a3fcf01575c48c">更多...</a><br /></td></tr>
+<tr class="memdesc:a88d71049a24d357f21a3fcf01575c48c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a88d71049a24d357f21a3fcf01575c48c" title="DGuiApplicationHelper::setApplicationPalette 自定义应用程序调色板, 如果没有为 QGuiApplication 设置过 ...">DGuiApplicationHelper::setApplicationPalette</a> 自定义应用程序调色板, 如果没有为 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html">QGuiApplication</a> 设置过 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a>, 则 将触发 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">QGuiApplication::palette</a></em> 的更新. 如果仅需要控制程序使用亮色还是暗色的 调色板, 请使用 setThemeType.  <a href="#a88d71049a24d357f21a3fcf01575c48c">更多...</a><br /></td></tr>
 <tr class="separator:a88d71049a24d357f21a3fcf01575c48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_palette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf">windowPalette</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *window) const</td></tr>
-<tr class="memdesc:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette ">DGuiApplicationHelper::windowPalette</a>  <a href="#a36bc2b0660c97a4bdb2ba559151e4ccf">更多...</a><br /></td></tr>
+<tr class="memitem:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="memItemLeft" align="right" valign="top">D_DECL_DEPRECATED <a class="el" href="class_d_palette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf">windowPalette</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> *window) const</td></tr>
+<tr class="memdesc:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette 返回窗口所对应的调色板数据, 同 applicationPalette, 如果程序中自定义了 调色板, 则直接使用 applicationPalette. 自定义调色板的三种方式如下:通过 setApplicationPalette 固定调色板通过 setThemeType 固定调色板的类型通过 QGuiApplication::setPalette 固定调色板, 需要注意此方法不可逆. 否则将基于窗口所对应的 DPlatformTheme 获取调色板( ">DGuiApplicationHelper::windowPalette</a> 返回窗口所对应的调色板数据, 同 <em>applicationPalette</em>, 如果程序中自定义了 调色板, 则直接使用 <em>applicationPalette</em>. 自定义调色板的三种方式如下:</p><ol type="1">
+<li>通过 <em>setApplicationPalette</em> 固定调色板</li>
+<li>通过 <em>setThemeType</em> 固定调色板的类型</li>
+<li>通过 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#setPalette">QGuiApplication::setPalette</a></em> 固定调色板, 需要注意此方法不可逆. 否则将基于窗口所对应的 <em><a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a></em> 获取调色板( </li>
+</ol>
+ <a href="#a36bc2b0660c97a4bdb2ba559151e4ccf">更多...</a><br /></td></tr>
 <tr class="separator:a36bc2b0660c97a4bdb2ba559151e4ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1bb7346c3576ea4b8a1612b99e3fde"><td class="memItemLeft" align="right" valign="top"><a id="a1f1bb7346c3576ea4b8a1612b99e3fde"></a>
 <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>themeType</b> () const</td></tr>
 <tr class="separator:a1f1bb7346c3576ea4b8a1612b99e3fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5430a4b1c138cb5866ad47c57672e12d"><td class="memItemLeft" align="right" valign="top"><a id="a5430a4b1c138cb5866ad47c57672e12d"></a>
-<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>paletteType</b> () const</td></tr>
-<tr class="separator:a5430a4b1c138cb5866ad47c57672e12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab975962f0c75249eada684f0b20e8e9b"><td class="memItemLeft" align="right" valign="top"><a id="ab975962f0c75249eada684f0b20e8e9b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>D_DECL_DEPRECATED_X</b> (&quot;Use <a class="el" href="class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e">themeType</a>&quot;) ColorType <a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd">paletteType</a>() const</td></tr>
+<tr class="separator:ab975962f0c75249eada684f0b20e8e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_qobject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_qobject')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a></td></tr>
 <tr class="memitem:metaObject inherit pub_methods_qobject"><td class="memItemLeft" align="right" valign="top"><a id="metaObject"></a>
 virtual const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qmetaobject.html">QMetaObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html#metaObject">metaObject</a> () const const</td></tr>
@@ -324,13 +337,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <tr class="memdesc:a148d4077f71412e3f71fdf3f62b21ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a148d4077f71412e3f71fdf3f62b21ca6" title="DGuiApplicationHelper::generatePaletteColor 获取调色板颜色 ">DGuiApplicationHelper::generatePaletteColor</a> 获取调色板颜色  <a href="#a148d4077f71412e3f71fdf3f62b21ca6">更多...</a><br /></td></tr>
 <tr class="separator:a148d4077f71412e3f71fdf3f62b21ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1c178b05f397b57c042e7ca564af836"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#ab1c178b05f397b57c042e7ca564af836">generatePaletteColor</a> (<a class="el" href="class_d_palette.html">DPalette</a> &amp;base, <a class="el" href="class_d_palette.html#a418f6cee67b0727f8f22f3d84a32f509">DPalette::ColorType</a> role, <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type)</td></tr>
-<tr class="memdesc:ab1c178b05f397b57c042e7ca564af836"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a148d4077f71412e3f71fdf3f62b21ca6" title="DGuiApplicationHelper::generatePaletteColor 获取调色板颜色 ">DGuiApplicationHelper::generatePaletteColor</a> 获取调色板颜色  <a href="#ab1c178b05f397b57c042e7ca564af836">更多...</a><br /></td></tr>
+<tr class="memdesc:ab1c178b05f397b57c042e7ca564af836"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a148d4077f71412e3f71fdf3f62b21ca6" title="DGuiApplicationHelper::generatePaletteColor 获取调色板颜色 ">DGuiApplicationHelper::generatePaletteColor</a> 加工调色板的颜色. 一般我们只会为调色板的 <em>QPalette::Normal</em> 组设置颜色值, 但是 控件中也需要使用其他组的颜色, 此函数使用一些固定规则为 <em>base</em> 填充 <em>QPalette::Disabled</em> 和 <em>QPalette::Inactive</em> 分组的颜色. 不同的颜色类型会使用不同的加工规则, 如果为 <em>LightType</em> 类型, 则将颜色的alpha通道调整为 0.6 后作为 <em>QPalette::Disabled</em> 类的颜色使用, 调整为 0.4 后 作为 <em>QPalette::Inactive</em> 类的颜色使用. 如果为 <em>DarkType</em> 类型, 则将颜色的alpha通道调整为 0.7 后作为 <em>QPalette::Disabled</em> 类的颜色使用, 调整为 0.6 后作为 <em>QPalette::Inactive</em> 类的颜色使用.  <a href="#ab1c178b05f397b57c042e7ca564af836">更多...</a><br /></td></tr>
 <tr class="separator:ab1c178b05f397b57c042e7ca564af836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab881c07f42d47c801ceb75c92937fc0a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#ab881c07f42d47c801ceb75c92937fc0a">generatePalette</a> (<a class="el" href="class_d_palette.html">DPalette</a> &amp;base, <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a> type=<a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92a5a23f6466a2a2c66f851885246f55e34">UnknownType</a>)</td></tr>
-<tr class="memdesc:ab881c07f42d47c801ceb75c92937fc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#ab881c07f42d47c801ceb75c92937fc0a" title="DGuiApplicationHelper::generatePalette 根据主题的枚举值获取调色板数据 ">DGuiApplicationHelper::generatePalette</a> 根据主题的枚举值获取调色板数据  <a href="#ab881c07f42d47c801ceb75c92937fc0a">更多...</a><br /></td></tr>
+<tr class="memdesc:ab881c07f42d47c801ceb75c92937fc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#ab881c07f42d47c801ceb75c92937fc0a" title="DGuiApplicationHelper::generatePalette 加工调色板的颜色. 同 generatePaletteColor, 将直接调用 generate...">DGuiApplicationHelper::generatePalette</a> 加工调色板的颜色. 同 <em>generatePaletteColor</em>, 将直接调用 <em>generatePaletteColor</em> 加工 所有类型的调色板颜色.  <a href="#ab881c07f42d47c801ceb75c92937fc0a">更多...</a><br /></td></tr>
 <tr class="separator:ab881c07f42d47c801ceb75c92937fc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80dbc8f823db2a49230e24734d4e5723"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_d_palette.html">DPalette</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a80dbc8f823db2a49230e24734d4e5723">fetchPalette</a> (const <a class="el" href="class_d_platform_theme.html">DPlatformTheme</a> *theme)</td></tr>
-<tr class="memdesc:a80dbc8f823db2a49230e24734d4e5723"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::fetchPalette取出主题的调色板  <a href="#a80dbc8f823db2a49230e24734d4e5723">更多...</a><br /></td></tr>
+<tr class="memdesc:a80dbc8f823db2a49230e24734d4e5723"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a80dbc8f823db2a49230e24734d4e5723" title="DGuiApplicationHelper::fetchPalette 获取调色板数据. 首先根据 DPlatformTheme::themeName 获取主题的颜色...">DGuiApplicationHelper::fetchPalette</a> 获取调色板数据. 首先根据 DPlatformTheme::themeName 获取主题的颜色类型, 如果名称以 "dark" 结尾则认为其颜色类型为 <em>DarkType</em>, 否则为 <em>LightType</em>. 如果主题名称为空, 将使用其父主题的名称( <em>DPlatformTheme::fallbackProperty</em> ). 根据颜色类型将使用 <em>standardPalette</em> 获取基础调色板数据, 在此基础上 从 <em>DPlatformTheme::fetchPalette</em> 获取最终的调色板.  <a href="#a80dbc8f823db2a49230e24734d4e5723">更多...</a><br /></td></tr>
 <tr class="separator:a80dbc8f823db2a49230e24734d4e5723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf217569b5ad9d5ad4b6e5eef76b5388"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#aaf217569b5ad9d5ad4b6e5eef76b5388">setUseInactiveColorGroup</a> (bool on)</td></tr>
 <tr class="memdesc:aaf217569b5ad9d5ad4b6e5eef76b5388"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::setUseInactiveColorGroup设置是否将调色板的颜色改为半透明模式 一般用在主窗口背景为透明、模糊的程序中  <a href="#aaf217569b5ad9d5ad4b6e5eef76b5388">更多...</a><br /></td></tr>
@@ -348,7 +361,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isXWindowPlatf
 <tr class="memdesc:ac3667e460316b989a6f54463b7afcaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#ac3667e460316b989a6f54463b7afcaa0" title="DGuiApplicationHelper::toColorType 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将�...">DGuiApplicationHelper::toColorType</a> 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将颜色转换为rgb格式，再根据 Y = 0.299R + 0.587G + 0.114B 的公式 计算出颜色的亮度，亮度大于 191 时认为其为浅色，否则认为其为深色。  <a href="#ac3667e460316b989a6f54463b7afcaa0">更多...</a><br /></td></tr>
 <tr class="separator:ac3667e460316b989a6f54463b7afcaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d6cc357e5f856da4c1e7765eabe420"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a25d6cc357e5f856da4c1e7765eabe420">toColorType</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a> &amp;palette)</td></tr>
-<tr class="memdesc:a25d6cc357e5f856da4c1e7765eabe420"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::toColorType获取颜色的明亮度，将其转换为主题类型的枚举值。  返回调色板背景颜色  <a href="#a25d6cc357e5f856da4c1e7765eabe420">更多...</a><br /></td></tr>
+<tr class="memdesc:a25d6cc357e5f856da4c1e7765eabe420"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#ac3667e460316b989a6f54463b7afcaa0" title="DGuiApplicationHelper::toColorType 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将�...">DGuiApplicationHelper::toColorType</a> 使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette-obsolete.html#background">QPalette::background</a> 获取颜色的明亮度，将其转换为主题类型的枚举值。  返回调色板的颜色类型  <a href="#a25d6cc357e5f856da4c1e7765eabe420">更多...</a><br /></td></tr>
 <tr class="separator:a25d6cc357e5f856da4c1e7765eabe420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3172ba90dcda102e3a3ac3b68ffebe3"><td class="memItemLeft" align="right" valign="top"><a id="ac3172ba90dcda102e3a3ac3b68ffebe3"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setSingleInstance</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:qthelp://org.qt-project.qtcore/qtcore/" href="qthelp://org.qt-project.qtcore/qtcore/qstring.html">QString</a> &amp;key, SingleScope singleScope=UserScope)</td></tr>
@@ -431,10 +444,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef"
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 属性</h2></td></tr>
 <tr class="memitem:a31973f27e3af55f8925e788ba8ba282e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e">themeType</a></td></tr>
-<tr class="memdesc:a31973f27e3af55f8925e788ba8ba282e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DGuiApplicationHelper::themeType主题类型  Dpalette::ColorType 针对某一个控件  <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> 针对整个程序  <a href="#a31973f27e3af55f8925e788ba8ba282e">更多...</a><br /></td></tr>
+<tr class="memdesc:a31973f27e3af55f8925e788ba8ba282e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e" title="DGuiApplicationHelper::themeType  返回程序的主题类型, 当themeType为UnknownType时, 将自动根据 GuiAppli...">DGuiApplicationHelper::themeType</a>  返回程序的主题类型, 当themeType为UnknownType时, 将自动根据 GuiApplication::palette的QPalette::background颜色计算主题 类型, 否则直接返回保存的 themeType 值. 程序中应当使用此值作为暗色/亮色主题 类型的判断.  <a href="#a31973f27e3af55f8925e788ba8ba282e">更多...</a><br /></td></tr>
 <tr class="separator:a31973f27e3af55f8925e788ba8ba282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c7768bfbadc134acc07ee5e7ef51ecd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">ColorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd">paletteType</a></td></tr>
-<tr class="memdesc:a1c7768bfbadc134acc07ee5e7ef51ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd" title="DGuiApplicationHelper::paletteType ">DGuiApplicationHelper::paletteType</a>  <a href="#a1c7768bfbadc134acc07ee5e7ef51ecd">更多...</a><br /></td></tr>
+<tr class="memdesc:a1c7768bfbadc134acc07ee5e7ef51ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd" title="DGuiApplicationHelper::paletteType 同 themeType ">DGuiApplicationHelper::paletteType</a> 同 <em>themeType</em>  <a href="#a1c7768bfbadc134acc07ee5e7ef51ecd">更多...</a><br /></td></tr>
 <tr class="separator:a1c7768bfbadc134acc07ee5e7ef51ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_qobject"><td colspan="2" onclick="javascript:toggleInherit('properties_qobject')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="qthelp://org.qt-project.qtcore/qtcore/qobject.html">QObject</a></td></tr>
 <tr class="memitem:objectName-prop inherit properties_qobject"><td class="memItemLeft" align="right" valign="top"><a id="objectName-prop"></a>
@@ -565,7 +578,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>经过调整的颜色 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00279">279</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00298">298</a> 行定义.</p>
 
 </div>
 </div>
@@ -584,10 +597,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
       </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::applicationPalette返回应用程序调色板 </p>
+<p>DGuiApplicationHelper::applicationPalette返回应用程序调色板 如果使用 <em>setApplicationPalette</em> 设置过一个有效的调色板, 将直接返回保存的调色板. 否则 先计算调色板的ColorType, 再使用这个颜色类型通过 <em>standardPalette</em> 获取标准调色板. 计算 ColorType的数据来源按优先级从高到低排列有以下几种方式:</p><ol type="1">
+<li>如果使用 <em>setThemeType</em> 设置过一个有效的颜色类型, 将直接使用 <em>themeType</em> 的值.</li>
+<li>如果为QGuiApplication设置过调色板(表现为 QGuiApplication::testAttribute(Qt::AA_SetPalette) 为true), 则将使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">QGuiApplication::palette</a> 通过 <em>toColorType</em> 获取颜色类型.</li>
+<li>将根据 <em>applicationTheme</em> 的 DPlatformTheme::themeName 计算颜色类型. 如果ColorType来源自第2种方式, 则会直接使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">QGuiApplication::palette</a> 覆盖标准调色板中的 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a> 部分, 且程序不会再跟随系统的活动色自动更新调色板. </li>
+</ol>
+</p>
+<dl class="section warning"><dt>警告</dt><dd>不应该在DTK程序中使用QGuiApplication/QApplication::setPalette </dd></dl>
 <dl class="section return"><dt>返回</dt><dd>应用程序调色板 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00740">740</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00799">799</a> 行定义.</p>
 
 </div>
 </div>
@@ -606,10 +625,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
       </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::applicationTheme返回应用主题对象 </p>
-<dl class="section return"><dt>返回</dt><dd>应用主题 </dd></dl>
+<p><a class="el" href="class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme 同 systemTheme ">DGuiApplicationHelper::applicationTheme</a> 同 systemTheme </p>
+<dl class="section return"><dt>返回</dt><dd>平台主题对象 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_gui_application_helper.html#a54696b5f532a5deaad028efdf4069fa1" title="DGuiApplicationHelper::systemTheme 返回系统级别的主题, 优先级低于 applicationTheme ...">systemTheme</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783" title="DGuiApplicationHelper::windowTheme 返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme ...">windowTheme</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00710">710</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00749">749</a> 行定义.</p>
 
 </div>
 </div>
@@ -657,7 +679,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>混合颜色 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00313">313</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00332">332</a> 行定义.</p>
 
 </div>
 </div>
@@ -685,16 +707,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::fetchPalette取出主题的调色板 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#a80dbc8f823db2a49230e24734d4e5723" title="DGuiApplicationHelper::fetchPalette 获取调色板数据. 首先根据 DPlatformTheme::themeName 获取主题的颜色...">DGuiApplicationHelper::fetchPalette</a> 获取调色板数据. 首先根据 DPlatformTheme::themeName 获取主题的颜色类型, 如果名称以 "dark" 结尾则认为其颜色类型为 <em>DarkType</em>, 否则为 <em>LightType</em>. 如果主题名称为空, 将使用其父主题的名称( <em>DPlatformTheme::fallbackProperty</em> ). 根据颜色类型将使用 <em>standardPalette</em> 获取基础调色板数据, 在此基础上 从 <em>DPlatformTheme::fetchPalette</em> 获取最终的调色板. </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">theme主题信息</td><td></td></tr>
+    <tr><td class="paramname">theme</td><td>平台主题对象 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>调色板信息 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>调色板数据 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00629">629</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00662">662</a> 行定义.</p>
 
 </div>
 </div>
@@ -732,16 +754,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_d_gui_application_helper.html#ab881c07f42d47c801ceb75c92937fc0a" title="DGuiApplicationHelper::generatePalette 根据主题的枚举值获取调色板数据 ">DGuiApplicationHelper::generatePalette</a> 根据主题的枚举值获取调色板数据 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#ab881c07f42d47c801ceb75c92937fc0a" title="DGuiApplicationHelper::generatePalette 加工调色板的颜色. 同 generatePaletteColor, 将直接调用 generate...">DGuiApplicationHelper::generatePalette</a> 加工调色板的颜色. 同 <em>generatePaletteColor</em>, 将直接调用 <em>generatePaletteColor</em> 加工 所有类型的调色板颜色. </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base调色板</td><td></td></tr>
-    <tr><td class="paramname">type主题的枚举值</td><td></td></tr>
+    <tr><td class="paramname">base</td><td>被加工的调色板 </td></tr>
+    <tr><td class="paramname">type</td><td>加工时所使用的颜色类型, 如果值为 UnknownType 将使用 <em>toColorType</em> 获取颜色类型 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00606">606</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00634">634</a> 行定义.</p>
 
 </div>
 </div>
@@ -794,7 +816,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00571">571</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00590">590</a> 行定义.</p>
 
 </div>
 </div>
@@ -838,17 +860,17 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_d_gui_application_helper.html#a148d4077f71412e3f71fdf3f62b21ca6" title="DGuiApplicationHelper::generatePaletteColor 获取调色板颜色 ">DGuiApplicationHelper::generatePaletteColor</a> 获取调色板颜色 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#a148d4077f71412e3f71fdf3f62b21ca6" title="DGuiApplicationHelper::generatePaletteColor 获取调色板颜色 ">DGuiApplicationHelper::generatePaletteColor</a> 加工调色板的颜色. 一般我们只会为调色板的 <em>QPalette::Normal</em> 组设置颜色值, 但是 控件中也需要使用其他组的颜色, 此函数使用一些固定规则为 <em>base</em> 填充 <em>QPalette::Disabled</em> 和 <em>QPalette::Inactive</em> 分组的颜色. 不同的颜色类型会使用不同的加工规则, 如果为 <em>LightType</em> 类型, 则将颜色的alpha通道调整为 0.6 后作为 <em>QPalette::Disabled</em> 类的颜色使用, 调整为 0.4 后 作为 <em>QPalette::Inactive</em> 类的颜色使用. 如果为 <em>DarkType</em> 类型, 则将颜色的alpha通道调整为 0.7 后作为 <em>QPalette::Disabled</em> 类的颜色使用, 调整为 0.6 后作为 <em>QPalette::Inactive</em> 类的颜色使用. </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base调色板</td><td></td></tr>
-    <tr><td class="paramname">role背景颜色</td><td></td></tr>
-    <tr><td class="paramname">type主题枚举值</td><td></td></tr>
+    <tr><td class="paramname">base</td><td>被加工的调色板 </td></tr>
+    <tr><td class="paramname">role</td><td>加工的项 </td></tr>
+    <tr><td class="paramname">type</td><td>加工时所使用的颜色类型, 如果值为 UnknownType 将使用 <em>toColorType</em> 获取颜色类型 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00596">596</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00622">622</a> 行定义.</p>
 
 </div>
 </div>
@@ -878,7 +900,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <p>DGuiApplicationHelper::instance返回 <a class="el" href="class_d_gui_application_helper.html" title="DGuiApplicationHelper 应用程序的 GUI ，如主题、调色板等 ">DGuiApplicationHelper</a> 对象 </p>
 <dl class="section return"><dt>返回</dt><dd>DGuiApplicationHelper对象 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00251">251</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00274">274</a> 行定义.</p>
 
 </div>
 </div>
@@ -908,7 +930,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <p>isTabletEnvironment 用于判断当前桌面环境是否是平板电脑环境 </p>
 <dl class="section return"><dt>返回</dt><dd>true 是平板电脑环境 false不是平板电脑环境 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00690">690</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00723">723</a> 行定义.</p>
 
 </div>
 </div>
@@ -945,7 +967,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section note"><dt>注解</dt><dd>一定要先调用此函数,再使用 <a class="el" href="class_d_gui_application_helper.html#a4a9d84ced740d42bf39666aaa4d3c089" title="DGuiApplicationHelper::instance返回 DGuiApplicationHelper 对象 ">DGuiApplicationHelper::instance()</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00227">227</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00250">250</a> 行定义.</p>
 
 </div>
 </div>
@@ -965,15 +987,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
       </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::setApplicationPalette设置应用程序调色板 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#a88d71049a24d357f21a3fcf01575c48c" title="DGuiApplicationHelper::setApplicationPalette 自定义应用程序调色板, 如果没有为 QGuiApplication 设置过 ...">DGuiApplicationHelper::setApplicationPalette</a> 自定义应用程序调色板, 如果没有为 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html">QGuiApplication</a> 设置过 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette.html">QPalette</a>, 则 将触发 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#palette">QGuiApplication::palette</a></em> 的更新. 如果仅需要控制程序使用亮色还是暗色的 调色板, 请使用 setThemeType. </p>
+<dl class="section note"><dt>注解</dt><dd>主动设置调色板的操作会导致程序不再使用 <a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a> 中调色板相关的数据, 也 包括窗口级别的 <em>windowTheme</em> 所对应的 <a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a>, 届时设置 <a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a> 的 themeName 和所有与 palette 相关的属性都不再生效. </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>使用此方式设置的调色板将不会自动跟随活动色的变化 </dd>
+<dd>
+如果使用过QGuiApplication::setPalette, 此方式可能不会生效 </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">palette调色板</td><td></td></tr>
+    <tr><td class="paramname">palette</td><td>要设置的调色板 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00778">778</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00854">854</a> 行定义.</p>
 
 </div>
 </div>
@@ -1009,43 +1035,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00674">674</a> 行定义.</p>
-
-</div>
-</div>
-<a id="a9a100f0f248307b7cc2df722a8aff68e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a100f0f248307b7cc2df722a8aff68e">&#9670;&nbsp;</a></span>setPaletteType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DGuiApplicationHelper::setPaletteType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a>&#160;</td>
-          <td class="paramname"><em>paletteType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>DGuiApplicationHelper::setPaletteType设置调色板类型 </p>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">paletteType主题类型的枚举值</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l01005">1005</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00707">707</a> 行定义.</p>
 
 </div>
 </div>
@@ -1081,7 +1071,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00981">981</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l01083">1083</a> 行定义.</p>
 
 </div>
 </div>
@@ -1118,7 +1108,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section note"><dt>注解</dt><dd>需要在 DGuiApplicationHelper::setSingleInstance 之前调用否则无效。 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00971">971</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l01073">1073</a> 行定义.</p>
 
 </div>
 </div>
@@ -1146,7 +1136,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::setThemeType设置主题类型 </p>
+<p>DGuiApplicationHelper::setThemeType设置主题类型 固定程序的主题类型, 此行为可能导致 applicationPalette 变化, 前提是未使用 <em>setApplicationPalette</em> 固定过程序的调色板, 此方法不影响程序的调色板跟随 活动色改变, 可用于控制程序使用亮色还是暗色调色板. </p>
+<dl class="section note"><dt>注解</dt><dd>主动设置调色板颜色类型的操作会导致程序不再使用 <a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a> 中调色板相关的数据, 也 包括窗口级别的 <em>windowTheme</em> 所对应的 <a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a>, 届时设置 <a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a> 的 themeName 和所有与 palette 相关的属性都不再生效. </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">themeType主题类型的枚举值</td><td></td></tr>
@@ -1154,7 +1145,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00990">990</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l01098">1098</a> 行定义.</p>
 
 </div>
 </div>
@@ -1190,7 +1181,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00665">665</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00698">698</a> 行定义.</p>
 
 </div>
 </div>
@@ -1227,7 +1218,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </dl>
 <dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00411">411</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00430">430</a> 行定义.</p>
 
 </div>
 </div>
@@ -1246,10 +1237,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
       </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::systemTheme返回系统主题 </p>
-<dl class="section return"><dt>返回</dt><dd>系统主题 </dd></dl>
+<p><a class="el" href="class_d_gui_application_helper.html#a54696b5f532a5deaad028efdf4069fa1" title="DGuiApplicationHelper::systemTheme 返回系统级别的主题, 优先级低于 applicationTheme ...">DGuiApplicationHelper::systemTheme</a> 返回系统级别的主题, 优先级低于 <em>applicationTheme</em> </p>
+<dl class="section return"><dt>返回</dt><dd>平台主题对象 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme 同 systemTheme ">applicationTheme</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783" title="DGuiApplicationHelper::windowTheme 返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme ...">windowTheme</a> </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00699">699</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00735">735</a> 行定义.</p>
 
 </div>
 </div>
@@ -1284,9 +1278,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>主题类型的枚举值 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>颜色类型的枚举值 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00822">822</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00921">921</a> 行定义.</p>
 
 </div>
 </div>
@@ -1314,16 +1308,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::toColorType获取颜色的明亮度，将其转换为主题类型的枚举值。  返回调色板背景颜色 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#ac3667e460316b989a6f54463b7afcaa0" title="DGuiApplicationHelper::toColorType 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将�...">DGuiApplicationHelper::toColorType</a> 使用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qpalette-obsolete.html#background">QPalette::background</a> 获取颜色的明亮度，将其转换为主题类型的枚举值。  返回调色板的颜色类型 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">palette调色板</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>主题类型的枚举值 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>颜色类型的枚举值 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00844">844</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00944">944</a> 行定义.</p>
 
 </div>
 </div>
@@ -1343,7 +1337,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette ">DGuiApplicationHelper::windowPalette</a> </p>
+<p><a class="el" href="class_d_gui_application_helper.html#a36bc2b0660c97a4bdb2ba559151e4ccf" title="DGuiApplicationHelper::windowPalette 返回窗口所对应的调色板数据, 同 applicationPalette, 如果程序中自定义了 调色板, 则直接使用 applicationPalette. 自定义调色板的三种方式如下:通过 setApplicationPalette 固定调色板通过 setThemeType 固定调色板的类型通过 QGuiApplication::setPalette 固定调色板, 需要注意此方法不可逆. 否则将基于窗口所对应的 DPlatformTheme 获取调色板( ">DGuiApplicationHelper::windowPalette</a> 返回窗口所对应的调色板数据, 同 <em>applicationPalette</em>, 如果程序中自定义了 调色板, 则直接使用 <em>applicationPalette</em>. 自定义调色板的三种方式如下:</p><ol type="1">
+<li>通过 <em>setApplicationPalette</em> 固定调色板</li>
+<li>通过 <em>setThemeType</em> 固定调色板的类型</li>
+<li>通过 <em><a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qguiapplication.html#setPalette">QGuiApplication::setPalette</a></em> 固定调色板, 需要注意此方法不可逆. 否则将基于窗口所对应的 <em><a class="el" href="class_d_platform_theme.html" title="一个提供窗口主题的类 ">DPlatformTheme</a></em> 获取调色板( </li>
+</ol>
+</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_gui_application_helper.html#a80dbc8f823db2a49230e24734d4e5723" title="DGuiApplicationHelper::fetchPalette 获取调色板数据. 首先根据 DPlatformTheme::themeName 获取主题的颜色...">fetchPalette</a>). </dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td></td></tr>
@@ -1351,8 +1351,20 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>调色板 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783" title="DGuiApplicationHelper::windowTheme 返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme ...">windowTheme</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#a80dbc8f823db2a49230e24734d4e5723" title="DGuiApplicationHelper::fetchPalette 获取调色板数据. 首先根据 DPlatformTheme::themeName 获取主题的颜色...">fetchPalette</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#aa88a702eaaada0055b51d9b8617ab648" title="DGuiApplicationHelper::standardPalett 根据主题获取标准调色板 ">standardPalette</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#ab881c07f42d47c801ceb75c92937fc0a" title="DGuiApplicationHelper::generatePalette 加工调色板的颜色. 同 generatePaletteColor, 将直接调用 generate...">generatePalette</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#affc1f7774ce419a1ca73eab31f13cac4" title="DGuiApplicationHelper::applicationPalette返回应用程序调色板 如果使用 setApplicationPalette 设置过一个...">applicationPalette</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>使用时要同时关注 <em>paletteChanged</em>, 收到此信号后可能需要重新获取窗口的调色板 </dd>
+<dd>
+已废弃, 不再对外暴露控制窗口级别调色板的接口 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00802">802</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00896">896</a> 行定义.</p>
 
 </div>
 </div>
@@ -1372,16 +1384,20 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
       </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::windowTheme返回 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html">QWindow</a> 主题对象 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783" title="DGuiApplicationHelper::windowTheme 返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme ...">DGuiApplicationHelper::windowTheme</a> 返回窗口级别的主题, 优先级高于 <em>windowTheme</em> 和 <em>systemTheme</em> </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">windowQWindow</td><td>对象 </td></tr>
+    <tr><td class="paramname">window</td><td>主题对象对应的窗口 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>返回</dt><dd>QWindow主题 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>平台主题对象 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_gui_application_helper.html#a68b559d15c50f259ff5a88bee40eb372" title="DGuiApplicationHelper::applicationTheme 同 systemTheme ">applicationTheme</a> </dd>
+<dd>
+<a class="el" href="class_d_gui_application_helper.html#ad47af29164477016275cafc944c28783" title="DGuiApplicationHelper::windowTheme 返回窗口级别的主题, 优先级高于 windowTheme 和 systemTheme ...">windowTheme</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>已废弃, 不再对外暴露为特定窗口设置主题的接口 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00722">722</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8cpp_source.html">dguiapplicationhelper.cpp</a> 第 <a class="el" href="dguiapplicationhelper_8cpp_source.html#l00771">771</a> 行定义.</p>
 
 </div>
 </div>
@@ -1406,8 +1422,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd" title="DGuiApplicationHelper::paletteType ">DGuiApplicationHelper::paletteType</a> </p>
-<dl class="section return"><dt>返回</dt><dd>主题类型的枚举值 </dd></dl>
+<p><a class="el" href="class_d_gui_application_helper.html#a1c7768bfbadc134acc07ee5e7ef51ecd" title="DGuiApplicationHelper::paletteType 同 themeType ">DGuiApplicationHelper::paletteType</a> 同 <em>themeType</em> </p>
+<dl class="section warning"><dt>警告</dt><dd>已废弃, 请使用 <em>themeType</em> </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8h_source.html">dguiapplicationhelper.h</a> 第 <a class="el" href="dguiapplicationhelper_8h_source.html#l00041">41</a> 行定义.</p>
 
@@ -1433,8 +1449,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 </table>
 </div><div class="memdoc">
 
-<p>DGuiApplicationHelper::themeType主题类型  Dpalette::ColorType 针对某一个控件  <a class="el" href="class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92">DGuiApplicationHelper::ColorType</a> 针对整个程序 </p>
+<p><a class="el" href="class_d_gui_application_helper.html#a31973f27e3af55f8925e788ba8ba282e" title="DGuiApplicationHelper::themeType  返回程序的主题类型, 当themeType为UnknownType时, 将自动根据 GuiAppli...">DGuiApplicationHelper::themeType</a>  返回程序的主题类型, 当themeType为UnknownType时, 将自动根据 GuiApplication::palette的QPalette::background颜色计算主题 类型, 否则直接返回保存的 themeType 值. 程序中应当使用此值作为暗色/亮色主题 类型的判断. </p>
 <dl class="section return"><dt>返回</dt><dd>主题类型的枚举值 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_gui_application_helper.html#ac3667e460316b989a6f54463b7afcaa0" title="DGuiApplicationHelper::toColorType 获取颜色的明亮度，将其转换为主题类型的枚举值。 转换的策略为：先将�...">toColorType</a> </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="dguiapplicationhelper_8h_source.html">dguiapplicationhelper.h</a> 第 <a class="el" href="dguiapplicationhelper_8h_source.html#l00040">40</a> 行定义.</p>
 
@@ -1450,7 +1467,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>_DGuiApplicationHelp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_gui_application_helper.html">DGuiApplicationHelper</a></li>
-    <li class="footer">生成于 2021年 一月 4日 星期一 07:59:36 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2021年 一月 5日 星期二 07:59:38 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

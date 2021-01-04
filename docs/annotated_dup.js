@@ -197,6 +197,7 @@ var annotated_dup =
         [ "DSwitchHeaderLine", "class_dtk_1_1_widget_1_1_d_switch_header_line.html", "class_dtk_1_1_widget_1_1_d_switch_header_line" ],
         [ "DSwitchLineExpand", "class_dtk_1_1_widget_1_1_d_switch_line_expand.html", "class_dtk_1_1_widget_1_1_d_switch_line_expand" ],
         [ "DTabBar", "class_dtk_1_1_widget_1_1_d_tab_bar.html", "class_dtk_1_1_widget_1_1_d_tab_bar" ],
+        [ "DTabletWindowOptionButton", "class_dtk_1_1_widget_1_1_d_tablet_window_option_button.html", "class_dtk_1_1_widget_1_1_d_tablet_window_option_button" ],
         [ "DTextEdit", "class_dtk_1_1_widget_1_1_d_text_edit.html", "class_dtk_1_1_widget_1_1_d_text_edit" ],
         [ "DThemeManager", "class_dtk_1_1_widget_1_1_d_theme_manager.html", "class_dtk_1_1_widget_1_1_d_theme_manager" ],
         [ "DTickEffect", "class_dtk_1_1_widget_1_1_d_tick_effect.html", "class_dtk_1_1_widget_1_1_d_tick_effect" ],

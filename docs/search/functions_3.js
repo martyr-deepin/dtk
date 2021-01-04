@@ -307,6 +307,7 @@ var searchData=
   ['dswitchbutton',['DSwitchButton',['../class_dtk_1_1_widget_1_1_d_switch_button.html#a3ca08e2e11f42fd05b85bd7a45e6f808',1,'Dtk::Widget::DSwitchButton']]],
   ['dswitchheaderline',['DSwitchHeaderLine',['../class_dtk_1_1_widget_1_1_d_switch_header_line.html#a2387dbc9d5f1fe55e21f1fb830c43c4a',1,'Dtk::Widget::DSwitchHeaderLine']]],
   ['dswitchlineexpand',['DSwitchLineExpand',['../class_dtk_1_1_widget_1_1_d_switch_line_expand.html#a56650634001479424df9f5ded07a55ba',1,'Dtk::Widget::DSwitchLineExpand']]],
+  ['dtabletwindowoptionbutton',['DTabletWindowOptionButton',['../class_dtk_1_1_widget_1_1_d_tablet_window_option_button.html#ad9ad7c411cc2de23f1e6c81dbbd867fb',1,'Dtk::Widget::DTabletWindowOptionButton']]],
   ['dtaskbarcontrol',['DTaskbarControl',['../class_d_taskbar_control.html#a0b798b78477f832c6e6bdefb1f97302d',1,'DTaskbarControl']]],
   ['dtdname',['dtdName',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdName',1,'QXmlStreamReader']]],
   ['dtdpublicid',['dtdPublicId',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdPublicId',1,'QXmlStreamReader']]],

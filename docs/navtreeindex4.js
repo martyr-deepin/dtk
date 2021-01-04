@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"class_dtk_1_1_core_1_1_d_sys_info.html#ad7c6ecbcb42d071139426a58d8574926":[8,0,3,0,27,9],
 "class_dtk_1_1_core_1_1_d_thread_util_1_1___t_m_p.html":[8,0,3,0,0,0],
 "class_dtk_1_1_core_1_1_d_thread_util_1_1___t_m_p_3_01void_01_4.html":[8,0,3,0,0,1],
 "class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html":[8,0,3,0,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#ac9d53d209eb395fcfba1656f4d7870f0":[8,0,3,2,10,16],
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#ae290ee3807299f2a1298f23d9cd9c523":[8,0,3,2,10,19],
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#ae97483f9a73132ecdbbe63f948ccdaec":[8,0,3,2,10,26],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#af275c0cc7ad35ef17d26af83b2fa170b":[8,0,3,2,10,1],
-"class_dtk_1_1_widget_1_1_d_about_dialog.html#afada5731af21e45e68248d1559e78618":[8,0,3,2,10,28]
+"class_dtk_1_1_widget_1_1_d_about_dialog.html#af275c0cc7ad35ef17d26af83b2fa170b":[8,0,3,2,10,1]
 };

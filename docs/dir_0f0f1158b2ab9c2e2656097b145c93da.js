@@ -157,6 +157,8 @@ var dir_0f0f1158b2ab9c2e2656097b145c93da =
     [ "dswitchlineexpand.h", "dswitchlineexpand_8h_source.html", null ],
     [ "dtabbar.cpp", "dtabbar_8cpp_source.html", null ],
     [ "dtabbar.h", "dtabbar_8h_source.html", null ],
+    [ "dtabletwindowoptionbutton.cpp", "dtabletwindowoptionbutton_8cpp_source.html", null ],
+    [ "dtabletwindowoptionbutton.h", "dtabletwindowoptionbutton_8h_source.html", null ],
     [ "dtextedit.cpp", "dtextedit_8cpp_source.html", null ],
     [ "dtextedit.h", "dtextedit_8h_source.html", null ],
     [ "dthememanager.cpp", "dthememanager_8cpp_source.html", null ],

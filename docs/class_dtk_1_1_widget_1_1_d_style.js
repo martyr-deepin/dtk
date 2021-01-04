@@ -79,6 +79,7 @@ var class_dtk_1_1_widget_1_1_d_style =
       [ "SP_DeleteButton", "class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57af143919813d65cb883008addab7c301b", null ],
       [ "SP_AddButton", "class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57a973d183bc70f4ffba2f5fc25cdc2a3eb", null ],
       [ "SP_TitleQuitFullButton", "class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57a0f4846f72d7c6f70c0dfb02a2ba5e619", null ],
+      [ "SP_TitleMoreButton", "class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57a8c54185036b1246ab8f5b81f94cbdaaa", null ],
       [ "SP_CustomBase", "class_dtk_1_1_widget_1_1_d_style.html#aaac59d5d2f6438a6d2e0d915e4d91d57ad8713a5f28bf88174b32c2e0c07eeb23", null ]
     ] ],
     [ "StyleState", "class_dtk_1_1_widget_1_1_d_style.html#ab36c3dbccfe568b6f98c97eeb33bfe5f", [

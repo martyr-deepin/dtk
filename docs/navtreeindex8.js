@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_dtk_1_1_widget_1_1_d_file_icon_provider.html#ab0e4969f7089e19edd904fb7483cf33f":[8,0,3,2,45,2],
 "class_dtk_1_1_widget_1_1_d_file_icon_provider.html#adfbaa6e482372c6c9d8bf9a9fa7b533d":[8,0,3,2,45,3],
 "class_dtk_1_1_widget_1_1_d_floating_button.html":[8,0,3,2,46],
 "class_dtk_1_1_widget_1_1_d_floating_button.html#a297068b449dea2fe813afa1927a8b6b9":[8,0,3,2,46,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a2da480fd5722ae56deab7451189c5b5b":[8,0,3,2,60,4],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a352292f034d609a9fe160dddce7378bc":[8,0,3,2,60,12],
 "class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a3e2eab48098b48223775cd2f8d1b5e61":[8,0,3,2,60,13],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a4cd39e0b925a941e40c86eedd5cc86f8":[8,0,3,2,60,19],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a573b797324b14083929dbbb8a629adb8":[8,0,3,2,60,15]
+"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a4cd39e0b925a941e40c86eedd5cc86f8":[8,0,3,2,60,19]
 };
