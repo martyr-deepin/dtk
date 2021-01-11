@@ -1,13 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"class_dtk_1_1_widget_1_1_d_window_min_button.html#a15f2167222874c124b3b80d13f014e43":[8,0,3,2,132,0],
-"class_dtk_1_1_widget_1_1_d_window_min_button.html#ab35f52048efa5084abd3115f1450c7e3":[8,0,3,2,132,2],
-"class_dtk_1_1_widget_1_1_d_window_min_button.html#ae3bcf05759742d729e1fd97814ec74e6":[8,0,3,2,132,1],
-"class_dtk_1_1_widget_1_1_d_window_option_button.html":[8,0,3,2,133],
-"class_dtk_1_1_widget_1_1_d_window_option_button.html#a089109bdf137c0cc395b0711a3c2d4b0":[8,0,3,2,133,1],
-"class_dtk_1_1_widget_1_1_d_window_option_button.html#aa3f87f49e7b301ca73d901a7f513ab54":[8,0,3,2,133,0],
-"class_dtk_1_1_widget_1_1_d_window_option_button.html#aacdc44c83b0d1a3be0dcae3eb90331d2":[8,0,3,2,133,2],
-"class_dtk_1_1_widget_1_1_d_window_quit_full_button.html":[8,0,3,2,134],
 "class_dtk_1_1_widget_1_1_d_window_quit_full_button.html#a3fcf991ef8932a2c1fc8f217f270f52b":[8,0,3,2,134,2],
 "class_dtk_1_1_widget_1_1_d_window_quit_full_button.html#a7c7fca06c1f23bb69ee4fcc9e919e683":[8,0,3,2,134,1],
 "class_dtk_1_1_widget_1_1_d_window_quit_full_button.html#af107daf49f414b3b09ad7762bf7065ec":[8,0,3,2,134,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX14 =
 "classdstyle_1_1_d_scrollbar_style_animation.html#ab8248fd0630046356faf0b2332e05de1":[8,0,2,6,2],
 "classdstyle_1_1_d_scrollbar_style_animation.html#adf167a7446651b43bb73060422015d0e":[8,0,2,6,3],
 "classdstyle_1_1_d_scrollbar_style_animation.html#ae424e305656109c2bad9d48243ae1ce0":[8,0,2,6,1],
-"classdstyle_1_1_d_scrollbar_style_animation.html#af7756c07cfb61b22ca726261323c233c":[8,0,2,6,0]
+"classdstyle_1_1_d_scrollbar_style_animation.html#af7756c07cfb61b22ca726261323c233c":[8,0,2,6,0],
+"classdstyle_1_1_d_scrollbar_style_animation.html#af7756c07cfb61b22ca726261323c233ca9d844be3c79599578d300ce2d574fe6a":[8,0,2,6,0,1],
+"classdstyle_1_1_d_scrollbar_style_animation.html#af7756c07cfb61b22ca726261323c233caff9977592ada94f1e6e3bf127327e03e":[8,0,2,6,0,0],
+"classdstyle_1_1_d_style_animation.html":[8,0,2,7],
+"classdstyle_1_1_d_style_animation.html#a1ae9a6d68f194164811d4f9f5c8f54ba":[8,0,2,7,12],
+"classdstyle_1_1_d_style_animation.html#a207c230391dd14fda9e88ca1641da122":[8,0,2,7,6],
+"classdstyle_1_1_d_style_animation.html#a4c1f3599b607748807d5c529e64d27fc":[8,0,2,7,14],
+"classdstyle_1_1_d_style_animation.html#a59eac452abcd68b45d844f0c158f0c48":[8,0,2,7,0],
+"classdstyle_1_1_d_style_animation.html#a59eac452abcd68b45d844f0c158f0c48a2f41827dff76107a843e292c9e4d61b3":[8,0,2,7,0,2]
 };

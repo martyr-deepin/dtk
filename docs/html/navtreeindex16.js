@@ -1,13 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"ddrawergroup_8h_source.html":[9,0,2,0,2,50],
-"denhancedwidget_8cpp_source.html":[9,0,2,0,2,51],
-"denhancedwidget_8h_source.html":[9,0,2,0,2,52],
-"dexpandgroup_8cpp_source.html":[9,0,2,0,2,53],
-"dexpandgroup_8h_source.html":[9,0,2,0,2,54],
-"dexportedinterface_8cpp_source.html":[9,0,0,1,4,6],
-"dexportedinterface_8h_source.html":[9,0,0,1,4,7],
-"dfilechooseredit_8cpp_source.html":[9,0,2,0,2,55],
 "dfilechooseredit_8h_source.html":[9,0,2,0,2,56],
 "dfiledialog_8cpp_source.html":[9,0,2,0,2,57],
 "dfiledialog_8h_source.html":[9,0,2,0,2,58],
@@ -249,5 +241,13 @@ var NAVTREEINDEX16 =
 "dtabbar_8h_source.html":[9,0,2,0,2,156],
 "dtabletwindowoptionbutton_8cpp_source.html":[9,0,2,0,2,157],
 "dtabletwindowoptionbutton_8h_source.html":[9,0,2,0,2,158],
-"dtaskbarcontrol_8cpp_source.html":[9,0,1,1,27]
+"dtaskbarcontrol_8cpp_source.html":[9,0,1,1,27],
+"dtaskbarcontrol_8h_source.html":[9,0,1,1,28],
+"dtaskbarcontrol__p_8h_source.html":[9,0,1,1,1,7],
+"dtextedit_8cpp_source.html":[9,0,2,0,2,159],
+"dtextedit_8h_source.html":[9,0,2,0,2,160],
+"dthememanager_8cpp_source.html":[9,0,2,0,2,161],
+"dthememanager_8h_source.html":[9,0,2,0,2,162],
+"dthemesettings_8cpp_source.html":[9,0,3,2,5],
+"dthemesettings_8h_source.html":[9,0,3,2,6]
 };

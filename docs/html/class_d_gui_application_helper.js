@@ -20,6 +20,7 @@ var class_d_gui_application_helper =
     [ "D_DECL_DEPRECATED_X", "class_d_gui_application_helper.html#a7db53bec3fe3383cd4f79b2c0e7cab2b", null ],
     [ "D_DECL_DEPRECATED_X", "class_d_gui_application_helper.html#aab320f10c8b94caaae68d877fd4be208", null ],
     [ "fontChanged", "class_d_gui_application_helper.html#ae92557847cc314f12a60f52f569229b2", null ],
+    [ "fontManager", "class_d_gui_application_helper.html#a577e7dd7a88636632917bd1b88e1c98b", null ],
     [ "initialize", "class_d_gui_application_helper.html#a64f515bd7a38e92b0dddd5459ae2990f", null ],
     [ "newProcessInstance", "class_d_gui_application_helper.html#ab94fab6c42b86328baffcbb7bb3de0ad", null ],
     [ "setApplicationPalette", "class_d_gui_application_helper.html#a88d71049a24d357f21a3fcf01575c48c", null ],

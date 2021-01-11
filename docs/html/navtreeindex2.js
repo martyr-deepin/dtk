@@ -1,13 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"class_d_platform_theme.html#aa7b6f725fa0fb89d2bd128fa460aa996":[8,0,38,129],
-"class_d_platform_theme.html#aa8897fd64886be27553797b41baf8a2a":[8,0,38,172],
-"class_d_platform_theme.html#aa9697699e8ecec9e9641530dbdf18f82":[8,0,38,112],
-"class_d_platform_theme.html#aa979daab2d6797a3990447597e8c58eb":[8,0,38,101],
-"class_d_platform_theme.html#aab0c367af9d96c076405d5196bf827bd":[8,0,38,179],
-"class_d_platform_theme.html#aac08123cb7fa610bc5ebbf2b074fa1eb":[8,0,38,62],
-"class_d_platform_theme.html#aac8e5eeee3d3255d11a51bc649e3706b":[8,0,38,116],
-"class_d_platform_theme.html#aacd54644870ff3eabc2d2b44a1ef6de7":[8,0,38,122],
 "class_d_platform_theme.html#aaf0a67abf3eed233a005928aafff67f8":[8,0,38,130],
 "class_d_platform_theme.html#ab078ef89810f73464b8ccf7ea3d721f3":[8,0,38,34],
 "class_d_platform_theme.html#ab33e19832fda8ed483bdf2448a9174f3":[8,0,38,47],
@@ -249,5 +241,13 @@ var NAVTREEINDEX2 =
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#a03d2ce92705da4fda885de51e1e55c6a":[8,0,3,0,7,13],
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#a136f7ddd0fa93d3dfe421614dd39a1bc":[8,0,3,0,7,0],
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#a143ac797fe0f22b0e5fbdab0263d1e1d":[8,0,3,0,7,1],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a277d8b8276b77522bbdba8075f4bdc7d":[8,0,3,0,7,4]
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a277d8b8276b77522bbdba8075f4bdc7d":[8,0,3,0,7,4],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a384d237053035c27529b909b7e571ea8":[8,0,3,0,7,14],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a3c5286fb14397a5a7382454362dd6570":[8,0,3,0,7,2],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a4a6dfb2b9192feebb511bf84ed8796f5":[8,0,3,0,7,5],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a50c523b302e5e7ba1faae12305a56a42":[8,0,3,0,7,10],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a510c75cd3baade4891a9ebb115b1b342":[8,0,3,0,7,3],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a52553bcef3e99c2e10db7f07a7976d66":[8,0,3,0,7,12],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a6f6e4ac25c2a4658a6a05efd8bd5a446":[8,0,3,0,7,8],
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#aaaafca02100e83a24d1c10ef3c771d71":[8,0,3,0,7,9]
 };

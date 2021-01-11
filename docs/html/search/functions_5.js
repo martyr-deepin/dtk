@@ -142,6 +142,7 @@ var searchData=
   ['fontkerning',['fontKerning',['qthelp://org.qt-project.qtgui/qtgui/qtextcharformat.html#fontKerning',1,'QTextCharFormat']]],
   ['fontletterspacing',['fontLetterSpacing',['qthelp://org.qt-project.qtgui/qtgui/qtextcharformat.html#fontLetterSpacing',1,'QTextCharFormat']]],
   ['fontletterspacingtype',['fontLetterSpacingType',['qthelp://org.qt-project.qtgui/qtgui/qtextcharformat.html#fontLetterSpacingType',1,'QTextCharFormat']]],
+  ['fontmanager',['fontManager',['../class_d_gui_application_helper.html#a577e7dd7a88636632917bd1b88e1c98b',1,'DGuiApplicationHelper']]],
   ['fontmetrics',['fontMetrics',['qthelp://org.qt-project.qtgui/qtgui/qpainter.html#fontMetrics',1,'QPainter::fontMetrics()'],['qthelp://org.qt-project.qtwidgets/qtwidgets/qwidget.html#fontMetrics',1,'QWidget::fontMetrics()'],['qthelp://org.qt-project.qtwidgets/qtwidgets/qapplication.html#fontMetrics',1,'QApplication::fontMetrics()']]],
   ['fontoverline',['fontOverline',['qthelp://org.qt-project.qtgui/qtgui/qtextcharformat.html#fontOverline',1,'QTextCharFormat']]],
   ['fontpixelsize',['fontPixelSize',['../class_dtk_1_1_widget_1_1_d_font_size_manager.html#a7bb5334d70096923c039599d1f099def',1,'Dtk::Widget::DFontSizeManager::fontPixelSize()'],['../class_d_font_manager.html#a288368436a44e45ce511ed2ccb68801b',1,'DFontManager::fontPixelSize()']]],

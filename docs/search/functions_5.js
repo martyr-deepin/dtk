@@ -142,6 +142,7 @@ var searchData=
   ['fontkerning',['fontKerning',['https://doc.qt.io/qt-5/qtextcharformat.html#fontKerning',1,'QTextCharFormat']]],
   ['fontletterspacing',['fontLetterSpacing',['https://doc.qt.io/qt-5/qtextcharformat.html#fontLetterSpacing',1,'QTextCharFormat']]],
   ['fontletterspacingtype',['fontLetterSpacingType',['https://doc.qt.io/qt-5/qtextcharformat.html#fontLetterSpacingType',1,'QTextCharFormat']]],
+  ['fontmanager',['fontManager',['../class_d_gui_application_helper.html#a577e7dd7a88636632917bd1b88e1c98b',1,'DGuiApplicationHelper']]],
   ['fontmetrics',['fontMetrics',['https://doc.qt.io/qt-5/qpainter.html#fontMetrics',1,'QPainter::fontMetrics()'],['https://doc.qt.io/qt-5/qwidget.html#fontMetrics',1,'QWidget::fontMetrics()'],['https://doc.qt.io/qt-5/qapplication.html#fontMetrics',1,'QApplication::fontMetrics()']]],
   ['fontoverline',['fontOverline',['https://doc.qt.io/qt-5/qtextcharformat.html#fontOverline',1,'QTextCharFormat']]],
   ['fontpixelsize',['fontPixelSize',['../class_dtk_1_1_widget_1_1_d_font_size_manager.html#a7bb5334d70096923c039599d1f099def',1,'Dtk::Widget::DFontSizeManager::fontPixelSize()'],['../class_d_font_manager.html#a288368436a44e45ce511ed2ccb68801b',1,'DFontManager::fontPixelSize()']]],

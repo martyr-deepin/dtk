@@ -1,13 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a384d237053035c27529b909b7e571ea8":[8,0,3,0,7,14],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a3c5286fb14397a5a7382454362dd6570":[8,0,3,0,7,2],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a4a6dfb2b9192feebb511bf84ed8796f5":[8,0,3,0,7,5],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a50c523b302e5e7ba1faae12305a56a42":[8,0,3,0,7,10],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a510c75cd3baade4891a9ebb115b1b342":[8,0,3,0,7,3],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a52553bcef3e99c2e10db7f07a7976d66":[8,0,3,0,7,12],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#a6f6e4ac25c2a4658a6a05efd8bd5a446":[8,0,3,0,7,8],
-"class_dtk_1_1_core_1_1_d_base_file_watcher.html#aaaafca02100e83a24d1c10ef3c771d71":[8,0,3,0,7,9],
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#aca5b89f7fbc62821ef09054d508802ab":[8,0,3,0,7,11],
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#adb359c414da8d42bfd636f39e37ce16e":[8,0,3,0,7,6],
 "class_dtk_1_1_core_1_1_d_desktop_entry.html":[8,0,3,0,8],
@@ -249,5 +241,13 @@ var NAVTREEINDEX3 =
 "class_dtk_1_1_core_1_1_d_sys_info.html#abce779af6b5c5e03e2a7f3b55e78ae32a3eb1c6c57395ba51f07d62d85ff35752":[8,0,3,0,27,0,1],
 "class_dtk_1_1_core_1_1_d_sys_info.html#abce779af6b5c5e03e2a7f3b55e78ae32a555d7d5c06cfb2f245b28a885bca250b":[8,0,3,0,27,0,0],
 "class_dtk_1_1_core_1_1_d_sys_info.html#abce779af6b5c5e03e2a7f3b55e78ae32a8037d8fa5283171abc54aa9484a4f5fe":[8,0,3,0,27,0,3],
-"class_dtk_1_1_core_1_1_d_sys_info.html#abce779af6b5c5e03e2a7f3b55e78ae32abc9f234c724d810367a9afd86aafd090":[8,0,3,0,27,0,4]
+"class_dtk_1_1_core_1_1_d_sys_info.html#abce779af6b5c5e03e2a7f3b55e78ae32abc9f234c724d810367a9afd86aafd090":[8,0,3,0,27,0,4],
+"class_dtk_1_1_core_1_1_d_sys_info.html#ad7c6ecbcb42d071139426a58d8574926":[8,0,3,0,27,9],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1___t_m_p.html":[8,0,3,0,0,0],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1___t_m_p_3_01void_01_4.html":[8,0,3,0,0,1],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html":[8,0,3,0,0,2],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html#ab90f5e9fff4db476c6e6fac59da9e772":[8,0,3,0,0,2,0],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html#af5b6ae142970018f1b8da16cfb9c7a08":[8,0,3,0,0,2,1],
+"class_dtk_1_1_core_1_1_d_time_unit_formatter.html":[8,0,3,0,28],
+"class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a20b6b3eb04f8d9aa6b2f8172503ad0d7":[8,0,3,0,28,4]
 };
