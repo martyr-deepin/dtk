@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"dthememanager_8h_source.html":[9,0,2,0,2,162],
+"dthemesettings_8cpp_source.html":[9,0,3,2,5],
+"dthemesettings_8h_source.html":[9,0,3,2,6],
 "dthreadutils_8cpp_source.html":[9,0,0,1,4,17],
 "dthreadutils_8h_source.html":[9,0,0,1,4,18],
 "dtickeffect_8cpp_source.html":[9,0,2,0,2,163],
@@ -80,8 +83,8 @@ var NAVTREEINDEX17 =
 "functions_enum.html":[8,3,3],
 "functions_eval.html":[8,3,4],
 "functions_f.html":[8,3,0,5],
-"functions_func.html":[8,3,1],
 "functions_func.html":[8,3,1,0],
+"functions_func.html":[8,3,1],
 "functions_func_0x7e.html":[8,3,1,25],
 "functions_func_b.html":[8,3,1,1],
 "functions_func_c.html":[8,3,1,2],
@@ -138,8 +141,8 @@ var NAVTREEINDEX17 =
 "hidpihelper_8cpp_source.html":[9,0,3,3,1,16],
 "hidpihelper_8h_source.html":[9,0,3,3,1,17],
 "hierarchy.html":[8,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "lineedithelper_8cpp_source.html":[9,0,3,3,1,18],
 "md_dtkcore__c_h_a_n_g_e_l_o_g.html":[2],
 "md_dtkcore_src_log__r_e_a_d_m_e.html":[4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "struct_dtk_1_1_widget_1_1_pop.html#a6761098dd636563b40bed447401dd529":[8,0,3,2,136,5],
 "struct_dtk_1_1_widget_1_1_pop.html#a7627a387297dd1de4ad47cfae6f7d173":[8,0,3,2,136,0],
 "struct_dtk_1_1_widget_1_1_pop.html#aa87878ea3bb0a2dc471277e9e6aed319":[8,0,3,2,136,3],
-"struct_dtk_1_1_widget_1_1_pop.html#acfe2d6496fff097d5b286eec6946f967":[8,0,3,2,136,4],
-"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html":[8,0,3,2,1,0],
-"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a1888a4642ba1035f2223d6a7e160f8be":[8,0,3,2,1,0,3],
-"struct_dtk_1_1_widget_1_1_x_utils_1_1_mwm_hints.html#a44304643d0f2c978d20da97e7e7c190d":[8,0,3,2,1,0,2]
+"struct_dtk_1_1_widget_1_1_pop.html#acfe2d6496fff097d5b286eec6946f967":[8,0,3,2,136,4]
 };

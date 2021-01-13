@@ -17,6 +17,7 @@ var class_dtk_1_1_widget_1_1_d_icon_button =
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#a16f7ff4bed0f1d456e0067eb4576631d", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#ad676e07db34f010e7a191002572c17cd", null ],
     [ "setIcon", "class_dtk_1_1_widget_1_1_d_icon_button.html#a0c1c9e4a082e5e9f9a48f2a5758cd154", null ],
+    [ "setNewNotification", "class_dtk_1_1_widget_1_1_d_icon_button.html#ac50acd17ac7929cab4fed91b81ec9188", null ],
     [ "sizeHint", "class_dtk_1_1_widget_1_1_d_icon_button.html#a16ba4765b32ff6cadd3452a33e72e602", null ],
     [ "flat", "class_dtk_1_1_widget_1_1_d_icon_button.html#a9ebc09f079b5de8b1557e9b4e7d99648", null ]
 ];
