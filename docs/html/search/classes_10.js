@@ -47,6 +47,7 @@ var searchData=
   ['qatomicint',['QAtomicInt',['qthelp://org.qt-project.qtcore/qtcore/qatomicint.html',1,'']]],
   ['qatomicinteger',['QAtomicInteger',['qthelp://org.qt-project.qtcore/qtcore/qatomicinteger.html',1,'']]],
   ['qatomicpointer',['QAtomicPointer',['qthelp://org.qt-project.qtcore/qtcore/qatomicpointer.html',1,'']]],
+  ['qatomicpointer_3c_20dguiapplicationhelper_20_3e',['QAtomicPointer&lt; DGuiApplicationHelper &gt;',['qthelp://org.qt-project.qtcore/qtcore/qatomicpointer.html',1,'']]],
   ['qbackingstore',['QBackingStore',['qthelp://org.qt-project.qtgui/qtgui/qbackingstore.html',1,'']]],
   ['qbasictimer',['QBasicTimer',['qthelp://org.qt-project.qtcore/qtcore/qbasictimer.html',1,'']]],
   ['qbeinteger',['QBEInteger',['qthelp://org.qt-project.qtcore/qtcore/qbeinteger.html',1,'']]],

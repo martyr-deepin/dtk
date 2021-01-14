@@ -47,6 +47,7 @@ var searchData=
   ['qatomicint',['QAtomicInt',['https://doc.qt.io/qt-5/qatomicint.html',1,'']]],
   ['qatomicinteger',['QAtomicInteger',['https://doc.qt.io/qt-5/qatomicinteger.html',1,'']]],
   ['qatomicpointer',['QAtomicPointer',['https://doc.qt.io/qt-5/qatomicpointer.html',1,'']]],
+  ['qatomicpointer_3c_20dguiapplicationhelper_20_3e',['QAtomicPointer&lt; DGuiApplicationHelper &gt;',['https://doc.qt.io/qt-5/qatomicpointer.html',1,'']]],
   ['qbackingstore',['QBackingStore',['https://doc.qt.io/qt-5/qbackingstore.html',1,'']]],
   ['qbasictimer',['QBasicTimer',['https://doc.qt.io/qt-5/qbasictimer.html',1,'']]],
   ['qbeinteger',['QBEInteger',['https://doc.qt.io/qt-5/qbeinteger.html',1,'']]],
