@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1e4db65686b5fd549b2860b76aa3efc9a8bfdae911a71826ec78751cb25af1022":[8,0,3,2,11,0,0],
 "class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a47316f85e8758192c613cf39f8e0bf39":[8,0,3,2,11,14],
 "class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a5505b0c422ebf0017225a7843c7fcfe6":[8,0,3,2,11,13],
 "class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a6f7d7bf68c2c5d68b6b120ec82e29fbb":[8,0,3,2,11,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "class_dtk_1_1_widget_1_1_d_arrow_button.html#accc14a43652e95e4c1e03f11effbfbc7":[8,0,3,2,20,9],
 "class_dtk_1_1_widget_1_1_d_arrow_button.html#af395c6f7152ee1c4f3c604b0928ae3dc":[8,0,3,2,20,11],
 "class_dtk_1_1_widget_1_1_d_arrow_line_drawer.html":[8,0,3,2,21],
-"class_dtk_1_1_widget_1_1_d_arrow_line_drawer.html#a1b8c48d2f48179cbf324876f1f97b983":[8,0,3,2,21,2],
-"class_dtk_1_1_widget_1_1_d_arrow_line_drawer.html#a64ec412d13aac94f3e83448e7239b0e0":[8,0,3,2,21,0]
+"class_dtk_1_1_widget_1_1_d_arrow_line_drawer.html#a1b8c48d2f48179cbf324876f1f97b983":[8,0,3,2,21,2]
 };

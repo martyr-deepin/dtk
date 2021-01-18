@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_dtk_1_1_core_1_1_d_base_file_watcher.html#aaaafca02100e83a24d1c10ef3c771d71":[8,0,3,0,7,9],
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#aca5b89f7fbc62821ef09054d508802ab":[8,0,3,0,7,11],
 "class_dtk_1_1_core_1_1_d_base_file_watcher.html#adb359c414da8d42bfd636f39e37ce16e":[8,0,3,0,7,6],
 "class_dtk_1_1_core_1_1_d_desktop_entry.html":[8,0,3,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html":[8,0,3,0,0,2],
 "class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html#ab90f5e9fff4db476c6e6fac59da9e772":[8,0,3,0,0,2,0],
 "class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html#af5b6ae142970018f1b8da16cfb9c7a08":[8,0,3,0,0,2,1],
-"class_dtk_1_1_core_1_1_d_time_unit_formatter.html":[8,0,3,0,28],
-"class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a20b6b3eb04f8d9aa6b2f8172503ad0d7":[8,0,3,0,28,4]
+"class_dtk_1_1_core_1_1_d_time_unit_formatter.html":[8,0,3,0,28]
 };

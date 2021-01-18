@@ -273,6 +273,7 @@ var searchData=
   ['qlinkedlistiterator',['QLinkedListIterator',['qthelp://org.qt-project.qtcore/qtcore/qlinkedlistiterator.html',1,'QLinkedListIterator'],['qthelp://org.qt-project.qtcore/qtcore/qlinkedlistiterator.html#QLinkedListIterator',1,'QLinkedListIterator::QLinkedListIterator()']]],
   ['qlist',['QList',['qthelp://org.qt-project.qtcore/qtcore/qlist.html',1,'QList'],['qthelp://org.qt-project.qtcore/qtcore/qlist.html#QList',1,'QList::QList()'],['qthelp://org.qt-project.qtcore/qtcore/qlist.html#QList-1',1,'QList::QList(const QList&lt; T &gt; &amp;other)'],['qthelp://org.qt-project.qtcore/qtcore/qlist.html#QList-2',1,'QList::QList(QList&lt; T &gt; &amp;&amp;other)'],['qthelp://org.qt-project.qtcore/qtcore/qlist.html#QList-3',1,'QList::QList(std::initializer_list&lt; T &gt; args)']]],
   ['qlist_3c_20bool_20_3e',['QList&lt; bool &gt;',['qthelp://org.qt-project.qtcore/qtcore/qlist.html',1,'']]],
+  ['qlist_3c_20dforeignwindow_20_2a_3e',['QList&lt; DForeignWindow *&gt;',['qthelp://org.qt-project.qtcore/qtcore/qlist.html',1,'']]],
   ['qlist_3c_20dstyle_3a_3apaletteextended_20_2a_3e',['QList&lt; dstyle::PaletteExtended *&gt;',['qthelp://org.qt-project.qtcore/qtcore/qlist.html',1,'']]],
   ['qlist_3c_20dtk_3a_3awidget_3a_3adkeylabel_20_2a_3e',['QList&lt; Dtk::Widget::DKeyLabel *&gt;',['qthelp://org.qt-project.qtcore/qtcore/qlist.html',1,'']]],
   ['qlist_3c_20int_20_3e',['QList&lt; int &gt;',['qthelp://org.qt-project.qtcore/qtcore/qlist.html',1,'']]],

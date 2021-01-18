@@ -175,6 +175,7 @@ var searchData=
   ['dtabbar',['DTabBar',['../class_dtk_1_1_widget_1_1_d_tab_bar.html',1,'Dtk::Widget']]],
   ['dtabletwindowoptionbutton',['DTabletWindowOptionButton',['../class_dtk_1_1_widget_1_1_d_tablet_window_option_button.html',1,'Dtk::Widget']]],
   ['dtaskbarcontrol',['DTaskbarControl',['../class_d_taskbar_control.html',1,'']]],
+  ['dtest',['DTest',['../class_d_test.html',1,'']]],
   ['dtextedit',['DTextEdit',['../class_dtk_1_1_widget_1_1_d_text_edit.html',1,'Dtk::Widget']]],
   ['dthememanager',['DThemeManager',['../class_dtk_1_1_widget_1_1_d_theme_manager.html',1,'Dtk::Widget']]],
   ['dthemesettings',['DThemeSettings',['../class_d_theme_settings.html',1,'']]],

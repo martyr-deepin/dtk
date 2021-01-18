@@ -537,6 +537,12 @@ var hierarchy =
     [ "T", null, [
       [ "Dtk::Core::DVtableHook::OverrideDestruct< T >", "class_dtk_1_1_core_1_1_d_vtable_hook_1_1_override_destruct.html", null ]
     ] ],
+    [ "Test", null, [
+      [ "DTest", "class_d_test.html", [
+        [ "TDForeignWindow", "class_t_d_foreign_window.html", null ],
+        [ "TDRegionMonitor", "class_t_d_region_monitor.html", null ]
+      ] ]
+    ] ],
     [ "Dtk::Widget::DAbstractStackWidgetTransition::TransitionInfo", "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html", null ],
     [ "DWindowHandle::WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],

@@ -479,6 +479,7 @@ var searchData=
   ['dtdname',['dtdName',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdName',1,'QXmlStreamReader']]],
   ['dtdpublicid',['dtdPublicId',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdPublicId',1,'QXmlStreamReader']]],
   ['dtdsystemid',['dtdSystemId',['https://doc.qt.io/qt-5/qxmlstreamreader.html#dtdSystemId',1,'QXmlStreamReader']]],
+  ['dtest',['DTest',['../class_d_test.html',1,'']]],
   ['dtextedit',['DTextEdit',['../class_dtk_1_1_widget_1_1_d_text_edit.html',1,'Dtk::Widget::DTextEdit'],['../class_dtk_1_1_widget_1_1_d_text_edit.html#aed2f0eba3d88939b54abde73b4f01402',1,'Dtk::Widget::DTextEdit::DTextEdit()']]],
   ['dthememanager',['DThemeManager',['../class_dtk_1_1_widget_1_1_d_theme_manager.html',1,'Dtk::Widget']]],
   ['dthemesettings',['DThemeSettings',['../class_d_theme_settings.html',1,'']]],
