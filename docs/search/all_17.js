@@ -84,7 +84,7 @@ var searchData=
   ['wizard',['wizard',['https://doc.qt.io/qt-5/qwizardpage.html#wizard',1,'QWizardPage']]],
   ['wizardoptions',['WizardOptions',['https://doc.qt.io/qt-5/qwizard.html#WizardOption-enum',1,'QWizard']]],
   ['wizardstyle',['wizardStyle',['https://doc.qt.io/qt-5/qwizard.html#wizardStyle-prop',1,'QWizard::wizardStyle()'],['https://doc.qt.io/qt-5/qwizard.html#wizardStyle-prop',1,'QWizard::wizardStyle() const const']]],
-  ['wmblurarea',['WMBlurArea',['../struct_d_window_handle_1_1_w_m_blur_area.html',1,'DWindowHandle::WMBlurArea'],['../struct_d_platform_handle_1_1_w_m_blur_area.html',1,'DPlatformHandle::WMBlurArea']]],
+  ['wmblurarea',['WMBlurArea',['../struct_d_platform_handle_1_1_w_m_blur_area.html',1,'DPlatformHandle::WMBlurArea'],['../struct_d_window_handle_1_1_w_m_blur_area.html',1,'DWindowHandle::WMBlurArea']]],
   ['wmclass',['wmClass',['../class_d_foreign_window.html#a30245bb9603e4ee6550fe30c7fc8020b',1,'DForeignWindow']]],
   ['wmclasschanged',['wmClassChanged',['../class_d_foreign_window.html#a728635fd59d5ec1e007b6d6064dd56d4',1,'DForeignWindow']]],
   ['wmname',['WMName',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a5e4ff57b986788b412a6fe703560d84c',1,'Dtk::Gui::DWindowManagerHelper']]],

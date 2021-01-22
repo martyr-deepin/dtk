@@ -1210,5 +1210,6 @@ var searchData=
   ['groupid',['groupId',['qthelp://org.qt-project.qtcore/qtcore/qfileinfo.html#groupId',1,'QFileInfo']]],
   ['groupleaderid',['groupLeaderId',['../class_dtk_1_1_gui_1_1_d_window_group_leader.html#a76357cd436ab64bc7be1165697a00175',1,'Dtk::Gui::DWindowGroupLeader']]],
   ['groupseparator',['groupSeparator',['qthelp://org.qt-project.qtcore/qtcore/qlocale.html#groupSeparator',1,'QLocale']]],
-  ['gsettingsbackend',['GSettingsBackend',['../class_dtk_1_1_core_1_1_g_settings_backend.html',1,'Dtk::Core']]]
+  ['gsettingsbackend',['GSettingsBackend',['../class_dtk_1_1_core_1_1_g_settings_backend.html',1,'Dtk::Core']]],
+  ['gts_5fdbuiltiniconengine',['gts_DBuiltinIconEngine',['../classgts___d_builtin_icon_engine.html',1,'']]]
 ];

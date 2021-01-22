@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"ddialog_8h_source.html":[9,0,2,0,2,44],
+"ddialogclosebutton_8cpp_source.html":[9,0,2,0,2,45],
+"ddialogclosebutton_8h_source.html":[9,0,2,0,2,46],
+"ddisksizeformatter_8cpp_source.html":[9,0,0,1,4,4],
 "ddisksizeformatter_8h_source.html":[9,0,0,1,4,5],
 "ddrawer_8cpp_source.html":[9,0,2,0,2,47],
 "ddrawer_8h_source.html":[9,0,2,0,2,48],
@@ -89,11 +93,13 @@ var NAVTREEINDEX16 =
 "dir_119aa013467e95cb00c6469cad12208b.html":[9,0,0,1],
 "dir_1695026d0b1107aa9928036efcac88cb.html":[9,0,2,0,1,0],
 "dir_182c8bcd1e93a68b86e68b17c9642c63.html":[9,0,3,2,0,0],
+"dir_27d4860def2e93a2474e25d784d1b297.html":[9,0,3,5,0,0],
 "dir_2a00c4d5b03017d49448c775b59ba35f.html":[9,0,0,1,0],
 "dir_2eab4e259854e04d6fcd2dabd98cbc9d.html":[9,0,3,3],
 "dir_4f03e41d0eb42ce3c4b7f498aafd122a.html":[9,0,1,2],
 "dir_502481673c8051154c4f50e7104985c6.html":[9,0,3,3,1,0],
 "dir_58ca322d76f475e77ce9b80acc3a7538.html":[9,0,3],
+"dir_59c9b25b79d5b7e6f671c476ef02a2f0.html":[9,0,3,5,0],
 "dir_6b567d37ea4de413f6895c8f6fd4ed74.html":[9,0,1,0],
 "dir_6c3d837d12de6918ecc70ece2c9d5940.html":[9,0,0],
 "dir_716b81ea0bbb2f2b5ce006df280c2578.html":[9,0,1,0,1],
@@ -107,6 +113,7 @@ var NAVTREEINDEX16 =
 "dir_98cc8ed4911ae68e1d58d26095143494.html":[9,0,1,1,0],
 "dir_a509d977e8d1d333b9dd2c9a77f5374d.html":[9,0,1,1,1],
 "dir_a9bb0758876d611e3df677ee8ca2e122.html":[9,0,0,1,2],
+"dir_af24b649a826d9a7b1a6137195fe6a31.html":[9,0,3,5],
 "dir_b0e3daf2e48b009436e14a8496ea4f30.html":[9,0,1,0,0],
 "dir_b139647a82957c914ec7834b2f76cfad.html":[9,0,0,1,3],
 "dir_b4de2eba49a1e5188d60eaa50dc8f2eb.html":[9,0,3,3,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX16 =
 "dstyleplugin_8cpp_source.html":[9,0,3,3,1,10],
 "dstyleplugin_8h_source.html":[9,0,3,3,1,11],
 "dsuggestbutton_8cpp_source.html":[9,0,2,0,2,149],
-"dsuggestbutton_8h_source.html":[9,0,2,0,2,150],
-"dsvgrenderer_8cpp_source.html":[9,0,1,1,25],
-"dsvgrenderer_8h_source.html":[9,0,1,1,26],
-"dswitchbutton_8cpp_source.html":[9,0,2,0,2,151],
-"dswitchbutton_8h_source.html":[9,0,2,0,2,152],
-"dswitchlineexpand_8cpp_source.html":[9,0,2,0,2,153],
-"dswitchlineexpand_8h_source.html":[9,0,2,0,2,154],
-"dsysinfo_8cpp_source.html":[9,0,0,1,9]
+"dsuggestbutton_8h_source.html":[9,0,2,0,2,150]
 };

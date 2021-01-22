@@ -541,11 +541,12 @@ var hierarchy =
       [ "DTest", "class_d_test.html", [
         [ "TDForeignWindow", "class_t_d_foreign_window.html", null ],
         [ "TDRegionMonitor", "class_t_d_region_monitor.html", null ]
-      ] ]
+      ] ],
+      [ "gts_DBuiltinIconEngine", "classgts___d_builtin_icon_engine.html", null ]
     ] ],
     [ "Dtk::Widget::DAbstractStackWidgetTransition::TransitionInfo", "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html", null ],
-    [ "DWindowHandle::WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],
+    [ "DWindowHandle::WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
     [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ],
     [ "ConanFile", null, [

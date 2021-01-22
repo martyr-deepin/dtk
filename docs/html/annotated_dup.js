@@ -279,6 +279,7 @@ var annotated_dup =
     [ "DWindowHandle", "class_d_window_handle.html", [
       [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ]
     ] ],
+    [ "gts_DBuiltinIconEngine", "classgts___d_builtin_icon_engine.html", "classgts___d_builtin_icon_engine" ],
     [ "ImageEntry", "class_image_entry.html", "class_image_entry" ],
     [ "MessageLabel", "class_message_label.html", "class_message_label" ],
     [ "NorwegianWoodStyle", "class_norwegian_wood_style.html", "class_norwegian_wood_style" ],

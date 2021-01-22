@@ -181,6 +181,10 @@ var NAVTREEINDEX15 =
 "classdstyle_1_1_style_private.html#ae9fb8899e9cfcee61309682e1cd2db12":[8,0,2,12,6],
 "classdstyle_1_1_style_private.html#af835f23cc7b6523fd50cfaadff7ae326":[8,0,2,12,11],
 "classes.html":[8,1],
+"classgts___d_builtin_icon_engine.html":[8,0,53],
+"classgts___d_builtin_icon_engine.html#a48c03d7cd6a148060aec155ab6d3dbe3":[8,0,53,2],
+"classgts___d_builtin_icon_engine.html#ae4f706bbd7f064ec8df296948a0dcd7e":[8,0,53,0],
+"classgts___d_builtin_icon_engine.html#af1be9e227c0a94787d7793967ac550b6":[8,0,53,1],
 "colorutils_8cpp_source.html":[9,0,3,3,1,2],
 "colorutils_8h_source.html":[9,0,3,3,1,3],
 "comboboxhelper_8cpp_source.html":[9,0,3,3,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "ddesktopservices_8h_source.html":[9,0,2,0,1,3],
 "ddesktopservices__linux_8cpp_source.html":[9,0,2,0,1,4],
 "ddesktopservices__win_8cpp_source.html":[9,0,2,0,1,5],
-"ddialog_8cpp_source.html":[9,0,2,0,2,43],
-"ddialog_8h_source.html":[9,0,2,0,2,44],
-"ddialogclosebutton_8cpp_source.html":[9,0,2,0,2,45],
-"ddialogclosebutton_8h_source.html":[9,0,2,0,2,46],
-"ddisksizeformatter_8cpp_source.html":[9,0,0,1,4,4]
+"ddialog_8cpp_source.html":[9,0,2,0,2,43]
 };
