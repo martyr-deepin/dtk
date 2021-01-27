@@ -185,6 +185,10 @@ var NAVTREEINDEX15 =
 "classgts___d_builtin_icon_engine.html#a48c03d7cd6a148060aec155ab6d3dbe3":[8,0,53,2],
 "classgts___d_builtin_icon_engine.html#ae4f706bbd7f064ec8df296948a0dcd7e":[8,0,53,0],
 "classgts___d_builtin_icon_engine.html#af1be9e227c0a94787d7793967ac550b6":[8,0,53,1],
+"classut___d_crumbedit.html":[8,0,71],
+"classut___d_crumbedit.html#a346a60534d9c42857ad2efdebe6a50c4":[8,0,71,0],
+"classut___d_crumbedit.html#a76d1235cbd93845ac16edda69b32de4c":[8,0,71,2],
+"classut___d_crumbedit.html#a8d8f72b765652777feaf642904948059":[8,0,71,1],
 "colorutils_8cpp_source.html":[9,0,3,3,1,2],
 "colorutils_8h_source.html":[9,0,3,3,1,3],
 "comboboxhelper_8cpp_source.html":[9,0,3,3,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "ddbussender_8cpp_source.html":[9,0,0,1,4,2],
 "ddbussender_8h_source.html":[9,0,0,1,4,3],
 "ddesktopentry_8cpp_source.html":[9,0,0,1,5],
-"ddesktopentry_8h_source.html":[9,0,0,1,6],
-"ddesktopservices_8h_source.html":[9,0,2,0,1,3],
-"ddesktopservices__linux_8cpp_source.html":[9,0,2,0,1,4],
-"ddesktopservices__win_8cpp_source.html":[9,0,2,0,1,5],
-"ddialog_8cpp_source.html":[9,0,2,0,2,43]
+"ddesktopentry_8h_source.html":[9,0,0,1,6]
 };

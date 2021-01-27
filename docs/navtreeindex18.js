@@ -1,5 +1,13 @@
 var NAVTREEINDEX18 =
 {
+"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#aaec04d7e22725f61c44ef34ffcc107ef":[8,0,3,2,12,0,2],
+"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#ab3bad126b552fd0d9c64e4b1ac457394":[8,0,3,2,12,0,0],
+"struct_dtk_1_1_widget_1_1_d_anchor_info.html":[8,0,3,2,14],
+"struct_dtk_1_1_widget_1_1_d_anchor_info.html#a161bd2c8f5d3c37f6fcfcf1aef070d2b":[8,0,3,2,14,7],
+"struct_dtk_1_1_widget_1_1_d_anchor_info.html#a204f623d54b3d9fe215047e8bd05d978":[8,0,3,2,14,5],
+"struct_dtk_1_1_widget_1_1_d_anchor_info.html#a36c5064fcfb5042897d60f484d29d1cf":[8,0,3,2,14,6],
+"struct_dtk_1_1_widget_1_1_d_anchor_info.html#a38751683dec34525d7f65fece6cef0cc":[8,0,3,2,14,2],
+"struct_dtk_1_1_widget_1_1_d_anchor_info.html#a602e764623397c57f6ee9734b19c5ea4":[8,0,3,2,14,3],
 "struct_dtk_1_1_widget_1_1_d_anchor_info.html#a60eb384db9f79894cc760006d87c6809":[8,0,3,2,14,1],
 "struct_dtk_1_1_widget_1_1_d_anchor_info.html#a67c1be57f5dfbfa82852d8d3c863984e":[8,0,3,2,14,4],
 "struct_dtk_1_1_widget_1_1_d_anchor_info.html#aef3e2e7efd7da40fdb1f1cd37231e994":[8,0,3,2,14,8],
@@ -37,7 +45,8 @@ var NAVTREEINDEX18 =
 "testtaskbarwindow_8cpp_source.html":[9,0,1,0,1,1],
 "testtaskbarwindow_8h_source.html":[9,0,1,0,1,2],
 "toolbuttonhelper_8cpp_source.html":[9,0,3,3,1,34],
-"translate__generation_8py_source.html":[9,0,2,1,1],
+"translate__generation_8py_source.html":[9,0,2,2,1],
+"ut__dcrumbedit_8cpp_source.html":[9,0,2,1,0,0,0],
 "widgetgallery_8cpp_source.html":[9,0,3,4,3],
 "widgetgallery_8h_source.html":[9,0,3,4,4],
 "xdgiconenginecreator_8cpp_source.html":[9,0,3,2,12],

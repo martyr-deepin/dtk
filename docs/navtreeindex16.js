@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"ddesktopservices_8h_source.html":[9,0,2,0,1,3],
+"ddesktopservices__linux_8cpp_source.html":[9,0,2,0,1,4],
+"ddesktopservices__win_8cpp_source.html":[9,0,2,0,1,5],
+"ddialog_8cpp_source.html":[9,0,2,0,2,43],
 "ddialog_8h_source.html":[9,0,2,0,2,44],
 "ddialogclosebutton_8cpp_source.html":[9,0,2,0,2,45],
 "ddialogclosebutton_8h_source.html":[9,0,2,0,2,46],
@@ -93,6 +97,7 @@ var NAVTREEINDEX16 =
 "dir_119aa013467e95cb00c6469cad12208b.html":[9,0,0,1],
 "dir_1695026d0b1107aa9928036efcac88cb.html":[9,0,2,0,1,0],
 "dir_182c8bcd1e93a68b86e68b17c9642c63.html":[9,0,3,2,0,0],
+"dir_189c196c447152f2b23ff204ac28b623.html":[9,0,2,1,0],
 "dir_27d4860def2e93a2474e25d784d1b297.html":[9,0,3,5,0,0],
 "dir_2a00c4d5b03017d49448c775b59ba35f.html":[9,0,0,1,0],
 "dir_2eab4e259854e04d6fcd2dabd98cbc9d.html":[9,0,3,3],
@@ -102,6 +107,7 @@ var NAVTREEINDEX16 =
 "dir_59c9b25b79d5b7e6f671c476ef02a2f0.html":[9,0,3,5,0],
 "dir_6b567d37ea4de413f6895c8f6fd4ed74.html":[9,0,1,0],
 "dir_6c3d837d12de6918ecc70ece2c9d5940.html":[9,0,0],
+"dir_6d42238da55b18d30a403437e70e5f73.html":[9,0,2,1],
 "dir_716b81ea0bbb2f2b5ce006df280c2578.html":[9,0,1,0,1],
 "dir_7739ec6db0f7d01c5fa4df95c0ce81e7.html":[9,0,0,0,0],
 "dir_77474abd41b8801861bc7c803b01b5b3.html":[9,0,2,0,0],
@@ -120,8 +126,8 @@ var NAVTREEINDEX16 =
 "dir_b87fef839dba3b172c02955ae9c2cc64.html":[9,0,2,0,0,1],
 "dir_b8872996a44d710ace42cbc91e1e4783.html":[9,0,3,0,1],
 "dir_ba0f17975f12cf1a7a93c6a6151906c1.html":[9,0,3,0],
-"dir_bdc4175a707434874882fd858300c898.html":[9,0,2,1,0],
-"dir_bf597f11280394566ebcdf8105d8100f.html":[9,0,2,1],
+"dir_bdc4175a707434874882fd858300c898.html":[9,0,2,2,0],
+"dir_bf597f11280394566ebcdf8105d8100f.html":[9,0,2,2],
 "dir_bfcc2924d9a617cdd740b840cee9d9a3.html":[9,0,2,0,1],
 "dir_c143c85c7a1492fba24ed3201ee58289.html":[9,0,0,1,4],
 "dir_c6c8f46bb849882a45dd6db91031d50f.html":[9,0,1,2,0],
@@ -129,6 +135,7 @@ var NAVTREEINDEX16 =
 "dir_c9b496b139dcbcfd58823254bb54ac23.html":[9,0,2,0,0,0],
 "dir_cc1fdbae730d0dba18db2b924667b662.html":[9,0,2],
 "dir_d443476bac52ff9ed93bc687830a8f72.html":[9,0,3,2],
+"dir_d4c4b735ca87a4d160bfe6f865c74698.html":[9,0,2,1,0,0],
 "dir_db12b31616d527d6ca3a61455d8b1909.html":[9,0,3,4],
 "dir_ed6ce2ef189a51b785b617ef2d862230.html":[9,0,0,0],
 "dir_f1a11d12171d66e86c8e928f2778dd27.html":[9,0,1,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX16 =
 "dstyleanimation_8cpp_source.html":[9,0,3,3,1,8],
 "dstyleanimation_8h_source.html":[9,0,3,3,1,9],
 "dstyleditemdelegate_8cpp_source.html":[9,0,2,0,2,145],
-"dstyleditemdelegate_8h_source.html":[9,0,2,0,2,146],
-"dstyleoption_8cpp_source.html":[9,0,2,0,2,147],
-"dstyleoption_8h_source.html":[9,0,2,0,2,148],
-"dstyleplugin_2common_8h_source.html":[9,0,3,3,1,5],
-"dstyleplugin_8cpp_source.html":[9,0,3,3,1,10],
-"dstyleplugin_8h_source.html":[9,0,3,3,1,11],
-"dsuggestbutton_8cpp_source.html":[9,0,2,0,2,149],
-"dsuggestbutton_8h_source.html":[9,0,2,0,2,150]
+"dstyleditemdelegate_8h_source.html":[9,0,2,0,2,146]
 };

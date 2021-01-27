@@ -297,6 +297,7 @@ var annotated_dup =
     [ "TDForeignWindow", "class_t_d_foreign_window.html", "class_t_d_foreign_window" ],
     [ "TDRegionMonitor", "class_t_d_region_monitor.html", "class_t_d_region_monitor" ],
     [ "TestTaskbarWindow", "class_test_taskbar_window.html", "class_test_taskbar_window" ],
+    [ "ut_DCrumbedit", "classut___d_crumbedit.html", "classut___d_crumbedit" ],
     [ "WidgetGallery", "class_widget_gallery.html", "class_widget_gallery" ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
     [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ]
