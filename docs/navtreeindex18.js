@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#a290fd22d753f138fd1e510d8b5340a89":[8,0,3,2,12,0,1],
 "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#aaec04d7e22725f61c44ef34ffcc107ef":[8,0,3,2,12,0,2],
 "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#ab3bad126b552fd0d9c64e4b1ac457394":[8,0,3,2,12,0,0],
 "struct_dtk_1_1_widget_1_1_d_anchor_info.html":[8,0,3,2,14],

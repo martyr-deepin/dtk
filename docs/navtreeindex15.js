@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classdstyle_1_1_d_scrollbar_style_animation.html#aabe8b1048d7c5dccdb6db30ca9abaad4":[8,0,2,6,4],
 "classdstyle_1_1_d_scrollbar_style_animation.html#ab8248fd0630046356faf0b2332e05de1":[8,0,2,6,2],
 "classdstyle_1_1_d_scrollbar_style_animation.html#adf167a7446651b43bb73060422015d0e":[8,0,2,6,3],
 "classdstyle_1_1_d_scrollbar_style_animation.html#ae424e305656109c2bad9d48243ae1ce0":[8,0,2,6,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "dcrumbedit_8h_source.html":[9,0,2,0,2,42],
 "ddbussender_8cpp_source.html":[9,0,0,1,4,2],
 "ddbussender_8h_source.html":[9,0,0,1,4,3],
-"ddesktopentry_8cpp_source.html":[9,0,0,1,5],
-"ddesktopentry_8h_source.html":[9,0,0,1,6]
+"ddesktopentry_8cpp_source.html":[9,0,0,1,5]
 };

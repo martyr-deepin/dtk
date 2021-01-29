@@ -49,10 +49,10 @@ var NAVTREEINDEX =
 "class_dtk_1_1_widget_1_1_d_style.html#ab36c3dbccfe568b6f98c97eeb33bfe5f",
 "class_dtk_1_1_widget_1_1_d_tab_bar.html#ab6d3b19e5c3d790a06a0a1c6be5b1f83",
 "class_dtk_1_1_widget_1_1_d_window_option_button.html#a089109bdf137c0cc395b0711a3c2d4b0",
-"classdstyle_1_1_d_scrollbar_style_animation.html#ab8248fd0630046356faf0b2332e05de1",
-"ddesktopservices_8h_source.html",
-"dstyleoption_8cpp_source.html",
-"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#aaec04d7e22725f61c44ef34ffcc107ef"
+"classdstyle_1_1_d_scrollbar_style_animation.html#aabe8b1048d7c5dccdb6db30ca9abaad4",
+"ddesktopentry_8h_source.html",
+"dstyleditemdelegate_8h_source.html",
+"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#a290fd22d753f138fd1e510d8b5340a89"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

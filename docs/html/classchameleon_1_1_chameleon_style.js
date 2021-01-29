@@ -5,6 +5,7 @@ var classchameleon_1_1_chameleon_style =
     [ "animation", "classchameleon_1_1_chameleon_style.html#aaad2715d52c701d24cf4fb9004ec7e77", null ],
     [ "drawComplexControl", "classchameleon_1_1_chameleon_style.html#afc7a6648f99ed507cc6d5569008fb9d3", null ],
     [ "drawControl", "classchameleon_1_1_chameleon_style.html#a64e6a9bfa28a2b1a84e5dfac866e0a38", null ],
+    [ "drawMenuItemRedPoint", "classchameleon_1_1_chameleon_style.html#a70d492c41a073b463c790c1db781731c", null ],
     [ "drawPrimitive", "classchameleon_1_1_chameleon_style.html#a80a741c86187a8be45c08c789b3edc54", null ],
     [ "generatedBrush", "classchameleon_1_1_chameleon_style.html#a850475280751a8526921f1f1faad3eba", null ],
     [ "generatedBrush", "classchameleon_1_1_chameleon_style.html#a93393771090f76ca9a5315413a648de3", null ],

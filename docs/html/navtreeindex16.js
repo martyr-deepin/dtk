@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"ddesktopentry_8h_source.html":[9,0,0,1,6],
 "ddesktopservices_8h_source.html":[9,0,2,0,1,3],
 "ddesktopservices__linux_8cpp_source.html":[9,0,2,0,1,4],
 "ddesktopservices__win_8cpp_source.html":[9,0,2,0,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "dstyle_8h_source.html":[9,0,2,0,2,144],
 "dstyleanimation_8cpp_source.html":[9,0,3,3,1,8],
 "dstyleanimation_8h_source.html":[9,0,3,3,1,9],
-"dstyleditemdelegate_8cpp_source.html":[9,0,2,0,2,145],
-"dstyleditemdelegate_8h_source.html":[9,0,2,0,2,146]
+"dstyleditemdelegate_8cpp_source.html":[9,0,2,0,2,145]
 };

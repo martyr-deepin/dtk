@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"dstyleditemdelegate_8h_source.html":[9,0,2,0,2,146],
 "dstyleoption_8cpp_source.html":[9,0,2,0,2,147],
 "dstyleoption_8h_source.html":[9,0,2,0,2,148],
 "dstyleplugin_2common_8h_source.html":[9,0,3,3,1,5],
@@ -100,8 +101,8 @@ var NAVTREEINDEX17 =
 "dx11window_8h_source.html":[9,0,2,0,2,192],
 "files.html":[9,0],
 "framehelper_8cpp_source.html":[9,0,3,3,1,12],
-"functions.html":[8,3,0,0],
 "functions.html":[8,3,0],
+"functions.html":[8,3,0,0],
 "functions_0x7e.html":[8,3,0,25],
 "functions_b.html":[8,3,0,1],
 "functions_c.html":[8,3,0,2],
@@ -169,8 +170,8 @@ var NAVTREEINDEX17 =
 "hidpihelper_8cpp_source.html":[9,0,3,3,1,16],
 "hidpihelper_8h_source.html":[9,0,3,3,1,17],
 "hierarchy.html":[8,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "lineedithelper_8cpp_source.html":[9,0,3,3,1,18],
 "md_dtkcore__c_h_a_n_g_e_l_o_g.html":[2],
 "md_dtkcore_src_log__r_e_a_d_m_e.html":[4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4.html":[8,0,3,0,31,4],
 "struct_dtk_1_1_core_1_1_d_vtable_hook_1_1_function_pointer_3_01_ret_07_obj_1_1_5_08_07_args_8_8_8_08_4.html#ac9fd60f6365a275d4be2b2c802386f32":[8,0,3,0,31,4,0],
 "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html":[8,0,3,2,12,0],
-"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#a0f1604638ee58a556dba866ab34a4946":[8,0,3,2,12,0,3],
-"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#a290fd22d753f138fd1e510d8b5340a89":[8,0,3,2,12,0,1]
+"struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html#a0f1604638ee58a556dba866ab34a4946":[8,0,3,2,12,0,3]
 };
