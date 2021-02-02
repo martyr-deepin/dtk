@@ -117,7 +117,9 @@ var searchData=
   ['usesscrollbuttons',['usesScrollButtons',['https://doc.qt.io/qt-5/qtabbar.html#usesScrollButtons-prop',1,'QTabBar::usesScrollButtons()'],['https://doc.qt.io/qt-5/qtabwidget.html#usesScrollButtons-prop',1,'QTabWidget::usesScrollButtons()'],['https://doc.qt.io/qt-5/qtabbar.html#usesScrollButtons-prop',1,'QTabBar::usesScrollButtons()'],['https://doc.qt.io/qt-5/qtabwidget.html#usesScrollButtons-prop',1,'QTabWidget::usesScrollButtons()']]],
   ['usewidgetbackground',['useWidgetBackground',['../class_dtk_1_1_widget_1_1_d_background_group.html#abc80654ed2411a4a02084e4adc5bb56c',1,'Dtk::Widget::DBackgroundGroup']]],
   ['usleep',['usleep',['https://doc.qt.io/qt-5/qthread.html#usleep',1,'QThread']]],
+  ['ut_5fdbuiltiniconengine',['ut_DBuiltinIconEngine',['../classut___d_builtin_icon_engine.html',1,'']]],
   ['ut_5fdcrumbedit',['ut_DCrumbedit',['../classut___d_crumbedit.html',1,'']]],
+  ['ut_5fqsvgiconengine',['ut_QSvgIconEngine',['../classut___q_svg_icon_engine.html',1,'']]],
   ['utc',['utc',['https://doc.qt.io/qt-5/qtimezone.html#utc',1,'QTimeZone']]],
   ['utf16',['utf16',['https://doc.qt.io/qt-5/qstringview.html#utf16',1,'QStringView::utf16()'],['https://doc.qt.io/qt-5/qstring.html#utf16',1,'QString::utf16()']]]
 ];

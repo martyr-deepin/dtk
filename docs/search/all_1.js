@@ -133,6 +133,7 @@ var searchData=
   ['addpause',['addPause',['https://doc.qt.io/qt-5/qsequentialanimationgroup.html#addPause',1,'QSequentialAnimationGroup']]],
   ['addpermanentwidget',['addPermanentWidget',['https://doc.qt.io/qt-5/qstatusbar.html#addPermanentWidget',1,'QStatusBar']]],
   ['addpixmap',['addPixmap',['https://doc.qt.io/qt-5/qicon.html#addPixmap',1,'QIcon::addPixmap()'],['https://doc.qt.io/qt-5/qiconengine.html#addPixmap',1,'QIconEngine::addPixmap()'],['https://doc.qt.io/qt-5/qgraphicsscene.html#addPixmap',1,'QGraphicsScene::addPixmap()']]],
+  ['addpixmapparamtest',['AddPixmapParamTest',['../class_add_pixmap_param_test.html',1,'']]],
   ['addpolygon',['addPolygon',['https://doc.qt.io/qt-5/qpainterpath.html#addPolygon',1,'QPainterPath::addPolygon()'],['https://doc.qt.io/qt-5/qgraphicsscene.html#addPolygon',1,'QGraphicsScene::addPolygon()']]],
   ['addpositionalargument',['addPositionalArgument',['https://doc.qt.io/qt-5/qcommandlineparser.html#addPositionalArgument',1,'QCommandLineParser']]],
   ['addqueryitem',['addQueryItem',['https://doc.qt.io/qt-5/qurl-obsolete.html#addQueryItem',1,'QUrl::addQueryItem()'],['https://doc.qt.io/qt-5/qurlquery.html#addQueryItem',1,'QUrlQuery::addQueryItem()']]],

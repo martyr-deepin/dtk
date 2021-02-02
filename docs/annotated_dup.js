@@ -227,6 +227,7 @@ var annotated_dup =
       ] ]
     ] ],
     [ "_DGuiApplicationHelper", "class___d_gui_application_helper.html", "class___d_gui_application_helper" ],
+    [ "AddPixmapParamTest", "class_add_pixmap_param_test.html", "class_add_pixmap_param_test" ],
     [ "AutoScaleWindowObject", "class_auto_scale_window_object.html", "class_auto_scale_window_object" ],
     [ "ChameleonStylePlugin", "class_chameleon_style_plugin.html", "class_chameleon_style_plugin" ],
     [ "CreatorWindowEventFile", "class_creator_window_event_file.html", "class_creator_window_event_file" ],
@@ -279,7 +280,6 @@ var annotated_dup =
     [ "DWindowHandle", "class_d_window_handle.html", [
       [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ]
     ] ],
-    [ "gts_DBuiltinIconEngine", "classgts___d_builtin_icon_engine.html", "classgts___d_builtin_icon_engine" ],
     [ "ImageEntry", "class_image_entry.html", "class_image_entry" ],
     [ "MessageLabel", "class_message_label.html", "class_message_label" ],
     [ "NorwegianWoodStyle", "class_norwegian_wood_style.html", "class_norwegian_wood_style" ],
@@ -296,8 +296,11 @@ var annotated_dup =
     [ "RSvg", "class_r_svg.html", "class_r_svg" ],
     [ "TDForeignWindow", "class_t_d_foreign_window.html", "class_t_d_foreign_window" ],
     [ "TDRegionMonitor", "class_t_d_region_monitor.html", "class_t_d_region_monitor" ],
+    [ "TestPixmapType_Param", "struct_test_pixmap_type___param.html", "struct_test_pixmap_type___param" ],
     [ "TestTaskbarWindow", "class_test_taskbar_window.html", "class_test_taskbar_window" ],
+    [ "ut_DBuiltinIconEngine", "classut___d_builtin_icon_engine.html", "classut___d_builtin_icon_engine" ],
     [ "ut_DCrumbedit", "classut___d_crumbedit.html", "classut___d_crumbedit" ],
+    [ "ut_QSvgIconEngine", "classut___q_svg_icon_engine.html", "classut___q_svg_icon_engine" ],
     [ "WidgetGallery", "class_widget_gallery.html", "class_widget_gallery" ],
     [ "XdgIconEngineCreator", "class_xdg_icon_engine_creator.html", null ],
     [ "一个继承于", "class_xE4_xB8_x80_xE4_xB8_xAA_xE7_xBB_xA7_xE6_x89_xBF_xE4_xBA_x8E.html", null ]

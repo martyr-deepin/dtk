@@ -1,3 +1,4 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_d_circle_progress.html" title="可以使用 DCircleProgress 类快速创建环形进度条控件。 " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node1" href="$class_d_base_expand.html" title="一个美观的可展开的控件 " alt="" coords="5,13,112,39"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_switch_line_expand.html" title="DSwitchLineExpand 类提供了一种通过开关按钮来展开/合上显示内容的控件。 控件由标题栏和内容两部分组成，� ..." alt="" coords="160,5,335,47"/>
 </map>

@@ -1,5 +1,14 @@
 var NAVTREEINDEX16 =
 {
+"dcoloredprogressbar_8h_source.html":[9,0,2,0,2,37],
+"dcommandlinkbutton_8cpp_source.html":[9,0,2,0,2,38],
+"dcommandlinkbutton_8h_source.html":[9,0,2,0,2,39],
+"dconstants_8h_source.html":[9,0,2,0,2,40],
+"dcrumbedit_8cpp_source.html":[9,0,2,0,2,41],
+"dcrumbedit_8h_source.html":[9,0,2,0,2,42],
+"ddbussender_8cpp_source.html":[9,0,0,1,4,2],
+"ddbussender_8h_source.html":[9,0,0,1,4,3],
+"ddesktopentry_8cpp_source.html":[9,0,0,1,5],
 "ddesktopentry_8h_source.html":[9,0,0,1,6],
 "ddesktopservices_8h_source.html":[9,0,2,0,1,3],
 "ddesktopservices__linux_8cpp_source.html":[9,0,2,0,1,4],
@@ -135,6 +144,7 @@ var NAVTREEINDEX16 =
 "dir_c97b3c6be639bc644276f99c6efd0e75.html":[9,0,3,2,0],
 "dir_c9b496b139dcbcfd58823254bb54ac23.html":[9,0,2,0,0,0],
 "dir_cc1fdbae730d0dba18db2b924667b662.html":[9,0,2],
+"dir_d16ffd0d593a732b16ad817b601a2b6a.html":[9,0,3,5,0,1],
 "dir_d443476bac52ff9ed93bc687830a8f72.html":[9,0,3,2],
 "dir_d4c4b735ca87a4d160bfe6f865c74698.html":[9,0,2,1,0,0],
 "dir_db12b31616d527d6ca3a61455d8b1909.html":[9,0,3,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX16 =
 "dslider_8h_source.html":[9,0,2,0,2,136],
 "dspinbox_8cpp_source.html":[9,0,2,0,2,137],
 "dspinbox_8h_source.html":[9,0,2,0,2,138],
-"dspinner_8cpp_source.html":[9,0,2,0,2,139],
-"dspinner_8h_source.html":[9,0,2,0,2,140],
-"dstackwidget_8cpp_source.html":[9,0,2,0,2,141],
-"dstackwidget_8h_source.html":[9,0,2,0,2,142],
-"dstandardpaths_8cpp_source.html":[9,0,0,1,1,13],
-"dstandardpaths_8h_source.html":[9,0,0,1,1,14],
-"dstyle_8cpp_source.html":[9,0,2,0,2,143],
-"dstyle_8h_source.html":[9,0,2,0,2,144],
-"dstyleanimation_8cpp_source.html":[9,0,3,3,1,8],
-"dstyleanimation_8h_source.html":[9,0,3,3,1,9],
-"dstyleditemdelegate_8cpp_source.html":[9,0,2,0,2,145]
+"dspinner_8cpp_source.html":[9,0,2,0,2,139]
 };

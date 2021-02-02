@@ -1,5 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html":[8,0,3,0,0,2],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html#ab90f5e9fff4db476c6e6fac59da9e772":[8,0,3,0,0,2,0],
+"class_dtk_1_1_core_1_1_d_thread_util_1_1_function_call_proxy.html#af5b6ae142970018f1b8da16cfb9c7a08":[8,0,3,0,0,2,1],
+"class_dtk_1_1_core_1_1_d_time_unit_formatter.html":[8,0,3,0,28],
 "class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a20b6b3eb04f8d9aa6b2f8172503ad0d7":[8,0,3,0,28,4],
 "class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a387ca08a4bf863c34b449e9dfa97ee34":[8,0,3,0,28,1],
 "class_dtk_1_1_core_1_1_d_time_unit_formatter.html#a3ed1baa52d1c0e06aef7c6f0ba75f9c4":[8,0,3,0,28,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#af275c0cc7ad35ef17d26af83b2fa170b":[8,0,3,2,10,1],
 "class_dtk_1_1_widget_1_1_d_about_dialog.html#afada5731af21e45e68248d1559e78618":[8,0,3,2,10,28],
 "class_dtk_1_1_widget_1_1_d_abstract_dialog.html":[8,0,3,2,11],
-"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1048601db223c55cfe12b32e930614f1":[8,0,3,2,11,16],
-"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a14c949a10e66c1b5185e1a33edb3e881":[8,0,3,2,11,8],
-"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a15c6d929333861e4697ac805552d1a3e":[8,0,3,2,11,7],
-"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1e4db65686b5fd549b2860b76aa3efc9":[8,0,3,2,11,0],
-"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1e4db65686b5fd549b2860b76aa3efc9a8841945e5e3cc751555db103240502b9":[8,0,3,2,11,0,1]
+"class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1048601db223c55cfe12b32e930614f1":[8,0,3,2,11,16]
 };
