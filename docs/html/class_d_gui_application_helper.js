@@ -1,6 +1,16 @@
 var class_d_gui_application_helper =
 [
     [ "HelperCreator", "class_d_gui_application_helper.html#a34295c664d3777c5db32da78230b8633", null ],
+    [ "Attribute", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155c", [
+      [ "UseInactiveColorGroup", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca6ef947b8f982bc3912751384a3853606", null ],
+      [ "ColorCompositing", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155caddf846ef3db4517b0094d01868827228", null ],
+      [ "ReadOnlyLimit", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155caf529e06c7fcc1cfd0b68c5347bbd3216", null ],
+      [ "IsDeepinPlatformTheme", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca05221c281d49cc0c20c5247d116caf8a", null ],
+      [ "IsDXcbPlatform", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155cad896e78a191f46c6bc3acbb727154158", null ],
+      [ "IsXWindowPlatform", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca12ff8157330c34c77fa8e821dab09f06", null ],
+      [ "IsTableEnvironment", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca84b17944978444b12143e80760ebeb55", null ],
+      [ "IsDeepinEnvironment", "class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca51c8ff02a8c31fd97f5961dab905b8e3", null ]
+    ] ],
     [ "ColorType", "class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92", [
       [ "UnknownType", "class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92a5a23f6466a2a2c66f851885246f55e34", null ],
       [ "LightType", "class_d_gui_application_helper.html#aded1affde49f3af542f861eedbd32d92a74bd6a4e0b13ecc7b647900ae6cce664", null ],
@@ -23,6 +33,8 @@ var class_d_gui_application_helper =
     [ "newProcessInstance", "class_d_gui_application_helper.html#ab94fab6c42b86328baffcbb7bb3de0ad", null ],
     [ "paletteType", "class_d_gui_application_helper.html#a5430a4b1c138cb5866ad47c57672e12d", null ],
     [ "paletteTypeChanged", "class_d_gui_application_helper.html#a61a5461116062dda13aeab58a38c06f6", null ],
+    [ "Q_DECL_DEPRECATED_X", "class_d_gui_application_helper.html#a90eac54fb52415171b1ebb1a2ca6277b", null ],
+    [ "Q_DECL_DEPRECATED_X", "class_d_gui_application_helper.html#a3f338b12ac5bd57753d3087424038364", null ],
     [ "setApplicationPalette", "class_d_gui_application_helper.html#a88d71049a24d357f21a3fcf01575c48c", null ],
     [ "setPaletteType", "class_d_gui_application_helper.html#a9a100f0f248307b7cc2df722a8aff68e", null ],
     [ "systemTheme", "class_d_gui_application_helper.html#a54696b5f532a5deaad028efdf4069fa1", null ],

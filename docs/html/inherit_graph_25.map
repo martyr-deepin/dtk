@@ -1,8 +1,9 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node2" href="$class_d_test.html" title="DTest" alt="" coords="147,31,206,57"/>
-<area shape="rect" id="node5" href="$classut___d_builtin_icon_engine.html" title="ut_DBuiltinIconEngine" alt="" coords="101,81,252,108"/>
-<area shape="rect" id="node6" href="$classut___d_crumbedit.html" title="ut_DCrumbedit" alt="" coords="121,132,232,159"/>
-<area shape="rect" id="node7" href="$classut___q_svg_icon_engine.html" title="ut_QSvgIconEngine" alt="" coords="107,183,246,209"/>
-<area shape="rect" id="node3" href="$class_t_d_foreign_window.html" title="TDForeignWindow" alt="" coords="300,5,431,32"/>
-<area shape="rect" id="node4" href="$class_t_d_region_monitor.html" title="TDRegionMonitor" alt="" coords="303,56,427,83"/>
+<area shape="rect" id="node2" href="$class_d_test.html" title="DTest" alt="" coords="147,56,206,83"/>
+<area shape="rect" id="node6" href="$classut___d_builtin_icon_engine.html" title="ut_DBuiltinIconEngine" alt="" coords="101,107,252,133"/>
+<area shape="rect" id="node7" href="$classut___d_crumbedit.html" title="ut_DCrumbedit" alt="" coords="121,157,232,184"/>
+<area shape="rect" id="node8" href="$classut___q_svg_icon_engine.html" title="ut_QSvgIconEngine" alt="" coords="107,208,246,235"/>
+<area shape="rect" id="node3" href="$class_t_d_foreign_window.html" title="TDForeignWindow" alt="" coords="316,5,447,32"/>
+<area shape="rect" id="node4" href="$class_t_d_gui_application_helper.html" title="TDGuiApplicationHelper" alt="" coords="300,56,463,83"/>
+<area shape="rect" id="node5" href="$class_t_d_region_monitor.html" title="TDRegionMonitor" alt="" coords="319,107,443,133"/>
 </map>

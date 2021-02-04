@@ -540,6 +540,7 @@ var hierarchy =
     [ "Test", null, [
       [ "DTest", "class_d_test.html", [
         [ "TDForeignWindow", "class_t_d_foreign_window.html", null ],
+        [ "TDGuiApplicationHelper", "class_t_d_gui_application_helper.html", null ],
         [ "TDRegionMonitor", "class_t_d_region_monitor.html", null ]
       ] ],
       [ "ut_DBuiltinIconEngine", "classut___d_builtin_icon_engine.html", null ],

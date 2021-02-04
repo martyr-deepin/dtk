@@ -1,5 +1,16 @@
 var NAVTREEINDEX8 =
 {
+"class_dtk_1_1_widget_1_1_d_file_dialog.html#a6996cf97765a61e9bef2a6cad4988589":[8,0,3,2,44,9],
+"class_dtk_1_1_widget_1_1_d_file_dialog.html#a839ccef5f8f66e6a0f6e357ac3e1bb9e":[8,0,3,2,44,5],
+"class_dtk_1_1_widget_1_1_d_file_dialog.html#ad98d311f59a02325aed3c06fcf7e65dc":[8,0,3,2,44,4],
+"class_dtk_1_1_widget_1_1_d_file_dialog.html#af91aa106be8caf503f79bb29b4e63d95":[8,0,3,2,44,10],
+"class_dtk_1_1_widget_1_1_d_file_dialog.html#afca97ac52fe1d6cac3717e05a338e45e":[8,0,3,2,44,11],
+"class_dtk_1_1_widget_1_1_d_file_icon_provider.html":[8,0,3,2,45],
+"class_dtk_1_1_widget_1_1_d_file_icon_provider.html#a4a9feec290f5c95ffcb0ddbe4cf19cfc":[8,0,3,2,45,1],
+"class_dtk_1_1_widget_1_1_d_file_icon_provider.html#a7f243d5684ba8013c4c68d11f52124d8":[8,0,3,2,45,0],
+"class_dtk_1_1_widget_1_1_d_file_icon_provider.html#ab0e4969f7089e19edd904fb7483cf33f":[8,0,3,2,45,2],
+"class_dtk_1_1_widget_1_1_d_file_icon_provider.html#adfbaa6e482372c6c9d8bf9a9fa7b533d":[8,0,3,2,45,3],
+"class_dtk_1_1_widget_1_1_d_floating_button.html":[8,0,3,2,46],
 "class_dtk_1_1_widget_1_1_d_floating_button.html#a297068b449dea2fe813afa1927a8b6b9":[8,0,3,2,46,0],
 "class_dtk_1_1_widget_1_1_d_floating_button.html#a35e090681ab07f6b7c2b66a923601d2b":[8,0,3,2,46,3],
 "class_dtk_1_1_widget_1_1_d_floating_button.html#a465644a0f5cfa95472aaec9793c77b7b":[8,0,3,2,46,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX8 =
 "class_dtk_1_1_widget_1_1_d_input_dialog.html#aee1888919b23ea6b3e2e869ae19de806":[8,0,3,2,59,59],
 "class_dtk_1_1_widget_1_1_d_input_dialog.html#aee9cd90c3e59d26b541c5710aea8af4f":[8,0,3,2,59,11],
 "class_dtk_1_1_widget_1_1_d_input_dialog.html#af1b643f7d4406322d6ed12216a5ac336":[8,0,3,2,59,55],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#af2f6dbc00c93bebe9a059b1ecdc97cae":[8,0,3,2,59,64],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afb12bcb8b68828cfa6cbf250714062c0":[8,0,3,2,59,16],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afd16fab97c3e2895b51801c612e7d970":[8,0,3,2,59,50],
-"class_dtk_1_1_widget_1_1_d_input_dialog.html#afd27494f22261926da66d9d05a9e4cbb":[8,0,3,2,59,34],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html":[8,0,3,2,60],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a28b3d282dfd98c3ea180243aa2ab45ed":[8,0,3,2,60,10],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a2da480fd5722ae56deab7451189c5b5b":[8,0,3,2,60,4],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a352292f034d609a9fe160dddce7378bc":[8,0,3,2,60,12],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a3e2eab48098b48223775cd2f8d1b5e61":[8,0,3,2,60,13],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a4cd39e0b925a941e40c86eedd5cc86f8":[8,0,3,2,60,19],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a573b797324b14083929dbbb8a629adb8":[8,0,3,2,60,15],
-"class_dtk_1_1_widget_1_1_d_ipv4_line_edit.html#a5b4e708a45739a3c91bf52d1dbae87bd":[8,0,3,2,60,3]
+"class_dtk_1_1_widget_1_1_d_input_dialog.html#af2f6dbc00c93bebe9a059b1ecdc97cae":[8,0,3,2,59,64]
 };

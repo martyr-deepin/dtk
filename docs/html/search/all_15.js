@@ -105,6 +105,7 @@ var searchData=
   ['usedesignmetrics',['useDesignMetrics',['qthelp://org.qt-project.qtgui/qtgui/qtextdocument.html#useDesignMetrics-prop',1,'QTextDocument::useDesignMetrics()'],['qthelp://org.qt-project.qtgui/qtgui/qtextoption.html#useDesignMetrics',1,'QTextOption::useDesignMetrics()'],['qthelp://org.qt-project.qtgui/qtgui/qtextdocument.html#useDesignMetrics-prop',1,'QTextDocument::useDesignMetrics()']]],
   ['usehovereffects',['useHoverEffects',['qthelp://org.qt-project.qtgui/qtgui/qstylehints.html#useHoverEffects-prop',1,'QStyleHints::useHoverEffects()'],['qthelp://org.qt-project.qtgui/qtgui/qstylehints.html#useHoverEffects-prop',1,'QStyleHints::useHoverEffects() const const']]],
   ['usehovereffectschanged',['useHoverEffectsChanged',['qthelp://org.qt-project.qtgui/qtgui/qstylehints.html#useHoverEffects-prop',1,'QStyleHints']]],
+  ['useinactivecolorgroup',['UseInactiveColorGroup',['../class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca6ef947b8f982bc3912751384a3853606',1,'DGuiApplicationHelper']]],
   ['userdata',['userData',['qthelp://org.qt-project.qtgui/qtgui/qtextblock.html#userData',1,'QTextBlock']]],
   ['userinfo',['userInfo',['qthelp://org.qt-project.qtcore/qtcore/qurl.html#userInfo',1,'QUrl']]],
   ['userinputresolutionoptions',['UserInputResolutionOptions',['qthelp://org.qt-project.qtcore/qtcore/qurl.html#UserInputResolutionOption-enum',1,'QUrl']]],

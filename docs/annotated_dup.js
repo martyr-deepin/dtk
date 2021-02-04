@@ -295,6 +295,7 @@ var annotated_dup =
     [ "QSvgPlugin", "class_q_svg_plugin.html", "class_q_svg_plugin" ],
     [ "RSvg", "class_r_svg.html", "class_r_svg" ],
     [ "TDForeignWindow", "class_t_d_foreign_window.html", "class_t_d_foreign_window" ],
+    [ "TDGuiApplicationHelper", "class_t_d_gui_application_helper.html", "class_t_d_gui_application_helper" ],
     [ "TDRegionMonitor", "class_t_d_region_monitor.html", "class_t_d_region_monitor" ],
     [ "TestPixmapType_Param", "struct_test_pixmap_type___param.html", "struct_test_pixmap_type___param" ],
     [ "TestTaskbarWindow", "class_test_taskbar_window.html", "class_test_taskbar_window" ],

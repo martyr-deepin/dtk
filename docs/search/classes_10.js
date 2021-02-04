@@ -273,6 +273,7 @@ var searchData=
   ['qlist',['QList',['https://doc.qt.io/qt-5/qlist.html',1,'']]],
   ['qlist_3c_20bool_20_3e',['QList&lt; bool &gt;',['https://doc.qt.io/qt-5/qlist.html',1,'']]],
   ['qlist_3c_20dforeignwindow_20_2a_3e',['QList&lt; DForeignWindow *&gt;',['https://doc.qt.io/qt-5/qlist.html',1,'']]],
+  ['qlist_3c_20dguiapplicationhelper_3a_3aattribute_20_3e',['QList&lt; DGuiApplicationHelper::Attribute &gt;',['https://doc.qt.io/qt-5/qlist.html',1,'']]],
   ['qlist_3c_20dstyle_3a_3apaletteextended_20_2a_3e',['QList&lt; dstyle::PaletteExtended *&gt;',['https://doc.qt.io/qt-5/qlist.html',1,'']]],
   ['qlist_3c_20dtk_3a_3awidget_3a_3adkeylabel_20_2a_3e',['QList&lt; Dtk::Widget::DKeyLabel *&gt;',['https://doc.qt.io/qt-5/qlist.html',1,'']]],
   ['qlist_3c_20int_20_3e',['QList&lt; int &gt;',['https://doc.qt.io/qt-5/qlist.html',1,'']]],

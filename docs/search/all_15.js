@@ -105,6 +105,7 @@ var searchData=
   ['usedesignmetrics',['useDesignMetrics',['https://doc.qt.io/qt-5/qtextdocument.html#useDesignMetrics-prop',1,'QTextDocument::useDesignMetrics()'],['https://doc.qt.io/qt-5/qtextoption.html#useDesignMetrics',1,'QTextOption::useDesignMetrics()'],['https://doc.qt.io/qt-5/qtextdocument.html#useDesignMetrics-prop',1,'QTextDocument::useDesignMetrics()']]],
   ['usehovereffects',['useHoverEffects',['https://doc.qt.io/qt-5/qstylehints.html#useHoverEffects-prop',1,'QStyleHints::useHoverEffects()'],['https://doc.qt.io/qt-5/qstylehints.html#useHoverEffects-prop',1,'QStyleHints::useHoverEffects() const const']]],
   ['usehovereffectschanged',['useHoverEffectsChanged',['https://doc.qt.io/qt-5/qstylehints.html#useHoverEffects-prop',1,'QStyleHints']]],
+  ['useinactivecolorgroup',['UseInactiveColorGroup',['../class_d_gui_application_helper.html#af2609d4dc9b44f180e93c23f2bc1155ca6ef947b8f982bc3912751384a3853606',1,'DGuiApplicationHelper']]],
   ['userdata',['userData',['https://doc.qt.io/qt-5/qtextblock.html#userData',1,'QTextBlock']]],
   ['userinfo',['userInfo',['https://doc.qt.io/qt-5/qurl.html#userInfo',1,'QUrl']]],
   ['userinputresolutionoptions',['UserInputResolutionOptions',['https://doc.qt.io/qt-5/qurl.html#UserInputResolutionOption-enum',1,'QUrl']]],
