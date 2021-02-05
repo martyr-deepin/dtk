@@ -336,7 +336,7 @@ var searchData=
   ['toppadding',['topPadding',['https://doc.qt.io/qt-5/qtexttablecellformat.html#topPadding',1,'QTextTableCellFormat']]],
   ['toprevious',['toPrevious',['https://doc.qt.io/qt-5/qdatawidgetmapper.html#toPrevious',1,'QDataWidgetMapper']]],
   ['topreviousboundary',['toPreviousBoundary',['https://doc.qt.io/qt-5/qtextboundaryfinder.html#toPreviousBoundary',1,'QTextBoundaryFinder']]],
-  ['topright',['TopRight',['../class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1e4db65686b5fd549b2860b76aa3efc9a8841945e5e3cc751555db103240502b9',1,'Dtk::Widget::DAbstractDialog::TopRight()'],['https://doc.qt.io/qt-5/qrect.html#topRight',1,'QRect::topRight()'],['https://doc.qt.io/qt-5/qrectf.html#topRight',1,'QRectF::topRight()']]],
+  ['topright',['topRight',['https://doc.qt.io/qt-5/qrect.html#topRight',1,'QRect::topRight()'],['https://doc.qt.io/qt-5/qrectf.html#topRight',1,'QRectF::topRight()'],['../class_dtk_1_1_widget_1_1_d_abstract_dialog.html#a1e4db65686b5fd549b2860b76aa3efc9a8841945e5e3cc751555db103240502b9',1,'Dtk::Widget::DAbstractDialog::TopRight()']]],
   ['toprow',['topRow',['https://doc.qt.io/qt-5/qtablewidgetselectionrange.html#topRow',1,'QTableWidgetSelectionRange']]],
   ['toptobottom',['TopToBottom',['../class_dtk_1_1_widget_1_1_d_tick_effect.html#a95efa8b674f8c7c2d88e749162b70348a75a38a0f5d4bdbeb791a2482fba49f34',1,'Dtk::Widget::DTickEffect']]],
   ['topunycode',['toPunycode',['https://doc.qt.io/qt-5/qurl-obsolete.html#toPunycode',1,'QUrl']]],

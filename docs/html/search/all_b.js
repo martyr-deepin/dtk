@@ -45,5 +45,5 @@ var searchData=
   ['keyvalues',['keyValues',['qthelp://org.qt-project.qtcore/qtcore/qvariantanimation.html#keyValues',1,'QVariantAnimation::keyValues() const const'],['qthelp://org.qt-project.qtcore/qtcore/qvariantanimation.html#KeyValues-typedef',1,'QVariantAnimation::KeyValues()']]],
   ['kill',['kill',['qthelp://org.qt-project.qtcore/qtcore/qprocess.html#kill',1,'QProcess']]],
   ['killtimer',['killTimer',['qthelp://org.qt-project.qtcore/qtcore/qobject.html#killTimer',1,'QObject']]],
-  ['kwinwm',['KWinWM',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a5e4ff57b986788b412a6fe703560d84ca685f9e678564da09f97b8b6bd6cedd60',1,'Dtk::Gui::DWindowManagerHelper']]]
+  ['kwinwm',['KWinWM',['../class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4af4979608b8eacd7c01c3d18167c5e3b3',1,'DWindowManagerHelper']]]
 ];

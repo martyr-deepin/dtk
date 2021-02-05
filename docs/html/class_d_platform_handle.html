@@ -791,7 +791,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 <p> 不支持混成： </p><div class="image">
 <img src="disable_composite.png" alt="disable_composite.png"/>
 </div>
-<p> 并且，在不支持混成的窗口管理器中，上述“窗口边缘的鼠标吸附”效果也会被禁用。可以使用 DWindowManagerHelper::hasComposite 或 QX11Info::isCompositingManagerRunning 判断当前运行的窗口管理器是否支持混成。 </p><dl class="params"><dt>参数</dt><dd>
+<p> 并且，在不支持混成的窗口管理器中，上述“窗口边缘的鼠标吸附”效果也会被禁用。可以使用 <a class="el" href="class_d_window_manager_helper.html#a1cf88c85cc2befbd1ef8c7ca29ecbfa2" title="窗口管理器是否支持混成效果。如果不支持混成，则表示所有窗口的背景都不能透明， 随之而来也不会有窗口阴影...">DWindowManagerHelper::hasComposite</a> 或 QX11Info::isCompositingManagerRunning 判断当前运行的窗口管理器是否支持混成。 </p><dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td></td></tr>
   </table>
@@ -1080,7 +1080,7 @@ WId&#160;</td><td class="memItemRight" valign="bottom"><b>realWindowId</b></td><
 </dl>
 <dl class="section see"><dt>参见</dt><dd>DWindowHandle::enableDXcbForWindow(QWindow *) </dd>
 <dd>
-DWindowManagerHelper::hasNoTitlebar </dd></dl>
+<a class="el" href="class_d_window_manager_helper.html#aa5b91abd27bd14a6fb067e0a7ab9cd10" title="窗口管理器是否支持隐藏窗口标题栏。如果支持，则 DPlatformWindowHandle::enableDXcbForWindow 会优先使用�...">DWindowManagerHelper::hasNoTitlebar</a> </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a> 第 <a class="el" href="dplatformhandle_8cpp_source.html#l00589">589</a> 行定义.</p>
 
@@ -1143,7 +1143,7 @@ DWindowManagerHelper::hasNoTitlebar </dd></dl>
 <dd>
 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#setFormat">QWindow::setFormat</a> </dd>
 <dd>
-DWindowManagerHelper::hasBlurWindow </dd>
+<a class="el" href="class_d_window_manager_helper.html#abdbccafdfd18d951e3d6c5ab1258ee7d" title="窗口管理器是否支持窗口背景模糊特效 ">DWindowManagerHelper::hasBlurWindow</a> </dd>
 <dd>
 DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; &amp;) </dd></dl>
 
@@ -1209,7 +1209,7 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; 
 <dd>
 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#setFormat">QWindow::setFormat</a> </dd>
 <dd>
-DWindowManagerHelper::hasBlurWindow </dd>
+<a class="el" href="class_d_window_manager_helper.html#abdbccafdfd18d951e3d6c5ab1258ee7d" title="窗口管理器是否支持窗口背景模糊特效 ">DWindowManagerHelper::hasBlurWindow</a> </dd>
 <dd>
 DWindowHandle::setWindowBlurAreaByWM(QWindow *, QVector&lt;DWindowHandle::WMBlurArea&gt; &amp;) </dd></dl>
 
@@ -1347,7 +1347,7 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, QVector&lt;DWindowHandle::WMBlur
 <dd>
 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:qthelp://org.qt-project.qtgui/qtgui/" href="qthelp://org.qt-project.qtgui/qtgui/qwindow.html#setFormat">QWindow::setFormat</a> </dd>
 <dd>
-DWindowManagerHelper::hasBlurWindow </dd>
+<a class="el" href="class_d_window_manager_helper.html#abdbccafdfd18d951e3d6c5ab1258ee7d" title="窗口管理器是否支持窗口背景模糊特效 ">DWindowManagerHelper::hasBlurWindow</a> </dd>
 <dd>
 DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; &amp;) </dd></dl>
 
@@ -1356,8 +1356,8 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; 
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>dtkgui/src/<a class="el" href="dplatformhandle_8h_source.html">dplatformhandle.h</a></li>
-<li>dtkgui/src/<a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a></li>
+<li>dtkgui/src/kernel/<a class="el" href="dplatformhandle_8h_source.html">dplatformhandle.h</a></li>
+<li>dtkgui/src/kernel/<a class="el" href="dplatformhandle_8cpp_source.html">dplatformhandle.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1365,7 +1365,7 @@ DWindowHandle::setWindowBlurAreaByWM(QWindow *, const QList&lt;QPainterPath&gt; 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_d_platform_handle.html">DPlatformHandle</a></li>
-    <li class="footer">生成于 2021年 二月 5日 星期五 07:59:37 , 为 Deepin Tool Kit使用 
+    <li class="footer">生成于 2021年 二月 6日 星期六 07:59:40 , 为 Deepin Tool Kit使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

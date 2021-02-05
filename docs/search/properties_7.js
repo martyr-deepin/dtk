@@ -1,12 +1,12 @@
 var searchData=
 [
   ['handlewidth',['handleWidth',['https://doc.qt.io/qt-5/qsplitter.html#handleWidth-prop',1,'QSplitter']]],
-  ['hasblurwindow',['hasBlurWindow',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a2e8a5bd094194f850c14dd3f49820593',1,'Dtk::Gui::DWindowManagerHelper']]],
-  ['hascomposite',['hasComposite',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a83d7f3b1bd5db4565cd58a7a88340025',1,'Dtk::Gui::DWindowManagerHelper']]],
+  ['hasblurwindow',['hasBlurWindow',['../class_d_window_manager_helper.html#abdbccafdfd18d951e3d6c5ab1258ee7d',1,'DWindowManagerHelper']]],
+  ['hascomposite',['hasComposite',['../class_d_window_manager_helper.html#a1cf88c85cc2befbd1ef8c7ca29ecbfa2',1,'DWindowManagerHelper']]],
   ['hashotspot',['hasHotSpot',['https://doc.qt.io/qt-5/qgesture.html#hasHotSpot-prop',1,'QGesture']]],
-  ['hasnotitlebar',['hasNoTitlebar',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a096e0059a9eed5672b48e794c4890c38',1,'Dtk::Gui::DWindowManagerHelper']]],
+  ['hasnotitlebar',['hasNoTitlebar',['../class_d_window_manager_helper.html#aa5b91abd27bd14a6fb067e0a7ab9cd10',1,'DWindowManagerHelper']]],
   ['hasselectedtext',['hasSelectedText',['https://doc.qt.io/qt-5/qlineedit.html#hasSelectedText-prop',1,'QLineEdit::hasSelectedText()'],['https://doc.qt.io/qt-5/qlabel.html#hasSelectedText-prop',1,'QLabel::hasSelectedText()']]],
-  ['haswallpapereffect',['hasWallpaperEffect',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#ac8b9c17ab7cdb976129eb3a8ade7e15b',1,'Dtk::Gui::DWindowManagerHelper']]],
+  ['haswallpapereffect',['hasWallpaperEffect',['../class_d_window_manager_helper.html#a95a707bbbb1640f4ff1047e74ee034c3',1,'DWindowManagerHelper']]],
   ['headerhidden',['headerHidden',['https://doc.qt.io/qt-5/qtreeview.html#headerHidden-prop',1,'QTreeView']]],
   ['height',['height',['https://doc.qt.io/qt-5/qwindow.html#height-prop',1,'QWindow::height()'],['https://doc.qt.io/qt-5/qwidget.html#height-prop',1,'QWidget::height()']]],
   ['highlightsections',['highlightSections',['https://doc.qt.io/qt-5/qheaderview.html#highlightSections-prop',1,'QHeaderView']]],

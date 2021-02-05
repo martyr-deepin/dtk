@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['otherwm',['OtherWM',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a5e4ff57b986788b412a6fe703560d84ca6ea2374986183e74149725e715b9570d',1,'Dtk::Gui::DWindowManagerHelper']]]
+  ['otherwm',['OtherWM',['../class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4ae4b2ccfbe1cad271bd07058fac148f34',1,'DWindowManagerHelper']]]
 ];

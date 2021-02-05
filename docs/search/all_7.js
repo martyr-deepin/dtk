@@ -63,8 +63,8 @@ var searchData=
   ['getlineeditvalue',['getLineEditValue',['../class_dtk_1_1_widget_1_1_d_file_dialog.html#a6996cf97765a61e9bef2a6cad4988589',1,'Dtk::Widget::DFileDialog']]],
   ['getlockinfo',['getLockInfo',['https://doc.qt.io/qt-5/qlockfile.html#getLockInfo',1,'QLockFile']]],
   ['getlogfilepath',['getlogFilePath',['../class_dtk_1_1_core_1_1_d_log_manager.html#ab8f63169474d6356514b8138970f6a51',1,'Dtk::Core::DLogManager']]],
-  ['getmotifdecorations',['getMotifDecorations',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a805ae1c004d26cf3297d9ed7d4d84cbb',1,'Dtk::Gui::DWindowManagerHelper']]],
-  ['getmotiffunctions',['getMotifFunctions',['../class_dtk_1_1_gui_1_1_d_window_manager_helper.html#a78ec85c02fb15cea67e4b4c8b2b6b8c7',1,'Dtk::Gui::DWindowManagerHelper']]],
+  ['getmotifdecorations',['getMotifDecorations',['../class_d_window_manager_helper.html#a492dddd1de6837f03dea79a40d448841',1,'DWindowManagerHelper']]],
+  ['getmotiffunctions',['getMotifFunctions',['../class_d_window_manager_helper.html#ad95d3a6f1d24b1f382266784bc910d53',1,'DWindowManagerHelper']]],
   ['getmultilinetext',['getMultiLineText',['https://doc.qt.io/qt-5/qinputdialog.html#getMultiLineText',1,'QInputDialog']]],
   ['getopenfilename',['getOpenFileName',['https://doc.qt.io/qt-5/qfiledialog.html#getOpenFileName',1,'QFileDialog']]],
   ['getopenfilenames',['getOpenFileNames',['https://doc.qt.io/qt-5/qfiledialog.html#getOpenFileNames',1,'QFileDialog']]],
@@ -1208,7 +1208,7 @@ var searchData=
   ['gridvisible',['gridVisible',['https://doc.qt.io/qt-5/qcalendarwidget.html#gridVisible-prop',1,'QCalendarWidget']]],
   ['group',['group',['https://doc.qt.io/qt-5/qabstractanimation.html#group',1,'QAbstractAnimation::group()'],['https://doc.qt.io/qt-5/qfileinfo.html#group',1,'QFileInfo::group()'],['https://doc.qt.io/qt-5/qsettings.html#group',1,'QSettings::group()'],['https://doc.qt.io/qt-5/qabstractbutton.html#group',1,'QAbstractButton::group()'],['https://doc.qt.io/qt-5/qgraphicsitem.html#group',1,'QGraphicsItem::group()'],['https://doc.qt.io/qt-5/qundoview.html#group',1,'QUndoView::group()'],['../class_dtk_1_1_core_1_1_d_settings.html#ad36d7d56bb9664cd6ac567358b8795ea',1,'Dtk::Core::DSettings::group()']]],
   ['groupid',['groupId',['https://doc.qt.io/qt-5/qfileinfo.html#groupId',1,'QFileInfo']]],
-  ['groupleaderid',['groupLeaderId',['../class_dtk_1_1_gui_1_1_d_window_group_leader.html#a76357cd436ab64bc7be1165697a00175',1,'Dtk::Gui::DWindowGroupLeader']]],
+  ['groupleaderid',['groupLeaderId',['../class_d_window_group_leader.html#a988d6256932d50a7a9908decb8d10343',1,'DWindowGroupLeader']]],
   ['groupseparator',['groupSeparator',['https://doc.qt.io/qt-5/qlocale.html#groupSeparator',1,'QLocale']]],
   ['gsettingsbackend',['GSettingsBackend',['../class_dtk_1_1_core_1_1_g_settings_backend.html',1,'Dtk::Core']]]
 ];

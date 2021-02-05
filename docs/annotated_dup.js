@@ -74,11 +74,6 @@ var annotated_dup =
         [ "QSettingBackend", "class_dtk_1_1_core_1_1_q_setting_backend.html", "class_dtk_1_1_core_1_1_q_setting_backend" ],
         [ "RollingFileAppender", "class_dtk_1_1_core_1_1_rolling_file_appender.html", "class_dtk_1_1_core_1_1_rolling_file_appender" ]
       ] ],
-      [ "Gui", null, [
-        [ "DWindowGroupLeader", "class_dtk_1_1_gui_1_1_d_window_group_leader.html", "class_dtk_1_1_gui_1_1_d_window_group_leader" ],
-        [ "DWindowManagerHelper", "class_dtk_1_1_gui_1_1_d_window_manager_helper.html", "class_dtk_1_1_gui_1_1_d_window_manager_helper" ],
-        [ "DWindowManagerHelper_", "class_dtk_1_1_gui_1_1_d_window_manager_helper__.html", null ]
-      ] ],
       [ "Widget", null, [
         [ "HeaderLine", null, [
           [ "ArrowHeaderLine", "class_dtk_1_1_widget_1_1_header_line_1_1_arrow_header_line.html", "class_dtk_1_1_widget_1_1_header_line_1_1_arrow_header_line" ]
@@ -277,9 +272,12 @@ var annotated_dup =
     [ "DThumbnailProvider", "class_d_thumbnail_provider.html", "class_d_thumbnail_provider" ],
     [ "DToast", "class_d_toast.html", null ],
     [ "DVoxWidget", "class_d_vox_widget.html", null ],
+    [ "DWindowGroupLeader", "class_d_window_group_leader.html", "class_d_window_group_leader" ],
     [ "DWindowHandle", "class_d_window_handle.html", [
       [ "WMBlurArea", "struct_d_window_handle_1_1_w_m_blur_area.html", null ]
     ] ],
+    [ "DWindowManagerHelper", "class_d_window_manager_helper.html", "class_d_window_manager_helper" ],
+    [ "DWindowManagerHelper_", "class_d_window_manager_helper__.html", null ],
     [ "ImageEntry", "class_image_entry.html", "class_image_entry" ],
     [ "MessageLabel", "class_message_label.html", "class_message_label" ],
     [ "NorwegianWoodStyle", "class_norwegian_wood_style.html", "class_norwegian_wood_style" ],
