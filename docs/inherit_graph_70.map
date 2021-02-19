@@ -1,3 +1,3 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_d_window_handle.html" title="一个和Qt dxcb平台插件交互的工具类，实质性的功能皆在dxcb插件中实现，此插件目前只 支持X11平台，在其它平..." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node1" href="$class_d_window_group_leader.html" title="DWindowGroupLeader 用于设置窗口所在的组，可以把多个窗口加到同一个组。在dxcb平台上，所有未指定组的 窗�..." alt="" coords="5,5,159,32"/>
 </map>

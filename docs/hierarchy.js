@@ -178,6 +178,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Dtk::Core::DPathBuf", "class_dtk_1_1_core_1_1_d_path_buf.html", null ],
+    [ "DrawComplexControl_Param", "struct_draw_complex_control___param.html", null ],
     [ "Dtk::Core::DRecentData", "struct_dtk_1_1_core_1_1_d_recent_data.html", null ],
     [ "Dtk::Core::DRecentManager", "class_dtk_1_1_core_1_1_d_recent_manager.html", null ],
     [ "DSegmentedControl", "class_d_segmented_control.html", null ],
@@ -543,13 +544,19 @@ var hierarchy =
         [ "TDGuiApplicationHelper", "class_t_d_gui_application_helper.html", null ],
         [ "TDRegionMonitor", "class_t_d_region_monitor.html", null ]
       ] ],
+      [ "TestForDrawUtil", "class_test_for_draw_util.html", null ],
       [ "ut_DBuiltinIconEngine", "classut___d_builtin_icon_engine.html", null ],
       [ "ut_DCrumbedit", "classut___d_crumbedit.html", null ],
       [ "ut_QSvgIconEngine", "classut___q_svg_icon_engine.html", null ]
     ] ],
     [ "TestPixmapType_Param", "struct_test_pixmap_type___param.html", null ],
     [ "TestWithParam", null, [
-      [ "AddPixmapParamTest", "class_add_pixmap_param_test.html", null ]
+      [ "AddPixmapParamTest", "class_add_pixmap_param_test.html", null ],
+      [ "TestForPixelMetricParam", "class_test_for_pixel_metric_param.html", null ],
+      [ "TestForQtDrawComplexControlParam", "class_test_for_qt_draw_complex_control_param.html", null ],
+      [ "TestForQtDrawControlParam", "class_test_for_qt_draw_control_param.html", null ],
+      [ "TestForQtStandardPixmapParam", "class_test_for_qt_standard_pixmap_param.html", null ],
+      [ "TestForStyleHintParam", "class_test_for_style_hint_param.html", null ]
     ] ],
     [ "Dtk::Widget::DAbstractStackWidgetTransition::TransitionInfo", "struct_dtk_1_1_widget_1_1_d_abstract_stack_widget_transition_1_1_transition_info.html", null ],
     [ "DPlatformHandle::WMBlurArea", "struct_d_platform_handle_1_1_w_m_blur_area.html", null ],

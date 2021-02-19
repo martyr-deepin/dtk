@@ -1,8 +1,10 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="$class_dtk_1_1_core_1_1_abstract_appender.html" title="The AbstractAppender class provides an abstract base class for writing a log entries. " alt="" coords="5,56,196,83"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_abstract_string_appender.html" title="The AbstractStringAppender class provides a convenient base for appenders working with plain text for..." alt="" coords="244,49,415,90"/>
-<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_console_appender.html" title="ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream..." alt="" coords="477,5,667,32"/>
-<area shape="rect" id="node4" href="$class_dtk_1_1_core_1_1_file_appender.html" title="Simple appender that writes the log records to the plain text file. " alt="" coords="491,56,653,83"/>
-<area shape="rect" id="node6" href="$class_dtk_1_1_core_1_1_output_debug_appender.html" title="Appender that writes the log records to the Microsoft Debug Log " alt="" coords="463,107,681,133"/>
-<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_rolling_file_appender.html" title="The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a us..." alt="" coords="729,56,932,83"/>
+<area shape="rect" id="node2" href="$class_d_test.html" title="DTest" alt="" coords="147,56,206,83"/>
+<area shape="rect" id="node6" href="$class_test_for_draw_util.html" title="TestForDrawUtil" alt="" coords="117,107,236,133"/>
+<area shape="rect" id="node7" href="$classut___d_builtin_icon_engine.html" title="ut_DBuiltinIconEngine" alt="" coords="101,157,252,184"/>
+<area shape="rect" id="node8" href="$classut___d_crumbedit.html" title="ut_DCrumbedit" alt="" coords="121,208,232,235"/>
+<area shape="rect" id="node9" href="$classut___q_svg_icon_engine.html" title="ut_QSvgIconEngine" alt="" coords="107,259,246,285"/>
+<area shape="rect" id="node3" href="$class_t_d_foreign_window.html" title="TDForeignWindow" alt="" coords="316,5,447,32"/>
+<area shape="rect" id="node4" href="$class_t_d_gui_application_helper.html" title="TDGuiApplicationHelper" alt="" coords="300,56,463,83"/>
+<area shape="rect" id="node5" href="$class_t_d_region_monitor.html" title="TDRegionMonitor" alt="" coords="319,107,443,133"/>
 </map>

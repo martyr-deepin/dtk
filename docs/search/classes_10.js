@@ -493,6 +493,7 @@ var searchData=
   ['qshareddatapointer_3c_20qsvgiconengineprivate_20_3e',['QSharedDataPointer&lt; QSvgIconEnginePrivate &gt;',['https://doc.qt.io/qt-5/qshareddatapointer.html',1,'']]],
   ['qsharedmemory',['QSharedMemory',['https://doc.qt.io/qt-5/qsharedmemory.html',1,'']]],
   ['qsharedpointer',['QSharedPointer',['https://doc.qt.io/qt-5/qsharedpointer.html',1,'']]],
+  ['qsharedpointer_3c_20qstyleoptioncomplex_20_3e',['QSharedPointer&lt; QStyleOptionComplex &gt;',['https://doc.qt.io/qt-5/qsharedpointer.html',1,'']]],
   ['qshortcut',['QShortcut',['https://doc.qt.io/qt-5/qshortcut.html',1,'']]],
   ['qshortcutevent',['QShortcutEvent',['https://doc.qt.io/qt-5/qshortcutevent.html',1,'']]],
   ['qshowevent',['QShowEvent',['https://doc.qt.io/qt-5/qshowevent.html',1,'']]],

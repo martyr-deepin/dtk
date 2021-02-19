@@ -122,6 +122,7 @@ var searchData=
   ['dprogressstyleanimation',['DProgressStyleAnimation',['../classdstyle_1_1_d_progress_style_animation.html',1,'dstyle']]],
   ['dqtabbar',['DQTabBar',['../classdstyle_1_1_d_q_tab_bar.html',1,'dstyle']]],
   ['draggablelabel',['DraggableLabel',['../class_draggable_label.html',1,'']]],
+  ['drawcomplexcontrol_5fparam',['DrawComplexControl_Param',['../struct_draw_complex_control___param.html',1,'']]],
   ['drecentdata',['DRecentData',['../struct_dtk_1_1_core_1_1_d_recent_data.html',1,'Dtk::Core']]],
   ['drecentmanager',['DRecentManager',['../class_dtk_1_1_core_1_1_d_recent_manager.html',1,'Dtk::Core']]],
   ['dregionmonitor',['DRegionMonitor',['../class_d_region_monitor.html',1,'']]],

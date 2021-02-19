@@ -1,4 +1,5 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="node1" href="/home/union/dtk/tags/qtgui.tags$qstandarditem.html" title="QStandardItem" alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node2" href="$class_dtk_1_1_widget_1_1_d_standard_item.html" title="提供标准项 item, 通常用于模型/视图,或模型&#45;代理&#45;视图里面,用以提供标准的 item 控件 " alt="" coords="164,5,352,32"/>
+<area shape="rect" id="node1" href="/home/union/dtk/tags/qtcore.tags$qshareddata.html" title="QSharedData" alt="" coords="5,31,107,57"/>
+<area shape="rect" id="node2" href="$struct_d_palette_data.html" title="DPaletteData" alt="" coords="185,5,286,32"/>
+<area shape="rect" id="node3" href="$class_q_svg_icon_engine_private.html" title="QSvgIconEnginePrivate" alt="" coords="155,56,316,83"/>
 </map>
