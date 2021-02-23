@@ -10,3 +10,21 @@
 [submodule "qt5integration"]
 	path = qt5integration
 	url = https://github.com/linuxdeepin/qt5integration.git
+[submodule "dde-launcher"]
+	path = dde-launcher
+	url = https://github.com/linuxdeepin/dde-launcher.git
+[submodule "dde-dock"]
+	path = dde-dock
+	url = https://github.com/linuxdeepin/dde-dock.git
+[submodule "deepin-music"]
+	path = deepin-music
+	url = https://github.com/linuxdeepin/deepin-music.git
+[submodule "deepin-draw"]
+	path = deepin-draw
+	url = https://github.com/linuxdeepin/deepin-draw.git
+[submodule "dde-file-manager"]
+	path = dde-file-manager
+	url = https://github.com/linuxdeepin/dde-file-manager.git
+[submodule "dde-control-center"]
+	path = dde-control-center
+	url = https://github.com/linuxdeepin/dde-control-center.git
