@@ -1,12 +1,12 @@
 [submodule "dtkcore"]
 	path = dtkcore
-	url = ../dtkcore
+	url = http://gerrit.uniontech.com/dtkcore
 [submodule "dtkwidget"]
 	path = dtkwidget
-	url = ../dtkwidget
+	url = http://gerrit.uniontech.com/dtkwidget
 [submodule "dtkgui"]
 	path = dtkgui
-	url = https://github.com/linuxdeepin/dtkgui.git
+	url = http://gerrit.uniontech.com/dtkgui
 [submodule "qt5integration"]
 	path = qt5integration
-	url = https://github.com/linuxdeepin/qt5integration.git
+	url = http://gerrit.uniontech.com/qt5integration.git
