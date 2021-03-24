@@ -1,0 +1,8 @@
+<map id="ut_DWarningButton" name="ut_DWarningButton">
+<area shape="rect" id="node3" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="83,81,157,108"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtwidgets.tags$qabstractbutton.html" title="QAbstractButton" alt="" coords="157,157,275,184"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="30,5,101,32"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="125,5,227,32"/>
+<area shape="rect" id="node6" href="$class_dtk_1_1_widget_1_1_d_warning_button.html" title="警告按钮控件, 继承于 DPushButton 控件, 主要替换了文字和背景的颜色. " alt="" coords="142,309,338,336"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtwidgets.tags$qpushbutton.html" title="DPushButton" alt="" coords="181,233,281,260"/>
+</map>

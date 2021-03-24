@@ -1,0 +1,5 @@
+<map id="ut_DDrawerGroup" name="ut_DDrawerGroup">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_drawer_group.html" title="封装了一组 DDrawer 控件(当然也可以是其子类), 并保证同一时间只有一个 DDrawer 处于展开状态. " alt="" coords="77,171,264,197"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="95,95,166,121"/>
+<area shape="rect" id="node5" href="$class_dtk_1_1_core_1_1_d_object.html" title="一些宏的定义. " alt="" coords="190,95,325,121"/>
+</map>

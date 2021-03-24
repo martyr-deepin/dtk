@@ -1,0 +1,4 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$class_dtk_1_1_core_1_1_d_config_meta.html" title="提供配置文件的原型和覆盖机制的访问接口 " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_config_meta_impl.html" title="Dtk::Core::DConfigMetaImpl" alt="" coords="217,5,407,32"/>
+</map>

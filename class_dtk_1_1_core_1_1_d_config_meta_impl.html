@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Core::DConfigMetaImpl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_core_1_1_d_config_meta_impl.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_dtk_1_1_core_1_1_d_config_meta_impl-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DConfigMetaImpl类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Dtk::Core::DConfigMetaImpl 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_core_1_1_d_config_meta_impl__inherit__graph.png" border="0" usemap="#_dtk_1_1_core_1_1_d_config_meta_impl_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_core_1_1_d_config_meta_impl_inherit__map" id="_dtk_1_1_core_1_1_d_config_meta_impl_inherit__map">
+<area shape="rect" id="node2" href="class_dtk_1_1_core_1_1_d_config_meta.html" title="提供配置文件的原型和覆盖机制的访问接口 " alt="" coords="18,5,182,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Dtk::Core::DConfigMetaImpl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_core_1_1_d_config_meta_impl__coll__graph.png" border="0" usemap="#_dtk_1_1_core_1_1_d_config_meta_impl_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_core_1_1_d_config_meta_impl_coll__map" id="_dtk_1_1_core_1_1_d_config_meta_impl_coll__map">
+<area shape="rect" id="node2" href="class_dtk_1_1_core_1_1_d_config_meta.html" title="提供配置文件的原型和覆盖机制的访问接口 " alt="" coords="173,5,337,32"/>
+<area shape="rect" id="node3" href="struct_dtk_1_1_core_1_1_d_config_key.html" title="Dtk::Core::DConfigKey" alt="" coords="176,56,335,83"/>
+<area shape="rect" id="node4" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html" title="QString" alt="" coords="5,56,72,83"/>
+<area shape="rect" id="node5" href="struct_dtk_1_1_core_1_1_d_config_file_1_1_version.html" title="版本信息 " alt="" coords="177,107,333,149"/>
+<area shape="rect" id="node6" href="class_dtk_1_1_core_1_1_d_config_info.html" title="Dtk::Core::DConfigInfo" alt="" coords="177,173,334,200"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae5cf4ba7dbcc229b931fa68463032c7f"><td class="memItemLeft" align="right" valign="top"><a id="ae5cf4ba7dbcc229b931fa68463032c7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DConfigMetaImpl</b> (const <a class="el" href="struct_dtk_1_1_core_1_1_d_config_key.html">DConfigKey</a> &amp;configKey)</td></tr>
+<tr class="separator:ae5cf4ba7dbcc229b931fa68463032c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78367a5aa911a73164f095f3f63938c7"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a78367a5aa911a73164f095f3f63938c7">keyList</a> () const override</td></tr>
+<tr class="separator:a78367a5aa911a73164f095f3f63938c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e72bfdfd35044d10cbe56d22c93e39"><td class="memItemLeft" align="right" valign="top">virtual DConfigFile::Flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a16e72bfdfd35044d10cbe56d22c93e39">flags</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:a16e72bfdfd35044d10cbe56d22c93e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc1a5acca8d299a0a7e28eea10d295b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_dtk_1_1_core_1_1_d_config_file.html#add1bce4cab3bb12d841faa814df840c8">DConfigFile::Permissions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a5fc1a5acca8d299a0a7e28eea10d295b">permissions</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:a5fc1a5acca8d299a0a7e28eea10d295b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41499ef722e695c048437d8699cb06ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_dtk_1_1_core_1_1_d_config_file.html#afa72b2ebc946a556c4b76e127bb836fc">DConfigFile::Visibility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a41499ef722e695c048437d8699cb06ec">visibility</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:a41499ef722e695c048437d8699cb06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78b5cb2df9eebfd74c1f51bf7af8052"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#ae78b5cb2df9eebfd74c1f51bf7af8052">serial</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:ae78b5cb2df9eebfd74c1f51bf7af8052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1934eb8ee0472eebb0d80757aaa9778"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#af1934eb8ee0472eebb0d80757aaa9778">description</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale) override</td></tr>
+<tr class="separator:af1934eb8ee0472eebb0d80757aaa9778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f1e03ec136972cfc26fc2b489d136e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_dtk_1_1_core_1_1_d_config_file_1_1_version.html">DConfigFile::Version</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#af3f1e03ec136972cfc26fc2b489d136e">version</a> () const override</td></tr>
+<tr class="separator:af3f1e03ec136972cfc26fc2b489d136e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3420125bdbdbe9b7563a12fb05dcf10a"><td class="memItemLeft" align="right" valign="top"><a id="a3420125bdbdbe9b7563a12fb05dcf10a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a3420125bdbdbe9b7563a12fb05dcf10a">setVersion</a> (quint16 major, quint16 minor) override</td></tr>
+<tr class="memdesc:a3420125bdbdbe9b7563a12fb05dcf10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置配置版本信息 <em>major</em> 主板本号 <em>minor</em> 次版本号 <br /></td></tr>
+<tr class="separator:a3420125bdbdbe9b7563a12fb05dcf10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71e14b4445cd870d32d98f152d1b6eb"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#aa71e14b4445cd870d32d98f152d1b6eb">displayName</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;locale) override</td></tr>
+<tr class="separator:aa71e14b4445cd870d32d98f152d1b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02821b67aa29e491e0fd1448d3caf5f9"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a02821b67aa29e491e0fd1448d3caf5f9">value</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:a02821b67aa29e491e0fd1448d3caf5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44800bda95d033e484bb3a5f65b9454"><td class="memItemLeft" align="right" valign="top"><a id="ae44800bda95d033e484bb3a5f65b9454"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>applicationMetaDir</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix, const bool useOptDir=false) const</td></tr>
+<tr class="separator:ae44800bda95d033e484bb3a5f65b9454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefee88f49a62909191645c1716e73f78"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#aefee88f49a62909191645c1716e73f78">metaPath</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localPrefix, bool *useAppId) const override</td></tr>
+<tr class="separator:aefee88f49a62909191645c1716e73f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34aa3eec01a7bb23233e1e5339e99e44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a34aa3eec01a7bb23233e1e5339e99e44">load</a> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localPrefix) override</td></tr>
+<tr class="separator:a34aa3eec01a7bb23233e1e5339e99e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664b0d557e2f9883c02e440a0958eff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a664b0d557e2f9883c02e440a0958eff0">load</a> (<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> *meta, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> *&gt; &amp;overrides) override</td></tr>
+<tr class="separator:a664b0d557e2f9883c02e440a0958eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5496f79e56c76dc15dafcf9fab1a0310"><td class="memItemLeft" align="right" valign="top"><a id="a5496f79e56c76dc15dafcf9fab1a0310"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>overrideDirs</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix, bool useAppId) const</td></tr>
+<tr class="separator:a5496f79e56c76dc15dafcf9fab1a0310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014bc3445b98250857fdc25232b06a3f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html#a014bc3445b98250857fdc25232b06a3f">allOverrideDirs</a> (const bool useAppId, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix) const override</td></tr>
+<tr class="separator:a014bc3445b98250857fdc25232b06a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8f9f8188b665287f7a1ca865f8750a"><td class="memItemLeft" align="right" valign="top"><a id="a0b8f9f8188b665287f7a1ca865f8750a"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loadOverrides</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix, bool useAppId) const</td></tr>
+<tr class="separator:a0b8f9f8188b665287f7a1ca865f8750a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a3aac0e473cc9ebd8abba8797c3106577"><td class="memItemLeft" align="right" valign="top"><a id="a3aac0e473cc9ebd8abba8797c3106577"></a>
+static <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>genericMetaDir</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix)</td></tr>
+<tr class="separator:a3aac0e473cc9ebd8abba8797c3106577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af3b0f2d4e27dee6b699c51bd94429e08"><td class="memItemLeft" align="right" valign="top"><a id="af3b0f2d4e27dee6b699c51bd94429e08"></a>
+<a class="el" href="struct_dtk_1_1_core_1_1_d_config_key.html">DConfigKey</a>&#160;</td><td class="memItemRight" valign="bottom"><b>configKey</b></td></tr>
+<tr class="separator:af3b0f2d4e27dee6b699c51bd94429e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af989ddf85b54a714971907189ffdfbbd"><td class="memItemLeft" align="right" valign="top"><a id="af989ddf85b54a714971907189ffdfbbd"></a>
+<a class="el" href="class_dtk_1_1_core_1_1_d_config_info.html">DConfigInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>values</b></td></tr>
+<tr class="separator:af989ddf85b54a714971907189ffdfbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf531ae3b1fe0a17f07c16ec7c6232b2"><td class="memItemLeft" align="right" valign="top"><a id="aaf531ae3b1fe0a17f07c16ec7c6232b2"></a>
+<a class="el" href="struct_dtk_1_1_core_1_1_d_config_file_1_1_version.html">DConfigFile::Version</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_version</b> = {0, 0}</td></tr>
+<tr class="separator:aaf531ae3b1fe0a17f07c16ec7c6232b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab7f279f0f64163b219ad0dd0e3d7c3"><td class="memItemLeft" align="right" valign="top"><a id="a9ab7f279f0f64163b219ad0dd0e3d7c3"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>padding</b> [4] = {}</td></tr>
+<tr class="separator:a9ab7f279f0f64163b219ad0dd0e3d7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00550">550</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a014bc3445b98250857fdc25232b06a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a014bc3445b98250857fdc25232b06a3f">&#9670;&nbsp;</a></span>allOverrideDirs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> Dtk::Core::DConfigMetaImpl::allOverrideDirs </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>useAppId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获得前缀为<em>prefix目录的所有需要查找的覆盖机制目录</em> <em>userAppId</em> 是否不使用通用目录 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a729d698d3f74371aebcaed176c002808">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00744">744</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1934eb8ee0472eebb0d80757aaa9778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1934eb8ee0472eebb0d80757aaa9778">&#9670;&nbsp;</a></span>description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DConfigMetaImpl::description </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;&#160;</td>
+          <td class="paramname"><em>locale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回指定配置项的描述信息 <em>key</em> 配置项名称 <em>locale</em> 为语言版本 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#ac9cb35c0d12d2f016d2a45ce0901c520">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00576">576</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa71e14b4445cd870d32d98f152d1b6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71e14b4445cd870d32d98f152d1b6eb">&#9670;&nbsp;</a></span>displayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DConfigMetaImpl::displayName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlocale.html">QLocale</a> &amp;&#160;</td>
+          <td class="paramname"><em>locale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回指定配置项的显示名 <em>key</em> 配置项名称 <em>locale</em> 为语言版本 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#af1fec058e6d193b0b8a9c2dc7e22cf54">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00589">589</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16e72bfdfd35044d10cbe56d22c93e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e72bfdfd35044d10cbe56d22c93e39">&#9670;&nbsp;</a></span>flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DConfigFile::Flags Dtk::Core::DConfigMetaImpl::flags </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回指定配置项的特性 <em>key</em> 配置项名称, NoOverride为此配置项不可被覆盖, Global为忽略用户身份 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a02d33d016d43c3d1a7e908d5270724fa">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00560">560</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a78367a5aa911a73164f095f3f63938c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78367a5aa911a73164f095f3f63938c7">&#9670;&nbsp;</a></span>keyList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a> Dtk::Core::DConfigMetaImpl::keyList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回配置内容的所有配置项 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#afb194b574cec238fffd5e853df294605">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00556">556</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a34aa3eec01a7bb23233e1e5339e99e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34aa3eec01a7bb23233e1e5339e99e44">&#9670;&nbsp;</a></span>load() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DConfigMetaImpl::load </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>localPrefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>解析配置文件 <em>localPrefix</em> 为目录前缀 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#ab3504e3d4da36383280e5aef92bb3567">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00629">629</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a664b0d557e2f9883c02e440a0958eff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664b0d557e2f9883c02e440a0958eff0">&#9670;&nbsp;</a></span>load() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dtk::Core::DConfigMetaImpl::load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qlist.html">QList</a>&lt; <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qiodevice.html">QIODevice</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>overrides</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>解析配置文件流 <em>meta</em> 为原型流 <em>overrides</em> 为覆盖机制查找的文件流 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a5094721652035564bf57019afc921e39">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00652">652</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aefee88f49a62909191645c1716e73f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefee88f49a62909191645c1716e73f78">&#9670;&nbsp;</a></span>metaPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> Dtk::Core::DConfigMetaImpl::metaPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>localPrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>useAppId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回描述文件的路径 <em>localPrefix</em> 目录的所有需要查找的覆盖机制目录 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a1bba5eb250f6459abfcf150161d09cad">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00611">611</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5fc1a5acca8d299a0a7e28eea10d295b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc1a5acca8d299a0a7e28eea10d295b">&#9670;&nbsp;</a></span>permissions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_dtk_1_1_core_1_1_d_config_file.html#add1bce4cab3bb12d841faa814df840c8">DConfigFile::Permissions</a> Dtk::Core::DConfigMetaImpl::permissions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回指定配置项的权限 <em>key</em> 配置项名称 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a58040a2bdcfe82c8eb72bacbdbe659ff">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00564">564</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae78b5cb2df9eebfd74c1f51bf7af8052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78b5cb2df9eebfd74c1f51bf7af8052">&#9670;&nbsp;</a></span>serial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Dtk::Core::DConfigMetaImpl::serial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回配置项的单调递增值 <em>key</em> 配置项名称 </p><dl class="section return"><dt>返回</dt><dd>-1为无效值，表明没有配置此项 </dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a6a6d0d5017abbc374bd7d726c895264e">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00572">572</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02821b67aa29e491e0fd1448d3caf5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02821b67aa29e491e0fd1448d3caf5f9">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> Dtk::Core::DConfigMetaImpl::value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>meta初始值经过覆盖机制覆盖后的原始值 <em>key</em> 配置项名称 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a8ad5c377cd58fa0d624c769051e01f01">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00593">593</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af3f1e03ec136972cfc26fc2b489d136e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f1e03ec136972cfc26fc2b489d136e">&#9670;&nbsp;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_dtk_1_1_core_1_1_d_config_file_1_1_version.html">DConfigFile::Version</a> Dtk::Core::DConfigMetaImpl::version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回配置版本信息 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a0ffeee1f0e529a999bd7dd90197cc11b">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00580">580</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a41499ef722e695c048437d8699cb06ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41499ef722e695c048437d8699cb06ec">&#9670;&nbsp;</a></span>visibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_dtk_1_1_core_1_1_d_config_file.html#afa72b2ebc946a556c4b76e127bb836fc">DConfigFile::Visibility</a> Dtk::Core::DConfigMetaImpl::visibility </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>返回指定配置项的可见性 <em>key</em> 配置项名称 </p><dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>实现了 <a class="el" href="class_dtk_1_1_core_1_1_d_config_meta.html#a00bf3ca8c6727b33db35d220a1fd1315">Dtk::Core::DConfigMeta</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00568">568</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/src/<a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_core_1_1_d_config_meta_impl.html">DConfigMetaImpl</a></li>
+    <li class="footer">生成于 2021年 十一月 24日 星期三 23:59:14 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

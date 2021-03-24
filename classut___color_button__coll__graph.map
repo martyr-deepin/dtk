@@ -1,0 +1,8 @@
+<map id="ut_ColorButton" name="ut_ColorButton">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_color_button.html" title="Dtk::Widget::ColorButton" alt="" coords="87,309,257,336"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qpushbutton.html" title="DPushButton" alt="" coords="122,233,222,260"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qabstractbutton.html" title="QAbstractButton" alt="" coords="113,157,231,184"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="135,81,209,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="82,5,153,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="177,5,279,32"/>
+</map>

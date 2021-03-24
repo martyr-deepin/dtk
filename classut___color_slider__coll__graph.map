@@ -1,0 +1,8 @@
+<map id="ut_ColorSlider" name="ut_ColorSlider">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_color_slider.html" title="Dtk::Widget::ColorSlider" alt="" coords="85,309,249,336"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qslider.html" title="QSlider" alt="" coords="134,233,199,260"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qabstractslider.html" title="QAbstractSlider" alt="" coords="109,157,224,184"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="130,81,203,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="77,5,147,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="171,5,274,32"/>
+</map>

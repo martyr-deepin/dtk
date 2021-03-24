@@ -1,0 +1,9 @@
+<map id="ut_DWindowQuitFullButton" name="ut_DWindowQuitFullButton">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_window_quit_full_button.html" title="Dtk::Widget::DWindowQuit\lFullButton" alt="" coords="145,323,326,364"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_icon_button.html" title="Dtk::Widget::DIconButton" alt="" coords="162,247,335,273"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qabstractbutton.html" title="QAbstractButton" alt="" coords="133,171,252,197"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="95,81,168,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="41,5,112,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="136,5,239,32"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_core_1_1_d_object.html" title="一些宏的定义. " alt="" coords="276,171,411,197"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$class_dtk_1_1_core_1_1_d_abstract_unit_formatter.html" title="DAbstractUnitFormatter 类是对拥有相同类型数据管理的接口类. " alt="" coords="5,23,176,65"/>
+<area shape="rect" id="node2" href="$class_dtk_1_1_core_1_1_d_disk_size_formatter.html" title="DDiskSizeFormatter 是用来获取磁盘容量单位的类, 通过枚举值. " alt="" coords="224,5,431,32"/>
+<area shape="rect" id="node3" href="$class_dtk_1_1_core_1_1_d_time_unit_formatter.html" title="DTimeUnitFormatter是用来获取时间单位的类, 通过枚举值. " alt="" coords="224,56,431,83"/>
+</map>

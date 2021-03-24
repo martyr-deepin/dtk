@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Gui::DWindowGroupLeader类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_gui_1_1_d_window_group_leader.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dtk::Gui::DWindowGroupLeader类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_dtk_1_1_gui_1_1_d_window_group_leader.html" title="DWindowGroupLeader 用于设置窗口所在的组，可以把多个窗口加到同一个组. ">DWindowGroupLeader</a> 用于设置窗口所在的组，可以把多个窗口加到同一个组.  
+ <a href="class_dtk_1_1_gui_1_1_d_window_group_leader.html#details">更多...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="class_dtk_1_1_gui_1_1_d_window_group_leader.html" title="DWindowGroupLeader 用于设置窗口所在的组，可以把多个窗口加到同一个组. ">DWindowGroupLeader</a> 用于设置窗口所在的组，可以把多个窗口加到同一个组. </p>
+<p>dtkgui</p>
+<p>在dxcb平台上，所有未指定组的窗口都会被分配到 <a class="el" href="class_d_window_group_leader.html#a225094f84899f7339322173524dc9363" title="DWindowGroupLeader::clientLeaderId ">DWindowGroupLeader::clientLeaderId</a> 这个组，且在窗口对应的本地窗口被创建时，会对 Qt::Dialog、Qt::Sheet、Qt::Tool、 Qt::SplashScreen、Qt::ToolTip、Qt::Drawer、Qt::Popup 类型的窗口设置 WM_TRANSIENT_FOR 属性，对于此类型的窗口，如果没有手动调用 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setTransientParent">QWindow::setTransientParent</a> ， 则会将其 WM_TRANSIENT_FOR 属性设置为所在组id，得到的效果就是：会保证此窗口显示到这个组所有其它窗口 之上。例子： </p><div class="fragment"><div class="line"><a class="code" href="class_d_window_group_leader.html">DWindowGroupLeader</a> leader;</div><div class="line"><a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> wa, wb;</div><div class="line"><a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html">QWindow</a> topWindow;</div><div class="line"></div><div class="line">leader.<a class="code" href="class_d_window_group_leader.html#abdd1d9f3bfecb9137a691b275bcdbc89">addWindow</a>(&amp;wa);</div><div class="line">leader.<a class="code" href="class_d_window_group_leader.html#abdd1d9f3bfecb9137a691b275bcdbc89">addWindow</a>(&amp;wb);</div><div class="line">leader.<a class="code" href="class_d_window_group_leader.html#abdd1d9f3bfecb9137a691b275bcdbc89">addWindow</a>(&amp;topWindow);</div><div class="line"></div><div class="line">wa.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">setTitle</a>(<span class="stringliteral">&quot;窗口wa&quot;</span>);</div><div class="line">wa.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#resize">resize</a>(300, 100);</div><div class="line">wa.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#show">show</a>();</div><div class="line">wb.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">setTitle</a>(<span class="stringliteral">&quot;窗口wb&quot;</span>);</div><div class="line">wb.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#resize">resize</a>(300, 100);</div><div class="line">wb.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#show">show</a>();</div><div class="line">topWindow.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#title-prop">setTitle</a>(<span class="stringliteral">&quot;窗口topWindow&quot;</span>);</div><div class="line">topWindow.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setFlag">setFlag</a>(Qt::Dialog);</div><div class="line">topWindow.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#resize">resize</a>(300, 300);</div><div class="line">topWindow.<a class="codeRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#show">show</a>();</div></div><!-- fragment --><p> 窗口topWindow一直处于窗口wa和wb上层 如果一个组内同时存在多个未设置过 <a class="elRef" doxygen="/home/union/dtk/tags/qtgui.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwindow.html#setTransientParent">QWindow::setTransientParent</a> 的 Qt::Dialog（其它会自动设置 WM_TRANSIENT_FOR 属性的窗口也成立）类型的窗口，这些窗口之间不会互相影响显示顺序，具体的规则和 X11 ICCCM 标准一致。  {<a href="https://tronche.com/gui/x/icccm/sec-4.html#WM_TRANSIENT_FOR">https://tronche.com/gui/x/icccm/sec-4.html#WM_TRANSIENT_FOR</a>} </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="class_d_window_group_leader.html#a225094f84899f7339322173524dc9363" title="DWindowGroupLeader::clientLeaderId ">DWindowGroupLeader::clientLeaderId</a> </dd>
+<dd>
+<a class="el" href="class_dtk_1_1_widget_1_1_d_application.html#a2a98eb30c818274cba7188cf773e0b13" title="warning: Must call before QGuiApplication defined object ">Dtk::Widget::DApplication::loadDXcbPlugin</a> </dd></dl>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dtkgui/src/kernel/<a class="el" href="dwindowgroupleader_8cpp_source.html">dwindowgroupleader.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Gui</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_gui_1_1_d_window_group_leader.html">DWindowGroupLeader</a></li>
+    <li class="footer">生成于 2021年 十一月 24日 星期三 23:59:14 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

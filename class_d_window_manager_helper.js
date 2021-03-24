@@ -1,0 +1,66 @@
+var class_d_window_manager_helper =
+[
+    [ "MotifDecoration", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0ac", [
+      [ "DECOR_BORDER", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0acab27e7c7fb9de82933aed688a34fe0e11", null ],
+      [ "DECOR_RESIZEH", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0acaf98b36e406a7c30437ee229591947f83", null ],
+      [ "DECOR_TITLE", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0acacf5bbd868803416a51e71d025b4cb542", null ],
+      [ "DECOR_MENU", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0aca89b83c181eb5418a1d2de45cc1ca6fce", null ],
+      [ "DECOR_MINIMIZE", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0aca6ed1634e92a3f6ea905d615b30198cbc", null ],
+      [ "DECOR_MAXIMIZE", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0aca9e76f45fdb1b76d28fa0d30bbcbe2e15", null ],
+      [ "DECOR_ALL", "class_d_window_manager_helper.html#a31eda94bba9ebc94fc3096b61ee9e0aca5d591342c17d22b9fb9e2c6915c36cd5", null ]
+    ] ],
+    [ "MotifFunction", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384", [
+      [ "FUNC_RESIZE", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384a5d157e3bb56e0a5bacb6d8ca376a0218", null ],
+      [ "FUNC_MOVE", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384a6d0c036e9eb83e06c58d0c07b64a8bc1", null ],
+      [ "FUNC_MINIMIZE", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384a6ded292e428d8008103d0281aec408ea", null ],
+      [ "FUNC_MAXIMIZE", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384a717f29638af79025acabdaef9a7efa99", null ],
+      [ "FUNC_CLOSE", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384afc89870614afc20b5fb52e8ddd4b2484", null ],
+      [ "FUNC_ALL", "class_d_window_manager_helper.html#a2d84cc7f9d21165e8cfa82932b174384a5816604ef415ebcb45d9e54aeb211b58", null ]
+    ] ],
+    [ "WMName", "class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4", [
+      [ "OtherWM", "class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4ac7444f31ef0fa7e5ef5994ad1d746a64", null ],
+      [ "DeepinWM", "class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4a571e85fc9e3f3c8beeb4a6526b0df507", null ],
+      [ "KWinWM", "class_d_window_manager_helper.html#abb3a71a17b16a211307a3cd1dfafd7b4a025db34af8b3a275cfdee914f528787d", null ]
+    ] ],
+    [ "WmWindowType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453", [
+      [ "UnknowWindowType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a8fbd98530dbbd17209a97d26161ff49e", null ],
+      [ "NormalType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453aa7d0d7705e10fe6e06e37dbfaf66d055", null ],
+      [ "DesktopType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453ae5ea465b41994d71e1e2ef9a90ec9394", null ],
+      [ "DockType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a207a370217c6e8c3ad4fa98ef031e223", null ],
+      [ "ToolbarType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a3ff0c6a81c49f8233667649e49f41b57", null ],
+      [ "MenuType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453acac790003e4f0ae9d606c1c6757d12d6", null ],
+      [ "UtilityType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453aea2f7c861bd78289bb46935813ddc86b", null ],
+      [ "SplashType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a66080eac1f1635c27e62745d05ecbf5e", null ],
+      [ "DialogType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a3ec6196cf7382e68d963154b259560b9", null ],
+      [ "DropDownMenuType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453ac4d1b8f66c5fa421d44e489c41c2f851", null ],
+      [ "PopupMenuType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453aa37036d4265779df4bda9d913dad6cd6", null ],
+      [ "TooltipType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a99efee5f2a33399c4231a9560a50cf4e", null ],
+      [ "NotificationType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a6740f6571af015dfa10fccb84245023d", null ],
+      [ "ComboType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453adc8613934e96847eb6aa99eef33f0665", null ],
+      [ "DndType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a5860bd07de4bd865c4bc5a27e24e2e5d", null ],
+      [ "KdeOverrideType", "class_d_window_manager_helper.html#add42564b0d49111512d2d906272f3453a89cc2f54ef3e3d8b4ca26f07ceadaf71", null ]
+    ] ],
+    [ "~DWindowManagerHelper", "class_d_window_manager_helper.html#ac10e254a63f6d0fef2d88daaa674ca05", null ],
+    [ "DWindowManagerHelper", "class_d_window_manager_helper.html#a138e23ca39a0896ede34f81b2407fe56", null ],
+    [ "allWindowIdList", "class_d_window_manager_helper.html#a478b322303b7dc67973dbdfea4020565", null ],
+    [ "currentWorkspaceWindowIdList", "class_d_window_manager_helper.html#aceb9757b8e420dab428560c24b09b25a", null ],
+    [ "currentWorkspaceWindows", "class_d_window_manager_helper.html#a6225c7cc9df459f5af43fe770682a7cc", null ],
+    [ "hasBlurWindow", "class_d_window_manager_helper.html#a9d8049eb443e6e74f7956ee53d05493c", null ],
+    [ "hasBlurWindowChanged", "class_d_window_manager_helper.html#a17eee66c740dbb3745b45bb4c79f996d", null ],
+    [ "hasComposite", "class_d_window_manager_helper.html#a15c73557e57ec826c796588235da9067", null ],
+    [ "hasCompositeChanged", "class_d_window_manager_helper.html#a2be7d6c0894a9c49274e9c8b7f69de34", null ],
+    [ "hasNoTitlebar", "class_d_window_manager_helper.html#a871757a459c300857630f62bd2d02e98", null ],
+    [ "hasNoTitlebarChanged", "class_d_window_manager_helper.html#af82ca6cd17b87ea8d04fdd9c310efd22", null ],
+    [ "hasWallpaperEffect", "class_d_window_manager_helper.html#aa11f2201b491cbc894852a2e7548e72e", null ],
+    [ "hasWallpaperEffectChanged", "class_d_window_manager_helper.html#a81153d38faf3743248433325392dd7fe", null ],
+    [ "windowFromPoint", "class_d_window_manager_helper.html#a2569633854d14776ab1ce715985e2880", null ],
+    [ "windowListChanged", "class_d_window_manager_helper.html#a6ae4c869f60c6f9e20983c0ab0f880e5", null ],
+    [ "windowManagerChanged", "class_d_window_manager_helper.html#a8e4e04a0c8f1b8dab31dffd02c53a4b5", null ],
+    [ "windowManagerName", "class_d_window_manager_helper.html#aa236fdabbf24bec87f6e0f6a7e4506e5", null ],
+    [ "windowManagerNameString", "class_d_window_manager_helper.html#aede0872cc89b70173fa383d7822a04b3", null ],
+    [ "windowMotifWMHintsChanged", "class_d_window_manager_helper.html#aee57e14861a350e1a91204037bc5e6e3", null ],
+    [ "hasBlurWindow", "class_d_window_manager_helper.html#abdbccafdfd18d951e3d6c5ab1258ee7d", null ],
+    [ "hasComposite", "class_d_window_manager_helper.html#a1cf88c85cc2befbd1ef8c7ca29ecbfa2", null ],
+    [ "hasNoTitlebar", "class_d_window_manager_helper.html#aa5b91abd27bd14a6fb067e0a7ab9cd10", null ],
+    [ "hasWallpaperEffect", "class_d_window_manager_helper.html#a95a707bbbb1640f4ff1047e74ee034c3", null ]
+];

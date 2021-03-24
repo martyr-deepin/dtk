@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: Dtk::Core::DConfigCacheImpl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dtk_1_1_core_1_1_d_config_cache_impl.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_dtk_1_1_core_1_1_d_config_cache_impl-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">Dtk::Core::DConfigCacheImpl类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 Dtk::Core::DConfigCacheImpl 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_core_1_1_d_config_cache_impl__inherit__graph.png" border="0" usemap="#_dtk_1_1_core_1_1_d_config_cache_impl_inherit__map" alt="Inheritance graph"/></div>
+<map name="_dtk_1_1_core_1_1_d_config_cache_impl_inherit__map" id="_dtk_1_1_core_1_1_d_config_cache_impl_inherit__map">
+<area shape="rect" id="node2" href="class_dtk_1_1_core_1_1_d_config_cache.html" title="提供配置文件的用户和全局运行缓存访问接口 " alt="" coords="18,5,191,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+Dtk::Core::DConfigCacheImpl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_dtk_1_1_core_1_1_d_config_cache_impl__coll__graph.png" border="0" usemap="#_dtk_1_1_core_1_1_d_config_cache_impl_coll__map" alt="Collaboration graph"/></div>
+<map name="_dtk_1_1_core_1_1_d_config_cache_impl_coll__map" id="_dtk_1_1_core_1_1_d_config_cache_impl_coll__map">
+<area shape="rect" id="node2" href="class_dtk_1_1_core_1_1_d_config_cache.html" title="提供配置文件的用户和全局运行缓存访问接口 " alt="" coords="5,124,179,151"/>
+<area shape="rect" id="node3" href="struct_dtk_1_1_core_1_1_d_config_key.html" title="Dtk::Core::DConfigKey" alt="" coords="203,124,362,151"/>
+<area shape="rect" id="node4" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html" title="QString" alt="" coords="249,5,316,32"/>
+<area shape="rect" id="node5" href="class_dtk_1_1_core_1_1_d_config_info.html" title="Dtk::Core::DConfigInfo" alt="" coords="387,124,544,151"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9a7f0d8092014126c62c05812e25f5b6"><td class="memItemLeft" align="right" valign="top"><a id="a9a7f0d8092014126c62c05812e25f5b6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DConfigCacheImpl</b> (const <a class="el" href="struct_dtk_1_1_core_1_1_d_config_key.html">DConfigKey</a> &amp;configKey, const uint uid, bool global)</td></tr>
+<tr class="separator:a9a7f0d8092014126c62c05812e25f5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a08eaeb888ed3ec4a007cea9141b343"><td class="memItemLeft" align="right" valign="top"><a id="a7a08eaeb888ed3ec4a007cea9141b343"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>serial</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:a7a08eaeb888ed3ec4a007cea9141b343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8172f0aef789679aebced08ddaed4272"><td class="memItemLeft" align="right" valign="top"><a id="a8172f0aef789679aebced08ddaed4272"></a>
+virtual uint&#160;</td><td class="memItemRight" valign="bottom"><b>uid</b> () const override</td></tr>
+<tr class="separator:a8172f0aef789679aebced08ddaed4272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b19ab2377a0ae61ec8a2d073a26025"><td class="memItemLeft" align="right" valign="top"><a id="a72b19ab2377a0ae61ec8a2d073a26025"></a>
+virtual <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstringlist.html">QStringList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>keyList</b> () const override</td></tr>
+<tr class="separator:a72b19ab2377a0ae61ec8a2d073a26025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa127b2a4ed3c0b66d3b2c44c5cf9231"><td class="memItemLeft" align="right" valign="top"><a id="aaa127b2a4ed3c0b66d3b2c44c5cf9231"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>applicationCacheDir</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix) const</td></tr>
+<tr class="separator:aaa127b2a4ed3c0b66d3b2c44c5cf9231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765894e5446fb682a4b6d43f7dfc44e5"><td class="memItemLeft" align="right" valign="top"><a id="a765894e5446fb682a4b6d43f7dfc44e5"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cacheDir</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;basePath)</td></tr>
+<tr class="separator:a765894e5446fb682a4b6d43f7dfc44e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3763773f9024019f9628fe2c66383962"><td class="memItemLeft" align="right" valign="top"><a id="a3763773f9024019f9628fe2c66383962"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>globalCacheDir</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;prefix) const</td></tr>
+<tr class="separator:a3763773f9024019f9628fe2c66383962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a32819237102d9801d36f16d77269a"><td class="memItemLeft" align="right" valign="top"><a id="ab2a32819237102d9801d36f16d77269a"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCacheDir</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localPrefix=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>())</td></tr>
+<tr class="separator:ab2a32819237102d9801d36f16d77269a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ebf4ff3efc61323d0b8f6d0963322e"><td class="memItemLeft" align="right" valign="top"><a id="ac9ebf4ff3efc61323d0b8f6d0963322e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localPrefix=<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a>()) override</td></tr>
+<tr class="separator:ac9ebf4ff3efc61323d0b8f6d0963322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a556dbfb8c41d9f1b68607f8030ebf9"><td class="memItemLeft" align="right" valign="top"><a id="a6a556dbfb8c41d9f1b68607f8030ebf9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isGlobal</b> () const override</td></tr>
+<tr class="separator:a6a556dbfb8c41d9f1b68607f8030ebf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35229ef500e45dbb55bea0fee081bfc"><td class="memItemLeft" align="right" valign="top"><a id="ae35229ef500e45dbb55bea0fee081bfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) override</td></tr>
+<tr class="separator:ae35229ef500e45dbb55bea0fee081bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8889c28951b6a787c2defaaccda61e"><td class="memItemLeft" align="right" valign="top"><a id="afa8889c28951b6a787c2defaaccda61e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a> &amp;value, const int serial, const uint uid, const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;appid) override</td></tr>
+<tr class="separator:afa8889c28951b6a787c2defaaccda61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb3a3fd76ecaeec896409e9b6658c2c"><td class="memItemLeft" align="right" valign="top"><a id="a2eb3a3fd76ecaeec896409e9b6658c2c"></a>
+<a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qvariant.html">QVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;key) const override</td></tr>
+<tr class="separator:a2eb3a3fd76ecaeec896409e9b6658c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952e5de85252f93d4d29b70fa51d44f1"><td class="memItemLeft" align="right" valign="top"><a id="a952e5de85252f93d4d29b70fa51d44f1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (const <a class="elRef" doxygen="/home/union/dtk/tags/qtcore.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qstring.html">QString</a> &amp;localPrefix, QJsonDocument::JsonFormat format, bool sync) override</td></tr>
+<tr class="separator:a952e5de85252f93d4d29b70fa51d44f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2f1b5162615fb922262e4dee7a45a35f"><td class="memItemLeft" align="right" valign="top"><a id="a2f1b5162615fb922262e4dee7a45a35f"></a>
+<a class="el" href="struct_dtk_1_1_core_1_1_d_config_key.html">DConfigKey</a>&#160;</td><td class="memItemRight" valign="bottom"><b>configKey</b></td></tr>
+<tr class="separator:a2f1b5162615fb922262e4dee7a45a35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf8f671fd11077e9c52dc08699abe48"><td class="memItemLeft" align="right" valign="top"><a id="aaaf8f671fd11077e9c52dc08699abe48"></a>
+<a class="el" href="class_dtk_1_1_core_1_1_d_config_info.html">DConfigInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>values</b></td></tr>
+<tr class="separator:aaaf8f671fd11077e9c52dc08699abe48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966c1e5f054cefb76a623b43726731eb"><td class="memItemLeft" align="right" valign="top"><a id="a966c1e5f054cefb76a623b43726731eb"></a>
+uint&#160;</td><td class="memItemRight" valign="bottom"><b>userid</b></td></tr>
+<tr class="separator:a966c1e5f054cefb76a623b43726731eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a2ba424793c3686cc07d8cd3577067"><td class="memItemLeft" align="right" valign="top"><a id="a08a2ba424793c3686cc07d8cd3577067"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>global</b></td></tr>
+<tr class="separator:a08a2ba424793c3686cc07d8cd3577067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e23ed35606348d43fa8b0d94a0a57a3"><td class="memItemLeft" align="right" valign="top"><a id="a9e23ed35606348d43fa8b0d94a0a57a3"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>padding</b> [3] = {}</td></tr>
+<tr class="separator:a9e23ed35606348d43fa8b0d94a0a57a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a> 第 <a class="el" href="dconfigfile_8cpp_source.html#l00913">913</a> 行定义.</p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>dtkcore/src/<a class="el" href="dconfigfile_8cpp_source.html">dconfigfile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Dtk</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_dtk_1_1_core_1_1_d_config_cache_impl.html">DConfigCacheImpl</a></li>
+    <li class="footer">生成于 2021年 十一月 24日 星期三 23:59:14 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

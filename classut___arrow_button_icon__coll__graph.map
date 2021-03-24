@@ -1,0 +1,8 @@
+<map id="ut_ArrowButtonIcon" name="ut_ArrowButtonIcon">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_arrow_button_icon.html" title="Dtk::Widget::ArrowButtonIcon" alt="" coords="77,309,275,336"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qlabel.html" title="QLabel" alt="" coords="145,233,207,260"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="141,157,211,184"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="139,81,213,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="86,5,157,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="181,5,283,32"/>
+</map>

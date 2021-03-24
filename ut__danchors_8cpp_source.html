@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Deepin Tool Kit: dtkwidget/tests/testcases/widgets/ut_danchors.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Deepin Tool Kit
+   &#160;<span id="projectnumber">2021</span>
+   </div>
+   <div id="projectbrief">Deepin Tool Kit is the toolkit used to built deepin style Apps</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('ut__danchors_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ut_danchors.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">* Copyright (C) 2021 ~ 2021 Uniontech Software Technology Co.,Ltd.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* Author:     Ye ShanShan &lt;yeshanshan@uniontech.com&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">* Maintainer: Ye ShanShan &lt;yeshanshan@uniontech.com&gt;&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">* This program is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">* it under the terms of the GNU Lesser General Public License as published by</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">* the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">* any later version.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">* This program is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">* GNU General Public License for more details.</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">* You should have received a copy of the GNU Lesser General Public License</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">* along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;danchors.h&quot;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;DWIDGET_USE_NAMESPACE</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classut___d_anchors_base.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a> : <span class="keyword">public</span> testing::Test</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> SetUp()<span class="keyword"> override</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        parentWidget = <span class="keyword">new</span> <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        target = <span class="keyword">new</span> <a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a>(parentWidget);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> TearDown()<span class="keyword"> override</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (parentWidget) {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">delete</span> parentWidget;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            parentWidget = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html">DAnchorsBase</a> *target = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="codeRef" doxygen="/home/union/dtk/tags/qtwidgets.tags:https://doc.qt.io/qt-5/" href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a> *parentWidget = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setBottomMargin)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    target-&gt;setBottomMargin(1);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aea3b7cc86a3263798f81368b7de5a94e">bottomMargin</a>(), 1);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setEnabled)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    target-&gt;setEnabled(<span class="keyword">true</span>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#af39612a5ff93e7b3cd08134b03fe68d5">enabled</a>(), <span class="keyword">true</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setHorizontalCenterOffset)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    target-&gt;setHorizontalCenterOffset(1);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a2b52884009ded8a7812f030d71d3a80b">horizontalCenterOffset</a>(), 1);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setLeftMargin)</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    target-&gt;setLeftMargin(1);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa266c6810dbb1cf0a9668646a5858dcd">leftMargin</a>(), 1);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setMargins)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    target-&gt;setMargins(1);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a607a39664bd1300d9d715333cf00d34d">margins</a>(), 1);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setRightMargin)</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    target-&gt;setRightMargin(1);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3c2f80a8f38249ee0f41e8815b23dd2b">rightMargin</a>(), 1);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setTopMargin)</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    target-&gt;setTopMargin(1);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#afb17520011f702ec7b2f70102685d95d">topMargin</a>(), 1);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;TEST_F(<a class="code" href="classut___d_anchors_base.html">ut_DAnchorsBase</a>, setVerticalCenterOffset)</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    target-&gt;setVerticalCenterOffset(1);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    ASSERT_EQ(target-&gt;<a class="code" href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a75b8c96b681d1dd4368ad48b34cef159">verticalCenterOffset</a>(), 1);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div><div class="ttc" id="qwidget_html"><div class="ttname"><a href="https://doc.qt.io/qt-5/qwidget.html">QWidget</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_a2b52884009ded8a7812f030d71d3a80b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a2b52884009ded8a7812f030d71d3a80b">Dtk::Widget::DAnchorsBase::horizontalCenterOffset</a></div><div class="ttdeci">int horizontalCenterOffset</div><div class="ttdoc">水平“锚线”的偏移量 </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00096">danchors.h:96</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_a607a39664bd1300d9d715333cf00d34d"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a607a39664bd1300d9d715333cf00d34d">Dtk::Widget::DAnchorsBase::margins</a></div><div class="ttdeci">int margins</div><div class="ttdoc">上下左右四条“锚线”的边距，此值的优先级低于每条“锚线”特定的 margin 值 </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00091">danchors.h:91</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_aa266c6810dbb1cf0a9668646a5858dcd"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aa266c6810dbb1cf0a9668646a5858dcd">Dtk::Widget::DAnchorsBase::leftMargin</a></div><div class="ttdeci">int leftMargin</div><div class="ttdoc">左“锚线”的边距，优先级高于 margins </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00094">danchors.h:94</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_afb17520011f702ec7b2f70102685d95d"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#afb17520011f702ec7b2f70102685d95d">Dtk::Widget::DAnchorsBase::topMargin</a></div><div class="ttdeci">int topMargin</div><div class="ttdoc">上“锚线”的边距，优先级高于 margins </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00092">danchors.h:92</a></div></div>
+<div class="ttc" id="classut___d_anchors_base_html"><div class="ttname"><a href="classut___d_anchors_base.html">ut_DAnchorsBase</a></div><div class="ttdef"><b>Definition:</b> <a href="ut__danchors_8cpp_source.html#l00027">ut_danchors.cpp:27</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_a3c2f80a8f38249ee0f41e8815b23dd2b"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a3c2f80a8f38249ee0f41e8815b23dd2b">Dtk::Widget::DAnchorsBase::rightMargin</a></div><div class="ttdeci">int rightMargin</div><div class="ttdoc">右“锚线”的边距，优先级高于 margins </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00095">danchors.h:95</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_a75b8c96b681d1dd4368ad48b34cef159"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#a75b8c96b681d1dd4368ad48b34cef159">Dtk::Widget::DAnchorsBase::verticalCenterOffset</a></div><div class="ttdeci">int verticalCenterOffset</div><div class="ttdoc">竖直“锚线”的偏移量 </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00097">danchors.h:97</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_aea3b7cc86a3263798f81368b7de5a94e"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#aea3b7cc86a3263798f81368b7de5a94e">Dtk::Widget::DAnchorsBase::bottomMargin</a></div><div class="ttdeci">int bottomMargin</div><div class="ttdoc">下“锚线”的边距，优先级高于 margins </div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00093">danchors.h:93</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html">Dtk::Widget::DAnchorsBase</a></div><div class="ttdoc">DAnchorsBase 提供了一种指定 QWidget 与其它 QWidget 之间的关系来确定 其位置的方法. ...</div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00076">danchors.h:76</a></div></div>
+<div class="ttc" id="class_dtk_1_1_widget_1_1_d_anchors_base_html_af39612a5ff93e7b3cd08134b03fe68d5"><div class="ttname"><a href="class_dtk_1_1_widget_1_1_d_anchors_base.html#af39612a5ff93e7b3cd08134b03fe68d5">Dtk::Widget::DAnchorsBase::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdoc">控制锚定功能是否开启，为 false 时仅仅表示不会根据控件各种属性的变化来 来更新它的位置，但锚定关系并没�...</div><div class="ttdef"><b>Definition:</b> <a href="danchors_8h_source.html#l00081">danchors.h:81</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cc1fdbae730d0dba18db2b924667b662.html">dtkwidget</a></li><li class="navelem"><a class="el" href="dir_6d42238da55b18d30a403437e70e5f73.html">tests</a></li><li class="navelem"><a class="el" href="dir_ad0800e0fee760a207640b6458ebcd0b.html">testcases</a></li><li class="navelem"><a class="el" href="dir_ea60345209a56052f5769007556169b7.html">widgets</a></li><li class="navelem"><b>ut_danchors.cpp</b></li>
+    <li class="footer">生成于 2021年 十一月 24日 星期三 23:59:12 , 为 Deepin Tool Kit使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

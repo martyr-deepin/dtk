@@ -1,0 +1,3 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$class_dtk_1_1_gui_1_1_d_file_drag.html" title="继承自QDrag，一般在文件拖拽发送方 mouseMoveEvent 中发起拖拽，设置发送数据 和 DFileDragServer 配合使用..." alt="" coords="5,5,144,32"/>
+</map>

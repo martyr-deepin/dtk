@@ -1,0 +1,8 @@
+<map id="ut_DColoredProgressBar" name="ut_DColoredProgressBar">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_colored_progress_bar.html" title="DColoredProgressBar is the same as QProgressBar, except it can change its appearance depending on the..." alt="" coords="115,247,342,273"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qprogressbar.html" title="QProgressBar" alt="" coords="91,171,195,197"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="87,81,160,108"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="33,5,104,32"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="128,5,231,32"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_core_1_1_d_object.html" title="一些宏的定义. " alt="" coords="228,171,363,197"/>
+</map>

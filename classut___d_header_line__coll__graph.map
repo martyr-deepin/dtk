@@ -1,0 +1,9 @@
+<map id="ut_DHeaderLine" name="ut_DHeaderLine">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_header_line.html" title="可以使用 DHeaderLine 类快速创建标题行控件. " alt="" coords="77,385,253,412"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_base_line.html" title="可以使用 DBaseLine 类快速创建具有位于左右两侧的两个控件的行控件. " alt="" coords="83,309,247,336"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qlabel.html" title="QLabel" alt="" coords="134,233,197,260"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="131,157,200,184"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="129,81,202,108"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="75,5,146,32"/>
+<area shape="rect" id="node9" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="170,5,273,32"/>
+</map>

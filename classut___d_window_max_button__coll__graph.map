@@ -1,0 +1,9 @@
+<map id="ut_DWindowMaxButton" name="ut_DWindowMaxButton">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_window_max_button.html" title="The DWindowMaxButton class is used as the unified window maximize button. " alt="" coords="131,323,351,349"/>
+<area shape="rect" id="node4" href="$class_dtk_1_1_widget_1_1_d_icon_button.html" title="Dtk::Widget::DIconButton" alt="" coords="157,247,331,273"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qabstractbutton.html" title="QAbstractButton" alt="" coords="129,171,247,197"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="90,81,163,108"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="37,5,107,32"/>
+<area shape="rect" id="node8" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="131,5,234,32"/>
+<area shape="rect" id="node9" href="$class_dtk_1_1_core_1_1_d_object.html" title="一些宏的定义. " alt="" coords="271,171,406,197"/>
+</map>

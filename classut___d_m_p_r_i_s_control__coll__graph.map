@@ -1,0 +1,8 @@
+<map id="ut_DMPRISControl" name="ut_DMPRISControl">
+<area shape="rect" id="node3" href="$class_dtk_1_1_widget_1_1_d_m_p_r_i_s_control.html" title="DMPRISControl 封装了MPRIS协议，提供了上一曲、下一曲、暂停播放、恢复播放和显示歌曲名和封面的功能. " alt="" coords="103,247,298,273"/>
+<area shape="rect" id="node4" href="/home/union/dtk/tags/qtwidgets.tags$qframe.html" title="QFrame" alt="" coords="91,171,161,197"/>
+<area shape="rect" id="node5" href="/home/union/dtk/tags/qtwidgets.tags$qwidget.html" title="QWidget" alt="" coords="59,81,132,108"/>
+<area shape="rect" id="node6" href="/home/union/dtk/tags/qtcore.tags$qobject.html" title="QObject" alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node7" href="/home/union/dtk/tags/qtgui.tags$qpaintdevice.html" title="QPaintDevice" alt="" coords="100,5,203,32"/>
+<area shape="rect" id="node8" href="$class_dtk_1_1_core_1_1_d_object.html" title="一些宏的定义. " alt="" coords="197,171,332,197"/>
+</map>
